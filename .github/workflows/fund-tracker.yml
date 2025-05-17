@@ -11,7 +11,7 @@ jobs:
 
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
-      GH_FUNDTOKEN: ${{ secrets.GH_FUNDTOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -25,5 +25,5 @@ jobs:
       - name: Install dependencies
         run: pip install pandas openpyxl requests
 
-      - name: Run fund tracker script (handles git push internally)
+      - name: Run fund tracker script
         run: python fund_tracker.py
