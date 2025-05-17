@@ -1,0 +1,36 @@
+name: Fund Tracker Automation
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"  # Every 10 minutes
+  workflow_dispatch:       # Allow manual runs too
+
+jobs:
+  run-fund-tracker:
+    runs-on: ubuntu-latest
+
+    env:
+      GH_FUNDTOKEN: ${{ secrets.GH_FUNDTOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: Install dependencies
+        run: pip install pandas openpyxl requests
+
+      - name: Run fund tracker script
+        run: python your_script_name.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "bot@example.com"
+          git config --global user.name "GH Actions Bot"
+          git add master_companies.xlsx update_log.csv
+          git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push https://x-access-token:${GH_FUNDTOKEN}@github.com/${{ github.repository }} HEAD:main
