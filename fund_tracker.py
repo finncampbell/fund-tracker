@@ -9,7 +9,7 @@ import subprocess
 # Debug: confirm environment variables are accessible
 API_KEY = os.getenv('CH_API_KEY')
 print("CH_API_KEY present:", bool(API_KEY))
-print("GH_FUNDTOKEN present:", bool(os.getenv('GH_FUNDTOKEN'))))
+print("GH_FUNDTOKEN present:", bool(os.getenv('GH_FUNDTOKEN')))
 
 # --- CONFIGURATION ---
 INITIAL_SWEEP_DAYS = 7
@@ -163,4 +163,3 @@ if __name__ == "__main__":
         log_update(today, len(newly_added))
         push_to_github()
         time.sleep(DAILY_UPDATE_INTERVAL_MINUTES * 60)
-
