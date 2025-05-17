@@ -117,12 +117,12 @@ def push_to_github():
     subprocess.run(["git", "add"] + tracked_files)
     try:
         subprocess.run(["git", "commit", "-m", f"Update on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"], check=True)
-        subprocess.run(["git", "push", f"https://x-access-token:{os.getenv('GITHUB_TOKEN')}@github.com/finncampbell/fund-tracker.git"])
+        subprocess.run(["git", "push", f"https://x-access-token:{os.getenv('GH_FUNDTOKEN')}@github.com/finncampbell/fund-tracker.git"])
     except subprocess.CalledProcessError:
         pass  # No changes to commit
 
-if not API_KEY or not os.getenv('GITHUB_TOKEN'):
-    raise EnvironmentError("Missing CH_API_KEY or GITHUB_TOKEN environment variables.")
+if not API_KEY or not os.getenv('GH_FUNDTOKEN'):
+    raise EnvironmentError("Missing CH_API_KEY or GH_FUNDTOKEN environment variables.")
 
 if __name__ == "__main__":
     while True:
@@ -149,6 +149,7 @@ if __name__ == "__main__":
         save_json_file(pagination_tracker, PAGINATION_TRACKER)
         save_json_file(initial_sweep_log, INITIAL_SWEEP_LOG)
 
+        # Cleanup old JSON files if needed (example: remove logs older than 30 days)
         for file in [PAGINATION_TRACKER, INITIAL_SWEEP_LOG]:
             if os.path.exists(file) and os.path.getmtime(file) < time.time() - 30 * 86400:
                 os.remove(file)
