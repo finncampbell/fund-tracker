@@ -112,9 +112,15 @@ def log_update(date, added_count):
         f.write(log_line)
 
 def push_to_github():
+    print("GH_FUNDTOKEN length:", len(os.getenv('GH_FUNDTOKEN') or ''))
     subprocess.run(["git", "config", "--global", "user.email", "bot@example.com"])
     subprocess.run(["git", "config", "--global", "user.name", "GH Actions Bot"])
-    subprocess.run(["git", "add", MASTER_FILE, LOG_FILE])
+
+    tracked_files = [MASTER_FILE]
+    if os.path.exists(LOG_FILE):
+        tracked_files.append(LOG_FILE)
+
+    subprocess.run(["git", "add"] + tracked_files)
     try:
         subprocess.run(["git", "commit", "-m", f"Update on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"], check=True)
         subprocess.run(["git", "push", f"https://x-access-token:{os.getenv('GH_FUNDTOKEN')}@github.com/finncampbell/fund-tracker.git"])
