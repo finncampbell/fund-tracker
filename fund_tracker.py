@@ -6,12 +6,17 @@ import json
 import time
 import subprocess
 
-# --- CONFIGURATION ---
+# Debug: confirm environment variables are accessible
 API_KEY = os.getenv('CH_API_KEY')
+print("CH_API_KEY present:", bool(API_KEY))
+print("GH_FUNDTOKEN present:", bool(os.getenv('GH_FUNDTOKEN'))))
+
+# --- CONFIGURATION ---
 INITIAL_SWEEP_DAYS = 7
 DAILY_UPDATE_INTERVAL_MINUTES = 10
 
 MASTER_FILE = 'master_companies.xlsx'
+DAILY_FILE_TEMPLATE = 'new_companies_{date}.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 INITIAL_SWEEP_LOG = 'initial_sweep_log.json'
 LOG_FILE = 'update_log.csv'
@@ -153,6 +158,9 @@ if __name__ == "__main__":
         updated_master_df, newly_added = update_master(master_df, new_discoveries)
 
         export_to_excel(updated_master_df, MASTER_FILE)
+        # Skipping daily export as only master file is needed
+
         log_update(today, len(newly_added))
         push_to_github()
         time.sleep(DAILY_UPDATE_INTERVAL_MINUTES * 60)
+
