@@ -6,17 +6,12 @@ import json
 import time
 import subprocess
 
-# Debug: confirm environment variables are accessible
-API_KEY = os.getenv('CH_API_KEY')
-print("CH_API_KEY present:", bool(API_KEY))
-print("GH_FUNDTOKEN present:", bool(os.getenv('GH_FUNDTOKEN')))
-
 # --- CONFIGURATION ---
+API_KEY = os.getenv('CH_API_KEY')
 INITIAL_SWEEP_DAYS = 7
 DAILY_UPDATE_INTERVAL_MINUTES = 10
 
 MASTER_FILE = 'master_companies.xlsx'
-DAILY_FILE_TEMPLATE = 'new_companies_{date}.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 INITIAL_SWEEP_LOG = 'initial_sweep_log.json'
 LOG_FILE = 'update_log.csv'
@@ -112,7 +107,6 @@ def log_update(date, added_count):
         f.write(log_line)
 
 def push_to_github():
-    print("GH_FUNDTOKEN length:", len(os.getenv('GH_FUNDTOKEN') or ''))
     subprocess.run(["git", "config", "--global", "user.email", "bot@example.com"])
     subprocess.run(["git", "config", "--global", "user.name", "GH Actions Bot"])
 
@@ -123,12 +117,12 @@ def push_to_github():
     subprocess.run(["git", "add"] + tracked_files)
     try:
         subprocess.run(["git", "commit", "-m", f"Update on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"], check=True)
-        subprocess.run(["git", "push", f"https://x-access-token:{os.getenv('GH_FUNDTOKEN')}@github.com/finncampbell/fund-tracker.git"])
+        subprocess.run(["git", "push", f"https://x-access-token:{os.getenv('GITHUB_TOKEN')}@github.com/finncampbell/fund-tracker.git"])
     except subprocess.CalledProcessError:
         pass  # No changes to commit
 
-if not API_KEY or not os.getenv('GH_FUNDTOKEN'):
-    raise EnvironmentError("Missing CH_API_KEY or GH_FUNDTOKEN environment variables.")
+if not API_KEY or not os.getenv('GITHUB_TOKEN'):
+    raise EnvironmentError("Missing CH_API_KEY or GITHUB_TOKEN environment variables.")
 
 if __name__ == "__main__":
     while True:
@@ -155,7 +149,6 @@ if __name__ == "__main__":
         save_json_file(pagination_tracker, PAGINATION_TRACKER)
         save_json_file(initial_sweep_log, INITIAL_SWEEP_LOG)
 
-        # Cleanup old JSON files if needed (example: remove logs older than 30 days)
         for file in [PAGINATION_TRACKER, INITIAL_SWEEP_LOG]:
             if os.path.exists(file) and os.path.getmtime(file) < time.time() - 30 * 86400:
                 os.remove(file)
@@ -164,8 +157,6 @@ if __name__ == "__main__":
         updated_master_df, newly_added = update_master(master_df, new_discoveries)
 
         export_to_excel(updated_master_df, MASTER_FILE)
-        # Skipping daily export as only master file is needed
-
         log_update(today, len(newly_added))
         push_to_github()
         time.sleep(DAILY_UPDATE_INTERVAL_MINUTES * 60)
