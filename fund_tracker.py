@@ -112,7 +112,7 @@ def push_to_github():
     subprocess.run(["git", "config", "--global", "user.name", "GH Actions Bot"])
     subprocess.run(["git", "add", MASTER_FILE, LOG_FILE])
     subprocess.run(["git", "commit", "-m", f"Update on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"])
-    subprocess.run(["git", "push", f"https://x-access-token:${{GH_FUNDTOKEN}}@github.com/USERNAME/REPO.git"])
+    subprocess.run(["git", "push", f"https://x-access-token:${{GH_FUNDTOKEN}}@github.com/finncampbell/fund-tracker.git"])
 
 if __name__ == "__main__":
     while True:
