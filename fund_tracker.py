@@ -21,6 +21,8 @@ SIC_CODES = [
 
 KEYWORDS = ['capital', 'fund', 'ventures', 'partners', 'gp', 'lp', 'llp', 'investments', 'equity', 'advisors']
 
+COLUMNS = ['Company Name', 'Company Number', 'Incorporation Date', 'Status', 'Source', 'Time Discovered']
+
 def load_json_file(path):
     if os.path.exists(path):
         with open(path, 'r') as f:
@@ -78,25 +80,28 @@ def fetch_companies_for_date(api_key, query_date, sic_codes, keywords, last_inde
         if len(items) < 50:
             break
 
-    return pd.DataFrame(all_results), start_index
+    return pd.DataFrame(all_results, columns=COLUMNS), start_index
 
 def load_existing_master(path):
     if os.path.exists(path):
         return pd.read_excel(path)
     else:
-        return pd.DataFrame(columns=['Company Name', 'Company Number', 'Incorporation Date', 'Status', 'Source', 'Date Downloaded', 'Time Discovered'])
+        return pd.DataFrame(columns=COLUMNS + ['Date Downloaded'])
 
 def update_master(master_df, new_df):
     today_str = datetime.today().strftime('%Y-%m-%d')
     new_entries = new_df[~new_df['Company Number'].isin(master_df['Company Number'])].copy()
     new_entries['Date Downloaded'] = today_str
     updated_master = pd.concat([master_df, new_entries], ignore_index=True)
+    updated_master.drop_duplicates(subset='Company Number', inplace=True)
     return updated_master, new_entries
 
 def export_to_excel(df, filename):
     df.to_excel(filename, index=False)
 
 def log_update(date, added_count):
+    if added_count == 0:
+        return
     log_line = f"{date},{added_count},{datetime.now().strftime('%H:%M:%S')}\n"
     header = "Date,Companies Added,Run Time\n"
     if not os.path.exists(LOG_FILE):
@@ -113,7 +118,8 @@ if __name__ == "__main__":
         today = datetime.today().strftime('%Y-%m-%d')
         pagination_tracker = load_json_file(PAGINATION_TRACKER)
         initial_sweep_log = load_json_file(INITIAL_SWEEP_LOG)
-        new_discoveries = pd.DataFrame()
+
+        new_discoveries = pd.DataFrame(columns=COLUMNS)  # <- FIX applied here
 
         for days_ago in range(INITIAL_SWEEP_DAYS, -1, -1):
             query_date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
