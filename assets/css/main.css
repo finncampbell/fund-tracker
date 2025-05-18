@@ -1,0 +1,36 @@
+/* NAV BAR CONTAINER */
+.site-nav {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+/* HORIZONTAL LIST */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+.nav-list a:hover {
+  color: #0366d6;
+}
+
+/* ACTIVE LINK */
+.nav-list a.active {
+  font-weight: 600;
+  color: #0366d6;
+  border-bottom: 3px solid #0366d6;
+}
