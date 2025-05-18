@@ -10,6 +10,9 @@ layout: default
     <li><a href="/advisors/"  class="{% if page.url == '/advisors/' %}active{% endif %}">Advisors</a></li>
     <li><a href="/partners/"  class="{% if page.url == '/partners/' %}active{% endif %}">Partners</a></li>
     <li><a href="/sic/"       class="{% if page.url == '/sic/' %}active{% endif %}">SIC Codes</a></li>
+    <li><a href="/fund-structures/" class="{% if page.url == '/fund-structures/' %}active{% endif %}">
+      Fund Structures
+    </a></li>
   </ul>
 </nav>
 
@@ -27,6 +30,8 @@ layout: default
     {% assign rows = site.data.master_companies %}
     {% if page.filter %}
       {% assign rows = rows | where_exp: "r", "r.Source contains page.filter" %}
+    {% elsif page.filter_expr %}
+      {% assign rows = rows | where_exp: "r", page.filter_expr %}
     {% endif %}
     {% for r in rows %}
       <tr>
