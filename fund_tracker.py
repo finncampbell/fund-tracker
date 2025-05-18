@@ -136,17 +136,25 @@ def run_for_date_range(start_date, end_date):
         log_update(dstr, len(added))
 
         # Cleanup old tracker
-        if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30*86400:
+        if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
             os.remove(PAGINATION_TRACKER)
 
         current += timedelta(days=1)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Companies House tracker.")
-    parser.add_argument("--start_date", type=str, help="YYYY-MM-DD", default=datetime.today().strftime('%Y-%m-%d'))
-    parser.add_argument("--end_date", type=str, help="YYYY-MM-DD")
+    parser.add_argument("--start_date", type=str,
+                        help="YYYY-MM-DD or literal 'today'",
+                        default="today")
+    parser.add_argument("--end_date", type=str,
+                        help="YYYY-MM-DD or literal 'today'",
+                        default="today")
     args = parser.parse_args()
-    sd = args.start_date
-    ed = args.end_date or sd
+
+    # Interpret “today” placeholders
+    today_str = datetime.today().strftime('%Y-%m-%d')
+    sd = today_str if args.start_date.lower() == 'today' else args.start_date
+    ed = today_str if args.end_date.lower() == 'today' else args.end_date
+
     logger.info(f"Starting run: {sd} to {ed}")
     run_for_date_range(sd, ed)
