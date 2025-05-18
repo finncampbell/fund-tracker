@@ -1,0 +1,29 @@
+/* Nav bar container */
+.site-nav {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Filter buttons */
+.site-nav button {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.site-nav button:hover {
+  background: #e6e6e6;
+}
+.site-nav button.active {
+  background: #0366d6;
+  border-color: #0366d6;
+  color: #fff;
+}
