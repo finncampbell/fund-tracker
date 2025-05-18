@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fund Tracker Dashboard</title>
+
+  <!-- DataTables CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+  />
+
+  <!-- Your existing nav CSS -->
+  <link 
+    rel="stylesheet" 
+    href="{{ '/assets/css/main.css' | relative_url }}"
+  />
+</head>
+<body>
+  <nav class="site-nav">
+    <ul class="nav-list">
+      <li><button data-filter="" class="active">All</button></li>
+      <li><button data-filter="Ventures">Ventures</button></li>
+      <li><button data-filter="Capital">Capital</button></li>
+      <li><button data-filter="Equity">Equity</button></li>
+      <li><button data-filter="Advisors">Advisors</button></li>
+      <li><button data-filter="Partners">Partners</button></li>
+      <li><button data-filter="SIC">SIC Codes</button></li>
+      <li><button data-filter="fund">Fund</button></li>
+      <li><button data-filter="gp">GP</button></li>
+      <li><button data-filter="lp">LP</button></li>
+      <li><button data-filter="llp">LLP</button></li>
+      <li><button data-filter="investments">Investments</button></li>
+    </ul>
+  </nav>
+
+  <table id="companies" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Company Number</th>
+        <th>Incorporation Date</th>
+        <th>Status</th>
+        <th>Source</th>
+        <th>Time Discovered</th>
+        <th>Date Downloaded</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- jQuery (required by DataTables) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- PapaParse for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    let table;
+    let allData = [];
+
+    // 1) Load the CSV
+    Papa.parse("{{ '/_data/master_companies.csv' | relative_url }}", {
+      download: true,
+      header: true,
+      complete: results => {
+        allData = results.data;
+        initTable(allData);
+      }
+    });
+
+    // 2) Initialize DataTable
+    function initTable(data) {
+      table = $('#companies').DataTable({
+        data: data,
+        columns: [
+          { data: 'Company Name' },
+          { data: 'Company Number' },
+          { data: 'Incorporation Date' },
+          { data: 'Status' },
+          { data: 'Source' },
+          { data: 'Time Discovered' },
+          { data: 'Date Downloaded' }
+        ],
+        pageLength: 25
+      });
+    }
+
+    // 3) Filter on button click
+    document.querySelectorAll('.nav-list button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // highlight active
+        document.querySelectorAll('.nav-list .active')
+          .forEach(el => el.classList.remove('active'));
+        btn.classList.add('active');
+
+        // apply filter
+        const key = btn.dataset.filter;
+        if (key === "") {
+          table
+            .search('')
+            .draw();
+        } else {
+          table
+            .column(4)          // “Source” column
+            .search(key, true, false)  // regex search, exact term
+            .draw();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
