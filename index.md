@@ -35,7 +35,6 @@ title: "Fund Tracker Dashboard"
   <tbody></tbody>
 </table>
 
-<!-- Load dependencies and render the table -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
@@ -43,7 +42,7 @@ title: "Fund Tracker Dashboard"
   let table;
 
   // 1) Load the CSV data
-  Papa.parse("{{ '/_data/master_companies.csv' | relative_url }}", {
+  Papa.parse("{{ '/assets/data/master_companies.csv' | relative_url }}", {
     download: true,
     header: true,
     complete: results => {
@@ -66,11 +65,8 @@ title: "Fund Tracker Dashboard"
   // 2) Wire up the filter buttons
   document.querySelectorAll('.site-nav button').forEach(btn => {
     btn.addEventListener('click', () => {
-      // Highlight the active button
       document.querySelector('.site-nav button.active').classList.remove('active');
       btn.classList.add('active');
-
-      // Filter the DataTable on the “Source” column
       const key = btn.dataset.filter;
       if (!key) {
         table.search('').draw();
