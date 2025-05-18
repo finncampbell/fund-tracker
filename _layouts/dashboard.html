@@ -1,44 +1,12 @@
----
-layout: default
----
 <nav class="site-nav">
   <ul class="nav-list">
-    <li><a href="/"           class="{% if page.url == '/' %}active{% endif %}">All</a></li>
-    <li><a href="/ventures/"  class="{% if page.url == '/ventures/' %}active{% endif %}">Ventures</a></li>
-    <li><a href="/capital/"   class="{% if page.url == '/capital/' %}active{% endif %}">Capital</a></li>
-    <li><a href="/equity/"    class="{% if page.url == '/equity/' %}active{% endif %}">Equity</a></li>
-    <li><a href="/advisors/"  class="{% if page.url == '/advisors/' %}active{% endif %}">Advisors</a></li>
-    <li><a href="/partners/"  class="{% if page.url == '/partners/' %}active{% endif %}">Partners</a></li>
-    <li><a href="/sic/"       class="{% if page.url == '/sic/' %}active{% endif %}">SIC Codes</a></li>
-    <li><a href="/fund-structures/" class="{% if page.url == '/fund-structures/' %}active{% endif %}">
-      Fund Structures
-    </a></li>
+    <li><a href="{{ site.baseurl }}/"           class="{% if page.url == '/' %}active{% endif %}">All</a></li>
+    <li><a href="{{ site.baseurl }}/ventures/"  class="{% if page.url == '/ventures/' %}active{% endif %}">Ventures</a></li>
+    <li><a href="{{ site.baseurl }}/capital/"   class="{% if page.url == '/capital/' %}active{% endif %}">Capital</a></li>
+    <li><a href="{{ site.baseurl }}/equity/"    class="{% if page.url == '/equity/' %}active{% endif %}">Equity</a></li>
+    <li><a href="{{ site.baseurl }}/advisors/"  class="{% if page.url == '/advisors/' %}active{% endif %}">Advisors</a></li>
+    <li><a href="{{ site.baseurl }}/partners/"  class="{% if page.url == '/partners/' %}active{% endif %}">Partners</a></li>
+    <li><a href="{{ site.baseurl }}/sic/"       class="{% if page.url == '/sic/' %}active{% endif %}">SIC Codes</a></li>
+    <li><a href="{{ site.baseurl }}/fund-structures/" class="{% if page.url == '/fund-structures/' %}active{% endif %}">Fund Structures</a></li>
   </ul>
 </nav>
-
-<h1>{{ page.title }}</h1>
-
-<table>
-  <thead>
-    <tr>
-      {% for col in site.data.master_companies[0].keys %}
-        <th>{{ col }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    {% assign rows = site.data.master_companies %}
-    {% if page.filter %}
-      {% assign rows = rows | where_exp: "r", "r.Source contains page.filter" %}
-    {% elsif page.filter_expr %}
-      {% assign rows = rows | where_exp: "r", page.filter_expr %}
-    {% endif %}
-    {% for r in rows %}
-      <tr>
-        {% for v in r %}
-          <td>{{ v }}</td>
-        {% endfor %}
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
