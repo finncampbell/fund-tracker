@@ -111,14 +111,18 @@ def log_update(date, added_count):
 
 def run_for_date_range(start_date, end_date):
     pagination_tracker = load_json_file(PAGINATION_TRACKER)
-    current_date = start_date
+
+    # Convert string dates to datetime objects
+    current_date = datetime.strptime(start_date, '%Y-%m-%d')
+    end_date = datetime.strptime(end_date, '%Y-%m-%d')
 
     # Process each day in the range
     while current_date <= end_date:
-        last_index = pagination_tracker.get(current_date, 0)
-        new_discoveries, final_index = fetch_companies_for_date(API_KEY, current_date, SIC_CODES, KEYWORDS, last_index)
+        formatted_date = current_date.strftime('%Y-%m-%d')  # Convert back to string for API query
+        last_index = pagination_tracker.get(formatted_date, 0)
+        new_discoveries, final_index = fetch_companies_for_date(API_KEY, formatted_date, SIC_CODES, KEYWORDS, last_index)
 
-        pagination_tracker[current_date] = final_index
+        pagination_tracker[formatted_date] = final_index
         save_json_file(pagination_tracker, PAGINATION_TRACKER)
 
         if os.path.exists(PAGINATION_TRACKER) and os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
@@ -128,8 +132,9 @@ def run_for_date_range(start_date, end_date):
         updated_master_df, newly_added = update_master(master_df, new_discoveries)
 
         export_to_excel(updated_master_df, MASTER_FILE)
-        log_update(current_date, len(newly_added))
+        log_update(formatted_date, len(newly_added))
 
+        # Increment the date
         current_date += timedelta(days=1)
 
 if __name__ == "__main__":
