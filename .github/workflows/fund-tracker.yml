@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       start_date:
-        description: 'Start date to fetch (YYYY-MM-DD)'
+        description: 'Start date to fetch (YYYY-MM-DD or literal “today”)'
         required: false
         default: 'today'
       end_date:
-        description: 'End date to fetch (YYYY-MM-DD)'
+        description: 'End date to fetch (YYYY-MM-DD or literal “today”)'
         required: false
         default: 'today'
 
@@ -50,7 +50,7 @@ jobs:
         id: changes
         run: |
           git add master_companies.xlsx api_logs.json
-          git.diff --cached --quiet || echo "Changes detected"
+          git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
