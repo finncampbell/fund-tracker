@@ -18,24 +18,6 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% assign rows = site.data.master_companies %}
-
-{% if page.title == 'Ventures' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Ventures'" %}
-{% elsif page.title == 'Capital' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Capital'" %}
-{% elsif page.title == 'Equity' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Equity'" %}
-{% elsif page.title == 'Advisors' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Advisors'" %}
-{% elsif page.title == 'Partners' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Partners'" %}
-{% elsif page.title == 'SIC Codes' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'SIC'" %}
-{% elsif page.title == 'Fund Structures' %}
-  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'fund' or r.Source contains 'gp' or r.Source contains 'lp' or r.Source contains 'llp'" %}
-{% endif %}
-
 <table>
   <thead>
     <tr>
@@ -45,12 +27,49 @@ layout: default
     </tr>
   </thead>
   <tbody>
-    {% for r in rows %}
-      <tr>
-        {% for v in r %}
-          <td>{{ v }}</td>
-        {% endfor %}
-      </tr>
+    {% for r in site.data.master_companies %}
+      {% assign show = false %}
+
+      {% if page.title == 'All Companies' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Ventures' and r.Source contains 'Ventures' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Capital' and r.Source contains 'Capital' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Equity' and r.Source contains 'Equity' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Advisors' and r.Source contains 'Advisors' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Partners' and r.Source contains 'Partners' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'SIC Codes' and r.Source contains 'SIC' %}
+        {% assign show = true %}
+
+      {% elsif page.title == 'Fund Structures' %}
+        {% if r.Source contains 'fund' %}
+          {% assign show = true %}
+        {% elsif r.Source contains 'gp' %}
+          {% assign show = true %}
+        {% elsif r.Source contains 'lp' %}
+          {% assign show = true %}
+        {% elsif r.Source contains 'llp' %}
+          {% assign show = true %}
+        {% endif %}
+      {% endif %}
+
+      {% if show %}
+        <tr>
+          {% for v in r %}
+            <td>{{ v }}</td>
+          {% endfor %}
+        </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
