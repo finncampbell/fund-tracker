@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +14,7 @@
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   />
 
-  <!-- Your existing nav CSS -->
+  <!-- Your nav CSS (now Liquid-processed) -->
   <link 
     rel="stylesheet" 
     href="{{ '/assets/css/main.css' | relative_url }}"
@@ -60,8 +64,8 @@
     let table;
     let allData = [];
 
-    // 1) Load the CSV
-    Papa.parse("{{ '/_data/master_companies.csv' | relative_url }}", {
+    // 1) Load the CSV from the right path
+    Papa.parse("{{ site.baseurl }}/_data/master_companies.csv", {
       download: true,
       header: true,
       complete: results => {
@@ -90,22 +94,15 @@
     // 3) Filter on button click
     document.querySelectorAll('.nav-list button').forEach(btn => {
       btn.addEventListener('click', () => {
-        // highlight active
         document.querySelectorAll('.nav-list .active')
           .forEach(el => el.classList.remove('active'));
         btn.classList.add('active');
 
-        // apply filter
         const key = btn.dataset.filter;
         if (key === "") {
-          table
-            .search('')
-            .draw();
+          table.search('').draw();
         } else {
-          table
-            .column(4)          // “Source” column
-            .search(key, true, false)  // regex search, exact term
-            .draw();
+          table.column(4).search(key, true, false).draw();
         }
       });
     });
