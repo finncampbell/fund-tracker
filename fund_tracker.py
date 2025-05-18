@@ -14,6 +14,7 @@ API_KEY = os.getenv('CH_API_KEY')
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 API_LOG_FILE = 'api_logs.json'
+DATA_CSV = '_data/master_companies.csv'     # <-- new constant
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
 ]
@@ -152,6 +153,9 @@ def run_for_date_range(start_date, end_date):
         updated, added = update_master(master, df_new)
         export_to_excel(updated, MASTER_FILE)
         log_update(dstr, len(added))
+
+        # **NEW**: export for Jekyll dashboard
+        updated.to_csv(DATA_CSV, index=False)
 
         # Cleanup old tracker
         if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
