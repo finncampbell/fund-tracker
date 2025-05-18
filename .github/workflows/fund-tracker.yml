@@ -10,6 +10,10 @@ on:
         required: false
         default: 'today'  # If no date is specified, defaults to today's date
 
+permissions:
+  contents: write  # Grants write access to repository contents (e.g., files)
+  actions: read    # Can adjust this to read if actions permissions are not needed
+
 jobs:
   run-fund-tracker:
     runs-on: ubuntu-latest
