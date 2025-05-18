@@ -3,7 +3,12 @@ name: Fund Tracker Automation
 on:
   schedule:
     - cron: "*/10 * * * *"  # Every 10 minutes
-  workflow_dispatch:       # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to fetch (YYYY-MM-DD)'
+        required: false
+        default: 'today'  # If no date is specified, defaults to today's date
 
 jobs:
   run-fund-tracker:
@@ -27,7 +32,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run fund tracker script
-        run: python fund_tracker.py
+        run: |
+          if [ "${{ github.event.inputs.date }}" != "today" ]; then
+            python fund_tracker.py --date "${{ github.event.inputs.date }}"
+          else
+            python fund_tracker.py
+          fi
 
       - name: Check for changes
         id: changes
