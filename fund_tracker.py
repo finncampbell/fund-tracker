@@ -109,27 +109,36 @@ def log_update(date, added_count):
     with open(LOG_FILE, 'a') as f:
         f.write(log_line)
 
-def run_for_date(query_date):
+def run_for_date_range(start_date, end_date):
     pagination_tracker = load_json_file(PAGINATION_TRACKER)
-    last_index = pagination_tracker.get(query_date, 0)
-    new_discoveries, final_index = fetch_companies_for_date(API_KEY, query_date, SIC_CODES, KEYWORDS, last_index)
+    current_date = start_date
 
-    pagination_tracker[query_date] = final_index
-    save_json_file(pagination_tracker, PAGINATION_TRACKER)
+    # Process each day in the range
+    while current_date <= end_date:
+        last_index = pagination_tracker.get(current_date, 0)
+        new_discoveries, final_index = fetch_companies_for_date(API_KEY, current_date, SIC_CODES, KEYWORDS, last_index)
 
-    if os.path.exists(PAGINATION_TRACKER) and os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
-        os.remove(PAGINATION_TRACKER)
+        pagination_tracker[current_date] = final_index
+        save_json_file(pagination_tracker, PAGINATION_TRACKER)
 
-    master_df = load_existing_master(MASTER_FILE)
-    updated_master_df, newly_added = update_master(master_df, new_discoveries)
+        if os.path.exists(PAGINATION_TRACKER) and os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
+            os.remove(PAGINATION_TRACKER)
 
-    export_to_excel(updated_master_df, MASTER_FILE)
-    log_update(query_date, len(newly_added))
+        master_df = load_existing_master(MASTER_FILE)
+        updated_master_df, newly_added = update_master(master_df, new_discoveries)
+
+        export_to_excel(updated_master_df, MASTER_FILE)
+        log_update(current_date, len(newly_added))
+
+        current_date += timedelta(days=1)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the Companies House tracker.")
-    parser.add_argument("--date", type=str, help="Optional date to fetch (YYYY-MM-DD). Defaults to today.")
+    parser.add_argument("--start_date", type=str, help="Start date (YYYY-MM-DD). Defaults to today.")
+    parser.add_argument("--end_date", type=str, help="End date (YYYY-MM-DD). Defaults to today.")
     args = parser.parse_args()
 
-    query_date = args.date or datetime.today().strftime('%Y-%m-%d')
-    run_for_date(query_date)
+    start_date = args.start_date or datetime.today().strftime('%Y-%m-%d')
+    end_date = args.end_date or start_date
+
+    run_for_date_range(start_date, end_date)
