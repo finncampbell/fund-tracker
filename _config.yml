@@ -1,13 +1,8 @@
-# Tell Jekyll which theme to use
 theme: jekyll-theme-cayman
 
-# Site settings
 title: "Fund Tracker Dashboard"
 description: "Interactive Companies House dashboard using Jekyll + DataTables"
 
-# For project pages
-baseurl: "/your-repo"                # replace with your repo name
-url: "https://username.github.io"    # replace with your GitHub user/org
-
-# Don’t process future-dated posts
+baseurl: "/fund-tracker-dashboard"        # <- your repo name, with slash
+url: "https://finncampbell.github.io"     # <- your GitHub username
 future: false
