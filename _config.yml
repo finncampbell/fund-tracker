@@ -2,3 +2,7 @@ title: My Cayman Page
 description: >-
   Welcome to my GitHub Pages site using the Cayman theme!
 theme: jekyll-theme-cayman
+
+# --- for Project Pages ---
+baseurl: "/your-repo"
+url: "https://username.github.io"
