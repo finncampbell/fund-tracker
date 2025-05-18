@@ -46,11 +46,9 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add master_companies.xlsx update_log.csv || true
-          if git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
+          git add master_companies.xlsx update_log.csv
+          git diff --cached --quiet || echo "Changes detected"
+          echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
