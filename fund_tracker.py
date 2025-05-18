@@ -4,15 +4,14 @@ from datetime import datetime, timedelta
 import os
 import json
 import time
+import argparse
 
 # --- CONFIGURATION ---
 API_KEY = os.getenv('CH_API_KEY')
-INITIAL_SWEEP_DAYS = 7
 DAILY_UPDATE_INTERVAL_MINUTES = 10
 
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
-INITIAL_SWEEP_LOG = 'initial_sweep_log.json'
 LOG_FILE = 'update_log.csv'
 
 SIC_CODES = [
@@ -110,43 +109,27 @@ def log_update(date, added_count):
     with open(LOG_FILE, 'a') as f:
         f.write(log_line)
 
-if not API_KEY:
-    raise EnvironmentError("Missing CH_API_KEY environment variable.")
+def run_for_date(query_date):
+    pagination_tracker = load_json_file(PAGINATION_TRACKER)
+    last_index = pagination_tracker.get(query_date, 0)
+    new_discoveries, final_index = fetch_companies_for_date(API_KEY, query_date, SIC_CODES, KEYWORDS, last_index)
+
+    pagination_tracker[query_date] = final_index
+    save_json_file(pagination_tracker, PAGINATION_TRACKER)
+
+    if os.path.exists(PAGINATION_TRACKER) and os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
+        os.remove(PAGINATION_TRACKER)
+
+    master_df = load_existing_master(MASTER_FILE)
+    updated_master_df, newly_added = update_master(master_df, new_discoveries)
+
+    export_to_excel(updated_master_df, MASTER_FILE)
+    log_update(query_date, len(newly_added))
 
 if __name__ == "__main__":
-    while True:
-        today = datetime.today().strftime('%Y-%m-%d')
-        pagination_tracker = load_json_file(PAGINATION_TRACKER)
-        initial_sweep_log = load_json_file(INITIAL_SWEEP_LOG)
+    parser = argparse.ArgumentParser(description="Run the Companies House tracker.")
+    parser.add_argument("--date", type=str, help="Optional date to fetch (YYYY-MM-DD). Defaults to today.")
+    args = parser.parse_args()
 
-        new_discoveries = pd.DataFrame(columns=COLUMNS)  # <- FIX applied here
-
-        for days_ago in range(INITIAL_SWEEP_DAYS, -1, -1):
-            query_date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
-            if days_ago > 0 and initial_sweep_log.get(query_date):
-                continue
-
-            last_index = pagination_tracker.get(query_date, 0)
-            df_fetched, final_index = fetch_companies_for_date(API_KEY, query_date, SIC_CODES, KEYWORDS, last_index)
-            if not df_fetched.empty:
-                new_discoveries = pd.concat([new_discoveries, df_fetched], ignore_index=True)
-
-            if days_ago > 0:
-                initial_sweep_log[query_date] = True
-
-            pagination_tracker[query_date] = final_index
-
-        save_json_file(pagination_tracker, PAGINATION_TRACKER)
-        save_json_file(initial_sweep_log, INITIAL_SWEEP_LOG)
-
-        for file in [PAGINATION_TRACKER, INITIAL_SWEEP_LOG]:
-            if os.path.exists(file) and os.path.getmtime(file) < time.time() - 30 * 86400:
-                os.remove(file)
-
-        master_df = load_existing_master(MASTER_FILE)
-        updated_master_df, newly_added = update_master(master_df, new_discoveries)
-
-        export_to_excel(updated_master_df, MASTER_FILE)
-        log_update(today, len(newly_added))
-
-        time.sleep(DAILY_UPDATE_INTERVAL_MINUTES * 60)
+    query_date = args.date or datetime.today().strftime('%Y-%m-%d')
+    run_for_date(query_date)
