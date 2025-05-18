@@ -5,18 +5,36 @@ layout: default
 
 <nav class="site-nav">
   <ul class="nav-list">
-    <li><a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">All</a></li>
-    <li><a href="{{ site.baseurl }}/ventures/" class="{% if page.url == '/ventures/' %}active{% endif %}">Ventures</a></li>
-    <li><a href="{{ site.baseurl }}/capital/" class="{% if page.url == '/capital/' %}active{% endif %}">Capital</a></li>
-    <li><a href="{{ site.baseurl }}/equity/" class="{% if page.url == '/equity/' %}active{% endif %}">Equity</a></li>
-    <li><a href="{{ site.baseurl }}/advisors/" class="{% if page.url == '/advisors/' %}active{% endif %}">Advisors</a></li>
-    <li><a href="{{ site.baseurl }}/partners/" class="{% if page.url == '/partners/' %}active{% endif %}">Partners</a></li>
-    <li><a href="{{ site.baseurl }}/sic/" class="{% if page.url == '/sic/' %}active{% endif %}">SIC Codes</a></li>
-    <li><a href="{{ site.baseurl }}/fund-structures/" class="{% if page.url == '/fund-structures/' %}active{% endif %}">Fund Structures</a></li>
+    <li><a href="{{ site.baseurl }}/"                 class="{% if page.title == 'All Companies' %}active{% endif %}">All</a></li>
+    <li><a href="{{ site.baseurl }}/ventures/"        class="{% if page.title == 'Ventures' %}active{% endif %}">Ventures</a></li>
+    <li><a href="{{ site.baseurl }}/capital/"         class="{% if page.title == 'Capital' %}active{% endif %}">Capital</a></li>
+    <li><a href="{{ site.baseurl }}/equity/"          class="{% if page.title == 'Equity' %}active{% endif %}">Equity</a></li>
+    <li><a href="{{ site.baseurl }}/advisors/"        class="{% if page.title == 'Advisors' %}active{% endif %}">Advisors</a></li>
+    <li><a href="{{ site.baseurl }}/partners/"        class="{% if page.title == 'Partners' %}active{% endif %}">Partners</a></li>
+    <li><a href="{{ site.baseurl }}/sic/"             class="{% if page.title == 'SIC Codes' %}active{% endif %}">SIC Codes</a></li>
+    <li><a href="{{ site.baseurl }}/fund-structures/" class="{% if page.title == 'Fund Structures' %}active{% endif %}">Fund Structures</a></li>
   </ul>
 </nav>
 
 <h1>{{ page.title }}</h1>
+
+{% assign rows = site.data.master_companies %}
+
+{% if page.title == 'Ventures' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Ventures'" %}
+{% elsif page.title == 'Capital' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Capital'" %}
+{% elsif page.title == 'Equity' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Equity'" %}
+{% elsif page.title == 'Advisors' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Advisors'" %}
+{% elsif page.title == 'Partners' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'Partners'" %}
+{% elsif page.title == 'SIC Codes' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'SIC'" %}
+{% elsif page.title == 'Fund Structures' %}
+  {% assign rows = site.data.master_companies | where_exp: "r", "r.Source contains 'fund' or r.Source contains 'gp' or r.Source contains 'lp' or r.Source contains 'llp'" %}
+{% endif %}
 
 <table>
   <thead>
@@ -27,17 +45,6 @@ layout: default
     </tr>
   </thead>
   <tbody>
-    {% assign rows = site.data.master_companies %}
-
-    {% if page.url == '/fund-structures/' %}
-      {% assign expr = "r.Source contains 'fund' or r.Source contains 'gp' or r.Source contains 'lp' or r.Source contains 'llp'" %}
-      {% assign rows = rows | where_exp: "r", expr %}
-
-    {% elsif page.filter %}
-      {% assign expr = "r.Source contains '" | append: page.filter | append: "'" %}
-      {% assign rows = rows | where_exp: "r", expr %}
-    {% endif %}
-
     {% for r in rows %}
       <tr>
         {% for v in r %}
