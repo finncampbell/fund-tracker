@@ -1,8 +1,7 @@
-title: My Cayman Page
-description: >-
-  Welcome to my GitHub Pages site using the Cayman theme!
+title: "My Cayman Page"
+description: "Welcome to my GitHub Pages site using the Cayman theme!"
 theme: jekyll-theme-cayman
 
-# --- for Project Pages ---
-baseurl: "/your-repo"
-url: "https://username.github.io"
+# For project pages (if your repo isn’t a user/organization site):
+baseurl: "/your-repo"        # replace with your repo name, or "" if it's a user site
+url: "https://username.github.io"  # replace username
