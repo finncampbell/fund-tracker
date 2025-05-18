@@ -1,26 +1,42 @@
-import requests
-import pandas as pd
-from datetime import datetime, timedelta
 import os
 import json
 import time
+import logging
+from datetime import datetime, timedelta
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+import pandas as pd
 import argparse
 
 # --- CONFIGURATION ---
 API_KEY = os.getenv('CH_API_KEY')
-DAILY_UPDATE_INTERVAL_MINUTES = 10
-
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
-LOG_FILE = 'update_log.csv'
-
+API_LOG_FILE = 'api_logs.json'
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
 ]
-
 KEYWORDS = ['capital', 'fund', 'ventures', 'partners', 'gp', 'lp', 'llp', 'investments', 'equity', 'advisors']
-
 COLUMNS = ['Company Name', 'Company Number', 'Incorporation Date', 'Status', 'Source', 'Time Discovered']
+
+# Setup structured logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s',
+    handlers=[logging.FileHandler(API_LOG_FILE), logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)
+
+# HTTP retry strategy
+retry_strategy = Retry(
+    total=3,
+    status_forcelist=[429, 500, 502, 503, 504],
+    backoff_factor=1
+)
+session = requests.Session()
+session.mount('https://', HTTPAdapter(max_retries=retry_strategy))
+session.auth = (API_KEY, '')
 
 def load_json_file(path):
     if os.path.exists(path):
@@ -30,11 +46,10 @@ def load_json_file(path):
 
 def save_json_file(data, path):
     with open(path, 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=2)
 
-def fetch_companies_for_date(api_key, query_date, sic_codes, keywords, last_index=0):
-    base_url = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-    headers = {'Authorization': api_key}
+def fetch_companies_for_date(query_date, last_index=0):
+    url = 'https://api.company-information.service.gov.uk/advanced-search/companies'
     all_results = []
     start_index = last_index
 
@@ -45,11 +60,14 @@ def fetch_companies_for_date(api_key, query_date, sic_codes, keywords, last_inde
             'start_index': start_index,
             'size': 50
         }
-        response = requests.get(base_url, headers=headers, params=params)
-        if response.status_code != 200:
+        try:
+            resp = session.get(url, params=params)
+            resp.raise_for_status()
+        except requests.HTTPError as e:
+            logger.error(f"API error on {query_date} at index {start_index}: {e}")
             break
 
-        data = response.json()
+        data = resp.json()
         items = data.get('items', [])
         if not items:
             break
@@ -57,13 +75,10 @@ def fetch_companies_for_date(api_key, query_date, sic_codes, keywords, last_inde
         for item in items:
             name = item.get('company_name', '').lower()
             matched_by = []
-
             if any(code in SIC_CODES for code in item.get('sic_codes', [])):
                 matched_by.append('SIC')
-
             if any(kw in name for kw in KEYWORDS):
                 matched_by.append('Keyword')
-
             if matched_by:
                 all_results.append({
                     'Company Name': item.get('company_name'),
@@ -84,66 +99,54 @@ def fetch_companies_for_date(api_key, query_date, sic_codes, keywords, last_inde
 def load_existing_master(path):
     if os.path.exists(path):
         return pd.read_excel(path)
-    else:
-        return pd.DataFrame(columns=COLUMNS + ['Date Downloaded'])
+    return pd.DataFrame(columns=COLUMNS + ['Date Downloaded'])
 
 def update_master(master_df, new_df):
     today_str = datetime.today().strftime('%Y-%m-%d')
     new_entries = new_df[~new_df['Company Number'].isin(master_df['Company Number'])].copy()
     new_entries['Date Downloaded'] = today_str
-    updated_master = pd.concat([master_df, new_entries], ignore_index=True)
-    updated_master.drop_duplicates(subset='Company Number', inplace=True)
-    return updated_master, new_entries
+    updated = pd.concat([master_df, new_entries], ignore_index=True)
+    updated.drop_duplicates(subset='Company Number', inplace=True)
+    return updated, new_entries
 
 def export_to_excel(df, filename):
     df.to_excel(filename, index=False)
 
 def log_update(date, added_count):
-    if added_count == 0:
-        return
-    log_line = f"{date},{added_count},{datetime.now().strftime('%H:%M:%S')}\n"
-    header = "Date,Companies Added,Run Time\n"
-    if not os.path.exists(LOG_FILE):
-        with open(LOG_FILE, 'w') as f:
-            f.write(header)
-    with open(LOG_FILE, 'a') as f:
-        f.write(log_line)
+    logs = load_json_file(API_LOG_FILE)
+    entry = {"Date": date, "Added": added_count, "Time": datetime.now().strftime('%H:%M:%S')}
+    logs.setdefault(date, []).append(entry)
+    save_json_file(logs, API_LOG_FILE)
 
 def run_for_date_range(start_date, end_date):
-    pagination_tracker = load_json_file(PAGINATION_TRACKER)
+    pagination = load_json_file(PAGINATION_TRACKER)
+    current = datetime.strptime(start_date, '%Y-%m-%d')
+    end = datetime.strptime(end_date, '%Y-%m-%d')
 
-    # Convert string dates to datetime objects
-    current_date = datetime.strptime(start_date, '%Y-%m-%d')
-    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+    while current <= end:
+        dstr = current.strftime('%Y-%m-%d')
+        last = pagination.get(dstr, 0)
+        df_new, new_index = fetch_companies_for_date(dstr, last)
+        pagination[dstr] = new_index
+        save_json_file(pagination, PAGINATION_TRACKER)
 
-    # Process each day in the range
-    while current_date <= end_date:
-        formatted_date = current_date.strftime('%Y-%m-%d')  # Convert back to string for API query
-        last_index = pagination_tracker.get(formatted_date, 0)
-        new_discoveries, final_index = fetch_companies_for_date(API_KEY, formatted_date, SIC_CODES, KEYWORDS, last_index)
+        master = load_existing_master(MASTER_FILE)
+        updated, added = update_master(master, df_new)
+        export_to_excel(updated, MASTER_FILE)
+        log_update(dstr, len(added))
 
-        pagination_tracker[formatted_date] = final_index
-        save_json_file(pagination_tracker, PAGINATION_TRACKER)
-
-        if os.path.exists(PAGINATION_TRACKER) and os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
+        # Cleanup old tracker
+        if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30*86400:
             os.remove(PAGINATION_TRACKER)
 
-        master_df = load_existing_master(MASTER_FILE)
-        updated_master_df, newly_added = update_master(master_df, new_discoveries)
-
-        export_to_excel(updated_master_df, MASTER_FILE)
-        log_update(formatted_date, len(newly_added))
-
-        # Increment the date
-        current_date += timedelta(days=1)
+        current += timedelta(days=1)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run the Companies House tracker.")
-    parser.add_argument("--start_date", type=str, help="Start date (YYYY-MM-DD). Defaults to today.")
-    parser.add_argument("--end_date", type=str, help="End date (YYYY-MM-DD). Defaults to today.")
+    parser = argparse.ArgumentParser(description="Run Companies House tracker.")
+    parser.add_argument("--start_date", type=str, help="YYYY-MM-DD", default=datetime.today().strftime('%Y-%m-%d'))
+    parser.add_argument("--end_date", type=str, help="YYYY-MM-DD")
     args = parser.parse_args()
-
-    start_date = args.start_date or datetime.today().strftime('%Y-%m-%d')
-    end_date = args.end_date or start_date
-
-    run_for_date_range(start_date, end_date)
+    sd = args.start_date
+    ed = args.end_date or sd
+    logger.info(f"Starting run: {sd} to {ed}")
+    run_for_date_range(sd, ed)
