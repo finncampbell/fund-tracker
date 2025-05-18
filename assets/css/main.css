@@ -1,36 +1,46 @@
-/* NAV BAR CONTAINER */
+/* Site-wide nav bar container */
 .site-nav {
   background: #fff;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 
-/* HORIZONTAL LIST */
+/* Horizontal list of filter buttons */
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin: 0;
+  gap: 1rem;
   padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-/* LINKS */
-.nav-list a {
-  text-decoration: none;
-  color: #333;
+/* Base button styling */
+.nav-list button {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
-  padding: 0.25rem 0;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
-}
-.nav-list a:hover {
-  color: #0366d6;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* ACTIVE LINK */
-.nav-list a.active {
-  font-weight: 600;
-  color: #0366d6;
-  border-bottom: 3px solid #0366d6;
+/* Hover state */
+.nav-list button:hover {
+  background: #e6e6e6;
+}
+
+/* Active (selected) filter */
+.nav-list button.active {
+  background: #0366d6;
+  border-color: #0366d6;
+  color: #fff;
+}
+
+/* Remove default list-item bullet */
+.site-nav ul {
+  list-style-type: none;
 }
