@@ -17,14 +17,23 @@ API_LOG_FILE = 'api_logs.json'
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
 ]
-KEYWORDS = ['capital', 'fund', 'ventures', 'partners', 'gp', 'lp', 'llp', 'investments', 'equity', 'advisors']
-COLUMNS = ['Company Name', 'Company Number', 'Incorporation Date', 'Status', 'Source', 'Time Discovered']
+KEYWORDS = [
+    'capital', 'fund', 'ventures', 'partners', 'gp', 'lp', 'llp',
+    'investments', 'equity', 'advisors'
+]
+COLUMNS = [
+    'Company Name', 'Company Number', 'Incorporation Date',
+    'Status', 'Source', 'Time Discovered'
+]
 
 # Setup structured logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s',
-    handlers=[logging.FileHandler(API_LOG_FILE), logging.StreamHandler()]
+    handlers=[
+        logging.FileHandler(API_LOG_FILE),
+        logging.StreamHandler()
+    ]
 )
 logger = logging.getLogger(__name__)
 
@@ -39,9 +48,14 @@ session.mount('https://', HTTPAdapter(max_retries=retry_strategy))
 session.auth = (API_KEY, '')
 
 def load_json_file(path):
+    """Load JSON or return empty dict if missing or malformed."""
     if os.path.exists(path):
-        with open(path, 'r') as f:
-            return json.load(f)
+        try:
+            with open(path, 'r') as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            logger.warning(f"Corrupt JSON in {path}, resetting.")
+            return {}
     return {}
 
 def save_json_file(data, path):
@@ -114,7 +128,11 @@ def export_to_excel(df, filename):
 
 def log_update(date, added_count):
     logs = load_json_file(API_LOG_FILE)
-    entry = {"Date": date, "Added": added_count, "Time": datetime.now().strftime('%H:%M:%S')}
+    entry = {
+        "Date": date,
+        "Added": added_count,
+        "Time": datetime.now().strftime('%H:%M:%S')
+    }
     logs.setdefault(date, []).append(entry)
     save_json_file(logs, API_LOG_FILE)
 
@@ -143,12 +161,18 @@ def run_for_date_range(start_date, end_date):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Companies House tracker.")
-    parser.add_argument("--start_date", type=str,
-                        help="YYYY-MM-DD or literal 'today'",
-                        default="today")
-    parser.add_argument("--end_date", type=str,
-                        help="YYYY-MM-DD or literal 'today'",
-                        default="today")
+    parser.add_argument(
+        "--start_date",
+        type=str,
+        help="YYYY-MM-DD or literal 'today'",
+        default="today"
+    )
+    parser.add_argument(
+        "--end_date",
+        type=str,
+        help="YYYY-MM-DD or literal 'today'",
+        default="today"
+    )
     args = parser.parse_args()
 
     # Interpret “today” placeholders
