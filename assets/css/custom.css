@@ -16,7 +16,8 @@
   cursor: pointer;
   font-size: 1em;
 }
-.site-nav button.active, .site-nav button:hover {
+.site-nav button.active,
+.site-nav button:hover {
   background: #1abc9c;
   color: #fff;
   border-color: #1abc9c;
