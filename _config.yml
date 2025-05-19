@@ -7,3 +7,8 @@ baseurl: "/fund-tracker-dashboard"
 url: "https://finncampbell.github.io"
 
 future: false
+
+exclude:
+  - master_companies.xlsx
+  - fund_tracker.log
+  - api_logs.json
