@@ -1,11 +1,12 @@
 ---
 layout: default
 title: "Fund Tracker Dashboard"
+permalink: /
 ---
 
 ## Fund Tracker Dashboard
 
-<div class="site-nav">
+<div class="ft-nav">
   <button data-filter="" class="active">All</button>
   <button data-filter="Ventures">Ventures</button>
   <button data-filter="Capital">Capital</button>
@@ -41,7 +42,7 @@ title: "Fund Tracker Dashboard"
 <script>
   let table;
 
-  // 1) Load the CSV data
+  // Load CSV and initialize DataTable
   Papa.parse("{{ '/assets/data/master_companies.csv' | relative_url }}", {
     download: true,
     header: true,
@@ -57,19 +58,24 @@ title: "Fund Tracker Dashboard"
           { data: 'Time Discovered' },
           { data: 'Date Downloaded' }
         ],
-        pageLength: 25
+        order: [[2, 'desc']],      // newest incorporations first
+        pageLength: 25,
+        responsive: true
       });
-    }
+    },
+    error: err => console.error('CSV load error:', err)
   });
 
-  // 2) Wire up the filter buttons
-  document.querySelectorAll('.site-nav button').forEach(btn => {
+  // Wire up the filter buttons
+  document.querySelectorAll('.ft-nav button').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelector('.site-nav button.active').classList.remove('active');
+      document.querySelector('.ft-nav button.active').classList.remove('active');
       btn.classList.add('active');
       const key = btn.dataset.filter;
+
       if (!key) {
-        table.search('').draw();
+        // clear only the Source column filter
+        table.column(4).search('').draw();
       } else {
         table.column(4).search(key, true, false).draw();
       }
