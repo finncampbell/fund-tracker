@@ -1,30 +1,29 @@
-// 🔥 Quick check that this file *is* loading:
+// 🔥 Check that the file loads:
 console.log('🔥 dashboard.js loaded');
 
 $(document).ready(function() {
-  const csvUrl = 'assets/data/master_companies.csv';
+  var csvUrl = 'assets/data/master_companies.csv';
 
-  // inject a visible debug banner
-  $('body').prepend(`
-    <div id="ft-debug"
-         style="background:#ffecec;color:#900;padding:0.5em;text-align:center;">
-      Loading…
-    </div>
-  `);
+  // inject a debug banner at the top
+  $('body').prepend(
+    '<div id="ft-debug" ' +
+    'style="background:#ffecec;color:#900;padding:0.5em;text-align:center;">' +
+    'Loading…' +
+    '</div>'
+  );
 
   Papa.parse(csvUrl, {
     download: true,
     header: true,
     complete: function(results) {
-      // report how many rows we got
-      $('#ft-debug').text(\`Debug: loaded \${results.data.length} rows\`);
-      if (!results.data.length) {
-        console.error('🏷️ CSV parsed to zero rows', results);
+      var count = results.data.length;
+      $('#ft-debug').text('Debug: loaded ' + count + ' rows');
+      if (count === 0) {
+        console.error('🚨 CSV parsed to zero rows', results);
         return;
       }
 
-      // initialize DataTable
-      const table = $('#companies').DataTable({
+      var table = $('#companies').DataTable({
         data: results.data,
         columns: [
           { data: 'Company Name' },
@@ -40,16 +39,16 @@ $(document).ready(function() {
         responsive: true
       });
 
-      // wire up filter buttons
+      // filter buttons
       $('.ft-btn').on('click', function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
-        const f = $(this).data('filter') || '';
-        table.column(4).search(f).draw();
+        var filter = $(this).data('filter') || '';
+        table.column(4).search(filter).draw();
       });
     },
     error: function(err) {
-      $('#ft-debug').text('❌ Error loading CSV—see console');
+      $('#ft-debug').text('❌ Error loading CSV—check console');
       console.error('CSV load error', err);
     }
   });
