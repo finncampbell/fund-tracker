@@ -14,8 +14,7 @@ API_KEY = os.getenv('CH_API_KEY')
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 API_LOG_FILE = 'api_logs.json'
-DATA_CSV_PUBLIC = 'assets/data/master_companies.csv'   # <-- public for DataTables/Jekyll
-DATA_CSV_JEKYLL = '_data/master_companies.csv'         # <-- optional, for Jekyll/Liquid use
+DATA_CSV_PUBLIC = 'assets/data/master_companies.csv'
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
 ]
@@ -25,10 +24,10 @@ KEYWORDS = [
 ]
 COLUMNS = [
     'Company Name', 'Company Number', 'Incorporation Date',
-    'Status', 'Source', 'Time Discovered'
+    'Status', 'Source', 'Time Discovered', 'Date Downloaded'
 ]
 
-# Setup structured logging
+# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s',
@@ -39,7 +38,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# HTTP retry strategy
+# HTTP retry
 retry_strategy = Retry(
     total=3,
     status_forcelist=[429, 500, 502, 503, 504],
@@ -50,7 +49,6 @@ session.mount('https://', HTTPAdapter(max_retries=retry_strategy))
 session.auth = (API_KEY, '')
 
 def load_json_file(path):
-    """Load JSON or return empty dict if missing or malformed."""
     if os.path.exists(path):
         try:
             with open(path, 'r') as f:
@@ -102,7 +100,8 @@ def fetch_companies_for_date(query_date, last_index=0):
                     'Incorporation Date': item.get('date_of_creation'),
                     'Status': item.get('company_status'),
                     'Source': '+'.join(sorted(set(matched_by))),
-                    'Time Discovered': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    'Time Discovered': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    'Date Downloaded': datetime.today().strftime('%Y-%m-%d')
                 })
 
         start_index += 50
@@ -115,12 +114,10 @@ def fetch_companies_for_date(query_date, last_index=0):
 def load_existing_master(path):
     if os.path.exists(path):
         return pd.read_excel(path)
-    return pd.DataFrame(columns=COLUMNS + ['Date Downloaded'])
+    return pd.DataFrame(columns=COLUMNS)
 
 def update_master(master_df, new_df):
-    today_str = datetime.today().strftime('%Y-%m-%d')
     new_entries = new_df[~new_df['Company Number'].isin(master_df['Company Number'])].copy()
-    new_entries['Date Downloaded'] = today_str
     updated = pd.concat([master_df, new_entries], ignore_index=True)
     updated.drop_duplicates(subset='Company Number', inplace=True)
     return updated, new_entries
@@ -145,25 +142,25 @@ def run_for_date_range(start_date, end_date):
 
     while current <= end:
         dstr = current.strftime('%Y-%m-%d')
-        last = pagination.get(dstr, 0)
-        df_new, new_index = fetch_companies_for_date(dstr, last)
+        last_index = pagination.get(dstr, 0)
+
+        df_new, new_index = fetch_companies_for_date(dstr, last_index)
         pagination[dstr] = new_index
         save_json_file(pagination, PAGINATION_TRACKER)
 
-        master = load_existing_master(MASTER_FILE)
-        updated, added = update_master(master, df_new)
-        export_to_excel(updated, MASTER_FILE)
-        log_update(dstr, len(added))
+        master_df = load_existing_master(MASTER_FILE)
+        updated_df, added_df = update_master(master_df, df_new)
+        export_to_excel(updated_df, MASTER_FILE)
+        log_update(dstr, len(added_df))
 
-        # Export for dashboard (public)
-        if not os.path.exists(os.path.dirname(DATA_CSV_PUBLIC)):
-            os.makedirs(os.path.dirname(DATA_CSV_PUBLIC), exist_ok=True)
-        updated.to_csv(DATA_CSV_PUBLIC, index=False)
-
-        # Optionally also for Jekyll/Liquid use
-        if not os.path.exists(os.path.dirname(DATA_CSV_JEKYLL)):
-            os.makedirs(os.path.dirname(DATA_CSV_JEKYLL), exist_ok=True)
-        updated.to_csv(DATA_CSV_JEKYLL, index=False)
+        # Reorder & export only public CSV for JS dashboard
+        os.makedirs(os.path.dirname(DATA_CSV_PUBLIC), exist_ok=True)
+        export_cols = [
+          'Company Name','Company Number','Incorporation Date',
+          'Status','Source','Date Downloaded','Time Discovered'
+        ]
+        updated_df = updated_df[export_cols]
+        updated_df.to_csv(DATA_CSV_PUBLIC, index=False)
 
         # Cleanup old tracker
         if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
@@ -173,24 +170,15 @@ def run_for_date_range(start_date, end_date):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Companies House tracker.")
-    parser.add_argument(
-        "--start_date",
-        type=str,
-        help="YYYY-MM-DD or literal 'today'",
-        default="today"
-    )
-    parser.add_argument(
-        "--end_date",
-        type=str,
-        help="YYYY-MM-DD or literal 'today'",
-        default="today"
-    )
+    parser.add_argument("--start_date", type=str, default="today",
+                        help="YYYY-MM-DD or literal 'today'")
+    parser.add_argument("--end_date", type=str, default="today",
+                        help="YYYY-MM-DD or literal 'today'")
     args = parser.parse_args()
 
-    # Interpret “today” placeholders
-    today_str = datetime.today().strftime('%Y-%m-%d')
-    sd = today_str if args.start_date.lower() == 'today' else args.start_date
-    ed = today_str if args.end_date.lower() == 'today' else args.end_date
+    today = datetime.today().strftime('%Y-%m-%d')
+    sd = today if args.start_date.lower() == 'today' else args.start_date
+    ed = today if args.end_date.lower() == 'today' else args.end_date
 
     logger.info(f"Starting run: {sd} to {ed}")
     run_for_date_range(sd, ed)
