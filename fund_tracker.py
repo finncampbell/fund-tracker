@@ -74,7 +74,8 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
                 now = datetime.utcnow()
                 return [
                     {
-                        'Company Name':       c.get('title'),
+                        # fallback to company_name if title is missing
+                        'Company Name':       c.get('title') or c.get('company_name') or '',
                         'Company Number':     c.get('company_number'),
                         'Incorporation Date': c.get('date_of_creation'),
                         'Status':             c.get('company_status'),
@@ -104,7 +105,6 @@ def run_for_date_range(start_date: str, end_date: str):
         logger.error("start_date cannot be after end_date")
         sys.exit(1)
 
-    # Gather today’s (or requested range’s) new records
     new_records = []
     current = sd
     while current <= ed:
@@ -130,6 +130,7 @@ def run_for_date_range(start_date: str, end_date: str):
         # Combine, dedupe on Company Number (keep existing first)
         df = pd.concat([df_master, df_new], ignore_index=True)
         df.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
+        # Sort by Incorporation Date newest first
         df.sort_values('Incorporation Date', ascending=False, inplace=True)
 
         # Write updated master files
@@ -162,4 +163,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
