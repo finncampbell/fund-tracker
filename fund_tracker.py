@@ -3,6 +3,7 @@ import json
 import time
 import logging
 from datetime import datetime, timedelta
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -14,6 +15,7 @@ API_KEY = os.getenv('CH_API_KEY')
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 API_LOG_FILE = 'api_logs.json'
+LOG_FILE = 'fund_tracker.log'
 DATA_CSV_PUBLIC = 'assets/data/master_companies.csv'
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
@@ -24,21 +26,21 @@ KEYWORDS = [
 ]
 COLUMNS = [
     'Company Name', 'Company Number', 'Incorporation Date',
-    'Status', 'Source', 'Time Discovered', 'Date Downloaded'
+    'Status', 'Source', 'Date Downloaded', 'Time Discovered'
 ]
 
-# Setup logging
+# Setup structured logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s',
     handlers=[
-        logging.FileHandler(API_LOG_FILE),
+        logging.FileHandler(LOG_FILE),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
-# HTTP retry
+# HTTP retry strategy
 retry_strategy = Retry(
     total=3,
     status_forcelist=[429, 500, 502, 503, 504],
@@ -77,8 +79,8 @@ def fetch_companies_for_date(query_date, last_index=0):
         try:
             resp = session.get(url, params=params)
             resp.raise_for_status()
-        except requests.HTTPError as e:
-            logger.error(f"API error on {query_date} at index {start_index}: {e}")
+        except requests.RequestException as e:
+            logger.error(f"API request error on {query_date} at index {start_index}: {e}")
             break
 
         data = resp.json()
@@ -100,8 +102,8 @@ def fetch_companies_for_date(query_date, last_index=0):
                     'Incorporation Date': item.get('date_of_creation'),
                     'Status': item.get('company_status'),
                     'Source': '+'.join(sorted(set(matched_by))),
-                    'Time Discovered': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                    'Date Downloaded': datetime.today().strftime('%Y-%m-%d')
+                    'Date Downloaded': datetime.today().strftime('%Y-%m-%d'),
+                    'Time Discovered': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 })
 
         start_index += 50
@@ -156,8 +158,8 @@ def run_for_date_range(start_date, end_date):
         # Reorder & export only public CSV for JS dashboard
         os.makedirs(os.path.dirname(DATA_CSV_PUBLIC), exist_ok=True)
         export_cols = [
-          'Company Name','Company Number','Incorporation Date',
-          'Status','Source','Date Downloaded','Time Discovered'
+            'Company Name', 'Company Number', 'Incorporation Date',
+            'Status', 'Source', 'Date Downloaded', 'Time Discovered'
         ]
         updated_df = updated_df[export_cols]
         updated_df.to_csv(DATA_CSV_PUBLIC, index=False)
@@ -176,9 +178,9 @@ if __name__ == "__main__":
                         help="YYYY-MM-DD or literal 'today'")
     args = parser.parse_args()
 
-    today = datetime.today().strftime('%Y-%m-%d')
-    sd = today if args.start_date.lower() == 'today' else args.start_date
-    ed = today if args.end_date.lower() == 'today' else args.end_date
+    today_str = datetime.today().strftime('%Y-%m-%d')
+    sd = today_str if args.start_date.lower() == 'today' else args.start_date
+    ed = today_str if args.end_date.lower() == 'today' else args.end_date
 
     logger.info(f"Starting run: {sd} to {ed}")
     run_for_date_range(sd, ed)
