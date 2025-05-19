@@ -2,13 +2,11 @@
 """
 fund_tracker.py
 
-Hourly GitHub Action that:
+Hourly GH Action that:
 - Fetches Companies House data by incorporation date
 - Retries on transient errors
-- Logs failures to fund_tracker.log
-- **Appends** new successes to:
-    • master_companies.xlsx
-    • assets/data/master_companies.csv
+- Logs failures
+- Always rewrites master_companies.xlsx & assets/data/master_companies.csv
 """
 
 import argparse
@@ -21,52 +19,40 @@ from datetime import date, datetime, timedelta
 import requests
 import pandas as pd
 
-# ─────── CONFIGURATION ─────────────────────────────────────────────────────────
-CH_API_URL       = 'https://api.company-information.service.gov.uk/search/companies'
-OUTPUT_EXCEL     = 'master_companies.xlsx'
-OUTPUT_CSV       = 'assets/data/master_companies.csv'
-LOG_FILE         = 'fund_tracker.log'
-RETRY_COUNT      = 3
-RETRY_DELAY      = 5  # seconds between retries
-ITEMS_PER_PAGE   = 100
-# ───────────────────────────────────────────────────────────────────────────────
+# CONFIG
+CH_API_URL     = 'https://api.company-information.service.gov.uk/search/companies'
+OUTPUT_EXCEL   = 'master_companies.xlsx'
+OUTPUT_CSV     = 'assets/data/master_companies.csv'
+LOG_FILE       = 'fund_tracker.log'
+RETRY_COUNT    = 3
+RETRY_DELAY    = 5
+ITEMS_PER_PAGE = 100
 
-# Set up logging
+# Logging
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s'
 )
 logger = logging.getLogger(__name__)
-# also log warnings/errors to console
 console = logging.StreamHandler(sys.stdout)
 console.setLevel(logging.WARNING)
 logger.addHandler(console)
 
-
 def normalize_date(d: str) -> str:
-    """
-    If d is empty or 'today' (case-insensitive), return today's date (YYYY-MM-DD).
-    Otherwise return d unchanged.
-    """
-    if not d or d.strip().lower() == 'today':
+    """Empty or 'today' → YYYY-MM-DD of today; else return d."""
+    if not d or str(d).strip().lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     return d
 
-
 def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
-    """
-    Fetch up to ITEMS_PER_PAGE companies incorporated on date_str.
-    Retries on transient errors, returns list of dicts (or [] on permanent failure).
-    """
     auth = (api_key, '')
     params = {
         'incorporated_from': date_str,
         'incorporated_to':   date_str,
         'items_per_page':    ITEMS_PER_PAGE
     }
-
-    for attempt in range(1, RETRY_COUNT + 1):
+    for attempt in range(1, RETRY_COUNT+1):
         try:
             resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
             if resp.status_code == 200:
@@ -86,82 +72,53 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
                 ]
             else:
                 logger.warning(f'Non-200 ({resp.status_code}) on {date_str}, attempt {attempt}')
-        except requests.RequestException as e:
+        except Exception as e:
             logger.warning(f'Error on {date_str}, attempt {attempt}: {e}')
         time.sleep(RETRY_DELAY)
-
     logger.error(f'Failed to fetch data for {date_str} after {RETRY_COUNT} attempts')
     return []
 
-
 def run_for_date_range(start_date: str, end_date: str):
-    """
-    Fetch each day’s records, then append them to the master CSV/XLSX.
-    """
     sd = datetime.strptime(start_date, '%Y-%m-%d')
     ed = datetime.strptime(end_date,   '%Y-%m-%d')
     if sd > ed:
         logger.error("start_date cannot be after end_date")
         sys.exit(1)
 
-    # Collect new records
-    new_records = []
-    current = sd
-    while current <= ed:
-        ds = current.strftime('%Y-%m-%d')
+    records = []
+    cur = sd
+    while cur <= ed:
+        ds = cur.strftime('%Y-%m-%d')
         logger.info(f'Fetching companies for {ds}')
-        new_records.extend(fetch_companies_on(ds, API_KEY))
-        current += timedelta(days=1)
+        records.extend(fetch_companies_on(ds, API_KEY))
+        cur += timedelta(days=1)
 
-    # Ensure assets/data exists
+    # Ensure assets/data exists before writing
     os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
 
-    # Load existing master (if any)
-    if os.path.exists(OUTPUT_CSV):
-        df_master = pd.read_csv(OUTPUT_CSV)
-    else:
-        df_master = pd.DataFrame(columns=[
-            'Company Name','Company Number','Incorporation Date',
-            'Status','Source','Date Downloaded','Time Discovered'
-        ])
-
-    # Append & dedupe
-    if new_records:
-        df_new = pd.DataFrame(new_records)
-        df = pd.concat([df_master, df_new], ignore_index=True)
-        # Drop duplicates by Company Number, keep first (oldest)
-        df.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
-        df.sort_values('Incorporation Date', ascending=False, inplace=True)
-        # Write out
-        df.to_excel(OUTPUT_EXCEL, index=False)
-        df.to_csv(OUTPUT_CSV, index=False)
-        logger.info(f'Appended {len(df_new)} new rows; master now has {len(df)} records')
-    else:
-        logger.info('No new records to append')
-
+    # Always rewrite both files
+    df = pd.DataFrame(records)
+    df.to_excel(OUTPUT_EXCEL, index=False)
+    df.to_csv(OUTPUT_CSV, index=False)
+    logger.info(f'Wrote {len(df)} records to {OUTPUT_EXCEL} & {OUTPUT_CSV}')
 
 def main():
     global API_KEY
-    parser = argparse.ArgumentParser(
-        description='Fetch Companies House data by incorporation date'
-    )
-    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
-    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
-    args = parser.parse_args()
+    p = argparse.ArgumentParser(description='Fetch Companies House data')
+    p.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
+    p.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
+    args = p.parse_args()
 
-    # Read API key
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
-        logger.error('Environment variable CH_API_KEY is not set')
+        logger.error('CH_API_KEY not set')
         sys.exit(1)
 
-    # Normalize & log
+    # Normalize empty or "today" values
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
     logger.info(f'Starting run: {sd} → {ed}')
-
     run_for_date_range(sd, ed)
-
 
 if __name__ == '__main__':
     main()
