@@ -1,186 +1,165 @@
-import os
-import json
-import time
+#!/usr/bin/env python3
+"""
+fund_tracker.py
+
+Hourly GitHub Action that:
+- Fetches Companies House data by incorporation date
+- Retries on transient errors
+- Logs failures to fund_tracker.log
+- Writes successes to:
+    • master_companies.xlsx
+    • assets/data/master_companies.csv
+"""
+
+import argparse
 import logging
-from datetime import datetime, timedelta
+import os
+import sys
+import time
+from datetime import date, datetime, timedelta
 
 import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 import pandas as pd
-import argparse
 
-# --- CONFIGURATION ---
-API_KEY = os.getenv('CH_API_KEY')
-MASTER_FILE = 'master_companies.xlsx'
-PAGINATION_TRACKER = 'pagination_tracker.json'
-API_LOG_FILE = 'api_logs.json'
-LOG_FILE = 'fund_tracker.log'
-DATA_CSV_PUBLIC = 'assets/data/master_companies.csv'
-SIC_CODES = [
-    '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
-]
-KEYWORDS = [
-    'capital', 'fund', 'ventures', 'partners', 'gp', 'lp', 'llp',
-    'investments', 'equity', 'advisors'
-]
-COLUMNS = [
-    'Company Name', 'Company Number', 'Incorporation Date',
-    'Status', 'Source', 'Date Downloaded', 'Time Discovered'
-]
+# ─────── CONFIGURATION ─────────────────────────────────────────────────────────
+CH_API_URL       = 'https://api.company-information.service.gov.uk/search/companies'
+OUTPUT_EXCEL     = 'master_companies.xlsx'
+OUTPUT_CSV       = 'assets/data/master_companies.csv'
+LOG_FILE         = 'fund_tracker.log'
+RETRY_COUNT      = 3
+RETRY_DELAY      = 5  # seconds between retries
+ITEMS_PER_PAGE   = 100
+# ───────────────────────────────────────────────────────────────────────────────
 
-# Setup structured logging
+# Set up logging
 logging.basicConfig(
+    filename=LOG_FILE,
     level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s',
-    handlers=[
-        logging.FileHandler(LOG_FILE),
-        logging.StreamHandler()
-    ]
+    format='%(asctime)s %(levelname)s %(message)s'
 )
 logger = logging.getLogger(__name__)
+# also log warnings/errors to console for CI visibility
+console = logging.StreamHandler(sys.stdout)
+console.setLevel(logging.WARNING)
+logger.addHandler(console)
 
-# HTTP retry strategy
-retry_strategy = Retry(
-    total=3,
-    status_forcelist=[429, 500, 502, 503, 504],
-    backoff_factor=1
-)
-session = requests.Session()
-session.mount('https://', HTTPAdapter(max_retries=retry_strategy))
-session.auth = (API_KEY, '')
 
-def load_json_file(path):
-    if os.path.exists(path):
-        try:
-            with open(path, 'r') as f:
-                return json.load(f)
-        except json.JSONDecodeError:
-            logger.warning(f"Corrupt JSON in {path}, resetting.")
-            return {}
-    return {}
+def normalize_date(d: str) -> str:
+    """
+    If d is empty or 'today' (any case), return today's date (YYYY-MM-DD).
+    Otherwise return d unchanged.
+    """
+    if not d or d.strip().lower() == 'today':
+        return date.today().strftime('%Y-%m-%d')
+    return d
 
-def save_json_file(data, path):
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=2)
 
-def fetch_companies_for_date(query_date, last_index=0):
-    url = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-    all_results = []
-    start_index = last_index
-
-    while True:
-        params = {
-            'incorporated_from': query_date,
-            'incorporated_to': query_date,
-            'start_index': start_index,
-            'size': 50
-        }
-        try:
-            resp = session.get(url, params=params)
-            resp.raise_for_status()
-        except requests.RequestException as e:
-            logger.error(f"API request error on {query_date} at index {start_index}: {e}")
-            break
-
-        data = resp.json()
-        items = data.get('items', [])
-        if not items:
-            break
-
-        for item in items:
-            name = item.get('company_name', '').lower()
-            matched_by = []
-            if any(code in SIC_CODES for code in item.get('sic_codes', [])):
-                matched_by.append('SIC')
-            if any(kw in name for kw in KEYWORDS):
-                matched_by.append('Keyword')
-            if matched_by:
-                all_results.append({
-                    'Company Name': item.get('company_name'),
-                    'Company Number': item.get('company_number'),
-                    'Incorporation Date': item.get('date_of_creation'),
-                    'Status': item.get('company_status'),
-                    'Source': '+'.join(sorted(set(matched_by))),
-                    'Date Downloaded': datetime.today().strftime('%Y-%m-%d'),
-                    'Time Discovered': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                })
-
-        start_index += 50
-        time.sleep(0.2)
-        if len(items) < 50:
-            break
-
-    return pd.DataFrame(all_results, columns=COLUMNS), start_index
-
-def load_existing_master(path):
-    if os.path.exists(path):
-        return pd.read_excel(path)
-    return pd.DataFrame(columns=COLUMNS)
-
-def update_master(master_df, new_df):
-    new_entries = new_df[~new_df['Company Number'].isin(master_df['Company Number'])].copy()
-    updated = pd.concat([master_df, new_entries], ignore_index=True)
-    updated.drop_duplicates(subset='Company Number', inplace=True)
-    return updated, new_entries
-
-def export_to_excel(df, filename):
-    df.to_excel(filename, index=False)
-
-def log_update(date, added_count):
-    logs = load_json_file(API_LOG_FILE)
-    entry = {
-        "Date": date,
-        "Added": added_count,
-        "Time": datetime.now().strftime('%H:%M:%S')
+def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
+    """
+    Fetch up to ITEMS_PER_PAGE companies incorporated on date_str.
+    Retries RETRY_COUNT times on network errors or non-200 responses.
+    Returns list of normalized dicts or empty list on permanent failure.
+    """
+    auth = (api_key, '')  # Company House uses HTTP Basic Auth: key as user
+    params = {
+        'incorporated_from': date_str,
+        'incorporated_to':   date_str,
+        'items_per_page':    ITEMS_PER_PAGE
     }
-    logs.setdefault(date, []).append(entry)
-    save_json_file(logs, API_LOG_FILE)
 
-def run_for_date_range(start_date, end_date):
-    pagination = load_json_file(PAGINATION_TRACKER)
-    current = datetime.strptime(start_date, '%Y-%m-%d')
-    end = datetime.strptime(end_date, '%Y-%m-%d')
+    for attempt in range(1, RETRY_COUNT + 1):
+        try:
+            resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
+            if resp.status_code == 200:
+                payload = resp.json().get('items', [])
+                return [
+                    {
+                        'Company Name':       c.get('title'),
+                        'Company Number':     c.get('company_number'),
+                        'Incorporation Date': c.get('date_of_creation'),
+                        'Status':             c.get('company_status'),
+                        'Source':             c.get('source'),
+                        'Date Downloaded':    datetime.utcnow().strftime('%Y-%m-%d'),
+                        'Time Discovered':    datetime.utcnow().strftime('%H:%M:%S')
+                    }
+                    for c in payload
+                ]
+            else:
+                logger.warning(
+                    f'Non-200 ({resp.status_code}) for {date_str}, attempt {attempt}'
+                )
+        except requests.RequestException as e:
+            logger.warning(f'Error on {date_str}, attempt {attempt}: {e!r}')
+        time.sleep(RETRY_DELAY)
 
-    while current <= end:
-        dstr = current.strftime('%Y-%m-%d')
-        last_index = pagination.get(dstr, 0)
+    logger.error(f'Failed to fetch data for {date_str} after {RETRY_COUNT} attempts')
+    return []
 
-        df_new, new_index = fetch_companies_for_date(dstr, last_index)
-        pagination[dstr] = new_index
-        save_json_file(pagination, PAGINATION_TRACKER)
 
-        master_df = load_existing_master(MASTER_FILE)
-        updated_df, added_df = update_master(master_df, df_new)
-        export_to_excel(updated_df, MASTER_FILE)
-        log_update(dstr, len(added_df))
+def run_for_date_range(start_date: str, end_date: str):
+    """
+    Iterate from start_date to end_date (inclusive), fetch companies each day,
+    then write combined results to Excel and CSV.
+    """
+    sd = datetime.strptime(start_date, '%Y-%m-%d')
+    ed = datetime.strptime(end_date,   '%Y-%m-%d')
 
-        # Reorder & export only public CSV for JS dashboard
-        os.makedirs(os.path.dirname(DATA_CSV_PUBLIC), exist_ok=True)
-        export_cols = [
-            'Company Name', 'Company Number', 'Incorporation Date',
-            'Status', 'Source', 'Date Downloaded', 'Time Discovered'
-        ]
-        updated_df = updated_df[export_cols]
-        updated_df.to_csv(DATA_CSV_PUBLIC, index=False)
+    # validate range
+    if sd > ed:
+        logger.error("start_date cannot be after end_date")
+        sys.exit(1)
 
-        # Cleanup old tracker
-        if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
-            os.remove(PAGINATION_TRACKER)
-
+    all_records = []
+    current = sd
+    while current <= ed:
+        ds = current.strftime('%Y-%m-%d')
+        logger.info(f'Fetching companies for {ds}')
+        records = fetch_companies_on(ds, API_KEY)
+        all_records.extend(records)
         current += timedelta(days=1)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Run Companies House tracker.")
-    parser.add_argument("--start_date", type=str, default="today",
-                        help="YYYY-MM-DD or literal 'today'")
-    parser.add_argument("--end_date", type=str, default="today",
-                        help="YYYY-MM-DD or literal 'today'")
+    if all_records:
+        # ensure output folder exists
+        os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+
+        df = pd.DataFrame(all_records)
+        df.to_excel(OUTPUT_EXCEL, index=False)
+        df.to_csv(OUTPUT_CSV, index=False)
+        logger.info(f'Wrote {len(all_records)} records to {OUTPUT_EXCEL} & {OUTPUT_CSV}')
+    else:
+        logger.info('No records found for the given date range')
+
+
+def main():
+    global API_KEY
+    parser = argparse.ArgumentParser(
+        description='Fetch Companies House data by incorporation date'
+    )
+    parser.add_argument(
+        '--start_date',
+        default='',
+        help='YYYY-MM-DD or "today"'
+    )
+    parser.add_argument(
+        '--end_date',
+        default='',
+        help='YYYY-MM-DD or "today"'
+    )
     args = parser.parse_args()
 
-    today_str = datetime.today().strftime('%Y-%m-%d')
-    sd = today_str if args.start_date.lower() == 'today' else args.start_date
-    ed = today_str if args.end_date.lower() == 'today' else args.end_date
+    # Read API key
+    API_KEY = os.getenv('CH_API_KEY')
+    if not API_KEY:
+        logger.error('Environment variable CH_API_KEY is not set')
+        sys.exit(1)
 
-    logger.info(f"Starting run: {sd} to {ed}")
-    run_for_date_range(sd, ed)
+    # Normalize user inputs
+    start_date = normalize_date(args.start_date)
+    end_date   = normalize_date(args.end_date)
+    logger.info(f'Starting run: {start_date} → {end_date}')
+
+    run_for_date_range(start_date, end_date)
+
+
+if __name__ == '__main__':
+    main()
