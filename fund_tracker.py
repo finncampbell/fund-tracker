@@ -9,6 +9,7 @@ Hourly GitHub Action that:
 - Appends new rows to:
     • master_companies.xlsx
     • assets/data/master_companies.csv
+  and classifies each record into a Category (e.g. Ventures, Capital, etc.).
 """
 
 import argparse
@@ -27,9 +28,16 @@ OUTPUT_EXCEL     = 'master_companies.xlsx'
 OUTPUT_CSV       = 'assets/data/master_companies.csv'
 LOG_FILE         = 'fund_tracker.log'
 RETRY_COUNT      = 3
-RETRY_DELAY      = 5   # seconds
-FETCH_SIZE       = 100 # advanced-search uses 'size'
+RETRY_DELAY      = 5    # seconds
+FETCH_SIZE       = 100  # advanced-search uses 'size'
 # ───────────────────────────────────────────────────────────────────────────────
+
+# Your custom keywords/categories (priority order)
+KEYWORDS = [
+    'Ventures','Capital','Equity',
+    'Advisors','Partners','SIC',
+    'Fund','GP','LP','LLP','Investments'
+]
 
 # Set up logging
 logging.basicConfig(
@@ -45,20 +53,23 @@ logger.addHandler(console)
 
 
 def normalize_date(d: str) -> str:
-    """
-    If d is empty or 'today' (any case), return today's date (YYYY-MM-DD).
-    Otherwise return d unchanged.
-    """
+    """Empty or 'today' (any case) → today; else return d."""
     if not d or d.strip().lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     return d
 
 
+def classify(name: str) -> str:
+    """Find first keyword in name, or return 'Other'."""
+    low = (name or '').lower()
+    for kw in KEYWORDS:
+        if kw.lower() in low:
+            return kw
+    return 'Other'
+
+
 def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
-    """
-    Fetch up to FETCH_SIZE companies incorporated on date_str.
-    Uses the advanced-search endpoint with 'size', retries on transient errors.
-    """
+    """Fetch up to FETCH_SIZE companies incorporated on date_str."""
     auth = (api_key, '')
     params = {
         'incorporated_from': date_str,
@@ -72,19 +83,20 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
             if resp.status_code == 200:
                 items = resp.json().get('items', [])
                 now = datetime.utcnow()
-                return [
-                    {
-                        # fallback to company_name if title is missing
-                        'Company Name':       c.get('title') or c.get('company_name') or '',
-                        'Company Number':     c.get('company_number'),
-                        'Incorporation Date': c.get('date_of_creation'),
-                        'Status':             c.get('company_status'),
-                        'Source':             c.get('source'),
+                records = []
+                for c in items:
+                    name = c.get('title') or c.get('company_name') or ''
+                    records.append({
+                        'Company Name':       name,
+                        'Company Number':     c.get('company_number', ''),
+                        'Incorporation Date': c.get('date_of_creation', ''),
+                        'Status':             c.get('company_status', ''),
+                        'Source':             c.get('source', ''),
                         'Date Downloaded':    now.strftime('%Y-%m-%d'),
-                        'Time Discovered':    now.strftime('%H:%M:%S')
-                    }
-                    for c in items
-                ]
+                        'Time Discovered':    now.strftime('%H:%M:%S'),
+                        'Category':           classify(name)
+                    })
+                return records
             else:
                 logger.warning(f'Non-200 ({resp.status_code}) on {date_str}, attempt {attempt}')
         except requests.RequestException as e:
@@ -96,9 +108,7 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
 
 
 def run_for_date_range(start_date: str, end_date: str):
-    """
-    Fetch for each day in range (inclusive), then append only new rows to master.
-    """
+    """Fetch each day in range, append, dedupe, sort, and write outputs."""
     sd = datetime.strptime(start_date, '%Y-%m-%d')
     ed = datetime.strptime(end_date,   '%Y-%m-%d')
     if sd > ed:
@@ -106,39 +116,43 @@ def run_for_date_range(start_date: str, end_date: str):
         sys.exit(1)
 
     new_records = []
-    current = sd
-    while current <= ed:
-        ds = current.strftime('%Y-%m-%d')
+    cur = sd
+    while cur <= ed:
+        ds = cur.strftime('%Y-%m-%d')
         logger.info(f'Fetching companies for {ds}')
-        new_records.extend(fetch_companies_on(ds, API_KEY))
-        current += timedelta(days=1)
+        batch = fetch_companies_on(ds, API_KEY)
+        logger.info(f' → fetched {len(batch)} records')
+        new_records.extend(batch)
+        cur += timedelta(days=1)
 
-    # Ensure the assets/data folder exists
     os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
 
-    # Load existing master CSV (or start empty)
+    # Load existing master
     if os.path.exists(OUTPUT_CSV):
         df_master = pd.read_csv(OUTPUT_CSV)
     else:
         df_master = pd.DataFrame(columns=[
             'Company Name','Company Number','Incorporation Date',
-            'Status','Source','Date Downloaded','Time Discovered'
+            'Status','Source','Date Downloaded','Time Discovered','Category'
         ])
 
+    # Append & dedupe
     if new_records:
         df_new = pd.DataFrame(new_records)
-        # Combine, dedupe on Company Number (keep existing first)
-        df = pd.concat([df_master, df_new], ignore_index=True)
-        df.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
-        # Sort by Incorporation Date newest first
-        df.sort_values('Incorporation Date', ascending=False, inplace=True)
-
-        # Write updated master files
-        df.to_excel(OUTPUT_EXCEL, index=False)
-        df.to_csv(OUTPUT_CSV, index=False)
-        logger.info(f'Appended {len(df_new)} new rows; master now has {len(df)} records')
+        df_all = pd.concat([df_master, df_new], ignore_index=True)
+        df_all.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
     else:
+        df_all = df_master
         logger.info('No new records to append')
+
+    # Sort by Incorporation Date desc
+    df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
+    df_all.reset_index(drop=True, inplace=True)
+
+    # Write master files
+    df_all.to_excel(OUTPUT_EXCEL, index=False)
+    df_all.to_csv(OUTPUT_CSV, index=False)
+    logger.info(f'Wrote {len(df_all)} total records to Excel & CSV')
 
 
 def main():
@@ -153,7 +167,6 @@ def main():
         logger.error('CH_API_KEY environment variable is not set')
         sys.exit(1)
 
-    # Normalize and log
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
     logger.info(f'Starting run: {sd} → {ed}')
