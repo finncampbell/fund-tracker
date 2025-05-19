@@ -14,7 +14,8 @@ API_KEY = os.getenv('CH_API_KEY')
 MASTER_FILE = 'master_companies.xlsx'
 PAGINATION_TRACKER = 'pagination_tracker.json'
 API_LOG_FILE = 'api_logs.json'
-DATA_CSV = '_data/master_companies.csv'     # <-- new constant
+DATA_CSV_PUBLIC = 'assets/data/master_companies.csv'   # <-- public for DataTables/Jekyll
+DATA_CSV_JEKYLL = '_data/master_companies.csv'         # <-- optional, for Jekyll/Liquid use
 SIC_CODES = [
     '66300', '64999', '64301', '64304', '64305', '64306', '64205', '66190', '70100'
 ]
@@ -154,8 +155,15 @@ def run_for_date_range(start_date, end_date):
         export_to_excel(updated, MASTER_FILE)
         log_update(dstr, len(added))
 
-        # **NEW**: export for Jekyll dashboard
-        updated.to_csv(DATA_CSV, index=False)
+        # Export for dashboard (public)
+        if not os.path.exists(os.path.dirname(DATA_CSV_PUBLIC)):
+            os.makedirs(os.path.dirname(DATA_CSV_PUBLIC), exist_ok=True)
+        updated.to_csv(DATA_CSV_PUBLIC, index=False)
+
+        # Optionally also for Jekyll/Liquid use
+        if not os.path.exists(os.path.dirname(DATA_CSV_JEKYLL)):
+            os.makedirs(os.path.dirname(DATA_CSV_JEKYLL), exist_ok=True)
+        updated.to_csv(DATA_CSV_JEKYLL, index=False)
 
         # Cleanup old tracker
         if os.path.getmtime(PAGINATION_TRACKER) < time.time() - 30 * 86400:
