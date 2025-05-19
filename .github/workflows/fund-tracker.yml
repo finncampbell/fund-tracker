@@ -44,12 +44,23 @@ jobs:
 
       - name: Run fund tracker script
         run: |
-          python fund_tracker.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}"
+          python fund_tracker.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date   "${{ github.event.inputs.end_date }}"
 
       - name: Check for changes
         id: changes
         run: |
-          git add assets/data/master_companies.csv
+          # Stage both CSV and XLSX outputs
+          git add assets/data/master_companies.csv master_companies.xlsx
+
+          # Debug: show what's changed
+          echo "=== git status ==="
+          git status
+          echo "=== git diff --cached ==="
+          git --no-pager diff --cached || true
+
+          # Detect any staged changes
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
