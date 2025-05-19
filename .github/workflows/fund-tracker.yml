@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       start_date:
-        description: 'Start date to fetch (YYYY-MM-DD or literal "today")'
+        description: 'Start date (YYYY-MM-DD or "today")'
         required: false
         default: 'today'
       end_date:
-        description: 'End date to fetch (YYYY-MM-DD or literal "today")'
+        description: 'End date (YYYY-MM-DD or "today")'
         required: false
         default: 'today'
 
@@ -39,8 +39,7 @@ jobs:
           python-version: 3.12
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run fund tracker script
         run: |
@@ -51,10 +50,11 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          # Stage both CSV and XLSX outputs
-          git add assets/data/master_companies.csv master_companies.xlsx
+          # Stage CSV and XLSX (force-add XLSX in case it's ignored)
+          git add assets/data/master_companies.csv
+          git add -f master_companies.xlsx
 
-          # Debug: show what's changed
+          # Debugging output
           echo "=== git status ==="
           git status
           echo "=== git diff --cached ==="
