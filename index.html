@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fund Tracker Dashboard</title>
 
-  <!-- DataTables CSS (CDN) -->
+  <!-- DataTables CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
@@ -16,12 +16,10 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="ft-header">
     <h1>Fund Tracker Dashboard</h1>
   </header>
 
-  <!-- Filter bar -->
   <div class="ft-filters">
     <button class="ft-btn active" data-filter="">All</button>
     <button class="ft-btn" data-filter="Ventures">Ventures</button>
@@ -37,7 +35,6 @@
     <button class="ft-btn" data-filter="investments">Investments</button>
   </div>
 
-  <!-- DataTable placeholder -->
   <table id="companies" class="display" style="width:100%">
     <thead>
       <tr>
@@ -53,7 +50,7 @@
     <tbody></tbody>
   </table>
 
-  <!-- JS libs (CDN) -->
+  <!-- JS libs -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
