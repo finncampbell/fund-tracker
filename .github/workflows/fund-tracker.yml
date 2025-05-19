@@ -32,6 +32,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0        # grab full history so we can rebase
+          persist-credentials: true
+
+      - name: Configure git user
+        run: |
+          git config user.email "bot@example.com"
+          git config user.name  "GH Actions Bot"
+
+      - name: Sync any remote commits
+        run: |
+          git fetch origin main
+          git pull --rebase origin main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -50,27 +63,19 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          # Stage CSV and force-add XLSX so it always gets committed
-          git add assets/data/master_companies.csv
-          git add -f master_companies.xlsx
-
-          # Debug output
+          git add assets/data/master_companies.csv master_companies.xlsx
           echo "=== git status ==="
-          git status
+          git status --short
           echo "=== git diff --cached ==="
-          git --no-pager diff --cached || true
-
-          # Set the output flag if any changes are staged
+          git diff --cached || true
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config --global user.email "bot@example.com"
-          git config --global user.name "GH Actions Bot"
           git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
+          git push origin main
 
       - name: Upload API logs
         if: always()
@@ -78,10 +83,3 @@ jobs:
         with:
           name: api-logs
           path: api_logs.json
-
-      - name: Upload tracker log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fund-tracker-log
-          path: fund_tracker.log
