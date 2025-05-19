@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import logging
 
 # Constants
-CH_API_URL = "https://api.company-information.service.gov.uk/search/companies"
+CH_API_URL = "https://api.company-information.service.gov.uk/advanced-search/companies"
 OUTPUT_CSV = "assets/data/master_companies.csv"
 OUTPUT_EXCEL = "master_companies.xlsx"
 LOG_FILE = "fund_tracker.log"
@@ -35,7 +35,7 @@ def fetch_companies_on(date_str, api_key):
     params = {
         "incorporated_from": date_str,
         "incorporated_to": date_str,
-        "items_per_page": 100
+        "size": 100
     }
     auth = (api_key, "")
 
@@ -48,7 +48,7 @@ def fetch_companies_on(date_str, api_key):
                 now = datetime.utcnow()
                 for item in items:
                     records.append({
-                        "Company Name": item.get("title", ""),
+                        "Company Name": item.get("company_name", ""),
                         "Company Number": item.get("company_number", ""),
                         "Incorporation Date": item.get("date_of_creation", ""),
                         "Status": item.get("company_status", ""),
