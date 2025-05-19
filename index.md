@@ -5,7 +5,6 @@ title: Company Incorporations
 
 # Company Incorporations
 
-<!-- Filter buttons will appear here -->
 <div id="filter-buttons" style="margin-bottom:20px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
 
 <table id="fund-table" border="1" style="width:100%;border-collapse:collapse;">
@@ -15,14 +14,14 @@ title: Company Incorporations
 
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script>
-// Which column to use for filtering (e.g., "Source", "Status", "SIC Codes", etc.)
-const filterColumn = "Source"; // Change to your keyword column if needed
+// Which column to use for filtering (e.g., "Source", "Status", etc.)
+const filterColumn = "Source"; // Change this to whichever column you want to use for keyword filtering
 
 let allData = [];
 let uniqueKeywords = [];
 
 // Fetch and process the CSV file
-fetch('/assets/data/master_companies.csv')
+fetch('{{ site.baseurl }}/assets/data/master_companies.csv')
   .then(response => response.text())
   .then(csv => {
     Papa.parse(csv, {
@@ -93,6 +92,7 @@ style.innerHTML = `
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.2s;
+    margin-bottom: 6px;
   }
   #filter-buttons button:hover, #filter-buttons .active-filter-btn {
     background: #1abc9c;
