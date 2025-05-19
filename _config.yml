@@ -3,6 +3,7 @@ theme: jekyll-theme-cayman
 title: "Fund Tracker Dashboard"
 description: "Interactive Companies House dashboard using Jekyll + DataTables"
 
-baseurl: "/fund-tracker-dashboard"        # <- your repo name, with slash
-url: "https://finncampbell.github.io"     # <- your GitHub username
+baseurl: "/fund-tracker-dashboard"
+url: "https://finncampbell.github.io"
+
 future: false
