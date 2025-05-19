@@ -1,13 +1,12 @@
-// Debug at load
-console.log("🔥 dashboard.js loaded");
+// 🔥 Quick check that this file *is* loading:
+console.log('🔥 dashboard.js loaded');
 
 $(document).ready(function() {
-  // Absolute URL to your CSV
-  const csvUrl = '/fund-tracker/assets/data/master_companies.csv';
+  const csvUrl = 'assets/data/master_companies.csv';
 
-  // Inject debug banner
+  // inject a visible debug banner
   $('body').prepend(`
-    <div id="ft-debug" 
+    <div id="ft-debug"
          style="background:#ffecec;color:#900;padding:0.5em;text-align:center;">
       Loading…
     </div>
@@ -17,16 +16,14 @@ $(document).ready(function() {
     download: true,
     header: true,
     complete: function(results) {
-      $('#ft-debug').text(
-        `Debug: loaded ${results.data.length} rows from CSV`
-      );
-
+      // report how many rows we got
+      $('#ft-debug').text(\`Debug: loaded \${results.data.length} rows\`);
       if (!results.data.length) {
-        console.error('👉 Fund Tracker: CSV parsed to zero rows', results);
+        console.error('🏷️ CSV parsed to zero rows', results);
         return;
       }
 
-      // Initialize DataTable
+      // initialize DataTable
       const table = $('#companies').DataTable({
         data: results.data,
         columns: [
@@ -43,17 +40,17 @@ $(document).ready(function() {
         responsive: true
       });
 
-      // Wire up filters
+      // wire up filter buttons
       $('.ft-btn').on('click', function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
-        const filter = $(this).data('filter') || '';
-        table.column(4).search(filter).draw();
+        const f = $(this).data('filter') || '';
+        table.column(4).search(f).draw();
       });
     },
     error: function(err) {
-      $('#ft-debug').text('Error loading CSV—see console.');
-      console.error('👉 Fund Tracker: PapaParse error', err);
+      $('#ft-debug').text('❌ Error loading CSV—see console');
+      console.error('CSV load error', err);
     }
   });
 });
