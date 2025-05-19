@@ -41,8 +41,6 @@ permalink: /
 <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 <script>
   let table;
-
-  // Load CSV and initialize DataTable
   Papa.parse("{{ '/assets/data/master_companies.csv' | relative_url }}", {
     download: true,
     header: true,
@@ -58,7 +56,7 @@ permalink: /
           { data: 'Time Discovered' },
           { data: 'Date Downloaded' }
         ],
-        order: [[2, 'desc']],      // newest incorporations first
+        order: [[2, 'desc']],
         pageLength: 25,
         responsive: true
       });
@@ -66,19 +64,12 @@ permalink: /
     error: err => console.error('CSV load error:', err)
   });
 
-  // Wire up the filter buttons
   document.querySelectorAll('.ft-nav button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelector('.ft-nav button.active').classList.remove('active');
       btn.classList.add('active');
       const key = btn.dataset.filter;
-
-      if (!key) {
-        // clear only the Source column filter
-        table.column(4).search('').draw();
-      } else {
-        table.column(4).search(key, true, false).draw();
-      }
+      table.column(4).search(key || '', true, false).draw();
     });
   });
 </script>
