@@ -12,7 +12,7 @@ $(document).ready(function() {
           { data: 'Company Number' },
           { data: 'Incorporation Date' },
           { data: 'Status' },
-          { data: 'Source' },
+          { data: 'Category' },
           { data: 'Date Downloaded' },
           { data: 'Time Discovered' }
         ],
@@ -21,11 +21,12 @@ $(document).ready(function() {
         responsive: true
       });
 
+      // Filter on Category (column index 4)
       $('.ft-btn').on('click', function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
-        const filter = $(this).data('filter') || '';
-        table.column(4).search(filter).draw();
+        const cat = $(this).data('filter') || '';
+        table.column(4).search(cat).draw();
       });
     },
     error: function(err) {
