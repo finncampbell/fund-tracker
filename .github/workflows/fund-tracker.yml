@@ -2,7 +2,7 @@ name: Fund Tracker Automation
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Every hour, on the hour
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       start_date:
@@ -50,17 +50,17 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          # Stage CSV and XLSX (force-add XLSX in case it's ignored)
+          # Stage CSV and force-add XLSX so it always gets committed
           git add assets/data/master_companies.csv
           git add -f master_companies.xlsx
 
-          # Debugging output
+          # Debug output
           echo "=== git status ==="
           git status
           echo "=== git diff --cached ==="
           git --no-pager diff --cached || true
 
-          # Detect any staged changes
+          # Set the output flag if any changes are staged
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
