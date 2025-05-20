@@ -1,48 +1,118 @@
+/* Page background */
 body {
   margin: 0;
+  padding: 2rem;
   font-family: system-ui, sans-serif;
+  background: #e9f5f2;
+  display: flex;
+  justify-content: center;
 }
 
+/* Card container */
+.ft-dashboard-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Gradient header */
 .ft-header {
-  background: #223366;
+  background: linear-gradient(135deg, #223366, #1abc9c);
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.ft-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+.ft-header p a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: underline;
 }
 
+/* Nav/filter bar */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0.75rem;
-  background: #f4f4f4;
+  padding: 1rem;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
   justify-content: center;
 }
 
+/* Pill-shaped buttons */
 .ft-btn {
   background: white;
   border: 1px solid #ccc;
   color: #223366;
   padding: 0.5rem 1rem;
-  border-radius: 3px;
+  border-radius: 2rem;
   cursor: pointer;
   font-size: 0.9rem;
   transition: background 0.2s, color 0.2s;
 }
-
-.ft-btn:hover,
+.ft-btn:hover {
+  background: #f0faf8;
+}
 .ft-btn.active {
   background: #1abc9c;
   color: white;
   border-color: #1abc9c;
 }
 
-#companies {
-  margin: 1rem auto;
-  max-width: 95%;
+/* Table wrapper */
+.table-container {
+  padding: 1rem;
+  background: white;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button {
-  padding: 0.25rem 0.5rem;
+/* DataTable styling */
+#companies {
+  border-collapse: separate !important;
+  border-spacing: 0 0.5rem !important;
+  width: 100%;
+}
+#companies tbody tr {
+  background: #fafafa;
+}
+#companies tbody tr:nth-child(even) {
+  background: #ffffff;
+}
+#companies thead th {
+  background: #f2f2f2;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  font-weight: 600;
+}
+#companies td {
+  padding: 0.75rem 0.5rem;
+  border: none;
+}
+
+/* Category pill in table */
+#companies td:nth-child(4) {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  background: #e0f7fa;
+  color: #223366;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ft-filters {
+    padding: 0.5rem;
+  }
+  .ft-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .ft-header {
+    padding: 1.5rem 1rem;
+  }
 }
