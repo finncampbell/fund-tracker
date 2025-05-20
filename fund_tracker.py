@@ -16,7 +16,8 @@ import logging
 import os
 import sys
 import time
-from datetime import date, datetime, timedelta
+import re
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 import pandas as pd
@@ -89,7 +90,7 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
             resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
             if resp.status_code == 200:
                 items = resp.json().get('items', [])
-                now = datetime.utcnow()
+                now = datetime.now(timezone.utc)
                 recs = []
                 for c in items:
                     name = c.get('title') or c.get('company_name') or ''
@@ -133,7 +134,11 @@ def run_for_date_range(start_date: str, end_date: str):
 
     # Load or init master DataFrame
     if os.path.exists(MASTER_CSV):
-        df_master = pd.read_csv(MASTER_CSV)
+        try:
+            df_master = pd.read_csv(MASTER_CSV)
+        except pd.errors.EmptyDataError:
+            log.warning(f'{MASTER_CSV} is empty – initializing new master frame')
+            df_master = pd.DataFrame(columns=FIELDS)
     else:
         df_master = pd.DataFrame(columns=FIELDS)
 
