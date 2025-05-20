@@ -2,9 +2,8 @@
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
 
-  // regex literal: whole-word, punctuation-tolerant, case-insensitive
-  // matches Fund (with optional punctuation), GP, LP or LLP
-  const fundEntitiesRegex = /\b(?:F\W*U\W*N\W*D|G\W*P|L\W*P|L\W*L\W*P)\b/i;
+  // string regex: whole-word + punctuation-tolerant for Fund entities
+  const fundEntitiesRE = '\\bF\\W*U\\W*N\\W*D\\b|\\bG\\W*P\\b|\\bL\\W*P\\b|\\bL\\W*L\\W*P\\b';
 
   Papa.parse(url, {
     download: true,
@@ -32,13 +31,13 @@ $(document).ready(function() {
         const cat = $(this).data('filter') || '';
 
         if (cat === 'Fund Entities') {
-          // use regex literal (with its own 'i' flag) to catch punctuation variants
+          // regex search (regex=true, smart=false, caseInsensitive=true)
           table
             .column(4)
-            .search(fundEntitiesRegex, true, false)
+            .search(fundEntitiesRE, true, false, true)
             .draw();
         } else {
-          // normal case-insensitive substring search for other buttons
+          // simple substring (case-insensitive)
           table
             .column(4)
             .search(cat, false, false, true)
