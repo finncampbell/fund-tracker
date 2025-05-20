@@ -1,10 +1,8 @@
-/* Reset minor spacing */
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
 }
 
-/* Header */
 .ft-header {
   background: #223366;
   color: white;
@@ -13,7 +11,6 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Filter bar */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
@@ -34,19 +31,13 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
-.ft-btn:hover {
-  background: #1abc9c;
-  color: white;
-  border-color: #1abc9c;
-}
-
+.ft-btn:hover,
 .ft-btn.active {
   background: #1abc9c;
   color: white;
   border-color: #1abc9c;
 }
 
-/* DataTable tweaks */
 #companies {
   margin: 1rem auto;
   max-width: 95%;
