@@ -25,7 +25,10 @@ $(document).ready(function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
         const cat = $(this).data('filter') || '';
-        table.column(4).search(cat).draw();
+        table
+          .column(4)
+          .search(cat)
+          .draw();
       });
     },
     error: function(err) {
