@@ -16,8 +16,7 @@ import logging
 import os
 import sys
 import time
-import re
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timedelta
 
 import requests
 import pandas as pd
@@ -47,9 +46,9 @@ FIELDS = [
 
 # Keywords for classification, in priority order
 KEYWORDS = [
-    'Ventures', 'Capital', 'Equity',
-    'Advisors', 'Partners', 'SIC',
-    'Fund', 'GP', 'LP', 'LLP', 'Investments'
+    'Ventures','Capital','Equity',
+    'Advisors','Partners','SIC',
+    'Fund','GP','LP','LLP','Investments'
 ]
 
 # Set up logging
@@ -90,7 +89,7 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
             resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
             if resp.status_code == 200:
                 items = resp.json().get('items', [])
-                now = datetime.now(timezone.utc)
+                now = datetime.utcnow()
                 recs = []
                 for c in items:
                     name = c.get('title') or c.get('company_name') or ''
