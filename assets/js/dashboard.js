@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  const csvUrl = 'assets/data/master_companies.csv';
+  const url = 'assets/data/relevant_companies.csv';
 
-  Papa.parse(csvUrl, {
+  Papa.parse(url, {
     download: true,
     header: true,
     complete: function(results) {
@@ -21,7 +21,6 @@ $(document).ready(function() {
         responsive: true
       });
 
-      // Filter on Category (column index 4)
       $('.ft-btn').on('click', function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
@@ -30,7 +29,7 @@ $(document).ready(function() {
       });
     },
     error: function(err) {
-      console.error('Error loading CSV:', err);
+      console.error('CSV load error:', err);
     }
   });
 });
