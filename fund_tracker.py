@@ -2,14 +2,13 @@
 """
 fund_tracker.py
 
-Hourly GitHub Action that:
 - Fetches Companies House data by incorporation date (default: today)
 - Retries on transient errors
-- Logs failures to fund_tracker.log
-- Appends new rows to:
-    • master_companies.xlsx
-    • assets/data/master_companies.csv
-  and classifies each record into a Category (e.g. Ventures, Capital, etc.).
+- Logs to fund_tracker.log
+- Builds two outputs:
+  • master_companies.csv / .xlsx  (full history, with Category)
+  • relevant_companies.csv / .xlsx (only matching Categories)
+Each file will always have the full header row in the same order.
 """
 
 import argparse
@@ -22,45 +21,52 @@ from datetime import date, datetime, timedelta
 import requests
 import pandas as pd
 
-# ─────── CONFIGURATION ─────────────────────────────────────────────────────────
-CH_API_URL       = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-OUTPUT_EXCEL     = 'master_companies.xlsx'
-OUTPUT_CSV       = 'assets/data/master_companies.csv'
-LOG_FILE         = 'fund_tracker.log'
-RETRY_COUNT      = 3
-RETRY_DELAY      = 5    # seconds
-FETCH_SIZE       = 100  # advanced-search uses 'size'
-# ───────────────────────────────────────────────────────────────────────────────
+# CONFIG
+CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
+MASTER_XLSX   = 'master_companies.xlsx'
+MASTER_CSV    = 'assets/data/master_companies.csv'
+RELEVANT_XLSX = 'relevant_companies.xlsx'
+RELEVANT_CSV  = 'assets/data/relevant_companies.csv'
+LOG_FILE      = 'fund_tracker.log'
+RETRY_COUNT   = 3
+RETRY_DELAY   = 5     # seconds
+FETCH_SIZE    = 100   # items per request
 
-# Your custom keywords/categories (priority order)
-KEYWORDS = [
-    'Ventures','Capital','Equity',
-    'Advisors','Partners','SIC',
-    'Fund','GP','LP','LLP','Investments'
+# Columns (in order) for all outputs:
+FIELDS = [
+    'Company Name',
+    'Company Number',
+    'Incorporation Date',
+    'Status',
+    'Source',
+    'Date Downloaded',
+    'Time Discovered',
+    'Category'
 ]
 
-# Set up logging
+# Your keywords/categories
+KEYWORDS = ['Ventures','Capital','Equity','Advisors','Partners','SIC',
+            'Fund','GP','LP','LLP','Investments']
+
+# Logging
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s'
 )
-logger = logging.getLogger(__name__)
-# also show warnings/errors in the Actions console
+log = logging.getLogger(__name__)
 console = logging.StreamHandler(sys.stdout)
 console.setLevel(logging.WARNING)
-logger.addHandler(console)
+log.addHandler(console)
 
 
 def normalize_date(d: str) -> str:
-    """Empty or 'today' (any case) → today; else return d."""
-    if not d or d.strip().lower() == 'today':
+    if not d or d.lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     return d
 
 
 def classify(name: str) -> str:
-    """Find first keyword in name, or return 'Other'."""
     low = (name or '').lower()
     for kw in KEYWORDS:
         if kw.lower() in low:
@@ -69,108 +75,105 @@ def classify(name: str) -> str:
 
 
 def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
-    """Fetch up to FETCH_SIZE companies incorporated on date_str."""
     auth = (api_key, '')
     params = {
         'incorporated_from': date_str,
         'incorporated_to':   date_str,
         'size':              FETCH_SIZE
     }
-
-    for attempt in range(1, RETRY_COUNT + 1):
+    for attempt in range(1, RETRY_COUNT+1):
         try:
             resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
             if resp.status_code == 200:
                 items = resp.json().get('items', [])
                 now = datetime.utcnow()
-                records = []
+                recs = []
                 for c in items:
                     name = c.get('title') or c.get('company_name') or ''
-                    records.append({
+                    recs.append({
                         'Company Name':       name,
-                        'Company Number':     c.get('company_number', ''),
-                        'Incorporation Date': c.get('date_of_creation', ''),
-                        'Status':             c.get('company_status', ''),
-                        'Source':             c.get('source', ''),
+                        'Company Number':     c.get('company_number',''),
+                        'Incorporation Date': c.get('date_of_creation',''),
+                        'Status':             c.get('company_status',''),
+                        'Source':             c.get('source',''),
                         'Date Downloaded':    now.strftime('%Y-%m-%d'),
                         'Time Discovered':    now.strftime('%H:%M:%S'),
                         'Category':           classify(name)
                     })
-                return records
+                return recs
             else:
-                logger.warning(f'Non-200 ({resp.status_code}) on {date_str}, attempt {attempt}')
-        except requests.RequestException as e:
-            logger.warning(f'Error on {date_str}, attempt {attempt}: {e}')
+                log.warning(f'Non-200 ({resp.status_code}) on {date_str}, attempt {attempt}')
+        except Exception as e:
+            log.warning(f'Error on {date_str}, attempt {attempt}: {e}')
         time.sleep(RETRY_DELAY)
-
-    logger.error(f'Failed to fetch data for {date_str} after {RETRY_COUNT} attempts')
+    log.error(f'Failed to fetch for {date_str}')
     return []
 
 
-def run_for_date_range(start_date: str, end_date: str):
-    """Fetch each day in range, append, dedupe, sort, and write outputs."""
-    sd = datetime.strptime(start_date, '%Y-%m-%d')
-    ed = datetime.strptime(end_date,   '%Y-%m-%d')
-    if sd > ed:
-        logger.error("start_date cannot be after end_date")
-        sys.exit(1)
+def run_for_date_range(sd: str, ed: str):
+    start = datetime.strptime(sd, '%Y-%m-%d')
+    end   = datetime.strptime(ed, '%Y-%m-%d')
+    if start > end:
+        log.error("start_date after end_date"); sys.exit(1)
 
-    new_records = []
-    cur = sd
-    while cur <= ed:
+    new_recs = []
+    cur = start
+    while cur <= end:
         ds = cur.strftime('%Y-%m-%d')
-        logger.info(f'Fetching companies for {ds}')
-        batch = fetch_companies_on(ds, API_KEY)
-        logger.info(f' → fetched {len(batch)} records')
-        new_records.extend(batch)
+        log.info(f'Fetching {ds}')
+        new_recs.extend(fetch_companies_on(ds, API_KEY))
         cur += timedelta(days=1)
 
-    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+    os.makedirs(os.path.dirname(MASTER_CSV), exist_ok=True)
 
-    # Load existing master
-    if os.path.exists(OUTPUT_CSV):
-        df_master = pd.read_csv(OUTPUT_CSV)
+    # Load or initialize master
+    if os.path.exists(MASTER_CSV):
+        df_master = pd.read_csv(MASTER_CSV)
     else:
-        df_master = pd.DataFrame(columns=[
-            'Company Name','Company Number','Incorporation Date',
-            'Status','Source','Date Downloaded','Time Discovered','Category'
-        ])
+        df_master = pd.DataFrame(columns=FIELDS)
 
     # Append & dedupe
-    if new_records:
-        df_new = pd.DataFrame(new_records)
+    if new_recs:
+        df_new = pd.DataFrame(new_recs, columns=FIELDS)
         df_all = pd.concat([df_master, df_new], ignore_index=True)
         df_all.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
     else:
         df_all = df_master
-        logger.info('No new records to append')
+        log.info('No new records')
 
-    # Sort by Incorporation Date desc
+    # Sort by Incorporation Date descending
     df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
-    df_all.reset_index(drop=True, inplace=True)
+    df_all = df_all[FIELDS]  # enforce column order
 
     # Write master files
-    df_all.to_excel(OUTPUT_EXCEL, index=False)
-    df_all.to_csv(OUTPUT_CSV, index=False)
-    logger.info(f'Wrote {len(df_all)} total records to Excel & CSV')
+    df_all.to_excel(MASTER_XLSX, index=False)
+    df_all.to_csv(MASTER_CSV, index=False)
+    log.info(f'Master: {len(df_all)} rows')
+
+    # Build relevant subset (Category != 'Other')
+    df_rel = df_all[df_all['Category'] != 'Other']
+    df_rel = df_rel[FIELDS]  # enforce same header order
+
+    # Write relevant files
+    df_rel.to_excel(RELEVANT_XLSX, index=False)
+    df_rel.to_csv(RELEVANT_CSV, index=False)
+    log.info(f'Relevant: {len(df_rel)} rows')
 
 
 def main():
     global API_KEY
-    parser = argparse.ArgumentParser(description='Fetch Companies House data')
-    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
-    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
-    args = parser.parse_args()
+    p = argparse.ArgumentParser()
+    p.add_argument('--start_date', default='', help='YYYY-MM-DD or today')
+    p.add_argument('--end_date',   default='', help='YYYY-MM-DD or today')
+    args = p.parse_args()
 
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
-        logger.error('CH_API_KEY environment variable is not set')
-        sys.exit(1)
+        log.error('Missing CH_API_KEY'); sys.exit(1)
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
-    logger.info(f'Starting run: {sd} → {ed}')
-
+    log.info(f'Run: {sd} → {ed}')
     run_for_date_range(sd, ed)
 
 
