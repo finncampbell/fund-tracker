@@ -33,7 +33,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0        # grab full history so we can rebase
+          fetch-depth: 0
           persist-credentials: true
 
       - name: Configure git user
@@ -41,7 +41,7 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      - name: Sync any remote commits
+      - name: Sync remote commits
         run: |
           git fetch origin main
           git pull --rebase origin main
@@ -63,11 +63,8 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add assets/data/master_companies.csv master_companies.xlsx
-          echo "=== git status ==="
-          git status --short
-          echo "=== git diff --cached ==="
-          git diff --cached || true
+          git add assets/data/master_companies.csv master_companies.xlsx \
+                  assets/data/relevant_companies.csv relevant_companies.xlsx
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
