@@ -1,5 +1,10 @@
+// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
+
+  // regex literal: whole-word, punctuation-tolerant, case-insensitive
+  // matches Fund (with optional punctuation), GP, LP or LLP
+  const fundEntitiesRegex = /\b(?:F\W*U\W*N\W*D|G\W*P|L\W*P|L\W*L\W*P)\b/i;
 
   Papa.parse(url, {
     download: true,
@@ -25,7 +30,20 @@ $(document).ready(function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
         const cat = $(this).data('filter') || '';
-        table.column(4).search(cat).draw();
+
+        if (cat === 'Fund Entities') {
+          // use regex literal (with its own 'i' flag) to catch punctuation variants
+          table
+            .column(4)
+            .search(fundEntitiesRegex, true, false)
+            .draw();
+        } else {
+          // normal case-insensitive substring search for other buttons
+          table
+            .column(4)
+            .search(cat, false, false, true)
+            .draw();
+        }
       });
     },
     error: function(err) {
