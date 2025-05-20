@@ -45,19 +45,20 @@ FIELDS = [
     'Category'
 ]
 
-# Patterns for classification, in priority order (longer/more specific first)
+# Patterns for classification, in priority order
+# Only LLP/LP/GP/Fund are whole-word + punctuation tolerant.
 KEYWORD_PATTERNS = [
     ('LLP',         r'\bL\W*L\W*P\b'),
     ('LP',          r'\bL\W*P\b'),
     ('GP',          r'\bG\W*P\b'),
     ('Fund',        r'\bF\W*U\W*N\W*D\b'),
-    ('Ventures',    r'\bVentures\b'),
-    ('Capital',     r'\bCapital\b'),
-    ('Equity',      r'\bEquity\b'),
-    ('Advisors',    r'\bAdvisors\b'),
-    ('Partners',    r'\bPartners\b'),
-    ('SIC',         r'\bSIC\b'),
-    ('Investments', r'\bInvestments\b'),
+    ('Ventures',    r'Ventures'),
+    ('Capital',     r'Capital'),
+    ('Equity',      r'Equity'),
+    ('Advisors',    r'Advisors'),
+    ('Partners',    r'Partners'),
+    ('SIC',         r'SIC'),
+    ('Investments', r'Investments'),
 ]
 
 # Set up logging
