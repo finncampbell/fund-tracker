@@ -99,7 +99,7 @@ def classify(name: str) -> str:
             return kw
     return 'Other'
 
-def enrich_sic(codes: list[str]) -> tuple[str,str]:
+def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
     """Given a list of sic codes, returns (joined_codes, descriptions, use_cases)."""
     joined = ",".join(codes)
     descs = []
@@ -193,10 +193,12 @@ def run_for_date_range(start_date: str, end_date: str):
     df_all.to_csv(MASTER_CSV, index=False)
     log.info(f'Master updated: {len(df_all)} rows')
 
-    # Build relevant: Category≠Other OR has any target SIC
+    # Build relevant: Category≠Other OR has any *target* SIC (non-empty description)
     mask_cat = df_all['Category'] != 'Other'
-    mask_sic = df_all['SIC Codes'].astype(bool)
-    df_rel  = df_all[mask_cat | mask_sic]
+    mask_sic = df_all['SIC Description'].astype(bool)
+    df_rel   = df_all[mask_cat | mask_sic]
+
+    # Write relevant
     df_rel.to_excel(RELEVANT_XLSX, index=False)
     df_rel.to_csv(RELEVANT_CSV, index=False)
     log.info(f'Relevant updated: {len(df_rel)} rows')
