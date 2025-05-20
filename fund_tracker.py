@@ -1,82 +1,188 @@
-name: Fund Tracker Automation
+#!/usr/bin/env python3
+"""
+fund_tracker.py
 
-on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
-    inputs:
-      start_date:
-        description: 'Start date (YYYY-MM-DD or "today")'
-        required: false
-        default: 'today'
-      end_date:
-        description: 'End date (YYYY-MM-DD or "today")'
-        required: false
-        default: 'today'
+- Fetches Companies House data by incorporation date (default: today)
+- Retries on transient errors
+- Logs to fund_tracker.log
+- Builds two outputs:
+  • master_companies.csv / .xlsx  (full history, with Category)
+  • relevant_companies.csv / .xlsx (only matching Categories)
+Each file always includes the full header row in the same order.
+"""
 
-permissions:
-  contents: write
-  actions: read
+import argparse
+import logging
+import os
+import sys
+import time
+from datetime import date, datetime, timedelta
 
-concurrency:
-  group: fund-tracker
-  cancel-in-progress: true
+import requests
+import pandas as pd
 
-jobs:
-  run-fund-tracker:
-    runs-on: ubuntu-latest
-    env:
-      CH_API_KEY: ${{ secrets.CH_API_KEY }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# CONFIGURATION
+CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
+MASTER_XLSX   = 'master_companies.xlsx'
+MASTER_CSV    = 'assets/data/master_companies.csv'
+RELEVANT_XLSX = 'relevant_companies.xlsx'
+RELEVANT_CSV  = 'assets/data/relevant_companies.csv'
+LOG_FILE      = 'fund_tracker.log'
+RETRY_COUNT   = 3
+RETRY_DELAY   = 5     # seconds
+FETCH_SIZE    = 100   # items per request
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: true
+# Column order for all CSV/XLSX outputs
+FIELDS = [
+  'Company Name',
+  'Company Number',
+  'Incorporation Date',
+  'Status',
+  'Source',
+  'Date Downloaded',
+  'Time Discovered',
+  'Category'
+]
 
-      - name: Configure git user
-        run: |
-          git config user.email "bot@example.com"
-          git config user.name  "GH Actions Bot"
+# Keywords for classification, in priority order
+KEYWORDS = [
+  'Ventures','Capital','Equity',
+  'Advisors','Partners','SIC',
+  'Fund','GP','LP','LLP','Investments'
+]
 
-      - name: Sync remote commits
-        run: |
-          git fetch origin main
-          git pull --rebase origin main
+# Set up logging
+logging.basicConfig(
+  filename=LOG_FILE,
+  level=logging.INFO,
+  format='%(asctime)s %(levelname)s %(message)s'
+)
+log = logging.getLogger(__name__)
+console = logging.StreamHandler(sys.stdout)
+console.setLevel(logging.WARNING)
+log.addHandler(console)
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.12
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+def normalize_date(d: str) -> str:
+  """Empty or 'today' → today’s date; otherwise return as-is."""
+  if not d or d.lower() == 'today':
+    return date.today().strftime('%Y-%m-%d')
+  return d
 
-      - name: Run fund tracker script
-        run: |
-          python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Check for changes
-        id: changes
-        run: |
-          git add assets/data/master_companies.csv master_companies.xlsx \
-                  assets/data/relevant_companies.csv relevant_companies.xlsx
-          git diff --cached --quiet || echo "Changes detected"
-          echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
+def classify(name: str) -> str:
+  """Return first matching keyword, or 'Other'."""
+  low = (name or '').lower()
+  for kw in KEYWORDS:
+    if kw.lower() in low:
+      return kw
+  return 'Other'
 
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin main
 
-      - name: Upload API logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: api-logs
-          path: api_logs.json
+def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
+  """Call advanced-search endpoint; retry on transient errors."""
+  auth = (api_key, '')
+  params = {
+    'incorporated_from': date_str,
+    'incorporated_to':   date_str,
+    'size':              FETCH_SIZE
+  }
+  for attempt in range(1, RETRY_COUNT + 1):
+    try:
+      resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
+      if resp.status_code == 200:
+        items = resp.json().get('items', [])
+        now = datetime.utcnow()
+        recs = []
+        for c in items:
+          name = c.get('title') or c.get('company_name') or ''
+          recs.append({
+            'Company Name':       name,
+            'Company Number':     c.get('company_number',''),
+            'Incorporation Date': c.get('date_of_creation',''),
+            'Status':             c.get('company_status',''),
+            'Source':             c.get('source',''),
+            'Date Downloaded':    now.strftime('%Y-%m-%d'),
+            'Time Discovered':    now.strftime('%H:%M:%S'),
+            'Category':           classify(name)
+          })
+        return recs
+      else:
+        log.warning(f'Non-200 ({resp.status_code}) on {date_str}, attempt {attempt}')
+    except Exception as e:
+      log.warning(f'Error on {date_str}, attempt {attempt}: {e}')
+    time.sleep(RETRY_DELAY)
+  log.error(f'Failed to fetch data for {date_str}')
+  return []
+
+
+def run_for_date_range(start_date: str, end_date: str):
+  """Fetch each day, append & dedupe master, then write both outputs."""
+  sd = datetime.strptime(start_date, '%Y-%m-%d')
+  ed = datetime.strptime(end_date, '%Y-%m-%d')
+  if sd > ed:
+    log.error("start_date cannot be after end_date")
+    sys.exit(1)
+
+  new_records = []
+  cur = sd
+  while cur <= ed:
+    ds = cur.strftime('%Y-%m-%d')
+    log.info(f'Fetching companies for {ds}')
+    new_records.extend(fetch_companies_on(ds, API_KEY))
+    cur += timedelta(days=1)
+
+  os.makedirs(os.path.dirname(MASTER_CSV), exist_ok=True)
+
+  # Load or initialize master
+  if os.path.exists(MASTER_CSV):
+    df_master = pd.read_csv(MASTER_CSV)
+  else:
+    df_master = pd.DataFrame(columns=FIELDS)
+
+  # Append & dedupe
+  if new_records:
+    df_new = pd.DataFrame(new_records, columns=FIELDS)
+    df_all = pd.concat([df_master, df_new], ignore_index=True)
+    df_all.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
+  else:
+    df_all = df_master
+    log.info('No new records to append')
+
+  # Sort by incorporation date descending & enforce column order
+  df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
+  df_all = df_all[FIELDS]
+
+  # Write master outputs
+  df_all.to_excel(MASTER_XLSX, index=False)
+  df_all.to_csv(MASTER_CSV, index=False)
+  log.info(f'Master file updated: {len(df_all)} rows')
+
+  # Write relevant outputs
+  df_rel = df_all[df_all['Category'] != 'Other']
+  df_rel = df_rel[FIELDS]
+  df_rel.to_excel(RELEVANT_XLSX, index=False)
+  df_rel.to_csv(RELEVANT_CSV, index=False)
+  log.info(f'Relevant file updated: {len(df_rel)} rows')
+
+
+def main():
+  global API_KEY
+  parser = argparse.ArgumentParser(description='Fetch & classify Companies House data')
+  parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
+  parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
+  args = parser.parse_args()
+
+  API_KEY = os.getenv('CH_API_KEY')
+  if not API_KEY:
+    log.error('CH_API_KEY not set')
+    sys.exit(1)
+
+  sd = normalize_date(args.start_date)
+  ed = normalize_date(args.end_date)
+  log.info(f'Starting run: {sd} → {ed}')
+  run_for_date_range(sd, ed)
+
+
+if __name__ == '__main__':
+  main()
