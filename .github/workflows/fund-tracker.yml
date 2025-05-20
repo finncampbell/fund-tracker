@@ -63,8 +63,8 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add assets/data/master_companies.csv master_companies.xlsx \
-                  assets/data/relevant_companies.csv relevant_companies.xlsx
+          git add assets/data/master_companies.csv assets/data/master_companies.xlsx \
+                  assets/data/relevant_companies.csv assets/data/relevant_companies.xlsx
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
