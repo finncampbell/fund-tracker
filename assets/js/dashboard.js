@@ -1,3 +1,4 @@
+// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
 
@@ -25,7 +26,19 @@ $(document).ready(function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
         const cat = $(this).data('filter') || '';
-        table.column(4).search(cat).draw();
+
+        if (cat === 'Fund Entities') {
+          // regex search for any of Fund, GP, LP, LLP
+          table
+            .column(4)
+            .search('Fund|GP|LP|LLP', true, false)
+            .draw();
+        } else {
+          table
+            .column(4)
+            .search(cat)
+            .draw();
+        }
       });
     },
     error: function(err) {
