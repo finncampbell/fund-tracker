@@ -29,7 +29,7 @@ $(document).ready(function() {
       });
     },
     error: function(err) {
-      console.error('CSV load error:', err);
+      console.error('Error loading CSV:', err);
     }
   });
 });
