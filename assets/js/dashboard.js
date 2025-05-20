@@ -1,5 +1,8 @@
+// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
+  // whole-word + punctuation-tolerant + case-insensitive regex for Fund entities
+  const fundEntitiesRE = '\\bFund\\b|\\bG\\W*P\\b|\\bL\\W*P\\b|\\bL\\W*L\\W*P\\b';
 
   Papa.parse(url, {
     download: true,
@@ -25,7 +28,14 @@ $(document).ready(function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
         const cat = $(this).data('filter') || '';
-        table.column(4).search(cat).draw();
+
+        if (cat === 'Fund Entities') {
+          // regex, no smart-search, case-insensitive
+          table.column(4).search(fundEntitiesRE, true, false, true).draw();
+        } else {
+          // simple substring, no smart-search, case-insensitive
+          table.column(4).search(cat, false, false, true).draw();
+        }
       });
     },
     error: function(err) {
