@@ -22,9 +22,10 @@ import pandas as pd
 
 # CONFIGURATION
 CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-MASTER_XLSX   = 'master_companies.xlsx'
+# Write both CSV and XLSX into assets/data/
+MASTER_XLSX   = 'assets/data/master_companies.xlsx'
 MASTER_CSV    = 'assets/data/master_companies.csv'
-RELEVANT_XLSX = 'relevant_companies.xlsx'
+RELEVANT_XLSX = 'assets/data/relevant_companies.xlsx'
 RELEVANT_CSV  = 'assets/data/relevant_companies.csv'
 LOG_FILE      = 'fund_tracker.log'
 RETRY_COUNT   = 3
