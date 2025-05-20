@@ -37,7 +37,8 @@
       <button class="ft-btn" data-filter="Investments">Investments</button>
     </nav>
 
-    <div class="table-container">
+    <!-- Main companies table -->
+    <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
           <tr>
@@ -46,6 +47,25 @@
             <th>Incorporation Date</th>
             <th>Category</th>
             <th>Date Downloaded</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- SIC-enhanced companies table -->
+    <div class="table-container" id="sic-companies-container" style="display:none;">
+      <table id="sic-companies" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Company Name</th>
+            <th>Company Number</th>
+            <th>Incorporation Date</th>
+            <th>Category</th>
+            <th>Date Downloaded</th>
+            <th>SIC Codes</th>
+            <th>SIC Description</th>
+            <th>Typical Use Case</th>
           </tr>
         </thead>
         <tbody></tbody>
