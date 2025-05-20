@@ -1,1 +1,62 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fund Tracker Dashboard</title>
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+  <header class="ft-header">
+    <h1>Fund Tracker Dashboard</h1>
+    <p><a href="assets/data/relevant_companies.xlsx" download>
+      Download filtered Excel
+    </a></p>
+  </header>
+
+  <div class="ft-filters">
+    <button class="ft-btn active"  data-filter="">All</button>
+    <button class="ft-btn"         data-filter="Ventures">Ventures</button>
+    <button class="ft-btn"         data-filter="Capital">Capital</button>
+    <button class="ft-btn"         data-filter="Equity">Equity</button>
+    <button class="ft-btn"         data-filter="Advisors">Advisors</button>
+    <button class="ft-btn"         data-filter="Partners">Partners</button>
+    <button class="ft-btn"         data-filter="SIC">SIC Codes</button>
+    <button class="ft-btn"         data-filter="Fund">Fund</button>
+    <button class="ft-btn"         data-filter="GP">GP</button>
+    <button class="ft-btn"         data-filter="LP">LP</button>
+    <button class="ft-btn"         data-filter="LLP">LLP</button>
+    <button class="ft-btn"         data-filter="Investments">Investments</button>
+  </div>
+
+  <table id="companies" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Company Number</th>
+        <th>Incorporation Date</th>
+        <th>Status</th>
+        <th>Category</th>
+        <th>Date Downloaded</th>
+        <th>Time Discovered</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- JS libs -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
