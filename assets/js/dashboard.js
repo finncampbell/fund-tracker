@@ -1,3 +1,4 @@
+// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
   const fundEntitiesRE = /\bFund\b|\bG\W*P\b|\bL\W*P\b|\bL\W*L\W*P\b/i;
@@ -17,9 +18,9 @@ $(document).ready(function() {
         order: [[2,'desc']], pageLength:25, responsive:true
       });
 
-      // SIC-enhanced companies table
+      // SIC-enhanced companies table (only matched SIC entries)
       const sicTable = $('#sic-companies').DataTable({
-        data: results.data.filter(r => r['SIC Codes']),
+        data: results.data.filter(r => r['SIC Description']),
         columns: [
           { data: 'Company Name' },
           { data: 'Company Number' },
@@ -40,7 +41,6 @@ $(document).ready(function() {
 
         $('#sic-companies-container').toggle(filter==='SIC');
         $('#companies-container').toggle(filter!=='SIC');
-
         if (filter && filter!=='SIC') companyTable.draw();
       });
 
