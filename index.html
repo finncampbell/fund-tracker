@@ -7,26 +7,20 @@
 
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+
   <header class="ft-header">
     <h1>Fund Tracker Dashboard</h1>
     <p><a href="assets/data/relevant_companies.xlsx" download>Download filtered Excel</a></p>
   </header>
 
-  <div class="ft-filters">
-    <button class="ft-btn active" data-filter="">All</button>
-    <button class="ft-btn" data-filter="Ventures">Ventures</button>
-    <button class="ft-btn" data-filter="Capital">Capital</button>
-    <button class="ft-btn" data-filter="Equity">Equity</button>
-    <button class="ft-btn" data-filter="Advisors">Advisors</button>
-    <button class="ft-btn" data-filter="Partners">Partners</button>
-    <button class="ft-btn" data-filter="SIC">SIC Codes</button>
-    <button class="ft-btn" data-filter="Fund Entities">Fund Entities</button>
-    <button class="ft-btn" data-filter="Investments">Investments</button>
-  </div>
+  <!-- Filter buttons will be injected here -->
+  <div class="ft-filters"></div>
 
+  <!-- Normal companies table -->
   <div id="companies-container">
     <table id="companies" class="display" style="width:100%">
       <thead>
@@ -42,6 +36,7 @@
     </table>
   </div>
 
+  <!-- SIC-enhanced companies table -->
   <div id="sic-companies-container" style="display:none;">
     <table id="sic-companies" class="display" style="width:100%">
       <thead>
