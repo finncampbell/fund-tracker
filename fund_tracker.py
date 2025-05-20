@@ -1,3 +1,4 @@
+# fund_tracker.py
 #!/usr/bin/env python3
 """
 fund_tracker.py
@@ -46,19 +47,18 @@ FIELDS = [
 ]
 
 # Patterns for classification, in priority order
-# Only LLP/LP/GP/Fund are whole-word + punctuation tolerant.
 KEYWORD_PATTERNS = [
     ('LLP',         r'\bL\W*L\W*P\b'),
     ('LP',          r'\bL\W*P\b'),
     ('GP',          r'\bG\W*P\b'),
     ('Fund',        r'\bF\W*U\W*N\W*D\b'),
-    ('Ventures',    r'Ventures'),
-    ('Capital',     r'Capital'),
-    ('Equity',      r'Equity'),
-    ('Advisors',    r'Advisors'),
-    ('Partners',    r'Partners'),
-    ('SIC',         r'SIC'),
-    ('Investments', r'Investments'),
+    ('Ventures',    r'\bVentures\b'),
+    ('Capital',     r'\bCapital\b'),
+    ('Equity',      r'\bEquity\b'),
+    ('Advisors',    r'\bAdvisors\b'),
+    ('Partners',    r'\bPartners\b'),
+    ('SIC',         r'\bSIC\b'),
+    ('Investments', r'\bInvestments\b'),
 ]
 
 # Set up logging
@@ -98,10 +98,9 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
         try:
             resp = requests.get(CH_API_URL, auth=auth, params=params, timeout=10)
             if resp.status_code == 200:
-                items = resp.json().get('items', [])
                 now = datetime.utcnow()
                 recs = []
-                for c in items:
+                for c in resp.json().get('items', []):
                     nm = c.get('title') or c.get('company_name') or ''
                     recs.append({
                         'Company Name':       nm,
@@ -119,6 +118,7 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
         except Exception as e:
             log.warning(f'Error on {date_str}, attempt {attempt}: {e}')
         time.sleep(RETRY_DELAY)
+
     log.error(f'Failed to fetch for {date_str}')
     return []
 
@@ -166,7 +166,6 @@ def run_for_date_range(start_date: str, end_date: str):
 
     # Filter relevant (Category != Other) and write
     df_rel = df_all[df_all['Category'] != 'Other']
-    df_rel = df_rel[FIELDS]
     df_rel.to_excel(RELEVANT_XLSX, index=False)
     df_rel.to_csv(RELEVANT_CSV, index=False)
     log.info(f'Relevant file updated: {len(df_rel)} rows')
