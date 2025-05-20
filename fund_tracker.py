@@ -62,13 +62,11 @@ console = logging.StreamHandler(sys.stdout)
 console.setLevel(logging.WARNING)
 log.addHandler(console)
 
-
 def normalize_date(d: str) -> str:
   """Empty or 'today' → today’s date; else return as-is."""
   if not d or d.lower() == 'today':
     return date.today().strftime('%Y-%m-%d')
   return d
-
 
 def classify(name: str) -> str:
   """Return first matching keyword or 'Other'."""
@@ -77,7 +75,6 @@ def classify(name: str) -> str:
     if kw.lower() in low:
       return kw
   return 'Other'
-
 
 def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
   """Hit the advanced-search endpoint, retry on failure."""
@@ -115,7 +112,6 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
   log.error(f'Failed to fetch for {date_str}')
   return []
 
-
 def run_for_date_range(start_date: str, end_date: str):
   """Fetch each day, append & dedupe master, then write master + relevant files."""
   sd = datetime.strptime(start_date, '%Y-%m-%d')
@@ -136,53 +132,3 @@ def run_for_date_range(start_date: str, end_date: str):
 
   # Load or init master DataFrame
   if os.path.exists(MASTER_CSV):
-    df_master = pd.read_csv(MASTER_CSV)
-  else:
-    df_master = pd.DataFrame(columns=FIELDS)
-
-  # Append, dedupe
-  if new_records:
-    df_new = pd.DataFrame(new_records, columns=FIELDS)
-    df_all = pd.concat([df_master, df_new], ignore_index=True)
-    df_all.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
-  else:
-    df_all = df_master
-    log.info('No new records to append')
-
-  # Sort by incorporation date descending & enforce column order
-  df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
-  df_all = df_all[FIELDS]
-
-  # Write master outputs
-  df_all.to_excel(MASTER_XLSX, index=False)
-  df_all.to_csv(MASTER_CSV, index=False)
-  log.info(f'Master file updated: {len(df_all)} rows')
-
-  # Filter relevant (Category != Other) and write
-  df_rel = df_all[df_all['Category'] != 'Other']
-  df_rel = df_rel[FIELDS]
-  df_rel.to_excel(RELEVANT_XLSX, index=False)
-  df_rel.to_csv(RELEVANT_CSV, index=False)
-  log.info(f'Relevant file updated: {len(df_rel)} rows')
-
-
-def main():
-  global API_KEY
-  parser = argparse.ArgumentParser(description='Fetch and classify CH data')
-  parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
-  parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
-  args = parser.parse_args()
-
-  API_KEY = os.getenv('CH_API_KEY')
-  if not API_KEY:
-    log.error('CH_API_KEY environment variable not set')
-    sys.exit(1)
-
-  sd = normalize_date(args.start_date)
-  ed = normalize_date(args.end_date)
-  log.info(f'Starting run: {sd} → {ed}')
-  run_for_date_range(sd, ed)
-
-
-if __name__ == '__main__':
-  main()
