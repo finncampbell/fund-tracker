@@ -1,11 +1,14 @@
+/* Import Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /* Page background */
 body {
   margin: 0;
   padding: 2rem;
-  font-family: system-ui, sans-serif;
   background: #e9f5f2;
   display: flex;
   justify-content: center;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
 /* Card container */
@@ -24,6 +27,8 @@ body {
   color: white;
   padding: 2rem;
   text-align: center;
+  /* Now using Poppins here too */
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 .ft-header h1 {
   margin: 0 0 0.5rem;
@@ -55,6 +60,7 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
   transition: background 0.2s, color 0.2s;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 .ft-btn:hover {
   background: #f0faf8;
@@ -72,35 +78,45 @@ body {
 }
 
 /* DataTable styling */
-#companies {
+#companies,
+#sic-companies {
   border-collapse: separate !important;
   border-spacing: 0 0.5rem !important;
   width: 100%;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
-#companies tbody tr {
+#companies tbody tr,
+#sic-companies tbody tr {
   background: #fafafa;
 }
-#companies tbody tr:nth-child(even) {
+#companies tbody tr:nth-child(even),
+#sic-companies tbody tr:nth-child(even) {
   background: #ffffff;
 }
-#companies thead th {
+/* Table headers also in Poppins */
+#companies thead th,
+#sic-companies thead th {
   background: #f2f2f2;
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
-#companies td {
+#companies td,
+#sic-companies td {
   padding: 0.75rem 0.5rem;
   border: none;
 }
 
 /* Category pill in table */
-#companies td:nth-child(4) {
+#companies td:nth-child(4),
+#sic-companies td:nth-child(4) {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 2rem;
   background: #e0f7fa;
   color: #223366;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
 /* Responsive adjustments */
