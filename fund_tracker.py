@@ -33,6 +33,14 @@ RETRY_COUNT   = 3
 RETRY_DELAY   = 5     # seconds
 FETCH_SIZE    = 100   # items per request
 
+# -- Logging setup (restored) --
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
+log = logging.getLogger(__name__)
+
 # Your target SIC lookup table
 SIC_LOOKUP = {
     '64205': ("Activities of financial services holding companies",
@@ -76,7 +84,7 @@ FIELDS = [
     'Category','SIC Codes','SIC Description','Typical Use Case'
 ]
 
-# -- New: ordered regex patterns for classification --
+# -- Ordered regex patterns for classification --
 CLASS_PATTERNS = [
     (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
     (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
@@ -163,7 +171,8 @@ def run_for_date_range(start_date: str, end_date: str):
     sd = datetime.strptime(start_date, '%Y-%m-%d')
     ed = datetime.strptime(end_date,   '%Y-%m-%d')
     if sd > ed:
-        log.error("start_date cannot be after end_date"); sys.exit(1)
+        log.error("start_date cannot be after end_date")
+        sys.exit(1)
 
     new_records = []
     cur = sd
@@ -220,7 +229,8 @@ def main():
 
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
-        log.error('CH_API_KEY not set'); sys.exit(1)
+        log.error('CH_API_KEY not set')
+        sys.exit(1)
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
