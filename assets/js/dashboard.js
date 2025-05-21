@@ -6,7 +6,7 @@ $(document).ready(function() {
   Papa.parse(url, { download: true, header: true, complete(results) {
     const data = results.data.filter(r => r['Company Number']);
 
-    // Main companies table
+    // Initialize main companies table
     const companyTable = $('#companies').DataTable({
       data,
       columns: [
@@ -21,7 +21,7 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // SIC-enhanced table
+    // Initialize SIC-enhanced table
     const sicTable = $('#sic-companies').DataTable({
       data: data.filter(r => r['SIC Description']),
       columns: [
@@ -39,25 +39,15 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // Global filter hook
+    // Global filter hook for the companies table
     $.fn.dataTable.ext.search.push((settings, rowData) => {
       const active = $('.ft-btn.active').data('filter') || '';
-
-      // All: only show entries with Category ≠ "Other"
-      if (!active) {
-        return rowData[3] !== 'Other';
-      }
-
-      // SIC tab hides main table
-      if (active === 'SIC') return false;
-
-      // Fund Entities by regex on name
+      if (!active) return true;            // All
+      if (active === 'SIC') return false;  // hide on SIC tab
       if (active === 'Fund Entities') {
         return fundEntitiesRE.test(rowData[0]);
       }
-
-      // Exact Category match for other tabs
-      return rowData[3] === active;
+      return rowData[3] === active;        // exact Category match
     });
 
     // Tab click handler
@@ -66,10 +56,11 @@ $(document).ready(function() {
       $(this).addClass('active');
       const filter = $(this).data('filter') || '';
 
+      // Toggle table visibility
       $('#companies-container').toggle(filter !== 'SIC');
       $('#sic-companies-container').toggle(filter === 'SIC');
 
-      // Redraw main table on any non-SIC tab (including All)
+      // ALWAYS redraw the companies table when it's visible (including All)
       if (filter !== 'SIC') {
         companyTable.draw();
       }
