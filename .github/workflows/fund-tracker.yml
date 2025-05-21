@@ -30,53 +30,50 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Configure git user
-        run: |
+      - run: |
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      - name: Sync remote commits
-        run: |
+      - run: |
           git fetch origin main
           git pull --rebase origin main
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.12
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
-      - name: Run fund tracker script
-        run: |
+      - run: |
           python fund_tracker.py \
             --start_date "${{ github.event.inputs.start_date }}" \
             --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Check for changes
-        id: changes
+      - id: changes
         run: |
           git add assets/data/master_companies.csv assets/data/master_companies.xlsx \
                   assets/data/relevant_companies.csv assets/data/relevant_companies.xlsx
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true'
+      - if: steps.changes.outputs.changed == 'true'
         run: |
           git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
 
-      - name: Upload API logs
+      - uses: actions/upload-artifact@v4
         if: always()
-        uses: actions/upload-artifact@v4
         with:
           name: api-logs
           path: api_logs.json
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fund-tracker-log
+          path: fund_tracker.log
