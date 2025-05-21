@@ -1,12 +1,46 @@
 // assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
-  const fundEntitiesRE = /\bFund\b|\bG\W*P\b|\bL\W*P\b|\bL\W*L\W*P\b/i;
+  // Match “Fund”, “GP”, “LLP” (first) or standalone “LP” (ignoring . - or space)
+  const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
 
   Papa.parse(url, { download: true, header: true, complete(results) {
     const data = results.data.filter(r => r['Company Number']);
 
-    // 1) Register the global filter hook BEFORE any table draw
+    // Main companies table
+    const companyTable = $('#companies').DataTable({
+      data,
+      columns: [
+        { data: 'Company Name' },
+        { data: 'Company Number' },
+        { data: 'Incorporation Date' },
+        { data: 'Category' },
+        { data: 'Date Downloaded' }
+      ],
+      order: [[2, 'desc']],
+      pageLength: 25,
+      responsive: true
+    });
+
+    // SIC-enhanced table
+    const sicTable = $('#sic-companies').DataTable({
+      data: data.filter(r => r['SIC Description']),
+      columns: [
+        { data: 'Company Name' },
+        { data: 'Company Number' },
+        { data: 'Incorporation Date' },
+        { data: 'Category' },
+        { data: 'Date Downloaded' },
+        { data: 'SIC Codes' },
+        { data: 'SIC Description' },
+        { data: 'Typical Use Case' }
+      ],
+      order: [[2, 'desc']],
+      pageLength: 25,
+      responsive: true
+    });
+
+    // Global filter hook
     $.fn.dataTable.ext.search.push((settings, rowData) => {
       const active = $('.ft-btn.active').data('filter') || '';
 
@@ -27,42 +61,7 @@ $(document).ready(function() {
       return rowData[3] === active;
     });
 
-    // 2) Initialize DataTables
-    const companyTable = $('#companies').DataTable({
-      data,
-      columns: [
-        { data: 'Company Name' },
-        { data: 'Company Number' },
-        { data: 'Incorporation Date' },
-        { data: 'Category' },
-        { data: 'Date Downloaded' }
-      ],
-      order: [[2, 'desc']],
-      pageLength: 25,
-      responsive: true
-    });
-
-    const sicTable = $('#sic-companies').DataTable({
-      data: data.filter(r => r['SIC Description']),
-      columns: [
-        { data: 'Company Name' },
-        { data: 'Company Number' },
-        { data: 'Incorporation Date' },
-        { data: 'Category' },
-        { data: 'Date Downloaded' },
-        { data: 'SIC Codes' },
-        { data: 'SIC Description' },
-        { data: 'Typical Use Case' }
-      ],
-      order: [[2, 'desc']],
-      pageLength: 25,
-      responsive: true
-    });
-
-    // 3) Force initial redraw so “All” filter takes effect immediately
-    companyTable.draw();
-
-    // 4) Tab click handler
+    // Tab click handler
     $('.ft-filters').on('click', '.ft-btn', function() {
       $('.ft-btn').removeClass('active');
       $(this).addClass('active');
@@ -71,7 +70,7 @@ $(document).ready(function() {
       $('#companies-container').toggle(filter !== 'SIC');
       $('#sic-companies-container').toggle(filter === 'SIC');
 
-      // Redraw main table on any non-SIC tab (including returning to All)
+      // Redraw main table on any non-SIC tab (including All)
       if (filter !== 'SIC') {
         companyTable.draw();
       }
