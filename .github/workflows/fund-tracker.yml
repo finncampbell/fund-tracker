@@ -49,8 +49,10 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # Ensure pandas can write .xlsx files
-      - run: pip install openpyxl
+      # install both excel backends and verify
+      - run: |
+          pip install openpyxl XlsxWriter
+          python -c "import openpyxl, XlsxWriter; print('Excel engines OK')"
 
       - run: |
           python fund_tracker.py \
@@ -59,7 +61,6 @@ jobs:
 
       - id: changes
         run: |
-          # Safely add CSV and XLSX, ignore if missing
           git add assets/data/master_companies.csv || true
           git add assets/data/master_companies.xlsx || true
           git add assets/data/relevant_companies.csv || true
