@@ -4,10 +4,9 @@ $(document).ready(function() {
   const fundEntitiesRE = /\bFund\b|\bG\W*P\b|\bL\W*P\b|\bL\W*L\W*P\b/i;
 
   Papa.parse(url, { download: true, header: true, complete(results) {
-    // 1) Clean out any blank rows from the CSV parse
     const data = results.data.filter(r => r['Company Number']);
 
-    // 2) Initialize the main companies table
+    // Main companies table
     const companyTable = $('#companies').DataTable({
       data,
       columns: [
@@ -22,7 +21,7 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // 3) Initialize the SIC‐enhanced table (only rows with a matched SIC Description)
+    // SIC-enhanced table
     const sicTable = $('#sic-companies').DataTable({
       data: data.filter(r => r['SIC Description']),
       columns: [
@@ -40,37 +39,38 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // 4) Add global filter hook for non-SIC tabs
+    // Global filter hook
     $.fn.dataTable.ext.search.push((settings, rowData) => {
       const active = $('.ft-btn.active').data('filter') || '';
 
-      // “All” shows everything
-      if (!active) return true;
+      // All: only show entries with Category ≠ "Other"
+      if (!active) {
+        return rowData[3] !== 'Other';
+      }
 
-      // On “SIC” tab hide the main table
+      // SIC tab hides main table
       if (active === 'SIC') return false;
 
-      // “Fund Entities” uses regex on name
+      // Fund Entities by regex on name
       if (active === 'Fund Entities') {
         return fundEntitiesRE.test(rowData[0]);
       }
 
-      // Otherwise exact Category match
+      // Exact Category match for other tabs
       return rowData[3] === active;
     });
 
-    // 5) Wire up tab clicks
+    // Tab click handler
     $('.ft-filters').on('click', '.ft-btn', function() {
       $('.ft-btn').removeClass('active');
       $(this).addClass('active');
       const filter = $(this).data('filter') || '';
 
-      // Toggle visibility of the two tables
       $('#companies-container').toggle(filter !== 'SIC');
       $('#sic-companies-container').toggle(filter === 'SIC');
 
-      // Redraw if needed
-      if (filter && filter !== 'SIC') {
+      // Redraw main table on any non-SIC tab (including All)
+      if (filter !== 'SIC') {
         companyTable.draw();
       }
     });
