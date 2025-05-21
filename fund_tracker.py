@@ -17,6 +17,7 @@ import os
 import sys
 import time
 from datetime import date, datetime, timedelta
+import re
 import requests
 import pandas as pd
 
@@ -75,18 +76,20 @@ FIELDS = [
     'Category','SIC Codes','SIC Description','Typical Use Case'
 ]
 
-# Keywords for classification, in priority order
-KEYWORDS = [
-    'Ventures','Capital','Equity','Advisors','Partners','SIC',
-    'Fund','GP','LP','LLP','Investments'
+# -- New: ordered regex patterns for classification --
+CLASS_PATTERNS = [
+    (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
+    (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
+    (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
+    (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
+    (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
+    (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
+    (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
+    (re.compile(r'\bEquity\b',                re.IGNORECASE), 'Equity'),
+    (re.compile(r'\bAdvisors\b',              re.IGNORECASE), 'Advisors'),
+    (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
+    (re.compile(r'\bSIC\b',                   re.IGNORECASE), 'SIC'),
 ]
-
-# Set up logging
-logging.basicConfig(
-    filename=LOG_FILE, level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s'
-)
-log = logging.getLogger(__name__)
 
 def normalize_date(d: str) -> str:
     if not d or d.lower() == 'today':
@@ -94,10 +97,14 @@ def normalize_date(d: str) -> str:
     return d
 
 def classify(name: str) -> str:
-    low = (name or '').lower()
-    for kw in KEYWORDS:
-        if kw.lower() in low:
-            return kw
+    """
+    Return the first matching label from CLASS_PATTERNS,
+    falling back to 'Other' if nothing matches.
+    """
+    txt = name or ''
+    for pat, label in CLASS_PATTERNS:
+        if pat.search(txt):
+            return label
     return 'Other'
 
 def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
