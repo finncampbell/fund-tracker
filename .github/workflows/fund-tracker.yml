@@ -49,6 +49,9 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # Ensure pandas can write .xlsx files
+      - run: pip install openpyxl
+
       - run: |
           python fund_tracker.py \
             --start_date "${{ github.event.inputs.start_date }}" \
