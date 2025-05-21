@@ -56,8 +56,11 @@ jobs:
 
       - id: changes
         run: |
-          git add assets/data/master_companies.csv assets/data/master_companies.xlsx \
-                  assets/data/relevant_companies.csv assets/data/relevant_companies.xlsx
+          # Safely add CSV and XLSX, ignore if missing
+          git add assets/data/master_companies.csv || true
+          git add assets/data/master_companies.xlsx || true
+          git add assets/data/relevant_companies.csv || true
+          git add assets/data/relevant_companies.xlsx || true
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
