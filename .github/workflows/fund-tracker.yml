@@ -49,10 +49,10 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # install both excel backends and verify
+      # install both Excel backends and verify
       - run: |
           pip install openpyxl XlsxWriter
-          python -c "import openpyxl, XlsxWriter; print('Excel engines OK')"
+          python -c "import openpyxl, xlsxwriter; print('Excel engines OK')"
 
       - run: |
           python fund_tracker.py \
