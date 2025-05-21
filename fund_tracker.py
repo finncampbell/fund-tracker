@@ -4,7 +4,7 @@ fund_tracker.py
 
 - Fetches Companies House data by incorporation date (default: today)
 - Retries on transient errors
-- Logs to fund_tracker.log
+- Logs to fund_tracker.log (now at DEBUG level)
 - Builds two outputs:
   • master_companies.csv / .xlsx  (full history, with Category, SIC Codes, Descriptions)
   • relevant_companies.csv / .xlsx (only matching Categories or target SIC codes)
@@ -23,7 +23,6 @@ import pandas as pd
 
 # CONFIGURATION
 CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-# Write both CSV and XLSX into assets/data/
 MASTER_XLSX   = 'assets/data/master_companies.xlsx'
 MASTER_CSV    = 'assets/data/master_companies.csv'
 RELEVANT_XLSX = 'assets/data/relevant_companies.xlsx'
@@ -33,10 +32,10 @@ RETRY_COUNT   = 3
 RETRY_DELAY   = 5     # seconds
 FETCH_SIZE    = 100   # items per request
 
-# -- Logging setup (restored) --
+# -- Logging setup (now at DEBUG) --
 logging.basicConfig(
     filename=LOG_FILE,
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s %(levelname)s %(message)s'
 )
 log = logging.getLogger(__name__)
@@ -116,15 +115,12 @@ def classify(name: str) -> str:
     return 'Other'
 
 def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
-    """Given a list of sic codes, returns (joined_codes, descriptions, use_cases)."""
     joined = ",".join(codes)
-    descs = []
-    uses  = []
+    descs, uses = [], []
     for code in codes:
         if code in SIC_LOOKUP:
             d,u = SIC_LOOKUP[code]
-            descs.append(d)
-            uses.append(u)
+            descs.append(d); uses.append(u)
     return joined, "; ".join(descs), "; ".join(uses)
 
 def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
@@ -145,6 +141,11 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
                     nm    = c.get('title') or c.get('company_name') or ''
                     codes = c.get('sic_codes', [])
                     sic_codes, sic_desc, sic_use = enrich_sic(codes)
+
+                    # -- Debug classification here --
+                    category = classify(nm)
+                    log.debug(f"DEBUG classify: “{nm}” → {category}")
+
                     recs.append({
                         'Company Name':       nm,
                         'Company Number':     c.get('company_number',''),
@@ -153,7 +154,7 @@ def fetch_companies_on(date_str: str, api_key: str) -> list[dict]:
                         'Source':             c.get('source',''),
                         'Date Downloaded':    now.strftime('%Y-%m-%d'),
                         'Time Discovered':    now.strftime('%H:%M:%S'),
-                        'Category':           classify(nm),
+                        'Category':           category,
                         'SIC Codes':          sic_codes,
                         'SIC Description':    sic_desc,
                         'Typical Use Case':   sic_use
@@ -210,7 +211,7 @@ def run_for_date_range(start_date: str, end_date: str):
     df_all.to_csv(MASTER_CSV, index=False)
     log.info(f'Master updated: {len(df_all)} rows')
 
-    # Build relevant: Category≠Other OR has any *target* SIC (non-empty description)
+    # Build relevant
     mask_cat = df_all['Category'] != 'Other'
     mask_sic = df_all['SIC Description'].astype(bool)
     df_rel   = df_all[mask_cat | mask_sic]
