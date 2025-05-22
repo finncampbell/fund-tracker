@@ -1,29 +1,49 @@
 // assets/js/dashboard.js
 $(document).ready(function() {
+  // 1) Load CSV & Directors JSON in parallel
   Promise.all([
     fetch('assets/data/relevant_companies.csv').then(r => r.text()),
     fetch('assets/data/directors.json').then(r => r.json())
   ]).then(([csvText, directorMap]) => {
-    // 1) Parse CSV and attach Directors arrays
+    // 2) Parse CSV and attach Directors arrays
     const allData = Papa.parse(csvText, { header: true }).data
       .filter(r => r['Company Number'])
-      .map(r => {
-        r.Directors = directorMap[r['Company Number']] || [];
-        return r;
-      });
+      .map(r => ({
+        ...r,
+        Directors: directorMap[r['Company Number']] || []
+      }));
 
-    // 2) Regex for Fund Entities tab
+    // 3) Pre‐compile regexes
     const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
+    const ventureRE      = /\bVenture(s)?\b/i;
+    const investRE       = /\bInvestment(s)?\b/i;
+    const capitalRE      = /\bCapital\b/i;
+    const equityRE       = /\bEquity\b/i;
+    const advisorsRE     = /\bAdvisors\b/i;
+    const partnersRE     = /\bPartners\b/i;
 
-    // 3) Initialize main companies table
+    // 4) Define filter tests by data-filter value
+    const filterTests = {
+      '':                r => r['Category'] !== 'Other',
+      'Ventures':        r => ventureRE.test(r['Company Name']) || ventureRE.test(r['Category']),
+      'Capital':         r => capitalRE.test(r['Company Name'])   || capitalRE.test(r['Category']),
+      'Equity':          r => equityRE.test(r['Company Name'])    || equityRE.test(r['Category']),
+      'Advisors':        r => advisorsRE.test(r['Company Name'])  || advisorsRE.test(r['Category']),
+      'Partners':        r => partnersRE.test(r['Company Name'])  || partnersRE.test(r['Category']),
+      'Investments':     r => investRE.test(r['Company Name'])    || investRE.test(r['Category']),
+      'Fund Entities':   r => fundEntitiesRE.test(r['Company Name']),
+      'SIC':             r => !!r['SIC Description']
+    };
+
+    // 5) Initialize main DataTable
     const companyTable = $('#companies').DataTable({
       data: allData,
       columns: [
-        { data: 'Company Name' },
-        { data: 'Company Number' },
+        { data: 'Company Name'       },
+        { data: 'Company Number'     },
         { data: 'Incorporation Date' },
-        { data: 'Category' },
-        { data: 'Date Downloaded' },
+        { data: 'Category'           },
+        { data: 'Date Downloaded'    },
         {
           data: 'Directors',
           title: 'Directors',
@@ -38,19 +58,18 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // 4) Initialize SIC‐enhanced table (only rows with SIC Description)
-    const sicData = allData.filter(r => r['SIC Description']);
+    // 6) Initialize SIC‐only DataTable
     const sicTable = $('#sic-companies').DataTable({
-      data: sicData,
+      data: allData.filter(r => r['SIC Description']),
       columns: [
-        { data: 'Company Name' },
-        { data: 'Company Number' },
+        { data: 'Company Name'       },
+        { data: 'Company Number'     },
         { data: 'Incorporation Date' },
-        { data: 'Category' },
-        { data: 'Date Downloaded' },
-        { data: 'SIC Codes' },
-        { data: 'SIC Description' },
-        { data: 'Typical Use Case' },
+        { data: 'Category'           },
+        { data: 'Date Downloaded'    },
+        { data: 'SIC Codes'          },
+        { data: 'SIC Description'    },
+        { data: 'Typical Use Case'   },
         {
           data: 'Directors',
           title: 'Directors',
@@ -65,17 +84,17 @@ $(document).ready(function() {
       responsive: true
     });
 
-    // 5) Expand/Collapse handler for both tables
-    function toggleDirectors(ev) {
-      const tbl = ev.delegateTarget.closest('table');
-      const dt  = $(tbl).hasClass('display') && tbl.id === 'companies'
-        ? companyTable
-        : sicTable;
-      const tr  = $(this).closest('tr');
-      const row = dt.row(tr);
+    // 7) Expand/collapse handler for both tables
+    function toggleDirectors() {
+      const $btn = $(this);
+      const $tr  = $btn.closest('tr');
+      const tableId = $btn.closest('table').attr('id');
+      const dt     = tableId === 'sic-companies' ? sicTable : companyTable;
+      const row    = dt.row($tr);
+
       if (row.child.isShown()) {
         row.child.hide();
-        $(this).text('Expand for Directors');
+        $btn.text('Expand for Directors');
       } else {
         const dirs = row.data().Directors;
         let html = '<table class="child-table"><tr>'
@@ -95,33 +114,28 @@ $(document).ready(function() {
         });
         html += '</table>';
         row.child(html).show();
-        $(this).text('Hide Directors');
+        $btn.text('Hide Directors');
       }
     }
-    $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
-    $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
+    $('#companies tbody').on('click',  '.expand-btn', toggleDirectors);
+    $('#sic-companies tbody').on('click','.expand-btn', toggleDirectors);
 
-    // 6) Global filter hook applies to main table only
+    // 8) Global filter hook (applies to main table only)
     $.fn.dataTable.ext.search.push((settings, rowData) => {
-      // only apply to #companies
       if (settings.nTable.id !== 'companies') return true;
       const active = $('.ft-btn.active').data('filter') || '';
-      if (!active)                return rowData[3] !== 'Other';        // All
-      if (active === 'SIC')       return false;                         // SIC hides main
-      if (active === 'Fund Entities') return fundEntitiesRE.test(rowData[0]);
-      return rowData[3] === active;                                    // Category tabs
+      const testFn = filterTests[active] || (() => true);
+      return testFn(rowData);
     });
 
-    // 7) Tab click handler
+    // 9) Tab click handler
     $('.ft-filters').on('click', '.ft-btn', function() {
       $('.ft-btn').removeClass('active');
       $(this).addClass('active');
-      const filter = $(this).data('filter') || '';
-      // show/hide containers
-      $('#companies-container').toggle(filter !== 'SIC');
-      $('#sic-companies-container').toggle(filter === 'SIC');
-      // redraw main on non‐SIC tab
-      if (filter !== 'SIC') {
+      const active = $(this).data('filter') || '';
+      $('#companies-container').toggle(active !== 'SIC');
+      $('#sic-companies-container').toggle(active === 'SIC');
+      if (active !== 'SIC') {
         companyTable.draw();
       }
     });
