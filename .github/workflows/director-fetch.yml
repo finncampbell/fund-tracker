@@ -1,3 +1,4 @@
+# .github/workflows/director-fetch.yml
 name: Director Fetch
 
 on:
@@ -34,18 +35,17 @@ jobs:
       - name: Fetch directors
         run: python fetch_directors.py
 
-      - id: add-and-commit
-        name: Determine if directors.json changed
+      - name: Check for changes to directors.json
+        id: check_changes
+        run: git diff --exit-code --quiet assets/data/directors.json
+        continue-on-error: true
+
+      - name: Commit and push updates
+        if: steps.check_changes.outcome == 'failure'
         run: |
           git config user.email "bot@example.com"
           git config user.name  "Director Fetch Bot"
-          git add assets/data/directors.json || true
-          # if there are staged changes, record changed=true
-          git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Push changes
-        if: ${{ steps.add-and-commit.outputs.changed == 'true' }}
-        run: |
+          git add assets/data/directors.json
           git commit -m "Update directors.json"
           git push
 
