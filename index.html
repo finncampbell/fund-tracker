@@ -4,25 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fund Tracker Dashboard</title>
-
-  <!-- DataTables CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
-  >
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 </head>
 <body>
-
   <div class="ft-dashboard-card">
     <header class="ft-header">
       <h1>Fund Tracker Dashboard</h1>
-      <p>
-        <a href="assets/data/relevant_companies.xlsx" download>
-          Download filtered Excel
-        </a>
-      </p>
+      <p><a href="assets/data/relevant_companies.xlsx" download>Download filtered Excel</a></p>
     </header>
 
     <nav class="ft-filters">
@@ -37,7 +26,6 @@
       <button class="ft-btn" data-filter="Investments">Investments</button>
     </nav>
 
-    <!-- Main companies table -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
@@ -47,13 +35,13 @@
             <th>Incorporation Date</th>
             <th>Category</th>
             <th>Date Downloaded</th>
+            <th>Directors</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
 
-    <!-- SIC-enhanced companies table -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
@@ -73,11 +61,9 @@
     </div>
   </div>
 
-  <!-- JS libs -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <!-- Custom JS -->
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
