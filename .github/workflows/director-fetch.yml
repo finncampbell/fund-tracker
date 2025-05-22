@@ -1,0 +1,43 @@
+name: Director Fetch
+
+on:
+  schedule:
+    - cron: "15 * * * *"    # every hour at :15
+  workflow_dispatch:
+
+jobs:
+  fetch-directors:
+    runs-on: ubuntu-latest
+    env:
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests pandas
+
+      - run: |
+          python fetch_directors.py
+
+      - id: add-and-commit
+        run: |
+          git config user.email "bot@example.com"
+          git config user.name  "Director Fetch Bot"
+          git add assets/data/directors.json || true
+          git diff --cached --quiet || echo "changes=true" > out.txt
+          echo "::set-output name=changed::$( [ -f out.txt ] && echo true || echo false )"
+
+      - if: steps.add-and-commit.outputs.changed == 'true'
+        run: |
+          git commit -m "Update directors.json"
+          git push
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: director-fetch-log
+          path: director_fetch.log
