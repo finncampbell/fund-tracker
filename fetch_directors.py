@@ -3,12 +3,18 @@ import os, json, time, logging, requests, pandas as pd
 from datetime import datetime
 
 # ── CONFIG ─────────────────────────────────────────────────────────────────────
-API_BASE       = 'https://api.company-information.service.gov.uk/company'
-CH_KEY         = os.getenv('CH_API_KEY')
-RELEVANT_CSV   = 'assets/data/relevant_companies.csv'
-DIRECTORS_JSON = 'assets/data/directors.json'
-LOG_FILE       = 'director_fetch.log'
-PAUSE_SECONDS  = 0.2   # throttle between requests
+API_BASE            = 'https://api.company-information.service.gov.uk/company'
+CH_KEY              = os.getenv('CH_API_KEY')
+RELEVANT_CSV        = 'assets/data/relevant_companies.csv'
+DIRECTORS_JSON      = 'assets/data/directors.json'
+LOG_FILE            = 'director_fetch.log'
+
+# Target maximum time for the fetch run (e.g. 30 minutes = 1800s)
+MAX_RUNTIME_SECS    = 30 * 60  
+
+# Bounds for per-request delay (in seconds)
+MIN_PAUSE           = 0.05   # up to 20 req/sec
+MAX_PAUSE           = 1.0    # at most 1 req/sec
 
 # ── LOGGING SETUP ───────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -20,7 +26,7 @@ log = logging.getLogger(__name__)
 
 def load_relevant_numbers():
     df = pd.read_csv(RELEVANT_CSV, dtype=str)
-    return df['Company Number'].dropna().unique().tolist()
+    return set(df['Company Number'].dropna().tolist())
 
 def load_existing_map():
     if os.path.exists(DIRECTORS_JSON):
@@ -29,7 +35,7 @@ def load_existing_map():
     return {}
 
 def fetch_one(number):
-    url = f"{API_BASE}/{number}/officers"
+    url    = f"{API_BASE}/{number}/officers"
     params = {'register_view': 'true', 'register_type': 'directors'}
     try:
         resp = requests.get(url, auth=(CH_KEY, ''), params=params, timeout=10)
@@ -56,26 +62,39 @@ def main():
     if not CH_KEY:
         log.error("CH_API_KEY missing")
         return
-    os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-    numbers = load_relevant_numbers()
-    existing = load_existing_map()
-    updated = False
 
-    for num in numbers:
-        if num in existing:
-            continue
+    os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
+
+    relevant = load_relevant_numbers()
+    existing = load_existing_map()
+
+    # Determine which companies still need director data
+    pending = [num for num in relevant if num not in existing]
+    count   = len(pending)
+
+    if count == 0:
+        log.info("No new companies to fetch directors for.")
+        return
+
+    # Compute dynamic pause to finish within MAX_RUNTIME_SECS
+    pause = MAX_RUNTIME_SECS / count
+    pause = max(min(pause, MAX_PAUSE), MIN_PAUSE)
+    log.info(f"{count} pending companies, using {pause:.2f}s delay per call")
+
+    updated = False
+    for num in pending:
         dirs = fetch_one(num)
         if dirs is None:
             continue
         existing[num] = dirs
-        log.info(f"Fetched directors for {num}")
+        log.info(f"Fetched directors for {num} ({len(dirs)} records)")
         updated = True
-        time.sleep(PAUSE_SECONDS)
+        time.sleep(pause)
 
     if updated:
         with open(DIRECTORS_JSON, 'w') as f:
             json.dump(existing, f, separators=(',',':'))
-        log.info("Wrote directors.json")
+        log.info(f"Wrote directors.json with {len(existing)} companies’ data")
 
 if __name__ == '__main__':
     main()
