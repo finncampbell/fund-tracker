@@ -6,6 +6,10 @@ on:
     - cron: "15 * * * *"    # every hour at :15
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   fetch-directors:
     runs-on: ubuntu-latest
@@ -15,7 +19,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,8 +40,8 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name  "Director Fetch Bot"
           git add assets/data/directors.json || true
-          git diff --cached --quiet || echo "changed=true" > changes.txt
-          echo "::set-output name=changed::$(if [ -f changes.txt ]; then echo true; else echo false; fi)"
+          git diff --cached --quiet || echo "changed" > changes.txt
+          echo "::set-output name=changed::$( if [ -f changes.txt ]; then echo true; else echo false; fi )"
 
       - name: Push changes
         if: steps.add-and-commit.outputs.changed == 'true'
