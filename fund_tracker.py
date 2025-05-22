@@ -39,7 +39,7 @@ os.makedirs(os.path.dirname(MASTER_CSV), exist_ok=True)
 SIC_LOOKUP = {
     '64205': ("Activities of financial services holding companies",
               "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."),
-    # … rest of your SIC_LOOKUP entries …
+    # … include all other SIC_LOOKUP entries here …
     '70221': ("Financial management (of companies and enterprises)",
               "Treasury, capital-raising and internal financial services arm.")
 }
@@ -65,13 +65,13 @@ CLASS_PATTERNS = [
 ]
 
 def normalize_date(d: str) -> str:
-    if not d or d.lower()=='today':
+    if not d or d.lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     return d
 
 def classify(name: str) -> str:
     txt = name or ''
-    for pat,label in CLASS_PATTERNS:
+    for pat, label in CLASS_PATTERNS:
         if pat.search(txt):
             return label
     return 'Other'
@@ -80,13 +80,13 @@ def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
     joined, descs, uses = ",".join(codes), [], []
     for code in codes:
         if code in SIC_LOOKUP:
-            d,u = SIC_LOOKUP[code]
+            d, u = SIC_LOOKUP[code]
             descs.append(d)
             uses.append(u)
     return joined, "; ".join(descs), "; ".join(uses)
 
 def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
-    auth = (api_key,'')
+    auth = (api_key, '')
     params = {'incorporated_from': ds, 'incorporated_to': ds, 'size': FETCH_SIZE}
     for attempt in range(1, RETRY_COUNT+1):
         try:
@@ -153,7 +153,7 @@ def run_for_date_range(start_date: str, end_date: str):
     else:
         df_all = df_master
 
-    # Sort & ensure order
+    # Sort & enforce field order
     df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
     df_all = df_all[FIELDS]
 
@@ -181,7 +181,8 @@ def main():
 
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
-        log.error('CH_API_KEY not set'); sys.exit(1)
+        log.error('CH_API_KEY not set')
+        sys.exit(1)
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
