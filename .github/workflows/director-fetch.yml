@@ -1,4 +1,3 @@
-# .github/workflows/director-fetch.yml
 name: Director Fetch
 
 on:
@@ -15,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -40,10 +40,11 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name  "Director Fetch Bot"
           git add assets/data/directors.json || true
+          # if there are staged changes, record changed=true
           git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Push changes
-        if: steps.add-and-commit.outputs.changed == 'true'
+        if: ${{ steps.add-and-commit.outputs.changed == 'true' }}
         run: |
           git commit -m "Update directors.json"
           git push
