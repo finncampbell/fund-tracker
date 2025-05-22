@@ -1,3 +1,4 @@
+# .github/workflows/director-fetch.yml
 name: Director Fetch
 
 on:
@@ -11,33 +12,39 @@ jobs:
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      - run: pip install requests pandas
+      - name: Install dependencies
+        run: pip install requests pandas
 
-      - run: |
-          python fetch_directors.py
+      - name: Fetch directors
+        run: python fetch_directors.py
 
       - id: add-and-commit
+        name: Commit updated directors.json
         run: |
           git config user.email "bot@example.com"
           git config user.name  "Director Fetch Bot"
           git add assets/data/directors.json || true
-          git diff --cached --quiet || echo "changes=true" > out.txt
-          echo "::set-output name=changed::$( [ -f out.txt ] && echo true || echo false )"
+          git diff --cached --quiet || echo "changed=true" > changes.txt
+          echo "::set-output name=changed::$(if [ -f changes.txt ]; then echo true; else echo false; fi)"
 
-      - if: steps.add-and-commit.outputs.changed == 'true'
+      - name: Push changes
+        if: steps.add-and-commit.outputs.changed == 'true'
         run: |
           git commit -m "Update directors.json"
           git push
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload log artifact
+        uses: actions/upload-artifact@v4
         with:
           name: director-fetch-log
           path: director_fetch.log
