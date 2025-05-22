@@ -7,14 +7,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  actions: read
+  contents: write     # grants push rights via GITHUB_TOKEN
 
 jobs:
   fetch-directors:
     runs-on: ubuntu-latest
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      # Expose the GITHUB_TOKEN as an env var for interpolation
+      GITHUB_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -35,19 +36,16 @@ jobs:
       - name: Fetch directors
         run: python fetch_directors.py
 
-      - name: Check for changes to directors.json
-        id: check_changes
-        run: git diff --exit-code --quiet assets/data/directors.json
-        continue-on-error: true
-
-      - name: Commit and push updates
-        if: steps.check_changes.outcome == 'failure'
+      - name: Commit & push updates
         run: |
           git config user.email "bot@example.com"
           git config user.name  "Director Fetch Bot"
           git add assets/data/directors.json
-          git commit -m "Update directors.json"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Update directors.json"
+            # Push using GITHUB_PUSH_TOKEN explicitly in the remote URL
+            git push https://x-access-token:${GITHUB_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
+          fi
 
       - name: Upload log artifact
         uses: actions/upload-artifact@v4
