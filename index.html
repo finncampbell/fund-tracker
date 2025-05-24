@@ -10,6 +10,11 @@
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   >
+  <!-- Flatpickr CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+  >
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -36,6 +41,17 @@
       <button class="ft-btn" data-filter="Fund Entities">Fund Entities</button>
       <button class="ft-btn" data-filter="Investments">Investments</button>
     </nav>
+
+    <!-- Historical Backfill Controls -->
+    <div class="ft-backfill" style="padding:1rem; background:#f9f9f9; border-bottom:1px solid #e0e0e0;">
+      <label for="backfill-range" style="margin-right:0.5rem;">Select date range:</label>
+      <input id="backfill-range" placeholder="Click to select date range" readonly
+             style="cursor:pointer;background:#fff;padding:0.5em;border:1px solid #ccc;border-radius:4px;"/>
+      <button id="run-backfill" disabled style="margin-left:0.5rem;" class="ft-btn">Run Historical Backfill</button>
+      <small style="display:block;margin-top:0.5rem;color:#666;">
+        Backfill historical data without leaving this page.
+      </small>
+    </div>
 
     <!-- Main companies table -->
     <div class="table-container" id="companies-container">
@@ -79,6 +95,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- Custom JS -->
   <script src="assets/js/dashboard.js"></script>
 </body>
