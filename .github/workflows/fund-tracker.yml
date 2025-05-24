@@ -49,7 +49,6 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # install both Excel backends and verify
       - run: |
           pip install openpyxl XlsxWriter
           python -c "import openpyxl, xlsxwriter; print('Excel engines OK')"
@@ -59,12 +58,16 @@ jobs:
             --start_date "${{ github.event.inputs.start_date }}" \
             --end_date   "${{ github.event.inputs.end_date }}"
 
+      - name: Fetch directors
+        run: python fetch_directors.py
+
       - id: changes
         run: |
-          git add assets/data/master_companies.csv || true
-          git add assets/data/master_companies.xlsx || true
-          git add assets/data/relevant_companies.csv || true
-          git add assets/data/relevant_companies.xlsx || true
+          git add assets/data/master_companies.csv           || true
+          git add assets/data/master_companies.xlsx          || true
+          git add assets/data/relevant_companies.csv         || true
+          git add assets/data/relevant_companies.xlsx        || true
+          git add assets/data/directors.json                 || true
           git diff --cached --quiet || echo "Changes detected"
           echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
 
