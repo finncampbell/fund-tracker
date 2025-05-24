@@ -8,11 +8,11 @@ from datetime import datetime
 from rate_limiter import enforce_rate_limit, record_call
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
-API_BASE        = 'https://api.company-information.service.gov.uk/company'
-CH_KEY          = os.getenv('CH_API_KEY')
-RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
-DIRECTORS_JSON  = 'assets/data/directors.json'
-LOG_FILE        = 'director_fetch.log'
+API_BASE       = 'https://api.company-information.service.gov.uk/company'
+CH_KEY         = os.getenv('CH_API_KEY')
+RELEVANT_CSV   = 'assets/data/relevant_companies.csv'
+DIRECTORS_JSON = 'assets/data/directors.json'
+LOG_FILE       = 'director_fetch.log'
 
 # ─── LOGGING SETUP ───────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -33,7 +33,6 @@ def load_existing_map():
     return {}
 
 def fetch_one(number):
-    # throttle to respect 600 calls/5m across both scripts
     enforce_rate_limit()
     url = f"{API_BASE}/{number}/officers"
     params = {'register_view': 'true'}
@@ -46,37 +45,33 @@ def fetch_one(number):
         log.warning(f"{number}: fetch error: {e}")
         return None
 
-    # roles to include
+    # We want directors and members
     ROLES = {'director', 'member'}
-    # split active / inactive
-    active = [
-        off for off in items
-        if off.get('officer_role') in ROLES and off.get('resigned_on') is None
-    ]
-    chosen = active if active else [
-        off for off in items if off.get('officer_role') in ROLES
-    ]
+    # Active first
+    active = [off for off in items
+              if off.get('officer_role') in ROLES and off.get('resigned_on') is None]
+    chosen = active or [off for off in items if off.get('officer_role') in ROLES]
 
     directors = []
     for off in chosen:
         dob = off.get('date_of_birth') or {}
-        year, month = dob.get('year'), dob.get('month')
-        if year and month:
-            dob_str = f"{year}-{int(month):02d}"
-        elif year:
-            dob_str = str(year)
+        y, m = dob.get('year'), dob.get('month')
+        if y and m:
+            dob_str = f"{y}-{int(m):02d}"
+        elif y:
+            dob_str = str(y)
         else:
             dob_str = ''
 
         directors.append({
-            'title':           off.get('name'),
-            'appointment':     off.get('snippet') or '',
-            'dateOfBirth':     dob_str,
-            'appointmentCount':off.get('appointment_count'),
-            'selfLink':        off['links'].get('self'),
-            'officerRole':     off.get('officer_role'),
-            'nationality':     off.get('nationality'),
-            'occupation':      off.get('occupation'),
+            'title':            off.get('name'),
+            'appointment':      off.get('snippet') or '',
+            'dateOfBirth':      dob_str,
+            'appointmentCount': off.get('appointment_count'),
+            'selfLink':         off['links'].get('self'),
+            'officerRole':      off.get('officer_role'),
+            'nationality':      off.get('nationality'),
+            'occupation':       off.get('occupation'),
         })
     return directors
 
@@ -88,13 +83,14 @@ def main():
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     relevant = load_relevant_numbers()
     existing = load_existing_map()
-    pending = [n for n in relevant if n not in existing]
+    pending  = [n for n in relevant if n not in existing]
+    count    = len(pending)
 
-    if not pending:
+    if count == 0:
         log.info("No new companies to fetch directors for.")
         return
 
-    log.info(f"{len(pending)} pending companies to fetch")
+    log.info(f"{count} pending companies to fetch")
     updated = False
 
     for num in pending:
