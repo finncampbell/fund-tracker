@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
 import os
 import json
-import time
 import logging
 import requests
 import pandas as pd
 from datetime import datetime
+from rate_limiter import enforce_rate_limit, record_call
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
-API_BASE         = 'https://api.company-information.service.gov.uk/company'
-CH_KEY           = os.getenv('CH_API_KEY')
-RELEVANT_CSV     = 'assets/data/relevant_companies.csv'
-DIRECTORS_JSON   = 'assets/data/directors.json'
-LOG_FILE         = 'director_fetch.log'
-
-# Target maximum runtime (e.g. 30 minutes = 1800s)
-MAX_RUNTIME_SECS = 30 * 60
-
-# Bounds for per-request delay (in seconds)
-MIN_PAUSE        = 0.05   # up to 20 req/sec
-MAX_PAUSE        = 1.0    # at most 1 req/sec
+API_BASE        = 'https://api.company-information.service.gov.uk/company'
+CH_KEY          = os.getenv('CH_API_KEY')
+RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
+DIRECTORS_JSON  = 'assets/data/directors.json'
+LOG_FILE        = 'director_fetch.log'
 
 # ─── LOGGING SETUP ───────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -31,35 +24,43 @@ log = logging.getLogger(__name__)
 
 def load_relevant_numbers():
     df = pd.read_csv(RELEVANT_CSV, dtype=str)
-    return set(df['Company Number'].dropna().tolist())
+    return set(df['Company Number'].dropna())
 
 def load_existing_map():
     if os.path.exists(DIRECTORS_JSON):
-        with open(DIRECTORS_JSON, 'r') as f:
+        with open(DIRECTORS_JSON) as f:
             return json.load(f)
     return {}
 
 def fetch_one(number):
-    url    = f"{API_BASE}/{number}/officers"
-    params = {'register_view': 'true', 'register_type': 'directors'}
+    # throttle to respect 600 calls/5m across both scripts
+    enforce_rate_limit()
+    url = f"{API_BASE}/{number}/officers"
+    params = {'register_view': 'true'}
     try:
         resp = requests.get(url, auth=(CH_KEY, ''), params=params, timeout=10)
         resp.raise_for_status()
-        # ── ONLY ACTIVE DIRECTORS ────────────────────────────────
-        items = [
-            off for off in resp.json().get('items', [])
-            if off.get('resigned_on') is None
-        ]
+        record_call()
+        items = resp.json().get('items', [])
     except Exception as e:
         log.warning(f"{number}: fetch error: {e}")
         return None
 
+    # roles to include
+    ROLES = {'director', 'member'}
+    # split active / inactive
+    active = [
+        off for off in items
+        if off.get('officer_role') in ROLES and off.get('resigned_on') is None
+    ]
+    chosen = active if active else [
+        off for off in items if off.get('officer_role') in ROLES
+    ]
+
     directors = []
-    for off in items:
-        # ── FORMAT DATE OF BIRTH ─────────────────────────────────
+    for off in chosen:
         dob = off.get('date_of_birth') or {}
-        year  = dob.get('year')
-        month = dob.get('month')
+        year, month = dob.get('year'), dob.get('month')
         if year and month:
             dob_str = f"{year}-{int(month):02d}"
         elif year:
@@ -68,14 +69,14 @@ def fetch_one(number):
             dob_str = ''
 
         directors.append({
-            'title':            off.get('name'),
-            'snippet':          off.get('snippet'),
-            'dateOfBirth':      dob_str,
-            'appointmentCount': off.get('appointment_count'),
-            'selfLink':         off['links'].get('self'),
-            'officerRole':      off.get('officer_role'),
-            'nationality':      off.get('nationality'),
-            'occupation':       off.get('occupation'),
+            'title':           off.get('name'),
+            'appointment':     off.get('snippet') or '',
+            'dateOfBirth':     dob_str,
+            'appointmentCount':off.get('appointment_count'),
+            'selfLink':        off['links'].get('self'),
+            'officerRole':     off.get('officer_role'),
+            'nationality':     off.get('nationality'),
+            'occupation':      off.get('occupation'),
         })
     return directors
 
@@ -85,34 +86,29 @@ def main():
         return
 
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-
     relevant = load_relevant_numbers()
     existing = load_existing_map()
+    pending = [n for n in relevant if n not in existing]
 
-    pending = [num for num in relevant if num not in existing]
-    count   = len(pending)
-    if count == 0:
+    if not pending:
         log.info("No new companies to fetch directors for.")
         return
 
-    pause = MAX_RUNTIME_SECS / count
-    pause = max(min(pause, MAX_PAUSE), MIN_PAUSE)
-    log.info(f"{count} pending companies, using {pause:.2f}s delay per call")
-
+    log.info(f"{len(pending)} pending companies to fetch")
     updated = False
+
     for num in pending:
         dirs = fetch_one(num)
         if dirs is None:
             continue
         existing[num] = dirs
-        log.info(f"Fetched directors for {num} ({len(dirs)} records)")
+        log.info(f"Fetched {len(dirs)} director(s) for {num}")
         updated = True
-        time.sleep(pause)
 
     if updated:
         with open(DIRECTORS_JSON, 'w') as f:
             json.dump(existing, f, separators=(',',':'))
-        log.info(f"Wrote directors.json with {len(existing)} companies’ data")
+        log.info(f"Wrote directors.json with {len(existing)} companies")
 
 if __name__ == '__main__':
     main()
