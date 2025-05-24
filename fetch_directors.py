@@ -1,22 +1,27 @@
 #!/usr/bin/env python3
-import os, json, time, logging, requests, pandas as pd
+import os
+import json
+import time
+import logging
+import requests
+import pandas as pd
 from datetime import datetime
 
-# ── CONFIG ─────────────────────────────────────────────────────────────────────
-API_BASE            = 'https://api.company-information.service.gov.uk/company'
-CH_KEY              = os.getenv('CH_API_KEY')
-RELEVANT_CSV        = 'assets/data/relevant_companies.csv'
-DIRECTORS_JSON      = 'assets/data/directors.json'
-LOG_FILE            = 'director_fetch.log'
+# ─── CONFIG ─────────────────────────────────────────────────────────────────────
+API_BASE         = 'https://api.company-information.service.gov.uk/company'
+CH_KEY           = os.getenv('CH_API_KEY')
+RELEVANT_CSV     = 'assets/data/relevant_companies.csv'
+DIRECTORS_JSON   = 'assets/data/directors.json'
+LOG_FILE         = 'director_fetch.log'
 
-# Target maximum time for the fetch run (e.g. 30 minutes = 1800s)
-MAX_RUNTIME_SECS    = 30 * 60  
+# Target maximum runtime (e.g. 30 minutes = 1800s)
+MAX_RUNTIME_SECS = 30 * 60
 
 # Bounds for per-request delay (in seconds)
-MIN_PAUSE           = 0.05   # up to 20 req/sec
-MAX_PAUSE           = 1.0    # at most 1 req/sec
+MIN_PAUSE        = 0.05   # up to 20 req/sec
+MAX_PAUSE        = 1.0    # at most 1 req/sec
 
-# ── LOGGING SETUP ───────────────────────────────────────────────────────────────
+# ─── LOGGING SETUP ───────────────────────────────────────────────────────────────
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
@@ -40,7 +45,7 @@ def fetch_one(number):
     try:
         resp = requests.get(url, auth=(CH_KEY, ''), params=params, timeout=10)
         resp.raise_for_status()
-        # only keep active directors (no resigned_on date)
+        # ── ONLY ACTIVE DIRECTORS ────────────────────────────────
         items = [
             off for off in resp.json().get('items', [])
             if off.get('resigned_on') is None
@@ -51,9 +56,10 @@ def fetch_one(number):
 
     directors = []
     for off in items:
-        # format date of birth into YYYY-MM or YYYY
+        # ── FORMAT DATE OF BIRTH ─────────────────────────────────
         dob = off.get('date_of_birth') or {}
-        year, month = dob.get('year'), dob.get('month')
+        year  = dob.get('year')
+        month = dob.get('month')
         if year and month:
             dob_str = f"{year}-{int(month):02d}"
         elif year:
