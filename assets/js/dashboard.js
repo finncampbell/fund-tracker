@@ -5,6 +5,7 @@ $(document).ready(function() {
   Papa.parse(url, { download: true, header: true, complete(results) {
     const raw = results.data.filter(r => r['Company Number']);
 
+    // Eager-load directorsMap as before
     let directorsMap = {};
     fetch('assets/data/directors.json')
       .then(r=>r.json())
@@ -17,6 +18,7 @@ $(document).ready(function() {
         Directors: directorsMap[r['Company Number']] || []
       }));
 
+      // Main companies table
       const companyTable = $('#companies').DataTable({
         data,
         columns: [
@@ -40,6 +42,7 @@ $(document).ready(function() {
         responsive: true
       });
 
+      // SIC‐only table
       const sicData = data.filter(r => r['SIC Description']);
       const sicTable = $('#sic-companies').DataTable({
         data: sicData,
@@ -67,6 +70,7 @@ $(document).ready(function() {
         responsive: true
       });
 
+      // Expand/Collapse directors
       function toggleDirectors() {
         const $btn = $(this);
         const tableId = $btn.closest('table').attr('id');
@@ -91,7 +95,7 @@ $(document).ready(function() {
           dirs.forEach(d => {
             html += `<tr>`
               +`<td>${d.title||''}</td>`
-              +`<td>${d.snippet||''}</td>`
+              +`<td>${d.appointment||''}</td>`
               +`<td>${d.dateOfBirth||''}</td>`
               +`<td>${d.appointmentCount||''}</td>`
               +`<td>${d.officerRole||''}</td>`
@@ -100,6 +104,7 @@ $(document).ready(function() {
               +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}">Details</a></td>`
               +`</tr>`;
           });
+          html += '</table>';
           row.child(html).show();
           $btn.text('Hide Directors');
         }
@@ -107,6 +112,7 @@ $(document).ready(function() {
       $('#companies tbody').on('click',  '.expand-btn', toggleDirectors);
       $('#sic-companies tbody').on('click','.expand-btn', toggleDirectors);
 
+      // Filter hook
       $.fn.dataTable.ext.search.push((settings, rowData) => {
         if (settings.nTable.id !== 'companies') return true;
         const active = $('.ft-btn.active').data('filter') || '';
@@ -116,6 +122,7 @@ $(document).ready(function() {
         return rowData[3] === active;
       });
 
+      // Tab click handler
       $('.ft-filters').on('click', '.ft-btn', function() {
         $('.ft-btn').removeClass('active');
         $(this).addClass('active');
@@ -126,4 +133,47 @@ $(document).ready(function() {
       });
     }
   }});
+
+  // ─── Flatpickr Range Picker & Backfill Button ───────────────────────────────
+  flatpickr("#backfill-range", {
+    mode: "range",
+    dateFormat: "Y-m-d",
+    minDate: "2000-01-01",
+    maxDate: new Date(),
+    onChange: function(selectedDates) {
+      const btn = document.getElementById("run-backfill");
+      if (selectedDates.length === 2) {
+        btn.disabled = false;
+        btn.dataset.start = flatpickr.formatDate(selectedDates[0], "Y-m-d");
+        btn.dataset.end   = flatpickr.formatDate(selectedDates[1], "Y-m-d");
+      } else {
+        btn.disabled = true;
+        delete btn.dataset.start;
+        delete btn.dataset.end;
+      }
+    }
+  });
+
+  document.getElementById("run-backfill").addEventListener("click", () => {
+    const btn   = document.getElementById("run-backfill");
+    const start = btn.dataset.start;
+    const end   = btn.dataset.end;
+    if (!start || !end) return;
+
+    fetch('/api/backfill', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ start_date: start, end_date: end })
+    })
+      .then(r => {
+        if (!r.ok) throw new Error("Dispatch failed");
+        alert(`Backfill started for ${start} → ${end}`);
+        btn.disabled = true;
+        document.getElementById("backfill-range").value = "";
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Error starting backfill; see console.");
+      });
+  });
 });
