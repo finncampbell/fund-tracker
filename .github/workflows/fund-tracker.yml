@@ -7,11 +7,9 @@ on:
     inputs:
       start_date:
         description: 'Start date (YYYY-MM-DD or "today")'
-        required: false
         default: 'today'
       end_date:
         description: 'End date (YYYY-MM-DD or "today")'
-        required: false
         default: 'today'
 
 permissions:
@@ -30,60 +28,59 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - run: |
+      - name: Configure Git
+        run: |
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      - run: |
-          git fetch origin main
-          git pull --rebase origin main
-
-      - uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: 3.12
 
-      - run: pip install -r requirements.txt
-
-      - run: |
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
           pip install openpyxl XlsxWriter
-          python -c "import openpyxl, xlsxwriter; print('Excel engines OK')"
 
-      - run: |
+      # ─── Stage 1: update companies data ────────────────────────────────
+      - name: Run fund_tracker.py
+        run: |
           python fund_tracker.py \
             --start_date "${{ github.event.inputs.start_date }}" \
             --end_date   "${{ github.event.inputs.end_date }}"
 
+      - name: Commit companies data
+        run: |
+          git add assets/data/master_companies.csv assets/data/master_companies.xlsx \
+                  assets/data/relevant_companies.csv assets/data/relevant_companies.xlsx
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 1: update companies data"
+            git push origin main
+          fi
+
+      # ─── Stage 2: backfill directors ────────────────────────────────────
       - name: Fetch directors
         run: python fetch_directors.py
 
-      - id: changes
+      - name: Commit directors.json
         run: |
-          git add assets/data/master_companies.csv           || true
-          git add assets/data/master_companies.xlsx          || true
-          git add assets/data/relevant_companies.csv         || true
-          git add assets/data/relevant_companies.xlsx        || true
-          git add assets/data/directors.json                 || true
-          git diff --cached --quiet || echo "Changes detected"
-          echo "changed=$(git diff --cached --quiet && echo false || echo true)" >> $GITHUB_OUTPUT
+          git add assets/data/directors.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 2: add directors data"
+            git push origin main
+          fi
 
-      - if: steps.changes.outputs.changed == 'true'
-        run: |
-          git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin main
-
-      - uses: actions/upload-artifact@v4
-        if: always()
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
         with:
-          name: api-logs
-          path: api_logs.json
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: fund-tracker-log
-          path: fund_tracker.log
+          name: fund-tracker-logs
+          path: |
+            fund_tracker.log
+            director_fetch.log
