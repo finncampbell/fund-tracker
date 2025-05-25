@@ -1,6 +1,6 @@
 // netlify/functions/backfill.js
 
-export async function handler(event) {
+exports.handler = async function(event) {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
@@ -20,7 +20,7 @@ export async function handler(event) {
   const repo     = 'finncampbell/fund-tracker';
   const workflow = 'backfill-week.yml';
 
-  // Use native fetch
+  // Netlify provides global fetch
   const resp = await fetch(
     `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`,
     {
@@ -46,4 +46,4 @@ export async function handler(event) {
     statusCode: 200,
     body: JSON.stringify({ message: `Backfill dispatched for ${start_date} → ${end_date}` })
   };
-}
+};
