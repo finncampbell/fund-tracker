@@ -7,59 +7,50 @@ backfill_directors.py
 - Writes merged results into docs/assets/data/directors.json
 - Logs to assets/logs/backfill_directors.log
 """
+
 import os
 import json
-import logging
 import argparse
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 import requests
+
 from rate_limiter import enforce_rate_limit, record_call
+from logger import get_logger
 
 # ─── Config ─────────────────────────────────────────────────────────────────────
 API_BASE       = 'https://api.company-information.service.gov.uk/company'
 CH_KEY         = os.getenv('CH_API_KEY')
 RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
 DIRECTORS_JSON = 'docs/assets/data/directors.json'
-LOG_DIR        = 'assets/logs'
-LOG_FILE       = os.path.join(LOG_DIR, 'backfill_directors.log')
+LOG_FILE       = 'assets/logs/backfill_directors.log'
 MAX_WORKERS    = 10
 MAX_PENDING    = 50
 RETRIES        = 3
 RETRY_DELAY    = 5
 
-# ─── Ensure log directory exists ────────────────────────────────────────────────
-os.makedirs(LOG_DIR, exist_ok=True)
-
-# ─── Logging setup ─────────────────────────────────────────────────────────────
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s'
-)
-log = logging.getLogger(__name__)
-
+# Configure logger
+log = get_logger('backfill_directors', LOG_FILE)
 
 def load_relevant():
-    """Load companies incorporated in the backfill window."""
-    df = pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
+    df = pd.read_csv(
+        RELEVANT_CSV,
+        dtype=str,
+        parse_dates=['Incorporation Date']
+    )
     return df
 
-
 def load_existing():
-    """Load existing directors.json or return empty dict."""
     if os.path.exists(DIRECTORS_JSON):
         with open(DIRECTORS_JSON) as f:
             return json.load(f)
     return {}
 
-
 def fetch_officers(number):
-    """Fetch officers for a single company number, with retries."""
-    for attempt in range(1, RETRIES+1):
+    for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
         try:
             resp = requests.get(
@@ -80,7 +71,6 @@ def fetch_officers(number):
             items = []
         break
 
-    # Filter roles
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
@@ -106,15 +96,16 @@ def fetch_officers(number):
             'nationality':      o.get('nationality'),
             'occupation':       o.get('occupation'),
         })
-    return number, directors
 
+    return number, directors
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_date', required=True, help='YYYY-MM-DD')
-    parser.add_argument('--end_date', required=True, help='YYYY-MM-DD')
+    parser.add_argument('--end_date',   required=True, help='YYYY-MM-DD')
     args = parser.parse_args()
 
+    log.info(f"Starting backfill_directors {args.start_date} → {args.end_date}")
     if not CH_KEY:
         log.error('CH_API_KEY unset')
         return
@@ -129,7 +120,7 @@ def main():
     mask_window  = df['Incorporation Date'].dt.date.between(sd, ed)
     pending = df[mask_pending & mask_window]['Company Number'].tolist()[:MAX_PENDING]
 
-    log.info(f"Backfill window {args.start_date} → {args.end_date}: {len(pending)} companies to process")
+    log.info(f"Backfill window: {len(pending)} companies pending")
 
     if pending:
         with ThreadPoolExecutor(MAX_WORKERS) as exe:
@@ -139,12 +130,10 @@ def main():
                 existing[num] = dirs
                 log.info(f"Backfilled {len(dirs)} officers for {num}")
 
-    # Write merged JSON
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
-    log.info(f"Wrote directors.json with {len(existing)} company entries")
-
+    log.info(f"Wrote directors.json with {len(existing)} entries")
 
 if __name__ == '__main__':
     main()
