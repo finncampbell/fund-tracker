@@ -14,6 +14,7 @@ $(document).ready(function() {
         .then(r => r.json())
         .then(json => {
           directorsMap = json;
+          console.log('Directors map loaded:', directorsMap);  // DEBUG
           initTables();
         })
         .catch(err => {
@@ -42,7 +43,7 @@ $(document).ready(function() {
               orderable: false,
               render: (dirs, type) =>
                 type === 'display'
-                  ? `<button class="expand-btn">Expand for Directors</button>`
+                  ? `<button class="expand-btn">Expand for Directors (${dirs.length})</button>`
                   : dirs
             }
           ],
@@ -51,7 +52,7 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // SIC‐only table
+        // SIC-only table
         const sicData = data.filter(r => r['SIC Description']);
         const sicTable = $('#sic-companies').DataTable({
           data: sicData,
@@ -70,7 +71,7 @@ $(document).ready(function() {
               orderable: false,
               render: (dirs, type) =>
                 type === 'display'
-                  ? `<button class="expand-btn">Expand for Directors</button>`
+                  ? `<button class="expand-btn">Expand for Directors (${dirs.length})</button>`
                   : dirs
             }
           ],
@@ -88,7 +89,7 @@ $(document).ready(function() {
 
           if (row.child.isShown()) {
             row.child.hide();
-            $btn.text('Expand for Directors');
+            $btn.text(`Expand for Directors (${row.data().Directors.length})`);
           } else {
             const dirs = row.data().Directors;
             let html = '<table class="child-table"><tr>'
@@ -110,7 +111,7 @@ $(document).ready(function() {
                 +`<td>${d.officerRole||''}</td>`
                 +`<td>${d.nationality||''}</td>`
                 +`<td>${d.occupation||''}</td>`
-                +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}">Details</a></td>`
+                +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>`
                 +`</tr>`;
             });
             html += '</table>';
@@ -170,7 +171,6 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    // Disable immediately to prevent double-clicks
     btn.disabled = true;
 
     fetch('/.netlify/functions/backfill', {
