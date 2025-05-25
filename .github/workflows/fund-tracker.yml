@@ -52,7 +52,7 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      # Stage 1
+      # Stage 1: companies
       - name: Run fund_tracker.py
         run: python fund_tracker.py \
                --start_date "${{ github.event.inputs.start_date }}" \
@@ -66,7 +66,7 @@ jobs:
             git push origin main
           fi
 
-      # Stage 2
+      # Stage 2: directors
       - name: Run director fetch
         run: python fetch_directors.py
 
