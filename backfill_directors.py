@@ -2,59 +2,81 @@
 """
 backfill_directors.py
 
-- Bootstraps dependencies
-- Backfills directors over a historical range, stopping at :55 each hour
+- Backfills directors over a historical date range
+- Caps to MAX_PENDING per run
+- Uses up to MAX_WORKERS threads
+- Respects 600 calls/5min
+- Logs to assets/logs/fund_tracker.log
 """
-
-import sys, subprocess
-def _bootstrap():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
-    subprocess.check_call([
-        sys.executable, "-m", "pip", "install",
-        "numpy>=1.24.0",
-        "pandas==2.1.0",
-        "requests>=2.31.0"
-    ])
-_bootstrap()
 
 import os
 import json
+import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timedelta
+
 import pandas as pd
 import requests
-import time
-from datetime import datetime, timedelta
-from rate_limiter import enforce_rate_limit, record_call
-from logger import log
 
+from rate_limiter import enforce_rate_limit, record_call
+from logger import log, LOG_FILE
+
+# ─── CONFIG ─────────────────────────────────────────────────────────────────────
 API_BASE        = 'https://api.company-information.service.gov.uk/company'
 CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
+MAX_WORKERS     = 10
+MAX_PENDING     = 50
 
 def load_relevant():
-    df = pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
-    return df
+    return pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
 
 def load_existing():
     if os.path.exists(DIRECTORS_JSON):
-        with open(DIRECTORS_JSON, 'r') as f:
+        with open(DIRECTORS_JSON) as f:
             return json.load(f)
     return {}
 
-def fetch_officers(company_number):
+def fetch_officers(number):
     enforce_rate_limit()
-    url = f"{API_BASE}/{company_number}/officers"
-    params = {'register_view': 'true'}
     try:
-        resp = requests.get(url, auth=(CH_KEY, ''), params=params, timeout=10)
+        resp = requests.get(
+            f"{API_BASE}/{number}/officers",
+            auth=(CH_KEY, ''),
+            params={'register_view': 'true'},
+            timeout=10
+        )
         resp.raise_for_status()
         record_call()
-        return resp.json().get('items', [])
+        items = resp.json().get('items', [])
     except Exception as e:
-        log.warning(f"{company_number}: fetch error: {e}")
-        return None
+        log.warning(f"{number}: fetch error: {e}")
+        return number, None
+
+    ROLES = {'director', 'member'}
+    active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
+    chosen = active or [o for o in items if o.get('officer_role') in ROLES]
+
+    directors = []
+    for off in chosen:
+        dob = off.get('date_of_birth') or {}
+        y, m = dob.get('year'), dob.get('month')
+        dob_str = f"{y}-{int(m):02d}" if y and m else str(y) if y else ''
+        directors.append({
+            'title':            off.get('name'),
+            'appointment':      off.get('snippet',''),
+            'dateOfBirth':      dob_str,
+            'appointmentCount': off.get('appointment_count'),
+            'selfLink':         off['links'].get('self'),
+            'officerRole':      off.get('officer_role'),
+            'nationality':      off.get('nationality'),
+            'occupation':       off.get('occupation'),
+        })
+    return number, directors
 
 def main():
+    log.info(f"Logging to {LOG_FILE}")
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_date', required=True, help='YYYY-MM-DD')
     parser.add_argument('--end_date',   required=True, help='YYYY-MM-DD')
@@ -65,64 +87,36 @@ def main():
         log.error("CH_API_KEY missing")
         return
 
-    sd = datetime.fromisoformat(args.start_date).date()
-    ed = datetime.fromisoformat(args.end_date).date()
-
     df = load_relevant()
     existing = load_existing()
 
+    sd = datetime.fromisoformat(args.start_date).date()
+    ed = datetime.fromisoformat(args.end_date).date()
+
     mask_pending = ~df['Company Number'].isin(existing.keys())
-    mask_hist = df['Incorporation Date'].dt.date.between(sd, ed)
-    df_pending = df[mask_pending & mask_hist]
-
-    if df_pending.empty:
-        log.info("No historical companies to backfill.")
-        os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-        with open(DIRECTORS_JSON, 'w') as f:
-            json.dump(existing, f, separators=(',',':'))
-        return
-
+    mask_hist    = df['Incorporation Date'].dt.date.between(sd, ed)
+    df_pending   = df[mask_pending & mask_hist]
     df_pending.sort_values('Incorporation Date', ascending=False, inplace=True)
-    pending = df_pending['Company Number'].tolist()
-    log.info(f"{len(pending)} companies to backfill directors for")
 
-    now = datetime.now()
-    next_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
-    end_time = next_hour - timedelta(minutes=5)
-    log.info(f"Backfill will stop at {end_time.time()}")
+    pending_all = df_pending['Company Number'].tolist()
+    pending = pending_all[:MAX_PENDING]
+    log.info(f"{len(pending)} companies to backfill (capped at {MAX_PENDING})")
 
-    for num in pending:
-        if datetime.now() >= end_time:
-            log.info("Reached cutoff time; stopping backfill loop")
-            break
+    if pending:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            futures = {executor.submit(fetch_officers, num): num for num in pending}
+            for future in as_completed(futures):
+                num = futures[future]
+                try:
+                    num_ret, dirs = future.result()
+                except Exception as e:
+                    log.warning(f"{num}: unexpected error: {e}")
+                    continue
+                if dirs:
+                    existing[num_ret] = dirs
+                    log.info(f"Backfilled {len(dirs)} officers for {num_ret}")
 
-        items = fetch_officers(num)
-        if items is None:
-            continue
-
-        ROLES = {'director', 'member'}
-        actives = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
-        chosen = actives or [o for o in items if o.get('officer_role') in ROLES]
-
-        directors = []
-        for off in chosen:
-            dob = off.get('date_of_birth') or {}
-            y, m = dob.get('year'), dob.get('month')
-            dob_str = f"{y}-{int(m):02d}" if y and m else str(y) if y else ''
-            directors.append({
-                'title':            off.get('name'),
-                'appointment':      off.get('snippet') or '',
-                'dateOfBirth':      dob_str,
-                'appointmentCount': off.get('appointment_count'),
-                'selfLink':         off['links'].get('self'),
-                'officerRole':      off.get('officer_role'),
-                'nationality':      off.get('nationality'),
-                'occupation':       off.get('occupation'),
-            })
-
-        existing[num] = directors
-        log.info(f"Backfilled {len(directors)} officers for {num}")
-
+    # Always write directors.json
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
