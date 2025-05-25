@@ -1,28 +1,16 @@
-# .github/workflows/fund-tracker.yml
-name: Fund Tracker Automation
+# .github/workflows/update-data.yml
+name: Update Fund Tracker Data
 
 on:
-  workflow_dispatch:
-    inputs:
-      start_date:
-        description: 'Start date (YYYY-MM-DD or "today")'
-        default: 'today'
-      end_date:
-        description: 'End date (YYYY-MM-DD or "today")'
-        default: 'today'
   schedule:
-    - cron: '*/10 * * * *'    # every 10 minutes
+    - cron: '0 * * * *'       # every hour
+  workflow_dispatch:         # manual trigger
 
 permissions:
-  contents: write
-  actions: read
-
-concurrency:
-  group: fund-tracker       # manual or scheduled runs share this group
-  cancel-in-progress: true  # manual run will cancel any in-flight 10-min run
+  contents: write            # to push changes back to the repo
 
 jobs:
-  run-fund-tracker:
+  build-and-publish:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -36,59 +24,36 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Pull latest JSON
-        run: git pull origin main
-
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: Upgrade pip, setuptools, wheel
+      - name: Upgrade pip & install deps
         run: |
           pip install --upgrade pip setuptools wheel
+          pip install --prefer-binary --only-binary=:all: -r requirements.txt
 
-      - name: Pre-install NumPy wheel
+      - name: Run company ingest
         run: |
-          pip install --prefer-binary --only-binary=":all:" 'numpy>=1.24.0,<2.0.0'
+          python fund_tracker.py \
+            --start_date "${{ github.event.inputs.start_date || 'today' }}" \
+            --end_date   "${{ github.event.inputs.end_date   || 'today' }}"
 
-      - name: Install remaining dependencies
-        run: |
-          pip install --prefer-binary --only-binary=":all:" -r requirements.txt
+      - name: Run directors fetch
+        run: python fetch_directors.py
 
-      - name: Configure Git
+      - name: Commit & push updated data in docs
         run: |
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
-
-      - name: Run fund_tracker.py
-        run: |
-          python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
-
-      - name: Commit companies data
-        run: |
-          git add assets/data/master_companies.* assets/data/relevant_companies.*
-          if ! git diff --cached --quiet; then
-            git commit -m "Stage 1: update companies data"
+          # Stage all CSV/XLSX/JSON under docs/assets/data
+          git add docs/assets/data/master_companies.* \
+                  docs/assets/data/relevant_companies.* \
+                  docs/assets/data/directors.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update data: $(date -u +'%Y-%m-%dT%H:%MZ')"
             git push origin main
           fi
-
-      - name: Run fetch_directors.py
-        run: |
-          python fetch_directors.py
-
-      - name: Commit directors data
-        run: |
-          git add assets/data/directors.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Stage 2: merge directors data"
-            git push origin main
-          fi
-
-      - name: Upload logs
-        uses: actions/upload-artifact@v4
-        with:
-          name: fund-tracker-logs
-          path: assets/logs/fund_tracker.log
