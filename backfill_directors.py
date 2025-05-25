@@ -1,4 +1,22 @@
 #!/usr/bin/env python3
+"""
+backfill_directors.py
+
+- Bootstraps dependencies
+- Backfills directors over a historical range, stopping at :55 each hour
+"""
+
+import sys, subprocess
+def _bootstrap():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
+    subprocess.check_call([
+        sys.executable, "-m", "pip", "install",
+        "numpy>=1.24.0",
+        "pandas==2.1.0",
+        "requests>=2.31.0"
+    ])
+_bootstrap()
+
 import os
 import json
 import pandas as pd
@@ -6,9 +24,8 @@ import requests
 import time
 from datetime import datetime, timedelta
 from rate_limiter import enforce_rate_limit, record_call
-from logger import log  # ← shared logger
+from logger import log
 
-# ─── CONFIG ─────────────────────────────────────────────────────────────────────
 API_BASE        = 'https://api.company-information.service.gov.uk/company'
 CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
