@@ -1,18 +1,33 @@
 #!/usr/bin/env python3
+"""
+fetch_directors.py
+
+- Bootstraps dependencies
+- Fetches today’s new directors for relevant companies
+"""
+
+import sys, subprocess
+def _bootstrap():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
+    subprocess.check_call([
+        sys.executable, "-m", "pip", "install",
+        "numpy>=1.24.0",
+        "pandas==2.1.0",
+        "requests>=2.31.0"
+    ])
+_bootstrap()
+
 import os
 import json
 import pandas as pd
 import requests
-from datetime import datetime
 from rate_limiter import enforce_rate_limit, record_call
-from logger import log  # ← shared logger
+from logger import log
 
-# ─── CONFIG ─────────────────────────────────────────────────────────────────────
 API_BASE        = 'https://api.company-information.service.gov.uk/company'
 CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
-LOG_FILE        = 'assets/logs/fund_tracker.log'  # all logs go here
 
 def load_relevant_numbers():
     df = pd.read_csv(RELEVANT_CSV, dtype=str)
@@ -75,6 +90,16 @@ def main():
             json.dump(existing, f, separators=(',',':'))
         return
 
-    log.info(f"{len(pending)} pending companies to fetch")
     for num in pending:
-        dirs = f
+        dirs = fetch_one(num)
+        if dirs is None:
+            continue
+        existing[num] = dirs
+        log.info(f"Fetched {len(dirs)} director(s) for {num}")
+
+    with open(DIRECTORS_JSON, 'w') as f:
+        json.dump(existing, f, separators=(',',':'))
+    log.info(f"Wrote directors.json with {len(existing)} companies")
+
+if __name__ == '__main__':
+    main()
