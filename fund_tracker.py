@@ -8,7 +8,6 @@ fund_tracker.py
 """
 
 import argparse
-import logging
 import os
 import sys
 import time
@@ -17,7 +16,9 @@ from datetime import date, datetime, timedelta, timezone
 import re
 import requests
 import pandas as pd
+
 from rate_limiter import enforce_rate_limit, record_call
+from logger import get_logger
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 API_URL        = 'https://api.company-information.service.gov.uk/advanced-search/companies'
@@ -30,12 +31,19 @@ RELEVANT_CSV   = f'{DATA_DIR}/relevant_companies.csv'
 RELEVANT_XLSX  = f'{DATA_DIR}/relevant_companies.xlsx'
 FETCH_SIZE     = 100
 
+# SIC lookup table
 SIC_LOOKUP     = {
-    '64205': ("Activities of financial services holding companies",
-              "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."),
-    '70221': ("Financial management (of companies and enterprises)",
-              "Treasury, capital-raising and internal financial services arm."),
+    '64205': (
+        "Activities of financial services holding companies",
+        "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."
+    ),
+    '70221': (
+        "Financial management (of companies and enterprises)",
+        "Treasury, capital-raising and internal financial services arm."
+    ),
 }
+
+# CSV/XLSX columns & classification patterns
 FIELDS = [
     'Company Name','Company Number','Incorporation Date',
     'Status','Source','Date Downloaded','Time Discovered',
@@ -55,16 +63,8 @@ CLASS_PATTERNS = [
     (re.compile(r'\bSIC\b',                   re.IGNORECASE), 'SIC'),
 ]
 
-# ─── Ensure log directory exists ────────────────────────────────────────────────
-os.makedirs(LOG_DIR, exist_ok=True)
-
-# ─── Logging Setup ─────────────────────────────────────────────────────────────
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s'
-)
-log = logging.getLogger(__name__)
+# Configure logger
+log = get_logger('fund_tracker', LOG_FILE)
 
 def normalize_date(d: str) -> str:
     if not d or d.lower() == 'today':
@@ -78,7 +78,7 @@ def normalize_date(d: str) -> str:
     sys.exit(1)
 
 def classify(name: str) -> str:
-    for pat,label in CLASS_PATTERNS:
+    for pat, label in CLASS_PATTERNS:
         if pat.search(name or ''):
             return label
     return 'Other'
@@ -87,20 +87,26 @@ def enrich_sic(codes):
     joined, descs, uses = ",".join(codes), [], []
     for code in codes:
         if code in SIC_LOOKUP:
-            d,u = SIC_LOOKUP[code]
-            descs.append(d); uses.append(u)
+            d, u = SIC_LOOKUP[code]
+            descs.append(d)
+            uses.append(u)
     return joined, "; ".join(descs), "; ".join(uses)
 
 def fetch_companies_on(ds, api_key):
     records, start_index = [], 0
     while True:
         enforce_rate_limit()
-        resp = requests.get(API_URL, auth=(api_key,''), params={
-            'incorporated_from': ds,
-            'incorporated_to':   ds,
-            'size': FETCH_SIZE,
-            'start_index': start_index
-        }, timeout=10)
+        resp = requests.get(
+            API_URL,
+            auth=(api_key, ''),
+            params={
+                'incorporated_from': ds,
+                'incorporated_to':   ds,
+                'size': FETCH_SIZE,
+                'start_index': start_index
+            },
+            timeout=10
+        )
         try:
             resp.raise_for_status()
             record_call()
@@ -113,7 +119,7 @@ def fetch_companies_on(ds, api_key):
         now = datetime.now(timezone.utc)
         for c in items:
             nm = c.get('title','') or c.get('company_name','')
-            sc, sd, su = enrich_sic(c.get('sic_codes',[]))
+            sc, sd, su = enrich_sic(c.get('sic_codes', []))
             records.append({
                 'Company Name':       nm,
                 'Company Number':     c.get('company_number',''),
@@ -190,5 +196,4 @@ if __name__ == '__main__':
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
     log.info(f"Starting run {sd} → {ed}")
-
     run_for_range(sd, ed)
