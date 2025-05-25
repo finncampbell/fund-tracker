@@ -70,7 +70,7 @@ jobs:
 
       - name: Commit company data
         run: |
-          git add assets/data/master_companies.* assets/data/relevant_companies.*
+          git add docs/assets/data/master_companies.* docs/assets/data/relevant_companies.*
           if ! git diff --cached --quiet; then
             git commit -m "Stage 1: update companies data"
             git push origin main
@@ -83,7 +83,7 @@ jobs:
 
       - name: Commit directors data
         run: |
-          git add assets/data/directors.json
+          git add docs/assets/data/directors.json
           if ! git diff --cached --quiet; then
             git commit -m "Stage 2: update directors data"
             git push origin main
@@ -94,5 +94,6 @@ jobs:
         with:
           name: fund-tracker-logs
           path: |
-            fund_tracker.log
-            director_fetch.log
+            assets/logs/fund_tracker.log
+            assets/logs/director_fetch.log
+            assets/logs/backfill_directors.log
