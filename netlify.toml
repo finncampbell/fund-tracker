@@ -1,5 +1,5 @@
 [build]
-  publish   = "."                      # adjust if your site is in a subfolder
+  publish   = "."
   functions = "netlify/functions"
 
 [functions]
