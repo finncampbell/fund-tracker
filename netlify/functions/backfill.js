@@ -1,5 +1,4 @@
 // netlify/functions/backfill.js
-import fetch from 'node-fetch';
 
 export async function handler(event) {
   if (event.httpMethod !== 'POST') {
@@ -21,14 +20,15 @@ export async function handler(event) {
   const repo     = 'finncampbell/fund-tracker';
   const workflow = 'backfill-week.yml';
 
+  // Use native fetch
   const resp = await fetch(
     `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`,
     {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${token}`,
-        'Accept':        'application/vnd.github.v3+json',
-        'Content-Type':  'application/json'
+        Authorization: `Bearer ${token}`,
+        Accept:        'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         ref: 'main',
