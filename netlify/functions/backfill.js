@@ -18,8 +18,8 @@ export async function handler(event) {
   }
 
   const token    = process.env.GITHUB_DISPATCH_TOKEN;
-  const repo     = 'finncampbell/fund-tracker';       // ← replace
-  const workflow = 'backfill-week.yml';       // ← your workflow filename
+  const repo     = 'finncampbell/fund-tracker';    // ← your repo
+  const workflow = 'backfill-week.yml';            // ← workflow filename
 
   const resp = await fetch(
     `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`,
