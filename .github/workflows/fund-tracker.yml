@@ -44,7 +44,7 @@ jobs:
 
       - name: Pre-install NumPy wheel
         run: |
-          pip install --prefer-binary --only-binary=":all:" numpy>=1.24.0,<2.0.0
+          pip install --prefer-binary --only-binary=":all:" 'numpy>=1.24.0,<2.0.0'
 
       - name: Install dependencies
         run: |
