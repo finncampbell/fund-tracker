@@ -39,13 +39,16 @@ jobs:
           python-version: '3.11'
 
       - name: Upgrade pip, setuptools, wheel
-        run: pip install --upgrade pip setuptools wheel
+        run: |
+          pip install --upgrade pip setuptools wheel
 
       - name: Pre-install NumPy wheel
-        run: pip install --prefer-binary --only-binary=:all: numpy>=1.24.0,<2.0.0
+        run: |
+          pip install --prefer-binary --only-binary=":all:" numpy>=1.24.0,<2.0.0
 
-      - name: Install dependencies from requirements.txt
-        run: pip install --prefer-binary --only-binary=:all: -r requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install --prefer-binary --only-binary=":all:" -r requirements.txt
 
       - name: Configure Git
         run: |
@@ -53,9 +56,10 @@ jobs:
           git config user.name  "GH Actions Bot"
 
       - name: Run fund_tracker.py
-        run: python fund_tracker.py \
-               --start_date "${{ github.event.inputs.start_date }}" \
-               --end_date   "${{ github.event.inputs.end_date }}"
+        run: |
+          python fund_tracker.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date   "${{ github.event.inputs.end_date }}"
 
       - name: Commit companies data
         run: |
@@ -66,7 +70,8 @@ jobs:
           fi
 
       - name: Run fetch_directors.py
-        run: python fetch_directors.py
+        run: |
+          python fetch_directors.py
 
       - name: Commit directors data
         run: |
