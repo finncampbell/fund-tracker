@@ -1,8 +1,83 @@
 name: Fund Tracker Automation
-on: [workflow_dispatch]
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Start date (YYYY-MM-DD or "today")'
+        default: 'today'
+      end_date:
+        description: 'End date (YYYY-MM-DD or "today")'
+        default: 'today'
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: fund-tracker
+  cancel-in-progress: true
 
 jobs:
-  test:
+  run-fund-tracker:
     runs-on: ubuntu-latest
+    env:
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
-      - run: echo "Hello, workflow is running"
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Upgrade pip, setuptools, wheel
+        run: pip install --upgrade pip setuptools wheel
+
+      - name: Pre-install NumPy wheel
+        run: pip install --prefer-binary --only-binary=:all: numpy>=1.24.0,<2.0.0
+
+      - name: Install dependencies from requirements.txt
+        run: pip install --prefer-binary --only-binary=:all: -r requirements.txt
+
+      - name: Configure Git
+        run: |
+          git config user.email "bot@example.com"
+          git config user.name  "GH Actions Bot"
+
+      - name: Run fund_tracker.py
+        run: python fund_tracker.py \
+               --start_date "${{ github.event.inputs.start_date }}" \
+               --end_date   "${{ github.event.inputs.end_date }}"
+
+      - name: Commit companies data
+        run: |
+          git add assets/data/master_companies.* assets/data/relevant_companies.*
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 1: update companies data"
+            git push origin main
+          fi
+
+      - name: Run fetch_directors.py
+        run: python fetch_directors.py
+
+      - name: Commit directors data
+        run: |
+          git add assets/data/directors.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 2: update directors"
+            git push origin main
+          fi
+
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: fund-tracker-logs
+          path: assets/logs/fund_tracker.log
