@@ -1,20 +1,35 @@
-# logger.py
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 
-LOG_PATH = 'assets/logs'
-LOG_FILE = os.path.join(LOG_PATH, 'fund_tracker.log')
+def get_logger(
+    name: str,
+    log_file: str,
+    level: int = logging.INFO,
+    max_bytes: int = 10 * 1024 * 1024,
+    backup_count: int = 5
+) -> logging.Logger:
+    """
+    Return a logger that writes to `log_file`, rotating at `max_bytes`.
+    """
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
-# Ensure log directory exists
-os.makedirs(LOG_PATH, exist_ok=True)
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
 
-# Configure root logger
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s %(name)s %(levelname)s: %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+    # If handlers already configured, skip re-adding
+    if not logger.handlers:
+        handler = RotatingFileHandler(
+            filename=log_file,
+            maxBytes=max_bytes,
+            backupCount=backup_count,
+            encoding='utf-8'
+        )
+        fmt = logging.Formatter(
+            fmt="%(asctime)s %(name)s %(levelname)s: %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S"
+        )
+        handler.setFormatter(fmt)
+        logger.addHandler(handler)
 
-# Provide a module-level logger
-log = logging.getLogger('FundTracker')
+    return logger
