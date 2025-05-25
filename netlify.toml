@@ -1,19 +1,8 @@
-# netlify.toml
-
+# netlify.toml — only functions, no static build
 [build]
-  # 1) rename requirements.txt so Netlify's install step skips it
-  # 2) no-op build command
-  command = """
-    if [ -f requirements.txt ]; then mv requirements.txt requirements.txt.skip; fi
-    echo "Skipping build"
-  """
-  publish   = "."
+  command   = "echo \"No build for UI—static served by GitHub Pages\""
+  publish   = "."              # unused for UI
   functions = "netlify/functions"
 
 [functions]
   node_bundler = "nft"
-
-[[headers]]
-  for = "/assets/data/*.csv"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
