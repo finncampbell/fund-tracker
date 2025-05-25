@@ -44,28 +44,26 @@ def load_existing():
 def fetch_officers(number):
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
+        resp = requests.get(
+            f"{API_BASE}/{number}/officers",
+            auth=(CH_KEY, ''),
+            params={'register_view': 'true'},
+            timeout=10
+        )
+        status = resp.status_code
+        if 500 <= status < 600 and attempt < RETRIES:
+            log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
+            time.sleep(RETRY_DELAY)
+            continue
+
         try:
-            resp = requests.get(
-                f"{API_BASE}/{number}/officers",
-                auth=(CH_KEY, ''),
-                params={'register_view': 'true'},
-                timeout=10
-            )
             resp.raise_for_status()
             record_call()
             items = resp.json().get('items', [])
-            break
-        except requests.HTTPError as e:
-            status = e.response.status_code if (e.response and hasattr(e.response, 'status_code')) else None
-            if status is not None and 500 <= status < 600 and attempt < RETRIES:
-                log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
-                time.sleep(RETRY_DELAY)
-                continue
+        except Exception as e:
             log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
             return number, None
-        except Exception as e:
-            log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
-            return number, None
+        break
 
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
@@ -115,9 +113,7 @@ def main():
     log.info(f"Pending companies to backfill (capped at {MAX_PENDING}): {len(pending)}")
     log.info(f"Pending company numbers: {pending}")
 
-    if not pending:
-        log.info("No historical companies to backfill.")
-    else:
+    if pending:
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(fetch_officers, num): num for num in pending}
             for future in as_completed(futures):
@@ -129,6 +125,8 @@ def main():
                         log.info(f"Backfilled {len(dirs)} officers for {num_ret}")
                 except Exception:
                     log.exception(f"{num}: unexpected exception in fetch_officers")
+    else:
+        log.info("No historical companies to backfill.")
 
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
