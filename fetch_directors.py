@@ -56,8 +56,9 @@ def fetch_one(number):
             items = resp.json().get('items', [])
             break
         except requests.HTTPError as e:
-            status = e.response.status_code if e.response else '??'
-            if 500 <= status < 600 and attempt < RETRIES:
+            status = e.response.status_code if (e.response and hasattr(e.response, 'status_code')) else None
+            # only retry on actual 5xx codes
+            if status is not None and 500 <= status < 600 and attempt < RETRIES:
                 log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
                 time.sleep(RETRY_DELAY)
                 continue
