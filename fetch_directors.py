@@ -4,13 +4,15 @@ fetch_directors.py
 
 - Fetches today’s new directors for relevant companies
 - Caps to MAX_PENDING per run
-- Runs up to MAX_WORKERS threads
+- Uses up to MAX_WORKERS threads
+- Retries transient 5xx errors up to RETRIES times
 - Respects 600 calls/5min via rate_limiter
-- Writes to assets/data/directors.json and logs to assets/logs/fund_tracker.log
+- Logs to assets/logs/fund_tracker.log
 """
 
 import os
 import json
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
@@ -25,7 +27,9 @@ CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
 MAX_WORKERS     = 10      # parallel threads
-MAX_PENDING     = 50      # fetch at most this many companies per run
+MAX_PENDING     = 50      # at most this many companies per run
+RETRIES         = 3       # number of attempts per company
+RETRY_DELAY     = 5       # seconds between retries
 
 def load_relevant_numbers():
     df = pd.read_csv(RELEVANT_CSV, dtype=str, usecols=['Company Number'])
@@ -38,21 +42,32 @@ def load_existing_map():
     return {}
 
 def fetch_one(number):
-    enforce_rate_limit()
-    try:
-        resp = requests.get(
-            f"{API_BASE}/{number}/officers",
-            auth=(CH_KEY, ''),
-            params={'register_view': 'true'},
-            timeout=10
-        )
-        resp.raise_for_status()
-        record_call()
-        items = resp.json().get('items', [])
-    except Exception as e:
-        log.warning(f"{number}: fetch error: {e}")
-        return number, None
+    for attempt in range(1, RETRIES + 1):
+        enforce_rate_limit()
+        try:
+            resp = requests.get(
+                f"{API_BASE}/{number}/officers",
+                auth=(CH_KEY, ''),
+                params={'register_view': 'true'},
+                timeout=10
+            )
+            resp.raise_for_status()
+            record_call()
+            items = resp.json().get('items', [])
+            break
+        except requests.HTTPError as e:
+            status = e.response.status_code if e.response else '??'
+            if 500 <= status < 600 and attempt < RETRIES:
+                log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
+                time.sleep(RETRY_DELAY)
+                continue
+            log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
+            return number, None
+        except Exception as e:
+            log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
+            return number, None
 
+    # filter roles
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
