@@ -90,5 +90,4 @@ jobs:
         with:
           name: fund-tracker-logs
           path: |
-            fund_tracker.log
-            director_fetch.log
+            assets/logs/fund_tracker.log
