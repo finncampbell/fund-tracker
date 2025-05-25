@@ -1,7 +1,12 @@
 # netlify.toml
 
 [build]
-  command   = "echo \"Skipping build\""
+  # 1) rename requirements.txt so Netlify's install step skips it
+  # 2) no-op build command
+  command = """
+    if [ -f requirements.txt ]; then mv requirements.txt requirements.txt.skip; fi
+    echo "Skipping build"
+  """
   publish   = "."
   functions = "netlify/functions"
 
