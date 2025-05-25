@@ -27,10 +27,10 @@ API_BASE        = 'https://api.company-information.service.gov.uk/company'
 CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
-MAX_WORKERS     = 10      # parallel threads
-MAX_PENDING     = 50      # cap per run
-RETRIES         = 3       # retry attempts on 5xx
-RETRY_DELAY     = 5       # seconds between retries
+MAX_WORKERS     = 10
+MAX_PENDING     = 50
+RETRIES         = 3
+RETRY_DELAY     = 5
 
 def load_relevant():
     return pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
@@ -56,8 +56,8 @@ def fetch_officers(number):
             items = resp.json().get('items', [])
             break
         except requests.HTTPError as e:
-            status = e.response.status_code if e.response else '??'
-            if 500 <= status < 600 and attempt < RETRIES:
+            status = e.response.status_code if (e.response and hasattr(e.response, 'status_code')) else None
+            if status is not None and 500 <= status < 600 and attempt < RETRIES:
                 log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
                 time.sleep(RETRY_DELAY)
                 continue
@@ -67,7 +67,6 @@ def fetch_officers(number):
             log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
             return number, None
 
-    # Filter roles
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
@@ -107,7 +106,6 @@ def main():
     sd = datetime.fromisoformat(args.start_date).date()
     ed = datetime.fromisoformat(args.end_date).date()
 
-    # Determine pending companies in the date range
     mask_pending = ~df['Company Number'].isin(existing.keys())
     mask_hist    = df['Incorporation Date'].dt.date.between(sd, ed)
     df_pending   = df[mask_pending & mask_hist].sort_values('Incorporation Date', ascending=False)
@@ -132,7 +130,6 @@ def main():
                 except Exception:
                     log.exception(f"{num}: unexpected exception in fetch_officers")
 
-    # Always write directors.json
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
