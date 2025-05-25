@@ -42,12 +42,12 @@ def load_existing():
     return {}
 
 def fetch_officers(number):
+    items = []
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
         resp = requests.get(
             f"{API_BASE}/{number}/officers",
             auth=(CH_KEY, ''),
-            params={'register_view': 'true'},
             timeout=10
         )
         status = resp.status_code
@@ -62,7 +62,6 @@ def fetch_officers(number):
             items = resp.json().get('items', [])
         except Exception as e:
             log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
-            return number, None
         break
 
     ROLES = {'director', 'member'}
@@ -73,7 +72,7 @@ def fetch_officers(number):
     for off in chosen:
         dob = off.get('date_of_birth') or {}
         y, m = dob.get('year'), dob.get('month')
-        dob_str = f"{y}-{int(m):02d}" if y and m else str(y) if y else ''
+        dob_str = f"{y}-{int(m):02d}" if y and m else (str(y) if y else '')
         directors.append({
             'title':            off.get('name'),
             'appointment':      off.get('snippet',''),
@@ -84,6 +83,7 @@ def fetch_officers(number):
             'nationality':      off.get('nationality'),
             'occupation':       off.get('occupation'),
         })
+
     return number, directors
 
 def main():
@@ -120,9 +120,8 @@ def main():
                 num = futures[future]
                 try:
                     num_ret, dirs = future.result()
-                    if dirs:
-                        existing[num_ret] = dirs
-                        log.info(f"Backfilled {len(dirs)} officers for {num_ret}")
+                    existing[num_ret] = dirs
+                    log.info(f"Backfilled {len(dirs)} officers for {num_ret}")
                 except Exception:
                     log.exception(f"{num}: unexpected exception in fetch_officers")
     else:
