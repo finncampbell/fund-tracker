@@ -1,4 +1,3 @@
-// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
   const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
@@ -16,7 +15,7 @@ $(document).ready(function() {
       })
       .catch(err => {
         console.error('Failed to load directors.json', err);
-        initTables(); // still build tables without directors
+        initTables();
       });
 
     function initTables() {
@@ -119,7 +118,7 @@ $(document).ready(function() {
       $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
       $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
 
-      // Filter hook (main table only)
+      // Filter hook
       $.fn.dataTable.ext.search.push((settings, rowData) => {
         if (settings.nTable.id !== 'companies') return true;
         const active = $('.ft-btn.active').data('filter') || '';
@@ -141,7 +140,7 @@ $(document).ready(function() {
     }
   }});
 
-  // Flatpickr range picker and backfill button setup
+  // Flatpickr range picker & backfill button
   flatpickr("#backfill-range", {
     mode: "range",
     dateFormat: "Y-m-d",
@@ -167,7 +166,7 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    fetch('/api/backfill', {
+    fetch('/.netlify/functions/backfill', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ start_date: start, end_date: end })
