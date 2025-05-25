@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """
 fund_tracker.py
-...
+
+- Fetches Companies House data by incorporation date
+- Classifies via regex and SIC lookup
+- Writes master_companies.csv/.xlsx and relevant_companies.csv/.xlsx
 """
 
 import argparse
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
-
 import re
 import requests
 import pandas as pd
@@ -23,7 +25,6 @@ MASTER_XLSX   = 'assets/data/master_companies.xlsx'
 RELEVANT_CSV  = 'assets/data/relevant_companies.csv'
 RELEVANT_XLSX = 'assets/data/relevant_companies.xlsx'
 FETCH_SIZE    = 100
-RETRY_COUNT   = 3
 RETRY_DELAY   = 5  # seconds
 
 # ─── SIC Lookup & Fields ───────────────────────────────────────────────────────
@@ -42,25 +43,100 @@ FIELDS = [
 
 # ─── Classification Patterns ───────────────────────────────────────────────────
 CLASS_PATTERNS = [
-    # same as before…
+    (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
+    (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
+    (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
+    (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
+    (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
+    (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
+    (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
+    (re.compile(r'\bEquity\b',                re.IGNORECASE), 'Equity'),
+    (re.compile(r'\bAdvisors\b',              re.IGNORECASE), 'Advisors'),
+    (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
+    (re.compile(r'\bSIC\b',                   re.IGNORECASE), 'SIC'),
 ]
 
 def normalize_date(d: str) -> str:
-    # same as before…
-    # Use log for errors
+    """
+    Accepts:
+      - '' or 'today'        → returns today in YYYY-MM-DD
+      - 'YYYY-MM-DD'         → returns as-is
+      - 'DD-MM-YYYY'         → converts to YYYY-MM-DD
+    """
     if not d or d.lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
-    try:
-        return datetime.strptime(d, '%Y-%m-%d').strftime('%Y-%m-%d')
-    except ValueError:
-        pass
-    try:
-        return datetime.strptime(d, '%d-%m-%Y').strftime('%Y-%m-%d')
-    except ValueError:
-        log.error(f"Invalid date format: {d}. Expected YYYY-MM-DD or DD-MM-YYYY")
-        sys.exit(1)
+    for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
+        try:
+            return datetime.strptime(d, fmt).strftime('%Y-%m-%d')
+        except ValueError:
+            continue
+    log.error(f"Invalid date format: {d}. Expected YYYY-MM-DD or DD-MM-YYYY")
+    sys.exit(1)
 
-# … classify(), enrich_sic(), fetch_companies_on() as before, using log instead of log.warning/log.info …
+def classify(name: str) -> str:
+    txt = name or ''
+    for pat, label in CLASS_PATTERNS:
+        if pat.search(txt):
+            return label
+    return 'Other'
+
+def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
+    joined, descs, uses = ",".join(codes), [], []
+    for code in codes:
+        if code in SIC_LOOKUP:
+            d, u = SIC_LOOKUP[code]
+            descs.append(d)
+            uses.append(u)
+    return joined, "; ".join(descs), "; ".join(uses)
+
+def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
+    records = []
+    start_index = 0
+
+    while True:
+        enforce_rate_limit()
+        params = {
+            'incorporated_from': ds,
+            'incorporated_to':   ds,
+            'size':              FETCH_SIZE,
+            'start_index':       start_index
+        }
+        try:
+            resp = requests.get(CH_API_URL, auth=(api_key, ''), params=params, timeout=10)
+            resp.raise_for_status()
+            record_call()
+            data = resp.json()
+            items = data.get('items', [])
+        except Exception as e:
+            log.warning(f"{ds} @index {start_index}: {e}")
+            time.sleep(RETRY_DELAY)
+            continue
+
+        now = datetime.now(timezone.utc)
+        for c in items:
+            nm    = c.get('title') or c.get('company_name') or ''
+            num   = c.get('company_number','')
+            codes = c.get('sic_codes', [])
+            sic_codes, sic_desc, sic_use = enrich_sic(codes)
+            records.append({
+                'Company Name':       nm,
+                'Company Number':     num,
+                'Incorporation Date': c.get('date_of_creation',''),
+                'Status':             c.get('company_status',''),
+                'Source':             c.get('source',''),
+                'Date Downloaded':    now.strftime('%Y-%m-%d'),
+                'Time Discovered':    now.strftime('%H:%M:%S'),
+                'Category':           classify(nm),
+                'SIC Codes':          sic_codes,
+                'SIC Description':    sic_desc,
+                'Typical Use Case':   sic_use
+            })
+
+        if len(items) < FETCH_SIZE:
+            break
+        start_index += FETCH_SIZE
+
+    return records
 
 def run_for_date_range(start_date: str, end_date: str):
     sd = datetime.strptime(start_date, '%Y-%m-%d')
@@ -70,22 +146,9 @@ def run_for_date_range(start_date: str, end_date: str):
         sys.exit(1)
 
     log.info(f"Starting company ingest {start_date} → {end_date}")
-    # … rest unchanged, using log.info() …
-
-def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
-    p.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
-    args = p.parse_args()
-
-    api_key = os.getenv('CH_API_KEY')
-    if not api_key:
-        log.error('CH_API_KEY not set')
-        sys.exit(1)
-
-    sd = normalize_date(args.start_date)
-    ed = normalize_date(args.end_date)
-    run_for_date_range(sd, ed)
-
-if __name__ == '__main__':
-    main()
+    new_records = []
+    cur = sd
+    while cur <= ed:
+        ds = cur.strftime('%Y-%m-%d')
+        log.info(f"Fetching companies for {ds}")
+        new_records += fetch_com
