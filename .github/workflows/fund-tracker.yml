@@ -1,3 +1,4 @@
+# .github/workflows/fund-tracker.yml
 name: Fund Tracker Automation
 
 on:
@@ -42,38 +43,41 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.12
+          python-version: '3.11'
 
       - name: Upgrade pip, setuptools, wheel
         run: pip install --upgrade pip setuptools wheel
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Pre-install numpy for binary wheel
+        run: pip install numpy
+
+      - name: Install remaining dependencies
+        run: pip install --prefer-binary --only-binary=:all: -r requirements.txt
 
       - name: Configure Git
         run: |
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      # Stage 1: companies
+      # ── Stage 1: Fetch & filter companies ────────────────────────────────
       - name: Run fund_tracker.py
         run: python fund_tracker.py \
                --start_date "${{ github.event.inputs.start_date }}" \
                --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Commit data
+      - name: Commit updated company data
         run: |
-          git add assets/data/*.csv assets/data/*.xlsx
+          git add assets/data/master_companies.* assets/data/relevant_companies.*
           if ! git diff --cached --quiet; then
             git commit -m "Stage 1: update companies data"
             git push origin main
           fi
 
-      # Stage 2: directors
-      - name: Run director fetch
+      # ── Stage 2: Fetch directors ────────────────────────────────────────
+      - name: Run fetch_directors.py
         run: python fetch_directors.py
 
-      - name: Commit directors.json
+      - name: Commit updated directors.json
         run: |
           git add assets/data/directors.json
           if ! git diff --cached --quiet; then
@@ -85,4 +89,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fund-tracker-logs
-          path: assets/logs/fund_tracker.log
+          path: |
+            fund_tracker.log
+            director_fetch.log
