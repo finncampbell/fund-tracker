@@ -2,7 +2,7 @@ name: Fund Tracker Automation
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       start_date:
@@ -28,16 +28,16 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Configure Git
-        run: |
-          git config user.email "bot@example.com"
-          git config user.name  "GH Actions Bot"
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -45,35 +45,36 @@ jobs:
           python-version: 3.12
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install openpyxl XlsxWriter
+        run: pip install -r requirements.txt
 
-      # ─── Stage 1: update companies data ────────────────────────────────
+      - name: Configure Git
+        run: |
+          git config user.email "bot@example.com"
+          git config user.name  "GH Actions Bot"
+
+      # Stage 1
       - name: Run fund_tracker.py
-        run: |
-          python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
+        run: python fund_tracker.py \
+               --start_date "${{ github.event.inputs.start_date }}" \
+               --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Commit companies data
+      - name: Commit data
         run: |
-          git add assets/data/master_companies.csv assets/data/master_companies.xlsx \
-                  assets/data/relevant_companies.csv assets/data/relevant_companies.xlsx
+          git add assets/data/*.csv assets/data/*.xlsx
           if ! git diff --cached --quiet; then
             git commit -m "Stage 1: update companies data"
             git push origin main
           fi
 
-      # ─── Stage 2: backfill directors ────────────────────────────────────
-      - name: Fetch directors
+      # Stage 2
+      - name: Run director fetch
         run: python fetch_directors.py
 
       - name: Commit directors.json
         run: |
           git add assets/data/directors.json
           if ! git diff --cached --quiet; then
-            git commit -m "Stage 2: add directors data"
+            git commit -m "Stage 2: update directors"
             git push origin main
           fi
 
@@ -81,6 +82,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fund-tracker-logs
-          path: |
-            fund_tracker.log
-            director_fetch.log
+          path: assets/logs/fund_tracker.log
