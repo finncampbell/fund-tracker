@@ -1,8 +1,6 @@
 name: Fund Tracker Automation
 
 on:
-  schedule:
-    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       start_date:
@@ -11,6 +9,8 @@ on:
       end_date:
         description: 'End date (YYYY-MM-DD or "today")'
         default: 'today'
+  schedule:
+    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -34,12 +34,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
@@ -51,7 +45,7 @@ jobs:
       - name: Pre-install NumPy wheel
         run: pip install --prefer-binary --only-binary=:all: numpy>=1.24.0,<2.0.0
 
-      - name: Install remaining dependencies from requirements.txt
+      - name: Install dependencies
         run: pip install --prefer-binary --only-binary=:all: -r requirements.txt
 
       - name: Configure Git
@@ -59,13 +53,12 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name  "GH Actions Bot"
 
-      # ── Stage 1: Fetch & filter companies ────────────────────────────────
       - name: Run fund_tracker.py
         run: python fund_tracker.py \
                --start_date "${{ github.event.inputs.start_date }}" \
                --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Commit updated company data
+      - name: Commit companies data
         run: |
           git add assets/data/master_companies.* assets/data/relevant_companies.*
           if ! git diff --cached --quiet; then
@@ -73,11 +66,10 @@ jobs:
             git push origin main
           fi
 
-      # ── Stage 2: Fetch directors ────────────────────────────────────────
       - name: Run fetch_directors.py
         run: python fetch_directors.py
 
-      - name: Commit updated directors.json
+      - name: Commit directors data
         run: |
           git add assets/data/directors.json
           if ! git diff --cached --quiet; then
@@ -85,7 +77,7 @@ jobs:
             git push origin main
           fi
 
-      - name: Upload consolidated logs
+      - name: Upload logs
         uses: actions/upload-artifact@v4
         with:
           name: fund-tracker-logs
