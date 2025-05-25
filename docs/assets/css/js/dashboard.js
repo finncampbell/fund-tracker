@@ -55,7 +55,7 @@ $(document).ready(function() {
         responsive: true
       });
 
-      // SIC-only table
+      // SIC‐only companies table
       const sicData = data.filter(r => r['SIC Description']);
       const sicTable = $('#sic-companies').DataTable({
         data: sicData,
@@ -114,7 +114,7 @@ $(document).ready(function() {
               +`<td>${d.officerRole||''}</td>`
               +`<td>${d.nationality||''}</td>`
               +`<td>${d.occupation||''}</td>`
-              +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}">Details</a></td>`
+              +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>`
               +`</tr>`;
           });
           html += '</table>';
@@ -173,7 +173,7 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    fetch('/.netlify/functions/backfill', {
+    fetch('https://investment-fund-tracker.netlify.app/.netlify/functions/backfill', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ start_date: start, end_date: end })
