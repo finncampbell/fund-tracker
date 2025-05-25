@@ -67,7 +67,7 @@ def fetch_one(number):
             log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
             return number, None
 
-    # filter roles
+    # Filter roles
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
@@ -106,6 +106,7 @@ def main():
     pending_all = [num for num in relevant if num not in existing]
     pending = pending_all[:MAX_PENDING]
     log.info(f"Pending companies to fetch (capped at {MAX_PENDING}): {len(pending)}")
+    log.info(f"Pending company numbers: {pending}")
 
     if not pending:
         log.info("No new companies to fetch directors for.")
@@ -116,12 +117,11 @@ def main():
                 num = futures[future]
                 try:
                     num_ret, dirs = future.result()
-                except Exception as e:
-                    log.warning(f"{num}: unexpected error: {e}")
-                    continue
-                if dirs:
-                    existing[num_ret] = dirs
-                    log.info(f"Fetched {len(dirs)} director(s) for {num_ret}")
+                    if dirs:
+                        existing[num_ret] = dirs
+                        log.info(f"Fetched {len(dirs)} director(s) for {num_ret}")
+                except Exception:
+                    log.exception(f"{num}: unexpected exception in fetch_one")
 
     # Always write directors.json
     with open(DIRECTORS_JSON, 'w') as f:
