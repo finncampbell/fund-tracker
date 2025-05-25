@@ -1,4 +1,7 @@
+# netlify.toml
+
 [build]
+  command   = "echo \"Skipping build\""
   publish   = "."
   functions = "netlify/functions"
 
