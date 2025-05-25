@@ -2,21 +2,36 @@
 """
 fund_tracker.py
 
+- Bootstraps dependencies (pip, numpy, pandas, etc.)
 - Fetches Companies House data by incorporation date
 - Classifies via regex and SIC lookup
 - Writes master_companies.csv/.xlsx and relevant_companies.csv/.xlsx
 """
 
-import argparse
 import sys
+import subprocess
+def _bootstrap():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
+    subprocess.check_call([
+        sys.executable, "-m", "pip", "install",
+        "numpy>=1.24.0",
+        "pandas==2.1.0",
+        "requests>=2.31.0",
+        "openpyxl>=3.1.2",
+        "XlsxWriter>=3.1.2"
+    ])
+_bootstrap()
+
+import argparse
+import os
 import time
-from datetime import date, datetime, timedelta, timezone
 import re
 import requests
 import pandas as pd
+from datetime import date, datetime, timedelta, timezone
 
 from rate_limiter import enforce_rate_limit, record_call
-from logger import log  # ← centralized logger
+from logger import log
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
@@ -31,7 +46,6 @@ RETRY_DELAY   = 5  # seconds
 SIC_LOOKUP = {
     '64205': ("Activities of financial services holding companies",
               "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."),
-    # … other entries …
     '70221': ("Financial management (of companies and enterprises)",
               "Treasury, capital-raising and internal financial services arm.")
 }
@@ -57,12 +71,6 @@ CLASS_PATTERNS = [
 ]
 
 def normalize_date(d: str) -> str:
-    """
-    Accepts:
-      - '' or 'today'        → returns today in YYYY-MM-DD
-      - 'YYYY-MM-DD'         → returns as-is
-      - 'DD-MM-YYYY'         → converts to YYYY-MM-DD
-    """
     if not d or d.lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
@@ -92,7 +100,6 @@ def enrich_sic(codes: list[str]) -> tuple[str,str,str]:
 def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
     records = []
     start_index = 0
-
     while True:
         enforce_rate_limit()
         params = {
@@ -135,7 +142,6 @@ def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
         if len(items) < FETCH_SIZE:
             break
         start_index += FETCH_SIZE
-
     return records
 
 def run_for_date_range(start_date: str, end_date: str):
@@ -151,4 +157,55 @@ def run_for_date_range(start_date: str, end_date: str):
     while cur <= ed:
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
-        new_records += fetch_com
+        new_records += fetch_companies_on(ds, API_KEY)
+        cur += timedelta(days=1)
+
+    # Load or init master
+    if os.path.exists(MASTER_CSV):
+        try:
+            df_master = pd.read_csv(MASTER_CSV)
+        except pd.errors.EmptyDataError:
+            df_master = pd.DataFrame(columns=FIELDS)
+    else:
+        df_master = pd.DataFrame(columns=FIELDS)
+
+    if new_records:
+        df_new = pd.DataFrame(new_records, columns=FIELDS)
+        df_all = pd.concat([df_master, df_new], ignore_index=True)
+        df_all.drop_duplicates(subset=['Company Number'], keep='first', inplace=True)
+    else:
+        df_all = df_master
+
+    df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
+    df_all = df_all[FIELDS]
+
+    df_all.to_csv(MASTER_CSV, index=False)
+    df_all.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
+    log.info(f"Wrote master CSV/XLSX ({len(df_all)} rows)")
+
+    mask_cat = df_all['Category'] != 'Other'
+    mask_sic = df_all['SIC Description'].astype(bool)
+    df_rel   = df_all[mask_cat | mask_sic]
+
+    df_rel.to_csv(RELEVANT_CSV, index=False)
+    df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
+    log.info(f"Wrote relevant CSV/XLSX ({len(df_rel)} rows)")
+
+def main():
+    global API_KEY
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
+    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
+    args = parser.parse_args()
+
+    API_KEY = os.getenv('CH_API_KEY')
+    if not API_KEY:
+        log.error('CH_API_KEY not set')
+        sys.exit(1)
+
+    sd = normalize_date(args.start_date)
+    ed = normalize_date(args.end_date)
+    run_for_date_range(sd, ed)
+
+if __name__ == '__main__':
+    main()
