@@ -1,149 +1,151 @@
 $(document).ready(function() {
-  const url = 'assets/data/relevant_companies.csv';
+  // Cache-busted URL so the browser always pulls fresh data
+  const url = `/assets/data/relevant_companies.csv?v=${Date.now()}`;
   const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
 
-  Papa.parse(url, {
-    download: true,
-    header: true,
-    complete(results) {
-      const raw = results.data.filter(r => r['Company Number']);
+  Papa.parse(url, { download: true, header: true, complete(results) {
+    const raw = results.data.filter(r => r['Company Number']);
 
-      // Load directors.json, then initialize tables
-      let directorsMap = {};
-      fetch('assets/data/directors.json')
-        .then(r => r.json())
-        .then(json => {
-          directorsMap = json;
-          console.log('Directors map loaded:', directorsMap);  // DEBUG
-          initTables();
-        })
-        .catch(err => {
-          console.error('Failed to load directors.json', err);
-          initTables();
-        });
+    let directorsMap = {};
+    fetch('/assets/data/directors.json')
+      .then(r => r.json())
+      .then(json => {
+        // Trim JSON keys to normalize
+        directorsMap = Object.fromEntries(
+          Object.entries(json).map(([k, v]) => [k.trim(), v])
+        );
+        initTables();
+      })
+      .catch(err => {
+        console.error('Failed to load directors.json', err);
+        initTables();
+      });
 
-      function initTables() {
-        const data = raw.map(r => ({
+    function initTables() {
+      const data = raw.map(r => {
+        const num = r['Company Number'].trim();
+        return {
           ...r,
-          Directors: directorsMap[r['Company Number']] || []
-        }));
+          'Company Number': num,
+          Directors: directorsMap[num] || []
+        };
+      });
 
-        // Main companies table
-        const companyTable = $('#companies').DataTable({
-          data,
-          columns: [
-            { data: 'Company Name' },
-            { data: 'Company Number' },
-            { data: 'Incorporation Date' },
-            { data: 'Category' },
-            { data: 'Date Downloaded' },
-            {
-              data: 'Directors',
-              title: 'Directors',
-              orderable: false,
-              render: (dirs, type) =>
-                type === 'display'
-                  ? `<button class="expand-btn">Expand for Directors (${dirs.length})</button>`
-                  : dirs
-            }
-          ],
-          order: [[2, 'desc']],
-          pageLength: 25,
-          responsive: true
-        });
-
-        // SIC-only table
-        const sicData = data.filter(r => r['SIC Description']);
-        const sicTable = $('#sic-companies').DataTable({
-          data: sicData,
-          columns: [
-            { data: 'Company Name' },
-            { data: 'Company Number' },
-            { data: 'Incorporation Date' },
-            { data: 'Category' },
-            { data: 'Date Downloaded' },
-            { data: 'SIC Codes' },
-            { data: 'SIC Description' },
-            { data: 'Typical Use Case' },
-            {
-              data: 'Directors',
-              title: 'Directors',
-              orderable: false,
-              render: (dirs, type) =>
-                type === 'display'
-                  ? `<button class="expand-btn">Expand for Directors (${dirs.length})</button>`
-                  : dirs
-            }
-          ],
-          order: [[2, 'desc']],
-          pageLength: 25,
-          responsive: true
-        });
-
-        // Expand/Collapse directors
-        function toggleDirectors() {
-          const $btn = $(this);
-          const tableId = $btn.closest('table').attr('id');
-          const dt = tableId === 'sic-companies' ? sicTable : companyTable;
-          const row = dt.row($btn.closest('tr'));
-
-          if (row.child.isShown()) {
-            row.child.hide();
-            $btn.text(`Expand for Directors (${row.data().Directors.length})`);
-          } else {
-            const dirs = row.data().Directors;
-            let html = '<table class="child-table"><tr>'
-              +'<th>Director Name</th>'
-              +'<th>Appointment</th>'
-              +'<th>Date of Birth</th>'
-              +'<th># of Appointments</th>'
-              +'<th>Officer Role</th>'
-              +'<th>Nationality</th>'
-              +'<th>Occupation</th>'
-              +'<th>Details Link</th>'
-              +'</tr>';
-            dirs.forEach(d => {
-              html += `<tr>`
-                +`<td>${d.title||''}</td>`
-                +`<td>${d.appointment||''}</td>`
-                +`<td>${d.dateOfBirth||''}</td>`
-                +`<td>${d.appointmentCount||''}</td>`
-                +`<td>${d.officerRole||''}</td>`
-                +`<td>${d.nationality||''}</td>`
-                +`<td>${d.occupation||''}</td>`
-                +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>`
-                +`</tr>`;
-            });
-            html += '</table>';
-            row.child(html).show();
-            $btn.text('Hide Directors');
+      // Main companies table
+      const companyTable = $('#companies').DataTable({
+        data,
+        columns: [
+          { data: 'Company Name' },
+          { data: 'Company Number' },
+          { data: 'Incorporation Date' },
+          { data: 'Category' },
+          { data: 'Date Downloaded' },
+          {
+            data: 'Directors',
+            title: 'Directors',
+            orderable: false,
+            render: (dirs, type) =>
+              type === 'display'
+                ? `<button class="expand-btn">Expand for Directors</button>`
+                : dirs
           }
+        ],
+        order: [[2, 'desc']],
+        pageLength: 25,
+        responsive: true
+      });
+
+      // SIC-only table
+      const sicData = data.filter(r => r['SIC Description']);
+      const sicTable = $('#sic-companies').DataTable({
+        data: sicData,
+        columns: [
+          { data: 'Company Name' },
+          { data: 'Company Number' },
+          { data: 'Incorporation Date' },
+          { data: 'Category' },
+          { data: 'Date Downloaded' },
+          { data: 'SIC Codes' },
+          { data: 'SIC Description' },
+          { data: 'Typical Use Case' },
+          {
+            data: 'Directors',
+            title: 'Directors',
+            orderable: false,
+            render: (dirs, type) =>
+              type === 'display'
+                ? `<button class="expand-btn">Expand for Directors</button>`
+                : dirs
+          }
+        ],
+        order: [[2, 'desc']],
+        pageLength: 25,
+        responsive: true
+      });
+
+      // Expand/Collapse directors
+      function toggleDirectors() {
+        const $btn = $(this);
+        const tableId = $btn.closest('table').attr('id');
+        const dt = tableId === 'sic-companies' ? sicTable : companyTable;
+        const row = dt.row($btn.closest('tr'));
+
+        if (row.child.isShown()) {
+          row.child.hide();
+          $btn.text('Expand for Directors');
+        } else {
+          const dirs = row.data().Directors;
+          let html = '<table class="child-table"><tr>'
+            +'<th>Director Name</th>'
+            +'<th>Appointment</th>'
+            +'<th>Date of Birth</th>'
+            +'<th># of Appointments</th>'
+            +'<th>Officer Role</th>'
+            +'<th>Nationality</th>'
+            +'<th>Occupation</th>'
+            +'<th>Details Link</th>'
+            +'</tr>';
+          dirs.forEach(d => {
+            html += `<tr>`
+              +`<td>${d.title||''}</td>`
+              +`<td>${d.appointment||''}</td>`
+              +`<td>${d.dateOfBirth||''}</td>`
+              +`<td>${d.appointmentCount||''}</td>`
+              +`<td>${d.officerRole||''}</td>`
+              +`<td>${d.nationality||''}</td>`
+              +`<td>${d.occupation||''}</td>`
+              +`<td><a href="https://api.company-information.service.gov.uk${d.selfLink}">Details</a></td>`
+              +`</tr>`;
+          });
+          html += '</table>';
+          row.child(html).show();
+          $btn.text('Hide Directors');
         }
-        $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
-        $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
-
-        // Filter hook
-        $.fn.dataTable.ext.search.push((settings, rowData) => {
-          if (settings.nTable.id !== 'companies') return true;
-          const active = $('.ft-btn.active').data('filter') || '';
-          if (!active) return rowData[3] !== 'Other';
-          if (active === 'SIC') return false;
-          if (active === 'Fund Entities') return fundEntitiesRE.test(rowData[0]);
-          return rowData[3] === active;
-        });
-
-        // Tab click handler
-        $('.ft-filters').on('click', '.ft-btn', function() {
-          $('.ft-btn').removeClass('active');
-          $(this).addClass('active');
-          const filter = $(this).data('filter') || '';
-          $('#companies-container').toggle(filter !== 'SIC');
-          $('#sic-companies-container').toggle(filter === 'SIC');
-          if (filter !== 'SIC') companyTable.draw();
-        });
       }
+      $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
+      $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
+
+      // Filter hook
+      $.fn.dataTable.ext.search.push((settings, rowData) => {
+        if (settings.nTable.id !== 'companies') return true;
+        const active = $('.ft-btn.active').data('filter') || '';
+        if (!active) return rowData[3] !== 'Other';
+        if (active === 'SIC') return false;
+        if (active === 'Fund Entities') return fundEntitiesRE.test(rowData[0]);
+        return rowData[3] === active;
+      });
+
+      // Tab click handler
+      $('.ft-filters').on('click', '.ft-btn', function() {
+        $('.ft-btn').removeClass('active');
+        $(this).addClass('active');
+        const filter = $(this).data('filter') || '';
+        $('#companies-container').toggle(filter !== 'SIC');
+        $('#sic-companies-container').toggle(filter === 'SIC');
+        if (filter !== 'SIC') companyTable.draw();
+      });
     }
-  });
+  }});
 
   // Flatpickr range picker & backfill button
   flatpickr("#backfill-range", {
@@ -171,21 +173,20 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    btn.disabled = true;
-
     fetch('/.netlify/functions/backfill', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ start_date: start, end_date: end })
     })
-      .then(r => r.json().then(body => {
-        if (body.error) throw new Error(body.error);
-        alert(body.message);
+      .then(r => {
+        if (!r.ok) throw new Error("Dispatch failed");
+        alert(`Backfill started for ${start} → ${end}`);
+        btn.disabled = true;
         document.getElementById("backfill-range").value = "";
-      }))
+      })
       .catch(err => {
-        console.error("Backfill error:", err);
-        alert(`Backfill error: ${err.message}`);
+        console.error(err);
+        alert("Error starting backfill; see console.");
       });
   });
 });
