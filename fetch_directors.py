@@ -26,10 +26,10 @@ API_BASE        = 'https://api.company-information.service.gov.uk/company'
 CH_KEY          = os.getenv('CH_API_KEY')
 RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
-MAX_WORKERS     = 10      # parallel threads
-MAX_PENDING     = 50      # at most this many companies per run
-RETRIES         = 3       # number of attempts per company
-RETRY_DELAY     = 5       # seconds between retries
+MAX_WORKERS     = 10
+MAX_PENDING     = 50
+RETRIES         = 3
+RETRY_DELAY     = 5
 
 def load_relevant_numbers():
     df = pd.read_csv(RELEVANT_CSV, dtype=str, usecols=['Company Number'])
@@ -44,29 +44,26 @@ def load_existing_map():
 def fetch_one(number):
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
+        resp = requests.get(
+            f"{API_BASE}/{number}/officers",
+            auth=(CH_KEY, ''),
+            params={'register_view': 'true'},
+            timeout=10
+        )
+        status = resp.status_code
+        if 500 <= status < 600 and attempt < RETRIES:
+            log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
+            time.sleep(RETRY_DELAY)
+            continue
+
         try:
-            resp = requests.get(
-                f"{API_BASE}/{number}/officers",
-                auth=(CH_KEY, ''),
-                params={'register_view': 'true'},
-                timeout=10
-            )
             resp.raise_for_status()
             record_call()
             items = resp.json().get('items', [])
-            break
-        except requests.HTTPError as e:
-            status = e.response.status_code if (e.response and hasattr(e.response, 'status_code')) else None
-            # only retry on actual 5xx codes
-            if status is not None and 500 <= status < 600 and attempt < RETRIES:
-                log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
-                time.sleep(RETRY_DELAY)
-                continue
+        except Exception as e:
             log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
             return number, None
-        except Exception as e:
-            log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
-            return number, None
+        break
 
     # Filter roles
     ROLES = {'director', 'member'}
@@ -109,9 +106,7 @@ def main():
     log.info(f"Pending companies to fetch (capped at {MAX_PENDING}): {len(pending)}")
     log.info(f"Pending company numbers: {pending}")
 
-    if not pending:
-        log.info("No new companies to fetch directors for.")
-    else:
+    if pending:
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(fetch_one, num): num for num in pending}
             for future in as_completed(futures):
@@ -123,8 +118,9 @@ def main():
                         log.info(f"Fetched {len(dirs)} director(s) for {num_ret}")
                 except Exception:
                     log.exception(f"{num}: unexpected exception in fetch_one")
+    else:
+        log.info("No new companies to fetch directors for.")
 
-    # Always write directors.json
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
     log.info(f"Wrote directors.json with {len(existing)} companies")
