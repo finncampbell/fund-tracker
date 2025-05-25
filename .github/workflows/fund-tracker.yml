@@ -10,19 +10,21 @@ on:
         description: 'End date (YYYY-MM-DD or "today")'
         default: 'today'
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/10 * * * *'    # every 10 minutes
 
 permissions:
   contents: write
   actions: read
 
 concurrency:
-  group: fund-tracker
-  cancel-in-progress: true
+  group: fund-tracker       # manual or scheduled runs share this group
+  cancel-in-progress: true  # a manual (historical) run will cancel any in-flight 10-min run
 
 jobs:
   run-fund-tracker:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,7 +48,7 @@ jobs:
         run: |
           pip install --prefer-binary --only-binary=":all:" 'numpy>=1.24.0,<2.0.0'
 
-      - name: Install dependencies
+      - name: Install remaining dependencies
         run: |
           pip install --prefer-binary --only-binary=":all:" -r requirements.txt
 
