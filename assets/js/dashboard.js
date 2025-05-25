@@ -1,3 +1,4 @@
+// assets/js/dashboard.js
 $(document).ready(function() {
   const url = 'assets/data/relevant_companies.csv';
   const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
@@ -5,12 +6,18 @@ $(document).ready(function() {
   Papa.parse(url, { download: true, header: true, complete(results) {
     const raw = results.data.filter(r => r['Company Number']);
 
-    // Eager-load directorsMap as before
+    // Load directors.json, then initialize tables
     let directorsMap = {};
     fetch('assets/data/directors.json')
-      .then(r=>r.json())
-      .then(json=> directorsMap = json )
-      .finally(initTables);
+      .then(r => r.json())
+      .then(json => {
+        directorsMap = json;
+        initTables();
+      })
+      .catch(err => {
+        console.error('Failed to load directors.json', err);
+        initTables(); // still build tables without directors
+      });
 
     function initTables() {
       const data = raw.map(r => ({
@@ -109,10 +116,10 @@ $(document).ready(function() {
           $btn.text('Hide Directors');
         }
       }
-      $('#companies tbody').on('click',  '.expand-btn', toggleDirectors);
-      $('#sic-companies tbody').on('click','.expand-btn', toggleDirectors);
+      $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
+      $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
 
-      // Filter hook
+      // Filter hook (main table only)
       $.fn.dataTable.ext.search.push((settings, rowData) => {
         if (settings.nTable.id !== 'companies') return true;
         const active = $('.ft-btn.active').data('filter') || '';
@@ -134,7 +141,7 @@ $(document).ready(function() {
     }
   }});
 
-  // ─── Flatpickr Range Picker & Backfill Button ───────────────────────────────
+  // Flatpickr range picker and backfill button setup
   flatpickr("#backfill-range", {
     mode: "range",
     dateFormat: "Y-m-d",
