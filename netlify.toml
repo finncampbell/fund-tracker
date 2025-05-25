@@ -4,3 +4,8 @@
 
 [functions]
   node_bundler = "nft"
+
+[[headers]]
+  for = "/assets/data/*.csv"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
