@@ -9,37 +9,29 @@ fetch_directors.py
 
 import os
 import json
-import logging
 import time
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 import requests
+
 from rate_limiter import enforce_rate_limit, record_call
+from logger import get_logger
 
 # ─── Config ─────────────────────────────────────────────────────────────────────
 API_BASE       = 'https://api.company-information.service.gov.uk/company'
 CH_KEY         = os.getenv('CH_API_KEY')
 RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
 DIRECTORS_JSON = 'docs/assets/data/directors.json'
-LOG_DIR        = 'assets/logs'
-LOG_FILE       = os.path.join(LOG_DIR, 'director_fetch.log')
+LOG_FILE       = 'assets/logs/director_fetch.log'
 MAX_WORKERS    = 10
 MAX_PENDING    = 50
 RETRIES        = 3
 RETRY_DELAY    = 5
 
-# ─── Ensure log directory exists ────────────────────────────────────────────────
-os.makedirs(LOG_DIR, exist_ok=True)
-
-# ─── Logging setup ─────────────────────────────────────────────────────────────
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s'
-)
-log = logging.getLogger(__name__)
+# Configure logger
+log = get_logger('director_fetch', LOG_FILE)
 
 def load_relevant():
     df = pd.read_csv(RELEVANT_CSV, dtype=str)
@@ -52,10 +44,12 @@ def load_existing():
     return {}
 
 def fetch_one(number):
-    for attempt in range(1, RETRIES+1):
+    for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
-        resp = requests.get(f"{API_BASE}/{number}/officers",
-                            auth=(CH_KEY,''), timeout=10)
+        resp = requests.get(
+            f"{API_BASE}/{number}/officers",
+            auth=(CH_KEY, ''), timeout=10
+        )
         if resp.status_code >= 500 and attempt < RETRIES:
             log.warning(f"{number}: {resp.status_code}, retrying")
             time.sleep(RETRY_DELAY)
@@ -69,7 +63,7 @@ def fetch_one(number):
             items = []
         break
 
-    ROLES = {'director','member'}
+    ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
 
@@ -118,7 +112,6 @@ def main():
                 existing[num] = dirs
                 log.info(f"Fetched {len(dirs)} for {num}")
 
-    # Write merged JSON
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
