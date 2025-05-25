@@ -5,15 +5,16 @@ backfill_directors.py
 - Backfills directors over a historical date range
 - Caps to MAX_PENDING per run
 - Uses up to MAX_WORKERS threads
-- Respects 600 calls/5min
+- Retries transient 5xx errors up to RETRIES times
 - Logs to assets/logs/fund_tracker.log
 """
 
 import os
 import json
+import time
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import pandas as pd
 import requests
@@ -28,6 +29,8 @@ RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
 DIRECTORS_JSON  = 'assets/data/directors.json'
 MAX_WORKERS     = 10
 MAX_PENDING     = 50
+RETRIES         = 3
+RETRY_DELAY     = 5
 
 def load_relevant():
     return pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
@@ -39,20 +42,30 @@ def load_existing():
     return {}
 
 def fetch_officers(number):
-    enforce_rate_limit()
-    try:
-        resp = requests.get(
-            f"{API_BASE}/{number}/officers",
-            auth=(CH_KEY, ''),
-            params={'register_view': 'true'},
-            timeout=10
-        )
-        resp.raise_for_status()
-        record_call()
-        items = resp.json().get('items', [])
-    except Exception as e:
-        log.warning(f"{number}: fetch error: {e}")
-        return number, None
+    for attempt in range(1, RETRIES + 1):
+        enforce_rate_limit()
+        try:
+            resp = requests.get(
+                f"{API_BASE}/{number}/officers",
+                auth=(CH_KEY, ''),
+                params={'register_view': 'true'},
+                timeout=10
+            )
+            resp.raise_for_status()
+            record_call()
+            items = resp.json().get('items', [])
+            break
+        except requests.HTTPError as e:
+            status = e.response.status_code if e.response else '??'
+            if 500 <= status < 600 and attempt < RETRIES:
+                log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
+                time.sleep(RETRY_DELAY)
+                continue
+            log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
+            return number, None
+        except Exception as e:
+            log.warning(f"{number}: fetch error: {e} (attempt {attempt})")
+            return number, None
 
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
@@ -95,8 +108,7 @@ def main():
 
     mask_pending = ~df['Company Number'].isin(existing.keys())
     mask_hist    = df['Incorporation Date'].dt.date.between(sd, ed)
-    df_pending   = df[mask_pending & mask_hist]
-    df_pending.sort_values('Incorporation Date', ascending=False, inplace=True)
+    df_pending   = df[mask_pending & mask_hist].sort_values('Incorporation Date', ascending=False)
 
     pending_all = df_pending['Company Number'].tolist()
     pending = pending_all[:MAX_PENDING]
@@ -116,7 +128,6 @@ def main():
                     existing[num_ret] = dirs
                     log.info(f"Backfilled {len(dirs)} officers for {num_ret}")
 
-    # Always write directors.json
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
