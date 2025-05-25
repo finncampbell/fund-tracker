@@ -2,127 +2,108 @@
 """
 fetch_directors.py
 
-- Fetches today’s new directors for relevant companies
-- Caps to MAX_PENDING per run
-- Uses up to MAX_WORKERS threads
-- Retries transient 5xx errors up to RETRIES times
-- Respects 600 calls/5min via rate_limiter
-- Logs to assets/logs/fund_tracker.log
+- Fetches only new companies’ directors
+- Writes directly to docs/assets/data/directors.json
 """
 
 import os
 import json
-import time
+import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 import requests
-
 from rate_limiter import enforce_rate_limit, record_call
-from logger import log, LOG_FILE
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
-API_BASE        = 'https://api.company-information.service.gov.uk/company'
-CH_KEY          = os.getenv('CH_API_KEY')
-RELEVANT_CSV    = 'assets/data/relevant_companies.csv'
-DIRECTORS_JSON  = 'assets/data/directors.json'
-MAX_WORKERS     = 10
-MAX_PENDING     = 50
-RETRIES         = 3
-RETRY_DELAY     = 5
+API_BASE       = 'https://api.company-information.service.gov.uk/company'
+CH_KEY         = os.getenv('CH_API_KEY')
+RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
+DIRECTORS_JSON = 'docs/assets/data/directors.json'
+LOG_FILE       = 'director_fetch.log'
+MAX_WORKERS    = 10
+MAX_PENDING    = 50
+RETRIES        = 3
+RETRY_DELAY    = 5
 
-def load_relevant_numbers():
-    df = pd.read_csv(RELEVANT_CSV, dtype=str, usecols=['Company Number'])
-    return [num for num in df['Company Number'].dropna().unique()]
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
+log=logging.getLogger(__name__)
+os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
 
-def load_existing_map():
+def load_relevant():
+    df=pd.read_csv(RELEVANT_CSV,dtype=str)
+    return [n for n in df['Company Number'].dropna().unique()]
+
+def load_existing():
     if os.path.exists(DIRECTORS_JSON):
         with open(DIRECTORS_JSON) as f:
             return json.load(f)
     return {}
 
-def fetch_one(number):
-    items = []
-    for attempt in range(1, RETRIES + 1):
+def fetch_one(num):
+    items=[]
+    for attempt in range(1,RETRIES+1):
         enforce_rate_limit()
-        resp = requests.get(
-            f"{API_BASE}/{number}/officers",
-            auth=(CH_KEY, ''),
-            timeout=10
-        )
-        status = resp.status_code
-        if 500 <= status < 600 and attempt < RETRIES:
-            log.warning(f"{number}: HTTP {status} on attempt {attempt}, retrying in {RETRY_DELAY}s")
+        resp=requests.get(f"{API_BASE}/{num}/officers",
+                          auth=(CH_KEY,''),timeout=10)
+        if resp.status_code>=500 and attempt<RETRIES:
+            log.warning(f"{num}: {resp.status_code}, retrying")
             time.sleep(RETRY_DELAY)
             continue
-
         try:
             resp.raise_for_status()
             record_call()
-            items = resp.json().get('items', [])
+            items=resp.json().get('items',[])
         except Exception as e:
-            log.warning(f"{number}: fetch error: {e} (status={status}, attempt={attempt})")
+            log.warning(f"{num}: fetch error {e}")
         break
 
-    # Filter roles
-    ROLES = {'director', 'member'}
-    active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
-    chosen = active or [o for o in items if o.get('officer_role') in ROLES]
+    ROLES={'director','member'}
+    active=[o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
+    chosen=active or [o for o in items if o.get('officer_role') in ROLES]
 
-    directors = []
-    for off in chosen:
-        dob = off.get('date_of_birth') or {}
-        y, m = dob.get('year'), dob.get('month')
-        dob_str = f"{y}-{int(m):02d}" if y and m else (str(y) if y else '')
+    directors=[]
+    for o in chosen:
+        dob=o.get('date_of_birth') or {}
+        y,m=dob.get('year'),dob.get('month')
+        dob_str=f"{y}-{int(m):02d}" if y and m else str(y) if y else ''
         directors.append({
-            'title':            off.get('name'),
-            'appointment':      off.get('snippet',''),
-            'dateOfBirth':      dob_str,
-            'appointmentCount': off.get('appointment_count'),
-            'selfLink':         off['links'].get('self'),
-            'officerRole':      off.get('officer_role'),
-            'nationality':      off.get('nationality'),
-            'occupation':       off.get('occupation'),
+            'title':        o.get('name'),
+            'appointment':  o.get('snippet',''),
+            'dateOfBirth':  dob_str,
+            'appointmentCount': o.get('appointment_count'),
+            'selfLink':     o['links'].get('self'),
+            'officerRole':  o.get('officer_role'),
+            'nationality':  o.get('nationality'),
+            'occupation':   o.get('occupation'),
         })
-
-    return number, directors
+    return num, directors
 
 def main():
-    log.info(f"Logging to {LOG_FILE}")
-    log.info("Starting director fetch run")
-
-    if not CH_KEY:
-        log.error("CH_API_KEY missing")
-        return
-
-    os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-
-    relevant = load_relevant_numbers()
-    log.info(f"Total relevant companies: {len(relevant)}")
-
-    existing = load_existing_map()
-    pending_all = [num for num in relevant if num not in existing]
-    pending = pending_all[:MAX_PENDING]
-    log.info(f"Pending companies to fetch (capped at {MAX_PENDING}): {len(pending)}")
-    log.info(f"Pending company numbers: {pending}")
+    log.info("Starting fetch_directors")
+    existing=load_existing()
+    log.info(f"Loaded {len(existing)} existing entries")
+    relevant=load_relevant()
+    pending=[n for n in relevant if n not in existing][:MAX_PENDING]
+    log.info(f"{len(pending)} pending to fetch")
 
     if pending:
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            futures = {executor.submit(fetch_one, num): num for num in pending}
-            for future in as_completed(futures):
-                num = futures[future]
-                try:
-                    num_ret, dirs = future.result()
-                    existing[num_ret] = dirs
-                    log.info(f"Fetched {len(dirs)} director(s) for {num_ret}")
-                except Exception:
-                    log.exception(f"{num}: unexpected exception in fetch_one")
-    else:
-        log.info("No new companies to fetch directors for.")
+        with ThreadPoolExecutor(MAX_WORKERS) as exe:
+            futures={exe.submit(fetch_one,n):n for n in pending}
+            for fut in as_completed(futures):
+                num,dirs = fut.result()
+                existing[num]=dirs
+                log.info(f"Fetched {len(dirs)} for {num}")
 
-    with open(DIRECTORS_JSON, 'w') as f:
-        json.dump(existing, f, separators=(',',':'))
-    log.info(f"Wrote directors.json with {len(existing)} companies")
+    with open(DIRECTORS_JSON,'w') as f:
+        json.dump(existing,f,separators=(',',':'))
+    log.info(f"Wrote {len(existing)} entries to directors.json")
 
-if __name__ == '__main__':
+if __name__=='__main__':
+    if not CH_KEY:
+        log.error("CH_API_KEY unset"); exit(1)
     main()
