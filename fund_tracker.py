@@ -2,36 +2,23 @@
 """
 fund_tracker.py
 
-- Bootstraps dependencies (pip, numpy, pandas, etc.)
-- Fetches Companies House data by incorporation date
+- Ingests Companies House data by incorporation date
 - Classifies via regex and SIC lookup
 - Writes master_companies.csv/.xlsx and relevant_companies.csv/.xlsx
+- Logs everything to assets/logs/fund_tracker.log
 """
-
-import sys
-import subprocess
-def _bootstrap():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
-    subprocess.check_call([
-        sys.executable, "-m", "pip", "install",
-        "numpy>=1.24.0",
-        "pandas==2.1.0",
-        "requests>=2.31.0",
-        "openpyxl>=3.1.2",
-        "XlsxWriter>=3.1.2"
-    ])
-_bootstrap()
 
 import argparse
 import os
+import sys
 import time
+from datetime import date, datetime, timedelta, timezone
 import re
 import requests
 import pandas as pd
-from datetime import date, datetime, timedelta, timezone
 
 from rate_limiter import enforce_rate_limit, record_call
-from logger import log
+from logger import log, LOG_FILE  # ← shared logger
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 CH_API_URL    = 'https://api.company-information.service.gov.uk/advanced-search/companies'
@@ -71,6 +58,12 @@ CLASS_PATTERNS = [
 ]
 
 def normalize_date(d: str) -> str:
+    """
+    Accepts:
+      - '' or 'today'        → today
+      - 'YYYY-MM-DD'         → as is
+      - 'DD-MM-YYYY'         → converted to YYYY-MM-DD
+    """
     if not d or d.lower() == 'today':
         return date.today().strftime('%Y-%m-%d')
     for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
@@ -112,8 +105,7 @@ def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
             resp = requests.get(CH_API_URL, auth=(api_key, ''), params=params, timeout=10)
             resp.raise_for_status()
             record_call()
-            data = resp.json()
-            items = data.get('items', [])
+            items = resp.json().get('items', [])
         except Exception as e:
             log.warning(f"{ds} @index {start_index}: {e}")
             time.sleep(RETRY_DELAY)
@@ -121,8 +113,8 @@ def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
 
         now = datetime.now(timezone.utc)
         for c in items:
-            nm    = c.get('title') or c.get('company_name') or ''
-            num   = c.get('company_number','')
+            nm  = c.get('title') or c.get('company_name') or ''
+            num = c.get('company_number','')
             codes = c.get('sic_codes', [])
             sic_codes, sic_desc, sic_use = enrich_sic(codes)
             records.append({
@@ -142,6 +134,7 @@ def fetch_companies_on(ds: str, api_key: str) -> list[dict]:
         if len(items) < FETCH_SIZE:
             break
         start_index += FETCH_SIZE
+
     return records
 
 def run_for_date_range(start_date: str, end_date: str):
@@ -151,7 +144,7 @@ def run_for_date_range(start_date: str, end_date: str):
         log.error("start_date cannot be after end_date")
         sys.exit(1)
 
-    log.info(f"Starting company ingest {start_date} → {end_date}")
+    log.info(f"Fetching companies {start_date} → {end_date}")
     new_records = []
     cur = sd
     while cur <= ed:
@@ -193,10 +186,11 @@ def run_for_date_range(start_date: str, end_date: str):
 
 def main():
     global API_KEY
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
-    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
-    args = parser.parse_args()
+    log.info(f"Logging to {LOG_FILE}")
+    p = argparse.ArgumentParser()
+    p.add_argument('--start_date', default='', help='YYYY-MM-DD or "today"')
+    p.add_argument('--end_date',   default='', help='YYYY-MM-DD or "today"')
+    args = p.parse_args()
 
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
