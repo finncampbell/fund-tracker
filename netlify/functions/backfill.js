@@ -18,7 +18,7 @@ exports.handler = async function(event) {
 
   const token    = process.env.GITHUB_DISPATCH_TOKEN;
   const repo     = 'finncampbell/fund-tracker';
-  const workflow = 'fund-tracker.yml';  // updated workflow filename
+  const workflow = 'fund-tracker.yml';  // workflow filename in your repo
 
   // Netlify provides global fetch
   const resp = await fetch(
