@@ -3,6 +3,7 @@
 fund_tracker.py
 
 - Fetches Companies House data by date
+- Handles pagination safely via total_results
 - Honors the shared buffered rate limit (550 calls per 5 minutes)
 - Writes master & relevant CSV/XLSX into docs/assets/data/
 - Logs to assets/logs/fund_tracker.log
@@ -86,7 +87,6 @@ CLASS_PATTERNS = [
     (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
 ]
 
-# ─── Name‐based categories to include in the filtered CSV ──────────────────────
 INCLUSION_CATEGORIES = {
     'LLP','LP','GP','Fund',
     'Ventures','Investments','Capital','Equity','Advisors','Partners'
@@ -127,9 +127,55 @@ def enrich_sic(codes):
             uses.append(u)
     return joined, "; ".join(descs), "; ".join(uses)
 
+def _parse_items(items, now):
+    out = []
+    for c in items:
+        nm = c.get('title','') or c.get('company_name','')
+        sc, sd, su = enrich_sic(c.get('sic_codes', []))
+        out.append({
+            'Company Name':       nm,
+            'Company Number':     c.get('company_number',''),
+            'Incorporation Date': c.get('date_of_creation',''),
+            'Status':             c.get('company_status',''),
+            'Source':             c.get('source',''),
+            'Date Downloaded':    now.strftime('%Y-%m-%d'),
+            'Time Discovered':    now.strftime('%H:%M:%S'),
+            'Category':           classify(nm),
+            'SIC Codes':          sc,
+            'SIC Description':    sd,
+            'Typical Use Case':   su
+        })
+    return out
+
 def fetch_companies_on(ds, api_key):
-    records, start_index = [], 0
-    while True:
+    records = []
+    now = datetime.now(timezone.utc)
+
+    # First page: get total_results and items
+    enforce_rate_limit()
+    resp = requests.get(
+        API_URL, auth=(api_key,''), params={
+            'incorporated_from': ds,
+            'incorporated_to':   ds,
+            'size': FETCH_SIZE,
+            'start_index': 0
+        },
+        timeout=10
+    )
+    resp.raise_for_status()
+    record_call()
+
+    data = resp.json()
+    total_results = data.get('total_results', 0)
+    items = data.get('items', [])
+    records.extend(_parse_items(items, now))
+
+    # Compute how many pages to fetch
+    max_pages = (total_results + FETCH_SIZE - 1) // FETCH_SIZE
+
+    # Fetch remaining pages
+    for page in range(1, max_pages):
+        start_index = page * FETCH_SIZE
         enforce_rate_limit()
         resp = requests.get(
             API_URL, auth=(api_key,''), params={
@@ -137,37 +183,16 @@ def fetch_companies_on(ds, api_key):
                 'incorporated_to':   ds,
                 'size': FETCH_SIZE,
                 'start_index': start_index
-            }, timeout=10
+            },
+            timeout=10
         )
-        try:
-            resp.raise_for_status()
-            record_call()
-        except Exception as e:
-            log.warning(f"{ds}@{start_index} error: {e}, retrying")
-            time.sleep(5)
-            continue
+        resp.raise_for_status()
+        record_call()
 
         items = resp.json().get('items', [])
-        now = datetime.now(timezone.utc)
-        for c in items:
-            nm = c.get('title','') or c.get('company_name','')
-            sc, sd, su = enrich_sic(c.get('sic_codes', []))
-            records.append({
-                'Company Name':       nm,
-                'Company Number':     c.get('company_number',''),
-                'Incorporation Date': c.get('date_of_creation',''),
-                'Status':             c.get('company_status',''),
-                'Source':             c.get('source',''),
-                'Date Downloaded':    now.strftime('%Y-%m-%d'),
-                'Time Discovered':    now.strftime('%H:%M:%S'),
-                'Category':           classify(nm),
-                'SIC Codes':          sc,
-                'SIC Description':    sd,
-                'Typical Use Case':   su
-            })
-        if len(items) < FETCH_SIZE:
+        if not items:
             break
-        start_index += FETCH_SIZE
+        records.extend(_parse_items(items, now))
 
     return records
 
@@ -182,11 +207,13 @@ def run_for_range(sd, ed):
         log.error("start_date > end_date")
         sys.exit(1)
 
-    all_recs, cur = [], sd_dt
+    all_recs = []
+    cur = sd_dt
     while cur <= ed_dt:
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
-        all_recs += fetch_companies_on(ds, API_KEY)
+        recs = fetch_companies_on(ds, API_KEY)
+        all_recs.extend(recs)
         cur += timedelta(days=1)
 
     # ─── Write Master CSV/XLSX ────────────────────────────────────────────────
