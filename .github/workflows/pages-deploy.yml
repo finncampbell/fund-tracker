@@ -3,8 +3,7 @@ name: Deploy Pages
 on:
   push:
     branches:
-      - main   # or your default branch
-  workflow_dispatch:
+      - main   # only fire on pushes to main
 
 jobs:
   build-and-deploy:
@@ -18,23 +17,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Build your site (adjust to your actual build commands)
+      # 1) Build your site; replace with your actual build commands
       - name: Build site
         run: |
           echo "Building site…"
           mkdir -p public
           echo "<h1>Hello, Pages!</h1>" > public/index.html
 
-      # 1) Configure Pages (v2)
+      # 2) Configure Pages (v2)
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v2
 
-      # 2) Upload the build output (v1)
+      # 3) Upload the build output (v1)
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: public
 
-      # 3) Deploy to GitHub Pages (v2)
+      # 4) Deploy to GitHub Pages (v2)
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
