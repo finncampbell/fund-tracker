@@ -5,7 +5,7 @@ import time
 import os
 from collections import deque
 from filelock import FileLock
-import requests  # assuming you use requests for HTTP calls
+import requests
 
 # Constants
 RATE_LIMIT       = 600
@@ -37,26 +37,23 @@ def _prune(timestamps):
 
 def enforce_rate_limit(response=None):
     """
-    Call this before making an API request. Optionally pass in a
-    `requests.Response` if handling a retry after a 429.
+    Call before each HTTP request. If `response` is a 429, backs off per Retry-After.
     """
     with FileLock(LOCK_FILE):
-        # Load and prune stale entries
         timestamps = _load_state()
         _prune(timestamps)
 
-        # If we just got a 429, back off per Retry-After (or default 20s)
+        # Handle a 429 from the last call
         if response is not None and response.status_code == 429:
-            retry_after = response.headers.get("Retry-After")
-            wait = int(retry_after) if retry_after and retry_after.isdigit() else 20
+            ra = response.headers.get("Retry-After", "")
+            wait = int(ra) if ra.isdigit() else 20
             time.sleep(wait)
             _prune(timestamps)
 
-        # Compute available slots after preserving buffer
+        # Recalculate free slots, preserving buffer
         used = len(timestamps)
         free_slots = RATE_LIMIT - used - CALL_BUFFER
-        if free_slots <= 0:
-            # Sleep only as long as needed for the oldest timestamp to expire
+        if free_slots <= 0 and timestamps:
             oldest = timestamps[0]
             to_sleep = WINDOW_SECONDS - (time.time() - oldest)
             if to_sleep > 0:
@@ -68,22 +65,15 @@ def enforce_rate_limit(response=None):
         _save_state(timestamps)
 
 
-# Example wrapper for an API call
 def make_api_call(url, **kwargs):
     """
-    Wrap your actual HTTP calls with this function to ensure
-    rate-limit enforcement and 429 handling.
+    Wrap your requests.get/post/etc. here to auto-enforce rate limits,
+    handle 429s, and retry 5xx errors up to 3 times.
     """
     response = None
     for attempt in range(1, 4):
         enforce_rate_limit(response)
         response = requests.get(url, **kwargs)
         if response.status_code == 429:
-            # Let enforce_rate_limit handle the back-off next iteration
-            continue
-        if 500 <= response.status_code < 600:
-            time.sleep(5)
-            continue
-        break  # success or non-retryable status
-
-    return response
+            # Let enforce_rate_limit handle the back-off
+            conti
