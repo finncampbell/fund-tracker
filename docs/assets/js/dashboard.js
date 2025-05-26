@@ -1,3 +1,5 @@
+// docs/assets/js/dashboard.js
+
 $(document).ready(function() {
   // Cache-busted URL so the browser always pulls fresh data
   const url = `/assets/data/relevant_companies.csv?v=${Date.now()}`;
@@ -10,6 +12,7 @@ $(document).ready(function() {
     fetch('/assets/data/directors.json')
       .then(r => r.json())
       .then(json => {
+        // Trim JSON keys to normalize
         directorsMap = Object.fromEntries(
           Object.entries(json).map(([k, v]) => [k.trim(), v])
         );
@@ -54,7 +57,7 @@ $(document).ready(function() {
         responsive: true
       });
 
-      // SIC-only companies table
+      // SIC‐only companies table
       const sicData = data.filter(r => r['SIC Description']);
       const sicTable = $('#sic-companies').DataTable({
         data: sicData,
@@ -181,7 +184,7 @@ $(document).ready(function() {
         if (!r.ok) throw new Error("Dispatch failed");
         alert(`Backfill started for ${start} → ${end}`);
         btn.disabled = true;
-        document.getElementById("backfill-range")._flatpickr.clear();
+        document.getElementById("backfill-range").value = "";
       })
       .catch(err => {
         console.error(err);
