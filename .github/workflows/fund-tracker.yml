@@ -1,75 +1,92 @@
-name: Fund Tracker
+name: Fund Tracker Automation
 
 on:
   workflow_dispatch:
     inputs:
-      mode:
-        description: 'Run mode: live or backfill'
-        required: true
-        default: 'live'
-        type: choice
-        options:
-          - live
-          - backfill
       start_date:
-        description: 'Start date for ingestion/backfill (YYYY-MM-DD)'
-        required: false
+        description: 'Start date (YYYY-MM-DD or "today")'
+        default: 'today'
       end_date:
-        description: 'End date for ingestion/backfill (YYYY-MM-DD)'
-        required: false
+        description: 'End date (YYYY-MM-DD or "today")'
+        default: 'today'
   schedule:
-    # Daily live run at 00:10 UTC
-    - cron: '10 0 * * *'
+    - cron: '*/10 * * * *'    # every 10 minutes
+
+permissions:
+  contents: write
+  actions: read
 
 jobs:
-  run:
+  run-fund-tracker:
     runs-on: ubuntu-latest
+    # Inject secrets here so every step sees them
+    env:
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Debug environment variables
+        run: |
+          echo "CH_API_KEY is '${CH_API_KEY:-<empty>}'"
+          echo "GITHUB_TOKEN is '${GITHUB_TOKEN:+[REDACTED]}'"
+
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Upgrade pip, setuptools, wheel
         run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install --upgrade pip setuptools wheel
 
-      - name: Ingest companies
-        id: ingest
+      - name: Pre-install NumPy wheel
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.mode }}" = "live" ]; then
-            python fund_tracker.py \
-              --start_date "$(date -u +%F -d '1 day ago')" \
-              --end_date "$(date -u +%F -d '1 day ago')"
-          else
-            python fund_tracker.py \
-              --backfill \
-              --start_date "${{ github.event.inputs.start_date }}" \
-              --end_date "${{ github.event.inputs.end_date }}"
+          pip install --prefer-binary --only-binary=":all:" 'numpy>=1.24.0,<2.0.0'
+
+      - name: Install remaining dependencies
+        run: |
+          pip install --prefer-binary -r requirements.txt
+
+      - name: Configure Git
+        run: |
+          git config user.email "bot@example.com"
+          git config user.name  "GH Actions Bot"
+
+      # Stage 1: ingest companies
+      - name: Run fund_tracker.py
+        run: |
+          python fund_tracker.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date   "${{ github.event.inputs.end_date }}"
+
+      - name: Commit company data
+        run: |
+          git add docs/assets/data/master_companies.* docs/assets/data/relevant_companies.*
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 1: update companies data"
+            git push origin main
           fi
 
-      - name: Fetch directors (live)
-        if: github.event_name == 'schedule' || github.event.inputs.mode == 'live'
-        run: python fetch_directors.py
-
-      - name: Backfill directors (historical)
-        if: github.event.inputs.mode == 'backfill'
+      # Stage 2: fetch directors
+      - name: Run fetch_directors.py
         run: |
-          python backfill_directors.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date "${{ github.event.inputs.end_date }}"
+          python fetch_directors.py
 
-      - name: Upload artifacts
+      - name: Commit directors data
+        run: |
+          git add docs/assets/data/directors.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage 2: update directors data"
+            git push origin main
+          fi
+
+      - name: Upload logs
         uses: actions/upload-artifact@v4
         with:
-          name: fund-tracker-data
-          path: |
-            docs/assets/data/master_companies.csv
-            docs/assets/data/relevant_companies.csv
-            docs/assets/data/directors.json
-            docs/assets/data/fund_tracker_*.xlsx
+          name: fund-tracker-logs
+          path: assets/logs/
