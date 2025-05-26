@@ -6,19 +6,21 @@ backfill_directors.py
 - Reads from docs/assets/data/relevant_companies.csv
 - Writes merged results into docs/assets/data/directors.json
 - Logs to assets/logs/backfill_directors.log
+- Dynamically batches work to maximize API throughput without exceeding rate limits,
+  sleeping and retrying as needed until all pending companies are processed.
 """
 
 import os
 import json
-import argparse
 import time
+import argparse
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 import requests
 
-from rate_limiter import enforce_rate_limit, record_call
+from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls
 from logger import get_logger
 
 # ─── Config ─────────────────────────────────────────────────────────────────────
@@ -26,43 +28,48 @@ API_BASE       = 'https://api.company-information.service.gov.uk/company'
 CH_KEY         = os.getenv('CH_API_KEY')
 RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
 DIRECTORS_JSON = 'docs/assets/data/directors.json'
-LOG_FILE       = 'assets/logs/backfill_directors.log'
-MAX_WORKERS    = 10
-MAX_PENDING    = 50
+LOG_DIR        = 'assets/logs'
+LOG_FILE       = os.path.join(LOG_DIR, 'backfill_directors.log')
 RETRIES        = 3
 RETRY_DELAY    = 5
+WINDOW_SECONDS = 300  # seconds in 5 minutes
 
-# Configure logger
+# ─── Ensure log directory exists ────────────────────────────────────────────────
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# ─── Logger ─────────────────────────────────────────────────────────────────────
 log = get_logger('backfill_directors', LOG_FILE)
 
+
 def load_relevant():
-    df = pd.read_csv(
-        RELEVANT_CSV,
-        dtype=str,
-        parse_dates=['Incorporation Date']
-    )
+    """Load relevant companies with parsed incorporation dates."""
+    df = pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
     return df
 
+
 def load_existing():
+    """Load existing directors.json or return empty dict."""
     if os.path.exists(DIRECTORS_JSON):
         with open(DIRECTORS_JSON) as f:
             return json.load(f)
     return {}
 
+
 def fetch_officers(number):
+    """Fetch officer data for a single company, with retries and rate-limiting."""
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
+        resp = requests.get(
+            f"{API_BASE}/{number}/officers",
+            auth=(CH_KEY, ''),
+            params={'register_view': 'true'},
+            timeout=10
+        )
+        if resp.status_code >= 500 and attempt < RETRIES:
+            log.warning(f"{number}: HTTP {resp.status_code}, retry {attempt}")
+            time.sleep(RETRY_DELAY)
+            continue
         try:
-            resp = requests.get(
-                f"{API_BASE}/{number}/officers",
-                auth=(CH_KEY, ''),
-                params={'register_view': 'true'},
-                timeout=10
-            )
-            if resp.status_code >= 500 and attempt < RETRIES:
-                log.warning(f"{number}: HTTP {resp.status_code}, retry {attempt}")
-                time.sleep(RETRY_DELAY)
-                continue
             resp.raise_for_status()
             record_call()
             items = resp.json().get('items', [])
@@ -71,6 +78,7 @@ def fetch_officers(number):
             items = []
         break
 
+    # Filter for director/member roles
     ROLES = {'director', 'member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
@@ -99,6 +107,36 @@ def fetch_officers(number):
 
     return number, directors
 
+
+def dynamic_backfill(pending, existing):
+    """
+    Process pending company numbers in dynamically sized batches
+    respecting the buffered rate limit. Sleeps and retries until done.
+    """
+    total = len(pending)
+    index = 0
+
+    while index < total:
+        available = get_remaining_calls()
+        if available == 0:
+            log.info(f"No remaining calls; sleeping for {WINDOW_SECONDS}s to reset window")
+            time.sleep(WINDOW_SECONDS)
+            continue
+
+        batch = pending[index : index + available]
+        log.info(f"Backfill batch {index}//{total}: processing {len(batch)} companies")
+
+        with ThreadPoolExecutor(max_workers=len(batch)) as exe:
+            futures = {exe.submit(fetch_officers, num): num for num in batch}
+            for fut in as_completed(futures):
+                num, dirs = fut.result()
+                existing[num] = dirs
+                log.info(f"Fetched {len(dirs)} officers for {num}")
+
+        index += len(batch)
+        # Loop again: old timestamps will prune naturally, replenishing quota
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_date', required=True, help='YYYY-MM-DD')
@@ -107,7 +145,7 @@ def main():
 
     log.info(f"Starting backfill_directors {args.start_date} → {args.end_date}")
     if not CH_KEY:
-        log.error('CH_API_KEY unset')
+        log.error("CH_API_KEY unset")
         return
 
     df = load_relevant()
@@ -116,24 +154,22 @@ def main():
     sd = datetime.fromisoformat(args.start_date).date()
     ed = datetime.fromisoformat(args.end_date).date()
 
-    mask_pending = ~df['Company Number'].isin(existing.keys())
-    mask_window  = df['Incorporation Date'].dt.date.between(sd, ed)
-    pending = df[mask_pending & mask_window]['Company Number'].tolist()[:MAX_PENDING]
+    # Determine which companies need backfill
+    mask_not_done = ~df['Company Number'].isin(existing.keys())
+    mask_in_window = df['Incorporation Date'].dt.date.between(sd, ed)
+    pending = df[mask_not_done & mask_in_window]['Company Number'].tolist()
 
-    log.info(f"Backfill window: {len(pending)} companies pending")
+    log.info(f"{len(pending)} companies pending in window {args.start_date} → {args.end_date}")
 
     if pending:
-        with ThreadPoolExecutor(MAX_WORKERS) as exe:
-            futures = {exe.submit(fetch_officers, num): num for num in pending}
-            for fut in as_completed(futures):
-                num, dirs = fut.result()
-                existing[num] = dirs
-                log.info(f"Backfilled {len(dirs)} officers for {num}")
+        dynamic_backfill(pending, existing)
 
+    # Write merged JSON
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
-    log.info(f"Wrote directors.json with {len(existing)} entries")
+    log.info(f"Wrote directors.json with {len(existing)} company entries")
+
 
 if __name__ == '__main__':
     main()
