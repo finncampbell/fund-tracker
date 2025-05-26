@@ -1,0 +1,45 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches:
+      - main   # or your default branch
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 1) Build your site; replace with your actual build commands
+      - name: Build site
+        run: |
+          # Example for a static site generator:
+          # npm ci && npm run build
+          # Or for MkDocs:
+          # pip install mkdocs mkdocs-material
+          # mkdocs build
+          echo "Building site…" 
+          mkdir -p public
+          echo "<h1>Hello, Pages!</h1>" > public/index.html
+
+      # 2) Configure Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+
+      # 3) Upload the build output
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: public
+
+      # 4) Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3
