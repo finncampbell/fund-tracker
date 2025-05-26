@@ -1,3 +1,39 @@
+name: Fund Tracker
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode: live or backfill'
+        required: true
+        default: 'live'
+        type: choice
+        options:
+          - live
+          - backfill
+      start_date:
+        description: 'Start date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
+      end_date:
+        description: 'End date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
+  schedule:
+    # Daily live run at 00:10 UTC
+    - cron: '10 0 * * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
       - name: Cache pip
         uses: actions/cache@v3
         with:
@@ -10,3 +46,39 @@
         run: |
           pip install --upgrade pip setuptools wheel
           pip install --prefer-binary -r requirements.txt
+
+      - name: Ingest companies
+        id: ingest
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.mode }}" = "live" ]; then
+            python fund_tracker.py \
+              --start_date "$(date -u +%F -d '1 day ago')" \
+              --end_date "$(date -u +%F -d '1 day ago')"
+          else
+            python fund_tracker.py \
+              --backfill \
+              --start_date "${{ github.event.inputs.start_date }}" \
+              --end_date "${{ github.event.inputs.end_date }}"
+          fi
+
+      - name: Fetch directors (live)
+        if: github.event_name == 'schedule' || github.event.inputs.mode == 'live'
+        run: |
+          python fetch_directors.py
+
+      - name: Backfill directors (historical)
+        if: github.event.inputs.mode == 'backfill'
+        run: |
+          python backfill_directors.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date "${{ github.event.inputs.end_date }}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fund-tracker-data
+          path: |
+            docs/assets/data/master_companies.csv
+            docs/assets/data/relevant_companies.csv
+            docs/assets/data/directors.json
+            docs/assets/data/fund_tracker_*.xlsx
