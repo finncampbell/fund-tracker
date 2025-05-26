@@ -166,7 +166,36 @@ $(document).ready(function() {
     }
   });
 
+  // Polls the backfill_status.json and updates the progress bar
+  function pollBackfillStatus() {
+    fetch(`assets/data/backfill_status.json?v=${Date.now()}`)
+      .then(r => {
+        if (!r.ok) throw new Error("Status not ready");
+        return r.json();
+      })
+      .then(status => {
+        const prog = document.getElementById("backfill-progress");
+        const txt  = document.getElementById("backfill-progress-text");
+        prog.max   = status.total;
+        prog.value = status.processed;
+        txt.textContent = `${status.processed} / ${status.total}`;
+
+        if (status.processed < status.total) {
+          setTimeout(pollBackfillStatus, 3000);
+        } else {
+          alert("Backfill complete!");
+          document.getElementById("run-backfill").disabled = false;
+        }
+      })
+      .catch(() => {
+        // retry until the status file appears
+        setTimeout(pollBackfillStatus, 2000);
+      });
+  }
+
+  // Hook into backfill button to show progress and start polling
   document.getElementById("run-backfill").addEventListener("click", () => {
+    // existing dispatch code
     const btn   = document.getElementById("run-backfill");
     const start = btn.dataset.start;
     const end   = btn.dataset.end;
@@ -187,5 +216,9 @@ $(document).ready(function() {
         console.error(err);
         alert("Error starting backfill; see console.");
       });
+
+    // show the progress bar and begin polling
+    document.getElementById("backfill-status").style.display = "block";
+    pollBackfillStatus();
   });
 });
