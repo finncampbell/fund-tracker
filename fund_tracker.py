@@ -2,10 +2,10 @@
 """
 fund_tracker.py
 
-- Always regenerates master & relevant CSV/XLSX if missing
-- Merges new data into existing files when present
-- Safe pagination via total_results
+- Fetches Companies House data by date
+- Handles pagination via total_results
 - Honors the shared buffered rate limit (550 calls per 5 minutes)
+- Writes master & relevant CSV/XLSX into docs/assets/data/
 - Logs to assets/logs/fund_tracker.log
 """
 
@@ -34,10 +34,37 @@ FETCH_SIZE    = 100
 # ─── SIC Lookup (code → (description, use case)) ──────────────────────────────
 SIC_LOOKUP = {
     '64205': ("Activities of financial services holding companies",
-              "Holding‐company SPV for portfolio‐company equity stakes, …"),
-    # … other codes as before …
+              "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."),
+    '64209': ("Activities of other holding companies n.e.c.",
+              "Catch-all SPV: protected cells, cell companies, bespoke feeder vehicles."),
+    '64301': ("Activities of investment trusts",
+              "Closed-ended listed investment trusts (e.g. LSE-quoted funds)."),
+    '64302': ("Activities of unit trusts",
+              "On-shore unit trusts (including feeder trusts)."),
+    '64303': ("Activities of venture and development capital companies",
+              "Venture Capital Trusts (VCTs) and similar “development” schemes."),
+    '64304': ("Activities of open-ended investment companies",
+              "OEICs (master-fund and sub-fund layers of umbrella structures)."),
+    '64305': ("Activities of property unit trusts",
+              "Property-unit-trust vehicles (including REIT feeder trusts)."),
+    '64306': ("Activities of real estate investment trusts",
+              "UK-regulated REIT companies."),
+    '64921': ("Credit granting by non-deposit-taking finance houses",
+              "Direct-lending SPVs (senior debt, unitranche loans)."),
+    '64922': ("Activities of mortgage finance companies",
+              "Mortgage-debt vehicles (commercial/mortgage-backed SPVs)."),
+    '64929': ("Other credit granting n.e.c.",
+              "Mezzanine/sub-ordinated debt or hybrid capital vehicles."),
+    '64991': ("Security dealing on own account",
+              "Structured-credit/CLO collateral-management SPVs."),
+    '64999': ("Financial intermediation not elsewhere classified",
+              "Catch-all credit-oriented SPVs for novel lending structures."),
+    '66300': ("Fund management activities",
+              "AIFM or portfolio-management company itself."),
+    '70100': ("Activities of head offices",
+              "Group HQ: compliance, risk, finance, central strategy."),
     '70221': ("Financial management (of companies and enterprises)",
-              "Treasury, capital‐raising and internal financial services arm."),
+              "Treasury, capital-raising and internal financial services arm."),
 }
 
 # ─── Columns & Classification Patterns ─────────────────────────────────────────
@@ -65,7 +92,6 @@ INCLUSION_CATEGORIES = {'LLP','LP','GP','Fund'}
 # ─── Logger Setup ──────────────────────────────────────────────────────────────
 os.makedirs(LOG_DIR, exist_ok=True)
 log = get_logger('fund_tracker', LOG_FILE)
-log.info(f"Starting fund_tracker.py; {get_remaining_calls()} calls remaining")
 
 def normalize_date(d: str) -> str:
     if not d or d.lower() == 'today':
@@ -96,17 +122,17 @@ def enrich_sic(codes):
 def _parse_items(items, now):
     rows = []
     for c in items:
-        name = c.get('title','') or c.get('company_name','')
+        nm = c.get('title','') or c.get('company_name','')
         sc, sd, su = enrich_sic(c.get('sic_codes', []))
         rows.append({
-            'Company Name':       name,
+            'Company Name':       nm,
             'Company Number':     c.get('company_number',''),
             'Incorporation Date': c.get('date_of_creation',''),
             'Status':             c.get('company_status',''),
             'Source':             c.get('source',''),
             'Date Downloaded':    now.strftime('%Y-%m-%d'),
             'Time Discovered':    now.strftime('%H:%M:%S'),
-            'Category':           classify(name),
+            'Category':           classify(nm),
             'SIC Codes':          sc,
             'SIC Description':    sd,
             'Typical Use Case':   su
@@ -116,7 +142,7 @@ def _parse_items(items, now):
 def fetch_companies_on(ds, api_key):
     records, now = [], datetime.now(timezone.utc)
 
-    # 1) Fetch first page to get total_results
+    # 1) First page
     enforce_rate_limit()
     resp = requests.get(API_URL, auth=(api_key,''), params={
         'incorporated_from': ds, 'incorporated_to': ds,
@@ -126,14 +152,14 @@ def fetch_companies_on(ds, api_key):
     data = resp.json()
     records.extend(_parse_items(data.get('items', []), now))
 
-    # 2) Calculate exact pages, loop safely
+    # 2) Additional pages
     total = data.get('total_results', 0)
     pages = (total + FETCH_SIZE - 1) // FETCH_SIZE
     for p in range(1, pages):
         enforce_rate_limit()
         resp = requests.get(API_URL, auth=(api_key,''), params={
             'incorporated_from': ds, 'incorporated_to': ds,
-            'size': FETCH_SIZE, 'start_index': p*FETCH_SIZE
+            'size': FETCH_SIZE, 'start_index': p * FETCH_SIZE
         }, timeout=10)
         resp.raise_for_status(); record_call()
         items = resp.json().get('items', [])
@@ -143,19 +169,28 @@ def fetch_companies_on(ds, api_key):
 
     return records
 
-def run_for_range(start_date: str, end_date: str):
-    # Ensure data directory exists up front
+def run_for_range(sd: str, ed: str):
+    API_KEY = os.getenv('CH_API_KEY')
+    if not API_KEY:
+        log.error("CH_API_KEY is not set! Please configure it in your environment or CI secrets.")
+        sys.exit(1)
+
+    log.info(f"Starting fund_tracker.py; {get_remaining_calls()} calls remaining")
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # Normalize and validate dates
-    sd = datetime.strptime(start_date, '%Y-%m-%d')
-    ed = datetime.strptime(end_date,   '%Y-%m-%d')
-    if sd > ed:
+    # Normalize dates
+    try:
+        sd_dt = datetime.strptime(sd, '%Y-%m-%d')
+        ed_dt = datetime.strptime(ed, '%Y-%m-%d')
+    except Exception as e:
+        log.error(f"Bad date inputs: {e}")
+        sys.exit(1)
+    if sd_dt > ed_dt:
         log.error("start_date > end_date"); sys.exit(1)
 
-    all_recs = []
-    cur = sd
-    while cur <= ed:
+    # Collect records
+    all_recs, cur = [], sd_dt
+    while cur <= ed_dt:
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
         all_recs.extend(fetch_companies_on(ds, API_KEY))
@@ -181,18 +216,17 @@ def run_for_range(start_date: str, end_date: str):
     df_all = df_all[FIELDS]
     df_all.to_csv(MASTER_CSV, index=False)
     df_all.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
-    log.info(f"Wrote master ({len(df_all)} rows) to CSV & XLSX")
+    log.info(f"Wrote master ({len(df_all)} rows)")
 
     # ─── Relevant CSV/XLSX ────────────────────────────────────────────────────
     mask_cat = df_all['Category'].isin(INCLUSION_CATEGORIES)
     mask_sic = df_all['SIC Description'].astype(bool)
-    df_rel   = df_all[mask_cat | mask_sic]
+    df_rel = df_all[mask_cat | mask_sic]
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
-    log.info(f"Wrote relevant ({len(df_rel)} rows) to CSV & XLSX")
+    log.info(f"Wrote relevant ({len(df_rel)} rows)")
 
 if __name__ == '__main__':
-    API_KEY = os.getenv('CH_API_KEY') or sys.exit(log.error('CH_API_KEY unset'))
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_date', default='today', help='YYYY-MM-DD or today')
     parser.add_argument('--end_date',   default='today', help='YYYY-MM-DD or today')
