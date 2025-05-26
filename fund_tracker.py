@@ -5,7 +5,10 @@ fund_tracker.py
 - Fetches Companies House data by date
 - Honors shared buffered rate limit (550 calls per 5 min)
 - Writes master & relevant CSV/XLSX to docs/assets/data/
-- Filters relevant to only LLP/LP/GP/Fund OR matching SIC codes
+- Filters relevant to:
+    • any Category != "Other" (all your keywords)
+    OR
+    • any SIC code in your 16-code lookup
 - Enriches SIC codes with description & typical use case
 - Logs to assets/logs/fund_tracker.log
 """
@@ -79,17 +82,13 @@ CLASS_PATTERNS = [
     (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
     (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
     (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
-    # Other name patterns stay for categorizing separately in the dashboard
     (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
     (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
     (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
     (re.compile(r'\bEquity\b',                re.IGNORECASE), 'Equity'),
-    (re.compile(r'\bAdvisors\b',              re.IGNORECASE), 'Advisors'),
+    (re.compile(r'\bAdvisors?\b',             re.IGNORECASE), 'Advisors'),
     (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
 ]
-
-# ─── Only these go into the “Fund Entities” tab ───────────────────────────────
-INCLUSION_CATEGORIES = {'LLP','LP','GP','Fund'}
 
 # ─── Logger Setup ──────────────────────────────────────────────────────────────
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -191,7 +190,7 @@ def run_for_range(sd: str, ed: str):
         log.error("start_date > end_date")
         sys.exit(1)
 
-    # collect all records in window
+    # collect all records
     all_recs, cur = [], sd_dt
     while cur <= ed_dt:
         ds = cur.strftime('%Y-%m-%d')
@@ -222,19 +221,22 @@ def run_for_range(sd: str, ed: str):
     log.info(f"Wrote master ({len(df_all)} rows)")
 
     # ─── Relevant CSV/XLSX ────────────────────────────────────────────────────
-    mask_cat = df_all['Category'].isin(INCLUSION_CATEGORIES)
-    mask_sic = df_all['SIC Description'].astype(bool)
-    df_rel   = df_all[mask_cat | mask_sic]
+    # include any non-Other category OR any strict lookup SIC code
+    mask_cat = df_all['Category'] != 'Other'
+    mask_sic = df_all['SIC Codes'].str.split(',').apply(
+        lambda codes: any(code in SIC_LOOKUP for code in codes)
+    )
+    df_rel = df_all[mask_cat | mask_sic]
 
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant ({len(df_rel)} rows)")
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser()
-    p.add_argument('--start_date', default='today', help='YYYY-MM-DD or today')
-    p.add_argument('--end_date',   default='today', help='YYYY-MM-DD or today')
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--start_date', default='today', help='YYYY-MM-DD or today')
+    parser.add_argument('--end_date',   default='today', help='YYYY-MM-DD or today')
+    args = parser.parse_args()
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
