@@ -3,6 +3,7 @@
 fetch_directors.py
 
 - Fetches new companies’ directors in dynamic concurrency
+- Processes up to 100 new companies per run
 - Uses a pool of up to 550 threads (buffered rate limit)
 - Each thread enforces the shared rate limit and prunes old timestamps
 - Writes merged results into docs/assets/data/directors.json
@@ -28,9 +29,10 @@ RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
 DIRECTORS_JSON = 'docs/assets/data/directors.json'
 LOG_DIR        = 'assets/logs'
 LOG_FILE       = os.path.join(LOG_DIR, 'director_fetch.log')
-RETRIES        = 3
-RETRY_DELAY    = 5
-# Buffered cap: 600 calls/minus 50-buffer = 550 concurrent workers
+
+# How many new companies to process each run
+MAX_PENDING    = 100
+# Buffered cap: 600 calls − 50 buffer = 550 concurrent workers
 MAX_WORKERS    = 550
 
 # ─── Logging Setup ─────────────────────────────────────────────────────────────
@@ -57,6 +59,9 @@ def load_existing():
 
 def fetch_one(number):
     """Fetch officers for one company, with retries and rate‐limiting."""
+    RETRIES     = 3
+    RETRY_DELAY = 5
+
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
         resp = requests.get(
@@ -76,14 +81,9 @@ def fetch_one(number):
             items = []
         break
 
-    ROLES = {'director', 'member'}
-    active = [
-        o for o in items
-        if o.get('officer_role') in ROLES and o.get('resigned_on') is None
-    ]
-    chosen = active or [
-        o for o in items if o.get('officer_role') in ROLES
-    ]
+    ROLES   = {'director', 'member'}
+    active  = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
+    chosen  = active or [o for o in items if o.get('officer_role') in ROLES]
 
     directors = []
     for o in chosen:
@@ -124,9 +124,10 @@ def main():
     existing = load_existing()
     log.info(f"Loaded {len(existing)} existing entries")
 
-    relevant = load_relevant()
-    pending = [n for n in relevant if n not in existing]
-    log.info(f"{len(pending)} companies pending")
+    relevant_all = load_relevant()
+    pending_all  = [n for n in relevant_all if n not in existing]
+    pending      = pending_all[:MAX_PENDING]
+    log.info(f"{len(pending)} companies pending (of {len(pending_all)} new total)")
 
     if pending:
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
@@ -138,7 +139,7 @@ def main():
 
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
-        json.dump(existing, f, separators=(',',':'))
+        json.dump(existing, f, separators=(',', ':'))
     log.info(f"Wrote directors.json with {len(existing)} entries")
 
 
