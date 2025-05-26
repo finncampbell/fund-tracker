@@ -18,8 +18,7 @@ on:
         description: 'End date for ingestion/backfill (YYYY-MM-DD)'
         required: false
   schedule:
-    # Daily live run at 00:10 UTC
-    - cron: '10 0 * * *'
+    - cron: '10 0 * * *'  # Daily live run at 00:10 UTC
 
 jobs:
   run:
@@ -73,7 +72,7 @@ jobs:
             --end_date "${{ github.event.inputs.end_date }}"
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: fund-tracker-data
           path: |
