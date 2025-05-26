@@ -2,17 +2,16 @@
 
 $(document).ready(function() {
   // Cache-busted URL so the browser always pulls fresh data
-  const url = `/assets/data/relevant_companies.csv?v=${Date.now()}`;
+  const url = `assets/data/relevant_companies.csv?v=${Date.now()}`;
   const fundEntitiesRE = /\bFund\b|\bG[\.\-\s]?P\b|\bL[\.\-\s]?L[\.\-\s]?P\b|\bL[\.\-\s]?P\b/i;
 
   Papa.parse(url, { download: true, header: true, complete(results) {
     const raw = results.data.filter(r => r['Company Number']);
 
     let directorsMap = {};
-    fetch('/assets/data/directors.json')
+    fetch('assets/data/directors.json')
       .then(r => r.json())
       .then(json => {
-        // Trim JSON keys to normalize
         directorsMap = Object.fromEntries(
           Object.entries(json).map(([k, v]) => [k.trim(), v])
         );
