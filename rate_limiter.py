@@ -1,107 +1,93 @@
-# rate_limiter.py
-
-import json
-import time
 import os
+import time
+import json
+import logging
 from collections import deque
-from filelock import FileLock
-import requests
 
-# Constants
-RATE_LIMIT       = 600
-CALL_BUFFER      = 50
-WINDOW_SECONDS   = 5 * 60
-STATE_FILE       = os.environ.get("RATE_LIMIT_STATE_FILE", "assets/logs/rate_limit.json")
-LOCK_FILE        = STATE_FILE + ".lock"
+# Company House rate limit: 600 calls per 5 minutes
+RATE_LIMIT     = 600
+CALL_BUFFER    = 50     # reserve this many calls
+WINDOW_SECONDS = 300.0  # 5 minutes
 
+# Where we persist our sliding‐window state
+LOG_DIR    = 'assets/logs'
+STATE_FILE = os.path.join(LOG_DIR, 'rate_limit.json')
+
+# In‐memory queue of timestamps
+_call_times = deque()
+
+# Set up a logger for debug
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
+_rl_log = logging.getLogger("rate_limiter")
 
 def _load_state():
-    if not os.path.exists(STATE_FILE):
-        return deque()
-    with open(STATE_FILE, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return deque(data)
+    os.makedirs(LOG_DIR, exist_ok=True)
+    if os.path.exists(STATE_FILE):
+        try:
+            data = json.load(open(STATE_FILE, 'r'))
+            now = time.time()
+            kept = 0
+            for ts in data:
+                if now - ts <= WINDOW_SECONDS:
+                    _call_times.append(ts)
+                    kept += 1
+            _rl_log.debug(f"Loaded {len(data)} timestamps; {kept} within {WINDOW_SECONDS}s window")
+        except Exception as e:
+            _rl_log.warning(f"Error reading {STATE_FILE}, starting fresh: {e}")
+            _call_times.clear()
+    else:
+        _rl_log.debug(f"No existing state file at {STATE_FILE}; starting fresh")
 
+def _save_state():
+    now = time.time()
+    # prune out‐of‐window
+    before = len(_call_times)
+    while _call_times and now - _call_times[0] > WINDOW_SECONDS:
+        _call_times.popleft()
+    after = len(_call_times)
+    try:
+        with open(STATE_FILE, 'w') as f:
+            json.dump(list(_call_times), f)
+        _rl_log.debug(f"Persisted {after} timestamps ({before-after} pruned) to {STATE_FILE}")
+    except Exception as e:
+        _rl_log.error(f"Failed to write {STATE_FILE}: {e}")
 
-def _save_state(timestamps):
-    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
-    with open(STATE_FILE, 'w', encoding='utf-8') as f:
-        json.dump(list(timestamps), f)
+# Initialize on import
+_load_state()
+_save_state()
 
-
-def _prune(timestamps):
-    cutoff = time.time() - WINDOW_SECONDS
-    while timestamps and timestamps[0] < cutoff:
-        timestamps.popleft()
-
-
-def enforce_rate_limit(response=None):
+def enforce_rate_limit():
     """
-    Call before each HTTP request. If `response` is a 429, backs off per Retry-After.
+    Block if you’ve hit (RATE_LIMIT − CALL_BUFFER) within WINDOW_SECONDS.
+    Prunes stale timestamps on every invocation.
     """
-    with FileLock(LOCK_FILE):
-        timestamps = _load_state()
-        _prune(timestamps)
-
-        # Handle a 429 from the last call
-        if response is not None and getattr(response, 'status_code', None) == 429:
-            ra = response.headers.get("Retry-After", "")
-            wait = int(ra) if ra.isdigit() else 20
-            time.sleep(wait)
-            _prune(timestamps)
-
-        # Recalculate free slots, preserving buffer
-        used = len(timestamps)
-        free_slots = RATE_LIMIT - used - CALL_BUFFER
-        if free_slots <= 0 and timestamps:
-            oldest = timestamps[0]
-            to_sleep = WINDOW_SECONDS - (time.time() - oldest)
-            if to_sleep > 0:
-                time.sleep(to_sleep)
-            _prune(timestamps)
-
-        # Record this call and immediately persist
-        timestamps.append(time.time())
-        _save_state(timestamps)
-
+    now = time.time()
+    while _call_times and now - _call_times[0] > WINDOW_SECONDS:
+        _call_times.popleft()
+    cap = RATE_LIMIT - CALL_BUFFER
+    if len(_call_times) >= cap:
+        oldest = _call_times[0]
+        sleep_for = WINDOW_SECONDS - (now - oldest)
+        _rl_log.info(f"Rate limit reached ({len(_call_times)}/{cap}); sleeping {sleep_for:.1f}s")
+        time.sleep(sleep_for)
+        # prune again after waking
+        now = time.time()
+        while _call_times and now - _call_times[0] > WINDOW_SECONDS:
+            _call_times.popleft()
+    # now there’s at least one slot
 
 def record_call():
-    """
-    Record a single API call without any back-off logic.
-    """
-    with FileLock(LOCK_FILE):
-        timestamps = _load_state()
-        _prune(timestamps)
-        timestamps.append(time.time())
-        _save_state(timestamps)
+    """Stamp the current time and immediately persist state."""
+    ts = time.time()
+    _call_times.append(ts)
+    _save_state()
 
-
-def get_remaining_calls():
-    """
-    Returns how many more calls you can make right now,
-    after accounting for the buffer.
-    """
-    with FileLock(LOCK_FILE):
-        timestamps = _load_state()
-        _prune(timestamps)
-        used = len(timestamps)
-    return max(0, RATE_LIMIT - used - CALL_BUFFER)
-
-
-def make_api_call(url, **kwargs):
-    """
-    Wrap your requests.get/post/etc. here to auto-enforce rate limits,
-    handle 429s, and retry 5xx errors up to 3 times.
-    """
-    response = None
-    for attempt in range(1, 4):
-        enforce_rate_limit(response)
-        response = requests.get(url, **kwargs)
-        if response.status_code == 429:
-            # Let enforce_rate_limit handle the back-off
-            continue
-        if 500 <= response.status_code < 600:
-            time.sleep(5)
-            continue
-        break
-    return response
+def get_remaining_calls() -> int:
+    """How many calls remain before (RATE_LIMIT − CALL_BUFFER)."""
+    now = time.time()
+    while _call_times and now - _call_times[0] > WINDOW_SECONDS:
+        _call_times.popleft()
+    cap = RATE_LIMIT - CALL_BUFFER
+    rem = max(0, cap - len(_call_times))
+    _rl_log.debug(f"{len(_call_times)}/{cap} used → {rem} remaining")
+    return rem
