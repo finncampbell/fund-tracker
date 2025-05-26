@@ -24,7 +24,7 @@
     <header class="ft-header">
       <h1>Fund Tracker Dashboard</h1>
       <p>
-        <a href="assets/data/relevant_companies.xlsx" download>
+        <a href="/assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
         </a>
       </p>
@@ -42,7 +42,6 @@
       <button class="ft-btn" data-filter="Investments">Investments</button>
     </nav>
 
-    <!-- Historical Backfill Controls -->
     <div class="ft-backfill" style="padding:1rem; background:#f9f9f9; border-bottom:1px solid #e0e0e0;">
       <label for="backfill-range" style="margin-right:0.5rem;">Select date range:</label>
       <input id="backfill-range" placeholder="Click to select date range" readonly
@@ -53,14 +52,6 @@
       </small>
     </div>
 
-    <!-- Backfill progress bar (start hidden) -->
-    <div id="backfill-status" style="display:none; margin:1rem 0;">
-      <label for="backfill-progress">Backfill Progress:</label>
-      <progress id="backfill-progress" value="0" max="1"></progress>
-      <span id="backfill-progress-text">0/0</span>
-    </div>
-
-    <!-- Main companies table -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
@@ -77,7 +68,6 @@
       </table>
     </div>
 
-    <!-- SIC‐enhanced companies table -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
