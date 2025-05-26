@@ -44,7 +44,7 @@ def enforce_rate_limit(response=None):
         _prune(timestamps)
 
         # Handle a 429 from the last call
-        if response is not None and response.status_code == 429:
+        if response is not None and getattr(response, 'status_code', None) == 429:
             ra = response.headers.get("Retry-After", "")
             wait = int(ra) if ra.isdigit() else 20
             time.sleep(wait)
@@ -65,6 +65,29 @@ def enforce_rate_limit(response=None):
         _save_state(timestamps)
 
 
+def record_call():
+    """
+    Record a single API call without any back-off logic.
+    """
+    with FileLock(LOCK_FILE):
+        timestamps = _load_state()
+        _prune(timestamps)
+        timestamps.append(time.time())
+        _save_state(timestamps)
+
+
+def get_remaining_calls():
+    """
+    Returns how many more calls you can make right now,
+    after accounting for the buffer.
+    """
+    with FileLock(LOCK_FILE):
+        timestamps = _load_state()
+        _prune(timestamps)
+        used = len(timestamps)
+    return max(0, RATE_LIMIT - used - CALL_BUFFER)
+
+
 def make_api_call(url, **kwargs):
     """
     Wrap your requests.get/post/etc. here to auto-enforce rate limits,
@@ -76,4 +99,9 @@ def make_api_call(url, **kwargs):
         response = requests.get(url, **kwargs)
         if response.status_code == 429:
             # Let enforce_rate_limit handle the back-off
-            conti
+            continue
+        if 500 <= response.status_code < 600:
+            time.sleep(5)
+            continue
+        break
+    return response
