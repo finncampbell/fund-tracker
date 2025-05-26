@@ -1,3 +1,9 @@
-netlify.toml
-netlify/functions/     # your backfill.js (and any future functions)
-README.md              # can note “This repo is now Functions-only”
+[build]
+  # No UI build—only Functions
+  command   = "echo 'Functions-only site; UI on GitHub Pages'"
+  publish   = "."                     # unused for UI
+  functions = "netlify/functions"
+
+[context.production]
+  # Only build when functions change:
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $HEAD_COMMIT_REF netlify/functions && exit 0 || exit 1"
