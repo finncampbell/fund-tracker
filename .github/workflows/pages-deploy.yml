@@ -17,7 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Build your static site; replace with your actual build commands
       - name: Build site
         run: |
           echo "Building site…"
