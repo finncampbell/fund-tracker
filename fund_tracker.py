@@ -22,15 +22,15 @@ from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls
 from logger import get_logger
 
 # ─── Config ────────────────────────────────────────────────────────────────────
-API_URL      = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-DATA_DIR     = 'docs/assets/data'
-LOG_DIR      = 'assets/logs'
-LOG_FILE     = os.path.join(LOG_DIR, 'fund_tracker.log')
-MASTER_CSV   = f'{DATA_DIR}/master_companies.csv'
-MASTER_XLSX  = f'{DATA_DIR}/master_companies.xlsx'
-RELEVANT_CSV = f'{DATA_DIR}/relevant_companies.csv'
-RELEVANT_XLSX= f'{DATA_DIR}/relevant_companies.xlsx'
-FETCH_SIZE   = 100
+API_URL       = 'https://api.company-information.service.gov.uk/advanced-search/companies'
+DATA_DIR      = 'docs/assets/data'
+LOG_DIR       = 'assets/logs'
+LOG_FILE      = os.path.join(LOG_DIR, 'fund_tracker.log')
+MASTER_CSV    = f'{DATA_DIR}/master_companies.csv'
+MASTER_XLSX   = f'{DATA_DIR}/master_companies.xlsx'
+RELEVANT_CSV  = f'{DATA_DIR}/relevant_companies.csv'
+RELEVANT_XLSX = f'{DATA_DIR}/relevant_companies.xlsx'
+FETCH_SIZE    = 100
 
 # ─── SIC lookup ────────────────────────────────────────────────────────────────
 SIC_LOOKUP = {
@@ -91,6 +91,7 @@ CLASS_PATTERNS = [
 INCLUSION_CATEGORIES = {'LLP','LP','GP','Fund'}
 
 # ─── Logger ─────────────────────────────────────────────────────────────────────
+os.makedirs(LOG_DIR, exist_ok=True)
 log = get_logger('fund_tracker', LOG_FILE)
 log.info(f"Starting fund_tracker.py; {get_remaining_calls()} calls remaining")
 
@@ -102,7 +103,8 @@ def normalize_date(d: str) -> str:
             return datetime.strptime(d, fmt).strftime('%Y-%m-%d')
         except ValueError:
             continue
-    log.error(f"Invalid date format: {d}"); sys.exit(1)
+    log.error(f"Invalid date format: {d}")
+    sys.exit(1)
 
 def classify(name: str) -> str:
     for pat, label in CLASS_PATTERNS:
@@ -116,7 +118,8 @@ def enrich_sic(codes):
     for code in codes or []:
         if code in SIC_LOOKUP:
             d, u = SIC_LOOKUP[code]
-            descs.append(d); uses.append(u)
+            descs.append(d)
+            uses.append(u)
     return joined, "; ".join(descs), "; ".join(uses)
 
 def _parse_items(items, now):
@@ -150,7 +153,8 @@ def fetch_companies_on(ds, api_key):
         'size': FETCH_SIZE,
         'start_index': 0
     }, timeout=10)
-    resp.raise_for_status(); record_call()
+    resp.raise_for_status()
+    record_call()
 
     data = resp.json()
     records.extend(_parse_items(data.get('items', []), now))
@@ -166,26 +170,73 @@ def fetch_companies_on(ds, api_key):
             'size': FETCH_SIZE,
             'start_index': start_index
         }, timeout=10)
-        resp.raise_for_status(); record_call()
+        resp.raise_for_status()
+        record_call()
 
         items = resp.json().get('items', [])
-        if not items: break
+        if not items:
+            break
         records.extend(_parse_items(items, now))
 
     return records
 
 def run_for_range(sd, ed):
-    sd_dt = datetime.strptime(sd, '%Y-%m-%d')
-    ed_dt = datetime.strptime(ed, '%Y-%m-%d')
+    try:
+        sd_dt = datetime.strptime(sd, '%Y-%m-%d')
+        ed_dt = datetime.strptime(ed, '%Y-%m-%d')
+    except Exception as e:
+        log.error(f"Bad dates: {e}")
+        sys.exit(1)
     if sd_dt > ed_dt:
-        log.error("start_date > end_date"); sys.exit(1)
+        log.error("start_date > end_date")
+        sys.exit(1)
 
-    all_recs, cur = [], sd_dt
+    all_recs = []
+    cur = sd_dt
     while cur <= ed_dt:
-        ds = cur.strftime('%Y-${m}-%d')
+        ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
         all_recs.extend(fetch_companies_on(ds, API_KEY))
         cur += timedelta(days=1)
 
-    # Write master & relevant as before (unchanged)
-    …
+    # ─── Write Master CSV/XLSX ────────────────────────────────────────────────
+    os.makedirs(DATA_DIR, exist_ok=True)
+    if os.path.exists(MASTER_CSV):
+        try:
+            df_master = pd.read_csv(MASTER_CSV)
+        except pd.errors.EmptyDataError:
+            df_master = pd.DataFrame(columns=FIELDS)
+    else:
+        df_master = pd.DataFrame(columns=FIELDS)
+
+    if all_recs:
+        df_new = pd.DataFrame(all_recs, columns=FIELDS)
+        df_all = pd.concat([df_master, df_new], ignore_index=True)
+        df_all.drop_duplicates('Company Number', keep='first', inplace=True)
+    else:
+        df_all = df_master
+
+    df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
+    df_all = df_all[FIELDS]
+    df_all.to_csv(MASTER_CSV, index=False)
+    df_all.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
+    log.info(f"Wrote master CSV/XLSX ({len(df_all)} rows)")
+
+    # ─── Write Relevant CSV/XLSX ──────────────────────────────────────────────
+    mask_cat = df_all['Category'].isin(INCLUSION_CATEGORIES)
+    mask_sic = df_all['SIC Description'].astype(bool)
+    df_rel = df_all[mask_cat | mask_sic]
+    df_rel.to_csv(RELEVANT_CSV, index=False)
+    df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
+    log.info(f"Wrote relevant CSV/XLSX ({len(df_rel)} rows)")
+
+if __name__ == '__main__':
+    API_KEY = os.getenv('CH_API_KEY') or sys.exit(log.error('CH_API_KEY unset'))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or today')
+    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or today')
+    args = parser.parse_args()
+
+    sd = normalize_date(args.start_date)
+    ed = normalize_date(args.end_date)
+    run_for_range(sd, ed)
