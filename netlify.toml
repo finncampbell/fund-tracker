@@ -1,14 +1,13 @@
-# netlify.toml
-
 [build]
-  # Treat netlify/functions/ as the project root:
+  # Treat only netlify/functions/ as the project root
   base      = "netlify/functions"
-  # Your old no-op build command:
-  command   = "echo 'Functions-only site; UI on GitHub Pages'"
-  # The publish directory (unused for Functions-only)
+  # No-op build (functions only)
+  command   = "echo 'Functions only; UI on GitHub Pages'"
+  # 'publish' is relative to base, so this publishes netlify/functions/
   publish   = "."
-  # Since base has moved, functions live at "." under that base
+  # Functions dir (relative to base)
   functions = "."
 
-# (You can leave your [context.production].ignore block as-is,
-#  or drop it if you already deleted the old site in the UI.)
+# Optional: only rebuild when functions change
+[context.production]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $HEAD_COMMIT_REF netlify/functions && exit 0 || exit 1"
