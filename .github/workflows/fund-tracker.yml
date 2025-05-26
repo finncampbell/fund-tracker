@@ -18,8 +18,7 @@ on:
         description: 'End date for ingestion/backfill (YYYY-MM-DD)'
         required: false
   schedule:
-    # Daily live run at 00:10 UTC
-    - cron: '10 0 * * *'
+    - cron: '10 0 * * *'  # Daily live run at 00:10 UTC
 
 jobs:
   run:
@@ -36,7 +35,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          # Ensure we have the latest build tools
+          pip install --upgrade pip setuptools wheel
+
+          # Pre-install heavy packages as wheels to avoid building from source
+          pip install numpy pandas openpyxl XlsxWriter requests filelock
+
+          # Then install any remaining requirements
           pip install -r requirements.txt
 
       - name: Ingest companies
@@ -55,15 +60,13 @@ jobs:
 
       - name: Fetch directors (live)
         if: github.event_name == 'schedule' || github.event.inputs.mode == 'live'
-        run: |
-          python fetch_directors.py
+        run: python fetch_directors.py
 
       - name: Backfill directors (historical)
         if: github.event.inputs.mode == 'backfill'
-        run: |
-          python backfill_directors.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date "${{ github.event.inputs.end_date }}"
+        run: python backfill_directors.py \
+              --start_date "${{ github.event.inputs.start_date }}" \
+              --end_date "${{ github.event.inputs.end_date }}"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
