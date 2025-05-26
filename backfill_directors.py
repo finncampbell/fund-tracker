@@ -2,10 +2,10 @@
 """
 backfill_directors.py
 
-- Historical backfill of directors for a given date range
-- Emits a backfill_status.json for UI progress
-- Dynamically batches work against a buffered rate limit
-- Sleeps & retries as needed until all pending companies are processed
+- Historical backfill of directors for a date range
+- Uses a pool of up to 550 threads (buffered rate limit)
+- Each thread enforces rate-limit & prunes old timestamps automatically
+- Emits backfill_status.json for UI progress
 - Writes merged results into docs/assets/data/directors.json
 - Logs to assets/logs/backfill_directors.log
 """
@@ -14,36 +14,42 @@ import os
 import json
 import time
 import argparse
+import logging
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
 import requests
 
-from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls
-from logger import get_logger
+from rate_limiter import enforce_rate_limit, record_call
+from logger import log as base_log  # your existing logger.py exports `log`
+# If you prefer basicConfig here:
+# logging.basicConfig(...)
+# log = logging.getLogger(__name__)
 
-# ─── Config ─────────────────────────────────────────────────────────────────────
-API_BASE        = 'https://api.company-information.service.gov.uk/company'
-CH_KEY          = os.getenv('CH_API_KEY')
-RELEVANT_CSV    = 'docs/assets/data/relevant_companies.csv'
-DIRECTORS_JSON  = 'docs/assets/data/directors.json'
-STATUS_FILE     = 'docs/assets/data/backfill_status.json'
-LOG_DIR         = 'assets/logs'
-LOG_FILE        = os.path.join(LOG_DIR, 'backfill_directors.log')
-RETRIES         = 3
-RETRY_DELAY     = 5
-WINDOW_SECONDS  = 300  # 5 minutes
+# ─── Configuration ─────────────────────────────────────────────────────────────
+API_BASE       = 'https://api.company-information.service.gov.uk/company'
+CH_KEY         = os.getenv('CH_API_KEY')
+RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
+DIRECTORS_JSON = 'docs/assets/data/directors.json'
+STATUS_FILE    = 'docs/assets/data/backfill_status.json'
+LOG_DIR        = 'assets/logs'
+LOG_FILE       = os.path.join(LOG_DIR, 'backfill_directors.log')
+RETRIES        = 3
+RETRY_DELAY    = 5
+MAX_WORKERS    = 550   # buffered cap
 
-# ─── Ensure log directory exists ────────────────────────────────────────────────
+# ─── Logging Setup ─────────────────────────────────────────────────────────────
 os.makedirs(LOG_DIR, exist_ok=True)
-
-# ─── Logger ─────────────────────────────────────────────────────────────────────
-log = get_logger('backfill_directors', LOG_FILE)
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
+log = logging.getLogger(__name__)
 
 
 def write_status(total, processed, start_ts, end_ts=None):
-    """Write backfill progress to a JSON file for the UI to poll."""
     os.makedirs(os.path.dirname(STATUS_FILE), exist_ok=True)
     status = {
         "total":      total,
@@ -57,13 +63,11 @@ def write_status(total, processed, start_ts, end_ts=None):
 
 
 def load_relevant():
-    """Load relevant companies with parsed incorporation dates."""
     df = pd.read_csv(RELEVANT_CSV, dtype=str, parse_dates=['Incorporation Date'])
     return df
 
 
 def load_existing():
-    """Load existing directors.json or return empty dict."""
     if os.path.exists(DIRECTORS_JSON):
         with open(DIRECTORS_JSON) as f:
             return json.load(f)
@@ -71,14 +75,12 @@ def load_existing():
 
 
 def fetch_officers(number):
-    """Fetch officer data for a single company, with retries and rate-limiting."""
+    """Fetch officer data for a single company, with retries and rate‐limiting."""
     for attempt in range(1, RETRIES + 1):
         enforce_rate_limit()
         resp = requests.get(
             f"{API_BASE}/{number}/officers",
-            auth=(CH_KEY, ''),
-            params={'register_view': 'true'},
-            timeout=10
+            auth=(CH_KEY, ''), params={'register_view':'true'}, timeout=10
         )
         if resp.status_code >= 500 and attempt < RETRIES:
             log.warning(f"{number}: HTTP {resp.status_code}, retry {attempt}")
@@ -93,7 +95,7 @@ def fetch_officers(number):
             items = []
         break
 
-    ROLES = {'director', 'member'}
+    ROLES  = {'director','member'}
     active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
     chosen = active or [o for o in items if o.get('officer_role') in ROLES]
 
@@ -107,7 +109,6 @@ def fetch_officers(number):
             dob_str = str(y)
         else:
             dob_str = ''
-
         directors.append({
             'title':            o.get('name'),
             'appointment':      o.get('snippet',''),
@@ -118,45 +119,7 @@ def fetch_officers(number):
             'nationality':      o.get('nationality'),
             'occupation':       o.get('occupation'),
         })
-
     return number, directors
-
-
-def dynamic_backfill(pending, existing):
-    """
-    Process pending company numbers in batches sized to the remaining buffered quota.
-    Sleeps and retries until all pending companies are processed.
-    """
-    total     = len(pending)
-    processed = 0
-    start_ts  = int(time.time())
-    write_status(total, processed, start_ts)
-
-    index = 0
-    while index < total:
-        available = get_remaining_calls()
-        if available == 0:
-            log.info(f"No remaining calls; sleeping for {WINDOW_SECONDS}s to reset window")
-            time.sleep(WINDOW_SECONDS)
-            continue
-
-        batch = pending[index : index + available]
-        log.info(f"Backfill batch {index}//{total}: processing {len(batch)} companies")
-
-        with ThreadPoolExecutor(max_workers=len(batch)) as exe:
-            futures = {exe.submit(fetch_officers, num): num for num in batch}
-            for fut in as_completed(futures):
-                num, dirs = fut.result()
-                existing[num] = dirs
-                processed += 1
-                log.info(f"Fetched {len(dirs)} officers for {num}")
-                write_status(total, processed, start_ts)
-
-        index += len(batch)
-        # old timestamps age out, replenishing quota
-
-    # final write to signal completion
-    write_status(total, processed, start_ts, end_ts=int(time.time()))
 
 
 def main():
@@ -180,16 +143,28 @@ def main():
     mask_in_window = df['Incorporation Date'].dt.date.between(sd, ed)
     pending        = df[mask_not_done & mask_in_window]['Company Number'].tolist()
 
-    log.info(f"{len(pending)} companies pending in window {args.start_date} → {args.end_date}")
+    total     = len(pending)
+    processed = 0
+    start_ts  = int(time.time())
+    write_status(total, processed, start_ts)
+    log.info(f"{total} companies pending for backfill")
 
     if pending:
-        dynamic_backfill(pending, existing)
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as exe:
+            futures = {exe.submit(fetch_officers, num): num for num in pending}
+            for fut in as_completed(futures):
+                num, dirs = fut.result()
+                existing[num] = dirs
+                processed += 1
+                write_status(total, processed, start_ts)
+                log.info(f"Fetched {len(dirs)} officers for {num}")
 
-    # Write merged JSON of all directors
+    write_status(total, processed, start_ts, end_ts=int(time.time()))
+
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     with open(DIRECTORS_JSON, 'w') as f:
         json.dump(existing, f, separators=(',',':'))
-    log.info(f"Wrote directors.json with {len(existing)} company entries")
+    log.info(f"Wrote directors.json with {len(existing)} entries")
 
 
 if __name__ == '__main__':
