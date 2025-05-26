@@ -1,13 +1,7 @@
 [build]
-  # Treat only netlify/functions/ as the project root
-  base      = "netlify/functions"
-  # No-op build (functions only)
-  command   = "echo 'Functions only; UI on GitHub Pages'"
-  # 'publish' is relative to base, so this publishes netlify/functions/
-  publish   = "."
-  # Functions dir (relative to base)
-  functions = "."
+  command   = "echo \"No build for UI—static served by GitHub Pages\""
+  publish   = "."              # unused for UI
+  functions = "netlify/functions"
 
-# Optional: only rebuild when functions change
-[context.production]
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $HEAD_COMMIT_REF netlify/functions && exit 0 || exit 1"
+[functions]
+  node_bundler = "nft"
