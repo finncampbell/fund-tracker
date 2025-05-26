@@ -173,7 +173,7 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    fetch('https://investment-fund-tracker.netlify.app/.netlify/functions/backfill', {
+    fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/backfill', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ start_date: start, end_date: end })
