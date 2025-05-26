@@ -1,6 +1,5 @@
 name: Deploy Pages
 
-# Only run when you push to main (so manual fund-tracker runs won’t trigger it)
 on:
   push:
     branches:
@@ -10,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # Needed to push to gh-pages via GITHUB_TOKEN
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -18,27 +17,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # If you have a build step (e.g. npm, hugo, mkdocs), install tooling here.
-          # Remove or replace these lines with your actual build commands.
-          # For example, if you use a Node-based site:
-          #   npm ci
-          #   npm run build
-          echo "No-op build step; adjust to your site’s build process."
+          # If you have any build steps for docs (e.g. MkDocs), run them here.
+          # Otherwise skip this or leave as a no-op.
 
-      - name: Prepare publish directory
+      - name: Copy docs to public
         run: |
-          # If your static site is already in a docs/ folder, just move it to `public/`.
-          # Otherwise, adjust this to copy or build into `public/`.
           rm -rf public
           mkdir public
+          # Copy over your entire docs folder: HTML, JS, CSS, assets, data, etc.
           cp -R docs/* public/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # Uses the built-in GITHUB_TOKEN to push to the gh-pages branch
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Folder to publish (must exist)
-          publish_dir: ./public
-          # (Optional) if you’d rather deploy from a different branch:
-          # publish_branch: your-gh-pages-branch
+          publish_dir: public
