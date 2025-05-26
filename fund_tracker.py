@@ -12,7 +12,6 @@ import os
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
-
 import re
 import requests
 import pandas as pd
@@ -118,8 +117,8 @@ CLASS_PATTERNS = [
     (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
 ]
 
-# ─── Exact categories to include under “Fund Entities” ────────────────────────
-RELEVANT_CATEGORIES = {
+# ─── All name-based categories to include in the filtered CSV ─────────────────
+INCLUSION_CATEGORIES = {
     'LLP','LP','GP','Fund',
     'Ventures','Investments','Capital','Equity','Advisors','Partners'
 }
@@ -145,12 +144,6 @@ def classify(name: str) -> str:
     return 'Other'
 
 def enrich_sic(codes):
-    """
-    Given a list of SIC codes, return:
-      - comma-joined codes,
-      - semicolon-joined descriptions for those in SIC_LOOKUP,
-      - semicolon-joined typical use cases.
-    """
     joined = ",".join(codes)
     descs, uses = [], []
     for code in codes:
@@ -225,7 +218,7 @@ def run_for_range(sd, ed):
         all_recs += fetch_companies_on(ds, API_KEY)
         cur += timedelta(days=1)
 
-    # ─── Master DF ───────────────────────────────────────────────────────────────
+    # Master DataFrame
     if os.path.exists(MASTER_CSV):
         try:
             df_master = pd.read_csv(MASTER_CSV)
@@ -247,20 +240,25 @@ def run_for_range(sd, ed):
     df_all.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote master CSV/XLSX ({len(df_all)} rows)")
 
-    # ─── Relevant DF ─────────────────────────────────────────────────────────────
-    mask_cat = df_all['Category'].isin(RELEVANT_CATEGORIES)
-    mask_sic = df_all['SIC Description'].astype(bool)
-    df_rel   = df_all[mask_cat | mask_sic]
+    # Relevant (filtered) DataFrame
+    mask_cat = df_all['Category'].isin(INCLUSION_CATEGORIES)
+
+    def has_relevant_sic(codes_str: str) -> bool:
+        return any(code in SIC_LOOKUP for code in (codes_str or '').split(','))
+
+    mask_sic = df_all['SIC Codes'].fillna('').apply(has_relevant_sic)
+
+    df_rel = df_all[mask_cat | mask_sic]
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant CSV/XLSX ({len(df_rel)} rows)")
 
 if __name__ == '__main__':
     API_KEY = os.getenv('CH_API_KEY') or sys.exit(log.error('CH_API_KEY unset'))
-    p = argparse.ArgumentParser()
-    p.add_argument('--start_date', default='', help='YYYY-MM-DD or today')
-    p.add_argument('--end_date',   default='', help='YYYY-MM-DD or today')
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--start_date', default='', help='YYYY-MM-DD or today')
+    parser.add_argument('--end_date',   default='', help='YYYY-MM-DD or today')
+    args = parser.parse_args()
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
