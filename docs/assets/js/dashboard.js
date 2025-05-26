@@ -10,7 +10,6 @@ $(document).ready(function() {
       const raw = results.data.filter(r => r['Company Number']);
 
       let directorsMap = {};
-      // Note: removed leading slash
       fetch('assets/data/directors.json')
         .then(r => r.json())
         .then(json => {
@@ -128,7 +127,7 @@ $(document).ready(function() {
         $.fn.dataTable.ext.search.push((settings, rowData) => {
           if (settings.nTable.id !== 'companies') return true;
           const active = $('.ft-btn.active').data('filter') || '';
-          if (!active) return rowData[3] !== 'Other';
+          if (!active) return true;                  // show all when no filter
           if (active === 'SIC') return false;
           if (active === 'Fund Entities') return fundEntitiesRE.test(rowData[0]);
           return rowData[3] === active;
@@ -173,8 +172,7 @@ $(document).ready(function() {
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    // Point this at your Netlify Functions-only domain
-    fetch('https://<your-netlify-domain>/.netlify/functions/backfill', {
+    fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/backfill', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ start_date: start, end_date: end })
