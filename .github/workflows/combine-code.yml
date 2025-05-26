@@ -18,8 +18,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # if you have none, you can skip this
           pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run combine script
         run: |
