@@ -53,6 +53,13 @@
       </small>
     </div>
 
+    <!-- Backfill progress bar (start hidden) -->
+    <div id="backfill-status" style="display:none; margin:1rem 0;">
+      <label for="backfill-progress">Backfill Progress:</label>
+      <progress id="backfill-progress" value="0" max="1"></progress>
+      <span id="backfill-progress-text">0/0</span>
+    </div>
+
     <!-- Main companies table -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
@@ -95,7 +102,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <!-- Flatpickr JS -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- Custom JS -->
   <script src="assets/js/dashboard.js"></script>
