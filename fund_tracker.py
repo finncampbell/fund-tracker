@@ -2,11 +2,11 @@ import logging
 import pandas as pd
 import re
 import requests
+import os
 from datetime import datetime, timedelta
 
 # --- Filtering patterns and lookups ---
 
-# Name-based ("Fund Entities") patterns for high-precision fund entity detection
 CLASS_PATTERNS = [
     (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
     (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
@@ -16,16 +16,11 @@ CLASS_PATTERNS = [
 ]
 
 def classify(name):
-    """
-    Assign a Category to a company name based on CLASS_PATTERNS.
-    Returns the label of the first matching pattern, else 'Other'.
-    """
     for pat, label in CLASS_PATTERNS:
         if pat.search(name or ''):
             return label
     return 'Other'
 
-# Fill this with all your relevant codes:
 SIC_LOOKUP = {
     "64205": ("Financial services holding companies", "Fund vehicles, Holding companies"),
     "64209": ("Other holding companies n.e.c.", "SPVs, Holding companies"),
@@ -47,10 +42,6 @@ SIC_LOOKUP = {
 }
 
 def enrich_sic(codes):
-    """
-    For a list of SIC codes, join them, and map to descriptions and use cases.
-    Returns (joined, description string, use case string).
-    """
     joined = ",".join(codes)
     descs, uses = [], []
     for code in codes:
@@ -61,10 +52,6 @@ def enrich_sic(codes):
     return joined, "; ".join(descs), "; ".join(uses)
 
 def process_companies(raw_companies):
-    """
-    Process the raw company records, classifying and enriching with SIC info.
-    Returns a DataFrame with all master records.
-    """
     records = []
     for rec in raw_companies:
         name = rec.get('company_name', '')
@@ -83,9 +70,6 @@ def process_companies(raw_companies):
     return pd.DataFrame(records)
 
 def build_relevant_slice(df_master):
-    """
-    Build the relevant companies DataFrame: those with fund-entity names or relevant SIC codes.
-    """
     mask_cat = df_master['Category'] != 'Other'
     mask_sic = df_master['SIC Codes'].str.split(',').apply(
         lambda codes: any(c in SIC_LOOKUP for c in codes) if isinstance(codes, list) else False
@@ -94,7 +78,6 @@ def build_relevant_slice(df_master):
     return df_rel
 
 def fetch_all_companies_for_date(date, api_key):
-    """Fetch all companies incorporated on a given date, handling pagination."""
     all_records = []
     start_index = 0
     size = 100
@@ -118,14 +101,12 @@ def fetch_all_companies_for_date(date, api_key):
     return all_records
 
 def daterange(start_date, end_date):
-    """Yield each date as a string in YYYY-MM-DD from start_date to end_date inclusive."""
     curr = start_date
     while curr <= end_date:
         yield curr.strftime('%Y-%m-%d')
         curr += timedelta(days=1)
 
 def run_for_range(start_date, end_date, api_key):
-    """Fetches, processes, and saves master and relevant company slices for the date range."""
     all_raw = []
     for day in daterange(start_date, end_date):
         logging.info(f"Fetching companies for {day}")
@@ -145,8 +126,13 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start-date", required=True, help="Start date (YYYY-MM-DD)")
     parser.add_argument("--end-date", required=True, help="End date (YYYY-MM-DD)")
-    parser.add_argument("--api-key", required=True, help="Companies House API key")
-    return parser.parse_args()
+    parser.add_argument("--api-key", required=False, help="Companies House API key (or set CH_API_KEY env var)")
+    args = parser.parse_args()
+    if not args.api_key:
+        args.api_key = os.environ.get('CH_API_KEY')
+    if not args.api_key:
+        raise RuntimeError("Companies House API key must be provided with --api-key or CH_API_KEY environment variable.")
+    return args
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
