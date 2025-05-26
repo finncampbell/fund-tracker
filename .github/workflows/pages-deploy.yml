@@ -1,35 +1,44 @@
 name: Deploy Pages
 
+# Only run when you push to main (so manual fund-tracker runs won’t trigger it)
 on:
   push:
     branches:
-      - main   # only runs when you push to main
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pages: write
-      id-token: write
+      contents: write   # Needed to push to gh-pages via GITHUB_TOKEN
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build site
+      - name: Install dependencies
         run: |
-          echo "Building site…"
-          mkdir -p public
-          echo "<h1>Hello, Pages!</h1>" > public/index.html
+          # If you have a build step (e.g. npm, hugo, mkdocs), install tooling here.
+          # Remove or replace these lines with your actual build commands.
+          # For example, if you use a Node-based site:
+          #   npm ci
+          #   npm run build
+          echo "No-op build step; adjust to your site’s build process."
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v2
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: public
+      - name: Prepare publish directory
+        run: |
+          # If your static site is already in a docs/ folder, just move it to `public/`.
+          # Otherwise, adjust this to copy or build into `public/`.
+          rm -rf public
+          mkdir public
+          cp -R docs/* public/
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Uses the built-in GITHUB_TOKEN to push to the gh-pages branch
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Folder to publish (must exist)
+          publish_dir: ./public
+          # (Optional) if you’d rather deploy from a different branch:
+          # publish_branch: your-gh-pages-branch
