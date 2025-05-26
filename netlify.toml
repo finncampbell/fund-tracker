@@ -1,8 +1,3 @@
-# netlify.toml — only functions, no static build
-[build]
-  command   = "echo \"No build for UI—static served by GitHub Pages\""
-  publish   = "."              # unused for UI
-  functions = "netlify/functions"
-
-[functions]
-  node_bundler = "nft"
+netlify.toml
+netlify/functions/     # your backfill.js (and any future functions)
+README.md              # can note “This repo is now Functions-only”
