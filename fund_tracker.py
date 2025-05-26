@@ -3,9 +3,10 @@
 fund_tracker.py
 
 - Fetches Companies House data by date
-- Handles pagination via total_results
-- Honors the shared buffered rate limit (550 calls per 5 minutes)
-- Writes master & relevant CSV/XLSX into docs/assets/data/
+- Honors shared buffered rate limit (550 calls per 5 min)
+- Writes master & relevant CSV/XLSX to docs/assets/data/
+- Filters relevant to only LLP/LP/GP/Fund OR matching SIC codes
+- Enriches SIC codes with description & typical use case
 - Logs to assets/logs/fund_tracker.log
 """
 
@@ -67,7 +68,7 @@ SIC_LOOKUP = {
               "Treasury, capital-raising and internal financial services arm."),
 }
 
-# ─── Columns & Classification Patterns ─────────────────────────────────────────
+# ─── Data columns & classification patterns ───────────────────────────────────
 FIELDS = [
     'Company Name','Company Number','Incorporation Date',
     'Status','Source','Date Downloaded','Time Discovered',
@@ -78,6 +79,7 @@ CLASS_PATTERNS = [
     (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
     (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
     (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
+    # Other name patterns stay for categorizing separately in the dashboard
     (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
     (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
     (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
@@ -86,7 +88,7 @@ CLASS_PATTERNS = [
     (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
 ]
 
-# ─── Only these go into “Fund Entities” tab ────────────────────────────────────
+# ─── Only these go into the “Fund Entities” tab ───────────────────────────────
 INCLUSION_CATEGORIES = {'LLP','LP','GP','Fund'}
 
 # ─── Logger Setup ──────────────────────────────────────────────────────────────
@@ -142,7 +144,7 @@ def _parse_items(items, now):
 def fetch_companies_on(ds, api_key):
     records, now = [], datetime.now(timezone.utc)
 
-    # 1) First page
+    # first page
     enforce_rate_limit()
     resp = requests.get(API_URL, auth=(api_key,''), params={
         'incorporated_from': ds, 'incorporated_to': ds,
@@ -152,14 +154,14 @@ def fetch_companies_on(ds, api_key):
     data = resp.json()
     records.extend(_parse_items(data.get('items', []), now))
 
-    # 2) Additional pages
+    # remaining pages
     total = data.get('total_results', 0)
     pages = (total + FETCH_SIZE - 1) // FETCH_SIZE
     for p in range(1, pages):
         enforce_rate_limit()
         resp = requests.get(API_URL, auth=(api_key,''), params={
             'incorporated_from': ds, 'incorporated_to': ds,
-            'size': FETCH_SIZE, 'start_index': p * FETCH_SIZE
+            'size': FETCH_SIZE, 'start_index': p*FETCH_SIZE
         }, timeout=10)
         resp.raise_for_status(); record_call()
         items = resp.json().get('items', [])
@@ -172,13 +174,13 @@ def fetch_companies_on(ds, api_key):
 def run_for_range(sd: str, ed: str):
     API_KEY = os.getenv('CH_API_KEY')
     if not API_KEY:
-        log.error("CH_API_KEY is not set! Please configure it in your environment or CI secrets.")
+        log.error("CH_API_KEY is not set—please configure it in your CI secrets or env")
         sys.exit(1)
 
     log.info(f"Starting fund_tracker.py; {get_remaining_calls()} calls remaining")
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # Normalize dates
+    # parse dates
     try:
         sd_dt = datetime.strptime(sd, '%Y-%m-%d')
         ed_dt = datetime.strptime(ed, '%Y-%m-%d')
@@ -186,9 +188,10 @@ def run_for_range(sd: str, ed: str):
         log.error(f"Bad date inputs: {e}")
         sys.exit(1)
     if sd_dt > ed_dt:
-        log.error("start_date > end_date"); sys.exit(1)
+        log.error("start_date > end_date")
+        sys.exit(1)
 
-    # Collect records
+    # collect all records in window
     all_recs, cur = [], sd_dt
     while cur <= ed_dt:
         ds = cur.strftime('%Y-%m-%d')
@@ -221,16 +224,17 @@ def run_for_range(sd: str, ed: str):
     # ─── Relevant CSV/XLSX ────────────────────────────────────────────────────
     mask_cat = df_all['Category'].isin(INCLUSION_CATEGORIES)
     mask_sic = df_all['SIC Description'].astype(bool)
-    df_rel = df_all[mask_cat | mask_sic]
+    df_rel   = df_all[mask_cat | mask_sic]
+
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant ({len(df_rel)} rows)")
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--start_date', default='today', help='YYYY-MM-DD or today')
-    parser.add_argument('--end_date',   default='today', help='YYYY-MM-DD or today')
-    args = parser.parse_args()
+    p = argparse.ArgumentParser()
+    p.add_argument('--start_date', default='today', help='YYYY-MM-DD or today')
+    p.add_argument('--end_date',   default='today', help='YYYY-MM-DD or today')
+    args = p.parse_args()
 
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
