@@ -1,99 +1,76 @@
-# .github/workflows/fund-tracker.yml
-name: Fund Tracker Automation
+name: Fund Tracker
 
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'Run mode: live or backfill'
+        required: true
+        default: 'live'
+        type: choice
+        options:
+          - live
+          - backfill
       start_date:
-        description: 'Start date (YYYY-MM-DD or "today")'
-        default: 'today'
+        description: 'Start date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
       end_date:
-        description: 'End date (YYYY-MM-DD or "today")'
-        default: 'today'
+        description: 'End date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
   schedule:
-    - cron: '*/10 * * * *'    # every 10 minutes
-
-permissions:
-  contents: write
-  actions: read
-
-concurrency:
-  group: fund-tracker
-  cancel-in-progress: true
+    # Daily live run at 00:10 UTC
+    - cron: '10 0 * * *'
 
 jobs:
-  run-fund-tracker:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
-    env:
-      CH_API_KEY: ${{ secrets.CH_API_KEY }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v4
 
-      - name: Pull latest JSON
-        run: git pull origin main
-
-      - name: Setup Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.x'
 
-      - name: Upgrade pip, setuptools, wheel
+      - name: Install dependencies
         run: |
-          pip install --upgrade pip setuptools wheel
+          pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Pre-install NumPy wheel
+      - name: Ingest companies
+        id: ingest
         run: |
-          pip install --prefer-binary --only-binary=":all:" 'numpy>=1.24.0,<2.0.0'
-
-      - name: Install remaining dependencies
-        run: |
-          pip install --prefer-binary --only-binary=":all:" -r requirements.txt
-
-      - name: Configure Git
-        run: |
-          git config user.email "bot@example.com"
-          git config user.name  "GH Actions Bot"
-
-      # Stage 1: ingest companies
-      - name: Run fund_tracker.py
-        run: |
-          python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
-
-      - name: Commit company data
-        run: |
-          git add docs/assets/data/master_companies.* docs/assets/data/relevant_companies.*
-          if ! git diff --cached --quiet; then
-            git commit -m "Stage 1: update companies data"
-            git push origin main
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.mode }}" = "live" ]; then
+            python fund_tracker.py \
+              --start_date "$(date -u +%F -d '1 day ago')" \
+              --end_date "$(date -u +%F -d '1 day ago')"
+          else
+            python fund_tracker.py \
+              --backfill \
+              --start_date "${{ github.event.inputs.start_date }}" \
+              --end_date "${{ github.event.inputs.end_date }}"
           fi
 
-      # Stage 2: fetch directors
-      - name: Run fetch_directors.py
+      - name: Fetch directors (live)
+        if: github.event_name == 'schedule' || github.event.inputs.mode == 'live'
         run: |
           python fetch_directors.py
 
-      - name: Commit directors data
+      - name: Backfill directors (historical)
+        if: github.event.inputs.mode == 'backfill'
         run: |
-          git add docs/assets/data/directors.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Stage 2: update directors data"
-            git push origin main
-          fi
+          python backfill_directors.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date "${{ github.event.inputs.end_date }}"
 
-      - name: Upload logs
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: fund-tracker-logs
+          name: fund-tracker-data
           path: |
-            assets/logs/fund_tracker.log
-            assets/logs/director_fetch.log
-            assets/logs/backfill_directors.log
+            docs/assets/data/master_companies.csv
+            docs/assets/data/relevant_companies.csv
+            docs/assets/data/directors.json
+            docs/assets/data/fund_tracker_*.xlsx
