@@ -1,40 +1,83 @@
-name: Deploy Pages
+name: Fund Tracker
 
 on:
-  push:
-    branches:
-      - main   # or your default branch
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode: live or backfill'
+        required: true
+        default: 'live'
+        type: choice
+        options:
+          - live
+          - backfill
+      start_date:
+        description: 'Start date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
+      end_date:
+        description: 'End date for ingestion/backfill (YYYY-MM-DD)'
+        required: false
+  schedule:
+    # Daily live run at 00:10 UTC
+    - cron: '10 0 * * *'
 
 jobs:
-  build-and-deploy:
+  run:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # Build your site (adjust to your actual build commands)
-      - name: Build site
-        run: |
-          echo "Building site…"
-          mkdir -p public
-          echo "<h1>Hello, Pages!</h1>" > public/index.html
-
-      # 1) Configure Pages (v2)
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v2
-
-      # 2) Upload the build output (v1)
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          path: public
+          python-version: '3.x'
 
-      # 3) Deploy to GitHub Pages (v2)
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip wheel
+          pip install --only-binary=:all: -r requirements.txt
+
+      - name: Ingest companies
+        id: ingest
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.mode }}" = "live" ]; then
+            python fund_tracker.py \
+              --start_date "$(date -u +%F -d '1 day ago')" \
+              --end_date "$(date -u +%F -d '1 day ago')"
+          else
+            python fund_tracker.py \
+              --backfill \
+              --start_date "${{ github.event.inputs.start_date }}" \
+              --end_date "${{ github.event.inputs.end_date }}"
+          fi
+
+      - name: Fetch directors (live)
+        if: github.event_name == 'schedule' || github.event.inputs.mode == 'live'
+        run: python fetch_directors.py
+
+      - name: Backfill directors (historical)
+        if: github.event.inputs.mode == 'backfill'
+        run: |
+          python backfill_directors.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date "${{ github.event.inputs.end_date }}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fund-tracker-data
+          path: |
+            docs/assets/data/master_companies.csv
+            docs/assets/data/relevant_companies.csv
+            docs/assets/data/directors.json
+            docs/assets/data/fund_tracker_*.xlsx
