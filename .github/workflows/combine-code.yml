@@ -1,0 +1,33 @@
+name: Combine All Code
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          # if you have none, you can skip this
+          pip install --upgrade pip
+
+      - name: Run combine script
+        run: |
+          chmod +x scripts/combine_code.py
+          ./scripts/combine_code.py -o combined_code.txt
+
+      - name: Upload combined file
+        uses: actions/upload-artifact@v3
+        with:
+          name: all-code
+          path: combined_code.txt
