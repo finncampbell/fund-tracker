@@ -15,12 +15,14 @@ def should_include(filename):
 def combine_repo_code(root_dir, output_path):
     with open(output_path, 'w', encoding='utf-8') as out_file:
         for dirpath, dirnames, filenames in os.walk(root_dir):
-            dirnames[:] = [d for d in dirnames if d not in {'.git', '__pycache__', 'node_modules'}]
+            # Skip unwanted folders
+            dirnames[:] = [
+                d for d in dirnames
+                if d not in ('.git', '__pycache__', 'node_modules')
+            ]
             for fname in sorted(filenames):
                 if should_include(fname):
                     full_path = os.path.join(dirpath, fname)
-                    if os.path.abspath(full_path) == os.path.abspath(output_path):
-                        continue
                     rel_path = os.path.relpath(full_path, root_dir)
                     out_file.write(f"\n\n# ===== File: {rel_path} =====\n\n")
                     try:
