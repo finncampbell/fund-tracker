@@ -27,7 +27,7 @@ jobs:
           ./scripts/combine_code.py -o combined_code.txt
 
       - name: Upload combined file
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: all-code
           path: combined_code.txt
