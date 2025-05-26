@@ -10,6 +10,7 @@ fund_tracker.py
     OR
     • any SIC code in your 16-code lookup
 - Enriches SIC codes with description & typical use case
+- Asserts relevant is a true subset of master
 - Logs to assets/logs/fund_tracker.log
 """
 
@@ -216,17 +217,27 @@ def run_for_range(sd: str, ed: str):
 
     df_all.sort_values('Incorporation Date', ascending=False, inplace=True)
     df_all = df_all[FIELDS]
+
+    # Write master
     df_all.to_csv(MASTER_CSV, index=False)
     df_all.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote master ({len(df_all)} rows)")
 
+    # ─── Re-load master to guarantee alignment ────────────────────────────────
+    df_master_fresh = pd.read_csv(MASTER_CSV)
+
     # ─── Relevant CSV/XLSX ────────────────────────────────────────────────────
-    # include any non-Other category OR any strict lookup SIC code
-    mask_cat = df_all['Category'] != 'Other'
-    mask_sic = df_all['SIC Codes'].str.split(',').apply(
+    mask_cat = df_master_fresh['Category'] != 'Other'
+    mask_sic = df_master_fresh['SIC Codes'].str.split(',').apply(
         lambda codes: any(code in SIC_LOOKUP for code in codes)
     )
-    df_rel = df_all[mask_cat | mask_sic]
+    df_rel = df_master_fresh[mask_cat | mask_sic]
+
+    # final sanity check
+    missing = set(df_rel['Company Number']) - set(df_master_fresh['Company Number'])
+    if missing:
+        log.error(f"Relevant contains {len(missing)} entries not in master! {missing}")
+        sys.exit(1)
 
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
