@@ -8,7 +8,7 @@ classifies and enriches them, and writes two data slices into docs/assets/data/:
   • master_companies.csv/.xlsx   — every company ever ingested (deduped)
   • relevant_companies.csv/.xlsx — only those with Category ≠ "Other" or matching our target SIC codes
 
-It shares rate‐limit state across runs, retries transient 5xx errors (3× with backoff),
+It shares rate-limit state across runs, retries transient 5xx errors (3× with backoff),
 and maintains a manifest of pages retried across up to 5 scheduled runs.
 """
 
@@ -184,8 +184,7 @@ def fetch_page(ds: str, offset: int, api_key: str) -> dict:
 def run_for_range(sd: str, ed: str):
     api_key = os.getenv('CH_API_KEY')
     if not api_key:
-        log.error("CH_API_KEY is not set")
-        sys.exit(1)
+        log.error("CH_API_KEY is not set"); sys.exit(1)
 
     # Load shared rate-limit state
     load_rate_limit_state(RATE_STATE_FILE)
@@ -211,7 +210,7 @@ def run_for_range(sd: str, ed: str):
         # First page
         try:
             first = fetch_page(ds, 0, api_key)
-        except Exception as e:
+        except Exception:
             key = (ds, 0)
             cnt = failed_pages.get(key, 0) + 1
             if cnt < MAX_RUN_RETRIES:
@@ -277,7 +276,7 @@ def run_for_range(sd: str, ed: str):
         df_master = pd.concat([df_master, df_new], ignore_index=True) \
                        .drop_duplicates('Company Number', keep='first')
 
-    # Sort only if the column exists
+    # Sort master if possible
     if 'Incorporation Date' in df_master.columns:
         df_master.sort_values('Incorporation Date', ascending=False, inplace=True)
     else:
@@ -288,15 +287,28 @@ def run_for_range(sd: str, ed: str):
     df_master.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote master ({len(df_master)} rows)")
 
-    # 5) Filter relevant and write
+    # 5) Filter relevant
     if 'Category' in df_master.columns and 'SIC Codes' in df_master.columns:
         mask_cat = df_master['Category'] != 'Other'
         mask_sic = df_master['SIC Codes'].apply(has_target_sic)
         df_rel = df_master[mask_cat | mask_sic]
     else:
         df_rel = df_master.copy()
-        log.warning("Missing 'Category' or 'SIC Codes'—relevant=all")
+        log.warning("Missing 'Category' or 'SIC Codes'—using all as relevant")
 
+    # 6) Ensure headers even if empty
+    rel_columns = [
+        'Company Name', 'Company Number', 'Incorporation Date', 'Status', 'Source',
+        'Date Downloaded', 'Time Discovered', 'Category', 'SIC Codes',
+        'SIC Description', 'Typical Use Case'
+    ]
+    if df_rel.empty:
+        df_rel = pd.DataFrame(columns=rel_columns)
+    else:
+        # reindex to ensure correct column order
+        df_rel = df_rel.reindex(columns=rel_columns)
+
+    # Write relevant slices
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant ({len(df_rel)} rows)")
