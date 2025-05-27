@@ -1,3 +1,4 @@
+# .github/workflows/fund-tracker.yml
 name: Fund Tracker Automation
 
 on:
@@ -19,7 +20,6 @@ permissions:
 jobs:
   run-fund-tracker:
     runs-on: ubuntu-latest
-    # Inject secrets here so every step sees them
     env:
       CH_API_KEY: ${{ secrets.CH_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -59,11 +59,13 @@ jobs:
             --start_date "${{ github.event.inputs.start_date }}" \
             --end_date   "${{ github.event.inputs.end_date }}"
 
-      - name: Commit company data
+      - name: Commit company data & retry manifest
         run: |
-          git add docs/assets/data/master_companies.* docs/assets/data/relevant_companies.*
+          git add docs/assets/data/master_companies.* \
+                  docs/assets/data/relevant_companies.* \
+                  docs/assets/data/failed_pages.json
           if ! git diff --cached --quiet; then
-            git commit -m "Stage 1: update companies data"
+            git commit -m "Stage 1: update companies data & retry manifest"
             git push origin main
           fi
 
