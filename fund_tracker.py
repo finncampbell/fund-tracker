@@ -8,7 +8,7 @@ classifies and enriches them, and writes two data slices into docs/assets/data/:
   • master_companies.csv/.xlsx   — every company ever ingested (deduped)
   • relevant_companies.csv/.xlsx — only those with Category ≠ "Other" or matching our target SIC codes
 
-It shares rate-limit state across runs, retries transient 5xx errors (3× with backoff),
+It shares rate‐limit state across runs, retries transient 5xx errors (3× with backoff),
 and maintains a manifest of pages retried across up to 5 scheduled runs.
 """
 
@@ -125,7 +125,7 @@ def enrich_sic(codes):
     return joined, "; ".join(descs), "; ".join(uses)
 
 def has_target_sic(cell: str) -> bool:
-    """True if the SIC Codes cell contains any of our target codes."""
+    """True if the 'SIC Codes' cell contains any of our target codes."""
     if not cell or not isinstance(cell, str):
         return False
     return any(code in cell.split(",") for code in SIC_LOOKUP)
@@ -158,14 +158,13 @@ def fetch_page(ds: str, offset: int, api_key: str) -> dict:
         'size': FETCH_SIZE,
         'start_index': offset
     }
-    backoff = 1
     for attempt in range(1, INTERNAL_FETCH_RETRIES + 1):
         enforce_rate_limit()
         resp = requests.get(API_URL, auth=(api_key, ''), params=params, timeout=10)
         status = resp.status_code
 
         if 500 <= status < 600 and attempt < INTERNAL_FETCH_RETRIES:
-            wait = backoff * (2 ** (attempt - 1))
+            wait = 2 ** (attempt - 1)
             log.warning(f"Server error {status} on {ds}@{offset}; retry {attempt}/{INTERNAL_FETCH_RETRIES} after {wait}s")
             time.sleep(wait)
             continue
@@ -185,7 +184,8 @@ def fetch_page(ds: str, offset: int, api_key: str) -> dict:
 def run_for_range(sd: str, ed: str):
     api_key = os.getenv('CH_API_KEY')
     if not api_key:
-        log.error("CH_API_KEY is not set"); sys.exit(1)
+        log.error("CH_API_KEY is not set")
+        sys.exit(1)
 
     # Load shared rate-limit state
     load_rate_limit_state(RATE_STATE_FILE)
@@ -208,7 +208,7 @@ def run_for_range(sd: str, ed: str):
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
 
-        # First page fetch
+        # First page
         try:
             first = fetch_page(ds, 0, api_key)
         except Exception as e:
@@ -241,7 +241,7 @@ def run_for_range(sd: str, ed: str):
 
         cur += timedelta(days=1)
 
-    # 2) Retry old failures once more this run
+    # 2) Retry old failures once more
     for (ds, offset), cnt in failed_pages.items():
         if cnt >= MAX_RUN_RETRIES:
             continue
@@ -277,16 +277,25 @@ def run_for_range(sd: str, ed: str):
         df_master = pd.concat([df_master, df_new], ignore_index=True) \
                        .drop_duplicates('Company Number', keep='first')
 
-    # Sort and write master slices
-    df_master.sort_values('Incorporation Date', ascending=False, inplace=True)
+    # Sort only if the column exists
+    if 'Incorporation Date' in df_master.columns:
+        df_master.sort_values('Incorporation Date', ascending=False, inplace=True)
+    else:
+        log.warning("No 'Incorporation Date' column found—skipping sort")
+
+    # Write master slices
     df_master.to_csv(MASTER_CSV, index=False)
     df_master.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote master ({len(df_master)} rows)")
 
     # 5) Filter relevant and write
-    mask_cat = df_master['Category'] != 'Other'
-    mask_sic = df_master['SIC Codes'].apply(has_target_sic)
-    df_rel   = df_master[mask_cat | mask_sic]
+    if 'Category' in df_master.columns and 'SIC Codes' in df_master.columns:
+        mask_cat = df_master['Category'] != 'Other'
+        mask_sic = df_master['SIC Codes'].apply(has_target_sic)
+        df_rel = df_master[mask_cat | mask_sic]
+    else:
+        df_rel = df_master.copy()
+        log.warning("Missing 'Category' or 'SIC Codes'—relevant=all")
 
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
