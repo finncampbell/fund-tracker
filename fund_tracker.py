@@ -51,7 +51,6 @@ def fetch_page(date_str: str, start_index: int, api_key: str) -> dict:
         resp = requests.get(url, auth=(api_key, ""))
         status = resp.status_code
 
-        # If server error and more retries remain, back off and retry
         if 500 <= status < 600 and attempt < INTERNAL_FETCH_RETRIES:
             wait = backoff_base * (2 ** (attempt - 1))
             logger.warning(f"Server error {status} on {date_str}@{start_index}, "
@@ -66,7 +65,6 @@ def fetch_page(date_str: str, start_index: int, api_key: str) -> dict:
             logger.error(f"HTTP error {status} on {url}: {e}")
             raise
 
-    # If loop completes without returning, treat as fatal
     raise RuntimeError(f"Exhausted retries for {date_str}@{start_index}")
 
 # ─── Date Utilities ───────────────────────────────────────────────────────────────
@@ -95,10 +93,9 @@ def run_for_range(start_date_str: str, end_date_str: str):
     else:
         ed = datetime.fromisoformat(end_date_str)
 
-    # Ensure data directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # Load previously failed pages
+    # Load previous failures
     if os.path.exists(FAILED_FILE):
         with open(FAILED_FILE) as f:
             prev = json.load(f)
@@ -108,9 +105,8 @@ def run_for_range(start_date_str: str, end_date_str: str):
     new_failed = {}
     all_records = []
 
-    # 1) Fetch fresh pages in the configured date range
+    # 1) Fetch fresh pages in date range
     for ds in date_range(sd, ed):
-        # First page to obtain total_results
         try:
             first = fetch_page(ds, 0, api_key)
         except Exception as e:
@@ -139,7 +135,7 @@ def run_for_range(start_date_str: str, end_date_str: str):
                 else:
                     logger.error(f"Dead page {key} after {cnt} runs")
 
-    # 2) Retry previously failed pages one more time this run
+    # 2) Retry previous failures once more
     for (ds, offset), cnt in failed_pages.items():
         if cnt >= MAX_RUN_RETRIES:
             continue
@@ -154,12 +150,12 @@ def run_for_range(start_date_str: str, end_date_str: str):
             else:
                 logger.error(f"Dead on retry: {key}")
 
-    # 3) Persist updated failures list
+    # 3) Persist updated failure list
     out = [{"date": d, "offset": o, "count": c} for (d,o), c in new_failed.items()]
     with open(FAILED_FILE, "w") as f:
         json.dump(out, f, indent=2)
 
-    # 4) Enrich and write CSVs
+    # 4) Enrich & write CSVs
     df = pd.DataFrame(all_records)
     # … classification, SIC enrichment, dedupe, etc. …
     df.to_csv(MASTER_CSV, index=False)
