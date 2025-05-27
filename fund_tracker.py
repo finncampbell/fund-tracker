@@ -1,5 +1,4 @@
-# fund_tracker.py
-
+#!/usr/bin/env python3
 import os
 import sys
 import json
@@ -10,44 +9,70 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
-# Constants for retry logic
-INTERNAL_FETCH_RETRIES = 3    # HTTP retries per run
-MAX_RUN_RETRIES       = 5     # Scheduled-run retries before “dead”
+# ─── Configuration ────────────────────────────────────────────────────────────
 
-# Paths
-FAILED_FILE = os.path.join("docs", "assets", "data", "failed_pages.json")
-MASTER_CSV  = os.path.join("docs", "assets", "data", "master_companies.csv")
-RELEVANT_CSV= os.path.join("docs", "assets", "data", "relevant_companies.csv")
+# How many HTTP retry attempts per call (with exponential backoff)
+INTERNAL_FETCH_RETRIES = 3
 
-# Setup logger
-logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+# How many separate scheduled runs to retry a page before giving up
+MAX_RUN_RETRIES = 5
 
+# Max items per page for Companies House
 MAX_PER_PAGE = 100
 
+# Paths
+DATA_DIR      = os.path.join("docs", "assets", "data")
+FAILED_FILE   = os.path.join(DATA_DIR, "failed_pages.json")
+MASTER_CSV    = os.path.join(DATA_DIR, "master_companies.csv")
+RELEVANT_CSV  = os.path.join(DATA_DIR, "relevant_companies.csv")
+DIRECTORS_JSON= os.path.join(DATA_DIR, "directors.json")
+
+# Setup logger
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logger = logging.getLogger(__name__)
+
+
+# ─── Fetch with Retry ────────────────────────────────────────────────────────────
+
 def fetch_page(date_str: str, start_index: int, api_key: str) -> dict:
+    """
+    Fetch one page of companies for a given date and offset.
+    Retries up to INTERNAL_FETCH_RETRIES times on HTTP 5xx, with exponential backoff.
+    Raises on 4xx or final 5xx.
+    """
     url = (
         f"https://api.company-information.service.gov.uk/advanced-search/companies"
         f"?incorporated_from={date_str}&incorporated_to={date_str}"
         f"&size={MAX_PER_PAGE}&start_index={start_index}"
     )
-    backoff = 1
+
+    backoff_base = 1
     for attempt in range(1, INTERNAL_FETCH_RETRIES + 1):
-        r = requests.get(url, auth=(api_key, ""))
-        if r.status_code >= 500 and attempt < INTERNAL_FETCH_RETRIES:
-            logger.warning(
-                f"5xx on {date_str}@{start_index}, retry {attempt}/{INTERNAL_FETCH_RETRIES}"
-            )
-            time.sleep(backoff * (2 ** (attempt - 1)))
+        resp = requests.get(url, auth=(api_key, ""))
+        status = resp.status_code
+
+        # If server error and more retries remain, back off and retry
+        if 500 <= status < 600 and attempt < INTERNAL_FETCH_RETRIES:
+            wait = backoff_base * (2 ** (attempt - 1))
+            logger.warning(f"Server error {status} on {date_str}@{start_index}, "
+                           f"retry {attempt}/{INTERNAL_FETCH_RETRIES} after {wait}s")
+            time.sleep(wait)
             continue
+
+        # Else, either success or final attempt
         try:
-            r.raise_for_status()
-            return r.json()
-        except requests.HTTPError:
-            # On final 5xx or any 4xx, bubble up
+            resp.raise_for_status()
+            return resp.json()
+        except requests.HTTPError as e:
+            # On final 5xx or any 4xx, propagate up
+            logger.error(f"HTTP error {status} on {url}: {e}")
             raise
-    # Exhausted all internal retries
-    raise RuntimeError(f"Failed to fetch {date_str}@{start_index} after {INTERNAL_FETCH_RETRIES} tries")
+
+    # If loop completes without return, treat as fatal
+    raise RuntimeError(f"Exhausted retries for {date_str}@{start_index}")
+
+
+# ─── Date Utilities ─────────────────────────────────────────────────────────────
 
 def date_range(start: datetime, end: datetime):
     curr = start
@@ -55,38 +80,49 @@ def date_range(start: datetime, end: datetime):
         yield curr.strftime("%Y-%m-%d")
         curr += timedelta(days=1)
 
+
+# ─── Main Run Logic ─────────────────────────────────────────────────────────────
+
 def run_for_range(start_date_str: str, end_date_str: str):
     api_key = os.getenv("CH_API_KEY")
     if not api_key:
-        logger.error("CH_API_KEY not set")
+        logger.error("CH_API_KEY environment variable is not set")
         sys.exit(1)
 
     # Parse dates
-    sd = datetime.today() if start_date_str == "today" else datetime.fromisoformat(start_date_str)
-    ed = datetime.today() if end_date_str   == "today" else datetime.fromisoformat(end_date_str)
+    today = datetime.utcnow()
+    sd = today if start_date_str == "today" else datetime.fromisoformat(start_date_str)
+    ed = today if end_date_str   == "today" else datetime.fromisoformat(end_date_str)
 
-    # Load previous failures
+    # Ensure data directory exists
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+    # Load previously failed pages
     if os.path.exists(FAILED_FILE):
         with open(FAILED_FILE) as f:
-            old = json.load(f)
-        failed_pages = { (r["date"], r["offset"]): r["count"] for r in old }
+            prev = json.load(f)
+        failed_pages = { (r["date"], r["offset"]): r["count"] for r in prev }
     else:
         failed_pages = {}
-    new_failed = {}
 
+    new_failed = {}
     all_records = []
 
-    # 1) Fetch fresh pages in date range
+    # 1) Fetch fresh pages in the configured date range
     for ds in date_range(sd, ed):
-        # Fetch first page to get total_results
+        # First page to get total_results
         try:
             first = fetch_page(ds, 0, api_key)
         except Exception as e:
-            logger.error(f"First page failed for {ds}: {e}")
-            failed_pages[(ds, 0)] = failed_pages.get((ds, 0), 0) + 1
+            logger.error(f"Failed initial page for {ds}: {e}")
+            cnt = failed_pages.get((ds, 0), 0) + 1
+            if cnt < MAX_RUN_RETRIES:
+                new_failed[(ds, 0)] = cnt
+            else:
+                logger.error(f"Dead page {(ds,0)} after {cnt} runs")
             continue
 
-        total = first.get("total_results", 0)
+        total = first.get("total_results", 0) or 0
         pages = math.ceil(total / MAX_PER_PAGE)
         all_records.extend(first.get("items", []))
 
@@ -103,7 +139,7 @@ def run_for_range(start_date_str: str, end_date_str: str):
                 else:
                     logger.error(f"Dead page {key} after {cnt} runs")
 
-    # 2) Re-attempt old failures once more
+    # 2) Retry previously failed pages one more time in this run
     for (ds, offset), cnt in failed_pages.items():
         if cnt >= MAX_RUN_RETRIES:
             continue
@@ -118,24 +154,30 @@ def run_for_range(start_date_str: str, end_date_str: str):
             else:
                 logger.error(f"Dead on retry: {key}")
 
-    # 3) Persist updated failure list
-    os.makedirs(os.path.dirname(FAILED_FILE), exist_ok=True)
+    # 3) Persist updated failures list
     out = [{"date": d, "offset": o, "count": c} for (d,o),c in new_failed.items()]
     with open(FAILED_FILE, "w") as f:
         json.dump(out, f, indent=2)
 
-    # 4) Enrich & write CSV/XLSX (your existing logic)
+    # 4) Your existing enrichment & write logic
     df = pd.DataFrame(all_records)
     # … classification, SIC enrichment, dedupe, etc. …
     df.to_csv(MASTER_CSV, index=False)
-    # … filter to relevant …
-    df_relevant = df[ df['Category'] != 'Other' | df['SIC Description'].notna() ]
-    df_relevant.to_csv(RELEVANT_CSV, index=False)
+    # Filter relevant:
+    relevant = df[(df["Category"] != "Other") | (df["SIC Description"].notna())]
+    relevant.to_csv(RELEVANT_CSV, index=False)
+
+    logger.info(f"Wrote {len(all_records)} total records; "
+                f"{len(relevant)} relevant")
+
+
+# ─── Entry Point ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     import argparse
-    p = argparse.ArgumentParser()
-    p.add_argument("--start_date", required=True)
-    p.add_argument("--end_date", required=True)
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start_date", required=True)
+    parser.add_argument("--end_date",   required=True)
+    args = parser.parse_args()
+
     run_for_range(args.start_date, args.end_date)
