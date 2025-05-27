@@ -9,7 +9,7 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
-# ─── Configuration ────────────────────────────────────────────────────────────
+# ─── Configuration ───────────────────────────────────────────────────────────────
 
 # How many HTTP retry attempts per call (with exponential backoff)
 INTERNAL_FETCH_RETRIES = 3
@@ -20,17 +20,17 @@ MAX_RUN_RETRIES = 5
 # Max items per page for Companies House
 MAX_PER_PAGE = 100
 
-# Paths
-DATA_DIR      = os.path.join("docs", "assets", "data")
-FAILED_FILE   = os.path.join(DATA_DIR, "failed_pages.json")
-MASTER_CSV    = os.path.join(DATA_DIR, "master_companies.csv")
-RELEVANT_CSV  = os.path.join(DATA_DIR, "relevant_companies.csv")
-DIRECTORS_JSON= os.path.join(DATA_DIR, "directors.json")
+# ─── Paths ───────────────────────────────────────────────────────────────────────
 
-# Setup logger
+DATA_DIR     = os.path.join("docs", "assets", "data")
+FAILED_FILE  = os.path.join(DATA_DIR, "failed_pages.json")
+MASTER_CSV   = os.path.join(DATA_DIR, "master_companies.csv")
+RELEVANT_CSV = os.path.join(DATA_DIR, "relevant_companies.csv")
+
+# ─── Logger Setup ────────────────────────────────────────────────────────────────
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
-
 
 # ─── Fetch with Retry ────────────────────────────────────────────────────────────
 
@@ -59,20 +59,17 @@ def fetch_page(date_str: str, start_index: int, api_key: str) -> dict:
             time.sleep(wait)
             continue
 
-        # Else, either success or final attempt
         try:
             resp.raise_for_status()
             return resp.json()
         except requests.HTTPError as e:
-            # On final 5xx or any 4xx, propagate up
             logger.error(f"HTTP error {status} on {url}: {e}")
             raise
 
-    # If loop completes without return, treat as fatal
+    # If loop completes without returning, treat as fatal
     raise RuntimeError(f"Exhausted retries for {date_str}@{start_index}")
 
-
-# ─── Date Utilities ─────────────────────────────────────────────────────────────
+# ─── Date Utilities ───────────────────────────────────────────────────────────────
 
 def date_range(start: datetime, end: datetime):
     curr = start
@@ -80,8 +77,7 @@ def date_range(start: datetime, end: datetime):
         yield curr.strftime("%Y-%m-%d")
         curr += timedelta(days=1)
 
-
-# ─── Main Run Logic ─────────────────────────────────────────────────────────────
+# ─── Main Run Logic ───────────────────────────────────────────────────────────────
 
 def run_for_range(start_date_str: str, end_date_str: str):
     api_key = os.getenv("CH_API_KEY")
@@ -89,10 +85,15 @@ def run_for_range(start_date_str: str, end_date_str: str):
         logger.error("CH_API_KEY environment variable is not set")
         sys.exit(1)
 
-    # Parse dates
-    today = datetime.utcnow()
-    sd = today if start_date_str == "today" else datetime.fromisoformat(start_date_str)
-    ed = today if end_date_str   == "today" else datetime.fromisoformat(end_date_str)
+    # Parse dates (treat empty or "today" as now)
+    if not start_date_str or start_date_str.lower() == "today":
+        sd = datetime.utcnow()
+    else:
+        sd = datetime.fromisoformat(start_date_str)
+    if not end_date_str or end_date_str.lower() == "today":
+        ed = datetime.utcnow()
+    else:
+        ed = datetime.fromisoformat(end_date_str)
 
     # Ensure data directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -104,13 +105,12 @@ def run_for_range(start_date_str: str, end_date_str: str):
         failed_pages = { (r["date"], r["offset"]): r["count"] for r in prev }
     else:
         failed_pages = {}
-
     new_failed = {}
     all_records = []
 
     # 1) Fetch fresh pages in the configured date range
     for ds in date_range(sd, ed):
-        # First page to get total_results
+        # First page to obtain total_results
         try:
             first = fetch_page(ds, 0, api_key)
         except Exception as e:
@@ -139,7 +139,7 @@ def run_for_range(start_date_str: str, end_date_str: str):
                 else:
                     logger.error(f"Dead page {key} after {cnt} runs")
 
-    # 2) Retry previously failed pages one more time in this run
+    # 2) Retry previously failed pages one more time this run
     for (ds, offset), cnt in failed_pages.items():
         if cnt >= MAX_RUN_RETRIES:
             continue
@@ -155,21 +155,18 @@ def run_for_range(start_date_str: str, end_date_str: str):
                 logger.error(f"Dead on retry: {key}")
 
     # 3) Persist updated failures list
-    out = [{"date": d, "offset": o, "count": c} for (d,o),c in new_failed.items()]
+    out = [{"date": d, "offset": o, "count": c} for (d,o), c in new_failed.items()]
     with open(FAILED_FILE, "w") as f:
         json.dump(out, f, indent=2)
 
-    # 4) Your existing enrichment & write logic
+    # 4) Enrich and write CSVs
     df = pd.DataFrame(all_records)
     # … classification, SIC enrichment, dedupe, etc. …
     df.to_csv(MASTER_CSV, index=False)
-    # Filter relevant:
     relevant = df[(df["Category"] != "Other") | (df["SIC Description"].notna())]
     relevant.to_csv(RELEVANT_CSV, index=False)
 
-    logger.info(f"Wrote {len(all_records)} total records; "
-                f"{len(relevant)} relevant")
-
+    logger.info(f"Wrote {len(all_records)} total records; {len(relevant)} relevant")
 
 # ─── Entry Point ────────────────────────────────────────────────────────────────
 
@@ -180,4 +177,6 @@ if __name__ == "__main__":
     parser.add_argument("--end_date",   required=True)
     args = parser.parse_args()
 
-    run_for_range(args.start_date, args.end_date)
+    sd_in = args.start_date or "today"
+    ed_in = args.end_date   or "today"
+    run_for_range(sd_in, ed_in)
