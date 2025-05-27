@@ -30,11 +30,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug environment variables
-        run: |
-          echo "CH_API_KEY is '${CH_API_KEY:-<empty>}'"
-          echo "GITHUB_TOKEN is '${GITHUB_TOKEN:+[REDACTED]}'"
-
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
