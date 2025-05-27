@@ -1,4 +1,3 @@
-# .github/workflows/fund-tracker.yml
 name: Fund Tracker Automation
 
 on:
