@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 """
 fund_tracker.py
@@ -137,6 +138,7 @@ def normalize_date(d: str) -> str:
     Accept 'today', 'YYYY-MM-DD' or 'DD-MM-YYYY'; return 'YYYY-MM-DD'.
     """
     if not d or d.lower() == 'today':
+        # use the specified date (today) directly — no timezone/time offset
         return date.today().strftime('%Y-%m-%d')
     for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
         try:
@@ -305,7 +307,6 @@ def run_for_range(sd: str, ed: str):
     if df_rel.empty:
         df_rel = pd.DataFrame(columns=rel_columns)
     else:
-        # reindex to ensure correct column order
         df_rel = df_rel.reindex(columns=rel_columns)
 
     # Write relevant slices
@@ -326,3 +327,4 @@ if __name__ == '__main__':
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
     run_for_range(sd, ed)
+```
