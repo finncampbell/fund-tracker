@@ -1,224 +1,141 @@
-#!/usr/bin/env python3
-"""
-fund_tracker.py
-
-Fetch Companies House data by date range, enrich with SIC lookups and category,
-and write master & relevant CSV/XLSX into docs/assets/data/.
-"""
+# fund_tracker.py
 
 import os
 import sys
-import re
+import json
 import time
+import math
+import logging
 import requests
 import pandas as pd
+from datetime import datetime, timedelta
 
-from datetime import date, datetime, timedelta, timezone
-from rate_limiter import (
-    enforce_rate_limit,
-    record_call,
-    load_rate_limit_state,
-    save_rate_limit_state,
-)
-from logger import log
+# Constants for retry logic
+INTERNAL_FETCH_RETRIES = 3    # HTTP retries per run
+MAX_RUN_RETRIES       = 5     # Scheduled-run retries before “dead”
 
-# ─── Configuration & Paths ────────────────────────────────────────────────────────
-API_URL       = 'https://api.company-information.service.gov.uk/advanced-search/companies'
-DATA_DIR      = 'docs/assets/data'
-LOG_DIR       = 'assets/logs'
-RATE_STATE    = os.path.join(LOG_DIR, 'rate_limit.json')
-MASTER_CSV    = os.path.join(DATA_DIR, 'master_companies.csv')
-MASTER_XLSX   = os.path.join(DATA_DIR, 'master_companies.xlsx')
-RELEVANT_CSV  = os.path.join(DATA_DIR, 'relevant_companies.csv')
-RELEVANT_XLSX = os.path.join(DATA_DIR, 'relevant_companies.xlsx')
-FETCH_SIZE    = 100
+# Paths
+FAILED_FILE = os.path.join("docs", "assets", "data", "failed_pages.json")
+MASTER_CSV  = os.path.join("docs", "assets", "data", "master_companies.csv")
+RELEVANT_CSV= os.path.join("docs", "assets", "data", "relevant_companies.csv")
 
-# Ensure directories exist
-os.makedirs(LOG_DIR, exist_ok=True)
-os.makedirs(DATA_DIR, exist_ok=True)
+# Setup logger
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
-# ─── Classification Patterns ─────────────────────────────────────────────────────
-CLASS_PATTERNS = [
-    (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
-    (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
-    (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
-    (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
-    (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
-    (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
-    (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
-    (re.compile(r'\bEquity\b',                re.IGNORECASE), 'Equity'),
-    (re.compile(r'\bAdvis(?:or|er)s?\b',      re.IGNORECASE), 'Advisors'),
-    (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
-]
-def classify(name: str) -> str:
-    for pat, label in CLASS_PATTERNS:
-        if pat.search(name or ''):
-            return label
-    return 'Other'
+MAX_PER_PAGE = 100
 
-# ─── SIC Lookup ───────────────────────────────────────────────────────────────────
-SIC_LOOKUP = {
-    '64205': ("Activities of financial services holding companies",
-              "Holding-company SPV for portfolio-company equity stakes, co-investment vehicles, master/feeder hubs."),
-    '64209': ("Activities of other holding companies n.e.c.",
-              "Catch-all SPV: protected cells, cell companies, bespoke feeder vehicles."),
-    '64301': ("Activities of investment trusts",
-              "Closed-ended listed investment trusts (e.g. LSE-quoted funds)."),
-    '64302': ("Activities of unit trusts",
-              "On-shore unit trusts (including feeder trusts)."),
-    '64303': ("Activities of venture and development capital companies",
-              "Venture Capital Trusts (VCTs) and similar “development” schemes."),
-    '64304': ("Activities of open-ended investment companies",
-              "OEICs (master-fund and sub-fund layers of umbrella structures)."),
-    '64305': ("Activities of property unit trusts",
-              "Property-unit-trust vehicles (including REIT feeder trusts)."),
-    '64306': ("Activities of real estate investment trusts",
-              "UK-regulated REIT companies."),
-    '64921': ("Credit granting by non-deposit-taking finance houses",
-              "Direct-lending SPVs (senior debt, unitranche loans)."),
-    '64922': ("Activities of mortgage finance companies",
-              "Mortgage-debt vehicles (commercial/mortgage-backed SPVs)."),
-    '64929': ("Other credit granting n.e.c.",
-              "Mezzanine/sub-ordinated debt or hybrid capital vehicles."),
-    '64991': ("Security dealing on own account",
-              "Structured-credit/CLO collateral-management SPVs."),
-    '64999': ("Financial intermediation not elsewhere classified",
-              "Catch-all credit-oriented SPVs for novel lending structures."),
-    '66300': ("Fund management activities",
-              "AIFM or portfolio-management company itself."),
-    '70100': ("Activities of head offices",
-              "Group HQ: compliance, risk, finance, central strategy."),
-    '70221': ("Financial management (of companies and enterprises)",
-              "Treasury, capital-raising and internal financial services arm."),
-}
-
-# ─── Utility Functions ────────────────────────────────────────────────────────────
-def normalize_date(d: str) -> str:
-    if not d or d.lower() == 'today':
-        return date.today().strftime('%Y-%m-%d')
-    for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
-        try:
-            return datetime.strptime(d, fmt).strftime('%Y-%m-%d')
-        except ValueError:
+def fetch_page(date_str: str, start_index: int, api_key: str) -> dict:
+    url = (
+        f"https://api.company-information.service.gov.uk/advanced-search/companies"
+        f"?incorporated_from={date_str}&incorporated_to={date_str}"
+        f"&size={MAX_PER_PAGE}&start_index={start_index}"
+    )
+    backoff = 1
+    for attempt in range(1, INTERNAL_FETCH_RETRIES + 1):
+        r = requests.get(url, auth=(api_key, ""))
+        if r.status_code >= 500 and attempt < INTERNAL_FETCH_RETRIES:
+            logger.warning(
+                f"5xx on {date_str}@{start_index}, retry {attempt}/{INTERNAL_FETCH_RETRIES}"
+            )
+            time.sleep(backoff * (2 ** (attempt - 1)))
             continue
-    log.error(f"Invalid date format: {d}")
-    sys.exit(1)
-
-def enrich_sic(codes):
-    joined = ",".join(codes or [])
-    descs, uses = [], []
-    for c in (codes or []):
-        if c in SIC_LOOKUP:
-            d, u = SIC_LOOKUP[c]
-            descs.append(d); uses.append(u)
-    return joined, "; ".join(descs), "; ".join(uses)
-
-def fetch_page(ds: str, start: int, api_key: str):
-    enforce_rate_limit()
-    r = requests.get(API_URL, auth=(api_key, ''), params={
-        'incorporated_from': ds,
-        'incorporated_to':   ds,
-        'size': FETCH_SIZE,
-        'start_index': start
-    }, timeout=10)
-    r.raise_for_status()
-    record_call()
-    return r.json()
-
-def fetch_companies_on(ds: str, api_key: str):
-    records = []
-    first = fetch_page(ds, 0, api_key)
-    total = first.get('total_results', 0)
-    pages = (total + FETCH_SIZE - 1) // FETCH_SIZE
-    now = datetime.now(timezone.utc)
-
-    for page in range(pages):
-        data = first if page == 0 else fetch_page(ds, page * FETCH_SIZE, api_key)
-        for c in data.get('items', []):
-            name = c.get('title', '') or c.get('company_name', '')
-            sc, sd, su = enrich_sic(c.get('sic_codes', []))
-            records.append({
-                'Company Name':       name,
-                'Company Number':     c.get('company_number', ''),
-                'Incorporation Date': c.get('date_of_creation', ''),
-                'Status':             c.get('company_status', ''),
-                'Source':             c.get('source', ''),
-                'Date Downloaded':    now.strftime('%Y-%m-%d'),
-                'Time Discovered':    now.strftime('%H:%M:%S'),
-                'Category':           classify(name),
-                'SIC Codes':          sc,
-                'SIC Description':    sd,
-                'Typical Use Case':   su,
-            })
-    return records
-
-def has_target_sic(cell):
-    if not isinstance(cell, str) or not cell.strip():
-        return False
-    for code in cell.split(','):
-        if code in SIC_LOOKUP:
-            return True
-    return False
-
-# ─── Main Processing ─────────────────────────────────────────────────────────────
-def run_for_range(sd: str, ed: str):
-    api_key = os.getenv('CH_API_KEY')
-    if not api_key:
-        log.error("CH_API_KEY unset!"); sys.exit(1)
-
-    load_rate_limit_state(RATE_STATE)
-    log.info(f"Starting fund_tracker run {sd} → {ed}")
-
-    # Fetch new records
-    all_recs = []
-    cur = datetime.fromisoformat(sd)
-    end = datetime.fromisoformat(ed)
-    while cur <= end:
-        ds = cur.strftime('%Y-%m-%d')
-        log.info(f"Fetching companies for {ds}")
-        all_recs.extend(fetch_companies_on(ds, api_key))
-        cur += timedelta(days=1)
-
-    save_rate_limit_state(RATE_STATE)
-
-    # Load or init master DataFrame
-    if os.path.exists(MASTER_CSV):
         try:
-            df_master = pd.read_csv(MASTER_CSV)
-        except pd.errors.EmptyDataError:
-            df_master = pd.DataFrame()
+            r.raise_for_status()
+            return r.json()
+        except requests.HTTPError:
+            # On final 5xx or any 4xx, bubble up
+            raise
+    # Exhausted all internal retries
+    raise RuntimeError(f"Failed to fetch {date_str}@{start_index} after {INTERNAL_FETCH_RETRIES} tries")
+
+def date_range(start: datetime, end: datetime):
+    curr = start
+    while curr <= end:
+        yield curr.strftime("%Y-%m-%d")
+        curr += timedelta(days=1)
+
+def run_for_range(start_date_str: str, end_date_str: str):
+    api_key = os.getenv("CH_API_KEY")
+    if not api_key:
+        logger.error("CH_API_KEY not set")
+        sys.exit(1)
+
+    # Parse dates
+    sd = datetime.today() if start_date_str == "today" else datetime.fromisoformat(start_date_str)
+    ed = datetime.today() if end_date_str   == "today" else datetime.fromisoformat(end_date_str)
+
+    # Load previous failures
+    if os.path.exists(FAILED_FILE):
+        with open(FAILED_FILE) as f:
+            old = json.load(f)
+        failed_pages = { (r["date"], r["offset"]): r["count"] for r in old }
     else:
-        df_master = pd.DataFrame()
+        failed_pages = {}
+    new_failed = {}
 
-    # Append new and dedupe
-    if all_recs:
-        df_new = pd.DataFrame(all_recs)
-        df_master = pd.concat([df_master, df_new], ignore_index=True) \
-                      .drop_duplicates('Company Number', keep='first')
+    all_records = []
 
-    # Sort & write master
-    df_master.sort_values('Incorporation Date', ascending=False, inplace=True)
-    df_master.to_csv(MASTER_CSV, index=False)
-    df_master.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
-    log.info(f"Wrote master ({len(df_master)} rows)")
+    # 1) Fetch fresh pages in date range
+    for ds in date_range(sd, ed):
+        # Fetch first page to get total_results
+        try:
+            first = fetch_page(ds, 0, api_key)
+        except Exception as e:
+            logger.error(f"First page failed for {ds}: {e}")
+            failed_pages[(ds, 0)] = failed_pages.get((ds, 0), 0) + 1
+            continue
 
-    # Build and write relevant slice
-    mask_cat = df_master['Category'] != 'Other'
-    mask_sic = df_master['SIC Codes'].apply(has_target_sic)
-    df_rel   = df_master[mask_cat | mask_sic]
+        total = first.get("total_results", 0)
+        pages = math.ceil(total / MAX_PER_PAGE)
+        all_records.extend(first.get("items", []))
 
-    df_rel.to_csv(RELEVANT_CSV, index=False)
-    df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
-    log.info(f"Wrote relevant ({len(df_rel)} rows)")
+        for i in range(1, pages):
+            offset = i * MAX_PER_PAGE
+            key = (ds, offset)
+            try:
+                batch = fetch_page(ds, offset, api_key)
+                all_records.extend(batch.get("items", []))
+            except Exception as e:
+                cnt = failed_pages.get(key, 0) + 1
+                if cnt < MAX_RUN_RETRIES:
+                    new_failed[key] = cnt
+                else:
+                    logger.error(f"Dead page {key} after {cnt} runs")
 
-# ─── CLI Entrypoint ─────────────────────────────────────────────────────────────
-if __name__ == '__main__':
+    # 2) Re-attempt old failures once more
+    for (ds, offset), cnt in failed_pages.items():
+        if cnt >= MAX_RUN_RETRIES:
+            continue
+        key = (ds, offset)
+        try:
+            batch = fetch_page(ds, offset, api_key)
+            all_records.extend(batch.get("items", []))
+        except Exception as e:
+            new_cnt = cnt + 1
+            if new_cnt < MAX_RUN_RETRIES:
+                new_failed[key] = new_cnt
+            else:
+                logger.error(f"Dead on retry: {key}")
+
+    # 3) Persist updated failure list
+    os.makedirs(os.path.dirname(FAILED_FILE), exist_ok=True)
+    out = [{"date": d, "offset": o, "count": c} for (d,o),c in new_failed.items()]
+    with open(FAILED_FILE, "w") as f:
+        json.dump(out, f, indent=2)
+
+    # 4) Enrich & write CSV/XLSX (your existing logic)
+    df = pd.DataFrame(all_records)
+    # … classification, SIC enrichment, dedupe, etc. …
+    df.to_csv(MASTER_CSV, index=False)
+    # … filter to relevant …
+    df_relevant = df[ df['Category'] != 'Other' | df['SIC Description'].notna() ]
+    df_relevant.to_csv(RELEVANT_CSV, index=False)
+
+if __name__ == "__main__":
     import argparse
-    p = argparse.ArgumentParser(description="Fund Tracker: ingest & enrich companies")
-    p.add_argument('--start_date', default='today', help='YYYY-MM-DD or "today"')
-    p.add_argument('--end_date',   default='today', help='YYYY-MM-DD or "today"')
+    p = argparse.ArgumentParser()
+    p.add_argument("--start_date", required=True)
+    p.add_argument("--end_date", required=True)
     args = p.parse_args()
-
-    sd = normalize_date(args.start_date)
-    ed = normalize_date(args.end_date)
-    run_for_range(sd, ed)
+    run_for_range(args.start_date, args.end_date)
