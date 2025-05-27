@@ -1,10 +1,10 @@
-```python
 #!/usr/bin/env python3
 """
 fund_tracker.py
 
 Fetches newly incorporated UK companies from Companies House,
-classifies and enriches them, and writes two data slices into docs/assets/data/:
+classifies and enriches them (SIC lookup, category regex),
+and writes two data slices into docs/assets/data/:
 
   • master_companies.csv/.xlsx   — every company ever ingested (deduped)
   • relevant_companies.csv/.xlsx — only those with Category ≠ "Other" or matching our target SIC codes
@@ -61,13 +61,13 @@ CLASS_PATTERNS = [
     (re.compile(r'\bL[\.\-\s]?L[\.\-\s]?P\b', re.IGNORECASE), 'LLP'),
     (re.compile(r'\bL[\.\-\s]?P\b',           re.IGNORECASE), 'LP'),
     (re.compile(r'\bG[\.\-\s]?P\b',           re.IGNORECASE), 'GP'),
-    (re.compile(r'\bFund\b',                  re.IGNORECASE), 'Fund'),
-    (re.compile(r'\bVentures?\b',             re.IGNORECASE), 'Ventures'),
-    (re.compile(r'\bInvestment(s)?\b',        re.IGNORECASE), 'Investments'),
-    (re.compile(r'\bCapital\b',               re.IGNORECASE), 'Capital'),
-    (re.compile(r'\bEquity\b',                re.IGNORECASE), 'Equity'),
-    (re.compile(r'\bAdvis(?:or|er)s?\b',      re.IGNORECASE), 'Advisors'),
-    (re.compile(r'\bPartners\b',              re.IGNORECASE), 'Partners'),
+    (re.compile(r'\bFund\b',                    re.IGNORECASE), 'Fund'),
+    (re.compile(r'\bVentures?\b',               re.IGNORECASE), 'Ventures'),
+    (re.compile(r'\bInvestment(s)?\b',          re.IGNORECASE), 'Investments'),
+    (re.compile(r'\bCapital\b',                 re.IGNORECASE), 'Capital'),
+    (re.compile(r'\bEquity\b',                  re.IGNORECASE), 'Equity'),
+    (re.compile(r'\bAdvis(?:or|er)s?\b',        re.IGNORECASE), 'Advisors'),
+    (re.compile(r'\bPartners\b',                re.IGNORECASE), 'Partners'),
 ]
 
 def classify(name: str) -> str:
@@ -138,7 +138,6 @@ def normalize_date(d: str) -> str:
     Accept 'today', 'YYYY-MM-DD' or 'DD-MM-YYYY'; return 'YYYY-MM-DD'.
     """
     if not d or d.lower() == 'today':
-        # use the specified date (today) directly — no timezone/time offset
         return date.today().strftime('%Y-%m-%d')
     for fmt in ('%Y-%m-%d', '%d-%m-%Y'):
         try:
@@ -202,14 +201,14 @@ def run_for_range(sd: str, ed: str):
     new_failed = {}
     all_records = []
 
-    # 1) Date-by-date pagination
+    # 1) Date-by-date pagination and mapping
     cur = datetime.fromisoformat(sd)
     end = datetime.fromisoformat(ed)
     while cur <= end:
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
 
-        # First page
+        # calculate number of pages
         try:
             first = fetch_page(ds, 0, api_key)
         except Exception:
@@ -224,22 +223,36 @@ def run_for_range(sd: str, ed: str):
 
         total = first.get('total_results', 0) or 0
         pages = math.ceil(total / FETCH_SIZE)
-        all_records.extend(first.get('items', []))
 
-        # Subsequent pages
-        for p in range(1, pages):
+        # loop all pages and flatten records
+        for p in range(pages):
             offset = p * FETCH_SIZE
             key = (ds, offset)
             try:
-                batch = fetch_page(ds, offset, api_key)
-                all_records.extend(batch.get('items', []))
+                batch = first if p == 0 else fetch_page(ds, offset, api_key)
+                now = datetime.now(timezone.utc)
+                for c in batch.get('items', []):
+                    name = c.get('title') or c.get('company_name') or ''
+                    sc, sd_desc, su = enrich_sic(c.get('sic_codes', []))
+                    all_records.append({
+                        'Company Name':       name,
+                        'Company Number':     c.get('company_number',''),
+                        'Incorporation Date': c.get('date_of_creation',''),
+                        'Status':             c.get('company_status',''),
+                        'Source':             c.get('source',''),
+                        'Date Downloaded':    now.strftime('%Y-%m-%d'),
+                        'Time Discovered':    now.strftime('%H:%M:%S'),
+                        'Category':           classify(name),
+                        'SIC Codes':          sc,
+                        'SIC Description':    sd_desc,
+                        'Typical Use Case':   su
+                    })
             except Exception:
                 cnt = failed_pages.get(key, 0) + 1
                 if cnt < MAX_RUN_RETRIES:
                     new_failed[key] = cnt
                 else:
                     log.error(f"Dead page {key} after {cnt} runs")
-
         cur += timedelta(days=1)
 
     # 2) Retry old failures once more
@@ -249,7 +262,23 @@ def run_for_range(sd: str, ed: str):
         key = (ds, offset)
         try:
             batch = fetch_page(ds, offset, api_key)
-            all_records.extend(batch.get('items', []))
+            now = datetime.now(timezone.utc)
+            for c in batch.get('items', []):
+                name = c.get('title') or c.get('company_name') or ''
+                sc, sd_desc, su = enrich_sic(c.get('sic_codes', []))
+                all_records.append({
+                    'Company Name':       name,
+                    'Company Number':     c.get('company_number',''),
+                    'Incorporation Date': c.get('date_of_creation',''),
+                    'Status':             c.get('company_status',''),
+                    'Source':             c.get('source',''),
+                    'Date Downloaded':    now.strftime('%Y-%m-%d'),
+                    'Time Discovered':    now.strftime('%H:%M:%S'),
+                    'Category':           classify(name),
+                    'SIC Codes':          sc,
+                    'SIC Description':    sd_desc,
+                    'Typical Use Case':   su
+                })
         except Exception:
             new_cnt = cnt + 1
             if new_cnt < MAX_RUN_RETRIES:
@@ -293,7 +322,7 @@ def run_for_range(sd: str, ed: str):
     if 'Category' in df_master.columns and 'SIC Codes' in df_master.columns:
         mask_cat = df_master['Category'] != 'Other'
         mask_sic = df_master['SIC Codes'].apply(has_target_sic)
-        df_rel = df_master[mask_cat | mask_sic]
+        df_rel   = df_master[mask_cat | mask_sic]
     else:
         df_rel = df_master.copy()
         log.warning("Missing 'Category' or 'SIC Codes'—using all as relevant")
@@ -327,4 +356,3 @@ if __name__ == '__main__':
     sd = normalize_date(args.start_date)
     ed = normalize_date(args.end_date)
     run_for_range(sd, ed)
-```
