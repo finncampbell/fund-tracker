@@ -184,7 +184,11 @@ def run_for_range(sd: str, ed: str):
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
 
+        # fetch page 0 and log raw JSON + total_results
         first = fetch_page(ds, 0, api_key)
+        log.info(f"{ds}: raw first-page JSON: {first}")
+        log.info(f"{ds}: total_results = {first.get('total_results')}")
+
         total = first.get('total_results', 0) or 0
         pages = (total + FETCH_SIZE - 1)//FETCH_SIZE
         now = datetime.now(timezone.utc)
@@ -258,3 +262,16 @@ def run_for_range(sd: str, ed: str):
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant ({len(df_rel)} rows)")
+
+# ─── CLI Entrypoint ───────────────────────────────────────────────────────────────
+if __name__ == '__main__':
+    p = argparse.ArgumentParser(description="Fund Tracker ingestion")
+    p.add_argument('--start_date', default='today',
+                   help='YYYY-MM-DD, DD-MM-YYYY or "today"')
+    p.add_argument('--end_date',   default='today',
+                   help='YYYY-MM-DD, DD-MM-YYYY or "today"')
+    args = p.parse_args()
+
+    sd = normalize_date(args.start_date)
+    ed = normalize_date(args.end_date)
+    run_for_range(sd, ed)
