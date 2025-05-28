@@ -1,5 +1,4 @@
-# fund_tracker.py
-
+#!/usr/bin/env python3
 import os
 import sys
 import argparse
@@ -7,12 +6,12 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 
-from logger import log      # ← import your existing logger instance
+from logger import log
 from config import COLUMN_SCHEMA
 from fetch import fetch_companies_for_date
 from enrich import classify, enrich_sic, has_target_sic
 
-LOG = log                   # ← use that instance directly
+LOG = log
 
 def normalize_date(s: str) -> str:
     today = datetime.utcnow().date()
@@ -61,14 +60,20 @@ def enrich_and_filter(df: pd.DataFrame) -> pd.DataFrame:
 
 def write_outputs(df_master: pd.DataFrame, df_rel: pd.DataFrame):
     os.makedirs("docs/assets/data", exist_ok=True)
-    # Master files
-    df_master.to_csv("docs/assets/data/master_companies.csv", index=False)
-    with pd.ExcelWriter("docs/assets/data/master_companies.xlsx", engine="xlsxwriter") as w:
+
+    # Master
+    master_csv  = "docs/assets/data/master_companies.csv"
+    master_xlsx = "docs/assets/data/master_companies.xlsx"
+    df_master.to_csv(master_csv, index=False)
+    with pd.ExcelWriter(master_xlsx, engine="xlsxwriter") as w:
         df_master.to_excel(w, index=False, sheet_name="master")
     LOG.info(f"Wrote master ({len(df_master)}) records")
-    # Relevant files
-    df_rel.to_csv("docs/assets/data/relevant_companies.csv", index=False)
-    with pd.ExcelWriter("docs/assets/data/relevant_companies.xlsx", engine="xlsxwriter") as w:
+
+    # Relevant
+    rel_csv  = "docs/assets/data/relevant_companies.csv"
+    rel_xlsx = "docs/assets/data/relevant_companies.xlsx"
+    df_rel.to_csv(rel_csv, index=False)
+    with pd.ExcelWriter(rel_xlsx, engine="xlsxwriter") as w:
         df_rel.to_excel(w, index=False, sheet_name="relevant")
     LOG.info(f"Wrote relevant ({len(df_rel)}) records")
 
@@ -85,10 +90,15 @@ def main():
     start = normalize_date(args.start_date)
     end   = normalize_date(args.end_date)
     LOG.info(f"Running ingest from {start} to {end}")
+
     df_raw = ingest(start, end)
     if df_raw.empty:
-        LOG.error("No records fetched—aborting.")
-        sys.exit(1)
+        LOG.warning("No records fetched for %s → %s; writing empty outputs.", start, end)
+        # build an empty relevant DataFrame with same schema
+        df_rel = pd.DataFrame(columns=COLUMN_SCHEMA)
+        write_outputs(df_raw, df_rel)
+        return
+
     df_rel = enrich_and_filter(df_raw)
     write_outputs(df_raw, df_rel)
 
