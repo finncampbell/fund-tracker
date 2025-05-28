@@ -33,7 +33,10 @@ def fetch_page(date: str, start_index: int) -> dict:
     }
 
     for attempt in range(1, RETRIES + 1):
+        # log the exact request for debugging
+        logger.debug(f"GET {API_URL} params={params!r}")
         resp = requests.get(API_URL, auth=(get_api_key(), ""), params=params, timeout=10)
+
         if resp.status_code >= 500:
             if attempt < RETRIES:
                 backoff = 2 ** (attempt - 1)
@@ -54,7 +57,7 @@ def fetch_page(date: str, start_index: int) -> dict:
             logger.error(f"HTTP error {e} fetching {date}@{start_index}: {resp.text[:200]!r}")
             raise
 
-    # Fallback should never be reached
+    # Fallback—should never hit
     return {}
 
 def fetch_companies_for_date(date: str) -> list:
