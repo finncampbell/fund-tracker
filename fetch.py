@@ -1,6 +1,9 @@
 # fetch.py
 
-import os, time, requests, logging
+import os
+import time
+import requests
+import logging
 from rate_limiter import enforce_rate_limit
 
 API_URL    = "https://api.company-information.service.gov.uk/advanced-search/companies"
@@ -16,24 +19,44 @@ def get_api_key() -> str:
     return key
 
 def fetch_page(date: str, start_index: int) -> dict:
-    """Fetch a single page of companies for `date` at offset `start_index`."""
+    """Fetch a single page of companies for `date` at offset `start_index`.
+    On persistent 5xx errors, logs and returns empty results instead of raising."""
     enforce_rate_limit()
+
+    # Build params, omitting start_index for first page
     params = {
         "incorporated_from": date,
         "incorporated_to":   date,
         "size":              FETCH_SIZE,
-        "start_index":       start_index,
     }
+    if start_index:
+        params["start_index"] = start_index
+
     for attempt in range(1, RETRIES + 1):
         resp = requests.get(API_URL, auth=(get_api_key(), ""), params=params, timeout=10)
-        if resp.status_code >= 500 and attempt < RETRIES:
-            backoff = 2 ** (attempt - 1)
-            logger.warning(f"Server error {resp.status_code}, retrying in {backoff}s…")
-            time.sleep(backoff)
-            continue
-        resp.raise_for_status()
-        return resp.json()
-    resp.raise_for_status()
+        if resp.status_code >= 500:
+            if attempt < RETRIES:
+                backoff = 2 ** (attempt - 1)
+                logger.warning(f"Server error {resp.status_code} on {date}@{start_index}, retrying in {backoff}s…")
+                time.sleep(backoff)
+                continue
+            else:
+                # Final 5xx: log and skip
+                snippet = resp.text.replace("\n", " ")[:200]
+                logger.error(
+                    f"Persistent 5xx ({resp.status_code}) on {date}@{start_index} after {RETRIES} attempts; "
+                    f"response snippet: {snippet!r}"
+                )
+                return {}
+        try:
+            resp.raise_for_status()
+            return resp.json()
+        except requests.HTTPError as e:
+            # 4xx or malformed JSON: log & re-raise
+            logger.error(f"HTTP error {e} fetching {date}@{start_index}: {resp.text[:200]!r}")
+            raise
+
+    # Fallback (should not be reached)
     return {}
 
 def fetch_companies_for_date(date: str) -> list:
@@ -43,10 +66,12 @@ def fetch_companies_for_date(date: str) -> list:
     total = first.get("hits", first.get("total_results", 0)) or 0
     logger.info(f" → {total} total companies on {date}")
     items = first.get("items", [])
+
     pages = (total + FETCH_SIZE - 1) // FETCH_SIZE
     for page in range(1, pages):
         offset = page * FETCH_SIZE
         logger.info(f"Fetching page {page} (offset {offset})")
         batch = fetch_page(date, offset)
         items.extend(batch.get("items", []))
+
     return items
