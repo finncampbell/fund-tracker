@@ -2,54 +2,55 @@
 """
 test_api_key.py
 
-– Verifies that the CH_API_KEY env var is set
-– Ensures `requests` is installed (installs via pip if missing)
-– Makes a simple request to the Companies House Search API
-– Exits 0 on success (status 200), non-zero otherwise
+– Verifies CH_API_KEY is set
+– Ensures `requests` is installed
+– Makes a sanity check request to a known Companies House endpoint
+– Dumps URL, status, headers, and body
+– Exits 0 on 2xx, non-zero otherwise
 """
 
 import os
 import sys
 import subprocess
 
-# Ensure requests is installed
+# ─── Ensure requests is installed ────────────────────────────────────────────────
 try:
     import requests
 except ImportError:
-    print("`requests` module not found. Installing via pip...", file=sys.stderr)
+    print("`requests` not found; installing…", file=sys.stderr)
     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
     import requests
 
-API_URL = "https://api.company-information.service.gov.uk/search/companies"
+# ─── Configuration ───────────────────────────────────────────────────────────────
+API_KEY = os.getenv("CH_API_KEY")
+if not API_KEY:
+    print("ERROR: CH_API_KEY is not set.", file=sys.stderr)
+    sys.exit(1)
+
+# Use a known company number (e.g. Tate & Lyle PLC: 00000006)
+TEST_COMPANY = "00000006"
+URL = f"https://api.company-information.service.gov.uk/company/{TEST_COMPANY}"
 
 def main():
-    key = os.getenv("CH_API_KEY")
-    if not key:
-        print("ERROR: CH_API_KEY environment variable is not set.", file=sys.stderr)
-        sys.exit(1)
-
     try:
-        resp = requests.get(
-            API_URL,
-            auth=(key, ""),
-            params={"q": "test", "items_per_page": 1},
-            timeout=10
-        )
+        resp = requests.get(URL, auth=(API_KEY, ""), timeout=10)
     except Exception as e:
-        print(f"ERROR: Request failed: {e}", file=sys.stderr)
+        print(f"ERROR: Request exception: {e}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"HTTP {resp.status_code}")
-    if resp.status_code == 200:
-        try:
-            data = resp.json()
-            count = len(data.get("items", []))
-            print(f"SUCCESS: Retrieved {count} item(s).")
-        except Exception:
-            print("SUCCESS: Status 200, but failed to parse JSON.")
+    # Echo request/response details
+    print("→ Request URL:", resp.request.method, resp.request.url)
+    print("→ Status Code:", resp.status_code)
+    print("→ Response Headers:")
+    for k, v in resp.headers.items():
+        print(f"   {k}: {v}")
+    print("→ Response Body:")
+    print(resp.text)
+
+    # Exit success on any 2xx
+    if 200 <= resp.status_code < 300:
         sys.exit(0)
     else:
-        print(f"ERROR: Response body:\n{resp.text}", file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__":
