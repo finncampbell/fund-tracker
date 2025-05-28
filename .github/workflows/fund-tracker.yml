@@ -1,8 +1,12 @@
 name: Fund Tracker
 
+# Grant write access so GITHUB_TOKEN can push commits
+permissions:
+  contents: write
+  actions: read
+
 on:
   schedule:
-    # every 10 minutes
     - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
@@ -18,9 +22,16 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    env:
+      CH_API_KEY:   ${{ secrets.CH_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0           # full history so we can push
+          persist-credentials: true  # configure origin with GITHUB_TOKEN
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,8 +44,6 @@ jobs:
           pip install --prefer-binary -r requirements.txt
 
       - name: Run fund_tracker
-        env:
-          CH_API_KEY: ${{ secrets.CH_API_KEY }}
         run: |
           python fund_tracker.py \
             --start_date ${{ github.event.inputs.start_date }} \
@@ -50,7 +59,7 @@ jobs:
                   docs/assets/data/relevant_companies.xlsx
           if ! git diff --cached --quiet; then
             git commit -m "chore(data): update companies data [skip ci]"
-            git push
+            git push origin HEAD:main
           else
             echo "No changes to data — skipping commit"
           fi
