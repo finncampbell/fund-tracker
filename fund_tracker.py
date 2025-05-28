@@ -1,19 +1,25 @@
 # fund_tracker.py
 
-import os, sys, argparse
+import os
+import sys
+import argparse
 from datetime import datetime, timedelta
+
 import pandas as pd
-from logger import get_logger
+
+from logger import log      # ← import your existing logger instance
 from config import COLUMN_SCHEMA
 from fetch import fetch_companies_for_date
 from enrich import classify, enrich_sic, has_target_sic
 
-LOG = get_logger("fund_tracker", "assets/logs/fund_tracker.log")
+LOG = log                   # ← use that instance directly
 
 def normalize_date(s: str) -> str:
     today = datetime.utcnow().date()
-    if s.lower() == "today":     return today.isoformat()
-    if s.lower() == "yesterday": return (today - timedelta(days=1)).isoformat()
+    if s.lower() == "today":
+        return today.isoformat()
+    if s.lower() == "yesterday":
+        return (today - timedelta(days=1)).isoformat()
     return datetime.fromisoformat(s).date().isoformat()
 
 def date_range(start: str, end: str):
