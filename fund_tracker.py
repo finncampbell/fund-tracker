@@ -36,13 +36,13 @@ DATA_DIR     = 'docs/assets/data'
 LOG_DIR      = 'assets/logs'
 RATE_STATE   = os.path.join(LOG_DIR, 'rate_limit.json')
 
-MASTER_CSV   = os.path.join(DATA_DIR, 'master_companies.csv')
-MASTER_XLSX  = os.path.join(DATA_DIR, 'master_companies.xlsx')
-RELEVANT_CSV = os.path.join(DATA_DIR, 'relevant_companies.csv')
-RELEVANT_XLSX= os.path.join(DATA_DIR, 'relevant_companies.xlsx')
+MASTER_CSV    = os.path.join(DATA_DIR, 'master_companies.csv')
+MASTER_XLSX   = os.path.join(DATA_DIR, 'master_companies.xlsx')
+RELEVANT_CSV  = os.path.join(DATA_DIR, 'relevant_companies.csv')
+RELEVANT_XLSX = os.path.join(DATA_DIR, 'relevant_companies.xlsx')
 
-FETCH_SIZE   = 100
-RETRIES      = 3    # per-page 5xx retries
+FETCH_SIZE    = 100
+RETRIES       = 3    # per-page 5xx retries
 
 # Ensure directories exist
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -135,7 +135,7 @@ def normalize_date(d: str) -> str:
     log.error(f"Invalid date format: {d}")
     sys.exit(1)
 
-# ─── Fetch One Page with Retries ────────────────────────────────────────────────
+# ─── Fetch One Page with Retries (now swallows final 500) ────────────────────────
 def fetch_page(ds: str, offset: int, api_key: str) -> dict:
     params = {
         'incorporated_from': ds,
@@ -146,16 +146,25 @@ def fetch_page(ds: str, offset: int, api_key: str) -> dict:
     for attempt in range(1, RETRIES+1):
         enforce_rate_limit()
         resp = requests.get(API_URL, auth=(api_key,''), params=params, timeout=10)
+
+        # transient server error? retry with backoff
         if 500 <= resp.status_code < 600 and attempt < RETRIES:
             wait = 2 ** (attempt-1)
             log.warning(f"{ds}@{offset} 5xx ({resp.status_code}), retry {attempt}/{RETRIES} after {wait}s")
             time.sleep(wait)
             continue
-        resp.raise_for_status()
-        record_call()
-        return resp.json()
-    # if we fall through
-    log.error(f"{ds}@{offset} failed after {RETRIES} retries, skipping")
+
+        try:
+            resp.raise_for_status()
+            record_call()
+            return resp.json()
+        except requests.HTTPError as e:
+            # final failure: log and return empty page
+            log.error(f"{ds}@{offset} HTTP {resp.status_code}: {e}; skipping this page")
+            return {'items': []}
+
+    # should never reach here, but just in case
+    log.error(f"{ds}@{offset} gave no valid response after {RETRIES} attempts; skipping")
     return {'items': []}
 
 # ─── Main Run ───────────────────────────────────────────────────────────────────
@@ -164,7 +173,6 @@ def run_for_range(sd: str, ed: str):
     if not api_key:
         log.error("CH_API_KEY unset!"); sys.exit(1)
 
-    # load/prune the shared rate‐limit state
     load_rate_limit_state(RATE_STATE)
     log.info(f"Starting fund_tracker run {sd} → {ed}")
 
@@ -176,12 +184,12 @@ def run_for_range(sd: str, ed: str):
         ds = cur.strftime('%Y-%m-%d')
         log.info(f"Fetching companies for {ds}")
 
-        # page 0
         first = fetch_page(ds, 0, api_key)
         total = first.get('total_results', 0) or 0
-        pages = (total + FETCH_SIZE - 1) // FETCH_SIZE
+        pages = (total + FETCH_SIZE - 1)//FETCH_SIZE
         now = datetime.now(timezone.utc)
 
+        # page 0 items
         for c in first.get('items', []):
             name = c.get('title') or c.get('company_name','')
             sc, sd_desc, su = enrich_sic(c.get('sic_codes', []))
@@ -221,10 +229,9 @@ def run_for_range(sd: str, ed: str):
 
         cur += timedelta(days=1)
 
-    # persist rate‐limit state
     save_rate_limit_state(RATE_STATE)
 
-    # load or init master
+    # ─── Merge into master ────────────────────────────────────────────────────────
     if os.path.exists(MASTER_CSV):
         try:
             df_master = pd.read_csv(MASTER_CSV)
@@ -233,7 +240,6 @@ def run_for_range(sd: str, ed: str):
     else:
         df_master = pd.DataFrame(columns=SCHEMA_COLUMNS)
 
-    # merge new and dedupe
     if all_records:
         df_new    = pd.DataFrame(all_records)
         df_master = pd.concat([df_master, df_new], ignore_index=True) \
@@ -244,7 +250,7 @@ def run_for_range(sd: str, ed: str):
     df_master.to_excel(MASTER_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote master ({len(df_master)} rows)")
 
-    # build relevant slice
+    # ─── Build relevant slice ────────────────────────────────────────────────────
     mask_cat = df_master['Category'] != 'Other'
     mask_sic = df_master['SIC Codes'].apply(has_target_sic)
     df_rel   = df_master[mask_cat | mask_sic]
@@ -252,14 +258,3 @@ def run_for_range(sd: str, ed: str):
     df_rel.to_csv(RELEVANT_CSV, index=False)
     df_rel.to_excel(RELEVANT_XLSX, index=False, engine='openpyxl')
     log.info(f"Wrote relevant ({len(df_rel)} rows)")
-
-# ─── CLI Entrypoint ───────────────────────────────────────────────────────────────
-if __name__ == '__main__':
-    p = argparse.ArgumentParser(description="Fund Tracker ingestion")
-    p.add_argument('--start_date', default='today')
-    p.add_argument('--end_date',   default='today')
-    args = p.parse_args()
-
-    sd = normalize_date(args.start_date)
-    ed = normalize_date(args.end_date)
-    run_for_range(sd, ed)
