@@ -3,13 +3,22 @@
 test_api_key.py
 
 – Verifies that the CH_API_KEY env var is set
+– Ensures `requests` is installed (installs via pip if missing)
 – Makes a simple request to the Companies House Search API
 – Exits 0 on success (status 200), non-zero otherwise
 """
 
 import os
 import sys
-import requests
+import subprocess
+
+# Ensure requests is installed
+try:
+    import requests
+except ImportError:
+    print("`requests` module not found. Installing via pip...", file=sys.stderr)
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    import requests
 
 API_URL = "https://api.company-information.service.gov.uk/search/companies"
 
