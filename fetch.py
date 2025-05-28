@@ -21,19 +21,16 @@ def get_api_key() -> str:
 def fetch_page(date: str, start_index: int) -> dict:
     """
     Fetch one page of companies for `date` at offset `start_index`.
-    Uses the correct 'items_per_page' param. On persistent 5xx errors,
-    logs an error and returns empty dict instead of raising.
+    Always sends `size` + `start_index`. On persistent 5xx, logs & returns {}.
     """
     enforce_rate_limit()
 
-    # Build params, omitting start_index for the first page
     params = {
         "incorporated_from": date,
         "incorporated_to":   date,
-        "items_per_page":    FETCH_SIZE,      # ← correct CH API parameter
+        "size":              FETCH_SIZE,
+        "start_index":       start_index,
     }
-    if start_index:
-        params["start_index"] = start_index
 
     for attempt in range(1, RETRIES + 1):
         resp = requests.get(API_URL, auth=(get_api_key(), ""), params=params, timeout=10)
@@ -44,7 +41,6 @@ def fetch_page(date: str, start_index: int) -> dict:
                 time.sleep(backoff)
                 continue
             else:
-                # Final 5xx: log snippet and skip
                 snippet = resp.text.replace("\n", " ")[:200]
                 logger.error(
                     f"Persistent 5xx ({resp.status_code}) on {date}@{start_index} "
@@ -55,11 +51,10 @@ def fetch_page(date: str, start_index: int) -> dict:
             resp.raise_for_status()
             return resp.json()
         except requests.HTTPError as e:
-            # Non-5xx (e.g. 4xx): log & re-raise
             logger.error(f"HTTP error {e} fetching {date}@{start_index}: {resp.text[:200]!r}")
             raise
 
-    # Should never get here
+    # Fallback should never be reached
     return {}
 
 def fetch_companies_for_date(date: str) -> list:
