@@ -70,6 +70,14 @@ def fetch_companies_on(date_str: str) -> list[dict]:
         raw_codes = c.get('sic_codes', []) or []
         joined_codes = ", ".join(raw_codes)
         sic_desc, sic_use = enrich_sic(raw_codes)
+
+        # Determine Category: if classify(name) is "Other" but sic_desc is non-empty, label as "SIC"
+        base_cat = classify(name)
+        if base_cat == "Other" and sic_desc:
+            category = "SIC"
+        else:
+            category = base_cat
+
         recs.append({
             'CompanyNumber':     c.get('company_number', ''),
             'CompanyName':       name,
@@ -79,7 +87,7 @@ def fetch_companies_on(date_str: str) -> list[dict]:
             'DateDownloaded':    now.date().isoformat(),
             'TimeDiscovered':    now.isoformat(),
             'SIC Codes':         joined_codes,
-            'Category':          classify(name),
+            'Category':          category,
             'SIC Description':   sic_desc,
             'Typical Use Case':  sic_use,
         })
