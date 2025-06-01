@@ -1,31 +1,39 @@
 /* ─── Import Poppins ───────────────────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* ─── BODY & CONTAINER ─────────────────────────────────────────────────────── */
+/* ─── BODY ───────────────────────────────────────────────────────────────────── */
 body {
   margin: 0;
   padding: 2rem;
-  background-color: #1b1f28; /* Slightly less dark navy background */
+  background-color: #0f0f13;    /* Solid black backdrop around the card */
   color: #ececec;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-               Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+               'Segoe UI Emoji';
   display: flex;
   justify-content: center;
 }
 
+/* ─── DASHBOARD CARD (GRADIENT NAVY→BLACK) ──────────────────────────────────── */
 .ft-dashboard-card {
-  background-color: #1b1f28; /* Match body for a uniform “pill” look */
+  /* A tall, pill‐shaped container with a smooth navy→black gradient */
+  background: linear-gradient(
+    to bottom,
+    #1b1f28 0%,
+    #12151d 50%,
+    #0f0f13 100%
+  );
   border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  padding: 0; /* sub-sections handle their own padding */
+  padding: 0; /* Individual sections manage their own padding */
 }
 
-/* ─── HEADER: Background Is Just Solid #1b1f28 ────────────────────────────── */
+/* ─── HEADER (GRADIENT TITLE ON NAVY→BLACK) ────────────────────────────────── */
 .ft-header {
-  background-color: #1b1f28; /* same as card */
+  background-color: transparent; /* gradient is on the card itself */
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -33,19 +41,21 @@ body {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
 .ft-title {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  /* A single left→right gradient across the entire title */
+  /* Clip a horizontal gradient (purple→blue) into the text */
   background: linear-gradient(90deg, #A020F0, #4AB3F4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .ft-download a {
-  color: #4ab3f4; /* subtle blue link */
+  color: #4AB3F4;
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 500;
@@ -56,16 +66,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  padding: 1rem 2rem; /* match header’s horizontal padding */
-  background-color: #1b1f28; /* same navy */
-  border-bottom: 1px solid rgba(236,236,236,0.1);
-  justify-content: flex-start; /* left-align under “All” tab */
+  padding: 1rem 2rem; /* Match header’s horizontal padding */
+  background-color: transparent; /* gradient seen through from card */
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  justify-content: flex-start;
 }
 
 .ft-btn {
   background: transparent;
-  border: 2px solid #A020F0; /* rich purple by default */
-  color: #A020F0;            /* text also purple */
+  border: 2px solid #A020F0; /* rich purple outline */
+  color: #A020F0;            /* purple text by default */
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 0.9rem;
@@ -74,20 +84,20 @@ body {
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Each tab’s text color “slides” along the same gradient in order */
-.cat-all       { color: #A020F0; }  /* far left (deep purple) */
+/* Text colors “sampled” from a purple→blue continuum for each tab */
+.cat-all       { color: #A020F0; }   /* deep purple */
 .cat-ventures  { color: #B64EEB; }
 .cat-capital   { color: #CB15E1; }
 .cat-equity    { color: #E105D5; }
 .cat-advisors  { color: #F200C7; }
 .cat-partners  { color: #FF00B1; }
-.cat-sic       { color: #4AB3F4; }  /* far right toward blue */
+.cat-sic       { color: #4AB3F4; }   /* bright blue */
 .cat-fund      { color: #25C9E3; }
 .cat-directors { color: #4AB3F4; }
 
 .ft-btn:hover {
   background: none;
-  border-color: #4AB3F4; /* light blue on hover */
+  border-color: #4AB3F4; /* switch to light blue outline on hover */
   color: #4AB3F4;
 }
 
@@ -102,22 +112,24 @@ body {
 
 /* ─── BACKFILL CONTROLS ───────────────────────────────────────────────────── */
 .ft-backfill-section {
-  background-color: #1b1f28; /* same navy */
+  background-color: transparent; /* card’s gradient still visible */
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* left-align */
+  align-items: flex-start;
   gap: 0.75rem;
-  border-bottom: 1px solid rgba(236,236,236,0.1);
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
 }
+
 .ft-backfill-controls {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
 .ft-date-input {
   background-color: rgba(236, 236, 236, 0.05);
-  border: 1px solid rgba(236,236,236,0.2);
+  border: 1px solid rgba(236, 236, 236, 0.2);
   border-radius: 6px;
   padding: 0.5rem 1rem;
   color: #ccc;
@@ -131,6 +143,7 @@ body {
   border-color: #4AB3F4;
   outline: none;
 }
+
 .ft-backfill-btn {
   background: transparent;
   border: 2px solid;
@@ -147,39 +160,43 @@ body {
   filter: brightness(1.1);
   color: #4AB3F4;
 }
+
 .ft-backfill-note {
-  color: rgba(236,236,236,0.6);
+  color: rgba(236, 236, 236, 0.6);
   font-size: 0.875rem;
   margin: 0;
 }
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
-  background-color: #1b1f28; /* same navy */
+  background-color: transparent; /* let the card’s gradient show through */
   padding: 1.5rem 2rem;
   overflow: auto;
 }
+
 #companies {
   width: 100%;
   border-collapse: separate !important;
   border-spacing: 0 0.5rem !important;
   font-family: 'Poppins', system-ui, sans-serif;
 }
+
 #companies thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 1rem;
-  border-bottom: 1px solid rgba(236,236,236,0.1);
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
 }
-/* Header text uses a solid color sampled from the same gradient as tabs */
-#companies thead th.cat-all       { color: #A020F0; }  /* deep purple */
+
+/* Header text uses the same repeater‐gradient sampling as the tabs */
+#companies thead th.cat-all       { color: #A020F0; }
 #companies thead th.cat-ventures  { color: #B64EEB; }
 #companies thead th.cat-capital   { color: #CB15E1; }
 #companies thead th.cat-equity    { color: #E105D5; }
 #companies thead th.cat-advisors  { color: #F200C7; }
 #companies thead th.cat-partners  { color: #FF00B1; }
-#companies thead th.cat-sic       { color: #4AB3F4; }  /* light blue */
+#companies thead th.cat-sic       { color: #4AB3F4; }
 #companies thead th.cat-fund      { color: #25C9E3; }
 #companies thead th.cat-directors { color: #4AB3F4; }
 
@@ -203,15 +220,14 @@ body {
   font-weight: 500;
 }
 
-/* Row hover effect */
 #companies tbody tr:hover td {
   background-color: rgba(236, 236, 236, 0.05);
 }
 
 /* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
 .dataTables_wrapper .dataTables_filter input {
-  background-color: rgba(236,236,236,0.1);
-  border: 1px solid rgba(236,236,236,0.2);
+  background-color: rgba(236, 236, 236, 0.1);
+  border: 1px solid rgba(236, 236, 236, 0.2);
   color: #fff;
   border-radius: 4px;
   padding: 0.25rem 0.5rem;
