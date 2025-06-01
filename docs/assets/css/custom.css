@@ -83,7 +83,7 @@ body {
   transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
   /* subtle purple glow even when unselected */
-  box-shadow: 
+  box-shadow:
     0 0 6px rgba(160, 32, 240, 0.25),
     0 0 12px rgba(160, 32, 240, 0.15);
 }
@@ -190,7 +190,7 @@ body {
   cursor: pointer;
   transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
-  /* subtle neon-blue glow at rest */
+  /* subtle neon‐blue glow at rest */
   box-shadow:
     0 0 6px rgba(74, 179, 244, 0.25),
     0 0 12px rgba(74, 179, 244, 0.15);
@@ -213,6 +213,27 @@ body {
   filter: brightness(1.05);        /* slight pop on hover */
 }
 
+/* ─── CHILD TABLE (DIRECTORS) HEADERS ──────────────────────────────────────── */
+/* Ensure any <th> inside .child-table (the directors child‐row) is rich purple */
+.child-table th {
+  color: #A020F0;         /* rich purple for directors’ column headings */
+  padding: 0.5rem 0.75rem;/* a bit of spacing so they line up nicely */
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent; /* inherit dark background */
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+/* ─── CHILD TABLE (DIRECTORS) CELLS ───────────────────────────────────────── */
+/* Directors data cells remain light neon‐blue */
+.child-table td {
+  color: #4AB3F4;    /* light neon‐blue for director rows */
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: transparent; /* inherit row‐hover styles from parent table */
+}
+
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
   background-color: transparent;
@@ -220,7 +241,7 @@ body {
   overflow: auto;
 }
 
-/* Apply to both #companies and #sic-companies tables */
+/* Apply to both #companies and #sic-companies DataTables */
 #companies,
 #sic-companies {
   width: 100%;
@@ -229,7 +250,7 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* Column headers for all DataTables: rich purple */
+/* Column headers for all parent DataTables: rich purple */
 table.display thead th {
   padding: 1rem 0.5rem;
   text-align: left;
@@ -247,10 +268,10 @@ table.display tbody tr:nth-child(even) {
   background-color: rgba(15, 15, 19, 0.80);
 }
 
-/* Table cell text for all DataTables: light neon-blue */
+/* Table cell text for all parent DataTables: light neon‐blue */
 table.display tbody td {
   padding: 0.75rem 0.5rem;
-  color: #4AB3F4;   /* light neon-blue text for content */
+  color: #4AB3F4;
   border: none;
 }
 
@@ -264,7 +285,7 @@ table.display tbody td {
   font-weight: 500;
 }
 
-/* Hover state for table rows */
+/* Hover state for parent table rows */
 table.display tbody tr:hover td {
   background-color: rgba(236, 236, 236, 0.05);
 }
