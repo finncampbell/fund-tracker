@@ -30,7 +30,7 @@ body {
   padding: 0;
 }
 
-/* ─── HEADER (NAVY→BLACK PASS-THROUGH) ──────────────────────────────────────── */
+/* ─── HEADER (TEXT GRADIENT) ─────────────────────────────────────────────────── */
 .ft-header {
   background-color: transparent;
   padding: 2rem 2rem;
@@ -45,7 +45,8 @@ body {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  background: linear-gradient(90deg, #A020F0, #6ACFFB);
+  /* Keep existing title gradient for distinction */
+  background: linear-gradient(90deg, #A020F0, #4AB3F4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -53,13 +54,13 @@ body {
 }
 
 .ft-download a {
-  color: #6ACFFB;
+  color: #4AB3F4;
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 500;
 }
 
-/* ─── FILTER TABS (PILL SHAPE + CONTINUOUS GRADIENT SAMPLING) ───────────────── */
+/* ─── FILTER TABS (NEON PURPLE DEFAULT, BLUE ON SELECT/HOVER) ──────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
@@ -72,40 +73,21 @@ body {
 
 .ft-btn {
   background: transparent;
-  border: 2px solid transparent; 
-  border-radius: 999px;       /* Pill‐shaped corners */
-  color: inherit;              /* Will be set by each category’s class */
+  border: 2px solid #A020F0; /* neon purple outline */
+  color: #A020F0;            /* neon purple text */
   padding: 0.5rem 1rem;
+  border-radius: 999px;       /* fully pill-shaped */
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Each tab’s border & text color sampled from one continuous gradient */
-/* “All” (far left) is #A020F0; “Directors” (far right) is #6ACFFB. */
-.cat-all       { border-color: #A020F0; color: #A020F0; }
-.cat-ventures  { border-color: #B64EEB; color: #B64EEB; }
-.cat-capital   { border-color: #CB15E1; color: #CB15E1; }
-.cat-equity    { border-color: #E105D5; color: #E105D5; }
-.cat-advisors  { border-color: #F200C7; color: #F200C7; }
-.cat-partners  { border-color: #FF00B1; color: #FF00B1; }
-.cat-sic       { border-color: #4AB3F4; color: #4AB3F4; }
-.cat-fund      { border-color: #25C9E3; color: #25C9E3; }
-.cat-directors { border-color: #6ACFFB; color: #6ACFFB; }
-
-/* Hover: fill pill with purple→light-blue gradient, white text */
-.ft-btn:hover {
-  background: linear-gradient(90deg, #A020F0, #6ACFFB);
-  color: #fff;
-  border-color: transparent;
-}
-
-/* Active tab: same gradient fill, white text */
+.ft-btn:hover,
 .ft-btn.active {
-  background: linear-gradient(90deg, #A020F0, #6ACFFB);
-  color: #fff;
-  border-color: transparent;
+  background: #4AB3F4;     /* neon blue fill on hover/active */
+  border-color: #4AB3F4;   /* neon blue border */
+  color: #0f0f13;          /* nearly-black text against blue fill */
 }
 .ft-btn.active:hover {
   filter: brightness(1.1);
@@ -141,25 +123,25 @@ body {
 }
 .ft-date-input:hover,
 .ft-date-input:focus {
-  border-color: #6ACFFB;
+  border-color: #4AB3F4;
   outline: none;
 }
 
 .ft-backfill-btn {
   background: transparent;
   border: 2px solid;
-  border-image: linear-gradient(90deg, #A020F0 0%, #6ACFFB 100%) 1;
+  border-image: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%) 1;
   color: #A020F0;
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 999px;  /* Pill shape */
+  border-radius: 999px;
   cursor: pointer;
   transition: filter 0.2s ease, color 0.2s ease;
 }
 .ft-backfill-btn:hover {
   filter: brightness(1.1);
-  color: #6ACFFB;
+  color: #4AB3F4;
 }
 
 .ft-backfill-note {
@@ -188,18 +170,8 @@ body {
   font-weight: 600;
   font-size: 1rem;
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  color: #A020F0; /* neon purple for all column headers */
 }
-
-/* Header text same continuous gradient sampling */
-#companies thead th.cat-all       { color: #A020F0; }
-#companies thead th.cat-ventures  { color: #B64EEB; }
-#companies thead th.cat-capital   { color: #CB15E1; }
-#companies thead th.cat-equity    { color: #E105D5; }
-#companies thead th.cat-advisors  { color: #F200C7; }
-#companies thead th.cat-partners  { color: #FF00B1; }
-#companies thead th.cat-sic       { color: #4AB3F4; }
-#companies thead th.cat-fund      { color: #25C9E3; }
-#companies thead th.cat-directors { color: #6ACFFB; }
 
 #companies tbody tr {
   background-color: rgba(15, 15, 19, 0.85);
@@ -216,8 +188,8 @@ body {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
-  background-color: rgba(74, 179, 244, 0.3);
-  color: #0f0f13;
+  background-color: #A020F0; /* neon purple pill background */
+  color: #0f0f13;            /* almost-black text inside pill */
   font-weight: 500;
 }
 
@@ -242,12 +214,12 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-  background: #6ACFFB !important;
+  background: #4AB3F4 !important;
   color: #fff !important;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  background-color: rgba(106, 207, 251, 0.2) !important;
-  color: #6ACFFB !important;
+  background-color: rgba(74, 179, 244, 0.2) !important;
+  color: #4AB3F4 !important;
 }
 
 /* ─── RESPONSIVE ADJUSTMENTS ───────────────────────────────────────────────── */
