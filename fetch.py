@@ -71,12 +71,8 @@ def fetch_companies_on(date_str: str) -> list[dict]:
         joined_codes = ", ".join(raw_codes)
         sic_desc, sic_use = enrich_sic(raw_codes)
 
-        # Determine Category: if classify(name) is "Other" but sic_desc is non-empty, label as "SIC"
-        base_cat = classify(name)
-        if base_cat == "Other" and sic_desc:
-            category = "SIC"
-        else:
-            category = base_cat
+        # Category is just the regex‐based classify(name)
+        category = classify(name)
 
         recs.append({
             'CompanyNumber':     c.get('company_number', ''),
