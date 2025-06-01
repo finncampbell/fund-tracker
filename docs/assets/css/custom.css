@@ -1,192 +1,193 @@
 /* ─── Import Poppins ───────────────────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* ─── GLOBAL RESET & BODY ──────────────────────────────────────────────────── */
-* {
-  box-sizing: border-box;
-}
-
+/* ─── BODY & CONTAINER ─────────────────────────────────────────────────────── */
 body {
   margin: 0;
   padding: 2rem;
-  background-color: #0f0f13;  /* Dark navy/black background */
-  color: #ececec;              /* Light text on dark */
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               Helvetica, Arial, sans-serif, "Apple Color Emoji",
-               "Segoe UI Emoji";
-  line-height: 1.4;
+  background-color: #0f0f13; /* Dark background */
+  color: #ececec;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
 }
-
-/* ─── CARD CONTAINER ───────────────────────────────────────────────────────── */
 .ft-dashboard-card {
-  background-color: rgba(15, 15, 19, 0.85); /* Slightly translucent dark card */
+  background-color: rgba(15, 15, 19, 0.90);
   border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  padding: 0; /* We'll add internal padding as needed in sub-sections */
 }
 
-/* ─── HEADER (GRADIENT + TITLE + LINK) ─────────────────────────────────────── */
+/* ─── HEADER: UNIFIED GRADIENT BACKGROUND ─────────────────────────────────── */
 .ft-header {
-  background: linear-gradient(135deg, #A020F0 0%, #4AB3F4 100%);
-  padding: 2rem;
+  background: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%);
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
-
 .ft-header h1 {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
-  /* Clip the gradient to the text itself, but keep it the same gradient direction */
-  background: linear-gradient(135deg, #A020F0 0%, #4AB3F4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: #ffffff; /* Solid white for contrast */
 }
-
-.ft-header p a {
-  color: rgba(255, 255, 255, 0.85);
+.ft-download a {
+  color: #ffffff; /* White link */
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 500;
 }
 
-/* ─── NAV/FILTER BAR ───────────────────────────────────────────────────────── */
+/* ─── FILTER TABS ───────────────────────────────────────────────────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem;
-  background-color: rgba(15, 15, 19, 0.85);
-  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  justify-content: flex-start; /* left-align under “All” tab */
+  gap: 0.75rem;
+  padding: 1rem 2rem;    /* same horizontal padding as header */
+  background-color: rgba(15, 15, 19, 0.90);
+  border-bottom: 1px solid rgba(236,236,236,0.1);
+  justify-content: flex-start; /* left align */
 }
-
-/* PILLS (FILTER BUTTONS) */
 .ft-btn {
-  background-color: transparent;
-  border: 2px solid rgba(236, 236, 236, 0.2);
-  color: #ececec;
+  background: transparent;
+  border: 2px solid #A020F0; /* rich purple by default */
+  color: #A020F0;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
+  cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
-
 .ft-btn:hover {
-  background-color: rgba(236, 236, 236, 0.05);
-  color: #4AB3F4;
+  background: rgba(74, 179, 244, 0.1); /* light-blue hover */
   border-color: #4AB3F4;
+  color: #4AB3F4;
 }
-
 .ft-btn.active {
-  /* Gradient border and gradient‐clipped text: purple heavy → blue */
-  background-color: transparent;
-  border: none;
-  border-width: 2px;
-  border-image: linear-gradient(135deg, #A020F0 0%, #A020F0 45%, #4AB3F4 100%) 1;
-  color: transparent;
-  background: linear-gradient(135deg, #A020F0 0%, #A020F0 45%, #4AB3F4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.ft-btn.active:hover {
-  filter: brightness(1.1);
+  background: rgba(74, 179, 244, 0.2);
+  border-color: #4AB3F4;
+  color: #4AB3F4;
 }
 
 /* ─── BACKFILL CONTROLS ───────────────────────────────────────────────────── */
 .ft-backfill-section {
-  background-color: rgba(15, 15, 19, 0.85);
-  padding: 1rem;
+  background-color: rgba(15, 15, 19, 0.90);
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left‐align under “All” */
-  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  align-items: flex-start;
+  gap: 0.75rem;
 }
-
 .ft-backfill-controls {
   display: flex;
-  align-items: center;
   gap: 1rem;
-  margin-bottom: 0.5rem;
+  align-items: center;
 }
-
 .ft-date-input {
   background-color: rgba(236, 236, 236, 0.1);
-  border: 1px solid rgba(236, 236, 236, 0.2);
+  border: 1px solid rgba(236,236,236,0.2);
   border-radius: 6px;
   padding: 0.5rem 1rem;
   color: #ececec;
   font-size: 1rem;
   min-width: 240px;
-  cursor: pointer;
   transition: border-color 0.2s ease;
+  cursor: pointer;
 }
-
 .ft-date-input:hover,
 .ft-date-input:focus {
   border-color: #4AB3F4;
   outline: none;
 }
-
 .ft-backfill-btn {
-  background: linear-gradient(
-    to right,
-    #A020F0 0%,
-    #A020F0 60%,
-    #4AB3F4 100%
-  );
-  color: #fff;
+  background-color: #A020F0; /* solid purple by default */
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: filter 0.2s ease;
+  transition: background 0.2s ease;
 }
-
 .ft-backfill-btn:hover {
-  filter: brightness(1.1);
+  /* On hover, gently fade to blue */
+  background: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%);
 }
-
 .ft-backfill-note {
-  color: rgba(236, 236, 236, 0.6);
+  color: rgba(236,236,236,0.6);
   font-size: 0.875rem;
   margin: 0;
 }
 
-/* ─── TABLE WRAPPER ─────────────────────────────────────────────────────────── */
+/* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
+  background-color: rgba(15, 15, 19, 0.90);
+  padding: 1.5rem 2rem;
+  overflow: auto;
+}
+#companies {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0 0.5rem !important;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+#companies thead th {
+  color: #ffffff; /* Default white text in headers */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(236,236,236,0.1);
+}
+/* Each header gets a solid color sampled from the gradient scale */
+#companies thead th.cat-all     { color: #A020F0; } /* deep purple  */
+#companies thead th.cat-ventures{ color: #B300EB; } /* purple       */
+#companies thead th.cat-capital { color: #CC00D8; } /* magenta-ish  */
+#companies thead th.cat-equity  { color: #E600C6; } /* fuchsia-ish  */
+#companies thead th.cat-advisors{ color: #FF00B3; } /* hot pink-ish */
+#companies thead th.cat-partners{ color: #FF4A8F; } /* pinkish-red  */
+#companies thead th.cat-sic     { color: #4AB3F4; } /* light blue   */
+#companies thead th.cat-fund    { color: #1CBED1; } /* teal-ish     */
+
+#companies tbody tr {
   background-color: rgba(15, 15, 19, 0.85);
-  border-radius: 0 0 1rem 1rem;
-  overflow: hidden;
-  padding: 1rem;
+}
+#companies tbody tr:nth-child(even) {
+  background-color: rgba(15, 15, 19, 0.80);
+}
+#companies td {
+  padding: 0.75rem 0.5rem;
+  color: #ccc;
+  border: none;
+}
+#companies td:nth-child(4) .pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  background-color: #4AB3F4; /* light blue pill for category */
+  color: #0f0f13;
+  font-weight: 500;
 }
 
-/* Styling for DataTables elements (pagination/search) */
+/* Row hover effect */
+#companies tbody tr:hover td {
+  background-color: rgba(236, 236, 236, 0.05);
+}
+
+/* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
 .dataTables_wrapper .dataTables_filter input {
-  background-color: rgba(236, 236, 236, 0.1);
-  border: 1px solid rgba(236, 236, 236, 0.2);
+  background-color: rgba(236,236,236,0.1);
+  border: 1px solid rgba(236,236,236,0.2);
   color: #fff;
   border-radius: 4px;
   padding: 0.25rem 0.5rem;
 }
-
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: #ececec !important;
   border: 1px solid transparent;
@@ -195,85 +196,19 @@ body {
   margin: 0 0.2rem;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-  background: linear-gradient(135deg, #A020F0 0%, #4AB3F4 100%) !important;
+  background: #4AB3F4 !important;
   color: #fff !important;
 }
-
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   background-color: rgba(74, 179, 244, 0.2) !important;
   color: #4AB3F4 !important;
 }
 
-/* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
-#companies,
-#sic-companies {
-  border-collapse: separate !important;
-  border-spacing: 0 0.5rem !important;
-  width: 100%;
-  font-family: 'Poppins', system-ui, sans-serif;
-}
-
-#companies thead th,
-#sic-companies thead th {
-  background-color: transparent;
-  padding: 1rem 0.5rem;
-  text-align: left;
-  font-weight: 600;
-  font-family: 'Poppins', system-ui, sans-serif;
-  /* Purple→Blue gradient text in headers */
-  background: linear-gradient(to right, #A020F0 0%, #4AB3F4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-}
-
-#companies tbody tr,
-#sic-companies tbody tr {
-  background-color: rgba(15, 15, 19, 0.8);
-}
-
-#companies tbody tr:nth-child(even),
-#sic-companies tbody tr:nth-child(even) {
-  background-color: rgba(15, 15, 19, 0.75);
-}
-
-#companies td,
-#sic-companies td {
-  padding: 0.75rem 0.5rem;
-  border: none;
-  color: #ccc;
-}
-
-#companies td:nth-child(4),
-#sic-companies td:nth-child(4) {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 2rem;
-  background-color: #4AB3F4; /* light‐blue pill */
-  color: #0f0f13;            /* dark text inside pill */
-  font-family: 'Poppins', system-ui, sans-serif;
-  font-weight: 500;
-}
-
-#companies tbody tr:hover td,
-#sic-companies tbody tr:hover td {
-  background-color: rgba(236, 236, 236, 0.05);
-}
-
-/* Remove bottom border on last row */
-#companies tbody tr:last-child td,
-#sic-companies tbody tr:last-child td {
-  border-bottom: none;
-}
-
 /* ─── RESPONSIVE ADJUSTMENTS ───────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .ft-filters {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .ft-btn {
     padding: 0.4rem 0.8rem;
@@ -281,20 +216,15 @@ body {
   }
   .ft-header {
     padding: 1.5rem 1rem;
-    text-align: center;
     flex-direction: column;
     gap: 1rem;
-  }
-  .ft-header p {
-    margin: 0;
+    text-align: center;
   }
   .ft-backfill-controls {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .ft-date-input {
-    width: 100%;
-  }
+  .ft-date-input,
   .ft-backfill-btn {
     width: 100%;
   }
