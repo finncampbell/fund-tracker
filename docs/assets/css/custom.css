@@ -5,38 +5,47 @@
 body {
   margin: 0;
   padding: 2rem;
-  background-color: #0f0f13; /* Dark background */
+  background-color: #1b1f28; /* Slightly less dark navy background */
   color: #ececec;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-               Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   display: flex;
   justify-content: center;
 }
+
 .ft-dashboard-card {
-  background-color: rgba(15, 15, 19, 0.90);
+  background-color: #1b1f28; /* Match body for a uniform “pill” look */
   border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
+  padding: 0; /* sub-sections handle their own padding */
 }
 
-/* ─── HEADER: UNIFIED GRADIENT BACKGROUND ─────────────────────────────────── */
+/* ─── HEADER: Background Is Just Solid #1b1f28 ────────────────────────────── */
 .ft-header {
-  background: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%);
+  background-color: #1b1f28; /* same as card */
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
-.ft-header h1 {
+.ft-title {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  color: #ffffff; /* Solid white for contrast */
+  /* A single left→right gradient across the entire title */
+  background: linear-gradient(90deg, #A020F0, #4AB3F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .ft-download a {
-  color: #ffffff; /* White link */
+  color: #4ab3f4; /* subtle blue link */
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 500;
@@ -47,15 +56,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  padding: 1rem 2rem;    /* same horizontal padding as header */
-  background-color: rgba(15, 15, 19, 0.90);
+  padding: 1rem 2rem; /* match header’s horizontal padding */
+  background-color: #1b1f28; /* same navy */
   border-bottom: 1px solid rgba(236,236,236,0.1);
-  justify-content: flex-start; /* left align */
+  justify-content: flex-start; /* left-align under “All” tab */
 }
+
 .ft-btn {
   background: transparent;
   border: 2px solid #A020F0; /* rich purple by default */
-  color: #A020F0;
+  color: #A020F0;            /* text also purple */
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 0.9rem;
@@ -63,25 +73,42 @@ body {
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
+
+/* Each tab’s text color “slides” along the same gradient in order */
+.cat-all       { color: #A020F0; }  /* far left (deep purple) */
+.cat-ventures  { color: #B64EEB; }
+.cat-capital   { color: #CB15E1; }
+.cat-equity    { color: #E105D5; }
+.cat-advisors  { color: #F200C7; }
+.cat-partners  { color: #FF00B1; }
+.cat-sic       { color: #4AB3F4; }  /* far right toward blue */
+.cat-fund      { color: #25C9E3; }
+.cat-directors { color: #4AB3F4; }
+
 .ft-btn:hover {
-  background: rgba(74, 179, 244, 0.1); /* light-blue hover */
-  border-color: #4AB3F4;
+  background: none;
+  border-color: #4AB3F4; /* light blue on hover */
   color: #4AB3F4;
 }
+
 .ft-btn.active {
-  background: rgba(74, 179, 244, 0.2);
-  border-color: #4AB3F4;
+  background: none;
+  border-color: #4AB3F4; /* active tab is light blue outline */
   color: #4AB3F4;
+}
+.ft-btn.active:hover {
+  filter: brightness(1.1);
 }
 
 /* ─── BACKFILL CONTROLS ───────────────────────────────────────────────────── */
 .ft-backfill-section {
-  background-color: rgba(15, 15, 19, 0.90);
+  background-color: #1b1f28; /* same navy */
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* left-align */
   gap: 0.75rem;
+  border-bottom: 1px solid rgba(236,236,236,0.1);
 }
 .ft-backfill-controls {
   display: flex;
@@ -89,11 +116,11 @@ body {
   align-items: center;
 }
 .ft-date-input {
-  background-color: rgba(236, 236, 236, 0.1);
+  background-color: rgba(236, 236, 236, 0.05);
   border: 1px solid rgba(236,236,236,0.2);
   border-radius: 6px;
   padding: 0.5rem 1rem;
-  color: #ececec;
+  color: #ccc;
   font-size: 1rem;
   min-width: 240px;
   transition: border-color 0.2s ease;
@@ -105,19 +132,20 @@ body {
   outline: none;
 }
 .ft-backfill-btn {
-  background-color: #A020F0; /* solid purple by default */
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
+  background: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%) 1;
+  color: #A020F0;
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: filter 0.2s ease, color 0.2s ease;
 }
 .ft-backfill-btn:hover {
-  /* On hover, gently fade to blue */
-  background: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%);
+  filter: brightness(1.1);
+  color: #4AB3F4;
 }
 .ft-backfill-note {
   color: rgba(236,236,236,0.6);
@@ -127,7 +155,7 @@ body {
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
-  background-color: rgba(15, 15, 19, 0.90);
+  background-color: #1b1f28; /* same navy */
   padding: 1.5rem 2rem;
   overflow: auto;
 }
@@ -138,22 +166,22 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 #companies thead th {
-  color: #ffffff; /* Default white text in headers */
-  font-weight: 600;
-  font-size: 1rem;
   padding: 1rem 0.5rem;
   text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
   border-bottom: 1px solid rgba(236,236,236,0.1);
 }
-/* Each header gets a solid color sampled from the gradient scale */
-#companies thead th.cat-all     { color: #A020F0; } /* deep purple  */
-#companies thead th.cat-ventures{ color: #B300EB; } /* purple       */
-#companies thead th.cat-capital { color: #CC00D8; } /* magenta-ish  */
-#companies thead th.cat-equity  { color: #E600C6; } /* fuchsia-ish  */
-#companies thead th.cat-advisors{ color: #FF00B3; } /* hot pink-ish */
-#companies thead th.cat-partners{ color: #FF4A8F; } /* pinkish-red  */
-#companies thead th.cat-sic     { color: #4AB3F4; } /* light blue   */
-#companies thead th.cat-fund    { color: #1CBED1; } /* teal-ish     */
+/* Header text uses a solid color sampled from the same gradient as tabs */
+#companies thead th.cat-all       { color: #A020F0; }  /* deep purple */
+#companies thead th.cat-ventures  { color: #B64EEB; }
+#companies thead th.cat-capital   { color: #CB15E1; }
+#companies thead th.cat-equity    { color: #E105D5; }
+#companies thead th.cat-advisors  { color: #F200C7; }
+#companies thead th.cat-partners  { color: #FF00B1; }
+#companies thead th.cat-sic       { color: #4AB3F4; }  /* light blue */
+#companies thead th.cat-fund      { color: #25C9E3; }
+#companies thead th.cat-directors { color: #4AB3F4; }
 
 #companies tbody tr {
   background-color: rgba(15, 15, 19, 0.85);
@@ -170,7 +198,7 @@ body {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 2rem;
-  background-color: #4AB3F4; /* light blue pill for category */
+  background-color: rgba(74, 179, 244, 0.3);
   color: #0f0f13;
   font-weight: 500;
 }
