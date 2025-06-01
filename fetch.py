@@ -2,7 +2,7 @@ import os
 import time
 import requests
 from datetime import datetime
-from logger import log
+from logger import log         # still used for errors/warnings to the log file
 from enrich import classify, enrich_sic
 
 # Advanced-Search endpoint
@@ -44,11 +44,11 @@ def fetch_companies_on(date_str: str) -> list[dict]:
         )
         if resp_big.status_code == 200:
             big_items = resp_big.json().get('items', [])
-            log.info(f"[SANITY] One-shot (size=5000) returned {len(big_items)} items for {date_str}")
+            print(f"[SANITY] One-shot (size=5000) returned {len(big_items)} items for {date_str}")
         else:
-            log.warning(f"[SANITY] One-shot returned status {resp_big.status_code} for {date_str}")
+            print(f"[SANITY] One-shot returned status {resp_big.status_code} for {date_str}")
     except Exception as e:
-        log.warning(f"[SANITY] One-shot exception for {date_str}: {e}")
+        print(f"[SANITY] One-shot exception for {date_str}: {e}")
 
     page_number = 0
     while True:
@@ -70,13 +70,13 @@ def fetch_companies_on(date_str: str) -> list[dict]:
                     log.warning(f"[PAGINATION] Non-200 ({resp.status_code}) on {date_str}@{start_index} (attempt {attempt})")
             except Exception as e:
                 log.warning(f"[PAGINATION] Exception on {date_str}@{start_index} attempt {attempt}: {e}")
-            log.info(f"[PAGINATION] sleeping {RETRY_DELAY}s before retrying page {start_index}")
+            print(f"[PAGINATION] sleeping {RETRY_DELAY}s before retrying page {start_index}")
             time.sleep(RETRY_DELAY)
         else:
             log.error(f"[PAGINATION] FAILED to fetch any data at {date_str}@{start_index}; aborting pagination")
             break
 
-        log.info(f"[PAGINATION] Page {page_number}, start_index={start_index}, got {len(page_items)} items")
+        print(f"[PAGINATION] Page {page_number}, start_index={start_index}, got {len(page_items)} items")
         page_number += 1
 
         if not page_items:
@@ -86,12 +86,12 @@ def fetch_companies_on(date_str: str) -> list[dict]:
         all_items.extend(page_items)
 
         if len(page_items) < size:
-            log.info(f"[PAGINATION] Last page likely hit (only {len(page_items)} < {size})")
+            print(f"[PAGINATION] Last page likely hit (only {len(page_items)} < {size})")
             break
 
         start_index += size
 
-    log.info(f"[PAGINATION] Finished for {date_str}: fetched {len(all_items)} total items over {page_number} pages")
+    print(f"[PAGINATION] Finished for {date_str}: fetched {len(all_items)} total items over {page_number} pages")
 
     # ─── Transform JSON items into “master” record dicts ─────────────────────────
     now = datetime.utcnow()
