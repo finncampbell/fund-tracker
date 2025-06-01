@@ -105,9 +105,7 @@ body {
   filter: brightness(1.05);        /* slight pop on hover */
 }
 
-
 /* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
-/* Section container */
 .ft-backfill-section {
   background-color: transparent;
   padding: 1rem 2rem;
@@ -118,14 +116,12 @@ body {
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
 }
 
-/* Input + button alignment */
 .ft-backfill-controls {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-/* Date input box (unchanged) */
 .ft-date-input {
   background-color: rgba(236, 236, 236, 0.05);
   border: 1px solid rgba(236, 236, 236, 0.2);
@@ -181,13 +177,9 @@ body {
   margin: 0;
 }
 
-
-/* ─── EXPAND-DIRECTORS BUTTON ───────────────────────────────────────────────── */
-/* At rest: neon blue outline/text with subtle blue glow */
-/* On hover/active: rich purple outline/text with purple glow */
-/* Pill-shaped throughout */
-
-.ft-expand-btn {
+/* ─── EXPAND‐FOR‐DIRECTORS BUTTON ───────────────────────────────────────────── */
+/* Resting state: neon‐blue outline/text + subtle blue glow */
+.expand-btn {
   background: transparent;
   border: 2px solid #4AB3F4;      /* neon blue outline at rest */
   color: #4AB3F4;                 /* neon blue text at rest */
@@ -204,8 +196,9 @@ body {
     0 0 12px rgba(74, 179, 244, 0.15);
 }
 
-.ft-expand-btn:hover,
-.ft-expand-btn.active {
+/* Hover OR when it has class="active": switch to purple glow */
+.expand-btn:hover,
+.expand-btn.active {
   background: transparent;
   border-color: #A020F0;          /* rich purple outline on hover/active */
   color: #A020F0;                 /* rich purple text on hover/active */
@@ -216,10 +209,9 @@ body {
     0 0 14px rgba(160, 32, 240, 0.4);
 }
 
-.ft-expand-btn:hover {
+.expand-btn:hover {
   filter: brightness(1.05);        /* slight pop on hover */
 }
-
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
@@ -228,6 +220,7 @@ body {
   overflow: auto;
 }
 
+/* Apply to both #companies and #sic-companies tables */
 #companies,
 #sic-companies {
   width: 100%;
@@ -236,14 +229,14 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* Column headers for all “display” tables: rich purple */
+/* Column headers for all DataTables: rich purple */
 table.display thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 1rem;
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  color: #A020F0; /* rich purple for all table headers */
+  color: #A020F0; /* rich purple for headers */
 }
 
 /* Table row backgrounds */
@@ -254,14 +247,14 @@ table.display tbody tr:nth-child(even) {
   background-color: rgba(15, 15, 19, 0.80);
 }
 
-/* Table cell text for all “display” tables: light neon-blue */
+/* Table cell text for all DataTables: light neon-blue */
 table.display tbody td {
   padding: 0.75rem 0.5rem;
   color: #4AB3F4;   /* light neon-blue text for content */
   border: none;
 }
 
-/* “Category” pill inside the #companies table (if used) */
+/* “Category” pill inside #companies table (if used) */
 #companies td:nth-child(4) .pill {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -275,7 +268,6 @@ table.display tbody td {
 table.display tbody tr:hover td {
   background-color: rgba(236, 236, 236, 0.05);
 }
-
 
 /* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
 .dataTables_wrapper .dataTables_filter input {
@@ -309,7 +301,7 @@ table.display tbody tr:hover td {
   }
   .ft-btn,
   .ft-backfill-btn,
-  .ft-expand-btn {
+  .expand-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
@@ -325,7 +317,7 @@ table.display tbody tr:hover td {
   }
   .ft-date-input,
   .ft-backfill-btn,
-  .ft-expand-btn {
+  .expand-btn {
     width: 100%;
   }
 }
