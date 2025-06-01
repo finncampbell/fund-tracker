@@ -5,55 +5,63 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fund Tracker Dashboard</title>
 
-  <!-- DataTables CSS -->
+  <!-- DataTables CSS (leave this, it only provides table basics) -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   >
-  <!-- Flatpickr CSS -->
+  <!-- Flatpickr CSS (leave this too, it only styles the datepicker) -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   >
-  <!-- Custom CSS Overrides -->
+
+  <!-- ─────────────────────────── Inlined Custom CSS ─────────────────────────── -->
   <style>
-    /* ─── Global Reset ────────────────────────────────────────────────────────────── */
+    /* ─── GLOBAL RESET & BODY ───────────────────────────────────────────────── */
     * {
       box-sizing: border-box;
     }
     body {
       margin: 0;
       padding: 0;
-      background-color: #0f0f13; /* very dark navy background */
-      color: #ececec;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-                   Helvetica, Arial, sans-serif, "Apple Color Emoji", 
-                   "Segoe UI Emoji";
+      background-color: #0f0f13;      /* Dark navy/black background */
+      color: #ececec;                  /* Light text */
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji";
       line-height: 1.4;
     }
 
-    /* ─── Container Card ──────────────────────────────────────────────────────────── */
+    /* ─── DASHBOARD CARD CONTAINER ───────────────────────────────────────────── */
     .ft-dashboard-card {
       max-width: 1200px;
-      margin: 2rem auto;
-      padding: 1.5rem 2rem 2rem 2rem;
-      background-color: rgba(15, 15, 19, 0.85);
+      margin: 2rem auto;               /* Center in the viewport with top/bottom margin */
+      padding: 1.5rem 2rem 2rem 2rem;   /* Inner padding */
+      background-color: rgba(15, 15, 19, 0.85); /* Slightly translucent dark card */
       border-radius: 8px;
       position: relative;
     }
 
-    /* ─── Header ─────────────────────────────────────────────────────────────────── */
+    /* ─── HEADER (TITLE + DOWNLOAD LINK) ──────────────────────────────────────── */
     .ft-header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 1.5rem;
     }
     .ft-title {
       font-size: 2.5rem;
       font-weight: 600;
       margin: 0;
-      /* Gradient text: purple (#A020F0) → lighter blue (#4AB3F4) */
+      /* Purple→Blue gradient text: purple covers ~45%, then blue to 100% */
       background: linear-gradient(
         to right,
         #A020F0 0%,
@@ -66,7 +74,7 @@
       text-fill-color: transparent;
     }
     .ft-download a {
-      color: #4AB3F4;
+      color: #4AB3F4;   /* Light blue link */
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
@@ -75,7 +83,7 @@
       text-decoration: underline;
     }
 
-    /* ─── Filter Tabs ─────────────────────────────────────────────────────────────── */
+    /* ─── FILTER TABS ──────────────────────────────────────────────────────────── */
     .ft-filters {
       display: flex;
       flex-wrap: wrap;
@@ -102,18 +110,17 @@
       outline: none;
     }
     .ft-btn.active {
-      /* Gradient border */
-      color: transparent;
-      border: none;
+      color: transparent;      /* Text will come from gradient */
+      border: none;            /* Remove the gray border */
       border-width: 2px;
+      /* Gradient border: heavy purple (0–45%), then fade to blue (45–100%) */
       border-image: linear-gradient(
         to right,
         #A020F0 0%,
         #A020F0 45%,
         #4AB3F4 100%
       ) 1;
-      background: none;
-      /* Gradient text */
+      /* Gradient text inside */
       background: linear-gradient(
         to right,
         #A020F0 0%,
@@ -129,13 +136,12 @@
       filter: brightness(1.1);
     }
 
-    /* ─── Backfill Controls ───────────────────────────────────────────────────────── */
+    /* ─── BACKFILL CONTROLS ───────────────────────────────────────────────────── */
     .ft-backfill-section {
       margin-bottom: 1.5rem;
-      /* Ensure left alignment under the “All” tab */
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; /* Ensures left alignment under “All” tab */
     }
     .ft-backfill-controls {
       display: flex;
@@ -166,6 +172,7 @@
       color: #fff;
       border: none;
       border-radius: 6px;
+      /* Solid fill gradient: purple 0–60%, blue 60–100% */
       background: linear-gradient(
         to right,
         #A020F0 0%,
@@ -184,13 +191,13 @@
       margin: 0;
     }
 
-    /* ─── Table Styling ───────────────────────────────────────────────────────────── */
+    /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
     .table-container {
       border: 1px solid rgba(236, 236, 236, 0.1);
       border-radius: 6px;
       overflow: hidden;
     }
-    /* Header gradient on text */
+    /* Header cells: purple→blue gradient text */
     #companies thead th {
       padding: 0.75rem;
       background-color: rgba(15, 15, 19, 0.9);
@@ -203,23 +210,23 @@
       font-size: 1rem;
       border-bottom: 1px solid rgba(236, 236, 236, 0.1);
     }
-    /* Body cells */
+    /* Body cells: dark background, subtle borders */
     #companies tbody td {
       padding: 0.5rem 0.75rem;
       border-bottom: 1px solid rgba(236, 236, 236, 0.05);
-      color: #ccc;
       background-color: rgba(15, 15, 19, 0.8);
+      color: #ccc;
     }
-    /* Hover effect on rows */
+    /* Hover effect: lighten row */
     #companies tbody tr:hover td {
       background-color: rgba(236, 236, 236, 0.05);
     }
-    /* Last row has no border bottom */
+    /* Remove border bottom on last row */
     #companies tbody tr:last-child td {
       border-bottom: none;
     }
 
-    /* ─── DataTables Overrides ──────────────────────────────────────────────────── */
+    /* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
     .dataTables_wrapper .dataTables_filter input {
       background-color: rgba(236, 236, 236, 0.1);
       border: 1px solid rgba(236, 236, 236, 0.2);
@@ -244,14 +251,12 @@
       color: #4AB3F4 !important;
     }
   </style>
-
-  <!-- Custom CSS File -->
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- ────────────────────────────────────────────────────────────────────────────── -->
 </head>
 <body>
 
   <div class="ft-dashboard-card">
-    <!-- Header -->
+    <!-- HEADER: TITLE + DOWNLOAD LINK -->
     <div class="ft-header">
       <h1 class="ft-title">Fund Tracker Dashboard</h1>
       <p class="ft-download">
@@ -259,7 +264,7 @@
       </p>
     </div>
 
-    <!-- Filter Tabs -->
+    <!-- FILTER TABS -->
     <nav class="ft-filters">
       <button class="ft-btn active" data-filter="">All</button>
       <button class="ft-btn" data-filter="Ventures">Ventures</button>
@@ -271,7 +276,7 @@
       <button class="ft-btn" data-filter="Fund Entities">Fund Entities</button>
     </nav>
 
-    <!-- Backfill Controls (aligned under “All” tab) -->
+    <!-- BACKFILL CONTROLS (LEFT‐ALIGNED UNDER “All” TAB) -->
     <div class="ft-backfill-section">
       <div class="ft-backfill-controls">
         <input
@@ -287,7 +292,7 @@
       </small>
     </div>
 
-    <!-- Data Table -->
+    <!-- MAIN DATA TABLE -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
@@ -304,7 +309,7 @@
       </table>
     </div>
 
-    <!-- Hidden SIC Table (unchanged) -->
+    <!-- SIC‐MATCH TABLE (HIDDEN BY DEFAULT) -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
@@ -323,14 +328,15 @@
         <tbody></tbody>
       </table>
     </div>
+
   </div>
 
-  <!-- JS libraries -->
+  <!-- ─── SCRIPTS (UNCHANGED) ────────────────────────────────────────────────────── -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Custom JS -->
   <script src="assets/js/dashboard.js"></script>
+  <!-- ────────────────────────────────────────────────────────────────────────────── -->
 </body>
 </html>
