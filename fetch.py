@@ -1,9 +1,6 @@
-# fetch.py
-
 import os
 import time
 import requests
-import logging
 from datetime import datetime
 from logger import log
 from enrich import classify, enrich_sic
@@ -69,15 +66,16 @@ def fetch_companies_on(date_str: str) -> list[dict]:
     now = datetime.utcnow()
     recs = []
     for c in all_items:
-        name = c.get('title') or c.get('company_name','')
-        codes = c.get('sic_codes', [])
-        joined_codes, sic_desc, sic_use = enrich_sic(codes)
+        name = c.get('title') or c.get('company_name', '')
+        raw_codes = c.get('sic_codes', []) or []
+        joined_codes = ", ".join(raw_codes)
+        sic_desc, sic_use = enrich_sic(raw_codes)
         recs.append({
-            'CompanyNumber':     c.get('company_number',''),
+            'CompanyNumber':     c.get('company_number', ''),
             'CompanyName':       name,
-            'IncorporationDate': c.get('date_of_creation',''),
-            'Status':            c.get('company_status',''),
-            'Source':            c.get('source',''),
+            'IncorporationDate': c.get('date_of_creation', ''),
+            'Status':            c.get('company_status', ''),
+            'Source':            c.get('source', ''),
             'DateDownloaded':    now.date().isoformat(),
             'TimeDiscovered':    now.isoformat(),
             'SIC Codes':         joined_codes,
