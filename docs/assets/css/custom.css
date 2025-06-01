@@ -228,39 +228,40 @@ body {
   overflow: auto;
 }
 
-#companies {
+#companies,
+#sic-companies {
   width: 100%;
   border-collapse: separate !important;
   border-spacing: 0 0.5rem !important;
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* Column headers: back to rich purple */
-#companies thead th {
+/* Column headers for all “display” tables: rich purple */
+table.display thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 1rem;
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  color: #A020F0; /* rich purple for headers */
+  color: #A020F0; /* rich purple for all table headers */
 }
 
 /* Table row backgrounds */
-#companies tbody tr {
+table.display tbody tr {
   background-color: rgba(15, 15, 19, 0.85);
 }
-#companies tbody tr:nth-child(even) {
+table.display tbody tr:nth-child(even) {
   background-color: rgba(15, 15, 19, 0.80);
 }
 
-/* Table cell text: light neon-blue */
-#companies td {
+/* Table cell text for all “display” tables: light neon-blue */
+table.display tbody td {
   padding: 0.75rem 0.5rem;
   color: #4AB3F4;   /* light neon-blue text for content */
   border: none;
 }
 
-/* “Category” pill inside the table (if used) */
+/* “Category” pill inside the #companies table (if used) */
 #companies td:nth-child(4) .pill {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -271,7 +272,7 @@ body {
 }
 
 /* Hover state for table rows */
-#companies tbody tr:hover td {
+table.display tbody tr:hover td {
   background-color: rgba(236, 236, 236, 0.05);
 }
 
