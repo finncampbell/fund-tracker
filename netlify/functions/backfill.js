@@ -1,6 +1,3 @@
-
-// netlify/functions/backfill.js
-
 exports.handler = async function(event) {
   // CORS preflight handling
   if (event.httpMethod === 'OPTIONS') {
@@ -46,6 +43,8 @@ exports.handler = async function(event) {
   const repo     = 'finncampbell/fund-tracker';
   const workflow = 'fund-tracker.yml';
 
+  console.log(`Dispatching workflow for ${start_date}→${end_date}`);
+
   const resp = await fetch(
     `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`,
     {
@@ -64,6 +63,7 @@ exports.handler = async function(event) {
 
   if (!resp.ok) {
     const errorText = await resp.text();
+    console.error(`GitHub API error: ${errorText}`);
     return {
       statusCode: resp.status,
       headers: { 'Access-Control-Allow-Origin': '*' },
