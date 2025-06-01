@@ -15,7 +15,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Your new custom.css (dark/navy + gradient accents) -->
+  <!-- Your custom.css (dark/navy + gradient + neon) -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
@@ -71,7 +71,10 @@
             <th class="cat-equity">Incorporation Date</th>
             <th class="cat-ventures">Category</th>
             <th class="cat-sic">Date Downloaded</th>
-            <th class="cat-directors">Directors</th>
+            <th class="cat-directors">
+              <!-- Wrapped “Directors” in a button so it receives the neon styling -->
+              <button class="ft-expand-btn">Directors</button>
+            </th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -91,7 +94,9 @@
             <th class="cat-sic">SIC Codes</th>
             <th class="cat-sic">SIC Description</th>
             <th class="cat-sic">Typical Use Case</th>
-            <th class="cat-directors">Directors</th>
+            <th class="cat-directors">
+              <button class="ft-expand-btn">Directors</button>
+            </th>
           </tr>
         </thead>
         <tbody></tbody>
