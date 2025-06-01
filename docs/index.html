@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fund Tracker Dashboard</title>
 
-  <!-- DataTables CSS (unchanged) -->
+  <!-- DataTables & Flatpickr -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
-  >
-  <!-- Flatpickr CSS (unchanged) -->
+  />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-  >
-  <!-- Your new, dark‐theme custom.css -->
+  />
+
+  <!-- Custom Dark‐Theme CSS (Option 4) -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
   <div class="ft-dashboard-card">
-    <!-- HEADER: Title + Download Link -->
+    <!-- HEADER: Unified Gradient Background, White Text -->
     <div class="ft-header">
       <h1 class="ft-title">Fund Tracker Dashboard</h1>
       <p class="ft-download">
@@ -30,19 +30,19 @@
       </p>
     </div>
 
-    <!-- FILTER TABS -->
+    <!-- FILTER TABS: Solid Purple Outline, Light‐Blue on Active -->
     <nav class="ft-filters">
-      <button class="ft-btn active" data-filter="">All</button>
-      <button class="ft-btn" data-filter="Ventures">Ventures</button>
-      <button class="ft-btn" data-filter="Capital">Capital</button>
-      <button class="ft-btn" data-filter="Equity">Equity</button>
-      <button class="ft-btn" data-filter="Advisors">Advisors</button>
-      <button class="ft-btn" data-filter="Partners">Partners</button>
-      <button class="ft-btn" data-filter="SIC">SIC Codes</button>
-      <button class="ft-btn" data-filter="Fund Entities">Fund Entities</button>
+      <button class="ft-btn cat-all active">All</button>
+      <button class="ft-btn cat-ventures">Ventures</button>
+      <button class="ft-btn cat-capital">Capital</button>
+      <button class="ft-btn cat-equity">Equity</button>
+      <button class="ft-btn cat-advisors">Advisors</button>
+      <button class="ft-btn cat-partners">Partners</button>
+      <button class="ft-btn cat-sic">SIC Codes</button>
+      <button class="ft-btn cat-fund">Fund Entities</button>
     </nav>
 
-    <!-- BACKFILL CONTROLS (Left‐aligned under “All” tab) -->
+    <!-- BACKFILL CONTROLS -->
     <div class="ft-backfill-section">
       <div class="ft-backfill-controls">
         <input
@@ -51,59 +51,47 @@
           placeholder="Click to select date range"
           readonly
         />
-        <button id="run-backfill" class="ft-backfill-btn">
-          Run Historical Backfill
-        </button>
+        <button id="run-backfill" class="ft-backfill-btn">Run Historical Backfill</button>
       </div>
       <small class="ft-backfill-note">
         Backfill historical data without leaving this page.
       </small>
     </div>
 
-    <!-- MAIN DATA TABLE -->
+    <!-- MAIN TABLE: Column Headers Use Solid Colors Sampled from the Gradient -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
           <tr>
-            <th>Company Name</th>
-            <th>Company Number</th>
-            <th>Incorporation Date</th>
-            <th>Category</th>
-            <th>Date Downloaded</th>
-            <th>Directors</th>
+            <th class="cat-all">Company Name</th>
+            <th class="cat-capital">Company Number</th>
+            <th class="cat-equity">Incorporation Date</th>
+            <th class="cat-ventures">Category</th>
+            <th class="cat-sic">Date Downloaded</th>
+            <th class="cat-fund">Directors</th>
           </tr>
         </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- SIC‐MATCH TABLE (hidden by default) -->
-    <div class="table-container" id="sic-companies-container" style="display:none;">
-      <table id="sic-companies" class="display" style="width:100%">
-        <thead>
+        <tbody>
+          <!-- Data rows (with pills) -->
           <tr>
-            <th>Company Name</th>
-            <th>Company Number</th>
-            <th>Incorporation Date</th>
-            <th>Category</th>
-            <th>Date Downloaded</th>
-            <th>SIC Codes</th>
-            <th>SIC Description</th>
-            <th>Typical Use Case</th>
-            <th>Directors</th>
+            <td class="cat-ventures">ROOKRIDGE VENTURES LTD</td>
+            <td>16487047</td>
+            <td>2025-05-31</td>
+            <td><span class="pill cat-ventures">Ventures</span></td>
+            <td>2025-06-01</td>
+            <td><button class="director-btn">Expand</button></td>
           </tr>
-        </thead>
-        <tbody></tbody>
+          <!-- More rows… -->
+        </tbody>
       </table>
     </div>
   </div>
 
-  <!-- JS libraries (unchanged) -->
+  <!-- JS Libraries (unchanged) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Your existing dashboard.js (unchanged) -->
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
