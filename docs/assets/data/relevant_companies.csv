@@ -1,0 +1,8 @@
+CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
+16487449,BROOKDENE CAPITAL ADVISORS LIMITED,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,"70221, 70229","Capital, SIC",Financial management (of companies and enterprises),Treasury and internal finance arm.
+16487345,URBAN EQUITY CONSULTANCY LTD,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,"70229, 98000",Equity,,
+16487289,KATTAH INVESTMENT GROUP LTD,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,68100,Investments,,
+16487158,CE JUBB INVESTMENTS LTD,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,68100,Investments,,
+16487244,PANOVUS GROUP LIMITED,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16487181,VM CAPITAL LTD,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,68209,Capital,,
+16487448,D COLEMAN HOLDINGS LTD,2025-06-01,active,,2025-06-01,2025-06-01T16:22:54.154246,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
