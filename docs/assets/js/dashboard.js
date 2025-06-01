@@ -7,14 +7,13 @@ $(document).ready(function() {
     download: true,
     header: true,
     complete(results) {
-      // Filter out any “empty” rows
+      // Filter out any rows lacking a CompanyNumber
       const raw = results.data.filter(r => r['CompanyNumber']);
 
       let directorsMap = {};
       fetch('assets/data/directors.json')
         .then(r => r.json())
         .then(json => {
-          // Trim keys in case there are stray spaces
           directorsMap = Object.fromEntries(
             Object.entries(json).map(([k, v]) => [k.trim(), v])
           );
@@ -26,7 +25,7 @@ $(document).ready(function() {
         });
 
       function initTables() {
-        // Normalize each row into an object with matching keys
+        // Build a normalized array of objects from the parsed CSV rows
         const data = raw.map(r => {
           const num = r['CompanyNumber'].trim();
           return {
@@ -42,10 +41,10 @@ $(document).ready(function() {
           };
         });
 
-        // Main companies table (everything except Category === "SIC")
-        const filteredMainData = data.filter(r => r.Category !== 'SIC');
+        // MAIN TABLE: show everything with Category != "Other"
+        const mainData = data.filter(r => r.Category !== 'Other');
         const companyTable = $('#companies').DataTable({
-          data: filteredMainData,
+          data: mainData,
           columns: [
             { data: 'CompanyName',       title: 'Company Name' },
             { data: 'CompanyNumber',     title: 'Company Number' },
@@ -67,8 +66,8 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // SIC-only companies table (Category === "SIC")
-        const sicData = data.filter(r => r.Category === 'SIC');
+        // SIC TABLE: show everything with a non‐empty SICDescription
+        const sicData = data.filter(r => r.SICDescription);
         const sicTable = $('#sic-companies').DataTable({
           data: sicData,
           columns: [
@@ -137,27 +136,27 @@ $(document).ready(function() {
         $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
         $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
 
-        // Filter hook for “Non‐Other” in main table (categories other than “SIC”)
+        // Filter hook (applies to the MAIN table only)
         $.fn.dataTable.ext.search.push((settings, rowData) => {
           if (settings.nTable.id !== 'companies') return true;
           const active = $('.ft-btn.active').data('filter') || '';
           if (!active) {
-            // “All” button: show everything except rows with Category “Other”
+            // “All” button: show any row where Category !== "Other"
             return rowData[3] !== 'Other';
           }
           if (active === 'SIC') {
-            // Handled by toggling the SIC table
+            // “SIC” button lives in its own table—hide all in main
             return false;
           }
           if (active === 'Fund Entities') {
-            // Matches by company name
+            // Match by fund‐entity regex on CompanyName
             return fundEntitiesRE.test(rowData[0]);
           }
-          // Otherwise, match exact category
+          // Otherwise match exact Category
           return rowData[3] === active;
         });
 
-        // Tab click handler (filters + show/hide appropriate table)
+        // Tab‐button click handler
         $('.ft-filters').on('click', '.ft-btn', function() {
           $('.ft-btn').removeClass('active');
           $(this).addClass('active');
