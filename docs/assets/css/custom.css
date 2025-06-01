@@ -45,7 +45,6 @@ body {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  /* Keep existing title gradient for distinction */
   background: linear-gradient(90deg, #A020F0, #4AB3F4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,7 +59,7 @@ body {
   font-weight: 500;
 }
 
-/* ─── FILTER TABS (NEON‐GLOW ON ALL STATES) ───────────────────────────────── */
+/* ─── FILTER TABS (NEON-GLOW ON ALL STATES) ───────────────────────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
@@ -74,36 +73,38 @@ body {
 /* Base style for every tab button */
 .ft-btn {
   background: transparent;
-  border: 2px solid #A020F0;      /* default neon‐purple outline */
-  color: #A020F0;                 /* default neon‐purple text */
+  border: 2px solid #A020F0;      /* rich purple outline at rest */
+  color: #A020F0;                 /* rich purple text at rest */
   padding: 0.5rem 1rem;
-  border-radius: 999px;           /* pill shape */
+  border-radius: 999px;           /* fully pill-shaped */
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
   /* subtle purple glow even when unselected */
-  box-shadow: 0 0 6px rgba(160, 32, 240, 0.25),
-              0 0 12px rgba(160, 32, 240, 0.15);
+  box-shadow: 
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
 }
 
 /* Hover and “active” (selected) state for tabs */
 .ft-btn:hover,
 .ft-btn.active {
-  background: transparent;       /* remain transparent */
-  border-color: #4AB3F4;         /* switch outline to neon blue */
-  color: #4AB3F4;                /* switch text to neon blue */
+  background: transparent;        /* remain transparent */
+  border-color: #4AB3F4;          /* neon blue outline on hover/active */
+  color: #4AB3F4;                 /* neon blue text on hover/active */
 
-  /* stronger blue glow when hovered or active */
+  /* stronger neon-blue glow when hovered or active */
   box-shadow:
     0 0 6px rgba(74, 179, 244, 0.6),
     0 0 14px rgba(74, 179, 244, 0.4);
 }
 
 .ft-btn:hover {
-  filter: brightness(1.05);       /* slight pop on hover */
+  filter: brightness(1.05);        /* slight pop on hover */
 }
+
 
 /* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
 /* Section container */
@@ -142,21 +143,19 @@ body {
   outline: none;
 }
 
-/* “Run Historical Backfill” button adjustments */
+/* “Run Historical Backfill” button—same style as tabs */
 .ft-backfill-btn {
   background: transparent;
-  border: 2px solid transparent;
-  /* Use a gradient for the border, same purple→blue scheme */
-  border-image: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%) 1;
-  color: #A020F0;                /* purple text by default */
+  border: 2px solid #A020F0;      /* rich purple outline at rest */
+  color: #A020F0;                 /* rich purple text at rest */
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 999px;          /* pill shape */
+  border-radius: 999px;           /* pill shape */
   cursor: pointer;
   transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
-  /* subtle purple glow on the gradient border */
+  /* subtle purple glow at rest */
   box-shadow:
     0 0 6px rgba(160, 32, 240, 0.25),
     0 0 12px rgba(160, 32, 240, 0.15);
@@ -164,23 +163,24 @@ body {
 
 /* Hover state for the backfill button */
 .ft-backfill-btn:hover {
-  /* text turns neon blue, but keep gradient border as is */
-  color: #4AB3F4;
+  background: transparent;        /* remain transparent */
+  border-color: #4AB3F4;          /* neon blue outline on hover */
+  color: #4AB3F4;                 /* neon blue text on hover */
 
-  /* stronger blue glow around the button */
+  /* stronger neon-blue glow on hover */
   box-shadow:
     0 0 6px rgba(74, 179, 244, 0.6),
     0 0 14px rgba(74, 179, 244, 0.4);
 
-  filter: brightness(1.1);
+  filter: brightness(1.05);
 }
 
-/* Small “note” text below controls */
 .ft-backfill-note {
   color: rgba(236, 236, 236, 0.6);
   font-size: 0.875rem;
   margin: 0;
 }
+
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
@@ -196,27 +196,32 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* Change column headers to neon-pink */
+/* Column headers: rich purple again */
 #companies thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 1rem;
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  color: #FF33CC; /* neon-pink for headers */
+  color: #A020F0; /* rich purple for headers */
 }
 
+/* Table row backgrounds */
 #companies tbody tr {
   background-color: rgba(15, 15, 19, 0.85);
 }
 #companies tbody tr:nth-child(even) {
   background-color: rgba(15, 15, 19, 0.80);
 }
+
+/* Table cell text: light blue */
 #companies td {
   padding: 0.75rem 0.5rem;
-  color: #ccc;
+  color: #4AB3F4;   /* light neon-blue text for content */
   border: none;
 }
+
+/* “Category” pill inside the table (if you use it) stays neon purple */
 #companies td:nth-child(4) .pill {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -226,9 +231,46 @@ body {
   font-weight: 500;
 }
 
+/* Hover state for table rows */
 #companies tbody tr:hover td {
   background-color: rgba(236, 236, 236, 0.05);
 }
+
+/* If you have a “+ Expand Directors” button inside a cell, give it the same style as tabs:
+   Simply add class="ft-btn" or class="ft-backfill-btn" to that <button> in your JS/HTML,
+   and it will automatically match the tab styling. If for some reason you need a separate
+   selector, here’s an example: */
+
+.ft-expand-btn {
+  /* Exactly the same as .ft-btn */
+  background: transparent;
+  border: 2px solid #A020F0;
+  color: #A020F0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
+}
+
+.ft-expand-btn:hover,
+.ft-expand-btn.active {
+  background: transparent;
+  border-color: #4AB3F4;
+  color: #4AB3F4;
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
+}
+
+.ft-expand-btn:hover {
+  filter: brightness(1.05);
+}
+
 
 /* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
 .dataTables_wrapper .dataTables_filter input {
@@ -260,7 +302,9 @@ body {
   .ft-filters {
     padding: 0.5rem 1rem;
   }
-  .ft-btn {
+  .ft-btn,
+  .ft-backfill-btn,
+  .ft-expand-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
@@ -275,7 +319,8 @@ body {
     gap: 0.5rem;
   }
   .ft-date-input,
-  .ft-backfill-btn {
+  .ft-backfill-btn,
+  .ft-expand-btn {
     width: 100%;
   }
 }
