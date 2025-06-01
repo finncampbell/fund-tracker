@@ -235,10 +235,10 @@ body {
 }
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
-.table-container {
-  background-color: transparent;
-  padding: 1.5rem 2rem;
-  overflow: auto;
+.table-container {  
+  background-color: transparent;  
+  padding: 1.5rem 2rem;  
+  overflow: auto;  
 }
 
 /* Apply to both #companies and #sic-companies DataTables */
@@ -313,6 +313,44 @@ table.display tbody tr:hover td {
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   background-color: rgba(74, 179, 244, 0.2) !important;
   color: #4AB3F4 !important;
+}
+
+/* ─── DATATABLES LENGTH CONTROL OVERRIDES ─────────────────────────────────── */
+
+/* Make the entire “Show ___ entries” label purple */
+.dataTables_length label {
+  color: #A020F0 !important;    /* rich purple */
+  font-weight: 500;
+}
+
+/* Style the <select> itself: black background, purple text, purple border */
+.dataTables_length select {
+  background-color: #0f0f13 !important;  /* page background */
+  color: #A020F0 !important;             /* purple text */
+  border: 2px solid #A020F0 !important;  /* purple border */
+  border-radius: 4px !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* On focus, add a subtle purple glow around the <select> */
+.dataTables_length select:focus {
+  box-shadow: 0 0 6px rgba(160, 32, 240, 0.6), 0 0 14px rgba(160, 32, 240, 0.4);
+  border-color: #4AB3F4 !important;  /* switch to neon blue on focus */
+  color: #4AB3F4 !important;
+}
+
+/* Force dropdown <option> items to also be black with purple text */
+.dataTables_length select option {
+  background-color: #0f0f13 !important;
+  color: #A020F0 !important;
+}
+
+/* If you want the “entries” word (after the select) to be purple as well */
+.dataTables_length label span {
+  color: #A020F0 !important;
 }
 
 /* ─── RESPONSIVE ADJUSTMENTS ───────────────────────────────────────────────── */
