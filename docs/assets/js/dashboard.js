@@ -41,8 +41,13 @@ $(document).ready(function() {
           };
         });
 
-        // MAIN TABLE: show everything with Category != "Other"
-        const mainData = data.filter(r => r.Category !== 'Other');
+        // MAIN TABLE: show everything where Category is neither "Other" nor exactly "SIC"
+        const mainData = data.filter(r => {
+          // Exclude pure "Other" rows, and exclude pure "SIC" rows;
+          // but include composite like "LP, SIC" (since they have a regex match plus SIC).
+          return r.Category !== 'Other' && r.Category !== 'SIC';
+        });
+
         const companyTable = $('#companies').DataTable({
           data: mainData,
           columns: [
@@ -66,8 +71,13 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // SIC TABLE: show everything with a non‐empty SICDescription
-        const sicData = data.filter(r => r.SICDescription);
+        // SIC TABLE: show everything where Category includes "SIC" (pure or composite)
+        const sicData = data.filter(r => {
+          // show if Category.split(', ').includes("SIC")
+          const parts = r.Category.split(',').map(s => s.trim());
+          return parts.includes('SIC');
+        });
+
         const sicTable = $('#sic-companies').DataTable({
           data: sicData,
           columns: [
@@ -141,19 +151,20 @@ $(document).ready(function() {
           if (settings.nTable.id !== 'companies') return true;
           const active = $('.ft-btn.active').data('filter') || '';
           if (!active) {
-            // “All” button: show any row where Category !== "Other"
-            return rowData[3] !== 'Other';
+            // “All” button: show rows where Category is not "Other" and not pure "SIC"
+            return rowData[3] !== 'Other' && rowData[3] !== 'SIC';
           }
           if (active === 'SIC') {
-            // “SIC” button lives in its own table—hide all in main
+            // Hide main table entirely when SIC is clicked
             return false;
           }
           if (active === 'Fund Entities') {
             // Match by fund‐entity regex on CompanyName
             return fundEntitiesRE.test(rowData[0]);
           }
-          // Otherwise match exact Category
-          return rowData[3] === active;
+          // Otherwise match if Category includes the active label
+          const parts = rowData[3].split(',').map(s => s.trim());
+          return parts.includes(active);
         });
 
         // Tab‐button click handler
