@@ -15,21 +15,251 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   >
-  <!-- Custom CSS -->
+  <!-- Custom CSS Overrides -->
+  <style>
+    /* ─── Global Reset ────────────────────────────────────────────────────────────── */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f13; /* very dark navy background */
+      color: #ececec;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                   Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+                   "Segoe UI Emoji";
+      line-height: 1.4;
+    }
+
+    /* ─── Container Card ──────────────────────────────────────────────────────────── */
+    .ft-dashboard-card {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1.5rem 2rem 2rem 2rem;
+      background-color: rgba(15, 15, 19, 0.85);
+      border-radius: 8px;
+      position: relative;
+    }
+
+    /* ─── Header ─────────────────────────────────────────────────────────────────── */
+    .ft-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    .ft-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0;
+      /* Gradient text: purple (#A020F0) → lighter blue (#4AB3F4) */
+      background: linear-gradient(
+        to right,
+        #A020F0 0%,
+        #A020F0 45%,
+        #4AB3F4 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .ft-download a {
+      color: #4AB3F4;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .ft-download a:hover {
+      text-decoration: underline;
+    }
+
+    /* ─── Filter Tabs ─────────────────────────────────────────────────────────────── */
+    .ft-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .ft-btn {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: 2px solid rgba(236, 236, 236, 0.2);
+      border-radius: 6px;
+      color: #ececec;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .ft-btn:hover,
+    .ft-btn:focus {
+      color: #4AB3F4;
+      border-color: #4AB3F4;
+      outline: none;
+    }
+    .ft-btn.active {
+      /* Gradient border */
+      color: transparent;
+      border: none;
+      border-width: 2px;
+      border-image: linear-gradient(
+        to right,
+        #A020F0 0%,
+        #A020F0 45%,
+        #4AB3F4 100%
+      ) 1;
+      background: none;
+      /* Gradient text */
+      background: linear-gradient(
+        to right,
+        #A020F0 0%,
+        #A020F0 45%,
+        #4AB3F4 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .ft-btn.active:hover {
+      filter: brightness(1.1);
+    }
+
+    /* ─── Backfill Controls ───────────────────────────────────────────────────────── */
+    .ft-backfill-section {
+      margin-bottom: 1.5rem;
+      /* Ensure left alignment under the “All” tab */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ft-backfill-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .ft-date-input {
+      background-color: rgba(236, 236, 236, 0.1);
+      border: 1px solid rgba(236, 236, 236, 0.2);
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      color: #ececec;
+      font-size: 1rem;
+      min-width: 240px;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .ft-date-input:hover,
+    .ft-date-input:focus {
+      border-color: #4AB3F4;
+      outline: none;
+    }
+    .ft-backfill-btn {
+      padding: 0.6rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(
+        to right,
+        #A020F0 0%,
+        #A020F0 60%,
+        #4AB3F4 100%
+      );
+      cursor: pointer;
+      transition: filter 0.2s ease;
+    }
+    .ft-backfill-btn:hover {
+      filter: brightness(1.1);
+    }
+    .ft-backfill-note {
+      color: rgba(236, 236, 236, 0.6);
+      font-size: 0.875rem;
+      margin: 0;
+    }
+
+    /* ─── Table Styling ───────────────────────────────────────────────────────────── */
+    .table-container {
+      border: 1px solid rgba(236, 236, 236, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    /* Header gradient on text */
+    #companies thead th {
+      padding: 0.75rem;
+      background-color: rgba(15, 15, 19, 0.9);
+      background: linear-gradient(to right, #A020F0 0%, #4AB3F4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: 500;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+    }
+    /* Body cells */
+    #companies tbody td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid rgba(236, 236, 236, 0.05);
+      color: #ccc;
+      background-color: rgba(15, 15, 19, 0.8);
+    }
+    /* Hover effect on rows */
+    #companies tbody tr:hover td {
+      background-color: rgba(236, 236, 236, 0.05);
+    }
+    /* Last row has no border bottom */
+    #companies tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ─── DataTables Overrides ──────────────────────────────────────────────────── */
+    .dataTables_wrapper .dataTables_filter input {
+      background-color: rgba(236, 236, 236, 0.1);
+      border: 1px solid rgba(236, 236, 236, 0.2);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+      color: #ececec !important;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      padding: 0.3rem 0.6rem;
+      margin: 0 0.2rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+      background: linear-gradient(to right, #A020F0 0%, #4AB3F4 100%) !important;
+      color: #fff !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+      background-color: rgba(74, 179, 244, 0.2) !important;
+      color: #4AB3F4 !important;
+    }
+  </style>
+
+  <!-- Custom CSS File -->
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
 
   <div class="ft-dashboard-card">
-    <header class="ft-header">
-      <h1>Fund Tracker Dashboard</h1>
-      <p>
-        <a href="/assets/data/relevant_companies.xlsx" download>
-          Download filtered Excel
-        </a>
+    <!-- Header -->
+    <div class="ft-header">
+      <h1 class="ft-title">Fund Tracker Dashboard</h1>
+      <p class="ft-download">
+        <a href="/assets/data/relevant_companies.xlsx" download>Download filtered Excel</a>
       </p>
-    </header>
+    </div>
 
+    <!-- Filter Tabs -->
     <nav class="ft-filters">
       <button class="ft-btn active" data-filter="">All</button>
       <button class="ft-btn" data-filter="Ventures">Ventures</button>
@@ -39,19 +269,25 @@
       <button class="ft-btn" data-filter="Partners">Partners</button>
       <button class="ft-btn" data-filter="SIC">SIC Codes</button>
       <button class="ft-btn" data-filter="Fund Entities">Fund Entities</button>
-      <button class="ft-btn" data-filter="Investments">Investments</button>
     </nav>
 
-    <div class="ft-backfill" style="padding:1rem; background:#f9f9f9; border-bottom:1px solid #e0e0e0;">
-      <label for="backfill-range" style="margin-right:0.5rem;">Select date range:</label>
-      <input id="backfill-range" placeholder="Click to select date range" readonly
-             style="cursor:pointer;background:#fff;padding:0.5em;border:1px solid #ccc;border-radius:4px;"/>
-      <button id="run-backfill" disabled style="margin-left:0.5rem;" class="ft-btn">Run Historical Backfill</button>
-      <small style="display:block;margin-top:0.5rem;color:#666;">
+    <!-- Backfill Controls (aligned under “All” tab) -->
+    <div class="ft-backfill-section">
+      <div class="ft-backfill-controls">
+        <input
+          id="backfill-range"
+          class="ft-date-input"
+          placeholder="Click to select date range"
+          readonly
+        />
+        <button id="run-backfill" class="ft-backfill-btn">Run Historical Backfill</button>
+      </div>
+      <small class="ft-backfill-note">
         Backfill historical data without leaving this page.
       </small>
     </div>
 
+    <!-- Data Table -->
     <div class="table-container" id="companies-container">
       <table id="companies" class="display" style="width:100%">
         <thead>
@@ -68,6 +304,7 @@
       </table>
     </div>
 
+    <!-- Hidden SIC Table (unchanged) -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
@@ -88,7 +325,7 @@
     </div>
   </div>
 
-  <!-- JS libs -->
+  <!-- JS libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
