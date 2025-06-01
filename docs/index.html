@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fund Tracker Dashboard</title>
+  <title>Deal Tracker Dashboard</title>
 
   <!-- DataTables CSS (unchanged) -->
   <link
@@ -15,22 +15,22 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Your custom.css (dark/navy + gradient + neon) -->
+  <!-- Custom neon‐glow CSS -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
   <div class="ft-dashboard-card">
     <!-- HEADER: Unified Gradient Background + White Text -->
     <div class="ft-header">
-      <h1 class="ft-title">Fund Tracker Dashboard</h1>
+      <h1 class="ft-title">Deal Tracker Dashboard</h1>
       <p class="ft-download">
-        <a href="/assets/data/relevant_companies.xlsx" download>
+        <a href="assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
         </a>
       </p>
     </div>
 
-    <!-- FILTER TABS: Purple → Blue gradient text + purple outlines -->
+    <!-- FILTER TABS (each is a button with class="ft-btn") -->
     <nav class="ft-filters">
       <button class="ft-btn cat-all active">All</button>
       <button class="ft-btn cat-ventures">Ventures</button>
@@ -43,7 +43,7 @@
       <button class="ft-btn cat-directors">Directors</button>
     </nav>
 
-    <!-- BACKFILL CONTROLS (left-aligned under “All” tab) -->
+    <!-- BACKFILL CONTROLS -->
     <div class="ft-backfill-section">
       <div class="ft-backfill-controls">
         <input
@@ -71,13 +71,22 @@
             <th class="cat-equity">Incorporation Date</th>
             <th class="cat-ventures">Category</th>
             <th class="cat-sic">Date Downloaded</th>
-            <th class="cat-directors">
-              <!-- Wrapped “Directors” in a button so it receives the neon styling -->
-              <button class="ft-expand-btn">Directors</button>
-            </th>
+            <th class="cat-directors">Directors</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <!-- Example row; your JS populates real data and adds an expand-btn in each Directors cell -->
+          <tr>
+            <td class="cat-all">Sample Company Ltd</td>
+            <td class="cat-capital">01234567</td>
+            <td class="cat-equity">2025-06-01</td>
+            <td class="cat-ventures">Ventures</td>
+            <td class="cat-sic">2025-06-01</td>
+            <td class="cat-directors">
+              <button class="expand-btn">Expand for Directors</button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
@@ -94,12 +103,25 @@
             <th class="cat-sic">SIC Codes</th>
             <th class="cat-sic">SIC Description</th>
             <th class="cat-sic">Typical Use Case</th>
-            <th class="cat-directors">
-              <button class="ft-expand-btn">Directors</button>
-            </th>
+            <th class="cat-directors">Directors</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <!-- Example SIC row; JS will populate and insert expand-btn for directors -->
+          <tr>
+            <td class="cat-all">Sample SIC Co.</td>
+            <td class="cat-capital">07654321</td>
+            <td class="cat-equity">2025-05-30</td>
+            <td class="cat-advisors">Other</td>
+            <td class="cat-sic">2025-05-30</td>
+            <td class="cat-sic">70221</td>
+            <td class="cat-sic">Financial management (of companies and enterprises)</td>
+            <td class="cat-sic">Treasury and internal finance arm.</td>
+            <td class="cat-directors">
+              <button class="expand-btn">Expand for Directors</button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
