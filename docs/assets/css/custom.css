@@ -5,35 +5,33 @@
 body {
   margin: 0;
   padding: 2rem;
-  background-color: #0f0f13;    /* Solid black backdrop around the card */
+  background-color: #0f0f13;    /* Solid black backdrop for the page */
   color: #ececec;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-               Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-               'Segoe UI Emoji';
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   display: flex;
   justify-content: center;
 }
 
-/* ─── DASHBOARD CARD (GRADIENT NAVY→BLACK) ──────────────────────────────────── */
+/* ─── DASHBOARD CARD (NAVY→BLACK GRADIENT) ─────────────────────────────────── */
 .ft-dashboard-card {
-  /* A tall, pill‐shaped container with a smooth navy→black gradient */
   background: linear-gradient(
     to bottom,
-    #1b1f28 0%,
-    #12151d 50%,
-    #0f0f13 100%
+    #1b1f28 0%,    /* Rich navy at top */
+    #12151d 50%,   /* Darker navy mid-point */
+    #0f0f13 100%   /* Black at bottom */
   );
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  padding: 0; /* Individual sections manage their own padding */
+  padding: 0; /* Subsections manage their own padding */
 }
 
-/* ─── HEADER (GRADIENT TITLE ON NAVY→BLACK) ────────────────────────────────── */
+/* ─── HEADER (TRANSPARENT OVER THE GRADIENT) ───────────────────────────────── */
 .ft-header {
-  background-color: transparent; /* gradient is on the card itself */
+  background-color: transparent; /* Let the card’s gradient show through */
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -46,8 +44,8 @@ body {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
-  /* Clip a horizontal gradient (purple→blue) into the text */
-  background: linear-gradient(90deg, #A020F0, #4AB3F4);
+  /* Single clip gradient on text: purple→lighter-blue */
+  background: linear-gradient(90deg, #A020F0, #6ACFFB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,27 +53,33 @@ body {
 }
 
 .ft-download a {
-  color: #4AB3F4;
+  color: #6ACFFB; /* lighter blue link */
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 500;
 }
 
-/* ─── FILTER TABS ───────────────────────────────────────────────────────────── */
+/* ─── FILTER TABS ────────────────────────────────────────────────────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  padding: 1rem 2rem; /* Match header’s horizontal padding */
-  background-color: transparent; /* gradient seen through from card */
+  padding: 1rem 2rem; /* Match the header’s horizontal padding */
+  background-color: transparent; /* Gradient shows through */
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  justify-content: flex-start;
+  justify-content: flex-start; /* Left align under “All” tab */
 }
 
+/* Pill shape + gradient border */
 .ft-btn {
   background: transparent;
-  border: 2px solid #A020F0; /* rich purple outline */
-  color: #A020F0;            /* purple text by default */
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #A020F0 0%,
+    #6ACFFB 100%
+  ) 1;
+  color: inherit; /* We’ll use category classes to set color */
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 0.9rem;
@@ -84,35 +88,45 @@ body {
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Text colors “sampled” from a purple→blue continuum for each tab */
-.cat-all       { color: #A020F0; }   /* deep purple */
+/* Each tab’s text color is sampled from the same purple→lighter-blue gradient */
+.cat-all       { color: #A020F0; } /* deep purple (far left) */
 .cat-ventures  { color: #B64EEB; }
 .cat-capital   { color: #CB15E1; }
 .cat-equity    { color: #E105D5; }
 .cat-advisors  { color: #F200C7; }
 .cat-partners  { color: #FF00B1; }
-.cat-sic       { color: #4AB3F4; }   /* bright blue */
+.cat-sic       { color: #6ACFFB; } /* lighter blue (far right) */
 .cat-fund      { color: #25C9E3; }
 .cat-directors { color: #4AB3F4; }
 
 .ft-btn:hover {
-  background: none;
-  border-color: #4AB3F4; /* switch to light blue outline on hover */
-  color: #4AB3F4;
+  /* On hover: fill the pill with the same purple→lighter-blue gradient */
+  background: linear-gradient(
+    to right,
+    #A020F0 0%,
+    #6ACFFB 100%
+  );
+  color: #fff;          /* White text on hover */
+  border-color: transparent; /* Hide border since background now shows the gradient */
 }
 
 .ft-btn.active {
-  background: none;
-  border-color: #4AB3F4; /* active tab is light blue outline */
-  color: #4AB3F4;
+  /* Selected tab: solid gradient fill and white text */
+  background: linear-gradient(
+    to right,
+    #A020F0 0%,
+    #6ACFFB 100%
+  );
+  color: #fff;
+  border-color: transparent;
 }
 .ft-btn.active:hover {
   filter: brightness(1.1);
 }
 
-/* ─── BACKFILL CONTROLS ───────────────────────────────────────────────────── */
+/* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
 .ft-backfill-section {
-  background-color: transparent; /* card’s gradient still visible */
+  background-color: transparent; /* Let the gradient show */
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -140,15 +154,19 @@ body {
 }
 .ft-date-input:hover,
 .ft-date-input:focus {
-  border-color: #4AB3F4;
+  border-color: #6ACFFB;
   outline: none;
 }
 
 .ft-backfill-btn {
   background: transparent;
   border: 2px solid;
-  border-image: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%) 1;
-  color: #A020F0;
+  border-image: linear-gradient(
+    to right,
+    #A020F0 0%,
+    #6ACFFB 100%
+  ) 1;
+  color: #A020F0;  /* Purple text */
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
@@ -158,7 +176,7 @@ body {
 }
 .ft-backfill-btn:hover {
   filter: brightness(1.1);
-  color: #4AB3F4;
+  color: #6ACFFB; /* Light‐blue text on hover */
 }
 
 .ft-backfill-note {
@@ -169,7 +187,7 @@ body {
 
 /* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
-  background-color: transparent; /* let the card’s gradient show through */
+  background-color: transparent; /* Card gradient shows through */
   padding: 1.5rem 2rem;
   overflow: auto;
 }
@@ -189,14 +207,14 @@ body {
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
 }
 
-/* Header text uses the same repeater‐gradient sampling as the tabs */
+/* Header text colors sampled along the same purple→lighter-blue gradient */
 #companies thead th.cat-all       { color: #A020F0; }
 #companies thead th.cat-ventures  { color: #B64EEB; }
 #companies thead th.cat-capital   { color: #CB15E1; }
 #companies thead th.cat-equity    { color: #E105D5; }
 #companies thead th.cat-advisors  { color: #F200C7; }
 #companies thead th.cat-partners  { color: #FF00B1; }
-#companies thead th.cat-sic       { color: #4AB3F4; }
+#companies thead th.cat-sic       { color: #6ACFFB; }
 #companies thead th.cat-fund      { color: #25C9E3; }
 #companies thead th.cat-directors { color: #4AB3F4; }
 
@@ -241,12 +259,12 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-  background: #4AB3F4 !important;
+  background: #6ACFFB !important;
   color: #fff !important;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  background-color: rgba(74, 179, 244, 0.2) !important;
-  color: #4AB3F4 !important;
+  background-color: rgba(106, 207, 251, 0.2) !important;
+  color: #6ACFFB !important;
 }
 
 /* ─── RESPONSIVE ADJUSTMENTS ───────────────────────────────────────────────── */
