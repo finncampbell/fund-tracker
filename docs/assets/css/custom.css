@@ -60,7 +60,7 @@ body {
   font-weight: 500;
 }
 
-/* ─── FILTER TABS (NEON PURPLE DEFAULT, BLUE ON SELECT/HOVER) ──────────────── */
+/* ─── FILTER TABS (NEON PURPLE DEFAULT, BLUE ON HOVER/ACTIVE) ──────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
@@ -73,24 +73,31 @@ body {
 
 .ft-btn {
   background: transparent;
-  border: 2px solid #A020F0; /* neon purple outline */
-  color: #A020F0;            /* neon purple text */
+  border: 2px solid #A020F0;      /* neon-purple outline by default */
+  color: #A020F0;                 /* neon-purple text by default */
   padding: 0.5rem 1rem;
-  border-radius: 999px;       /* fully pill-shaped */
+  border-radius: 999px;           /* fully pill-shaped */
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  /* very subtle purple glow initially (optional) */
+  box-shadow: 0 0 4px rgba(160, 32, 240, 0.2);
 }
 
 .ft-btn:hover,
 .ft-btn.active {
-  background: #4AB3F4;     /* neon blue fill on hover/active */
-  border-color: #4AB3F4;   /* neon blue border */
-  color: #0f0f13;          /* nearly-black text against blue fill */
+  background: transparent;       /* stay transparent */
+  border-color: #4AB3F4;         /* neon-blue outline */
+  color: #4AB3F4;                /* neon-blue text */
+  /* stronger blue neon glow on hover/active */
+  box-shadow:
+    0 0 4px rgba(74, 179, 244, 0.6),
+    0 0 12px rgba(74, 179, 244, 0.4);
 }
-.ft-btn.active:hover {
-  filter: brightness(1.1);
+
+.ft-btn:hover {
+  filter: brightness(1.05);       /* tiny extra pop on hover */
 }
 
 /* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
