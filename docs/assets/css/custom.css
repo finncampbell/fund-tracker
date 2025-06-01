@@ -60,7 +60,7 @@ body {
   font-weight: 500;
 }
 
-/* ─── FILTER TABS (NEON PURPLE DEFAULT, BLUE ON HOVER/ACTIVE) ──────────────── */
+/* ─── FILTER TABS (NEON‐GLOW ON ALL STATES) ───────────────────────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
@@ -71,36 +71,42 @@ body {
   justify-content: flex-start;
 }
 
+/* Base style for every tab button */
 .ft-btn {
   background: transparent;
-  border: 2px solid #A020F0;      /* neon-purple outline by default */
-  color: #A020F0;                 /* neon-purple text by default */
+  border: 2px solid #A020F0;      /* default neon‐purple outline */
+  color: #A020F0;                 /* default neon‐purple text */
   padding: 0.5rem 1rem;
-  border-radius: 999px;           /* fully pill-shaped */
+  border-radius: 999px;           /* pill shape */
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-  /* very subtle purple glow initially (optional) */
-  box-shadow: 0 0 4px rgba(160, 32, 240, 0.2);
+
+  /* subtle purple glow even when unselected */
+  box-shadow: 0 0 6px rgba(160, 32, 240, 0.25),
+              0 0 12px rgba(160, 32, 240, 0.15);
 }
 
+/* Hover and “active” (selected) state for tabs */
 .ft-btn:hover,
 .ft-btn.active {
-  background: transparent;       /* stay transparent */
-  border-color: #4AB3F4;         /* neon-blue outline */
-  color: #4AB3F4;                /* neon-blue text */
-  /* stronger blue neon glow on hover/active */
+  background: transparent;       /* remain transparent */
+  border-color: #4AB3F4;         /* switch outline to neon blue */
+  color: #4AB3F4;                /* switch text to neon blue */
+
+  /* stronger blue glow when hovered or active */
   box-shadow:
-    0 0 4px rgba(74, 179, 244, 0.6),
-    0 0 12px rgba(74, 179, 244, 0.4);
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
 }
 
 .ft-btn:hover {
-  filter: brightness(1.05);       /* tiny extra pop on hover */
+  filter: brightness(1.05);       /* slight pop on hover */
 }
 
 /* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
+/* Section container */
 .ft-backfill-section {
   background-color: transparent;
   padding: 1rem 2rem;
@@ -111,12 +117,14 @@ body {
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
 }
 
+/* Input + button alignment */
 .ft-backfill-controls {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
+/* Date input box (unchanged) */
 .ft-date-input {
   background-color: rgba(236, 236, 236, 0.05);
   border: 1px solid rgba(236, 236, 236, 0.2);
@@ -134,23 +142,40 @@ body {
   outline: none;
 }
 
+/* “Run Historical Backfill” button adjustments */
 .ft-backfill-btn {
   background: transparent;
-  border: 2px solid;
+  border: 2px solid transparent;
+  /* Use a gradient for the border, same purple→blue scheme */
   border-image: linear-gradient(90deg, #A020F0 0%, #4AB3F4 100%) 1;
-  color: #A020F0;
+  color: #A020F0;                /* purple text by default */
   padding: 0.6rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 999px;
+  border-radius: 999px;          /* pill shape */
   cursor: pointer;
-  transition: filter 0.2s ease, color 0.2s ease;
-}
-.ft-backfill-btn:hover {
-  filter: brightness(1.1);
-  color: #4AB3F4;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+  /* subtle purple glow on the gradient border */
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
 }
 
+/* Hover state for the backfill button */
+.ft-backfill-btn:hover {
+  /* text turns neon blue, but keep gradient border as is */
+  color: #4AB3F4;
+
+  /* stronger blue glow around the button */
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
+
+  filter: brightness(1.1);
+}
+
+/* Small “note” text below controls */
 .ft-backfill-note {
   color: rgba(236, 236, 236, 0.6);
   font-size: 0.875rem;
@@ -171,13 +196,14 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
+/* Change column headers to neon-pink */
 #companies thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 1rem;
   border-bottom: 1px solid rgba(236, 236, 236, 0.1);
-  color: #A020F0; /* neon purple for all column headers */
+  color: #FF33CC; /* neon-pink for headers */
 }
 
 #companies tbody tr {
