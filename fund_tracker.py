@@ -1,5 +1,3 @@
-# fund_tracker.py
-
 #!/usr/bin/env python3
 import os
 import sys
@@ -70,8 +68,13 @@ def run_for_date_range(start_date: str, end_date: str):
     LOG.info(f"Wrote master ({len(df_all)}) rows")
 
     # 5) Post-hoc filter for relevant
+    # Ensure Category has no stray whitespace
+    df_all["Category"] = df_all["Category"].astype(str).str.strip()
     mask_cat = df_all["Category"] != "Other"
-    mask_sic = df_all["SIC Description"].astype(bool)
+
+    # Replace NaN or missing SIC Description with "" before casting to bool
+    mask_sic = df_all["SIC Description"].fillna("").astype(str).str.strip().astype(bool)
+
     df_rel = df_all[mask_cat | mask_sic]
 
     # 6) Write relevant slice
