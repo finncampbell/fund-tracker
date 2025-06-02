@@ -6,7 +6,7 @@ import time
 
 # ─── Configuration ───────────────────────────────────────────────────────────────
 WINDOW_SECONDS = 300    # 5 minutes
-MAX_CALLS      = 600    # maximum allowed calls per window
+MAX_CALLS      = 575    # maximum allowed calls per window
 DB_PATH        = "rate_limiter.db"
 
 # Internal lock to serialize SQLite access within a process
