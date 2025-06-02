@@ -1,185 +1,60 @@
-#!/usr/bin/env python3
-"""
-fetch_directors.py
+name: Fetch Directors
 
-- Fetches directors for every filtered company in relevant_companies.csv
-- Dispatches in dynamic batches up to MAX_WORKERS
-- Honors shared rate limit (600 calls per 5 minutes)
-- Updates docs/assets/data/directors.json
-- Logs to assets/logs/director_fetch.log
-"""
+permissions:
+  contents: write   # so we can commit directors.json back
+  actions: read
 
-import os
-import json
-import time
-import argparse
-import logging
-from concurrent.futures import ThreadPoolExecutor, as_completed
+on:
+  workflow_dispatch:   # allows manual triggering in the GitHub UI
 
-import pandas as pd
-import requests
+jobs:
+  fetch-directors:
+    runs-on: ubuntu-latest
+    env:
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-from rate_limiter import enforce_rate_limit, record_call
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
-# Config
-API_BASE       = 'https://api.company-information.service.gov.uk/company'
-CH_KEY         = os.getenv('CH_API_KEY')
-RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
-DIRECTORS_JSON = 'docs/assets/data/directors.json'
-LOG_DIR        = 'assets/logs'
-LOG_FILE       = os.path.join(LOG_DIR, 'director_fetch.log')
+      - name: Restore rate_limiter.db cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
 
-# Pick a sensible upper bound for concurrent threads
-MAX_WORKERS    = 100
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-# Logging
-os.makedirs(LOG_DIR, exist_ok=True)
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s %(message)s'
-)
-log = logging.getLogger(__name__)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --prefer-binary -r requirements.txt
 
-def load_relevant():
-    df = pd.read_csv(RELEVANT_CSV, dtype=str)
-    if 'CompanyNumber' not in df.columns:
-        log.error(f"Expected 'CompanyNumber' column in {RELEVANT_CSV}; found {df.columns.tolist()}")
-        return []
-    return df['CompanyNumber'].dropna().tolist()
+      - name: Fetch directors for relevant companies
+        run: |
+          python fetch_directors.py
 
-def load_existing():
-    if os.path.exists(DIRECTORS_JSON):
-        try:
-            return json.load(open(DIRECTORS_JSON, 'r'))
-        except json.JSONDecodeError:
-            log.warning("Corrupt directors.json; starting with empty dictionary")
-            return {}
-    return {}
+      - name: Save rate_limiter.db to cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
 
-def fetch_one(number):
-    """
-    Fetch "officers" endpoint for a single company number.
-    Implements up to 3 retries on 5xx, but each attempt blocks on enforce_rate_limit().
-    """
-    RETRIES, DELAY = 3, 5
-    items = []
-
-    for attempt in range(RETRIES):
-        # Block here if we've flooded 600 calls in the last 5 minutes
-        enforce_rate_limit()
-
-        try:
-            resp = requests.get(
-                f"{API_BASE}/{number}/officers",
-                auth=(CH_KEY, ''),
-                timeout=10
-            )
-        except Exception as e:
-            # Network failure; count the call anyway, then retry
-            record_call()
-            log.warning(f"Network error fetching {number}: {e}")
-            if attempt < RETRIES - 1:
-                time.sleep(DELAY)
-                continue
-            else:
-                break
-
-        # Count every HTTP interaction
-        record_call()
-
-        if resp.status_code >= 500 and attempt < RETRIES - 1:
-            log.warning(f"Server error {resp.status_code} for {number}, retry {attempt + 1}")
-            time.sleep(DELAY)
-            continue
-
-        try:
-            resp.raise_for_status()
-            items = resp.json().get('items', [])
-        except requests.HTTPError as he:
-            log.warning(f"Failed to fetch officers for {number}: {he}")
-            items = []
-        break
-
-    # Include all relevant officer roles, filter out resigned ones
-    ROLES = {
-        'director',
-        'corporate-director',
-        'nominee-director',
-        'managing-officer',
-        'corporate-managing-officer',
-        'llp-designated-member',
-        'llp-member',
-        'corporate-llp-designated-member',
-        'corporate-llp-member'
-    }
-    chosen = [
-        o for o in items
-        if o.get('officer_role') in ROLES and o.get('resigned_on') is None
-    ]
-
-    directors_list = []
-    for o in chosen:
-        dob = o.get('date_of_birth', {}) or {}
-        if dob.get('year') and dob.get('month'):
-            dob_str = f"{dob['year']}-{int(dob['month']):02d}"
-        elif dob.get('year'):
-            dob_str = str(dob['year'])
-        else:
-            dob_str = ""
-
-        directors_list.append({
-            'title':           o.get('name'),
-            'appointment':     o.get('snippet', ''),
-            'dateOfBirth':     dob_str,
-            'appointmentCount':o.get('appointment_count'),
-            'selfLink':        o.get('links', {}).get('self'),
-            'officerRole':     o.get('officer_role'),
-            'nationality':     o.get('nationality'),
-            'occupation':      o.get('occupation'),
-        })
-
-    return number, directors_list
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--start_date', help='unused', default='')
-    parser.add_argument('--end_date',   help='unused', default='')
-    args = parser.parse_args()
-
-    log.info("Starting fetch_directors")
-    existing = load_existing()
-    relevant = load_relevant()
-    pending  = [n for n in relevant if n not in existing]
-    total    = len(pending)
-    idx = 0
-
-    while idx < total:
-        # Launch up to MAX_WORKERS threads; each thread blocks inside fetch_one() if needed
-        batch_size = min(MAX_WORKERS, total - idx)
-        batch = pending[idx: idx + batch_size]
-        log.info(f"Dispatching batch {idx + 1}-{idx + batch_size} of {total}")
-
-        with ThreadPoolExecutor(max_workers=batch_size) as exe:
-            future_to_num = {exe.submit(fetch_one, num): num for num in batch}
-            for fut in as_completed(future_to_num):
-                try:
-                    num, dirs = fut.result()
-                except Exception as e:
-                    log.error(f"Error fetching {future_to_num[fut]}: {e}")
-                    continue
-
-                existing[num] = dirs
-                log.info(f"Fetched {len(dirs)} active directors for {num}")
-
-        idx += batch_size
-
-    os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-    temp = DIRECTORS_JSON + ".tmp"
-    with open(temp, 'w') as f:
-        json.dump(existing, f, separators=(',', ':'))
-    os.replace(temp, DIRECTORS_JSON)
-    log.info(f"Wrote directors.json with {len(existing)} entries")
-
-if __name__ == '__main__':
-    main()
+      - name: Commit updated directors.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/directors.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): update directors.json [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "No changes to directors.json — skipping commit"
+          fi
