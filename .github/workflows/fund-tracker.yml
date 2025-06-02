@@ -1,4 +1,3 @@
-```yaml
 name: Fund Tracker
 
 permissions:
@@ -23,7 +22,7 @@ jobs:
   update-data:
     runs-on: ubuntu-latest
     env:
-      CH_API_KEY:   ${{ secrets.CH_API_KEY }}
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
@@ -52,8 +51,8 @@ jobs:
       - name: Run fund_tracker
         run: |
           python fund_tracker.py \
-            --start_date ${{ github.event.inputs.start_date || 'today' }} \
-            --end_date   ${{ github.event.inputs.end_date   || 'today' }}
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date   "${{ github.event.inputs.end_date }}"
 
       - name: Fetch directors for relevant companies
         run: |
@@ -67,7 +66,7 @@ jobs:
 
       - name: Commit updated data files
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
@@ -80,4 +79,3 @@ jobs:
           else
             echo "No changes to data — skipping commit"
           fi
-```
