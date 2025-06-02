@@ -2,6 +2,8 @@ $(document).ready(function() {
   // Correct path for GitHub Pages with docs/ as root (NO leading slash!)
   const url = `assets/data/relevant_companies.csv?v=${Date.now()}`;
   const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
+  // Your Netlify site (where serverless functions live)
+  const NETLIFY_BASE = 'https://fund-tracker-functions.netlify.app';
 
   Papa.parse(url, {
     download: true,
@@ -25,7 +27,7 @@ $(document).ready(function() {
         });
 
       function initTables() {
-        // Build a normalized array of objects from the parsed CSV rows
+        // Build normalized array of objects from parsed CSV rows
         const data = raw.map(r => {
           const num = r['CompanyNumber'].trim();
           return {
@@ -41,10 +43,8 @@ $(document).ready(function() {
           };
         });
 
-        // MAIN TABLE: show everything where Category is neither "Other" nor exactly "SIC"
+        // MAIN TABLE: show everything where Category ≠ "Other" and ≠ pure "SIC"
         const mainData = data.filter(r => {
-          // Exclude pure "Other" rows, and exclude pure "SIC" rows;
-          // but include composite like "LP, SIC" (since they have a regex match plus SIC).
           return r.Category !== 'Other' && r.Category !== 'SIC';
         });
 
@@ -71,9 +71,8 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // SIC TABLE: show everything where Category includes "SIC" (pure or composite)
+        // SIC TABLE: show everything where Category includes "SIC"
         const sicData = data.filter(r => {
-          // show if Category.split(', ').includes("SIC")
           const parts = r.Category.split(',').map(s => s.trim());
           return parts.includes('SIC');
         });
@@ -112,11 +111,11 @@ $(document).ready(function() {
           const row     = dt.row($btn.closest('tr'));
 
           if (row.child.isShown()) {
-            // Child is visible → hide it, remove "active", reset button text
+            // Hide child row
             row.child.hide();
             $btn.removeClass('active').text('Expand for Directors');
           } else {
-            // Child is hidden → build a table of directors, show child, add "active", change text
+            // Build child HTML for directors
             const dirs = row.data().Directors || [];
             let html = '<table class="child-table"><tr>' +
               '<th>Director Name</th>' +
@@ -151,28 +150,24 @@ $(document).ready(function() {
         $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
         $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
 
-        // Filter hook (applies to the MAIN table only)
+        // DataTables search hook (MAIN table only)
         $.fn.dataTable.ext.search.push((settings, rowData) => {
           if (settings.nTable.id !== 'companies') return true;
           const active = $('.ft-btn.active').data('filter') || '';
           if (!active) {
-            // “All” button: show rows where Category is not "Other" and not pure "SIC"
             return rowData[3] !== 'Other' && rowData[3] !== 'SIC';
           }
           if (active === 'SIC') {
-            // Hide main table entirely when SIC is clicked
             return false;
           }
           if (active === 'Fund Entities') {
-            // Match by fund-entity regex on CompanyName
             return fundEntitiesRE.test(rowData[0]);
           }
-          // Otherwise match if Category includes the active label
           const parts = rowData[3].split(',').map(s => s.trim());
           return parts.includes(active);
         });
 
-        // Tab-button click handler
+        // Filter‐tab click handler
         $('.ft-filters').on('click', '.ft-btn', function() {
           $('.ft-btn').removeClass('active');
           $(this).addClass('active');
@@ -184,10 +179,13 @@ $(document).ready(function() {
           }
         });
       } // initTables
-    }   // parse complete
+    },   // parse complete
+    error: function(err) {
+      console.error('Error parsing relevant_companies.csv:', err);
+    }
   });    // Papa.parse
 
-  // Flatpickr range picker & backfill button
+  // Flatpickr for backfill range
   flatpickr("#backfill-range", {
     mode: "range",
     dateFormat: "Y-m-d",
@@ -207,13 +205,14 @@ $(document).ready(function() {
     }
   });
 
+  // Backfill button logic
   document.getElementById("run-backfill").addEventListener("click", () => {
     const btn   = document.getElementById("run-backfill");
     const start = btn.dataset.start;
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/backfill', {
+    fetch(`${NETLIFY_BASE}/.netlify/functions/backfill`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ start_date: start, end_date: end })
@@ -230,7 +229,7 @@ $(document).ready(function() {
       });
   });
 
-  // Fetch Directors button
+  // Fetch Directors button logic
   document.getElementById("run-fetch-directors").addEventListener("click", async () => {
     const btn = document.getElementById("run-fetch-directors");
     btn.disabled = true;
@@ -238,7 +237,7 @@ $(document).ready(function() {
 
     try {
       const resp = await fetch(
-        'https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors',
+        `${NETLIFY_BASE}/.netlify/functions/trigger-fetch-directors`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -251,7 +250,7 @@ $(document).ready(function() {
       }
 
       alert('Fetch Directors workflow dispatched successfully!');
-      // Optional: reload directors.json and refresh tables here.
+      // Optionally: if you have code that reloads directors.json / refreshes the tables, call it here.
 
     } catch (err) {
       console.error('Error dispatching Fetch Directors:', err);
