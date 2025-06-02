@@ -233,4 +233,34 @@ $(document).ready(function() {
         alert("Error starting backfill; see console.");
       });
   });
+
+  // Fetch Directors button
+  document.getElementById("run-fetch-directors").addEventListener("click", async () => {
+    const btn = document.getElementById("run-fetch-directors");
+    btn.disabled = true;
+    btn.textContent = 'Fetching Directors…';
+
+    try {
+      // Replace this URL if your Netlify function has a different path
+      const resp = await fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({})
+      });
+
+      if (!resp.ok) {
+        throw new Error(`HTTP ${resp.status}`);
+      }
+
+      alert('Fetch Directors workflow dispatched successfully!');
+      // Optionally reload directors.json or refresh the table here
+
+    } catch (err) {
+      console.error('Error dispatching Fetch Directors:', err);
+      alert('Failed to dispatch Fetch Directors. See console for details.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Fetch Directors Now';
+    }
+  });
 });
