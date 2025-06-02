@@ -42,7 +42,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      # ─── Restore rate_limiter.db from cache (if present) ─────────────────────────
       - name: Restore rate_limiter.db cache
         uses: actions/cache@v3
         with:
@@ -76,7 +75,6 @@ jobs:
             --start_date ${{ github.event.inputs.backfill_start }} \
             --end_date   ${{ github.event.inputs.backfill_end }}
 
-      # ─── Save the updated rate_limiter.db back into cache ────────────────────────
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
         with:
