@@ -112,43 +112,39 @@ $(document).ready(function() {
           const row     = dt.row($btn.closest('tr'));
 
           if (row.child.isShown()) {
-            // 1) Child is visible → hide it, remove "active", reset button text
+            // Child is visible → hide it, remove "active", reset button text
             row.child.hide();
-            $btn
-              .removeClass('active')
-              .text('Expand for Directors');
+            $btn.removeClass('active').text('Expand for Directors');
           } else {
-            // 2) Child is hidden → build a table of directors, show child, add "active", change text
+            // Child is hidden → build a table of directors, show child, add "active", change text
             const dirs = row.data().Directors || [];
-            let html = '<table class="child-table"><tr>'
-              + '<th>Director Name</th>'
-              + '<th>Appointment</th>'
-              + '<th>Date of Birth</th>'
-              + '<th># of Appointments</th>'
-              + '<th>Officer Role</th>'
-              + '<th>Nationality</th>'
-              + '<th>Occupation</th>'
-              + '<th>Details Link</th>'
-              + '</tr>';
+            let html = '<table class="child-table"><tr>' +
+              '<th>Director Name</th>' +
+              '<th>Appointment</th>' +
+              '<th>Date of Birth</th>' +
+              '<th># of Appointments</th>' +
+              '<th>Officer Role</th>' +
+              '<th>Nationality</th>' +
+              '<th>Occupation</th>' +
+              '<th>Details Link</th>' +
+              '</tr>';
 
             dirs.forEach(d => {
-              html += '<tr>'
-                + `<td>${d.title || ''}</td>`
-                + `<td>${d.appointment || ''}</td>`
-                + `<td>${d.dateOfBirth || ''}</td>`
-                + `<td>${d.appointmentCount || ''}</td>`
-                + `<td>${d.officerRole || ''}</td>`
-                + `<td>${d.nationality || ''}</td>`
-                + `<td>${d.occupation || ''}</td>`
-                + `<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>`
-                + '</tr>';
+              html += '<tr>' +
+                `<td>${d.title || ''}</td>` +
+                `<td>${d.appointment || ''}</td>` +
+                `<td>${d.dateOfBirth || ''}</td>` +
+                `<td>${d.appointmentCount || ''}</td>` +
+                `<td>${d.officerRole || ''}</td>` +
+                `<td>${d.nationality || ''}</td>` +
+                `<td>${d.occupation || ''}</td>` +
+                `<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>` +
+                '</tr>';
             });
             html += '</table>';
 
             row.child(html).show();
-            $btn
-              .addClass('active')
-              .text('Hide Directors');
+            $btn.addClass('active').text('Hide Directors');
           }
         }
 
@@ -168,7 +164,7 @@ $(document).ready(function() {
             return false;
           }
           if (active === 'Fund Entities') {
-            // Match by fund‐entity regex on CompanyName
+            // Match by fund-entity regex on CompanyName
             return fundEntitiesRE.test(rowData[0]);
           }
           // Otherwise match if Category includes the active label
@@ -176,7 +172,7 @@ $(document).ready(function() {
           return parts.includes(active);
         });
 
-        // Tab‐button click handler
+        // Tab-button click handler
         $('.ft-filters').on('click', '.ft-btn', function() {
           $('.ft-btn').removeClass('active');
           $(this).addClass('active');
@@ -187,9 +183,9 @@ $(document).ready(function() {
             companyTable.draw();
           }
         });
-      }
-    }
-  });
+      } // initTables
+    }   // parse complete
+  });    // Papa.parse
 
   // Flatpickr range picker & backfill button
   flatpickr("#backfill-range", {
@@ -219,7 +215,7 @@ $(document).ready(function() {
 
     fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/backfill', {
       method: 'POST',
-      headers: {'Content-Type':'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ start_date: start, end_date: end })
     })
       .then(r => {
@@ -241,19 +237,21 @@ $(document).ready(function() {
     btn.textContent = 'Fetching Directors…';
 
     try {
-      // Replace this URL if your Netlify function has a different path
-      const resp = await fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({})
-      });
+      const resp = await fetch(
+        'https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({})
+        }
+      );
 
       if (!resp.ok) {
         throw new Error(`HTTP ${resp.status}`);
       }
 
       alert('Fetch Directors workflow dispatched successfully!');
-      // Optionally reload directors.json or refresh the table here
+      // Optional: reload directors.json and refresh tables here.
 
     } catch (err) {
       console.error('Error dispatching Fetch Directors:', err);
