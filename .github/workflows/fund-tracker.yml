@@ -51,15 +51,12 @@ jobs:
       - name: Run fund_tracker
         run: |
           python fund_tracker.py \
-            --start_date ${{ github.event.inputs.start_date }} \
-            --end_date   ${{ github.event.inputs.end_date }}
+            --start_date ${{ github.event.inputs.start_date || 'today' }} \
+            --end_date   ${{ github.event.inputs.end_date   || 'today' }}
 
-      # ───────────────────────────────────────────────────────────────────────────
-      # KEEP THIS STEP to fetch directors every time fund-tracker runs:
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
-      # ───────────────────────────────────────────────────────────────────────────
 
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
