@@ -1,11 +1,12 @@
+# .github/workflows/fetch-directors.yml
 name: Fetch Directors
 
 permissions:
-  contents: write   # so we can commit directors.json back
+  contents: write
   actions: read
 
 on:
-  workflow_dispatch:   # allows manual triggering in the GitHub UI
+  workflow_dispatch:
 
 jobs:
   fetch-directors:
@@ -49,7 +50,7 @@ jobs:
 
       - name: Commit updated directors.json
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/assets/data/directors.json
           if ! git diff --cached --quiet; then
