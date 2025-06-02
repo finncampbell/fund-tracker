@@ -22,7 +22,7 @@ jobs:
   update-data:
     runs-on: ubuntu-latest
     env:
-      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      CH_API_KEY:   ${{ secrets.CH_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
@@ -54,9 +54,12 @@ jobs:
             --start_date ${{ github.event.inputs.start_date }} \
             --end_date   ${{ github.event.inputs.end_date }}
 
+      # ───────────────────────────────────────────────────────────────────────────
+      # KEEP THIS STEP to fetch directors every time fund-tracker runs:
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
+      # ───────────────────────────────────────────────────────────────────────────
 
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
