@@ -3,8 +3,8 @@
 fetch_directors.py
 
 - Fetches directors for every filtered company in relevant_companies.csv
-- Dispatches in dynamic batches sized to remaining API quota
-- Honors shared buffered rate limit (600−50)
+- Dispatches in dynamic batches sized up to MAX_WORKERS
+- Honors shared rate limit (600 calls per 5 minutes) via rate_limiter.enforce_rate_limit()
 - Updates docs/assets/data/directors.json
 - Logs to assets/logs/director_fetch.log
 """
@@ -19,7 +19,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 import requests
 
-from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls, WINDOW_SECONDS, _call_times, _lock
+from rate_limiter import enforce_rate_limit, record_call
+# (Removed internal _call_times, _lock imports and get_remaining_calls)
 
 # Config
 API_BASE       = 'https://api.company-information.service.gov.uk/company'
@@ -57,12 +58,15 @@ def load_existing():
 def fetch_one(number):
     """
     Fetch "officers" endpoint for a single company number.
-    Implements up to 3 retries on 5xx, but COUNTS every request in rate limiter.
+    Implements up to 3 retries on 5xx, but each attempt blocks on enforce_rate_limit().
     """
     RETRIES, DELAY = 3, 5
     items = []
+
     for attempt in range(RETRIES):
+        # Block here if we've flooded 600 calls in the last 5 minutes
         enforce_rate_limit()
+
         try:
             resp = requests.get(
                 f"{API_BASE}/{number}/officers",
@@ -70,7 +74,7 @@ def fetch_one(number):
                 timeout=10
             )
         except Exception as e:
-            # network failure; count, sleep, and retry
+            # network failure; count the call anyway, then retry
             record_call()
             log.warning(f"Network error fetching {number}: {e}")
             if attempt < RETRIES - 1:
@@ -79,10 +83,10 @@ def fetch_one(number):
             else:
                 break
 
-        # count every HTTP interaction
+        # Count every HTTP interaction
         record_call()
 
-        if resp.status_code >= 500 and attempt < RETIES - 1:
+        if resp.status_code >= 500 and attempt < RETRIES - 1:
             log.warning(f"Server error {resp.status_code} for {number}, retry {attempt + 1}")
             time.sleep(DELAY)
             continue
@@ -136,34 +140,28 @@ def main():
     idx = 0
 
     while idx < total:
-        avail = get_remaining_calls()
-        if avail <= 0:
-            # Sleep exactly until the oldest timestamp expires (or 0.1s)
-            with _lock:
-                if _call_times:
-                    oldest = _call_times[0]
-                    wait = (oldest + WINDOW_SECONDS) - time.time()
-                else:
-                    wait = 0.1
-            time.sleep(max(wait, 0.1))
-            continue
-
-        batch_size = min(avail, MAX_WORKERS, total - idx)
+        # Always launch up to MAX_WORKERS threads—each thread will block inside fetch_one() if needed
+        batch_size = min(MAX_WORKERS, total - idx)
         batch = pending[idx : idx + batch_size]
-        log.info(f"Dispatching batch {idx + 1}-{idx + len(batch)} of {total}")
+        log.info(f"Dispatching batch {idx + 1}-{idx + batch_size} of {total}")
 
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
             future_to_num = {exe.submit(fetch_one, num): num for num in batch}
             for fut in as_completed(future_to_num):
-                num, dirs = fut.result()
+                try:
+                    num, dirs = fut.result()
+                except Exception as e:
+                    log.error(f"Error fetching {future_to_num[fut]}: {e}")
+                    continue
+
                 existing[num] = dirs
                 log.info(f"Fetched {len(dirs)} officers for {num}")
 
-        idx += len(batch)
+        idx += batch_size
 
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     temp = DIRECTORS_JSON + ".tmp"
-    with open(temp, "w") as f:
+    with open(temp, 'w') as f:
         json.dump(existing, f, separators=(',', ':'))
     os.replace(temp, DIRECTORS_JSON)
     log.info(f"Wrote directors.json with {len(existing)} entries")
