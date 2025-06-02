@@ -50,8 +50,8 @@ jobs:
 
       - name: Run fund_tracker
         env:
-          START_DATE: ${{ github.event.inputs.start_date || 'today' }}
-          END_DATE:   ${{ github.event.inputs.end_date   || 'today' }}
+          START_DATE: ${{ github.event.inputs.start_date != '' && github.event.inputs.start_date || 'today' }}
+          END_DATE:   ${{ github.event.inputs.end_date   != '' && github.event.inputs.end_date   || 'today' }}
         run: |
           python fund_tracker.py \
             --start_date "$START_DATE" \
