@@ -1,83 +1,111 @@
-import time
-import json
+#!/usr/bin/env python3
+import os
+import sqlite3
 import threading
-from collections import deque
+import time
 
-# Company House rate limit: 600 calls per 5 minutes
-RATE_LIMIT = 600
-WINDOW_SECONDS = 300.0  # 5 minutes
-BUFFER = 50            # leave 50-call safety buffer
+# ─── Configuration ───────────────────────────────────────────────────────────────
+WINDOW_SECONDS = 300    # 5 minutes
+MAX_CALLS      = 600    # maximum allowed calls per window
+DB_PATH        = "rate_limiter.db"
 
-# Internal timestamp queue and lock
-_call_times = deque()
+# Internal lock to serialize SQLite access within a process
 _lock = threading.Lock()
 
-def enforce_rate_limit():
+def _get_connection():
     """
-    Block until we're under the allowed call rate (RATE_LIMIT - BUFFER).
-    Uses a sliding window of the last WINDOW_SECONDS.
+    Opens (or creates) the SQLite DB and ensures the 'calls' table exists.
+    Returns a sqlite3.Connection with autocommit enabled.
     """
-    while True:
-        now = time.time()
-        with _lock:
-            # prune old timestamps
-            while _call_times and now - _call_times[0] > WINDOW_SECONDS:
-                _call_times.popleft()
+    parent = os.path.dirname(DB_PATH)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
 
-            # if we've hit RATE_LIMIT - BUFFER, compute sleep time
-            if len(_call_times) < (RATE_LIMIT - BUFFER):
-                return  # under limit, proceed immediately
+    # timeout=10 allows up to 10 seconds if the DB is locked by another process
+    conn = sqlite3.connect(DB_PATH, timeout=10, isolation_level=None)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS calls (
+            ts INTEGER PRIMARY KEY
+        )
+    """)
+    return conn
 
-            oldest = _call_times[0]
-            wait = (oldest + WINDOW_SECONDS) - now
-
-        # sleep outside lock to allow other threads to wake and prune
-        time.sleep(max(wait, 0.01))
-
-def record_call():
-    """Record a successful (or attempted) API call timestamp."""
-    with _lock:
-        _call_times.append(time.time())
+def _prune_old(conn, cutoff_ts):
+    """
+    Delete any rows older than cutoff_ts.
+    """
+    conn.execute("DELETE FROM calls WHERE ts < ?", (cutoff_ts,))
 
 def get_remaining_calls() -> int:
     """
-    Return how many calls remain in this window (after applying BUFFER).
+    Returns how many calls remain in the current WINDOW_SECONDS window.
     """
-    now = time.time()
+    now = int(time.time())
+    cutoff = now - WINDOW_SECONDS
+
+    conn = _get_connection()
+    with conn:
+        # Prune any entries older than the window
+        conn.execute("DELETE FROM calls WHERE ts < ?", (cutoff,))
+        # Count how many remain
+        cursor = conn.execute("SELECT COUNT(*) FROM calls")
+        count = cursor.fetchone()[0]
+    conn.close()
+
+    return MAX_CALLS - count
+
+def enforce_rate_limit():
+    """
+    Blocks (sleeps) until we are below MAX_CALLS in the last WINDOW_SECONDS.
+    Then records the current timestamp as one new call.
+    """
+    while True:
+        now = int(time.time())
+        cutoff = now - WINDOW_SECONDS
+
+        with _lock:
+            conn = _get_connection()
+            try:
+                # 1) Prune old entries
+                conn.execute("DELETE FROM calls WHERE ts < ?", (cutoff,))
+
+                # 2) Count remaining
+                cursor = conn.execute("SELECT COUNT(*) FROM calls")
+                count = cursor.fetchone()[0]
+
+                if count < MAX_CALLS:
+                    # We have room → insert new timestamp, then return
+                    conn.execute("INSERT INTO calls (ts) VALUES (?)", (now,))
+                    conn.close()
+                    return
+                else:
+                    # We are at limit → find oldest timestamp to know how long to wait
+                    cursor = conn.execute("SELECT MIN(ts) FROM calls")
+                    oldest = cursor.fetchone()[0] or cutoff
+                    wait = (oldest + WINDOW_SECONDS) - now
+                    conn.close()
+                    if wait <= 0:
+                        # If somehow already past, loop again immediately
+                        continue
+            except Exception:
+                conn.close()
+                raise
+
+        # Sleep outside the lock so other threads/processes can proceed
+        time.sleep(wait)
+
+def record_call():
+    """
+    Alternative helper: simply record a new call timestamp without blocking.
+    (Useful if you want to manually insert after a request.)
+    """
+    now = int(time.time())
+    cutoff = now - WINDOW_SECONDS
+
     with _lock:
-        # prune old timestamps
-        while _call_times and now - _call_times[0] > WINDOW_SECONDS:
-            _call_times.popleft()
-        remaining = (RATE_LIMIT - BUFFER) - len(_call_times)
-    return max(0, remaining)
-
-def load_rate_limit_state(filepath):
-    """
-    Load persisted timestamps from JSON file into our deque,
-    pruning anything older than WINDOW_SECONDS.
-    """
-    try:
-        with open(filepath, 'r') as f:
-            arr = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return
-
-    now = time.time()
-    with _lock:
-        for ts in arr:
-            if now - ts <= WINDOW_SECONDS:
-                _call_times.append(ts)
-
-def save_rate_limit_state(filepath):
-    """
-    Persist current timestamps (as list) to JSON file.
-    """
-    now = time.time()
-    with _lock:
-        # prune old
-        while _call_times and now - _call_times[0] > WINDOW_SECONDS:
-            _call_times.popleft()
-        arr = list(_call_times)
-
-    with open(filepath, 'w') as f:
-        json.dump(arr, f)
+        conn = _get_connection()
+        try:
+            conn.execute("DELETE FROM calls WHERE ts < ?", (cutoff,))
+            conn.execute("INSERT OR IGNORE INTO calls (ts) VALUES (?)", (now,))
+        finally:
+            conn.close()
