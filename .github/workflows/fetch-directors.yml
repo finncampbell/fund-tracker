@@ -1,0 +1,60 @@
+name: Fetch Directors
+
+permissions:
+  contents: write   # so we can commit directors.json back
+  actions: read
+
+on:
+  workflow_dispatch:   # allows manual triggering in the GitHub UI
+
+jobs:
+  fetch-directors:
+    runs-on: ubuntu-latest
+    env:
+      CH_API_KEY: ${{ secrets.CH_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Restore rate_limiter.db cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --prefer-binary -r requirements.txt
+
+      - name: Fetch directors for relevant companies
+        run: |
+          python fetch_directors.py
+
+      - name: Save rate_limiter.db to cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
+
+      - name: Commit updated directors.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/directors.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): update directors.json [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "No changes to directors.json — skipping commit"
+          fi
