@@ -34,8 +34,11 @@ LOG_FILE       = os.path.join(LOG_DIR, 'backfill_directors.log')
 MAX_WORKERS    = 100
 
 os.makedirs(LOG_DIR, exist_ok=True)
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
 log = root_log.getChild('backfill_directors')
 
 def write_status(total, processed):
@@ -96,9 +99,22 @@ def fetch_officers(number):
             items = []
         break
 
-    ROLES = {'director', 'member'}
-    active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
-    chosen = active or [o for o in items if o.get('officer_role') in ROLES]
+    # Include all relevant officer roles, filter out resigned ones
+    ROLES = {
+        'director',
+        'corporate-director',
+        'nominee-director',
+        'managing-officer',
+        'corporate-managing-officer',
+        'llp-designated-member',
+        'llp-member',
+        'corporate-llp-designated-member',
+        'corporate-llp-member'
+    }
+    chosen = [
+        o for o in items
+        if o.get('officer_role') in ROLES and o.get('resigned_on') is None
+    ]
 
     officers_list = []
     for o in chosen:
@@ -161,7 +177,7 @@ def main():
                 existing[num] = officers
                 processed += 1
                 write_status(total, processed)
-                log.info(f"Fetched {len(officers)} officers for {num} ({processed}/{total})")
+                log.info(f"Fetched {len(officers)} active directors for {num} ({processed}/{total})")
 
         idx += batch_size
 
