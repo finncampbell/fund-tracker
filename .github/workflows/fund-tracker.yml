@@ -1,6 +1,5 @@
 name: Fund Tracker
 
-# Grant write access so GITHUB_TOKEN can push commits
 permissions:
   contents: write
   actions: read
@@ -18,6 +17,16 @@ on:
         description: 'End date for ingest (YYYY-MM-DD, today, or yesterday)'
         required: false
         default: 'today'
+      backfill:
+        description: 'Run historical backfill? (true/false)'
+        required: false
+        default: 'false'
+      backfill_start:
+        description: 'Backfill start (YYYY-MM-DD)'
+        required: false
+      backfill_end:
+        description: 'Backfill end (YYYY-MM-DD)'
+        required: false
 
 jobs:
   update-data:
@@ -30,8 +39,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0           # full history so we can push
-          persist-credentials: true  # configure origin with GITHUB_TOKEN
+          fetch-depth: 0
+          persist-credentials: true
+
+      # ─── Restore rate_limiter.db from cache (if present) ─────────────────────────
+      - name: Restore rate_limiter.db cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -49,6 +65,24 @@ jobs:
             --start_date ${{ github.event.inputs.start_date || 'today' }} \
             --end_date   ${{ github.event.inputs.end_date   || 'today' }}
 
+      - name: Fetch directors for relevant companies
+        run: |
+          python fetch_directors.py
+
+      - name: Backfill directors (conditional)
+        if: ${{ github.event.inputs.backfill == 'true' }}
+        run: |
+          python backfill_directors.py \
+            --start_date ${{ github.event.inputs.backfill_start }} \
+            --end_date   ${{ github.event.inputs.backfill_end }}
+
+      # ─── Save the updated rate_limiter.db back into cache ────────────────────────
+      - name: Save rate_limiter.db to cache
+        uses: actions/cache@v3
+        with:
+          path: rate_limiter.db
+          key: rate-limiter-db
+
       - name: Commit updated data files
         run: |
           git config user.name  "github-actions[bot]"
@@ -56,9 +90,10 @@ jobs:
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
                   docs/assets/data/relevant_companies.csv \
-                  docs/assets/data/relevant_companies.xlsx
+                  docs/assets/data/relevant_companies.xlsx \
+                  docs/assets/data/directors.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore(data): update companies data [skip ci]"
+            git commit -m "chore(data): update companies & directors [skip ci]"
             git push origin HEAD:main
           else
             echo "No changes to data — skipping commit"
