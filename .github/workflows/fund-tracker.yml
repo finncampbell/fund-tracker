@@ -49,10 +49,13 @@ jobs:
           pip install --prefer-binary -r requirements.txt
 
       - name: Run fund_tracker
+        env:
+          START_DATE: ${{ github.event.inputs.start_date || 'today' }}
+          END_DATE:   ${{ github.event.inputs.end_date   || 'today' }}
         run: |
           python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
+            --start_date "$START_DATE" \
+            --end_date   "$END_DATE"
 
       - name: Fetch directors for relevant companies
         run: |
