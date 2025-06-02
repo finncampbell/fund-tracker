@@ -51,8 +51,8 @@ jobs:
       - name: Run fund_tracker
         run: |
           python fund_tracker.py \
-            --start_date ${{ github.event.inputs.start_date || 'today' }} \
-            --end_date   ${{ github.event.inputs.end_date   || 'today' }}
+            --start_date "${{ github.event.inputs.start_date || 'today' }}" \
+            --end_date   "${{ github.event.inputs.end_date   || 'today' }}"
 
       - name: Fetch directors for relevant companies
         run: |
