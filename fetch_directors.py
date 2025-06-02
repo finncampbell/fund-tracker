@@ -3,8 +3,8 @@
 fetch_directors.py
 
 - Fetches directors for every filtered company in relevant_companies.csv
-- Dispatches in dynamic batches sized up to MAX_WORKERS
-- Honors shared rate limit (600 calls per 5 minutes) via rate_limiter.enforce_rate_limit()
+- Dispatches in dynamic batches up to MAX_WORKERS
+- Honors shared rate limit (600 calls per 5 minutes)
 - Updates docs/assets/data/directors.json
 - Logs to assets/logs/director_fetch.log
 """
@@ -20,7 +20,6 @@ import pandas as pd
 import requests
 
 from rate_limiter import enforce_rate_limit, record_call
-# (Removed internal _call_times, _lock imports and get_remaining_calls)
 
 # Config
 API_BASE       = 'https://api.company-information.service.gov.uk/company'
@@ -35,8 +34,11 @@ MAX_WORKERS    = 100
 
 # Logging
 os.makedirs(LOG_DIR, exist_ok=True)
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
 log = logging.getLogger(__name__)
 
 def load_relevant():
@@ -74,7 +76,7 @@ def fetch_one(number):
                 timeout=10
             )
         except Exception as e:
-            # network failure; count the call anyway, then retry
+            # Network failure; count the call anyway, then retry
             record_call()
             log.warning(f"Network error fetching {number}: {e}")
             if attempt < RETRIES - 1:
@@ -99,9 +101,22 @@ def fetch_one(number):
             items = []
         break
 
-    ROLES = {'director', 'member'}
-    active = [o for o in items if o.get('officer_role') in ROLES and o.get('resigned_on') is None]
-    chosen = active or [o for o in items if o.get('officer_role') in ROLES]
+    # Include all relevant officer roles, filter out resigned ones
+    ROLES = {
+        'director',
+        'corporate-director',
+        'nominee-director',
+        'managing-officer',
+        'corporate-managing-officer',
+        'llp-designated-member',
+        'llp-member',
+        'corporate-llp-designated-member',
+        'corporate-llp-member'
+    }
+    chosen = [
+        o for o in items
+        if o.get('officer_role') in ROLES and o.get('resigned_on') is None
+    ]
 
     directors_list = []
     for o in chosen:
@@ -140,9 +155,9 @@ def main():
     idx = 0
 
     while idx < total:
-        # Always launch up to MAX_WORKERS threads—each thread will block inside fetch_one() if needed
+        # Launch up to MAX_WORKERS threads; each thread blocks inside fetch_one() if needed
         batch_size = min(MAX_WORKERS, total - idx)
-        batch = pending[idx : idx + batch_size]
+        batch = pending[idx: idx + batch_size]
         log.info(f"Dispatching batch {idx + 1}-{idx + batch_size} of {total}")
 
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
@@ -155,7 +170,7 @@ def main():
                     continue
 
                 existing[num] = dirs
-                log.info(f"Fetched {len(dirs)} officers for {num}")
+                log.info(f"Fetched {len(dirs)} active directors for {num}")
 
         idx += batch_size
 
