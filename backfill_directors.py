@@ -4,7 +4,7 @@ backfill_directors.py
 
 - Historical backfill within start–end date
 - Emits backfill_status.json for UI progress
-- Dynamically batches up to remaining API quota
+- Dynamically batches up to MAX_WORKERS
 - Updates docs/assets/data/directors.json
 - Logs to assets/logs/backfill_directors.log
 """
@@ -20,7 +20,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 import requests
 
-from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls, WINDOW_SECONDS, _call_times, _lock
+from rate_limiter import enforce_rate_limit, record_call
 from logger import log as root_log
 
 API_BASE       = 'https://api.company-information.service.gov.uk/company'
@@ -62,7 +62,9 @@ def fetch_officers(number):
     RETRIES, DELAY = 3, 5
     items = []
     for attempt in range(RETRIES):
+        # Block until under 600 calls in 5 min, then record one
         enforce_rate_limit()
+
         try:
             resp = requests.get(
                 f"{API_BASE}/{number}/officers",
@@ -143,31 +145,25 @@ def main():
 
     idx = 0
     while idx < total:
-        avail = get_remaining_calls()
-        if avail <= 0:
-            with _lock:
-                if _call_times:
-                    oldest = _call_times[0]
-                    wait = (oldest + WINDOW_SECONDS) - time.time()
-                else:
-                    wait = 0.1
-            time.sleep(max(wait, 0.1))
-            continue
-
-        batch_size = min(avail, MAX_WORKERS, total - idx)
+        batch_size = min(MAX_WORKERS, total - idx)
         batch = pending[idx: idx + batch_size]
-        log.info(f"Dispatching batch {idx + 1}-{idx + len(batch)} of {total}")
+        log.info(f"Dispatching batch {idx + 1}-{idx + batch_size} of {total}")
 
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
             future_to_num = {exe.submit(fetch_officers, num): num for num in batch}
             for fut in as_completed(future_to_num):
-                num, officers = fut.result()
+                try:
+                    num, officers = fut.result()
+                except Exception as e:
+                    log.error(f"Error fetching {future_to_num[fut]}: {e}")
+                    continue
+
                 existing[num] = officers
                 processed += 1
                 write_status(total, processed)
                 log.info(f"Fetched {len(officers)} officers for {num} ({processed}/{total})")
 
-        idx += len(batch)
+        idx += batch_size
 
     os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
     temp = DIRECTORS_JSON + ".tmp"
