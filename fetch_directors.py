@@ -51,7 +51,6 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────────
 
 def load_relevant_company_numbers():
     """
@@ -66,6 +65,7 @@ def load_relevant_company_numbers():
         return []
     return df['CompanyNumber'].dropna().tolist()
 
+
 def load_existing_directors():
     """
     Load directors.json (if it exists) or return an empty dict.
@@ -79,6 +79,7 @@ def load_existing_directors():
             return {}
     return {}
 
+
 def save_directors(directors_map):
     """
     Atomically write directors_map (a dict) to DIRECTORS_JSON.
@@ -88,6 +89,7 @@ def save_directors(directors_map):
     with open(tmp, 'w') as f:
         json.dump(directors_map, f, separators=(',', ':'))
     os.replace(tmp, DIRECTORS_JSON)
+
 
 def fetch_officers_for_company(number):
     """
@@ -152,19 +154,18 @@ def fetch_officers_for_company(number):
             dob_str = ""
 
         directors_list.append({
-            'title':           o.get('name'),
-            'appointment':     o.get('snippet', ''),
-            'dateOfBirth':     dob_str,
-            'appointmentCount':o.get('appointment_count'),
-            'selfLink':        o.get('links', {}).get('self'),
-            'officerRole':     o.get('officer_role'),
-            'nationality':     o.get('nationality'),
-            'occupation':      o.get('occupation'),
+            'title':            o.get('name'),
+            'appointment':      o.get('snippet', ''),
+            'dateOfBirth':      dob_str,
+            'appointmentCount': o.get('appointment_count'),
+            'selfLink':         o.get('links', {}).get('self'),
+            'officerRole':      o.get('officer_role'),
+            'nationality':      o.get('nationality'),
+            'occupation':       o.get('occupation'),
         })
 
     return number, directors_list
 
-# ─── Main ────────────────────────────────────────────────────────────────────────
 
 def main():
     log.info("Starting fetch_directors.py")
@@ -191,7 +192,7 @@ def main():
     while idx < total:
         batch_size = min(MAX_WORKERS, total - idx)
         batch = pending[idx : idx + batch_size]
-        log.info(f"Dispatching batch {idx+1}-{idx+batch_size} of {total}")
+        log.info(f"Dispatching batch {idx + 1}-{idx + batch_size} of {total}")
 
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
             future_to_num = {exe.submit(fetch_officers_for_company, num): num for num in batch}
@@ -211,6 +212,7 @@ def main():
     # 4) Write out the updated directors.json
     save_directors(existing)
     log.info(f"Completed fetch; total director entries now: {len(existing)}")
+
 
 if __name__ == '__main__':
     main()
