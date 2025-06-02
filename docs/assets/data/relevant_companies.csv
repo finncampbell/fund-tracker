@@ -1,21 +1,25 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
+16487694,OLEDO CONSULTING LTD,2025-06-02,active,,2025-06-02,2025-06-02T03:41:50.892164,"46180, 64999",SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16487674,CAPELLA CAPITAL LIMITED,2025-06-02,active,,2025-06-02,2025-06-02T03:41:50.892164,"64209, 64303","Capital, SIC",Activities of other holding companies n.e.c.; Activities of venture and development capital companies,"Protected-cell SPVs, bespoke feeders.; Venture Capital Trusts (VCTs)."
+16487708,B6 CAMDEN DRIVE LTD,2025-06-02,active,,2025-06-02,2025-06-02T03:41:50.892164,64305,SIC,Activities of property unit trusts,Property-unit-trust vehicles.
+16487706,BLOOMBERRY VENTURES LIMITED,2025-06-02,active,,2025-06-02,2025-06-02T03:41:50.892164,68100,Ventures,,
+16487448,D COLEMAN HOLDINGS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
+16487463,ELIXIR PROPERTY INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
+16487576,AWEN ADVISORS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,70229,Advisors,,
+16487508,BROOKS PROPERTY PARTNERS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"68100, 68209",Partners,,
+16487244,PANOVUS GROUP LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16487181,VM CAPITAL LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68209,Capital,,
+16487504,GULLIVER INVESTMENT GROUP LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
+16487345,URBAN EQUITY CONSULTANCY LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"70229, 98000",Equity,,
+16487449,BROOKDENE CAPITAL ADVISORS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"70221, 70229","Capital, SIC",Financial management (of companies and enterprises),Treasury and internal finance arm.
+16487514,FLIP SIDE INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
+16487618,CYPRESS GROVE INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,74909,Investments,,
 16487634,DD SOLUTIONS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
 16487638,AK SHEHU HOLDINGS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"64301, 70221",SIC,Activities of investment trusts; Financial management (of companies and enterprises),Closed-ended listed trusts.; Treasury and internal finance arm.
 16487648,CHANDIWANA INVESTMENT GROUP LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"68100, 68201, 68209",Investments,,
 16487657,CWTRDZ LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"64999, 66110",SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
 16487289,KATTAH INVESTMENT GROUP LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
-16487514,FLIP SIDE INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
-16487618,CYPRESS GROVE INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,74909,Investments,,
-16487491,HIGHLIFE INVEST LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
 16487611,AQUILA CORE AI LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"26400, 62012, 64999, 70221",SIC,Financial intermediation not elsewhere classified; Financial management (of companies and enterprises),Catch-all credit-oriented SPVs.; Treasury and internal finance arm.
 16487673,FAST GROUP HOLDINGS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
 16487158,CE JUBB INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
-16487576,AWEN ADVISORS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,70229,Advisors,,
-16487463,ELIXIR PROPERTY INVESTMENTS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
-16487508,BROOKS PROPERTY PARTNERS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"68100, 68209",Partners,,
-16487448,D COLEMAN HOLDINGS LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
-16487449,BROOKDENE CAPITAL ADVISORS LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"70221, 70229","Capital, SIC",Financial management (of companies and enterprises),Treasury and internal finance arm.
-16487345,URBAN EQUITY CONSULTANCY LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,"70229, 98000",Equity,,
-16487504,GULLIVER INVESTMENT GROUP LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68100,Investments,,
-16487244,PANOVUS GROUP LIMITED,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16487181,VM CAPITAL LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,68209,Capital,,
+16487491,HIGHLIFE INVEST LTD,2025-06-01,active,,2025-06-02,2025-06-02T01:07:05.596056,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
