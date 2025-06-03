@@ -1,11 +1,16 @@
 $(document).ready(function() {
-  // Correct path for GitHub Pages with docs/ as root (NO leading slash!)
-  const url = `assets/data/relevant_companies.csv?v=${Date.now()}`;
-  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
-  // Your Netlify site (where serverless functions live)
-  const NETLIFY_BASE = 'https://fund-tracker-functions.netlify.app';
+  // Instead of fetching from a relative path, load CSV from the data branch’s raw URL:
+  const repoOwner = 'finncampbell';      // <-- replace if different
+  const repoName  = 'fund-tracker';
+  const dataBranch = 'data';
 
-  Papa.parse(url, {
+  const csvUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/relevant_companies.csv?v=${Date.now()}`;
+  const directorsUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/directors.json`;
+
+  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
+
+  // 1) Load the CSV from the data branch
+  Papa.parse(csvUrl, {
     download: true,
     header: true,
     complete(results) {
@@ -13,7 +18,8 @@ $(document).ready(function() {
       const raw = results.data.filter(r => r['CompanyNumber']);
 
       let directorsMap = {};
-      fetch('assets/data/directors.json')
+      // 2) Load directors.json from the data branch
+      fetch(directorsUrl)
         .then(r => r.json())
         .then(json => {
           directorsMap = Object.fromEntries(
@@ -27,7 +33,7 @@ $(document).ready(function() {
         });
 
       function initTables() {
-        // Build normalized array of objects from parsed CSV rows
+        // Build a normalized array of objects from the parsed CSV rows
         const data = raw.map(r => {
           const num = r['CompanyNumber'].trim();
           return {
@@ -43,7 +49,7 @@ $(document).ready(function() {
           };
         });
 
-        // MAIN TABLE: show everything where Category ≠ "Other" and ≠ pure "SIC"
+        // MAIN TABLE: show rows where Category != "Other" and != pure "SIC"
         const mainData = data.filter(r => {
           return r.Category !== 'Other' && r.Category !== 'SIC';
         });
@@ -71,7 +77,7 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // SIC TABLE: show everything where Category includes "SIC"
+        // SIC TABLE: show rows where Category includes "SIC"
         const sicData = data.filter(r => {
           const parts = r.Category.split(',').map(s => s.trim());
           return parts.includes('SIC');
@@ -103,7 +109,7 @@ $(document).ready(function() {
           responsive: true
         });
 
-        // Expand/Collapse directors for both tables
+        // Expand/Collapse directors rows
         function toggleDirectors() {
           const $btn    = $(this);
           const tableId = $btn.closest('table').attr('id');
@@ -111,11 +117,9 @@ $(document).ready(function() {
           const row     = dt.row($btn.closest('tr'));
 
           if (row.child.isShown()) {
-            // Hide child row
             row.child.hide();
             $btn.removeClass('active').text('Expand for Directors');
           } else {
-            // Build child HTML for directors
             const dirs = row.data().Directors || [];
             let html = '<table class="child-table"><tr>' +
               '<th>Director Name</th>' +
@@ -150,19 +154,15 @@ $(document).ready(function() {
         $('#companies tbody').on('click', '.expand-btn', toggleDirectors);
         $('#sic-companies tbody').on('click', '.expand-btn', toggleDirectors);
 
-        // DataTables search hook (MAIN table only)
+        // Search hook for MAIN table
         $.fn.dataTable.ext.search.push((settings, rowData) => {
           if (settings.nTable.id !== 'companies') return true;
           const active = $('.ft-btn.active').data('filter') || '';
           if (!active) {
             return rowData[3] !== 'Other' && rowData[3] !== 'SIC';
           }
-          if (active === 'SIC') {
-            return false;
-          }
-          if (active === 'Fund Entities') {
-            return fundEntitiesRE.test(rowData[0]);
-          }
+          if (active === 'SIC') return false;
+          if (active === 'Fund Entities') return fundEntitiesRE.test(rowData[0]);
           const parts = rowData[3].split(',').map(s => s.trim());
           return parts.includes(active);
         });
@@ -178,14 +178,11 @@ $(document).ready(function() {
             companyTable.draw();
           }
         });
-      } // initTables
-    },   // parse complete
-    error: function(err) {
-      console.error('Error parsing relevant_companies.csv:', err);
+      }
     }
-  });    // Papa.parse
+  });
 
-  // Flatpickr for backfill range
+  // Flatpickr range picker & backfill button
   flatpickr("#backfill-range", {
     mode: "range",
     dateFormat: "Y-m-d",
@@ -205,14 +202,13 @@ $(document).ready(function() {
     }
   });
 
-  // Backfill button logic
   document.getElementById("run-backfill").addEventListener("click", () => {
     const btn   = document.getElementById("run-backfill");
     const start = btn.dataset.start;
     const end   = btn.dataset.end;
     if (!start || !end) return;
 
-    fetch(`${NETLIFY_BASE}/.netlify/functions/backfill`, {
+    fetch('https://fund-tracker-functions.netlify.app/.netlify/functions/backfill', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ start_date: start, end_date: end })
@@ -229,7 +225,7 @@ $(document).ready(function() {
       });
   });
 
-  // Fetch Directors button logic
+  // Fetch Directors Now button logic (unchanged)
   document.getElementById("run-fetch-directors").addEventListener("click", async () => {
     const btn = document.getElementById("run-fetch-directors");
     btn.disabled = true;
@@ -237,7 +233,7 @@ $(document).ready(function() {
 
     try {
       const resp = await fetch(
-        `${NETLIFY_BASE}/.netlify/functions/trigger-fetch-directors`,
+        'https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -250,8 +246,6 @@ $(document).ready(function() {
       }
 
       alert('Fetch Directors workflow dispatched successfully!');
-      // Optionally: if you have code that reloads directors.json / refreshes the tables, call it here.
-
     } catch (err) {
       console.error('Error dispatching Fetch Directors:', err);
       alert('Failed to dispatch Fetch Directors. See console for details.');
