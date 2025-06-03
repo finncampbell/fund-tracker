@@ -4,10 +4,6 @@ permissions:
   contents: write
   actions: read
 
-concurrency:
-  group: fund-tracker-main
-  cancel-in-progress: false
-
 on:
   schedule:
     - cron: '*/10 * * * *'
@@ -30,7 +26,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Check out the repo at the very latest main
+      # 1) Check out the repository
       - name: Check out repository
         uses: actions/checkout@v3
         with:
@@ -49,30 +45,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 4) Run fund_tracker (manual or scheduled)
+      # 4) Run fund_tracker
       - name: Run fund_tracker
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python fund_tracker.py \
-              --start_date "${{ github.event.inputs.start_date }}" \
-              --end_date   "${{ github.event.inputs.end_date }}"
-          else
-            python fund_tracker.py
-          fi
+          python fund_tracker.py \
+            --start_date "${{ github.event.inputs.start_date }}" \
+            --end_date   "${{ github.event.inputs.end_date }}"
 
-      # 5) Fetch directors (exactly as before)
+      # 5) Fetch directors for relevant companies
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
 
-      # 6) Save rate_limiter.db to cache for next run (optional)
-      - name: Save rate_limiter.db to cache
-        uses: actions/cache@v3
-        with:
-          path: rate_limiter.db
-          key: rate-limiter-db
-
-      # 7) Commit & push any data changes (no rebasing/pulling here)
+      # 6) Commit updated data files
       - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
@@ -82,18 +67,9 @@ jobs:
                   docs/assets/data/relevant_companies.csv \
                   docs/assets/data/relevant_companies.xlsx \
                   docs/assets/data/directors.json
-
-          if git diff --cached --quiet; then
-            echo "No changes to data — skipping commit"
-            exit 0
-          fi
-
-          git commit -m "chore(data): update companies & directors [skip ci]"
-
-          # Attempt to push. If someone else beat us to main, git push will fail.
-          if git push origin HEAD:main; then
-            echo "Push succeeded"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): update companies & directors [skip ci]"
+            git push origin HEAD:main
           else
-            echo "::warning::Push failed due to non-fast-forward. Another change was merged."
-            exit 0
+            echo "No changes to data — skipping commit"
           fi
