@@ -30,39 +30,26 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Check out the repository
+      # 1) Check out the repo at the very latest main
       - name: Check out repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      # 2) Immediately sync to the very latest main (before any scripts run)
-      - name: Sync to remote main
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      # 3) Restore rate_limiter.db cache
-      - name: Restore rate_limiter.db cache
-        uses: actions/cache@v3
-        with:
-          path: rate_limiter.db
-          key: rate-limiter-db
-
-      # 4) Set up Python
+      # 2) Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      # 5) Install dependencies
+      # 3) Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 6) Run fund_tracker (with flags only on manual dispatch)
+      # 4) Run fund_tracker (manual or scheduled)
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -73,19 +60,19 @@ jobs:
             python fund_tracker.py
           fi
 
-      # 7) Fetch directors for relevant companies
+      # 5) Fetch directors (exactly as before)
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
 
-      # 8) Save rate_limiter.db to cache for next run
+      # 6) Save rate_limiter.db to cache for next run (optional)
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
         with:
           path: rate_limiter.db
           key: rate-limiter-db
 
-      # 9) Commit and push any new/updated CSV or JSON outputs
+      # 7) Commit & push any data changes (no rebasing/pulling here)
       - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
@@ -95,9 +82,18 @@ jobs:
                   docs/assets/data/relevant_companies.csv \
                   docs/assets/data/relevant_companies.xlsx \
                   docs/assets/data/directors.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(data): update companies & directors [skip ci]"
-            git push origin HEAD:main
-          else
+
+          if git diff --cached --quiet; then
             echo "No changes to data — skipping commit"
+            exit 0
+          fi
+
+          git commit -m "chore(data): update companies & directors [skip ci]"
+
+          # Attempt to push. If someone else beat us to main, git push will fail.
+          if git push origin HEAD:main; then
+            echo "Push succeeded"
+          else
+            echo "::warning::Push failed due to non-fast-forward. Another change was merged."
+            exit 0
           fi
