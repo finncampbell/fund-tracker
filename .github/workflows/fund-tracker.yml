@@ -26,15 +26,15 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Check out the main branch (where your code lives)
-      - name: Check out repository
+      # 1) Check out the 'main' branch (where your UI + Python code lives)
+      - name: Check out repository (main)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
       # 2) Set up Python
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
@@ -45,13 +45,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 4) Run fund_tracker (only pass flags on manual dispatch)
+      # 4) Run fund_tracker.py
+      #    - On schedule: run with no flags (defaults to today→today)
+      #    - On manual dispatch: pass start_date/end_date inputs
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python fund_tracker.py \
-              --start_date "${{ github.event.inputs.start_date }}" \
-              --end_date   "${{ github.event.inputs.end_date }}"
+            SD="${{ github.event.inputs.start_date }}"
+            ED="${{ github.event.inputs.end_date }}"
+            # If user cleared inputs, default to "today"
+            if [ -z "$SD" ]; then SD="today"; fi
+            if [ -z "$ED" ]; then ED="today"; fi
+            python fund_tracker.py --start_date "$SD" --end_date "$ED"
           else
             python fund_tracker.py
           fi
@@ -64,9 +69,11 @@ jobs:
       # 6) Clone the 'data' branch into a separate folder
       - name: Clone data branch
         run: |
-          git clone --branch data https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} data-branch
+          git clone --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
+            data-branch
 
-      # 7) Copy newly generated data files into data-branch
+      # 7) Copy newly generated files into data-branch
       - name: Copy new data files into data-branch
         run: |
           mkdir -p data-branch/docs/assets/data
@@ -76,7 +83,7 @@ jobs:
           cp docs/assets/data/relevant_companies.xlsx  data-branch/docs/assets/data/
           cp docs/assets/data/directors.json           data-branch/docs/assets/data/
 
-      # 8) Commit & push updated data files back to 'data'
+      # 8) Commit & push updated data files back to 'data' branch
       - name: Commit updated data files to data branch
         run: |
           cd data-branch
@@ -89,9 +96,10 @@ jobs:
                   docs/assets/data/relevant_companies.xlsx \
                   docs/assets/data/directors.json
 
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(data): update data files [skip ci]"
-            git push origin data
-          else
+          if git diff --cached --quiet; then
             echo "No changes to data — skipping push"
+            exit 0
           fi
+
+          git commit -m "chore(data): update data files [skip ci]"
+          git push origin data
