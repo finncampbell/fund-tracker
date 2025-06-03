@@ -3,13 +3,12 @@
 fetch_directors.py
 
 - Fetches directors for every filtered company in relevant_companies.csv
-- Dispatches in dynamic batches sized to remaining API quota
-- Honors shared buffered rate limit (1200 calls per 5 minutes)
-- Updates docs/assets/data/directors.json
+- Skips companies already in no_directors.json
+- Records any company that returns [] into no_directors.json (with a timestamp)
+- Removes from no_directors.json once directors appear
+- Honors shared buffered rate limit (1200 calls per 5 minutes, as before)
+- Updates docs/assets/data/directors.json and docs/assets/data/no_directors.json
 - Logs to assets/logs/director_fetch.log
-
-Now updated so that any company with an empty director list (i.e., existing entry of [])
-will be retried on each run until a non-empty list is fetched.
 """
 
 import os
@@ -17,6 +16,7 @@ import json
 import time
 import argparse
 import logging
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
@@ -24,45 +24,68 @@ import requests
 
 from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls, WINDOW_SECONDS, _lock
 
-# Config
-API_BASE       = 'https://api.company-information.service.gov.uk/company'
-CH_KEY         = os.getenv('CH_API_KEY')
-RELEVANT_CSV   = 'docs/assets/data/relevant_companies.csv'
-DIRECTORS_JSON = 'docs/assets/data/directors.json'
-LOG_DIR        = 'assets/logs'
-LOG_FILE       = os.path.join(LOG_DIR, 'director_fetch.log')
+# ─── Config ─────────────────────────────────────────────────────────────────────
+API_BASE          = 'https://api.company-information.service.gov.uk/company'
+CH_KEY            = os.getenv('CH_API_KEY')
+RELEVANT_CSV      = 'docs/assets/data/relevant_companies.csv'
+DIRECTORS_JSON    = 'docs/assets/data/directors.json'
+NO_DIRECTORS_JSON = 'docs/assets/data/no_directors.json'
+LOG_DIR           = 'assets/logs'
+LOG_FILE          = os.path.join(LOG_DIR, 'director_fetch.log')
 
-# Pick a sensible upper bound for concurrent threads
-MAX_WORKERS    = 100
+# Maximum threads per batch
+MAX_WORKERS       = 100
 
-# Logging
+# ─── Logging Setup ───────────────────────────────────────────────────────────────
 os.makedirs(LOG_DIR, exist_ok=True)
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
 log = logging.getLogger(__name__)
 
-def load_relevant():
+# ─── Helpers: load & save JSON files ─────────────────────────────────────────────
+def load_json(path: str) -> dict:
+    """
+    Safely load a JSON file as a dict. If missing or corrupt, return {}.
+    """
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, 'r') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        log.warning(f"Could not read or parse {path}; starting fresh.")
+        return {}
+
+def save_json(path: str, data: dict) -> None:
+    """
+    Atomically save a dict to JSON (via a .tmp → replace).
+    """
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + '.tmp'
+    with open(tmp, 'w') as f:
+        json.dump(data, f, separators=(',', ':'))
+    os.replace(tmp, path)
+
+# ─── Load relevant company numbers ───────────────────────────────────────────────
+def load_relevant() -> list[str]:
     df = pd.read_csv(RELEVANT_CSV, dtype=str)
     if 'CompanyNumber' not in df.columns:
         log.error(f"Expected 'CompanyNumber' column in {RELEVANT_CSV}; found {df.columns.tolist()}")
         return []
-    return df['CompanyNumber'].dropna().tolist()
+    return df['CompanyNumber'].dropna().astype(str).tolist()
 
-def load_existing():
-    if os.path.exists(DIRECTORS_JSON):
-        try:
-            return json.load(open(DIRECTORS_JSON, 'r'))
-        except json.JSONDecodeError:
-            log.warning("Corrupt directors.json; starting with empty dictionary")
-            return {}
-    return {}
-
-def fetch_one(number):
+# ─── Fetch one company’s officers ────────────────────────────────────────────────
+def fetch_one(number: str) -> tuple[str, list[dict]]:
     """
     Fetch "officers" endpoint for a single company number.
-    Implements up to 3 retries on 5xx, but COUNTS every request in rate limiter.
+    Up to 3 retries on server/connection errors.
+    Always calls enforce_rate_limit() before each request, then record_call() after.
+    Returns (companyNumber, directors_list).
     """
-    RETRIES, DELAY = 3, 5
+    RETRIES, DELAY = 3, 5  # seconds
     items = []
     for attempt in range(RETRIES):
         enforce_rate_limit()
@@ -73,7 +96,7 @@ def fetch_one(number):
                 timeout=10
             )
         except Exception as e:
-            # network failure; count, sleep, and retry
+            # Count the call, then retry
             record_call()
             log.warning(f"Network error fetching {number}: {e}")
             if attempt < RETRIES - 1:
@@ -82,7 +105,7 @@ def fetch_one(number):
             else:
                 break
 
-        # count every HTTP interaction
+        # Count HTTP interaction
         record_call()
 
         if resp.status_code >= 500 and attempt < RETRIES - 1:
@@ -111,7 +134,6 @@ def fetch_one(number):
             dob_str = str(dob['year'])
         else:
             dob_str = ""
-
         directors_list.append({
             'title':           o.get('name'),
             'appointment':     o.get('snippet', ''),
@@ -122,9 +144,9 @@ def fetch_one(number):
             'nationality':     o.get('nationality'),
             'occupation':      o.get('occupation'),
         })
-
     return number, directors_list
 
+# ─── Main logic ─────────────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_date', help='unused', default='')
@@ -132,22 +154,30 @@ def main():
     args = parser.parse_args()
 
     log.info("Starting fetch_directors")
-    existing = load_existing()
+
+    # 1) Load existing directors.json and no_directors.json
+    existing_dirs: dict[str, list] = load_json(DIRECTORS_JSON)  # e.g. { "12345678": [ ... ] }
+    no_directors: dict[str, str] = load_json(NO_DIRECTORS_JSON) 
+    # Stored as { "12345678": "2025-02-15" }  where value = YYYY-MM-DD first seen
+
+    # 2) Load relevant companies
     relevant = load_relevant()
 
-    # Re-attempt any company number that is missing from existing
-    # OR whose saved director array is empty.
-    pending = [
-        n for n in relevant
-        if n not in existing or not existing.get(n)
-    ]
-    total    = len(pending)
-    idx = 0
+    # 3) Build pending list:
+    #    - Include any company NOT in existing_dirs
+    #    - Exclude any company already in no_directors (we’ll retry those separately via retry_no_directors.py)
+    pending = [n for n in relevant if n not in existing_dirs and n not in no_directors]
+    total   = len(pending)
+    idx     = 0
 
+    log.info(f"{len(existing_dirs)} existing entries; skipping {len(no_directors)} known-no-director companies")
+    log.info(f"Pending fetch batch = {total} companies")
+
+    # 4) Batch‐fetch pending at up to MAX_WORKERS or available calls
     while idx < total:
         avail = get_remaining_calls()
         if avail <= 0:
-            # Sleep a short time until rate limiter window frees up
+            # Sleep until rate limiter frees up
             with _lock:
                 wait = 0.1
             time.sleep(max(wait, 0.1))
@@ -155,23 +185,34 @@ def main():
 
         batch_size = min(avail, MAX_WORKERS, total - idx)
         batch = pending[idx : idx + batch_size]
-        log.info(f"Dispatching batch {idx + 1}-{idx + len(batch)} of {total}")
-
+        log.info(f"Dispatching batch {idx + 1}–{idx + batch_size} of {total}")
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
             future_to_num = {exe.submit(fetch_one, num): num for num in batch}
             for fut in as_completed(future_to_num):
                 num, dirs = fut.result()
-                existing[num] = dirs
-                log.info(f"Fetched {len(dirs)} officers for {num}")
+                if dirs:
+                    # Found at least one director → record under directors.json
+                    existing_dirs[num] = dirs
+                    # If it somehow existed in no_directors.json, remove it
+                    if num in no_directors:
+                        no_directors.pop(num, None)
+                    log.info(f"[{num}] → fetched {len(dirs)} director(s); saved.")
+                else:
+                    # Returned empty → record (with “first seen” date if new)
+                    if num not in no_directors:
+                        first_seen = datetime.utcnow().date().isoformat()
+                        no_directors[num] = first_seen
+                        log.info(f"[{num}] → no directors found; adding to no_directors.json (first seen {first_seen}).")
+                    else:
+                        log.info(f"[{num}] → no directors found (already in no_directors).")
 
-        idx += len(batch)
+        idx += batch_size
 
-    os.makedirs(os.path.dirname(DIRECTORS_JSON), exist_ok=True)
-    temp = DIRECTORS_JSON + ".tmp"
-    with open(temp, "w") as f:
-        json.dump(existing, f, separators=(',', ':'))
-    os.replace(temp, DIRECTORS_JSON)
-    log.info(f"Wrote directors.json with {len(existing)} entries")
+    # 5) Write out updated JSONs
+    save_json(DIRECTORS_JSON, existing_dirs)
+    save_json(NO_DIRECTORS_JSON, no_directors)
+
+    log.info(f"Fetch cycle complete: directors.json has {len(existing_dirs)} entries; no_directors.json has {len(no_directors)} entries.")
 
 if __name__ == '__main__':
     main()
