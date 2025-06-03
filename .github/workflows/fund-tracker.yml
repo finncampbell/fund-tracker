@@ -14,11 +14,11 @@ on:
   workflow_dispatch:
     inputs:
       start_date:
-        description: 'Start date (YYYY-MM-DD, today, or yesterday)'
+        description: 'Start date for ingest (YYYY-MM-DD, today, or yesterday)'
         required: false
         default: 'today'
       end_date:
-        description: 'End date (YYYY-MM-DD, today, or yesterday)'
+        description: 'End date for ingest (YYYY-MM-DD, today, or yesterday)'
         required: false
         default: 'today'
 
@@ -77,7 +77,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          git rebase origin/main
+          git reset --hard origin/main
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
                   docs/assets/data/relevant_companies.csv \
