@@ -72,6 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
                   docs/assets/data/relevant_companies.csv \
