@@ -4,17 +4,21 @@ permissions:
   contents: write
   actions: read
 
+concurrency:
+  group: fund-tracker-main
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
       start_date:
-        description: 'Start date for ingest (YYYY-MM-DD, today, or yesterday)'
+        description: 'Start date (YYYY-MM-DD, today, or yesterday)'
         required: false
         default: 'today'
       end_date:
-        description: 'End date for ingest (YYYY-MM-DD, today, or yesterday)'
+        description: 'End date (YYYY-MM-DD, today, or yesterday)'
         required: false
         default: 'today'
 
