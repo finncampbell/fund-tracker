@@ -1,13 +1,15 @@
 $(document).ready(function() {
-  // Instead of fetching from a relative path, load CSV from the data branch’s raw URL:
-  const repoOwner = 'finncampbell';      // <-- replace if different
+  // Repository parameters
+  const repoOwner = 'finncampbell';
   const repoName  = 'fund-tracker';
   const dataBranch = 'data';
 
+  // Raw GitHub URLs for data (always fetch fresh with a timestamp param)
   const csvUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/relevant_companies.csv?v=${Date.now()}`;
   const directorsUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/directors.json`;
 
-  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
+  // Regex to detect “Fund Entities” by company name
+  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[\.\-\s]?P\b|\bL[.\-\s]?P\b/i;
 
   // 1) Load the CSV from the data branch
   Papa.parse(csvUrl, {
@@ -121,6 +123,8 @@ $(document).ready(function() {
             $btn.removeClass('active').text('Expand for Directors');
           } else {
             const dirs = row.data().Directors || [];
+
+            // Build the <table> header:
             let html = '<table class="child-table"><tr>' +
               '<th>Director Name</th>' +
               '<th>Appointment</th>' +
@@ -132,20 +136,26 @@ $(document).ready(function() {
               '<th>Details Link</th>' +
               '</tr>';
 
-            dirs.forEach(d => {
-              html += '<tr>' +
-                `<td>${d.title || ''}</td>` +
-                `<td>${d.appointment || ''}</td>` +
-                `<td>${d.dateOfBirth || ''}</td>` +
-                `<td>${d.appointmentCount || ''}</td>` +
-                `<td>${d.officerRole || ''}</td>` +
-                `<td>${d.nationality || ''}</td>` +
-                `<td>${d.occupation || ''}</td>` +
-                `<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>` +
-                '</tr>';
-            });
-            html += '</table>';
+            if (dirs.length === 0) {
+              // If no directors at all, show one row with "No Data" in each of the 8 cells
+              html += '<tr>' + '<td>No Data</td>'.repeat(8) + '</tr>';
+            } else {
+              // Otherwise render each director normally
+              dirs.forEach(d => {
+                html += '<tr>' +
+                  `<td>${d.title || ''}</td>` +
+                  `<td>${d.appointment || ''}</td>` +
+                  `<td>${d.dateOfBirth || ''}</td>` +
+                  `<td>${d.appointmentCount || ''}</td>` +
+                  `<td>${d.officerRole || ''}</td>` +
+                  `<td>${d.nationality || ''}</td>` +
+                  `<td>${d.occupation || ''}</td>` +
+                  `<td><a href="https://api.company-information.service.gov.uk${d.selfLink}" target="_blank">Details</a></td>` +
+                  '</tr>';
+              });
+            }
 
+            html += '</table>';
             row.child(html).show();
             $btn.addClass('active').text('Hide Directors');
           }
@@ -167,7 +177,7 @@ $(document).ready(function() {
           return parts.includes(active);
         });
 
-        // Filter‐tab click handler
+        // Filter-tab click handler
         $('.ft-filters').on('click', '.ft-btn', function() {
           $('.ft-btn').removeClass('active');
           $(this).addClass('active');
@@ -202,6 +212,7 @@ $(document).ready(function() {
     }
   });
 
+  // Run Historical Backfill via Netlify function
   document.getElementById("run-backfill").addEventListener("click", () => {
     const btn   = document.getElementById("run-backfill");
     const start = btn.dataset.start;
@@ -215,17 +226,17 @@ $(document).ready(function() {
     })
       .then(r => {
         if (!r.ok) throw new Error("Dispatch failed");
-        alert(`Backfill started for ${start} → ${end}`);
+        alert(`Backfill dispatched for ${start} → ${end}`);
         btn.disabled = true;
         document.getElementById("backfill-range").value = "";
       })
       .catch(err => {
         console.error(err);
-        alert("Error starting backfill; see console.");
+        alert("Error dispatching backfill; see console.");
       });
   });
 
-  // Fetch Directors Now button logic (unchanged)
+  // Fetch Directors Now button logic
   document.getElementById("run-fetch-directors").addEventListener("click", async () => {
     const btn = document.getElementById("run-fetch-directors");
     btn.disabled = true;
@@ -254,4 +265,59 @@ $(document).ready(function() {
       btn.textContent = 'Fetch Directors Now';
     }
   });
-});
+
+  // 9) Display “Next scheduled run” (every 10 minutes) in local time
+  function updateNextRunDisplay() {
+    const now = new Date();
+
+    // Compute minutes to next multiple of 10
+    const minutes = now.getMinutes();
+    const remainder = minutes % 10;
+    let nextMinuteBucket = minutes - remainder + 10;
+    let nextHour = now.getHours();
+    let nextDay = now.getDate();
+    let nextMonth = now.getMonth();      // zero-based (Jan = 0)
+    let nextYear = now.getFullYear();
+
+    if (nextMinuteBucket >= 60) {
+      nextMinuteBucket = 0;
+      nextHour += 1;
+      if (nextHour >= 24) {
+        nextHour = 0;
+        // Advance to next day (accounting for month/year rollovers)
+        now.setDate(now.getDate() + 1);
+        nextYear = now.getFullYear();
+        nextMonth = now.getMonth();
+        nextDay = now.getDate();
+      }
+    }
+
+    // Construct a Date object for the next run
+    const nextRun = new Date(
+      nextYear,
+      nextMonth,
+      nextDay,
+      nextHour,
+      nextMinuteBucket,
+      0,   // seconds
+      0    // milliseconds
+    );
+
+    // Format as "YYYY-MM-DD HH:mm"
+    const pad = (n) => String(n).padStart(2, "0");
+    const yyyy = nextRun.getFullYear();
+    const mm   = pad(nextRun.getMonth() + 1); // Jan=0
+    const dd   = pad(nextRun.getDate());
+    const hh   = pad(nextRun.getHours());
+    const mins = pad(nextRun.getMinutes());
+
+    const formatted = `${yyyy}-${mm}-${dd} ${hh}:${mins}`;
+    document.getElementById("next-run-timestamp").textContent = formatted;
+  }
+
+  // Initial call
+  updateNextRunDisplay();
+  // Refresh every 30 seconds
+  setInterval(updateNextRunDisplay, 30000);
+
+}); // <-- end of document.ready
