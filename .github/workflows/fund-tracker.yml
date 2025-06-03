@@ -26,8 +26,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Check out the repository
-      - name: Check out repository
+      # 1) Check out 'main' (where your code + merged director scripts live)
+      - name: Check out repository (main)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -45,21 +45,41 @@ jobs:
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 4) Run fund_tracker
+      # 4) Run fund_tracker.py (pass flags only on manual dispatch)
       - name: Run fund_tracker
         run: |
-          python fund_tracker.py \
-            --start_date "${{ github.event.inputs.start_date }}" \
-            --end_date   "${{ github.event.inputs.end_date }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python fund_tracker.py \
+              --start_date "${{ github.event.inputs.start_date }}" \
+              --end_date   "${{ github.event.inputs.end_date }}"
+          else
+            python fund_tracker.py
+          fi
 
       # 5) Fetch directors for relevant companies
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
 
-      # 6) Commit updated data files
-      - name: Commit updated data files
+      # 6) Clone the 'data' branch into a separate folder
+      - name: Clone data branch
         run: |
+          git clone --branch data https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} data-branch
+
+      # 7) Overwrite data-branch/docs/assets/data/ with newly generated files
+      - name: Copy new data files into data-branch
+        run: |
+          mkdir -p data-branch/docs/assets/data
+          cp docs/assets/data/master_companies.csv     data-branch/docs/assets/data/
+          cp docs/assets/data/master_companies.xlsx    data-branch/docs/assets/data/
+          cp docs/assets/data/relevant_companies.csv   data-branch/docs/assets/data/
+          cp docs/assets/data/relevant_companies.xlsx  data-branch/docs/assets/data/
+          cp docs/assets/data/directors.json           data-branch/docs/assets/data/
+
+      # 8) Commit & push on the 'data' branch
+      - name: Commit updated data files to data branch
+        run: |
+          cd data-branch
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/assets/data/master_companies.csv \
@@ -68,8 +88,8 @@ jobs:
                   docs/assets/data/relevant_companies.xlsx \
                   docs/assets/data/directors.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore(data): update companies & directors [skip ci]"
-            git push origin HEAD:main
+            git commit -m "chore(data): update data files [skip ci]"
+            git push origin data
           else
-            echo "No changes to data — skipping commit"
+            echo "No changes to data — skipping push"
           fi
