@@ -9,7 +9,19 @@ $(document).ready(function() {
   const directorsUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/directors.json`;
 
   // Regex to detect “Fund Entities” by company name
-  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[\.\-\s]?P\b|\bL[.\-\s]?P\b/i;
+  const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
+
+  // Utility: format "LASTNAME, Firstnames" to "Firstnames LASTNAME"
+  function formatName(name) {
+    if (!name) return '';
+    const parts = name.split(',');
+    if (parts.length === 2) {
+      const last = parts[0].trim();
+      const first = parts[1].trim();
+      return `${first} ${last}`;
+    }
+    return name;
+  }
 
   // 1) Load the CSV from the data branch
   Papa.parse(csvUrl, {
@@ -140,10 +152,11 @@ $(document).ready(function() {
               // If no directors at all, show one row with "No Data" in each of the 8 cells
               html += '<tr>' + '<td>No Data</td>'.repeat(8) + '</tr>';
             } else {
-              // Otherwise render each director normally
+              // Otherwise render each director normally, formatting name
               dirs.forEach(d => {
+                const formattedName = formatName(d.title || '');
                 html += '<tr>' +
-                  `<td>${d.title || ''}</td>` +
+                  `<td>${formattedName}</td>` +
                   `<td>${d.appointment || ''}</td>` +
                   `<td>${d.dateOfBirth || ''}</td>` +
                   `<td>${d.appointmentCount || ''}</td>` +
