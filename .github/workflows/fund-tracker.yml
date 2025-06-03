@@ -30,28 +30,39 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
+      # 1) Check out the repository
       - name: Check out repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
+      # 2) Immediately sync to the very latest main (before any scripts run)
+      - name: Sync to remote main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      # 3) Restore rate_limiter.db cache
       - name: Restore rate_limiter.db cache
         uses: actions/cache@v3
         with:
           path: rate_limiter.db
           key: rate-limiter-db
 
+      # 4) Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
+      # 5) Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
+      # 6) Run fund_tracker (with flags only on manual dispatch)
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -62,22 +73,23 @@ jobs:
             python fund_tracker.py
           fi
 
+      # 7) Fetch directors for relevant companies
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
 
+      # 8) Save rate_limiter.db to cache for next run
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
         with:
           path: rate_limiter.db
           key: rate-limiter-db
 
+      # 9) Commit and push any new/updated CSV or JSON outputs
       - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git reset --hard origin/main
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
                   docs/assets/data/relevant_companies.csv \
