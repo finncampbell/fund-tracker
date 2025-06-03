@@ -1,3 +1,5 @@
+# File: .github/workflows/fund-tracker.yml
+
 name: Fund Tracker
 
 permissions:
@@ -26,26 +28,32 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Check out 'main' (where your code + merged director scripts live)
+      # ────────────────────────────────────────────────────────────────────────────
+      # 1) Check out the 'main' branch (UI + Python code lives here)
       - name: Check out repository (main)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
+      # ────────────────────────────────────────────────────────────────────────────
       # 2) Set up Python
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      # 3) Install dependencies
+      # ────────────────────────────────────────────────────────────────────────────
+      # 3) Install Python dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 4) Run fund_tracker.py (pass flags only on manual dispatch)
+      # ────────────────────────────────────────────────────────────────────────────
+      # 4) Run fund_tracker.py
+      #    - On schedule: no flags → defaults to start_date="today", end_date="today"
+      #    - On manual dispatch: pass start_date/end_date from workflow inputs
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -56,17 +64,22 @@ jobs:
             python fund_tracker.py
           fi
 
-      # 5) Fetch directors for relevant companies
+      # ────────────────────────────────────────────────────────────────────────────
+      # 5) Run fetch_directors.py (always runs, regardless of schedule vs dispatch)
       - name: Fetch directors for relevant companies
         run: |
           python fetch_directors.py
 
-      # 6) Clone the 'data' branch into a separate folder
+      # ────────────────────────────────────────────────────────────────────────────
+      # 6) Clone the 'data' branch into a fresh folder
       - name: Clone data branch
         run: |
-          git clone --branch data https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} data-branch
+          git clone --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
+            data-branch
 
-      # 7) Overwrite data-branch/docs/assets/data/ with newly generated files
+      # ────────────────────────────────────────────────────────────────────────────
+      # 7) Copy the newly generated CSV/XLSX/JSON into the cloned data-branch
       - name: Copy new data files into data-branch
         run: |
           mkdir -p data-branch/docs/assets/data
@@ -76,20 +89,27 @@ jobs:
           cp docs/assets/data/relevant_companies.xlsx  data-branch/docs/assets/data/
           cp docs/assets/data/directors.json           data-branch/docs/assets/data/
 
-      # 8) Commit & push on the 'data' branch
+      # ────────────────────────────────────────────────────────────────────────────
+      # 8) Commit & push only those data files to the 'data' branch
       - name: Commit updated data files to data branch
         run: |
           cd data-branch
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage any changed or new data files
           git add docs/assets/data/master_companies.csv \
                   docs/assets/data/master_companies.xlsx \
                   docs/assets/data/relevant_companies.csv \
                   docs/assets/data/relevant_companies.xlsx \
                   docs/assets/data/directors.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(data): update data files [skip ci]"
-            git push origin data
-          else
+
+          # If there are no changes, skip committing/pushing
+          if git diff --cached --quiet; then
             echo "No changes to data — skipping push"
+            exit 0
           fi
+
+          # Otherwise, commit + push
+          git commit -m "chore(data): update data files [skip ci]"
+          git push origin data
