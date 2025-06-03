@@ -6,7 +6,7 @@ import time
 
 # ─── Configuration ───────────────────────────────────────────────────────────────
 WINDOW_SECONDS = 300    # 5 minutes
-MAX_CALLS      = 1150    # maximum allowed calls per window
+MAX_CALLS      = 1150   # maximum allowed calls per window
 DB_PATH        = "rate_limiter.db"
 
 # Internal lock to serialize SQLite access within a process
@@ -74,16 +74,16 @@ def enforce_rate_limit():
                 count = cursor.fetchone()[0]
 
                 if count < MAX_CALLS:
-                    # We have room → insert new timestamp, then return
-                    conn.execute("INSERT INTO calls (ts) VALUES (?)", (now,))
+                    # We have room → insert new timestamp (or ignore if duplicate), then return
+                    conn.execute("INSERT OR IGNORE INTO calls (ts) VALUES (?)", (now,))
                     conn.close()
                     return
                 else:
                     # We are at limit → find oldest timestamp to know how long to wait
                     cursor = conn.execute("SELECT MIN(ts) FROM calls")
                     oldest = cursor.fetchone()[0] or cutoff
-                    wait = (oldest + WINDOW_SECONDS) - now
                     conn.close()
+                    wait = (oldest + WINDOW_SECONDS) - now
                     if wait <= 0:
                         # If somehow already past, loop again immediately
                         continue
