@@ -1,10 +1,19 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16494565,FORALYA PROPERTY INVESTMENT UK LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"68100, 68209",Investments,,
-16494573,TAXII4U LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"68100, 68209, 70221",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
-16494535,INKOME LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"69201, 69203, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
-16494547,ELM BUSINESS HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494575,KLOPP HOLDING LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494566,OX GROUP HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494528,DAVIDSON-RICHARDS HOLDCO 2 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494527,DAVIDSON-RICHARDS HOLDCO 1 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494481,JJLM HOLDINGS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494692,PIGEON NOMINEES LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16494547,ELM BUSINESS HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494632,EVO AI VENTURES LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,62012,Ventures,,
+16494566,OX GROUP HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494575,KLOPP HOLDING LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+OC456977,SOCKBURN ESTATES LLP,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,,LLP,,
+16494635,JERA NEX FINCO LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16494630,GM DEVELOPMENTS & INVESTMENTS LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,"68100, 68209",Investments,,
+16494637,HOLDING SEVENS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494665,GLOBAL BTC TREASURY LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16494481,JJLM HOLDINGS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494527,DAVIDSON-RICHARDS HOLDCO 1 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494535,INKOME LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,"69201, 69203, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16494573,TAXII4U LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,"68100, 68209, 70221",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16494565,FORALYA PROPERTY INVESTMENT UK LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,"68100, 68209",Investments,,
+16494620,ARIQ CAPITAL LTD,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,"64301, 64302, 64303, 64304","Capital, SIC",Activities of investment trusts; Activities of unit trusts; Activities of venture and development capital companies; Activities of open-ended investment companies,Closed-ended listed trusts.; On-shore feeder trusts.; Venture Capital Trusts (VCTs).; OEIC umbrella layers.
+16494707,TRADES INTERNATIONAL HOLDINGS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494528,DAVIDSON-RICHARDS HOLDCO 2 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T06:53:18.448577,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
