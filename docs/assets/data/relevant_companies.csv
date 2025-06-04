@@ -1,6 +1,10 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16494535,INKOME LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:42:09.841127,"69201, 69203, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
-16494547,ELM BUSINESS HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:42:09.841127,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494528,DAVIDSON-RICHARDS HOLDCO 2 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:42:09.841127,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494527,DAVIDSON-RICHARDS HOLDCO 1 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:42:09.841127,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16494481,JJLM HOLDINGS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:42:09.841127,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494565,FORALYA PROPERTY INVESTMENT UK LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"68100, 68209",Investments,,
+16494573,TAXII4U LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"68100, 68209, 70221",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16494535,INKOME LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,"69201, 69203, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16494547,ELM BUSINESS HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494575,KLOPP HOLDING LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494566,OX GROUP HOLDINGS LTD,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494528,DAVIDSON-RICHARDS HOLDCO 2 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494527,DAVIDSON-RICHARDS HOLDCO 1 LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16494481,JJLM HOLDINGS LIMITED,2025-06-04,active,,2025-06-04,2025-06-04T05:54:58.245597,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
