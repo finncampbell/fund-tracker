@@ -1,4 +1,5 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16497451,ALIGN PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T05:43:53.698760,68310,Investments,,
-16497471,HAQUE & CO FX LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T05:43:53.698760,64991,SIC,Security dealing on own account,CLO collateral-management SPVs.
-16497475,AD LONDON INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T05:43:53.698760,68209,Investments,,
+16497451,ALIGN PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T05:55:05.038288,68310,Investments,,
+16497471,HAQUE & CO FX LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T05:55:05.038288,64991,SIC,Security dealing on own account,CLO collateral-management SPVs.
+16497475,AD LONDON INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T05:55:05.038288,68209,Investments,,
+16497486,CALUNGA LTD,2025-06-05,active,,2025-06-05,2025-06-05T05:55:05.038288,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
