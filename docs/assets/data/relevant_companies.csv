@@ -1,16 +1,26 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16497577,AM GREY HOLDCO LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497515,SA CAPITAL MANAGEMENT LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,"64991, 64999","Capital, SIC",Security dealing on own account; Financial intermediation not elsewhere classified,CLO collateral-management SPVs.; Catch-all credit-oriented SPVs.
-16497508,FUSION 2025 MIDCO LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497540,SKYREACH CAPITAL LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,"Capital, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497543,WACKYKINGDOM SOUTHAMPTON LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,"64304, 68100, 68209",SIC,Activities of open-ended investment companies,OEIC umbrella layers.
-16497503,INTEGRAL CORPORATION LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497591,HNJ HOLDCO LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497451,ALIGN PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,68310,Investments,,
-16497475,AD LONDON INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,68209,Investments,,
-16497502,MICHAEL KRAVIS INVESTMENT LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,46900,Investments,,
-16497525,LANGRICK PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,"68100, 68209",Investments,,
-16497486,CALUNGA LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
-16497471,HAQUE & CO FX LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64991,SIC,Security dealing on own account,CLO collateral-management SPVs.
-16497498,MORGAN INDUSTRIAL HOLDINGS LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16497554,OXLEY MORTGAGE SOLUTIONS LTD,2025-06-05,active,,2025-06-05,2025-06-05T06:55:22.212911,"64922, 64999",SIC,Activities of mortgage finance companies; Financial intermediation not elsewhere classified,Mortgage-backed SPVs.; Catch-all credit-oriented SPVs.
+16497591,HNJ HOLDCO LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497721,FUSION 2025 BIDCO LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497620,T1 HOLDINGS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497543,WACKYKINGDOM SOUTHAMPTON LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64304, 68100, 68209",SIC,Activities of open-ended investment companies,OEIC umbrella layers.
+16497540,SKYREACH CAPITAL LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,"Capital, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497515,SA CAPITAL MANAGEMENT LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64991, 64999","Capital, SIC",Security dealing on own account; Financial intermediation not elsewhere classified,CLO collateral-management SPVs.; Catch-all credit-oriented SPVs.
+16497627,BASHUR TRAVEL LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64999, 79110",SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16497508,FUSION 2025 MIDCO LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497577,AM GREY HOLDCO LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497625,JEREMIAH INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"68100, 68209",Investments,,
+16497503,INTEGRAL CORPORATION LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497654,FENYX GROUP LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64209, 66190",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497475,AD LONDON INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,68209,Investments,,
+16497451,ALIGN PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,68310,Investments,,
+16497554,OXLEY MORTGAGE SOLUTIONS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64922, 64999",SIC,Activities of mortgage finance companies; Financial intermediation not elsewhere classified,Mortgage-backed SPVs.; Catch-all credit-oriented SPVs.
+16497613,NUTTALL & WRIGHT INVESTMENTS LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,"Investments, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497710,EIGHT CAPITAL WEALTH LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64303,"Capital, SIC",Activities of venture and development capital companies,Venture Capital Trusts (VCTs).
+16497622,M&F GROUP LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497645,TETHYAN GLOBAL RESOURCES LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"64209, 82990",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497525,LANGRICK PROPERTY INVESTMENTS LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,"68100, 68209",Investments,,
+16497502,MICHAEL KRAVIS INVESTMENT LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,46900,Investments,,
+16497486,CALUNGA LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
+16497686,AMORK LTD,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497498,MORGAN INDUSTRIAL HOLDINGS LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16497471,HAQUE & CO FX LIMITED,2025-06-05,active,,2025-06-05,2025-06-05T07:32:47.287658,64991,SIC,Security dealing on own account,CLO collateral-management SPVs.
