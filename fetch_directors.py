@@ -6,6 +6,7 @@ fetch_directors.py
 - Skips companies already in no_directors.json
 - Records any company that returns [] into no_directors.json (with a timestamp)
 - Removes from no_directors.json once directors appear
+- If relevant_companies.csv is missing locally, fetches it from the data branch via raw GitHub URL
 - Honors shared buffered rate limit (1200 calls per 5 minutes, as before)
 - Updates docs/assets/data/directors.json and docs/assets/data/no_directors.json
 - Logs to assets/logs/director_fetch.log
@@ -27,9 +28,20 @@ from rate_limiter import enforce_rate_limit, record_call, get_remaining_calls, W
 # ─── Config ─────────────────────────────────────────────────────────────────────
 API_BASE          = 'https://api.company-information.service.gov.uk/company'
 CH_KEY            = os.getenv('CH_API_KEY')
+
+# Local paths
 RELEVANT_CSV      = 'docs/assets/data/relevant_companies.csv'
 DIRECTORS_JSON    = 'docs/assets/data/directors.json'
 NO_DIRECTORS_JSON = 'docs/assets/data/no_directors.json'
+
+# If local CSV/JSON are missing, fetch from this raw‐GitHub URL (data branch)
+GITHUB_USER       = '<YOUR_GITHUB_USER>'
+REPO_NAME         = '<YOUR_REPO>'
+DATA_BRANCH       = 'data'
+RAW_BASE          = f'https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{DATA_BRANCH}/docs/assets/data'
+REMOTE_RELEVANT_CSV   = f'{RAW_BASE}/relevant_companies.csv'
+REMOTE_DIRECTORS_JSON = f'{RAW_BASE}/directors.json'
+
 LOG_DIR           = 'assets/logs'
 LOG_FILE          = os.path.join(LOG_DIR, 'director_fetch.log')
 
@@ -69,13 +81,39 @@ def save_json(path: str, data: dict) -> None:
         json.dump(data, f, separators=(',', ':'))
     os.replace(tmp, path)
 
-# ─── Load relevant company numbers ───────────────────────────────────────────────
+# ─── Load relevant company numbers, with remote fallback ─────────────────────────
 def load_relevant() -> list[str]:
-    df = pd.read_csv(RELEVANT_CSV, dtype=str)
-    if 'CompanyNumber' not in df.columns:
-        log.error(f"Expected 'CompanyNumber' column in {RELEVANT_CSV}; found {df.columns.tolist()}")
+    """
+    Load CompanyNumber list from local relevant_companies.csv; if missing or empty,
+    attempt to download from the data branch raw URL.
+    """
+    # Try local file first
+    try:
+        df = pd.read_csv(RELEVANT_CSV, dtype=str)
+        if 'CompanyNumber' not in df.columns:
+            log.error(f"Expected 'CompanyNumber' column in {RELEVANT_CSV}; found {df.columns.tolist()}")
+            return []
+        return df['CompanyNumber'].dropna().astype(str).tolist()
+    except FileNotFoundError:
+        log.warning(f"Local {RELEVANT_CSV} not found; attempting remote fetch from {REMOTE_RELEVANT_CSV}")
+    except pd.errors.EmptyDataError:
+        log.warning(f"Local {RELEVANT_CSV} is empty; falling back to remote.")
+
+    # Fallback: download CSV from remote URL
+    try:
+        log.info(f"Fetching remote relevant_companies.csv from {REMOTE_RELEVANT_CSV}")
+        resp = requests.get(REMOTE_RELEVANT_CSV, timeout=15)
+        resp.raise_for_status()
+        # Load into pandas from the in-memory text
+        from io import StringIO
+        df = pd.read_csv(StringIO(resp.text), dtype=str)
+        if 'CompanyNumber' not in df.columns:
+            log.error(f"Expected 'CompanyNumber' in remote CSV from {REMOTE_RELEVANT_CSV}")
+            return []
+        return df['CompanyNumber'].dropna().astype(str).tolist()
+    except Exception as e:
+        log.error(f"Failed to load relevant_companies.csv from remote: {e}")
         return []
-    return df['CompanyNumber'].dropna().astype(str).tolist()
 
 # ─── Fetch one company’s officers ────────────────────────────────────────────────
 def fetch_one(number: str) -> tuple[str, list[dict]]:
@@ -98,7 +136,7 @@ def fetch_one(number: str) -> tuple[str, list[dict]]:
         except Exception as e:
             # Count the call, then retry
             record_call()
-            log.warning(f"Network error fetching {number}: {e}")
+            log.warning(f"Network error fetching {number}: {e}; retry {attempt+1}")
             if attempt < RETRIES - 1:
                 time.sleep(DELAY)
                 continue
@@ -109,7 +147,7 @@ def fetch_one(number: str) -> tuple[str, list[dict]]:
         record_call()
 
         if resp.status_code >= 500 and attempt < RETRIES - 1:
-            log.warning(f"Server error {resp.status_code} for {number}, retry {attempt + 1}")
+            log.warning(f"Server error {resp.status_code} for {number}, retry {attempt+1}")
             time.sleep(DELAY)
             continue
 
@@ -156,16 +194,20 @@ def main():
     log.info("Starting fetch_directors")
 
     # 1) Load existing directors.json and no_directors.json
-    existing_dirs: dict[str, list] = load_json(DIRECTORS_JSON)  # e.g. { "12345678": [ ... ] }
-    no_directors: dict[str, str] = load_json(NO_DIRECTORS_JSON) 
-    # Stored as { "12345678": "2025-02-15" }  where value = YYYY-MM-DD first seen
+    existing_dirs: dict[str, list] = load_json(DIRECTORS_JSON)
+    no_directors: dict[str, str] = load_json(NO_DIRECTORS_JSON)
+    # no_directors example: { "12345678": "2025-02-15", … }
 
-    # 2) Load relevant companies
+    # 2) Load relevant companies (with remote fallback)
     relevant = load_relevant()
+
+    if not relevant:
+        log.error("No companies to fetch (relevant list is empty). Exiting.")
+        return
 
     # 3) Build pending list:
     #    - Include any company NOT in existing_dirs
-    #    - Exclude any company already in no_directors (we’ll retry those separately via retry_no_directors.py)
+    #    - Exclude any company already in no_directors (we’ll retry those separately)
     pending = [n for n in relevant if n not in existing_dirs and n not in no_directors]
     total   = len(pending)
     idx     = 0
@@ -177,7 +219,7 @@ def main():
     while idx < total:
         avail = get_remaining_calls()
         if avail <= 0:
-            # Sleep until rate limiter frees up
+            # Rate limit reached; sleep briefly
             with _lock:
                 wait = 0.1
             time.sleep(max(wait, 0.1))
@@ -185,7 +227,7 @@ def main():
 
         batch_size = min(avail, MAX_WORKERS, total - idx)
         batch = pending[idx : idx + batch_size]
-        log.info(f"Dispatching batch {idx + 1}–{idx + batch_size} of {total}")
+        log.info(f"Dispatching batch {idx+1}–{idx+batch_size} of {total}")
         with ThreadPoolExecutor(max_workers=batch_size) as exe:
             future_to_num = {exe.submit(fetch_one, num): num for num in batch}
             for fut in as_completed(future_to_num):
@@ -193,7 +235,7 @@ def main():
                 if dirs:
                     # Found at least one director → record under directors.json
                     existing_dirs[num] = dirs
-                    # If it somehow existed in no_directors.json, remove it
+                    # If it existed in no_directors.json, remove it
                     if num in no_directors:
                         no_directors.pop(num, None)
                     log.info(f"[{num}] → fetched {len(dirs)} director(s); saved.")
@@ -208,7 +250,7 @@ def main():
 
         idx += batch_size
 
-    # 5) Write out updated JSONs
+    # 5) Write out updated JSONs (locally)
     save_json(DIRECTORS_JSON, existing_dirs)
     save_json(NO_DIRECTORS_JSON, no_directors)
 
