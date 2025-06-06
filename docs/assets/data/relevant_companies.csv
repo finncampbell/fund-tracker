@@ -1,25 +1,28 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-OC457014,5 DRIVE LLP,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,,LLP,,
-16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
-16500305,SIERRA GROUP HOLDINGS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
-16500420,BNW INVESTMENTS LONDON LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,68100,Investments,,
-16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,68209,Ventures,,
-OE033996,MICA INVESTMENTS LIMITED,2025-06-06,registered,,2025-06-06,2025-06-06T07:32:13.341304,,Investments,,
-16500476,EQUITY INCENTIVE SERVICES LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,96090,Equity,,
-16500435,KBL PROPERTY INVESTMENT LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,"68100, 68209",Investments,,
-16500463,POWELL INDUSTRIES INTERNATIONAL LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500300,AUTO SURVEYS TRAFFIC LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500342,STODIR UK LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
-SC851315,SICO HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500341,ARTVISION HOLDING LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500333,3RDSTAGE VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,"Ventures, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500388,ADEDOYIN HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500390,HERSHAW HOLDINGS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500287,HAWKER WEALTH MANAGEMENT LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
-16500316,SOVEREIGN LIFE GROUP SERVICES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
-16500444,VENTURE SEAFOODS HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64209,"Ventures, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500349,D VII AIV HOLDINGS EUR LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
-16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,"68100, 68209, 68320",Ventures,,
-OC457015,VOLAR MARKETING LLP,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,,LLP,,
-SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:32:13.341304,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
+16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,68209,Ventures,,
+16500305,SIERRA GROUP HOLDINGS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
+16500420,BNW INVESTMENTS LONDON LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,68100,Investments,,
+16500342,STODIR UK LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
+16500435,KBL PROPERTY INVESTMENT LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,"68100, 68209",Investments,,
+OE033996,MICA INVESTMENTS LIMITED,2025-06-06,registered,,2025-06-06,2025-06-06T07:45:20.146865,,Investments,,
+16500476,EQUITY INCENTIVE SERVICES LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,96090,Equity,,
+16500463,POWELL INDUSTRIES INTERNATIONAL LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500300,AUTO SURVEYS TRAFFIC LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500510,H&B PROPERTY PARTNERS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,"68100, 68209",Partners,,
+16500341,ARTVISION HOLDING LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500333,3RDSTAGE VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,"Ventures, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+SC851315,SICO HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500390,HERSHAW HOLDINGS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+OC457015,VOLAR MARKETING LLP,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,,LLP,,
+16500444,VENTURE SEAFOODS HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,"Ventures, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500316,SOVEREIGN LIFE GROUP SERVICES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64205,SIC,Activities of financial services holding companies,"Holding-company SPVs, co-investment vehicles, master/feeder hubs."
+16500287,HAWKER WEALTH MANAGEMENT LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16500349,D VII AIV HOLDINGS EUR LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+OC457014,5 DRIVE LLP,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,,LLP,,
+16500388,ADEDOYIN HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500522,SATAI INVESTMENTS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,68209,Investments,,
+SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
+16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,"68100, 68209, 68320",Ventures,,
+16500548,2 ACES INVESTMENTS LTD,2025-06-06,active,,2025-06-06,2025-06-06T07:45:20.146865,"64304, 68100, 68209","Investments, SIC",Activities of open-ended investment companies,OEIC umbrella layers.
