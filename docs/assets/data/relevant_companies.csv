@@ -1,6 +1,10 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
-16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,68209,Ventures,,
-SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
-16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,"68100, 68209, 68320",Ventures,,
+16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,68209,Ventures,,
+SC851315,SICO HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500300,AUTO SURVEYS TRAFFIC LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500305,SIERRA GROUP HOLDINGS LTD,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,64304,SIC,Activities of open-ended investment companies,OEIC umbrella layers.
+16500287,HAWKER WEALTH MANAGEMENT LTD,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,"68100, 68209, 68320",Ventures,,
+SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T05:46:10.059657,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
