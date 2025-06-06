@@ -1,6 +1,6 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:45:15.164275,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:45:15.164275,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
-16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:45:15.164275,68209,Ventures,,
-SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:45:15.164275,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
-16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:45:15.164275,"68100, 68209, 68320",Ventures,,
+16500262,DANIEL THORPE HOLDINGS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,64209,SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16500276,TRIPLE R ASSISTANCE LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,64999,SIC,Financial intermediation not elsewhere classified,Catch-all credit-oriented SPVs.
+16500247,MH VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,68209,Ventures,,
+SC851314,EIGHT16 INVESTMENTS LIMITED,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,"64306, 68100, 68209","Investments, SIC",Activities of real estate investment trusts,UK-regulated REITs.
+16500264,RFQ PROPERTY VENTURES LTD,2025-06-06,active,,2025-06-06,2025-06-06T04:57:33.385636,"68100, 68209, 68320",Ventures,,
