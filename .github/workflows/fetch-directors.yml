@@ -16,9 +16,10 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - name: Check out repository
+      - name: Check out data branch
         uses: actions/checkout@v3
         with:
+          ref: data
           fetch-depth: 0
           persist-credentials: true
 
@@ -39,8 +40,7 @@ jobs:
           pip install --prefer-binary -r requirements.txt
 
       - name: Fetch directors for relevant companies
-        run: |
-          python fetch_directors.py
+        run: python fetch_directors.py
 
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
@@ -52,10 +52,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/assets/data/directors.json
+          git add docs/assets/data/directors.json docs/assets/data/no_directors.json
           if ! git diff --cached --quiet; then
             git commit -m "chore(data): update directors.json [skip ci]"
-            git push origin HEAD:main
+            git push origin data
           else
             echo "No changes to directors.json — skipping commit"
           fi
