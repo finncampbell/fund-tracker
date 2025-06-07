@@ -1,25 +1,28 @@
 // netlify/functions/trigger-fetch-directors.js
-const fetch = require('node-fetch');
 
-exports.handler = async (event, context) => {
-  // 1) CORS headers to allow GitHub Pages origin to hit us
+exports.handler = async function(event, context) {
+  // CORS headers
   const CORS = {
     'Access-Control-Allow-Origin':  '*',
     'Access-Control-Allow-Methods': 'OPTIONS,POST',
     'Access-Control-Allow-Headers': 'Content-Type,Authorization'
   };
 
-  // 2) Handle preflight
+  // Preflight
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 204, headers: CORS };
   }
 
-  // 3) Only allow POST
+  // Only POST
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers: CORS, body: 'Method Not Allowed' };
+    return {
+      statusCode: 405,
+      headers: CORS,
+      body: 'Method Not Allowed'
+    };
   }
 
-  // 4) Dispatch GitHub Action
+  // Workflow dispatch details
   const owner       = 'finncampbell';
   const repo        = 'fund-tracker';
   const workflow_id = 'fetch-directors.yml';
@@ -29,7 +32,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 500,
       headers: CORS,
-      body: 'Missing GITHUB_TOKEN'
+      body: 'Missing GITHUB_TOKEN in Netlify environment'
     };
   }
 
@@ -37,6 +40,7 @@ exports.handler = async (event, context) => {
   const payload = { ref: 'main', inputs: {} };
 
   try {
+    // Use the global fetch — no extra import needed
     const resp = await fetch(url, {
       method: 'POST',
       headers: {
