@@ -1,3 +1,5 @@
+# netlify.toml
+
 [build]
   command   = "echo \"No build for UI—static served by GitHub Pages\""
   publish   = "."              # unused for UI
@@ -5,3 +7,11 @@
 
 [functions]
   node_bundler = "nft"
+
+# Add CORS headers for all serverless functions
+[[headers]]
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Access-Control-Allow-Origin  = "*"
+    Access-Control-Allow-Methods = "OPTIONS,POST"
+    Access-Control-Allow-Headers = "Content-Type,Authorization"
