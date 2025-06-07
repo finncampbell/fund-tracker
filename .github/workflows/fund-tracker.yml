@@ -26,13 +26,15 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
+      # 1) Checkout code (main branch)
       - name: Check out repository (main)
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Clone data branch and bootstrap existing data
+      # 2) Clone data-branch and bootstrap all existing CSVs & JSONs
+      - name: Bootstrap existing data from data branch
         run: |
           git clone --branch data \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
@@ -42,7 +44,10 @@ jobs:
           cp data-branch/docs/assets/data/master_companies.xlsx    docs/assets/data/  || true
           cp data-branch/docs/assets/data/relevant_companies.csv   docs/assets/data/  || true
           cp data-branch/docs/assets/data/relevant_companies.xlsx  docs/assets/data/  || true
+          cp data-branch/docs/assets/data/directors.json           docs/assets/data/  || true
+          cp data-branch/docs/assets/data/no_directors.json        docs/assets/data/  || true
 
+      # 3) Setup Python & install deps
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -53,6 +58,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
+      # 4) Run the main ingest
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -65,16 +71,12 @@ jobs:
             python fund_tracker.py
           fi
 
+      # 5) Fetch directors for any newly relevant companies
       - name: Fetch directors for relevant companies
         run: python fetch_directors.py
 
-      - name: Clone data branch for output
-        run: |
-          git clone --branch data \
-            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
-            data-branch
-
-      - name: Copy new data files into data-branch
+      # 6) Copy *all* updated data files back into data-branch
+      - name: Copy updated data files into data-branch
         run: |
           mkdir -p data-branch/docs/assets/data
           cp docs/assets/data/master_companies.csv     data-branch/docs/assets/data/
@@ -84,10 +86,13 @@ jobs:
           cp docs/assets/data/directors.json           data-branch/docs/assets/data/
           cp docs/assets/data/no_directors.json        data-branch/docs/assets/data/
 
+      # 7) Commit & push everything in one go
       - name: Commit & push updated data files to data branch
         run: |
           cd data-branch
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/assets/data/
-          git diff --cached --quiet || (git commit -m "chore(data): update data files [skip ci]" && git push origin data)
+          git diff --cached --quiet || \
+            (git commit -m "chore(data): update data files [skip ci]" && \
+             git push origin data)
