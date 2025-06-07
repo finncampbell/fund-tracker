@@ -2,13 +2,13 @@
 
 [build]
   command   = "echo \"No build for UI—static served by GitHub Pages\""
-  publish   = "."              # unused for UI
+  publish   = "."              
   functions = "netlify/functions"
 
 [functions]
   node_bundler = "nft"
 
-# Add CORS headers for all serverless functions
+# ─── GLOBAL CORS FOR ALL FUNCTIONS ────────────────────────────────────────────────
 [[headers]]
   for = "/.netlify/functions/*"
   [headers.values]
