@@ -8,12 +8,12 @@ exports.handler = async function(event, context) {
     'Access-Control-Allow-Headers': 'Content-Type,Authorization'
   };
 
-  // Preflight
+  // Handle CORS preflight
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 204, headers: CORS };
   }
 
-  // Only POST
+  // Only allow POST
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -22,25 +22,28 @@ exports.handler = async function(event, context) {
     };
   }
 
-  // Workflow dispatch details
-  const owner       = 'finncampbell';
-  const repo        = 'fund-tracker';
-  const workflow_id = 'fetch-directors.yml';
-  const token       = process.env.GITHUB_TOKEN;
+  // Grab your token from either env var
+  const token = process.env.GITHUB_TOKEN
+             || process.env.GITHUB_DISPATCH_TOKEN;
 
   if (!token) {
     return {
       statusCode: 500,
       headers: CORS,
-      body: 'Missing GITHUB_TOKEN in Netlify environment'
+      body: 'Missing GitHub dispatch token in environment'
     };
   }
 
+  // GitHub repo & workflow details
+  const owner       = 'finncampbell';
+  const repo        = 'fund-tracker';
+  const workflow_id = 'fetch-directors.yml';
   const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow_id}/dispatches`;
+
   const payload = { ref: 'main', inputs: {} };
 
   try {
-    // Use the global fetch — no extra import needed
+    // Use the built‐in fetch
     const resp = await fetch(url, {
       method: 'POST',
       headers: {
@@ -52,11 +55,7 @@ exports.handler = async function(event, context) {
     });
 
     if (resp.status === 204) {
-      return {
-        statusCode: 200,
-        headers: CORS,
-        body: 'Workflow dispatch triggered'
-      };
+      return { statusCode: 200, headers: CORS, body: 'Workflow dispatch triggered' };
     } else {
       const text = await resp.text();
       return {
@@ -65,6 +64,7 @@ exports.handler = async function(event, context) {
         body: `GitHub API error ${resp.status}: ${text}`
       };
     }
+
   } catch (err) {
     return {
       statusCode: 500,
