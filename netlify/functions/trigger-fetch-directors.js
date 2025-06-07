@@ -2,31 +2,24 @@
 const fetch = require('node-fetch');
 
 exports.handler = async (event, context) => {
-  // Always allow CORS
-  const CORS_HEADERS = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+  // 1) CORS headers to allow GitHub Pages origin to hit us
+  const CORS = {
+    'Access-Control-Allow-Origin':  '*',
+    'Access-Control-Allow-Methods': 'OPTIONS,POST',
+    'Access-Control-Allow-Headers': 'Content-Type,Authorization'
   };
 
-  // 1) Handle CORS preflight
+  // 2) Handle preflight
   if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 204,
-      headers: CORS_HEADERS
-    };
+    return { statusCode: 204, headers: CORS };
   }
 
-  // 2) Only allow POST
+  // 3) Only allow POST
   if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      headers: CORS_HEADERS,
-      body: 'Method Not Allowed'
-    };
+    return { statusCode: 405, headers: CORS, body: 'Method Not Allowed' };
   }
 
-  // 3) GitHub workflow dispatch
+  // 4) Dispatch GitHub Action
   const owner       = 'finncampbell';
   const repo        = 'fund-tracker';
   const workflow_id = 'fetch-directors.yml';
@@ -35,8 +28,8 @@ exports.handler = async (event, context) => {
   if (!token) {
     return {
       statusCode: 500,
-      headers: CORS_HEADERS,
-      body: 'Missing GITHUB_TOKEN in Netlify environment'
+      headers: CORS,
+      body: 'Missing GITHUB_TOKEN'
     };
   }
 
@@ -57,22 +50,22 @@ exports.handler = async (event, context) => {
     if (resp.status === 204) {
       return {
         statusCode: 200,
-        headers: CORS_HEADERS,
+        headers: CORS,
         body: 'Workflow dispatch triggered'
       };
     } else {
       const text = await resp.text();
       return {
         statusCode: resp.status,
-        headers: CORS_HEADERS,
-        body: `GitHub API responded with ${resp.status}: ${text}`
+        headers: CORS,
+        body: `GitHub API error ${resp.status}: ${text}`
       };
     }
   } catch (err) {
     return {
       statusCode: 500,
-      headers: CORS_HEADERS,
-      body: `Error: ${err.message}`
+      headers: CORS,
+      body: `Exception: ${err.message}`
     };
   }
 };
