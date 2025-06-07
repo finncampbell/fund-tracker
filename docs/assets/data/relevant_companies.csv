@@ -1,7 +1,8 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16502568,FNPROPERTY PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,68201,Partners,,
-16502642,OPTARA PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,70229,Partners,,
-16502578,REDEEM WEALTH LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,"62012, 63110, 64999, 70221",SIC,Financial intermediation not elsewhere classified; Financial management (of companies and enterprises),Catch-all credit-oriented SPVs.; Treasury and internal finance arm.
-16502559,MAJESTIC HORIZONS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,"62012, 64209, 73110, 90030",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16502643,GNS PROPERTY HOLDINGS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,"64209, 68100, 68209",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-SC851424,PBL CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:25:30.152741,"64991, 68209","Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
+16502568,FNPROPERTY PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,68201,Partners,,
+16502642,OPTARA PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,70229,Partners,,
+SC851424,PBL CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,"64991, 68209","Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
+16502652,CLAY CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,64991,"Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
+16502578,REDEEM WEALTH LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,"62012, 63110, 64999, 70221",SIC,Financial intermediation not elsewhere classified; Financial management (of companies and enterprises),Catch-all credit-oriented SPVs.; Treasury and internal finance arm.
+16502559,MAJESTIC HORIZONS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,"62012, 64209, 73110, 90030",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16502643,GNS PROPERTY HOLDINGS LTD,2025-06-07,active,,2025-06-07,2025-06-07T11:41:20.732978,"64209, 68100, 68209",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
