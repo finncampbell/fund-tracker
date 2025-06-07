@@ -1,14 +1,14 @@
 CompanyNumber,CompanyName,IncorporationDate,Status,Source,DateDownloaded,TimeDiscovered,SIC Codes,Category,SIC Description,Typical Use Case
-16502568,FNPROPERTY PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,68201,Partners,,
-16502652,CLAY CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,64991,"Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
-16502689,MAYHALL INVESTMENTS LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"68100, 68209, 68320",Investments,,
-16502760,TEA CAPITAL LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,64209,"Capital, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16502709,MSM FINANCIAL LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
-16502578,REDEEM WEALTH LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"62012, 63110, 64999, 70221",SIC,Financial intermediation not elsewhere classified; Financial management (of companies and enterprises),Catch-all credit-oriented SPVs.; Treasury and internal finance arm.
-16502764,GP GREEK CARPENTRY LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,16230,GP,,
-SC851424,PBL CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"64991, 68209","Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
-16502643,GNS PROPERTY HOLDINGS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"64209, 68100, 68209",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16502559,MAJESTIC HORIZONS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"62012, 64209, 73110, 90030",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
-16502642,OPTARA PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,70229,Partners,,
-16502671,EXO VENTURES LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,79909,Ventures,,
-16502685,TRIPLE CARBON LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:47:12.760129,"47910, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16502568,FNPROPERTY PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,68201,Partners,,
+16502652,CLAY CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,64991,"Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
+16502689,MAYHALL INVESTMENTS LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"68100, 68209, 68320",Investments,,
+16502760,TEA CAPITAL LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,64209,"Capital, SIC",Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16502578,REDEEM WEALTH LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"62012, 63110, 64999, 70221",SIC,Financial intermediation not elsewhere classified; Financial management (of companies and enterprises),Catch-all credit-oriented SPVs.; Treasury and internal finance arm.
+16502709,MSM FINANCIAL LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,70221,SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
+16502764,GP GREEK CARPENTRY LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,16230,GP,,
+SC851424,PBL CAPITAL LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"64991, 68209","Capital, SIC",Security dealing on own account,CLO collateral-management SPVs.
+16502643,GNS PROPERTY HOLDINGS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"64209, 68100, 68209",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16502559,MAJESTIC HORIZONS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"62012, 64209, 73110, 90030",SIC,Activities of other holding companies n.e.c.,"Protected-cell SPVs, bespoke feeders."
+16502642,OPTARA PARTNERS LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,70229,Partners,,
+16502671,EXO VENTURES LTD,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,79909,Ventures,,
+16502685,TRIPLE CARBON LIMITED,2025-06-07,active,,2025-06-07,2025-06-07T15:57:16.354634,"47910, 70221, 70229",SIC,Financial management (of companies and enterprises),Treasury and internal finance arm.
