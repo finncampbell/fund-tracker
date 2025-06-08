@@ -8,14 +8,13 @@ class RateLimiter:
 
     def wait(self):
         now = time.time()
-        # Keep only recent requests within the interval
+        # keep only recent timestamps
         self.request_times = [
             t for t in self.request_times if now - t < self.interval
         ]
         if len(self.request_times) >= self.max_requests:
             sleep_time = self.interval - (now - self.request_times[0])
             if sleep_time > 0:
-                print(f"Rate limit hit — sleeping for {sleep_time:.2f} seconds...")
+                print(f"Rate limit hit — sleeping for {sleep_time:.2f}s")
                 time.sleep(sleep_time)
         self.request_times.append(time.time())
-
