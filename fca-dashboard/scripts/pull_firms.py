@@ -1,13 +1,19 @@
+import os
 import requests
 import json
-import os
 from rate_limiter import RateLimiter
 
-API_KEY       = "your_fca_api_key_here"
-BASE_URL      = "https://api.fca.org.uk/firms"   # replace with actual
-HEADERS       = {"Authorization": f"Bearer {API_KEY}"}
-OUTPUT_PATH   = os.path.join(os.path.dirname(__file__), "../data/fca_firms.json")
-limiter       = RateLimiter()
+# Load API key from environment
+API_KEY     = os.getenv("FCA_API_KEY")
+if not API_KEY:
+    raise EnvironmentError("FCA_API_KEY not set in environment")
+
+# FCA endpoint (adjust if needed)
+BASE_URL    = "https://api.fca.org.uk/firms"
+HEADERS     = {"Authorization": f"Bearer {API_KEY}"}
+OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "../data/fca_firms.json")
+
+limiter = RateLimiter()
 
 def load_or_init_json(path, default):
     if not os.path.exists(path):
@@ -25,25 +31,25 @@ def fetch_firm(frn):
     if r.status_code == 200:
         return r.json()
     else:
-        print(f"Failed to fetch FRN {frn}: {r.status_code}")
+        print(f"Failed to fetch FRN {frn}: HTTP {r.status_code}")
         return None
 
 def main():
-    # ensure output exists (starts empty list)
+    # ensure JSON exists (initialises to empty list if missing)
     firms = load_or_init_json(OUTPUT_PATH, [])
 
-    # Replace this with your own FRN-list source
+    # TODO: replace with your source of FRNs
     frns = [...]  
 
-    result = []
+    results = []
     for frn in frns:
         data = fetch_firm(frn)
         if data:
-            result.append(data)
+            results.append(data)
 
     with open(OUTPUT_PATH, "w") as f:
-        json.dump(result, f, indent=2)
-    print(f"Wrote {len(result)} firms to {OUTPUT_PATH}")
+        json.dump(results, f, indent=2)
+    print(f"Wrote {len(results)} firms to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     main()
