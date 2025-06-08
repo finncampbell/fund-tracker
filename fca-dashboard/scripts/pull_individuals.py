@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime
 from rate_limiter import RateLimiter
+from requests.exceptions import RequestException
 
 # Load API key from environment
 API_KEY    = os.getenv("FCA_API_KEY")
@@ -18,13 +19,11 @@ REFRESH_AFTER_DAYS = 7
 limiter = RateLimiter()
 
 def load_or_init_json(path, default):
-    # Create file with default if missing
     if not os.path.exists(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(default, f, indent=2)
         return default
-    # Attempt to load, but recover from invalid JSON
     try:
         with open(path, "r") as f:
             return json.load(f)
@@ -37,20 +36,27 @@ def load_or_init_json(path, default):
 def fetch_person(person_id):
     limiter.wait()
     url = f"{BASE_URL}/{person_id}"
-    r = requests.get(url, headers=HEADERS)
-    if r.status_code == 200:
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=10)
+        r.raise_for_status()
         return r.json()
-    else:
-        print(f"Failed to fetch person {person_id}: HTTP {r.status_code}")
+    except RequestException as e:
+        print(f"Error fetching person {person_id}: {e}")
         return None
 
 def main():
-    # Load existing cache or initialize to empty list
+    # Initialize cache (creates file if missing or invalid)
     cache_list = load_or_init_json(CACHE_PATH, [])
     cache = {item["person_id"]: item for item in cache_list}
 
-    # TODO: provide your list of person IDs to track
-    person_ids = [...]  
+    # **TEST MODE**: empty list means no external calls
+    # Replace this list with real IDs once you're ready
+    person_ids = []
+
+    if not person_ids:
+        print("No person IDs specified; exiting after cache initialization.")
+        return
+
     now = datetime.utcnow()
     updated = 0
 
@@ -64,7 +70,6 @@ def main():
                 last_seen = None
 
         needs_update = not entry or not last_seen or (now - last_seen).days >= REFRESH_AFTER_DAYS
-
         if needs_update:
             print(f"Updating person {pid}")
             data = fetch_person(pid)
@@ -74,6 +79,7 @@ def main():
                 cache[pid] = data
                 updated += 1
 
+    # Write back cache (even if unchanged)
     out_list = list(cache.values())
     with open(CACHE_PATH, "w") as f:
         json.dump(out_list, f, indent=2)
