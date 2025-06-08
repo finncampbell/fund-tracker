@@ -1,3 +1,5 @@
+# fca-dashboard/scripts/pull_firms.py
+
 import os
 import requests
 import json
@@ -8,7 +10,7 @@ API_KEY     = os.getenv("FCA_API_KEY")
 if not API_KEY:
     raise EnvironmentError("FCA_API_KEY not set in environment")
 
-# FCA endpoint (adjust if needed)
+# FCA endpoint
 BASE_URL    = "https://api.fca.org.uk/firms"
 HEADERS     = {"Authorization": f"Bearer {API_KEY}"}
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "../data/fca_firms.json")
@@ -36,10 +38,16 @@ def fetch_firm(frn):
 
 def main():
     # ensure JSON exists (initialises to empty list if missing)
-    firms = load_or_init_json(OUTPUT_PATH, [])
+    load_or_init_json(OUTPUT_PATH, [])
 
-    # TODO: replace with your source of FRNs
-    frns = [...]  
+    # TODO: Replace with your full list of FRNs
+    frns = [
+      # e.g. "119293", "119348", "556677", ... 
+      # put your test FRNs here
+    ]
+
+    # --- LIMIT TO FIRST 10 FOR TESTING ---
+    frns = frns[:10]
 
     results = []
     for frn in frns:
@@ -49,7 +57,8 @@ def main():
 
     with open(OUTPUT_PATH, "w") as f:
         json.dump(results, f, indent=2)
-    print(f"Wrote {len(results)} firms to {OUTPUT_PATH}")
+
+    print(f"[TEST MODE] Wrote {len(results)} firms (max 10) to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     main()
