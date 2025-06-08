@@ -8,7 +8,7 @@ class RateLimiter:
 
     def wait(self):
         now = time.time()
-        # keep only recent timestamps
+        # keep only timestamps within the interval window
         self.request_times = [
             t for t in self.request_times if now - t < self.interval
         ]
