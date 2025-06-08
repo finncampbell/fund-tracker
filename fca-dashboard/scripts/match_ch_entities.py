@@ -1,12 +1,12 @@
-import json
 import os
+import json
 from difflib import SequenceMatcher
 
-BASE_DIR         = os.path.dirname(__file__)
-CH_PATH          = os.path.join(BASE_DIR, "../data/newcos.json")
-FCA_FIRMS_PATH   = os.path.join(BASE_DIR, "../data/fca_firms.json")
-FCA_PEOPLE_PATH  = os.path.join(BASE_DIR, "../data/fca_individuals.json")
-MATCH_OUTPUT     = os.path.join(BASE_DIR, "../data/fca_matches.json")
+BASE_DIR        = os.path.dirname(__file__)
+CH_PATH         = os.path.join(BASE_DIR, "../data/newcos.json")
+FCA_FIRMS_PATH  = os.path.join(BASE_DIR, "../data/fca_firms.json")
+FCA_PEOPLE_PATH = os.path.join(BASE_DIR, "../data/fca_individuals.json")
+MATCH_OUTPUT    = os.path.join(BASE_DIR, "../data/fca_matches.json")
 
 def load_or_init_json(path, default):
     if not os.path.exists(path):
@@ -28,20 +28,20 @@ def main():
     matches = []
 
     for ent in ch_data:
-        ch_name     = ent.get("company_name", "")
-        directors   = ent.get("directors", [])
-        comp_info = {
-            "company_name": ch_name,
+        ch_name = ent.get("company_name", "")
+        directors = ent.get("directors", [])
+        base = {
+            "company_name": ent.get("company_name"),
             "company_number": ent.get("company_number"),
             "incorporation_date": ent.get("incorporation_date")
         }
 
-        # Name-based firm matching
+        # Name-based matching
         for firm in fca_firms:
             score = similar(ch_name, firm.get("name", ""))
             if score >= 0.9:
                 matches.append({
-                    **comp_info,
+                    **base,
                     "matched_fca_firm": firm["name"],
                     "frn": firm.get("frn"),
                     "match_type": "Name",
@@ -53,7 +53,7 @@ def main():
             pname = person.get("name", "")
             if any(d.lower() in pname.lower() for d in directors):
                 matches.append({
-                    **comp_info,
+                    **base,
                     "matched_fca_person": pname,
                     "linked_firms": person.get("linked_firms", []),
                     "match_type": "Director",
