@@ -1,0 +1,46 @@
+# .github/workflows/fca-dashboard.yml
+name: FCA Dashboard Data Pipeline
+
+on:
+  # daily run at 02:00 UTC
+  schedule:
+    - cron: '0 2 * * *'
+  # allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Pull FCA Firms (test mode)
+        env:
+          FCA_API_KEY: ${{ secrets.FCA_API_KEY }}
+        run: python fca-dashboard/scripts/pull_firms.py
+
+      - name: Pull FCA Individuals
+        env:
+          FCA_API_KEY: ${{ secrets.FCA_API_KEY }}
+        run: python fca-dashboard/scripts/pull_individuals.py
+
+      - name: Match CH Entities
+        run: python fca-dashboard/scripts/match_ch_entities.py
+
+      - name: Commit & Push updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/*.json
+          git diff --cached --quiet || git commit -m "Automated FCA data update"
+          git push
