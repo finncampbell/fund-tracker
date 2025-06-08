@@ -1,5 +1,3 @@
-# fca-dashboard/scripts/pull_firms.py
-
 import os
 import requests
 import json
@@ -18,13 +16,21 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "../data/fca_firms.json")
 limiter = RateLimiter()
 
 def load_or_init_json(path, default):
+    # If file missing, create with default
     if not os.path.exists(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(default, f, indent=2)
         return default
-    with open(path, "r") as f:
-        return json.load(f)
+    # If file exists, attempt to load, but recover from invalid JSON
+    try:
+        with open(path, "r") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"Warning: {path} is invalid JSON. Reinitializing.")
+        with open(path, "w") as f:
+            json.dump(default, f, indent=2)
+        return default
 
 def fetch_firm(frn):
     limiter.wait()
@@ -37,17 +43,13 @@ def fetch_firm(frn):
         return None
 
 def main():
-    # ensure JSON exists (initialises to empty list if missing)
-    load_or_init_json(OUTPUT_PATH, [])
+    # load or initialize the firms list
+    firms = load_or_init_json(OUTPUT_PATH, [])
 
-    # TODO: Replace with your full list of FRNs
+    # TODO: replace with your list of FRNs (for testing: up to 10)
     frns = [
-      # e.g. "119293", "119348", "556677", ... 
-      # put your test FRNs here
-    ]
-
-    # --- LIMIT TO FIRST 10 FOR TESTING ---
-    frns = frns[:10]
+      # "119293", "119348", ...
+    ][:10]
 
     results = []
     for frn in frns:
@@ -55,10 +57,11 @@ def main():
         if data:
             results.append(data)
 
+    # overwrite with fresh data
     with open(OUTPUT_PATH, "w") as f:
         json.dump(results, f, indent=2)
 
-    print(f"[TEST MODE] Wrote {len(results)} firms (max 10) to {OUTPUT_PATH}")
+    print(f"[TEST MODE] Wrote {len(results)} firms to {OUTPUT_PATH}")
 
 if __name__ == "__main__":
     main()
