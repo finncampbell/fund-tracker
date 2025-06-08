@@ -3,8 +3,8 @@ name: FCA Dashboard Data Pipeline
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    - cron: '0 2 * * *'       # daily at 02:00 UTC
+  workflow_dispatch:          # manual trigger
 
 jobs:
   update-data:
@@ -14,7 +14,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
         with:
-          # This makes the GITHUB_TOKEN available for push
           persist-credentials: true
 
       - name: Set up Python
@@ -38,14 +37,14 @@ jobs:
       - name: Match CH Entities
         run: python fca-dashboard/scripts/match_ch_entities.py
 
+      - name: Configure Git remote with token
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Commit & Push updated JSON
-        env:
-          # GitHub automatically provides GITHUB_TOKEN with write permissions
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/*.json
-          # Only commit if something changed
           git diff --cached --quiet || git commit -m "Automated FCA data update"
-          git push
+          git push origin HEAD:main
