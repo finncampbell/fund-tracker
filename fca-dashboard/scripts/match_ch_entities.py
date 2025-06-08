@@ -2,60 +2,68 @@ import json
 import os
 from difflib import SequenceMatcher
 
-CH_PATH = "../data/newcos.json"           # Your Companies House tracker output
-FCA_FIRMS_PATH = "../data/fca_firms.json"
-FCA_PEOPLE_PATH = "../data/fca_individuals.json"
-MATCH_OUTPUT = "../data/fca_matches.json"
+BASE_DIR         = os.path.dirname(__file__)
+CH_PATH          = os.path.join(BASE_DIR, "../data/newcos.json")
+FCA_FIRMS_PATH   = os.path.join(BASE_DIR, "../data/fca_firms.json")
+FCA_PEOPLE_PATH  = os.path.join(BASE_DIR, "../data/fca_individuals.json")
+MATCH_OUTPUT     = os.path.join(BASE_DIR, "../data/fca_matches.json")
+
+def load_or_init_json(path, default):
+    if not os.path.exists(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w") as f:
+            json.dump(default, f, indent=2)
+        return default
+    with open(path, "r") as f:
+        return json.load(f)
 
 def similar(a, b):
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
 def main():
-    with open(CH_PATH) as f:
-        ch_data = json.load(f)
-    with open(FCA_FIRMS_PATH) as f:
-        fca_firms = json.load(f)
-    with open(FCA_PEOPLE_PATH) as f:
-        fca_people = json.load(f)
+    ch_data    = load_or_init_json(CH_PATH, [])
+    fca_firms  = load_or_init_json(FCA_FIRMS_PATH, [])
+    fca_people = load_or_init_json(FCA_PEOPLE_PATH, [])
 
-    firm_matches = []
-    for entity in ch_data:
-        ch_name = entity["company_name"]
-        directors = entity.get("directors", [])
+    matches = []
 
-        # Match by firm name
+    for ent in ch_data:
+        ch_name     = ent.get("company_name", "")
+        directors   = ent.get("directors", [])
+        comp_info = {
+            "company_name": ch_name,
+            "company_number": ent.get("company_number"),
+            "incorporation_date": ent.get("incorporation_date")
+        }
+
+        # Name-based firm matching
         for firm in fca_firms:
-            score = similar(ch_name, firm["name"])
+            score = similar(ch_name, firm.get("name", ""))
             if score >= 0.9:
-                firm_matches.append({
-                    "company_name": ch_name,
-                    "company_number": entity["company_number"],
-                    "incorporation_date": entity["incorporation_date"],
+                matches.append({
+                    **comp_info,
                     "matched_fca_firm": firm["name"],
-                    "frn": firm["frn"],
+                    "frn": firm.get("frn"),
                     "match_type": "Name",
                     "match_confidence": "High" if score > 0.95 else "Medium"
                 })
 
-        # Match by director overlap
+        # Director overlap matching
         for person in fca_people:
-            for role in person.get("roles", []):
-                if role.get("status") != "Removed" and any(d.lower() in person["name"].lower() for d in directors):
-                    firm_matches.append({
-                        "company_name": ch_name,
-                        "company_number": entity["company_number"],
-                        "incorporation_date": entity["incorporation_date"],
-                        "matched_fca_person": person["name"],
-                        "linked_firms": person.get("linked_firms", []),
-                        "match_type": "Director",
-                        "match_confidence": "High"
-                    })
+            pname = person.get("name", "")
+            if any(d.lower() in pname.lower() for d in directors):
+                matches.append({
+                    **comp_info,
+                    "matched_fca_person": pname,
+                    "linked_firms": person.get("linked_firms", []),
+                    "match_type": "Director",
+                    "match_confidence": "High"
+                })
 
     with open(MATCH_OUTPUT, "w") as f:
-        json.dump(firm_matches, f, indent=2)
+        json.dump(matches, f, indent=2)
 
-    print(f"Saved {len(firm_matches)} matches.")
+    print(f"Saved {len(matches)} matches to {MATCH_OUTPUT}")
 
 if __name__ == "__main__":
     main()
-
