@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FCA Linkage Dashboard</title>
+
+  <!-- DataTables CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+  />
+  <!-- Flatpickr CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+  />
+  <!-- Your custom neon‑glow CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
+  <div class="ft-dashboard-card">
+    <!-- HEADER -->
+    <div class="ft-header">
+      <h1 class="ft-title">FCA Linkage Dashboard</h1>
+      <p class="ft-download">
+        <a href="data/fca_matches.json" download>
+          Download matches CSV/JSON
+        </a>
+      </p>
+    </div>
+
+    <!-- TABS -->
+    <nav class="ft-filters">
+      <button class="ft-btn active" data-tab="firms">FCA Firms</button>
+      <button class="ft-btn" data-tab="individuals">Individuals</button>
+      <button class="ft-btn" data-tab="matches">CH Matches</button>
+    </nav>
+
+    <!-- FCA FIRMS TABLE -->
+    <div class="table-container" id="firms-container">
+      <table id="fca-firms" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Firm Name</th>
+            <th>FRN</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th># People</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- INDIVIDUALS TABLE -->
+    <div class="table-container" id="individuals-container" style="display:none;">
+      <table id="fca-individuals" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role(s)</th>
+            <th>Linked Firms</th>
+            <th>Status</th>
+            <th>Last Seen</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- CH MATCHES TABLE -->
+    <div class="table-container" id="matches-container" style="display:none;">
+      <table id="ch-matches" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Company Name</th>
+            <th>Incorp Date</th>
+            <th>Matched FCA Firm</th>
+            <th>Matched Person</th>
+            <th>Confidence</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- JS libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Your dashboard logic -->
+  <script src="assets/js/fca_dashboard.js"></script>
+</body>
+</html>
 
