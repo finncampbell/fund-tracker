@@ -1,5 +1,7 @@
-# .github/workflows/fca-dashboard.yml
 name: FCA Dashboard Data Pipeline
+
+permissions:
+  contents: write
 
 on:
   schedule:
@@ -11,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
+      - name: Check out code (full history + write token)
         uses: actions/checkout@v3
         with:
-          persist-credentials: true
+          fetch-depth: 0            # get all commits so push can fast‑forward
+          persist-credentials: true # leave GITHUB_TOKEN configured for push
 
       - name: Set up Python
         uses: actions/setup-python@v4
