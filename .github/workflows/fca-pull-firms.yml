@@ -1,0 +1,53 @@
+name: Pull FCA Firms
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 6'   # every Saturday at 02:00 UTC
+
+jobs:
+  pull-firms:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Refresh FRN list
+        run: python fca-dashboard/scripts/update_frn_list.py
+
+      - name: Pull FCA Firms JSON
+        env:
+          FCA_API_KEY: ${{ secrets.FCA_API_KEY }}
+        run: python fca-dashboard/scripts/pull_firms.py
+
+      - name: Generate CSV from JSON
+        run: |
+          python - << 'EOF'
+          import json, pandas as pd
+          data = json.load(open('fca-dashboard/data/fca_firms.json'))
+          df = pd.json_normalize(data)
+          df.to_csv('fca-dashboard/data/fca_firms.csv', index=False)
+          EOF
+
+      - name: Commit & push firms data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/fca_firms.json fca-dashboard/data/fca_firms.csv
+          git diff --cached --quiet || git commit -m "chore(fca): update firms data"
+          git push origin HEAD:main
