@@ -4,78 +4,64 @@
     "organisation_name": "Alinor Capital Management LLP",
     "status": "Authorised",
     "business_type": "Regulated",
-    "permissions": [
-      "Agreeing to carry on a regulated activity",
-      "Managing investments",
-      "Making arrangements with a view to transactions in investments",
-      "Dealing in investments as agent",
-      "Arranging safeguarding and administration of assets",
-      "Arranging (bringing about) deals in investments",
-      "Advising on investments (except on Pension Transfers and Pension Opt Outs)"
-    ],
+    "ch_number": "OC448165",
+    "permissions": [],
+    "trading_names": [],
+    "appointed_reps": [],
     "controlled_functions": [],
-    "associated_persons": []
+    "associated_persons": [],
+    "address": {}
   },
   {
     "frn": "1000594",
     "organisation_name": "NCM FINANCIAL UK LTD",
     "status": "Authorised",
     "business_type": "Regulated",
-    "permissions": [
-      "Agreeing to carry on a regulated activity",
-      "Making arrangements with a view to transactions in investments",
-      "Dealing in investments as principal",
-      "Dealing in investments as agent",
-      "Arranging (bringing about) deals in investments"
-    ],
+    "ch_number": "13815702",
+    "permissions": [],
+    "trading_names": [],
+    "appointed_reps": [],
     "controlled_functions": [],
-    "associated_persons": []
+    "associated_persons": [],
+    "address": {}
   },
   {
     "frn": "1001446",
     "organisation_name": "AlpInvest Partners LLP",
     "status": "Authorised",
     "business_type": "Regulated",
-    "permissions": [
-      "Agreeing to carry on a regulated activity",
-      "Making arrangements with a view to transactions in investments",
-      "Arranging (bringing about) deals in investments",
-      "Advising on investments (except on Pension Transfers and Pension Opt Outs)"
-    ],
+    "ch_number": "OC441856",
+    "permissions": [],
+    "trading_names": [],
+    "appointed_reps": [],
     "controlled_functions": [],
-    "associated_persons": []
+    "associated_persons": [],
+    "address": {}
   },
   {
     "frn": "1001689",
     "organisation_name": "Arrow Energy Markets (UK) Limited",
     "status": "Authorised",
     "business_type": "Regulated",
-    "permissions": [
-      "Agreeing to carry on a regulated activity",
-      "Making arrangements with a view to transactions in investments",
-      "Dealing in investments as principal",
-      "Dealing in investments as agent",
-      "Arranging (bringing about) deals in investments",
-      "Advising on investments (except on Pension Transfers and Pension Opt Outs)"
-    ],
+    "ch_number": "15039862",
+    "permissions": [],
+    "trading_names": [],
+    "appointed_reps": [],
     "controlled_functions": [],
-    "associated_persons": []
+    "associated_persons": [],
+    "address": {}
   },
   {
     "frn": "1001832",
     "organisation_name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
     "status": "Authorised",
     "business_type": "Regulated",
-    "permissions": [
-      "Agreeing to carry on a regulated activity",
-      "Making arrangements with a view to transactions in investments",
-      "Dealing in investments as principal",
-      "Dealing in investments as agent",
-      "Arranging safeguarding and administration of assets",
-      "Arranging (bringing about) deals in investments",
-      "Advising on investments (except on Pension Transfers and Pension Opt Outs)"
-    ],
+    "ch_number": "14818921",
+    "permissions": [],
+    "trading_names": [],
+    "appointed_reps": [],
     "controlled_functions": [],
-    "associated_persons": []
+    "associated_persons": [],
+    "address": {}
   }
 ]
