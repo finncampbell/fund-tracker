@@ -30,14 +30,14 @@ HEADERS  = {
 limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
-    """GET a URL with our FCA headers, returning JSON or {}."""
+    """GET a URL with FCA headers, returning parsed JSON."""
     limiter.wait()
     resp = requests.get(url, headers=HEADERS, timeout=10)
     resp.raise_for_status()
     return resp.json()
 
 def fetch_firm_details(frn: str) -> dict | None:
-    """Fetch a firm and its sub-resources, return a flat dict or None."""
+    """Fetch firm + sub‑resources and return a flat dict, or None on error."""
     try:
         pkg = fetch_json(f"{BASE_URL}/{frn}")
     except Exception as e:
@@ -51,19 +51,19 @@ def fetch_firm_details(frn: str) -> dict | None:
 
     info = data[0]
 
-    # Core fields from the main record
+    # Core fields
     out = {
-        "frn":                  info.get("FRN"),
-        "organisation_name":    info.get("Organisation Name"),
-        "status":               info.get("Status"),
-        "status_effective_date":info.get("Status Effective Date"),
-        "business_type":        info.get("Business Type"),
-        "ch_number":            info.get("Companies House Number"),
-        "sys_timestamp":        info.get("System Timestamp"),
+        "frn":                   info.get("FRN"),
+        "organisation_name":     info.get("Organisation Name"),
+        "status":                info.get("Status"),
+        "status_effective_date": info.get("Status Effective Date"),
+        "business_type":         info.get("Business Type"),
+        "ch_number":             info.get("Companies House Number"),
+        "sys_timestamp":         info.get("System Timestamp"),
     }
 
-    # Helper to GET any sub-resource and return its Data array
-    def sub_data(key: str) -> list[dict]:
+    def sub_data(key: str) -> list:
+        """Fetch a sub‑resource by key, return its Data array (or empty)."""
         url = info.get(key)
         if not url:
             return []
@@ -74,32 +74,45 @@ def fetch_firm_details(frn: str) -> dict | None:
             print(f"  ⚠️ Sub-fetch {key} failed: {e}")
             return []
 
-    # Permissions list (strings)
+    # Permissions (could be dicts or strings)
     perms = sub_data("Permission")
-    out["permissions"] = [p.get("Permission") or p.get("Type") or str(p) for p in perms]
+    cleaned_perms = []
+    for p in perms:
+        if isinstance(p, dict):
+            cleaned_perms.append(p.get("Permission") or p.get("Type") or json.dumps(p))
+        else:
+            cleaned_perms.append(str(p))
+    out["permissions"] = cleaned_perms
 
-    # Trading names
+    # Trading names (dicts or strings)
     names = sub_data("Name")
-    out["trading_names"] = [n.get("Name") or n.get("OrganisationName") or str(n) for n in names]
+    cleaned_names = []
+    for n in names:
+        if isinstance(n, dict):
+            cleaned_names.append(n.get("Name") or n.get("OrganisationName") or json.dumps(n))
+        else:
+            cleaned_names.append(str(n))
+    out["trading_names"] = cleaned_names
 
-    # Appointed Representative ↔ Principal link
-    ar = sub_data("Appointed Representative")
-    # e.g. AR entries contain fields like 'AR FRN' and 'Principal FRN'
-    out["appointed_reps"] = ar
+    # Appointed Representatives
+    out["appointed_reps"] = sub_data("Appointed Representative")
 
-    # Registered address block
+    # Registered address
     addr = sub_data("Address")
-    # often a single dict with address fields
     out["address"] = addr[0] if addr else {}
 
     return out
 
 def main():
-    # — parse optional --limit for quick tests —
+    # Parse optional --limit for quick CI tests
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, help="Fetch only N firms for testing")
+    parser.add_argument(
+        "--limit", type=int,
+        help="Only fetch this many FRNs for testing"
+    )
     args = parser.parse_args()
 
+    # Ensure data dir exists
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # Load FRN list
@@ -107,29 +120,30 @@ def main():
         frn_items = json.load(f)
     frns = [item["frn"] for item in frn_items]
 
+    # Apply test‑mode limit if provided
     if args.limit:
         print(f"🔍 Test mode: limiting to first {args.limit} FRNs")
         frns = frns[: args.limit]
 
-    # Fetch details
+    # Fetch details for each FRN
     results = []
     for frn in frns:
         details = fetch_firm_details(frn)
         if details:
             results.append(details)
 
-    # Dump JSON
+    # Write raw JSON
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     print(f"✅ Wrote {len(results)} firms to {OUTPUT_JSON}")
 
-    # Flatten & dump CSV
+    # Flatten and write CSV
     if results:
         df = pd.json_normalize(results)
         df.to_csv(OUTPUT_CSV, index=False)
         print(f"✅ Wrote {len(df)} rows to {OUTPUT_CSV}")
     else:
-        print("⚠️  No data fetched; skipping CSV")
+        print("⚠️  No firm data fetched; skipping CSV output")
 
 if __name__ == "__main__":
     main()
