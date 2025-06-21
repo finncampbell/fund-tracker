@@ -12,6 +12,7 @@ on:
 jobs:
   build-frn-list:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out code (full history)
         uses: actions/checkout@v3
@@ -25,15 +26,17 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests pandas beautifulsoup4
+        run: |
+          pip install requests pandas beautifulsoup4
 
-      - name: Refresh FRN list from FCA Resources
+      - name: Refresh FRN list from FCA Resources
         run: python fca-dashboard/scripts/update_frn_list.py
 
       - name: Commit & push new FRN list
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
+          git add fca-dashboard/data/raw/*.csv
           git add fca-dashboard/data/all_frns_with_names.json
           git diff --cached --quiet || git commit -m "chore(frns): weekly update FRN list"
           git push origin HEAD:main
