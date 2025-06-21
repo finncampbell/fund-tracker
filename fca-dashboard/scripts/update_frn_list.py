@@ -19,10 +19,7 @@ OUT_JSON = os.path.join(DATA_DIR, 'all_frns_with_names.json')
 REGISTER_KEYWORDS = [
     'Investment Firms Register',
     'Register of Small Registered UK AIFMs',
-    'Venture Capital Funds',
-    'Social Entrepreneurship Funds',
 ]
-
 
 def fetch_csv_links():
     """Scrape the Resources page and return list of {name, url}."""
@@ -34,11 +31,9 @@ def fetch_csv_links():
         text = a.get_text(strip=True)
         if any(kw in text for kw in REGISTER_KEYWORDS):
             href = a['href']
-            # full URL
             url = href if href.startswith('http') else 'https://register.fca.org.uk' + href
             links.append({'name': text, 'url': url})
     return links
-
 
 def download_and_extract(link):
     """Download one CSV, save raw file, and return list of (frn,name)."""
@@ -48,7 +43,6 @@ def download_and_extract(link):
 
     # --- ensure raw directory exists and save CSV ---
     os.makedirs(RAW_DIR, exist_ok=True)
-    # sanitize filename
     fname = re.sub(r'[^A-Za-z0-9]+', '_', link['name']).strip('_') + '.csv'
     raw_path = os.path.join(RAW_DIR, fname)
     with open(raw_path, 'w', encoding='utf-8') as f:
@@ -57,7 +51,6 @@ def download_and_extract(link):
 
     # parse with pandas
     df = pd.read_csv(pd.compat.StringIO(r.text), dtype=str)
-    # identify FRN and name columns
     frn_col = next(c for c in df.columns if re.search(r'\bfrn\b', c, re.I))
     name_col = next(c for c in df.columns if re.search(r'\bname\b', c, re.I))
     df = df[[frn_col, name_col]].dropna(subset=[frn_col])
@@ -65,27 +58,24 @@ def download_and_extract(link):
     df[name_col] = df[name_col].str.strip()
     return list(df.itertuples(index=False, name=None))
 
-
 def main():
-    # ensure data directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # 1) Scrape CSV links
     links = fetch_csv_links()
     print(f"Found {len(links)} matching CSV links.")
 
-    # 2) Download each and extract FRN/name
+    # 2) Download + extract FRN/name
     mapping = {}
     for link in links:
         for frn, name in download_and_extract(link):
             mapping[frn] = name
 
-    # 3) Write out JSON list of objects
+    # 3) Write out JSON array of objects
     out = [{"frn": frn, "name": name} for frn, name in sorted(mapping.items())]
     with open(OUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(out, f, indent=2)
     print(f"Wrote {len(out)} entries to {OUT_JSON}")
-
 
 if __name__ == '__main__':
     main()
