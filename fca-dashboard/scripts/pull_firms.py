@@ -12,12 +12,15 @@ FRNS_JSON    = os.path.join(DATA_DIR, "all_frns_with_names.json")
 OUTPUT_JSON  = os.path.join(DATA_DIR, "fca_firms.json")
 OUTPUT_CSV   = os.path.join(DATA_DIR, "fca_firms.csv")
 
-# FCA API setup
+# FCA Register API setup
 API_KEY   = os.getenv("FCA_API_KEY")
 if not API_KEY:
     raise EnvironmentError("FCA_API_KEY not set in environment")
-BASE_URL  = "https://api.fca.org.uk/firms"
-HEADERS   = {"Authorization": f"Bearer {API_KEY}"}
+BASE_URL  = "https://register.fca.org.uk/services/V0.1/Firm"
+HEADERS   = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Accept":        "application/json"
+}
 
 # Rate limiter instance
 limiter = RateLimiter()
@@ -60,5 +63,5 @@ def main():
     else:
         print("⚠️  No firm data fetched; skipping CSV output")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
