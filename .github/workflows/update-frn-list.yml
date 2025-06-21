@@ -36,7 +36,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add fca-dashboard/data/raw/*.csv
+          # Always stage the JSON
           git add fca-dashboard/data/all_frns_with_names.json
+          # Stage raw CSVs only if they exist
+          if compgen -G "fca-dashboard/data/raw/*.csv" > /dev/null; then
+            git add fca-dashboard/data/raw/*.csv
+          fi
+          # Commit if changes are present
           git diff --cached --quiet || git commit -m "chore(frns): weekly update FRN list"
           git push origin HEAD:main
