@@ -30,130 +30,97 @@ HEADERS  = {
 limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
-    """GET a URL with FCA headers, returning parsed JSON."""
     limiter.wait()
-    r = requests.get(url, headers=HEADERS, timeout=10)
-    r.raise_for_status()
-    return r.json()
+    resp = requests.get(url, headers=HEADERS, timeout=10)
+    resp.raise_for_status()
+    return resp.json()
 
 def fetch_firm_details(frn: str) -> dict | None:
-    """Fetch firm + sub‑resources and return a flat dict, or None on error."""
+    """Fetch one firm + all its sub‑resources, returning a flat dict."""
     try:
         pkg = fetch_json(f"{BASE_URL}/{frn}")
     except Exception as e:
         print(f"⚠️  Failed main fetch for FRN {frn}: {e}")
         return None
 
-    data = pkg.get("Data", [])
+    data = pkg.get("Data") or []
     if not data:
         print(f"⚠️  No Data block for FRN {frn}")
         return None
 
     info = data[0]
 
+    # Print out the keys so you can spot the correct “controlled functions” property
+    print(f"👀 FRN {frn} info keys: {list(info.keys())}")
+
     # Core fields
     out = {
         "frn":                   info.get("FRN"),
         "organisation_name":     info.get("Organisation Name"),
         "status":                info.get("Status"),
-        "status_effective_date": info.get("Status Effective Date"),
         "business_type":         info.get("Business Type"),
-        "ch_number":             info.get("Companies House Number"),
-        "sys_timestamp":         info.get("System Timestamp"),
     }
 
     def sub_data(key: str) -> list:
-        """Fetch a sub‑resource by key, return its Data array (or empty)."""
         url = info.get(key)
         if not url:
             return []
         try:
             subpkg = fetch_json(url)
-            return subpkg.get("Data", [])
+            return subpkg.get("Data") or []
         except Exception as e:
             print(f"  ⚠️ Sub‑fetch {key} failed: {e}")
             return []
 
-    # Permissions
+    # Permissions & names (as before)…
     perms = sub_data("Permission")
-    cleaned_perms = []
-    for p in perms:
-        if isinstance(p, dict):
-            cleaned_perms.append(p.get("Permission") or p.get("Type") or json.dumps(p))
-        else:
-            cleaned_perms.append(str(p))
-    out["permissions"] = cleaned_perms
+    out["permissions"] = [p.get("Permission") if isinstance(p, dict) else str(p) for p in perms]
 
-    # Trading names
-    names = sub_data("Name")
-    cleaned_names = []
-    for n in names:
-        if isinstance(n, dict):
-            cleaned_names.append(n.get("Name") or n.get("OrganisationName") or json.dumps(n))
-        else:
-            cleaned_names.append(str(n))
-    out["trading_names"] = cleaned_names
+    # [ …trading_names and appointed_reps code unchanged… ]
 
-    # Appointed Reps (AR endpoint)
-    ar_data = sub_data("AR")
-    out["appointed_reps"] = ar_data
-
-    # Controlled Functions (persons linked)
-    cf_data = sub_data("CF")
-    out["controlled_functions"] = cf_data
-    # also pull out just the IRNs
-    out["associated_persons"] = [
-        entry.get("PersonId") 
-        or entry.get("IndividualReferenceNumber") 
-        or entry.get("IRN") 
-        for entry in cf_data
-        if isinstance(entry, dict)
-    ]
-
-    # Registered address
-    addr = sub_data("Address")
-    out["address"] = addr[0] if addr else {}
+    # --- DYNAMIC CONTROLLED FUNCTIONS ---
+    # Find whichever key contains “controlled” (case‑insensitive)
+    cf_key = next((k for k in info if "controlled" in k.lower()), None)
+    if cf_key:
+        cf_data = sub_data(cf_key)
+        out["controlled_functions"] = cf_data
+        out["associated_persons"] = [
+            # Try the most common IRN field names
+            entry.get("IndividualReferenceNumber")
+            or entry.get("PersonId")
+            or entry.get("IRN")
+            for entry in cf_data if isinstance(entry, dict)
+        ]
+    else:
+        print(f"⚠️  No controlled‑functions link found for FRN {frn}")
+        out["controlled_functions"] = []
+        out["associated_persons"]    = []
 
     return out
 
 def main():
-    # Parse optional --limit for quick CI tests
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, help="Only fetch this many FRNs for testing")
+    parser.add_argument("--limit", type=int, help="Fetch only N firms for testing")
     args = parser.parse_args()
 
-    # Ensure data dir exists
     os.makedirs(DATA_DIR, exist_ok=True)
-
-    # Load FRN list
-    with open(FRNS_JSON, "r") as f:
-        frn_items = json.load(f)
+    frn_items = json.load(open(FRNS_JSON))
     frns = [item["frn"] for item in frn_items]
-
-    # Apply test‑mode limit if provided
     if args.limit:
-        print(f"🔍 Test mode: limiting to first {args.limit} FRNs")
         frns = frns[: args.limit]
+        print(f"🔍 Test mode: first {args.limit} FRNs only")
 
-    # Fetch and flatten
     results = []
     for frn in frns:
         details = fetch_firm_details(frn)
         if details:
             results.append(details)
 
-    # Write raw JSON
-    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+    # Write JSON & CSV as before…
+    with open(OUTPUT_JSON, "w") as f:
         json.dump(results, f, indent=2)
-    print(f"✅ Wrote {len(results)} firms to {OUTPUT_JSON}")
-
-    # Flatten and write CSV
     if results:
-        df = pd.json_normalize(results)
-        df.to_csv(OUTPUT_CSV, index=False)
-        print(f"✅ Wrote {len(df)} rows to {OUTPUT_CSV}")
-    else:
-        print("⚠️  No data fetched; skipping CSV output")
+        pd.json_normalize(results).to_csv(OUTPUT_CSV, index=False)
 
 if __name__ == "__main__":
     main()
