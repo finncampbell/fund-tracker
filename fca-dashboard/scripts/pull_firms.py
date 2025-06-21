@@ -3,6 +3,7 @@ import os
 import json
 import requests
 import pandas as pd
+import argparse
 from rate_limiter import RateLimiter
 
 # ─── Paths ─────────────────────────────────────────────────────────────────────
@@ -19,7 +20,6 @@ if not API_EMAIL or not API_KEY:
     raise EnvironmentError(
         "FCA_API_EMAIL and FCA_API_KEY must both be set in the environment"
     )
-
 BASE_URL = "https://register.fca.org.uk/services/V0.1/Firm"
 HEADERS = {
     "Accept":        "application/json",
@@ -44,27 +44,41 @@ def fetch_firm(frn: str) -> dict | None:
     return None
 
 def main():
-    # 1) Ensure data directory exists
+    # ——— parse optional limit for quick CI tests —————————————
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="Only fetch this many FRNs for testing"
+    )
+    args = parser.parse_args()
+
+    # 1) ensure output directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # 2) Load your FRN→name list
+    # 2) load your FRN→name list
     with open(FRNS_JSON, "r") as f:
         frn_items = json.load(f)
     frns = [item["frn"] for item in frn_items]
 
-    # 3) Fetch each firm
+    # 2.1) apply test‐mode limit if provided
+    if args.limit:
+        print(f"🔍 Test mode: limiting to first {args.limit} FRNs")
+        frns = frns[: args.limit]
+
+    # 3) fetch each firm
     results = []
     for frn in frns:
         data = fetch_firm(frn)
         if data:
             results.append(data)
 
-    # 4) Write raw JSON
+    # 4) write raw JSON
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     print(f"✅ Wrote {len(results)} firms to {OUTPUT_JSON}")
 
-    # 5) Write flattened CSV
+    # 5) flatten & write CSV
     if results:
         df = pd.json_normalize(results)
         df.to_csv(OUTPUT_CSV, index=False)
