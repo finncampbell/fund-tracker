@@ -32,9 +32,9 @@ limiter = RateLimiter()
 def fetch_json(url: str) -> dict:
     """GET a URL with FCA headers, returning parsed JSON."""
     limiter.wait()
-    resp = requests.get(url, headers=HEADERS, timeout=10)
-    resp.raise_for_status()
-    return resp.json()
+    r = requests.get(url, headers=HEADERS, timeout=10)
+    r.raise_for_status()
+    return r.json()
 
 def fetch_firm_details(frn: str) -> dict | None:
     """Fetch firm + sub‑resources and return a flat dict, or None on error."""
@@ -71,10 +71,10 @@ def fetch_firm_details(frn: str) -> dict | None:
             subpkg = fetch_json(url)
             return subpkg.get("Data", [])
         except Exception as e:
-            print(f"  ⚠️ Sub-fetch {key} failed: {e}")
+            print(f"  ⚠️ Sub‑fetch {key} failed: {e}")
             return []
 
-    # Permissions (could be dicts or strings)
+    # Permissions
     perms = sub_data("Permission")
     cleaned_perms = []
     for p in perms:
@@ -84,7 +84,7 @@ def fetch_firm_details(frn: str) -> dict | None:
             cleaned_perms.append(str(p))
     out["permissions"] = cleaned_perms
 
-    # Trading names (dicts or strings)
+    # Trading names
     names = sub_data("Name")
     cleaned_names = []
     for n in names:
@@ -94,8 +94,21 @@ def fetch_firm_details(frn: str) -> dict | None:
             cleaned_names.append(str(n))
     out["trading_names"] = cleaned_names
 
-    # Appointed Representatives
-    out["appointed_reps"] = sub_data("Appointed Representative")
+    # Appointed Reps (AR endpoint)
+    ar_data = sub_data("AR")
+    out["appointed_reps"] = ar_data
+
+    # Controlled Functions (persons linked)
+    cf_data = sub_data("CF")
+    out["controlled_functions"] = cf_data
+    # also pull out just the IRNs
+    out["associated_persons"] = [
+        entry.get("PersonId") 
+        or entry.get("IndividualReferenceNumber") 
+        or entry.get("IRN") 
+        for entry in cf_data
+        if isinstance(entry, dict)
+    ]
 
     # Registered address
     addr = sub_data("Address")
@@ -106,10 +119,7 @@ def fetch_firm_details(frn: str) -> dict | None:
 def main():
     # Parse optional --limit for quick CI tests
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--limit", type=int,
-        help="Only fetch this many FRNs for testing"
-    )
+    parser.add_argument("--limit", type=int, help="Only fetch this many FRNs for testing")
     args = parser.parse_args()
 
     # Ensure data dir exists
@@ -125,7 +135,7 @@ def main():
         print(f"🔍 Test mode: limiting to first {args.limit} FRNs")
         frns = frns[: args.limit]
 
-    # Fetch details for each FRN
+    # Fetch and flatten
     results = []
     for frn in frns:
         details = fetch_firm_details(frn)
@@ -143,7 +153,7 @@ def main():
         df.to_csv(OUTPUT_CSV, index=False)
         print(f"✅ Wrote {len(df)} rows to {OUTPUT_CSV}")
     else:
-        print("⚠️  No firm data fetched; skipping CSV output")
+        print("⚠️  No data fetched; skipping CSV output")
 
 if __name__ == "__main__":
     main()
