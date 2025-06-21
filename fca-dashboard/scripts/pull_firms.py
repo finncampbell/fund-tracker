@@ -1,67 +1,64 @@
+#!/usr/bin/env python3
 import os
-import requests
 import json
+import requests
+import pandas as pd
 from rate_limiter import RateLimiter
 
-# Load API key from environment
-API_KEY     = os.getenv("FCA_API_KEY")
+# Paths
+SCRIPT_DIR   = os.path.dirname(__file__)
+DATA_DIR     = os.path.abspath(os.path.join(SCRIPT_DIR, "../data"))
+FRNS_JSON    = os.path.join(DATA_DIR, "all_frns_with_names.json")
+OUTPUT_JSON  = os.path.join(DATA_DIR, "fca_firms.json")
+OUTPUT_CSV   = os.path.join(DATA_DIR, "fca_firms.csv")
+
+# FCA API setup
+API_KEY   = os.getenv("FCA_API_KEY")
 if not API_KEY:
     raise EnvironmentError("FCA_API_KEY not set in environment")
+BASE_URL  = "https://api.fca.org.uk/firms"
+HEADERS   = {"Authorization": f"Bearer {API_KEY}"}
 
-# FCA endpoint
-BASE_URL    = "https://api.fca.org.uk/firms"
-HEADERS     = {"Authorization": f"Bearer {API_KEY}"}
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "../data/fca_firms.json")
-
+# Rate limiter instance
 limiter = RateLimiter()
 
-def load_or_init_json(path, default):
-    # If file missing, create with default
-    if not os.path.exists(path):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w") as f:
-            json.dump(default, f, indent=2)
-        return default
-    # If file exists, attempt to load, but recover from invalid JSON
-    try:
-        with open(path, "r") as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        print(f"Warning: {path} is invalid JSON. Reinitializing.")
-        with open(path, "w") as f:
-            json.dump(default, f, indent=2)
-        return default
-
-def fetch_firm(frn):
+def fetch_firm(frn: str) -> dict | None:
+    """Fetch a single firm by FRN, returning the JSON or None on failure."""
     limiter.wait()
-    url = f"{BASE_URL}/{frn}"
-    r = requests.get(url, headers=HEADERS)
-    if r.status_code == 200:
-        return r.json()
-    else:
-        print(f"Failed to fetch FRN {frn}: HTTP {r.status_code}")
-        return None
+    resp = requests.get(f"{BASE_URL}/{frn}", headers=HEADERS, timeout=10)
+    if resp.status_code == 200:
+        return resp.json()
+    print(f"⚠️  Failed to fetch FRN {frn}: HTTP {resp.status_code}")
+    return None
 
 def main():
-    # load or initialize the firms list
-    firms = load_or_init_json(OUTPUT_PATH, [])
+    # 1) Ensure data directory exists
+    os.makedirs(DATA_DIR, exist_ok=True)
 
-    # TODO: replace with your list of FRNs (for testing: up to 10)
-    frns = [
-      # "119293", "119348", ...
-    ][:10]
+    # 2) Load your FRN→name list
+    with open(FRNS_JSON, "r") as f:
+        frn_items = json.load(f)
+    frns = [item["frn"] for item in frn_items]
 
+    # 3) Fetch each firm
     results = []
     for frn in frns:
         data = fetch_firm(frn)
         if data:
             results.append(data)
 
-    # overwrite with fresh data
-    with open(OUTPUT_PATH, "w") as f:
+    # 4) Write raw JSON
+    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
+    print(f"✅ Wrote {len(results)} firms to {OUTPUT_JSON}")
 
-    print(f"[TEST MODE] Wrote {len(results)} firms to {OUTPUT_PATH}")
+    # 5) Write flattened CSV
+    if results:
+        df = pd.json_normalize(results)
+        df.to_csv(OUTPUT_CSV, index=False)
+        print(f"✅ Wrote {len(df)} rows to {OUTPUT_CSV}")
+    else:
+        print("⚠️  No firm data fetched; skipping CSV output")
 
 if __name__ == "__main__":
     main()
