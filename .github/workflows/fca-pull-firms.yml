@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 6'   # every Saturday at 02:00 UTC (after FRN list updates)
+    - cron: '0 2 * * 6'   # every Saturday at 02:00 UTC
 
 jobs:
   pull-firms:
@@ -29,7 +29,8 @@ jobs:
 
       - name: Pull FCA Firms JSON & CSV
         env:
-          FCA_API_KEY: ${{ secrets.FCA_API_KEY }}
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: python fca-dashboard/scripts/pull_firms.py
 
       - name: Commit & push firms data
