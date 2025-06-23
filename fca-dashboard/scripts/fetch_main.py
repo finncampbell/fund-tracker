@@ -60,7 +60,6 @@ def fetch_main_record(frn: str) -> dict | None:
         'status': info.get('Status'),
         'business_type': info.get('Business Type'),
         'companies_house_number': info.get('Companies House Number'),
-        'exceptional_info_details': info.get('Exceptional Info Details', []),
         'system_timestamp': info.get('System Timestamp'),
         'status_effective_date': info.get('Status Effective Date'),
     }
