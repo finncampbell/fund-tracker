@@ -1,14 +1,19 @@
 # tests/test_individual_api.py
-"""
-Smoke test for the FCA Individual API endpoint.
-Fetches a sample IRN and verifies the response structure.
-"""
 import os
+import json
 import requests
 
 def test_individual_api_response():
-    # Replace with a known-good IRN from your data set
-    sample_irn = "1000103"
+    # Dynamically load the first IRN from your fetched data
+    base = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fca-dashboard', 'data'))
+    firm_map_path = os.path.join(base, 'fca_individuals_by_firm.json')
+    with open(firm_map_path, 'r', encoding='utf-8') as f:
+        firm_map = json.load(f)
+    # grab the very first IRN in the map
+    first_frn = next(iter(firm_map))
+    first_irn = firm_map[first_frn][0]['IRN']
+    sample_irn = first_irn
+
     url = f"https://register.fca.org.uk/services/V0.1/Individuals/{sample_irn}"
     headers = {
         "Accept":       "application/json",
@@ -20,12 +25,9 @@ def test_individual_api_response():
     resp.raise_for_status()
     payload = resp.json()
 
-    # Ensure Data array exists and has at least one record
-    assert "Data" in payload, "Response missing 'Data' key"
-    data = payload["Data"]
-    assert isinstance(data, list) and data, "Data array is empty"
+    data = payload.get("Data")
+    assert isinstance(data, list) and data, "Data array is empty or missing"
 
     record = data[0]
-    # Check core fields are present
     for field in ("IRN", "Name", "Status", "System Timestamp"):
         assert field in record, f"Expected field '{field}' in individual record"
