@@ -1,0 +1,22 @@
+# Firm‑level endpoints
+Firm Main                           = /services/V0.1/Firm/{frn}
+Firm Other Names                    = /services/V0.1/Firm/{frn}/Names
+Firm Address                        = /services/V0.1/Firm/{frn}/Address
+Firm Controlled Functions           = /services/V0.1/Firm/{frn}/CF
+Firm Individuals                    = /services/V0.1/Firm/{frn}/Individuals
+Firm Permissions                    = /services/V0.1/Firm/{frn}/Permissions
+Firm Requirements                   = /services/V0.1/Firm/{frn}/Requirements
+Firm Requirement Investment Types   = /services/V0.1/Firm/{frn}/Requirements/{reqref}/InvestmentTypes
+Firm Regulators                     = /services/V0.1/Firm/{frn}/Regulators
+Firm Passports                      = /services/V0.1/Firm/{frn}/Passports
+Firm Passport Permissions           = /services/V0.1/Firm/{frn}/Passports/{country}/Permission
+Firm Waivers                        = /services/V0.1/Firm/{frn}/Waiver
+Firm Exclusions                     = /services/V0.1/Firm/{frn}/Exclusions
+Firm Disciplinary History           = /services/V0.1/Firm/{frn}/DisciplinaryHistory
+Firm Appointed Representatives      = /services/V0.1/Firm/{frn}/AR
+Firm Exceptional Info               = /services/V0.1/Firm/{frn}/ExceptionalInfo
+
+# Individual‑level endpoints
+Individual Main                     = /services/V0.1/Individuals/{irn}
+Individual Controlled Functions     = /services/V0.1/Individuals/{irn}/CF
+Individual Disciplinary History     = /services/V0.1/Individuals/{irn}/DisciplinaryHistory
