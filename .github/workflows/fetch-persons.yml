@@ -1,0 +1,48 @@
+name: Fetch FCA Individual Records (Ad‑hoc)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'How many IRNs to fetch (blank = full run)'
+        required: false
+        default: ''
+
+jobs:
+  fetch-persons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch individual records
+        env:
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            python fca-dashboard/scripts/fetch_persons.py --limit ${{ github.event.inputs.limit }}
+          else
+            python fca-dashboard/scripts/fetch_persons.py
+          fi
+
+      - name: Commit & push updated persons
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/fca_persons.json
+          git diff --cached --quiet || git commit -m "chore(fca): update individual records"
+          git push
