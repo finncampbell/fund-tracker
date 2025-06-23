@@ -1,0 +1,25 @@
+name: Test FCA Individual API Response
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-individual-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies
+        run: pip install pytest requests
+
+      - name: Run individual API smoke test
+        env:
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: pytest --maxfail=1 --disable-warnings -q tests/test_individual_api.py
