@@ -51,19 +51,25 @@ def fetch_individual_record(irn: str) -> dict | None:
         print(f"⚠️  No Data block for IRN {irn}")
         return None
 
-    record = data_list[0]
-    # Unwrap if wrapped in 'Details'
-    info = record.get('Details', record)
+    rec = data_list[0]
+    details = rec.get('Details', {})
 
-    # Select core fields, with fallbacks for name
-    selected = {
+    # Helper to pick the first existing key from details or top-level record
+    def pick(*keys):
+        for k in keys:
+            if k in details:
+                return details[k]
+            if k in rec:
+                return rec[k]
+        return None
+
+    return {
         'irn': irn,
-        'name': info.get('Name') or info.get('Full Name') or info.get('Commonly Used Name'),
-        'status': info.get('Status'),
-        'date_of_birth': info.get('Date of Birth'),
-        'system_timestamp': info.get('System Timestamp')
+        'name': pick('Name', 'Full Name', 'Commonly Used Name'),
+        'status': pick('Status', 'Registration Status'),
+        'date_of_birth': pick('Date of Birth', 'DOB', 'DateOfBirth'),
+        'system_timestamp': pick('System Timestamp', 'SystemTimestamp'),
     }
-    return selected
 
 def main():
     parser = argparse.ArgumentParser(description='Fetch and merge individual records')
@@ -78,9 +84,10 @@ def main():
         return
     with open(IND_BY_FIRM, 'r', encoding='utf-8') as f:
         firm_map = json.load(f)
+
     # Collect unique IRNs
     all_irns = []
-    for frn, entries in firm_map.items():
+    for entries in firm_map.values():
         for e in entries:
             irn_val = e.get('IRN')
             if irn_val:
@@ -90,7 +97,7 @@ def main():
     irns = [x for x in all_irns if not (x in seen or seen.add(x))]
 
     if args.limit:
-        irns = irns[: args.limit]
+        irns = irns[:args.limit]
         print(f"🔍 Test mode: will fetch {len(irns)} individual records")
 
     # Load existing store
