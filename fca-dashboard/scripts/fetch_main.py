@@ -82,10 +82,18 @@ def main():
         frns = frns[: args.limit]
         print(f"🔍 Test mode: will fetch {len(frns)} FRNs")
 
-    # Load existing main JSON store (frn → record)
+    # Load existing main JSON store
     if os.path.exists(MAIN_JSON):
         with open(MAIN_JSON, "r", encoding="utf-8") as f:
-            store = {item['frn']: item for item in json.load(f)}
+            data = json.load(f)
+        # Expecting a mapping of frn->record
+        if isinstance(data, dict):
+            store = data
+        elif isinstance(data, list):
+            # Convert list of records to dict
+            store = {item.get('frn'): item for item in data if isinstance(item, dict) and 'frn' in item}
+        else:
+            store = {}
     else:
         store = {}
 
@@ -96,9 +104,9 @@ def main():
             store[frn] = rec
             print(f"✅ Fetched and stored main record for FRN {frn}")
 
-    # Write back
+    # Write back as mapping
     with open(MAIN_JSON, "w", encoding="utf-8") as f:
-        json.dump(list(store.values()), f, indent=2, ensure_ascii=False)
+        json.dump(store, f, indent=2, ensure_ascii=False)
     print(f"✅ Wrote {len(store)} firm records to {MAIN_JSON}")
 
 
