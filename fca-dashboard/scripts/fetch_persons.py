@@ -38,7 +38,6 @@ def fetch_json(url: str) -> dict:
     resp.raise_for_status()
     return resp.json()
 
-
 def fetch_individual_record(irn: str) -> dict | None:
     """Fetch core individual record for a single IRN and return selected fields."""
     try:
@@ -47,22 +46,24 @@ def fetch_individual_record(irn: str) -> dict | None:
         print(f"⚠️  Failed fetch for IRN {irn}: {e}")
         return None
 
-    data = pkg.get('Data') or []
-    if not data:
+    data_list = pkg.get('Data') or []
+    if not data_list:
         print(f"⚠️  No Data block for IRN {irn}")
         return None
 
-    info = data[0]
-    # Select core fields
+    record = data_list[0]
+    # Unwrap if wrapped in 'Details'
+    info = record.get('Details', record)
+
+    # Select core fields, with fallbacks for name
     selected = {
-        'irn': info.get('IRN') or irn,
-        'name': info.get('Name'),
+        'irn': irn,
+        'name': info.get('Name') or info.get('Full Name') or info.get('Commonly Used Name'),
         'status': info.get('Status'),
         'date_of_birth': info.get('Date of Birth'),
         'system_timestamp': info.get('System Timestamp')
     }
     return selected
-
 
 def main():
     parser = argparse.ArgumentParser(description='Fetch and merge individual records')
@@ -81,10 +82,10 @@ def main():
     all_irns = []
     for frn, entries in firm_map.items():
         for e in entries:
-            irn = e.get('IRN')
-            if irn:
-                all_irns.append(irn)
-    # dedupe preserving order
+            irn_val = e.get('IRN')
+            if irn_val:
+                all_irns.append(irn_val)
+    # Dedupe preserving order
     seen = set()
     irns = [x for x in all_irns if not (x in seen or seen.add(x))]
 
