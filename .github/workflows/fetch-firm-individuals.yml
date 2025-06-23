@@ -1,0 +1,48 @@
+name: Fetch FCA Firm Individuals (Ad‑hoc)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'How many FRNs to fetch individuals for (blank = full run)'
+        required: false
+        default: ''
+
+jobs:
+  fetch-firm-individuals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch firm individuals
+        env:
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            python fca-dashboard/scripts/fetch_firm_individuals.py --limit ${{ github.event.inputs.limit }}
+          else
+            python fca-dashboard/scripts/fetch_firm_individuals.py
+          fi
+
+      - name: Commit & push updated individuals
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/fca_individuals_by_firm.json
+          git diff --cached --quiet || git commit -m "chore(fca): update firm individuals"
+          git push
