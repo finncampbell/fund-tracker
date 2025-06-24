@@ -1,134 +1,386 @@
-/* Import Poppins */
+/* ─── Import Poppins ───────────────────────────────────────────────────────── */More actions
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* Page background */
+/* ─── BODY ───────────────────────────────────────────────────────────────────── */
 body {
   margin: 0;
   padding: 2rem;
-  background: #e9f5f2;
+  background-color: #0f0f13;    /* Solid black around the card */
+  color: #ececec;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+               'Segoe UI Emoji';
   display: flex;
   justify-content: center;
-  font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* Card container */
+/* ─── DASHBOARD CARD (NAVY→BLACK GRADIENT) ─────────────────────────────────── */
 .ft-dashboard-card {
-  background: white;
+  background: linear-gradient(
+    to bottom,
+    #1b1f28 0%,
+    #12151d 50%,
+    #0f0f13 100%
+  );
   border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
+  padding: 0;
 }
 
-/* Gradient header */
+/* ─── HEADER (TEXT GRADIENT) ─────────────────────────────────────────────────── */
 .ft-header {
-  background: linear-gradient(135deg, #223366, #1abc9c);
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  /* Now using Poppins here too */
-  font-family: 'Poppins', system-ui, sans-serif;
-}
-.ft-header h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.75rem;
-}
-.ft-header p a {
-  color: rgba(255,255,255,0.85);
-  text-decoration: underline;
+  background-color: transparent;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
-/* Nav/filter bar */
+.ft-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #A020F0, #4AB3F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.ft-download a {
+  color: #4AB3F4;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ─── FILTER TABS (NEON-GLOW ON ALL STATES) ───────────────────────────────── */
 .ft-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 1rem;
-  background: white;
-  border-bottom: 1px solid #e0e0e0;
-  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  justify-content: flex-start;
 }
 
-/* Pill-shaped buttons */
+/* Base style for every tab button */
 .ft-btn {
-  background: white;
-  border: 1px solid #ccc;
-  color: #223366;
+  background: transparent;
+  border: 2px solid #A020F0;      /* rich purple outline at rest */
+  color: #A020F0;                 /* rich purple text at rest */
   padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  cursor: pointer;
+  border-radius: 999px;           /* fully pill-shaped */
   font-size: 0.9rem;
-  transition: background 0.2s, color 0.2s;
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+  /* subtle purple glow even when unselected */
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
 }
-.ft-btn:hover {
-  background: #f0faf8;
-}
+
+/* Hover and “active” (selected) state for tabs */
+.ft-btn:hover,
 .ft-btn.active {
-  background: #1abc9c;
-  color: white;
-  border-color: #1abc9c;
+  background: transparent;        /* remain transparent */
+  border-color: #4AB3F4;          /* neon blue outline on hover/active */
+  color: #4AB3F4;                 /* neon blue text on hover/active */
+
+  /* stronger neon-blue glow when hovered or active */
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
 }
 
-/* Table wrapper */
+.ft-btn:hover {
+  filter: brightness(1.05);        /* slight pop on hover */
+}
+
+/* ─── BACKFILL CONTROLS ─────────────────────────────────────────────────────── */
+.ft-backfill-section {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+.ft-backfill-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ft-date-input {
+  background-color: rgba(236, 236, 236, 0.05);
+  border: 1px solid rgba(236, 236, 236, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  min-width: 240px;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+}
+.ft-date-input:hover,
+.ft-date-input:focus {
+  border-color: #4AB3F4;
+  outline: none;
+}
+
+/* “Run Historical Backfill” button—same style as tabs */
+.ft-backfill-btn {
+  background: transparent;
+  border: 2px solid #A020F0;      /* rich purple outline at rest */
+  color: #A020F0;                 /* rich purple text at rest */
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 999px;           /* pill shape */
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+  /* subtle purple glow at rest */
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
+}
+
+/* Hover state for the backfill button */
+.ft-backfill-btn:hover {
+  background: transparent;        /* remain transparent */
+  border-color: #4AB3F4;          /* neon blue outline on hover */
+  color: #4AB3F4;                 /* neon blue text on hover */
+
+  /* stronger neon-blue glow on hover */
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
+
+  filter: brightness(1.05);
+}
+
+.ft-backfill-note {
+  color: rgba(236, 236, 236, 0.6);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ─── EXPAND‐FOR‐DIRECTORS BUTTON ───────────────────────────────────────────── */
+/* Resting state: neon‐blue outline/text + subtle blue glow */
+.expand-btn {
+  background: transparent;
+  border: 2px solid #4AB3F4;      /* neon blue outline at rest */
+  color: #4AB3F4;                 /* neon blue text at rest */
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;           /* pill shape */
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+  /* subtle neon‐blue glow at rest */
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.25),
+    0 0 12px rgba(74, 179, 244, 0.15);
+}
+
+/* Hover OR when it has class="active": switch to purple glow */
+.expand-btn:hover,
+.expand-btn.active {
+  background: transparent;
+  border-color: #A020F0;          /* rich purple outline on hover/active */
+  color: #A020F0;                 /* rich purple text on hover/active */
+
+  /* stronger purple glow on hover/active */
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.6),
+    0 0 14px rgba(160, 32, 240, 0.4);
+}
+
+.expand-btn:hover {
+  filter: brightness(1.05);        /* slight pop on hover */
+}
+
+/* ─── CHILD TABLE (DIRECTORS) HEADERS ──────────────────────────────────────── */
+/* Ensure any <th> inside .child-table (the directors child‐row) is rich purple */
+.child-table th {
+  color: #A020F0;         /* rich purple for directors’ column headings */
+  padding: 0.5rem 0.75rem;/* a bit of spacing so they line up nicely */
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent; /* inherit dark background */
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+/* ─── CHILD TABLE (DIRECTORS) CELLS ───────────────────────────────────────── */
+/* Directors data cells remain light neon‐blue */
+.child-table td {
+  color: #4AB3F4;    /* light neon‐blue for director rows */
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: transparent; /* inherit row‐hover styles from parent table */
+}
+
+/* ─── TABLE STYLING ─────────────────────────────────────────────────────────── */
 .table-container {
-  padding: 1rem;
-  background: white;
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  overflow: auto;
+.table-container {  
+  background-color: transparent;  
+  padding: 1.5rem 2rem;  
+  overflow: auto;  
 }
 
-/* DataTable styling */
+/* Apply to both #companies and #sic-companies DataTables */
 #companies,
 #sic-companies {
+  width: 100%;
   border-collapse: separate !important;
   border-spacing: 0 0.5rem !important;
-  width: 100%;
   font-family: 'Poppins', system-ui, sans-serif;
 }
-#companies tbody tr,
-#sic-companies tbody tr {
-  background: #fafafa;
-}
-#companies tbody tr:nth-child(even),
-#sic-companies tbody tr:nth-child(even) {
-  background: #ffffff;
-}
-/* Table headers also in Poppins */
-#companies thead th,
-#sic-companies thead th {
-  background: #f2f2f2;
+
+/* Column headers for all parent DataTables: rich purple */
+table.display thead th {
   padding: 1rem 0.5rem;
   text-align: left;
   font-weight: 600;
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  color: #A020F0; /* rich purple for headers */
 }
-#companies td,
-#sic-companies td {
+
+/* Table row backgrounds */
+table.display tbody tr {
+  background-color: rgba(15, 15, 19, 0.85);
+}
+table.display tbody tr:nth-child(even) {
+  background-color: rgba(15, 15, 19, 0.80);
+}
+
+/* Table cell text for all parent DataTables: light neon‐blue */
+table.display tbody td {
   padding: 0.75rem 0.5rem;
+  color: #4AB3F4;
   border: none;
 }
 
-/* Category pill in table */
-#companies td:nth-child(4),
-#sic-companies td:nth-child(4) {
+/* “Category” pill inside #companies table (if used) */
+#companies td:nth-child(4) .pill {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  border-radius: 2rem;
-  background: #e0f7fa;
-  color: #223366;
-  font-family: 'Poppins', system-ui, sans-serif;
+  border-radius: 999px;
+  background-color: #A020F0; /* neon purple pill background */
+  color: #0f0f13;            /* almost-black text inside pill */
+  font-weight: 500;
 }
 
-/* Responsive adjustments */
+/* Hover state for parent table rows */
+table.display tbody tr:hover td {
+  background-color: rgba(236, 236, 236, 0.05);
+}
+
+/* ─── DATATABLES OVERRIDES ─────────────────────────────────────────────────── */
+.dataTables_wrapper .dataTables_filter input {
+  background-color: rgba(236, 236, 236, 0.1);
+  border: 1px solid rgba(236, 236, 236, 0.2);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #ececec !important;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.2rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #4AB3F4 !important;
+  color: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: rgba(74, 179, 244, 0.2) !important;
+  color: #4AB3F4 !important;
+}
+
+/* ─── DATATABLES LENGTH CONTROL OVERRIDES ─────────────────────────────────── */
+
+/* Make the entire “Show ___ entries” label purple */
+.dataTables_length label {
+  color: #A020F0 !important;    /* rich purple */
+  font-weight: 500;
+}
+
+/* Style the <select> itself: black background, purple text, purple border */
+.dataTables_length select {
+  background-color: #0f0f13 !important;  /* page background */
+  color: #A020F0 !important;             /* purple text */
+  border: 2px solid #A020F0 !important;  /* purple border */
+  border-radius: 4px !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* On focus, add a subtle purple glow around the <select> */
+.dataTables_length select:focus {
+  box-shadow: 0 0 6px rgba(160, 32, 240, 0.6), 0 0 14px rgba(160, 32, 240, 0.4);
+  border-color: #4AB3F4 !important;  /* switch to neon blue on focus */
+  color: #4AB3F4 !important;
+}
+
+/* Force dropdown <option> items to also be black with purple text */
+.dataTables_length select option {
+  background-color: #0f0f13 !important;
+  color: #A020F0 !important;
+}
+
+/* If you want the “entries” word (after the select) to be purple as well */
+.dataTables_length label span {
+  color: #A020F0 !important;
+}
+
+/* ─── RESPONSIVE ADJUSTMENTS ───────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .ft-filters {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
   }
-  .ft-btn {
+  .ft-btn,
+  .ft-backfill-btn,
+  .expand-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
   .ft-header {
     padding: 1.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .ft-backfill-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ft-date-input,
+  .ft-backfill-btn,
+  .expand-btn {
+    width: 100%;More actions
   }
 }
