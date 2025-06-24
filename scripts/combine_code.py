@@ -1,128 +1,96 @@
 #!/usr/bin/env python3
-import os
-import argparse
 import subprocess
-import tempfile
+import argparse
+import os
+from datetime import datetime
 
-# Adjust extensions as needed
-CODE_EXTENSIONS = {
+# --- CONFIGURATION ---
+SKIP_WALK_DIRS     = {'.git', '__pycache__', 'node_modules'}
+PATH_ONLY_DIRS     = {'data', 'fca-dashboard/data', 'docs/assets/data'}
+CODE_EXTENSIONS    = {
     '.py', '.js', '.ts', '.java', '.cpp', '.c', '.h',
-    '.go', '.rb', '.rs', '.sh', '.html', '.css', '.tsx', '.jsx'
+    '.go', '.rb', '.rs', '.sh', '.html', '.css',
+    '.json', '.yml', '.yaml', '.md', '.tsx', '.jsx'
 }
-
-# Default directories to skip
-SKIP_DIRS = {
-    '.git', '__pycache__', 'node_modules',
-    'docs/assets/data', 'data-branch', 'data'
-}
-
-# Extensions for which we only want to record paths, not content
 PATH_ONLY_EXTENSIONS = {'.csv'}
 
+def run(cmd):
+    return subprocess.check_output(cmd, text=True).splitlines()
 
-def should_include(filename):
-    _, ext = os.path.splitext(filename)
-    return ext.lower() in CODE_EXTENSIONS
+def get_all_branches():
+    lines = run(['git', 'branch', '-a'])
+    branches = []
+    for ln in lines:
+        br = ln.strip().lstrip('* ').strip()
+        if '->' in br:
+            continue
+        branches.append(br)
+    return sorted(set(branches))
 
+def list_files(branch):
+    return run(['git', 'ls-tree', '-r', '--name-only', branch])
 
-def is_path_only(filename):
-    _, ext = os.path.splitext(filename)
-    return ext.lower() in PATH_ONLY_EXTENSIONS
-
-
-def combine_repo_code(root_dir, output_path, out_file=None):
-    """
-    Walk the directory tree starting at root_dir.
-    - Inline code files (per CODE_EXTENSIONS) with a header.
-    - For PATH_ONLY_EXTENSIONS, only emit the file path.
-    """
-    manage_file = False
-    if out_file is None:
-        out_file = open(output_path, 'w', encoding='utf-8')
-        manage_file = True
-
+def show_file(branch, path):
     try:
-        for dirpath, dirnames, filenames in os.walk(root_dir):
-            # Skip unwanted folders
-            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
-            for fname in sorted(filenames):
-                full_path = os.path.join(dirpath, fname)
-                rel_path = os.path.relpath(full_path, root_dir)
+        return subprocess.check_output(
+            ['git', 'show', f'{branch}:{path}'],
+            text=True
+        )
+    except subprocess.CalledProcessError:
+        return None
 
-                if should_include(fname):
-                    out_file.write(f"\n\n# ===== File: {rel_path} =====\n\n")
-                    try:
-                        with open(full_path, 'r', encoding='utf-8') as in_file:
-                            out_file.write(in_file.read())
-                    except Exception as e:
-                        out_file.write(f"# [Could not read file: {e}]\n")
+def should_path_only(path):
+    return any(path.startswith(d.rstrip('/') + '/') for d in PATH_ONLY_DIRS)
 
-                elif is_path_only(fname):
-                    # Write only the CSV location, not its content
-                    out_file.write(f"\n# ===== CSV Path: {rel_path} =====\n")
-    finally:
-        if manage_file:
-            out_file.close()
+def is_code_file(path):
+    return os.path.splitext(path)[1].lower() in CODE_EXTENSIONS
 
+def is_path_only_ext(path):
+    return os.path.splitext(path)[1].lower() in PATH_ONLY_EXTENSIONS
 
-def process_local(root, output):
-    combine_repo_code(root, output)
-    print(f"Combined into {output}")
-
-
-def process_remote(repo_url, output):
-    with tempfile.TemporaryDirectory() as tmpdir:
-        print(f"Cloning {repo_url} into {tmpdir} (all branches)...")
-        try:
-            # Clone all branches
-            subprocess.check_call([
-                'git', 'clone', '--no-single-branch', repo_url, tmpdir
-            ])
-            cwd = os.getcwd()
-            os.chdir(tmpdir)
-
-            # List all remote branches
-            branches = subprocess.check_output(['git', 'branch', '-r']).decode().splitlines()
-            branches = [b.strip() for b in branches if '->' not in b]
-
-            # Prepare output file
-            with open(output, 'w', encoding='utf-8') as out_file:
-                for remote_branch in branches:
-                    branch_name = remote_branch.replace('origin/', '')
-                    subprocess.check_call(['git', 'checkout', branch_name])
-                    out_file.write(f"\n\n# ===== Branch: {branch_name} =====\n")
-                    combine_repo_code(tmpdir, output, out_file)
-
-            os.chdir(cwd)
-        except subprocess.CalledProcessError as e:
-            print(f"Error processing repository: {e}")
-            return
-
-    print(f"Combined into {output}")
-
-
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(
-        description="Combine all code files in a repo into one file"
-    )
-    group = parser.add_mutually_exclusive_group(required=False)
-    group.add_argument(
-        '--root',
-        default='.',
-        help="Local repo root to scan (default: current directory)"
-    )
-    group.add_argument(
-        '--repo',
-        help="GitHub repo URL to clone and scan (e.g., https://github.com/user/repo.git)"
+        description="Combine all code across every branch into one file"
     )
     parser.add_argument(
-        '-o', '--output',
+        '-o','--out',
         default='combined_code.txt',
-        help="Output filename (default: combined_code.txt)"
+        help="Output file (default: combined_code.txt)"
     )
     args = parser.parse_args()
 
-    if args.repo:
-        process_remote(args.repo, args.output)
-    else:
-        process_local(args.root, args.output)
+    branches = get_all_branches()
+    with open(args.out, 'w', encoding='utf-8') as out:
+        out.write(f"# Repo dump generated at {datetime.utcnow().isoformat()}Z\n\n")
+        for branch in branches:
+            out.write(f"# ===== BRANCH: {branch} =====\n\n")
+            for path in list_files(branch):
+                # Log but skip data dirs entirely
+                if should_path_only(path):
+                    out.write(f"# [DATA PATH] {path}\n\n")
+                    continue
+
+                ext = os.path.splitext(path)[1].lower()
+                # CSVs (or other large file types) – only log path
+                if is_path_only_ext(path):
+                    out.write(f"# [PATH ONLY] {path}\n\n")
+                    continue
+
+                # Otherwise, dump header + content (or note non‑code)
+                out.write(f"# ----- FILE: {path} -----\n")
+                if is_code_file(path):
+                    content = show_file(branch, path)
+                    if content is not None:
+                        out.write(content)
+                    else:
+                        out.write("# [Unable to read content]\n")
+                else:
+                    out.write("# [Logged only; non-code file]\n")
+                out.write("\n")
+            out.write("\n")
+        out.write("# End of repo dump\n")
+
+    print(f"✅ Combined code written to {args.out}")
+
+if __name__ == '__main__':
+    main()
