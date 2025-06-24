@@ -1,8 +1,9 @@
-// docs/assets/js/fca_dashboard.js
+// fca-dashboard/assets/js/fca_dashboard.js
 $(document).ready(function(){
   // Load all data slices in parallel
   let firmsData, namesData, arsData, cfData, indivData, personsData;
   $.when(
+    // These files must be served at /fca-dashboard/data/...
     $.getJSON('data/fca_firms.json', data => { firmsData = data; }),
     $.getJSON('data/fca_names.json', data => { namesData = data; }),
     $.getJSON('data/fca_ars.json', data => { arsData = data; }),
@@ -122,7 +123,6 @@ $(document).ready(function(){
         {
           data: d => {
             // Count total CF entries for this IRN (by matching Individual Name)
-            // Note: if multiple IRNs share same name, adjust logic accordingly.
             const name = d.name;
             let count = 0;
             Object.values(cfData || {}).forEach(arr => {
