@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FCA Dashboard</title>
-  <!-- Reuse the same neon‑glow CSS -->
-  <link rel="stylesheet" href="../assets/css/custom.css" />
+
+  <!-- Reuse shared neon‑glow CSS from docs/assets/css/custom.css -->
+  <!-- The path assumes hosting root serves docs/ at '/', so the CSS is at /assets/css/custom.css -->
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+
   <!-- DataTables CSS -->
   <link
     rel="stylesheet"
@@ -13,20 +16,22 @@
   />
 </head>
 <body>
-  <!-- NAVBAR: same dropdown -->
+  <!-- NAVBAR: dropdown similar to Deal Tracker -->
   <header class="ft-header">
     <div class="nav-dropdown">
       <button class="nav-trigger ft-title">
         Deal Tracker Dashboard <span class="chevron">▾</span>
       </button>
       <ul class="nav-menu">
-        <li><a href="index.html">FCA Dashboard</a></li>
-        <li><a href="../index.html">Deal Tracker Dashboard</a></li>
+        <!-- “FCA Dashboard” (current) -->
+        <li><a href="/fca-dashboard/index.html">FCA Dashboard</a></li>
+        <!-- Link back to Deal Tracker -->
+        <li><a href="/">Deal Tracker Dashboard</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- TABS -->
+  <!-- TABS for FCA data -->
   <nav class="tabs neon-tabs">
     <button data-tab="firms" class="active">Firms</button>
     <button data-tab="individuals">Individuals</button>
@@ -52,6 +57,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <!-- FCA Dashboard logic -->
-  <script src="../assets/js/fca_dashboard.js"></script>
+  <script src="assets/js/fca_dashboard.js"></script>
 </body>
 </html>
