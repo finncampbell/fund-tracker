@@ -1,80 +1,200 @@
-/* =========================================
-   Begin: Your existing neon‑glow CSS content.
-   =========================================
-   Paste all of your current CSS here (the entire contents of docs/assets/css/custom.css).
-   For example:
-   body { background: #111; color: #eee; }
-   .ft-header { /* ... */ }
-   ... etc ...
-   =========================================
-   End: Your existing neon‑glow CSS content.
-*/
+/* ─── Import Poppins ───────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* =========================================
-   Dropdown Styles for header nav
-   ========================================= */
-.nav-dropdown {
-  position: relative;
-  display: inline-block;
+/* ─── BODY ───────────────────────────────────────────────────────────────────── */
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #0f0f13;    /* Solid black around the card */
+  color: #ececec;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Helvetica, Arial, sans-serif;
 }
 
-.nav-trigger {
+/* ─── Dashboard Card ────────────────────────────────────────────────────────── */
+.ft-dashboard-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #1a1a2e;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────────── */
+.ft-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #8c7ae6, #4834d4);
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: #fff;
+}
+
+.ft-title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.ft-download a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s ease;
+}
+
+.ft-download a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ─── Filters ────────────────────────────────────────────────────────────────── */
+.ft-filters {
+  margin: 1rem 0;
+}
+
+.ft-btn {
   background: transparent;
-  border: none;
-  color: inherit; /* inherits existing header text color */
-  font-size: inherit; /* inherits header font size */
+  border: 1px solid #8c7ae6;
+  color: #8c7ae6;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
   cursor: pointer;
-  outline: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ft-btn.active,
+.ft-btn:hover {
+  background: #8c7ae6;
+  color: #1a1a2e;
+}
+
+/* ─── Backfill Section ───────────────────────────────────────────────────────── */
+.ft-backfill-section {
+  margin-bottom: 1rem;
+}
+
+.ft-backfill-controls {
   display: flex;
   align-items: center;
 }
 
-.nav-trigger .chevron {
-  margin-left: 0.5rem;
-  transition: transform 0.2s ease;
+.ft-date-input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
 }
 
-.nav-dropdown:hover .nav-trigger .chevron {
-  transform: rotate(180deg);
+.ft-backfill-btn {
+  background: #4834d4;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.nav-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 0.25rem;
-  background: #16213e; /* match your dark theme background */
-  border: 1px solid #0f3460;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  list-style: none;
-  padding: 0.5rem 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-0.5rem);
-  transition: all 0.2s ease;
-  z-index: 1000;
+.ft-backfill-btn:hover {
+  background: #341f97;
 }
 
-.nav-dropdown:hover .nav-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.nav-menu li {
-  margin: 0;
-}
-
-.nav-menu li a {
+.ft-backfill-note {
   display: block;
-  padding: 0.5rem 1.5rem;
-  color: #e0e0e0; /* adjust if needed to match your theme */
-  text-decoration: none;
-  white-space: nowrap;
+  margin-top: 0.5rem;
+  color: #aaa;
 }
 
-.nav-menu li a:hover {
-  background: #0f3460;
+/* ─── Table Container ────────────────────────────────────────────────────────── */
+.table-container {
+  margin-top: 1rem;
+}
+
+table.dataTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  background: transparent !important;
+  border: 1px solid #8c7ae6 !important;
+  color: #8c7ae6 !important;
+  border-radius: 0.25rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #8c7ae6 !important;
+  color: #1a1a2e !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #8c7ae6;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* ─── Table Headers ─────────────────────────────────────────────────────────── */
+table.dataTable thead th {
+  background: #4834d4;
   color: #fff;
 }
+
+/* ─── Table Rows ────────────────────────────────────────────────────────────── */
+table.dataTable tbody tr {
+  background: #1a1a2e;
+  color: #ececec;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background: #242038;
+}
+
+/* ─── Expand/Collapse Directors Button ───────────────────────────────────────── */
+.expand-btn {
+  background: #8c7ae6;
+  color: #1a1a2e;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.expand-btn:hover {
+  background: #6837c6;
+}
+
+/* ─── Responsive Adjustments ─────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ft-dashboard-card {
+    padding: 1rem;
+  }
+  .ft-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ft-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .ft-filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ft-btn {
+    margin-bottom: 0.5rem;
+  }
+  table.dataTable {
+    font-size: 0.9rem;
+  }
+}
+
+/* ─── Other Custom Styles You Had ────────────────────────────────────────────── */
+/* (Include here any further styles you’d added) */
