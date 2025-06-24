@@ -28,8 +28,10 @@
           Deal Tracker Dashboard <span class="chevron">▾</span>
         </button>
         <ul class="nav-menu">
+          <!-- “Home” can point to docs/index.html itself or “/” depending on your hosting -->
           <li><a href="index.html">Home</a></li>
-          <li><a href="fca-dashboard/index.html">FCA Dashboard</a></li>
+          <!-- Link to the FCA Dashboard at /fca-dashboard/index.html -->
+          <li><a href="/fca-dashboard/index.html">FCA Dashboard</a></li>
         </ul>
       </div>
 
@@ -40,7 +42,7 @@
       </p>
     </div>
 
-    <!-- FILTER TABS (each needs data-filter attributes, with Investments added) -->
+    <!-- FILTER TABS (each needs data-filter attributes) -->
     <nav class="ft-filters">
       <button class="ft-btn cat-all active"        data-filter="">              All</button>
       <button class="ft-btn cat-ventures"           data-filter="Ventures">     Ventures</button>
