@@ -5,36 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deal Tracker Dashboard</title>
 
-  <!-- DataTables CSS -->
+  <!-- DataTables CSS (unchanged) -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   />
-  <!-- Flatpickr CSS -->
+  <!-- Flatpickr CSS (unchanged) -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Shared neon‑glow CSS (root‑relative) -->
-  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <!-- Custom neon‑glow CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
   <div class="ft-dashboard-card">
     <!-- HEADER: Unified Gradient Background + White Text -->
     <div class="ft-header">
-      <!-- NAV DROPDOWN WRAPPER AROUND TITLE -->
-      <div class="nav-dropdown">
-        <button class="nav-trigger ft-title">
-          Deal Tracker Dashboard <span class="chevron">▾</span>
-        </button>
-        <ul class="nav-menu">
-          <!-- Home: root -->
-          <li><a href="/">Home</a></li>
-          <!-- Link to FCA Dashboard -->
-          <li><a href="/fca-dashboard/index.html">FCA Dashboard</a></li>
-        </ul>
-      </div>
-
+      <h1 class="ft-title">Deal Tracker Dashboard</h1>
       <p class="ft-download">
         <a href="assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
@@ -42,18 +30,18 @@
       </p>
     </div>
 
-    <!-- FILTER TABS -->
+    <!-- FILTER TABS (each needs data-filter attributes, with Investments added) -->
     <nav class="ft-filters">
-      <button class="ft-btn cat-all active"        data-filter="">              All</button>
-      <button class="ft-btn cat-ventures"           data-filter="Ventures">     Ventures</button>
-      <button class="ft-btn cat-capital"            data-filter="Capital">      Capital</button>
-      <button class="ft-btn cat-equity"             data-filter="Equity">       Equity</button>
-      <button class="ft-btn cat-advisors"           data-filter="Advisors">     Advisors</button>
-      <button class="ft-btn cat-partners"           data-filter="Partners">     Partners</button>
-      <button class="ft-btn cat-investments"        data-filter="Investments">  Investments</button>
-      <button class="ft-btn cat-sic"                data-filter="SIC">          SIC Codes</button>
-      <button class="ft-btn cat-fund"               data-filter="Fund Entities">Fund Entities</button>
-      <button class="ft-btn cat-directors"          data-filter="Directors">    Directors</button>
+      <button class="ft-btn cat-all active" data-filter="">All</button>
+      <button class="ft-btn cat-ventures" data-filter="Ventures">Ventures</button>
+      <button class="ft-btn cat-capital" data-filter="Capital">Capital</button>
+      <button class="ft-btn cat-equity" data-filter="Equity">Equity</button>
+      <button class="ft-btn cat-advisors" data-filter="Advisors">Advisors</button>
+      <button class="ft-btn cat-partners" data-filter="Partners">Partners</button>
+      <button class="ft-btn cat-investments" data-filter="Investments">Investments</button>
+      <button class="ft-btn cat-sic" data-filter="SIC">SIC Codes</button>
+      <button class="ft-btn cat-fund" data-filter="Fund Entities">Fund Entities</button>
+      <button class="ft-btn cat-directors" data-filter="Directors">Directors</button>
     </nav>
 
     <!-- BACKFILL CONTROLS -->
@@ -68,7 +56,7 @@
         <button id="run-backfill" class="ft-backfill-btn">
           Run Historical Backfill
         </button>
-        <!-- New Fetch Directors button -->
+        <!-- New Fetch Directors button: -->
         <button id="run-fetch-directors" class="ft-backfill-btn" style="margin-left: 8px;">
           Fetch Directors Now
         </button>
@@ -92,7 +80,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- JS populates rows -->
+          <!-- JS will populate rows here -->
         </tbody>
       </table>
     </div>
@@ -114,18 +102,18 @@
           </tr>
         </thead>
         <tbody>
-          <!-- JS populates rows -->
+          <!-- JS will populate rows here -->
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- JS libraries -->
+  <!-- JS libraries (unchanged) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Shared dashboard JS (root‑relative) -->
-  <script src="/assets/js/dashboard.js"></script>
+  <!-- Your existing dashboard script -->
+  <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
