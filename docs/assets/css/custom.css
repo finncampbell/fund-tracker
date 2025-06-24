@@ -1,18 +1,18 @@
 /* =========================================
-   Your existing neon‑glow CSS goes here.
-   Copy all of your current content of
-   docs/assets/css/custom.css and paste
-   it into this section, replacing this comment.
+   Begin: Your existing neon‑glow CSS content.
+   =========================================
+   Paste all of your current CSS here (the entire contents of docs/assets/css/custom.css).
+   For example:
+   body { background: #111; color: #eee; }
+   .ft-header { /* ... */ }
+   ... etc ...
+   =========================================
+   End: Your existing neon‑glow CSS content.
+*/
+
+/* =========================================
+   Dropdown Styles for header nav
    ========================================= */
-
-/* ================= Dropdown Styles ================ */
-.navbar,
-.ft-header {
-  /* If your header uses .ft-header styling instead of .navbar,
-     ensure positioning allows dropdown. Adjust as needed. */
-  position: relative;
-}
-
 .nav-dropdown {
   position: relative;
   display: inline-block;
@@ -21,8 +21,8 @@
 .nav-trigger {
   background: transparent;
   border: none;
-  color: inherit; /* inherit text color, or set specific neon color */
-  font-size: inherit; /* inherit heading size, ensure matches .ft-title */
+  color: inherit; /* inherits existing header text color */
+  font-size: inherit; /* inherits header font size */
   cursor: pointer;
   outline: none;
   display: flex;
@@ -43,7 +43,7 @@
   top: 100%;
   left: 0;
   margin-top: 0.25rem;
-  background: #16213e; /* match your dark theme */
+  background: #16213e; /* match your dark theme background */
   border: 1px solid #0f3460;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -69,7 +69,7 @@
 .nav-menu li a {
   display: block;
   padding: 0.5rem 1.5rem;
-  color: #e0e0e0; /* adjust if needed */
+  color: #e0e0e0; /* adjust if needed to match your theme */
   text-decoration: none;
   white-space: nowrap;
 }
@@ -78,4 +78,3 @@
   background: #0f3460;
   color: #fff;
 }
-/* ============= End Dropdown Styles ============= */
