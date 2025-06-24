@@ -4,6 +4,7 @@ permissions:
   contents: write
 
 on:
+  workflow_dispatch:           # allow manual runs
   push:
     # Trigger when any slice JSON is updated
     paths:
@@ -13,9 +14,10 @@ on:
       - 'fca-dashboard/data/fca_cf.json'
       - 'fca-dashboard/data/fca_individuals_by_firm.json'
       - 'fca-dashboard/data/fca_persons.json'
-    # But ignore pushes to the merged outputs themselves
-      - '!fca-dashboard/data/fca_firms.json'
-      - '!fca-dashboard/data/fca_dashboard_full.csv'
+    # Ignore merged outputs to avoid recursion
+    paths-ignore:
+      - 'fca-dashboard/data/fca_firms.json'
+      - 'fca-dashboard/data/fca_dashboard_full.csv'
 
 jobs:
   merge:
