@@ -1,0 +1,47 @@
+name: Merge FCA Data
+
+permissions:
+  contents: write
+
+on:
+  push:
+    # Trigger when any slice JSON is updated
+    paths:
+      - 'fca-dashboard/data/fca_main.json'
+      - 'fca-dashboard/data/fca_names.json'
+      - 'fca-dashboard/data/fca_ars.json'
+      - 'fca-dashboard/data/fca_cf.json'
+      - 'fca-dashboard/data/fca_individuals_by_firm.json'
+      - 'fca-dashboard/data/fca_persons.json'
+    # But ignore pushes to the merged outputs themselves
+      - '!fca-dashboard/data/fca_firms.json'
+      - '!fca-dashboard/data/fca_dashboard_full.csv'
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Merge slices into JSON & CSV
+        run: |
+          python fca-dashboard/scripts/merge_slices.py
+
+      - name: Commit merged outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git pull --rebase origin main
+          git add fca-dashboard/data/fca_firms.json fca-dashboard/data/fca_dashboard_full.csv
+          git diff --cached --quiet || git commit -m "chore(fca): refresh merged data"
+          git push origin HEAD:main
