@@ -1,3 +1,4 @@
+# .github/workflows/fetch-persons.yml
 name: Fetch FCA Individual Records (Ad‑hoc)
 
 permissions:
@@ -14,12 +15,16 @@ on:
 jobs:
   fetch-persons:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
+      - name: Pull latest main
+        run: git pull --rebase origin main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -44,7 +49,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git pull --rebase origin main
           git add fca-dashboard/data/fca_persons.json
           git diff --cached --quiet || git commit -m "chore(fca): update individual records"
           git push origin HEAD:main
