@@ -1,111 +1,50 @@
-// fca-dashboard/assets/js/fca_dashboard.js
-$(document).ready(function() {
-  // Tab switching
-  $('.ft-btn').on('click', function() {
-    $('.ft-btn').removeClass('active');
-    $(this).addClass('active');
-    const tab = $(this).data('tab');
-    ['firms','individuals','matches'].forEach(t => {
-      $('#' + t + '-container')[ t === tab ? 'show' : 'hide' ]();
-    });
-  });
+$(document).ready(function(){
+  // 1. load JSON data
+  let firms, names, ars, cf, indiv, persons;
+  $.when(
+    $.getJSON('data/fca_firms.json', d=>firms=d),
+    $.getJSON('data/fca_names.json', d=>names=d),
+    $.getJSON('data/fca_ars.json', d=>ars=d),
+    $.getJSON('data/fca_cf.json', d=>cf=d),
+    $.getJSON('data/fca_individuals_by_firm.json', d=>indiv=d),
+    $.getJSON('data/fca_persons.json', d=>persons=d)
+  ).then(initTables);
 
-  // Load and render each table
-  $.getJSON('data/fca_firms.json', initFirmsTable);
-  $.getJSON('data/fca_individuals.json', initIndividualsTable);
-  $.getJSON('data/fca_matches.json', initMatchesTable);
-
-  function initFirmsTable(data) {
-    const table = $('#fca-firms').DataTable({
-      data,
+  function initTables(){
+    // 2. FIRMS DataTable
+    const firmTable = $('#firms-table').DataTable({
+      data: firms,
       columns: [
-        { data: 'name' },
-        { data: 'frn' },
-        { data: 'status' },
-        { data: 'type' },
-        { data: d => (d.linked_people||[]).length }
-      ]
+        { className: 'dt-control', orderable: false, data: null, defaultContent: '' },
+        { data: 'frn', title: 'FRN' },
+        { data: 'organisation_name', title: 'Name' },
+        // … other top‑level columns …
+      ],
+      order: [[1,'asc']]
     });
-    // Expandable child rows
-    $('#fca-firms tbody').on('click', 'tr', function() {
-      const row = table.row(this);
-      if (row.child.isShown()) {
-        row.child.hide();
-      } else {
-        row.child(formatFirmDetails(row.data())).show();
-      }
+    // 3. toggle child row
+    $('#firms-table tbody').on('click', 'td.dt-control', function(){
+      let tr = $(this).closest('tr'),
+          row = firmTable.row(tr);
+      if (row.child.isShown()) row.child.hide();
+      else row.child(renderFirmDetails(row.data())).show();
     });
+
+    // 4. similar for individuals & matches…
   }
 
-  function initIndividualsTable(data) {
-    const table = $('#fca-individuals').DataTable({
-      data,
-      columns: [
-        { data: 'name' },
-        { data: d => (d.roles || []).map(r => r.controlled_function).join(', ') },
-        { data: d => (d.linked_firms || []).join(', ') },
-        { data: 'status' },
-        { data: 'last_seen' }
-      ]
-    });
-    $('#fca-individuals tbody').on('click', 'tr', function() {
-      const row = table.row(this);
-      if (row.child.isShown()) {
-        row.child.hide();
-      } else {
-        row.child(formatIndividualDetails(row.data())).show();
-      }
-    });
-  }
-
-  function initMatchesTable(data) {
-    const table = $('#ch-matches').DataTable({
-      data,
-      order: [[1, 'desc']],
-      columns: [
-        { data: 'company_name' },
-        { data: 'incorporation_date' },
-        { data: 'matched_fca_firm', defaultContent: '' },
-        { data: 'matched_fca_person', defaultContent: '' },
-        { data: 'match_confidence' }
-      ]
-    });
-    $('#ch-matches tbody').on('click', 'tr', function() {
-      const row = table.row(this);
-      if (row.child.isShown()) {
-        row.child.hide();
-      } else {
-        row.child(formatMatchDetails(row.data())).show();
-      }
-    });
-  }
-
-  // Child‑row formatters (customize as you like)
-  function formatFirmDetails(d) {
-    const perms = (d.permissions||[]).join(', ');
-    return `<table class="child-table">
-      <tr><th>Permissions</th><td>${perms}</td></tr>
-      <tr><th>AR of</th><td>${d.principal_firm||'—'}</td></tr>
-      <tr><th>Address</th><td>${d.address||'—'}</td></tr>
-    </table>`;
-  }
-
-  function formatIndividualDetails(d) {
-    let rows = (d.roles||[]).map(r =>
-      `<tr>
-         <th>${r.controlled_function}</th>
-         <td>${r.firm_name} (${r.status})<br/>
-             ${r.first_seen} → ${r.last_seen || 'now'}</td>
-       </tr>`).join('');
-    return `<table class="child-table">${rows}</table>`;
-  }
-
-  function formatMatchDetails(d) {
-    return `<table class="child-table">
-      <tr><th>Match Type</th><td>${d.match_type}</td></tr>
-      <tr><th>Company No</th><td>${d.company_number}</td></tr>
-      <tr><th>Role Link</th><td>${d.matched_fca_person||'—'}</td></tr>
-    </table>`;
+  function renderFirmDetails(d){
+    // Build a small HTML table or list for:
+    // - trading_names (names[d.frn])
+    // - appointed_reps (ars[d.frn])
+    // - controlled_functions (cf[d.frn])
+    // - firm_individuals (indiv[d.frn])
+    // — and optionally a 2nd‑level child using persons[irn].
+    return `<div class="child-rows">
+      ${renderList('Trading Names', names[d.frn])}
+      ${renderTable('Appointed Reps', ['Name','Status'], ars[d.frn])}
+      ${renderTable('Controlled Functions', ['section','controlled_function','Individual Name','Effective Date'], cf[d.frn])}
+      ${renderTable('Firm Individuals', ['IRN','Name','Status'], indiv[d.frn])}
+    </div>`;
   }
 });
-
