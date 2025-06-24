@@ -15,14 +15,24 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Custom neon‐glow CSS -->
+  <!-- Custom neon‑glow CSS -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
   <div class="ft-dashboard-card">
     <!-- HEADER: Unified Gradient Background + White Text -->
     <div class="ft-header">
-      <h1 class="ft-title">Deal Tracker Dashboard</h1>
+      <!-- NAV DROPDOWN WRAPPER AROUND TITLE -->
+      <div class="nav-dropdown">
+        <button class="nav-trigger ft-title">
+          Deal Tracker Dashboard <span class="chevron">▾</span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fca-dashboard/index.html">FCA Dashboard</a></li>
+        </ul>
+      </div>
+
       <p class="ft-download">
         <a href="assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
@@ -85,7 +95,7 @@
       </table>
     </div>
 
-    <!-- SIC-MATCH TABLE (hidden by default) -->
+    <!-- SIC‑MATCH TABLE (hidden by default) -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
@@ -113,7 +123,7 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Your updated dashboard.js -->
+  <!-- Your existing dashboard script -->
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
