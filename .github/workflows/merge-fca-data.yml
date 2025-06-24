@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:           # allow manual runs
   push:
-    # Trigger when any slice JSON is updated
+    # Only trigger when any of these slice JSON files change
     paths:
       - 'fca-dashboard/data/fca_main.json'
       - 'fca-dashboard/data/fca_names.json'
@@ -14,10 +14,6 @@ on:
       - 'fca-dashboard/data/fca_cf.json'
       - 'fca-dashboard/data/fca_individuals_by_firm.json'
       - 'fca-dashboard/data/fca_persons.json'
-    # Ignore merged outputs to avoid recursion
-    paths-ignore:
-      - 'fca-dashboard/data/fca_firms.json'
-      - 'fca-dashboard/data/fca_dashboard_full.csv'
 
 jobs:
   merge:
