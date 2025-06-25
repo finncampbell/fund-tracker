@@ -3,12 +3,12 @@ $(document).ready(function(){
   let firmsData, rawNames, rawARs, cfData, indivData, personsData;
 
   $.when(
-    $.getJSON('fca-dashboard/data/fca_firms.json', data => { firmsData = data; }),
-    $.getJSON('fca-dashboard/data/fca_names.json', data => { rawNames = data; }),
-    $.getJSON('fca-dashboard/data/fca_ars.json', data => { rawARs = data; }),
-    $.getJSON('fca-dashboard/data/fca_cf.json', data => { cfData = data; }),
-    $.getJSON('fca-dashboard/data/fca_individuals_by_firm.json', data => { indivData = data; }),
-    $.getJSON('fca-dashboard/data/fca_persons.json', data => { personsData = data; })
+    $.getJSON('/fca-dashboard/data/fca_firms.json', data => { firmsData = data; }),
+    $.getJSON('/fca-dashboard/data/fca_names.json', data => { rawNames   = data; }),
+    $.getJSON('/fca-dashboard/data/fca_ars.json',  data => { rawARs     = data; }),
+    $.getJSON('/fca-dashboard/data/fca_cf.json',   data => { cfData     = data; }),
+    $.getJSON('/fca-dashboard/data/fca_individuals_by_firm.json', data => { indivData = data; }),
+    $.getJSON('/fca-dashboard/data/fca_persons.json', data => { personsData = data; })
   ).then(initDashboard);
 
   $('.tab-btn').click(function(){
@@ -28,16 +28,14 @@ $(document).ready(function(){
   function getNamesByFrn(frn){
     if (Array.isArray(rawNames)) {
       return rawNames.filter(x => String(x.frn) === String(frn)).map(x => x.name);
-    } else {
-      return rawNames[frn] || [];
     }
+    return rawNames[frn] || [];
   }
 
   function normalizeARAppointments(){
     let appointments = Array.isArray(rawARs)
       ? rawARs
       : Object.values(rawARs).flat();
-    // Map by AR FRN
     const map = {};
     appointments.forEach(r => {
       const arFrn = String(r.FRN);
@@ -116,8 +114,7 @@ $(document).ready(function(){
     return `<div class="child-rows">
       ${renderList('Trading Names', names)}
       ${renderTable('Appointed Reps', ['Name','Principal FRN','Principal Firm Name','Effective Date','EEA Tied Agent','Tied Agent','[NotinUse] Insurance Distribution'], ars)}
-      ${renderTable('Controlled Functions',
-                    ['section','controlled_function','Individual Name','Effective Date'], cfs)}
+      ${renderTable('Controlled Functions', ['section','controlled_function','Individual Name','Effective Date'], cfs)}
       ${renderTable('Firm Individuals', ['IRN','Name','Status'], inds)}
     </div>`;
   }
@@ -185,14 +182,16 @@ $(document).ready(function(){
       insurDist: recs.some(r => String(r['[NotinUse] Insurance Distribution'])==='true')
     }));
 
+    console.log('allARs →', allARs);  // verify shape
+
     const tbl = $('#ars-table').DataTable({
       data: allARs,
       paging: false,
       info: false,
       columns: [
-        { data:'arFrn',            title:'AR FRN' },
-        { data:'name',             title:'Appointed Rep' },
-        { data:'principalsCount',  title:'# Principals' },
+        { data:'arFrn',           title:'AR FRN' },
+        { data:'name',            title:'Appointed Rep' },
+        { data:'principalsCount', title:'# Principals' },
         {
           data: d => d.insurDist ? '✓' : '✗',
           title:'Insur. Dist.',
@@ -209,15 +208,15 @@ $(document).ready(function(){
         row.child.hide(); tr.removeClass('shown');
       } else {
         const d    = row.data(),
-              recs = apptMap[d.arFrn],
+              recs = apptMap[d.arFrn] || [],
               hdr  = '<th>Principal FRN</th><th>Principal Name</th><th>Eff. Date</th><th>EEA-Tied</th><th>Tied-Agent</th>',
               body = recs.map(r=>
                 `<tr>
                   <td>${r['Principal FRN']||''}</td>
                   <td>${r['Principal Firm Name']||''}</td>
                   <td>${r['Effective Date']||''}</td>
-                  <td>${r['EEA Tied Agent']||r['EEA Tied Agent']==='true'}</td>
-                  <td>${r['Tied Agent']||r['Tied Agent']==='true'}</td>
+                  <td>${String(r['EEA Tied Agent']||false)}</td>
+                  <td>${String(r['Tied Agent']||false)}</td>
                 </tr>`
               ).join('');
         row.child(`<table class="child-table"><thead><tr>${hdr}</tr></thead><tbody>${body}</tbody></table>`).show();
