@@ -1,6 +1,8 @@
 name: Mirror FCA Data Into Docs
 
-# Allow both manual runs and automatic on changes to the FCA data folder
+permissions:
+  contents: write
+
 on:
   workflow_dispatch: {}
   push:
@@ -17,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Copy FCA JSON files into docs
         run: |
