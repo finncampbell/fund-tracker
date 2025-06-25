@@ -175,4 +175,20 @@ body {
   outline: none;
 }
 
-.f
+.ft-backfill-btn {
+  background: transparent;
+  border: 2px solid #A020F0;
+  color: #A020F0;
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
+}
+.ft-backfill-btn:hover {
+  background: transparent;
+  border-color
