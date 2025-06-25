@@ -1,0 +1,36 @@
+name: Mirror FCA Data Into Docs
+
+# Allow both manual runs and automatic on changes to the FCA data folder
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - 'fca-dashboard/data/**'
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Copy FCA JSON files into docs
+        run: |
+          mkdir -p docs/fca-dashboard/data
+          cp fca-dashboard/data/*.json docs/fca-dashboard/data/
+
+      - name: Commit and push mirrored data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add docs/fca-dashboard/data
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: mirror FCA data into docs for Pages"
+            git push
+          else
+            echo "No changes to commit"
+          fi
