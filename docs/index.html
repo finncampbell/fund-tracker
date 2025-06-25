@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deal Tracker Dashboard</title>
 
-  <!-- DataTables CSS (unchanged) -->
+  <!-- DataTables CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   />
-  <!-- Flatpickr CSS (unchanged) -->
+  <!-- Flatpickr CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -20,9 +20,17 @@
 </head>
 <body>
   <div class="ft-dashboard-card">
-    <!-- HEADER: Unified Gradient Background + White Text -->
+    <!-- HEADER with dropdown nav -->
     <div class="ft-header">
-      <h1 class="ft-title">Deal Tracker Dashboard</h1>
+      <div class="nav-dropdown">
+        <button class="nav-trigger ft-title">
+          Deal Tracker Dashboard <span class="chevron">▾</span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Deal Tracker Dashboard</a></li>
+          <li><a href="fca-dashboard.html">FCA Dashboard</a></li>
+        </ul>
+      </div>
       <p class="ft-download">
         <a href="assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
@@ -30,18 +38,18 @@
       </p>
     </div>
 
-    <!-- FILTER TABS (each needs data-filter attributes, with Investments added) -->
+    <!-- FILTER TABS -->
     <nav class="ft-filters">
-      <button class="ft-btn cat-all active"        data-filter="">              All</button>
-      <button class="ft-btn cat-ventures"           data-filter="Ventures">     Ventures</button>
-      <button class="ft-btn cat-capital"            data-filter="Capital">      Capital</button>
-      <button class="ft-btn cat-equity"             data-filter="Equity">       Equity</button>
-      <button class="ft-btn cat-advisors"           data-filter="Advisors">     Advisors</button>
-      <button class="ft-btn cat-partners"           data-filter="Partners">     Partners</button>
-      <button class="ft-btn cat-investments"        data-filter="Investments">  Investments</button>
-      <button class="ft-btn cat-sic"                data-filter="SIC">          SIC Codes</button>
-      <button class="ft-btn cat-fund"               data-filter="Fund Entities">Fund Entities</button>
-      <button class="ft-btn cat-directors"          data-filter="Directors">    Directors</button>
+      <button class="ft-btn cat-all active" data-filter="">All</button>
+      <button class="ft-btn cat-ventures" data-filter="Ventures">Ventures</button>
+      <button class="ft-btn cat-capital" data-filter="Capital">Capital</button>
+      <button class="ft-btn cat-equity" data-filter="Equity">Equity</button>
+      <button class="ft-btn cat-advisors" data-filter="Advisors">Advisors</button>
+      <button class="ft-btn cat-partners" data-filter="Partners">Partners</button>
+      <button class="ft-btn cat-investments" data-filter="Investments">Investments</button>
+      <button class="ft-btn cat-sic" data-filter="SIC">SIC Codes</button>
+      <button class="ft-btn cat-fund" data-filter="Fund Entities">Fund Entities</button>
+      <button class="ft-btn cat-directors" data-filter="Directors">Directors</button>
     </nav>
 
     <!-- BACKFILL CONTROLS -->
@@ -53,13 +61,8 @@
           placeholder="Click to select date range"
           readonly
         />
-        <button id="run-backfill" class="ft-backfill-btn">
-          Run Historical Backfill
-        </button>
-        <!-- New Fetch Directors button: -->
-        <button id="run-fetch-directors" class="ft-backfill-btn" style="margin-left: 8px;">
-          Fetch Directors Now
-        </button>
+        <button id="run-backfill" class="ft-backfill-btn">Run Historical Backfill</button>
+        <button id="run-fetch-directors" class="ft-backfill-btn">Fetch Directors Now</button>
       </div>
       <small class="ft-backfill-note">
         Backfill historical data without leaving this page.
@@ -84,36 +87,14 @@
         </tbody>
       </table>
     </div>
-
-    <!-- SIC-MATCH TABLE (hidden by default) -->
-    <div class="table-container" id="sic-companies-container" style="display:none;">
-      <table id="sic-companies" class="display" style="width:100%">
-        <thead>
-          <tr>
-            <th class="cat-all">Company Name</th>
-            <th class="cat-capital">Company Number</th>
-            <th class="cat-equity">Incorporation Date</th>
-            <th class="cat-advisors">Category</th>
-            <th class="cat-sic">Date Downloaded</th>
-            <th class="cat-sic">SIC Codes</th>
-            <th class="cat-sic">SIC Description</th>
-            <th class="cat-sic">Typical Use Case</th>
-            <th class="cat-directors">Directors</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- JS will populate rows here -->
-        </tbody>
-      </table>
-    </div>
   </div>
 
-  <!-- JS libraries (unchanged) -->
+  <!-- JS libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Your existing dashboard script -->
+  <!-- Deal Tracker logic -->
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
