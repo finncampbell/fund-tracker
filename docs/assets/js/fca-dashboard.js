@@ -4,12 +4,12 @@ $(document).ready(function(){
 
   // Load JSON from the correct GitHub Pages URLs
   $.when(
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_firms.json', data => { firmsData   = data; }),
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_names.json', data => { rawNames    = data; }),
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_ars.json',  data => { rawARs      = data; }),
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_cf.json',   data => { cfData      = data; }),
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_individuals_by_firm.json', data => { indivData = data; }),
-    $.getJSON('/fund-tracker/fca-dashboard/data/fca_persons.json', data => { personsData = data; })
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_firms.json', data => { firmsData   = data; }),
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_names.json', data => { rawNames    = data; }),
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_ars.json',  data => { rawARs      = data; }),
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_cf.json',   data => { cfData      = data; }),
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_individuals_by_firm.json', data => { indivData = data; }),
+    $.getJSON('/fund-tracker/docs/fca-dashboard/data/fca_persons.json', data => { personsData = data; })
   ).then(initDashboard);
 
   // Tab switching logic
@@ -36,15 +36,17 @@ $(document).ready(function(){
   }
 
   // Build a map of AR FRN → [appointment records]
+  // Looks into "CurrentAppointedRepresentatives" in the JSON
   function normalizeARAppointments(){
-    let appointments = Array.isArray(rawARs)
-      ? rawARs
-      : Object.values(rawARs).flat();
     const map = {};
-    appointments.forEach(r => {
-      const arFrn = String(r.FRN);
-      if (!map[arFrn]) map[arFrn] = [];
-      map[arFrn].push(r);
+    // rawARs is an object keyed by principal FRN; each value has CurrentAppointedRepresentatives array
+    Object.values(rawARs).forEach(block => {
+      const arr = block.CurrentAppointedRepresentatives || [];
+      arr.forEach(r => {
+        const arFrn = String(r.FRN);
+        if (!map[arFrn]) map[arFrn] = [];
+        map[arFrn].push(r);
+      });
     });
     return map;
   }
