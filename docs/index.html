@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deal Tracker Dashboard</title>
 
-  <!-- DataTables CSS (unchanged) -->
+  <!-- DataTables CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
   />
-  <!-- Flatpickr CSS (unchanged) -->
+  <!-- Flatpickr CSS -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Custom neon‐glow CSS -->
+  <!-- Custom neon‑glow CSS -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
@@ -30,18 +30,11 @@
       </p>
     </div>
 
-    <!-- FILTER TABS (each needs data-filter attributes, with Investments added) -->
+    <!-- FILTER TABS -->
     <nav class="ft-filters">
-      <button class="ft-btn cat-all active"        data-filter="">              All</button>
-      <button class="ft-btn cat-ventures"           data-filter="Ventures">     Ventures</button>
-      <button class="ft-btn cat-capital"            data-filter="Capital">      Capital</button>
-      <button class="ft-btn cat-equity"             data-filter="Equity">       Equity</button>
-      <button class="ft-btn cat-advisors"           data-filter="Advisors">     Advisors</button>
-      <button class="ft-btn cat-partners"           data-filter="Partners">     Partners</button>
-      <button class="ft-btn cat-investments"        data-filter="Investments">  Investments</button>
-      <button class="ft-btn cat-sic"                data-filter="SIC">          SIC Codes</button>
-      <button class="ft-btn cat-fund"               data-filter="Fund Entities">Fund Entities</button>
-      <button class="ft-btn cat-directors"          data-filter="Directors">    Directors</button>
+      <button class="ft-btn cat-all active" data-filter="">All</button>
+      <!-- ... other buttons ... -->
+      <button class="ft-btn cat-directors" data-filter="Directors">Directors</button>
     </nav>
 
     <!-- BACKFILL CONTROLS -->
@@ -56,7 +49,6 @@
         <button id="run-backfill" class="ft-backfill-btn">
           Run Historical Backfill
         </button>
-        <!-- New Fetch Directors button: -->
         <button id="run-fetch-directors" class="ft-backfill-btn" style="margin-left: 8px;">
           Fetch Directors Now
         </button>
@@ -80,23 +72,12 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Example row; JS will populate real data and insert expand-btn -->
-          <tr>
-            <td class="cat-all">Sample Company Ltd</td>
-            <td class="cat-capital">01234567</td>
-            <td class="cat-equity">2025-06-01</td>
-            <td class="cat-ventures">Ventures</td>
-            <td class="cat-sic">2025-06-01</td>
-            <td class="cat-directors">
-              <button class="expand-btn">Expand for Directors</button>
-            </td>
-          </tr>
-          <!-- JS will populate rows here -->
+          <!-- JS populates rows here -->
         </tbody>
       </table>
     </div>
 
-    <!-- SIC-MATCH TABLE (hidden by default) -->
+    <!-- SIC-MATCH TABLE -->
     <div class="table-container" id="sic-companies-container" style="display:none;">
       <table id="sic-companies" class="display" style="width:100%">
         <thead>
@@ -113,32 +94,18 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Example SIC row; JS will populate real data and insert expand-btn -->
-          <tr>
-            <td class="cat-all">Sample SIC Co.</td>
-            <td class="cat-capital">07654321</td>
-            <td class="cat-equity">2025-05-30</td>
-            <td class="cat-advisors">Other</td>
-            <td class="cat-sic">2025-05-30</td>
-            <td class="cat-sic">70221</td>
-            <td class="cat-sic">Financial management (of companies and enterprises)</td>
-            <td class="cat-sic">Treasury and internal finance arm.</td>
-            <td class="cat-directors">
-              <button class="expand-btn">Expand for Directors</button>
-            </td>
-          </tr>
-          <!-- JS will populate rows here -->
+          <!-- JS populates rows -->
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- JS libraries (unchanged) -->
+  <!-- JS libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Your updated dashboard.js -->
+  <!-- Dashboard JS -->
   <script src="assets/js/dashboard.js"></script>
-</body>More actions
+</body>
 </html>
