@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FCA Dashboard</title>
+
+  <!-- Shared neon‑glow CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <!-- FCA Dashboard–specific CSS -->
+  <link rel="stylesheet" href="assets/css/fca-dashboard.css" />
+  <!-- DataTables CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+  />
+</head>
+<body>
+  <!-- HEADER with navigation back to main dashboard -->
+  <header class="ft-header">
+    <div class="nav-dropdown">
+      <button class="nav-trigger ft-title">
+        Deal Tracker Dashboard <span class="chevron">▾</span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="fca-dashboard.html">FCA Dashboard</a></li>
+        <li><a href="index.html">Deal Tracker Dashboard</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- TAB NAVIGATION -->
+  <nav class="tabs neon-tabs">
+    <button data-tab="firms" class="active">Firms</button>
+    <button data-tab="individuals">Individuals</button>
+    <button data-tab="matches">Matches</button>
+  </nav>
+
+  <!-- FIRMS SECTION -->
+  <section id="firms" class="tab-content active">
+    <div class="table-container">
+      <table id="firms-table" class="display" style="width:100%"></table>
+    </div>
+  </section>
+
+  <!-- INDIVIDUALS SECTION -->
+  <section id="individuals" class="tab-content">
+    <div class="table-container">
+      <table id="individuals-table" class="display" style="width:100%"></table>
+    </div>
+  </section>
+
+  <!-- MATCHES SECTION -->
+  <section id="matches" class="tab-content">
+    <div class="table-container">
+      <table id="matches-table" class="display" style="width:100%"></table>
+    </div>
+  </section>
+
+  <!-- JS LIBRARIES -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <!-- FCA Dashboard Logic -->
+  <script src="assets/js/fca-dashboard.js"></script>
+</body>
+</html>
 
