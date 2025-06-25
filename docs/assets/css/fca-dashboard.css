@@ -1,16 +1,12 @@
-/* FCA Dashboard – any page‑specific adjustments go here */
-
-/* Ensure tab navigation sits nicely below the header */
-.tabs {
+/* ─── Tab nav moved to top ─────────────────────────────────────────────────── */
+.ft-filters {
   display: flex;
   gap: 1rem;
   padding: 1rem 2rem;
   background: transparent;
-  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+  justify-content: flex-start;
 }
-
-/* Style for active/inactive tab buttons */
-.tabs button {
+.tab-btn {
   background: transparent;
   border: 2px solid #A020F0;
   color: #A020F0;
@@ -21,9 +17,9 @@
   box-shadow:
     0 0 6px rgba(160, 32, 240, 0.25),
     0 0 12px rgba(160, 32, 240, 0.15);
-  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
-.tabs button.active {
+.tab-btn.active {
   border-color: #4AB3F4;
   color: #4AB3F4;
   box-shadow:
@@ -31,16 +27,25 @@
     0 0 14px rgba(74, 179, 244, 0.4);
 }
 
-/* Hide all sections by default */
+/* ─── Section visibility ───────────────────────────────────────────────────── */
 .tab-content {
   display: none;
 }
-/* Show only the active one */
 .tab-content.active {
   display: block;
 }
 
-/* Slight extra padding around each table */
+/* ─── Disable DataTables pagination & info ─────────────────────────────────── */
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_info {
+  display: none;
+}
+
+/* ─── Ensure full scrollable table ─────────────────────────────────────────── */
 .table-container {
+  max-height: 75vh;
+  overflow-y: auto;
   padding: 1.5rem 2rem;
 }
+
+/* ─── (Remaining table styles inherited from custom.css) ───────────────────── */
