@@ -379,8 +379,8 @@ table.display tbody tr:hover td {
     gap: 0.5rem;
   }
   .ft-date-input,
-  .ft-backfill-btn,
+  .ft-backfill-btn,More actions
   .expand-btn {
-    width: 100%;More actions
+    width: 100%;
   }
 }
