@@ -1,4 +1,3 @@
-<!-- docs/fca-dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,6 @@
   <title>FCA Dashboard</title>
 
   <!-- Shared neon-glow CSS -->
-  <link rel="stylesheet" href="assets/css/custom.css" />
-  <!-- FCA-specific CSS -->
   <link rel="stylesheet" href="assets/css/fca-dashboard.css" />
   <!-- DataTables CSS -->
   <link
@@ -17,58 +14,52 @@
   />
 </head>
 <body>
-  <div class="ft-dashboard-card">
-    <!-- HEADER + dropdown nav -->
-    <div class="ft-header">
-      <div class="nav-dropdown">
-        <button class="nav-trigger ft-title">
-          FCA Dashboard <span class="chevron">▾</span>
-        </button>
-        <ul class="nav-menu">
-          <li><a href="fca-dashboard.html">FCA Dashboard</a></li>
-          <li><a href="index.html">Deal Tracker Dashboard</a></li>
-        </ul>
-      </div>
+  <!-- NAVBAR: dropdown linking back to Deal Tracker -->
+  <header class="ft-header">
+    <div class="nav-dropdown">
+      <button class="nav-trigger ft-title">
+        Deal Tracker Dashboard <span class="chevron">▾</span>
+      </button>
+      <ul class="nav-menu">
+        <!-- Current: FCA Dashboard -->
+        <li><a href="fca-dashboard.html">FCA Dashboard</a></li>
+        <!-- Back to Deal Tracker root -->
+        <li><a href="index.html">Deal Tracker Dashboard</a></li>
+      </ul>
     </div>
+  </header>
 
-    <!-- TABS -->
-    <nav class="ft-filters">
-      <button class="ft-btn tab-btn active" data-tab="firms">Firms</button>
-      <button class="ft-btn tab-btn" data-tab="individuals">Individuals</button>
-      <button class="ft-btn tab-btn" data-tab="ars">ARs</button>
-      <button class="ft-btn tab-btn" data-tab="matches">Matches</button>
-    </nav>
+  <!-- TABS for FCA data -->
+  <nav class="tabs neon-tabs">
+    <button data-tab="firms"      class="tab-btn active">Firms</button>
+    <button data-tab="individuals" class="tab-btn">Individuals</button>
+    <button data-tab="ars"         class="tab-btn">ARs</button>
+    <button data-tab="matches"     class="tab-btn">Matches</button>
+  </nav>
 
-    <!-- FIRMS TABLE -->
-    <section id="firms" class="tab-content active">
-      <div class="table-container">
-        <table id="firms-table" class="display" style="width:100%"></table>
-      </div>
-    </section>
+  <!-- FIRMS TABLE -->
+  <section id="firms" class="tab-content active">
+    <table id="firms-table" class="display" style="width:100%"></table>
+  </section>
 
-    <!-- INDIVIDUALS TABLE -->
-    <section id="individuals" class="tab-content">
-      <div class="table-container">
-        <table id="individuals-table" class="display" style="width:100%"></table>
-      </div>
-    </section>
+  <!-- INDIVIDUALS TABLE -->
+  <section id="individuals" class="tab-content">
+    <table id="individuals-table" class="display" style="width:100%"></table>
+  </section>
 
-    <!-- ARs TABLE -->
-    <section id="ars" class="tab-content">
-      <div class="table-container">
-        <table id="ars-table" class="display" style="width:100%"></table>
-      </div>
-    </section>
+  <!-- ARs TABLE -->
+  <section id="ars" class="tab-content">
+    <div class="table-container">
+      <table id="ars-table" class="display" style="width:100%"></table>
+    </div>
+  </section>
 
-    <!-- MATCHES TABLE -->
-    <section id="matches" class="tab-content">
-      <div class="table-container">
-        <table id="matches-table" class="display" style="width:100%"></table>
-      </div>
-    </section>
-  </div>
+  <!-- MATCHES TABLE -->
+  <section id="matches" class="tab-content">
+    <table id="matches-table" class="display" style="width:100%"></table>
+  </section>
 
-  <!-- JS LIBRARIES -->
+  <!-- JS libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <!-- FCA Dashboard logic -->
