@@ -1,4 +1,7 @@
-/* ─── Tab nav moved to top ─────────────────────────────────────────────────── */
+```css
+/* docs/assets/css/fca-dashboard.css */
+
+/* ─── Tab navigation at top (mirroring Deal Tracker) ───────────────────────── */
 .ft-filters {
   display: flex;
   gap: 1rem;
@@ -6,6 +9,7 @@
   background: transparent;
   justify-content: flex-start;
 }
+
 .tab-btn {
   background: transparent;
   border: 2px solid #A020F0;
@@ -17,8 +21,11 @@
   box-shadow:
     0 0 6px rgba(160, 32, 240, 0.25),
     0 0 12px rgba(160, 32, 240, 0.15);
-  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s ease,
+              color 0.2s ease,
+              box-shadow 0.2s ease;
 }
+
 .tab-btn.active {
   border-color: #4AB3F4;
   color: #4AB3F4;
@@ -35,17 +42,38 @@
   display: block;
 }
 
-/* ─── Disable DataTables pagination & info ─────────────────────────────────── */
+/* ─── Disable DataTables pagination & info panels ──────────────────────────── */
 .dataTables_wrapper .dataTables_paginate,
 .dataTables_wrapper .dataTables_info {
   display: none;
 }
 
-/* ─── Ensure full scrollable table ─────────────────────────────────────────── */
+/* ─── Scrollable table container ───────────────────────────────────────────── */
 .table-container {
   max-height: 75vh;
   overflow-y: auto;
   padding: 1.5rem 2rem;
 }
 
-/* ─── (Remaining table styles inherited from custom.css) ───────────────────── */
+/* ─── Clickable cursor on name cells ───────────────────────────────────────── */
+#firms-table tbody td:nth-child(2),
+#individuals-table tbody td:nth-child(2),
+#ars-table    tbody td:nth-child(1) {
+  cursor: pointer;
+}
+
+/* ─── Highlight expanded rows ──────────────────────────────────────────────── */
+tr.shown > td {
+  background-color: rgba(74, 179, 244, 0.1);
+}
+
+/* ─── Child-table styling ─────────────────────────────────────────────────── */
+.child-table {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.child-table td,
+.child-table th {
+  color: #ececec;
+}
+```
