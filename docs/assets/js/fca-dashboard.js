@@ -1,8 +1,7 @@
-// docs/assets/js/fca-dashboard.jsMore actions
+// docs/assets/js/fca-dashboard.js
 $(document).ready(function(){
   let firmsData, rawNames, rawARs, cfData, indivData, personsData;
 
-  // Load JSON from the correct Pages URLs
   // Load JSON from the correct GitHub Pages URLs
   $.when(
     $.getJSON('/fund-tracker/fca-dashboard/data/fca_firms.json', data => { firmsData   = data; }),
@@ -199,11 +198,8 @@ $(document).ready(function(){
       arFrn,
       name: recs[0].Name,
       principalsCount: recs.length,
-      insurDist: recs.some(r => String(r['[NotinUse] Insurance Distribution'])==='true')
       insurDist: recs.some(r => String(r['[NotinUse] Insurance Distribution']).toLowerCase()==='true')
     }));
-
-    console.log('allARs →', allARs);
 
     const tbl = $('#ars-table').DataTable({
       data: allARs,
@@ -238,8 +234,6 @@ $(document).ready(function(){
                   <td>${r['Principal FRN']||''}</td>
                   <td>${r['Principal Firm Name']||''}</td>
                   <td>${r['Effective Date']||''}</td>
-                  <td>${String(r['EEA Tied Agent']||false)}</td>
-                  <td>${String(r['Tied Agent']||false)}</td>
                   <td>${r['EEA Tied Agent']||''}</td>
                   <td>${r['Tied Agent']||''}</td>
                 </tr>`
