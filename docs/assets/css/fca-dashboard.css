@@ -1,0 +1,46 @@
+/* FCA Dashboard – any page‑specific adjustments go here */
+
+/* Ensure tab navigation sits nicely below the header */
+.tabs {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+/* Style for active/inactive tab buttons */
+.tabs button {
+  background: transparent;
+  border: 2px solid #A020F0;
+  color: #A020F0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow:
+    0 0 6px rgba(160, 32, 240, 0.25),
+    0 0 12px rgba(160, 32, 240, 0.15);
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.tabs button.active {
+  border-color: #4AB3F4;
+  color: #4AB3F4;
+  box-shadow:
+    0 0 6px rgba(74, 179, 244, 0.6),
+    0 0 14px rgba(74, 179, 244, 0.4);
+}
+
+/* Hide all sections by default */
+.tab-content {
+  display: none;
+}
+/* Show only the active one */
+.tab-content.active {
+  display: block;
+}
+
+/* Slight extra padding around each table */
+.table-container {
+  padding: 1.5rem 2rem;
+}
