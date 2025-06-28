@@ -360,6 +360,10 @@
     "name": "Fig Markets Limited"
   },
   {
+    "frn": "1031259",
+    "name": "ECOFIN U.S. RENEWABLES INFRASTRUCTURE TRUST PLC"
+  },
+  {
     "frn": "110134",
     "name": "CCBI GLOBAL MARKETS (UK) LIMITED"
   },
@@ -1348,10 +1352,6 @@
     "name": "Sarasin Asset Management Ltd"
   },
   {
-    "frn": "164380",
-    "name": "PVM Oil Futures Ltd"
-  },
-  {
     "frn": "164689",
     "name": "Swiss Investment Corporation Limited"
   },
@@ -1409,7 +1409,7 @@
   },
   {
     "frn": "170423",
-    "name": "HSBC Alternative Investments  Limited"
+    "name": "HSBC Alternative Investments Limited"
   },
   {
     "frn": "170479",
@@ -1969,7 +1969,7 @@
   },
   {
     "frn": "190780",
-    "name": "First Global (UK) Limited"
+    "name": "FIRST GLOBAL (UK) LTD."
   },
   {
     "frn": "190782",
@@ -2872,10 +2872,6 @@
     "name": "Titon Associates Ltd"
   },
   {
-    "frn": "401953",
-    "name": "Elm Capital Associates Ltd"
-  },
-  {
     "frn": "402125",
     "name": "Clearbrook Capital Partners LLP"
   },
@@ -3185,7 +3181,7 @@
   },
   {
     "frn": "437558",
-    "name": "Global Investment Strategy UK Ltd"
+    "name": "GLOBAL INVESTMENT STRATEGY UK LIMITED"
   },
   {
     "frn": "438377",
@@ -3817,7 +3813,7 @@
   },
   {
     "frn": "471210",
-    "name": "Arup Corporate Finance Ltd"
+    "name": "ARUP CORPORATE FINANCE LIMITED"
   },
   {
     "frn": "471342",
@@ -3845,7 +3841,7 @@
   },
   {
     "frn": "472818",
-    "name": "Capital Systematics Ltd"
+    "name": "CAPITAL SYSTEMATICS LTD."
   },
   {
     "frn": "472929",
@@ -4309,7 +4305,7 @@
   },
   {
     "frn": "491367",
-    "name": "Infinity Capital Partners Ltd"
+    "name": "INFINITY CAPITAL PARTNERS LIMITED"
   },
   {
     "frn": "492519",
@@ -5765,7 +5761,7 @@
   },
   {
     "frn": "588344",
-    "name": "J Stern & Co. LLP"
+    "name": "J. STERN & CO LLP"
   },
   {
     "frn": "588370",
@@ -6161,7 +6157,7 @@
   },
   {
     "frn": "607482",
-    "name": "Proprium Capital  Management (UK) LLP"
+    "name": "Proprium Capital Management (UK) LLP"
   },
   {
     "frn": "607483",
@@ -6301,7 +6297,7 @@
   },
   {
     "frn": "613381",
-    "name": "VIBHS Financial Ltd"
+    "name": "VIBHS FINANCIAL LTD"
   },
   {
     "frn": "613498",
@@ -7129,7 +7125,7 @@
   },
   {
     "frn": "660067",
-    "name": "Mobeus Income & Growth VCT PLC"
+    "name": "GRESHAM HOUSE INCOME & GROWTH 2 VCT PLC"
   },
   {
     "frn": "660074",
@@ -7157,7 +7153,7 @@
   },
   {
     "frn": "660133",
-    "name": "The Income & Growth VCT PLC"
+    "name": "GRESHAM HOUSE INCOME & GROWTH VCT PLC"
   },
   {
     "frn": "660212",
@@ -7557,7 +7553,7 @@
   },
   {
     "frn": "714242",
-    "name": "Above Wealth Management  LLP"
+    "name": "Above Wealth Management LLP"
   },
   {
     "frn": "714282",
@@ -8437,7 +8433,7 @@
   },
   {
     "frn": "775330",
-    "name": "Risksave Technologies Ltd."
+    "name": "RISKSAVE TECHNOLOGIES LTD"
   },
   {
     "frn": "775385",
@@ -8934,10 +8930,6 @@
   {
     "frn": "805772",
     "name": "Woburn Asset Management Limited"
-  },
-  {
-    "frn": "806010",
-    "name": "Stratos Aviation Limited"
   },
   {
     "frn": "806100",
@@ -10449,7 +10441,7 @@
   },
   {
     "frn": "953665",
-    "name": "24/7 Investment Management Ltd"
+    "name": "24/7 INVESTMENT MANAGEMENT LTD"
   },
   {
     "frn": "954103",
