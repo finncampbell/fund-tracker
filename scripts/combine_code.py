@@ -4,7 +4,6 @@ import argparse
 import os
 import sys
 from datetime import datetime
-from collections import defaultdict
 
 # --- CONFIGURATION ---
 SKIP_WALK_DIRS       = {'.git', '__pycache__', 'node_modules'}
@@ -32,6 +31,7 @@ def fetch_all():
     run(['git', 'fetch', '--all', '--prune'])
 
 def get_all_branches():
+    """Return a sorted list of all local and remote branches."""
     lines = run(['git', 'branch', '-a'])
     branches = []
     for ln in lines:
@@ -42,9 +42,11 @@ def get_all_branches():
     return sorted(set(branches))
 
 def list_files(branch):
+    """List all files in the given branch."""
     return run(['git', 'ls-tree', '-r', '--name-only', branch])
 
 def show_file(branch, path):
+    """Return the contents of file at branch:path, or None on error."""
     try:
         return subprocess.check_output(
             ['git', 'show', f'{branch}:{path}'],
@@ -54,6 +56,10 @@ def show_file(branch, path):
         return None
 
 def build_tree(paths):
+    """
+    Given a list of file paths, build a nested dict
+    where keys are path components and leaves are {}.
+    """
     tree = {}
     for p in paths:
         parts = p.split('/')
@@ -62,36 +68,43 @@ def build_tree(paths):
             node = node.setdefault(part, {})
     return tree
 
-def print_tree(node, prefix='', branch='', out=None):
+def print_tree(node, prefix='', branch='', current_path='', out=None):
+    """
+    Recursively print an ASCII tree.
+    - node: nested dict
+    - prefix: current drawing prefix
+    - branch: name of the branch (for git show)
+    - current_path: real filesystem path to this node
+    - out: file handle
+    """
     items = sorted(node.items())
     for idx, (name, child) in enumerate(items):
         is_last = (idx == len(items) - 1)
         connector = '└── ' if is_last else '├── '
         line = f"{prefix}{connector}{name}"
-        full_path = (prefix + connector + name).lstrip('├─└ ')
+        full_path = os.path.join(current_path, name) if current_path else name
         ext = os.path.splitext(name)[1].lower()
 
         if child:
+            # Directory: print and recurse
             print(line, file=out)
             new_prefix = prefix + ('    ' if is_last else '│   ')
-            print_tree(child, new_prefix, branch, out)
+            print_tree(child, new_prefix, branch, full_path, out)
         else:
-            # Data-only
-            if any(full_path.startswith(d.rstrip('/') + '/') for d in PATH_ONLY_DIRS) \
+            # Leaf file
+            if any(full_path.startswith(d.rstrip('/') + os.sep) for d in PATH_ONLY_DIRS) \
                or ext in PATH_ONLY_EXTENSIONS:
                 print(f"{line}  [PATH ONLY]", file=out)
 
-            # Code dumps
             elif ext in CODE_EXTENSIONS:
                 print(line, file=out)
                 content = show_file(branch, full_path)
-                if content:
+                if content is not None:
                     for cl in content.splitlines():
                         print(f"{prefix}    {cl}", file=out)
                 else:
-                    print(f"{prefix}    [Unable to read content]", file=out)
+                    print(f"{prefix}    [Unable to read content for '{full_path}']", file=out)
 
-            # Everything else
             else:
                 print(f"{line}  [SKIPPED NON-CODE]", file=out)
 
@@ -115,7 +128,7 @@ def main():
             out.write(f"# ===== BRANCH: {branch} =====\n")
             files = list_files(branch)
             tree = build_tree(files)
-            print_tree(tree, prefix='', branch=branch, out=out)
+            print_tree(tree, prefix='', branch=branch, current_path='', out=out)
             out.write("\n")
         out.write("# End of repo tree\n")
 
