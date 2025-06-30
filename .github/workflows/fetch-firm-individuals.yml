@@ -24,18 +24,15 @@ jobs:
       - name: Calculate chunk offsets
         id: calc
         run: |
-          # locate the mirrored FRN list
           FILE=docs/fca-dashboard/data/all_frns_with_names.json
           if [ ! -f "$FILE" ]; then
             echo "❌ $FILE not found" >&2
             exit 1
           fi
 
-          # how many total?
           full=$(jq 'length' "$FILE")
           echo "ℹ️ Found $full FRNs"
 
-          # apply user-specified limit?
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             total=${{ github.event.inputs.limit }}
           else
@@ -43,25 +40,22 @@ jobs:
           fi
           echo "ℹ️ Using total = $total"
 
-          # how many chunks?
           chunks=${{ github.event.inputs.chunks }}
           echo "ℹ️ Splitting into $chunks chunks"
 
-          # compute chunk size (ceiling)
           step=$(( (total + chunks - 1) / chunks ))
           echo "ℹ️ Chunk size = $step"
 
-          # build starting offsets 0, step, 2*step, ...
           offsets=()
           for ((i=0; i<total; i+=step)); do
             offsets+=($i)
           done
 
-          # serialize to JSON array
-          json=$(printf '%s\n' "${offsets[@]}" | jq -R . | jq -s .)
+          # produce a *single-line* JSON array
+          json=$(printf '%s\n' "${offsets[@]}" | jq -R . | jq -s -c .)
           echo "ℹ️ Offsets = $json"
 
-          # emit via new output syntax
+          # new output syntax
           echo "chunk-list=$json" >> $GITHUB_OUTPUT
 
   fetch:
