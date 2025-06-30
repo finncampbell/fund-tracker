@@ -3,7 +3,7 @@
 scripts/fetch_firm_individuals.py
 
 Fetch the list of individuals for each firm (FRN) via the paginated /Firm/{frn}/Individuals endpoint.
-Updates data/fca_individuals_by_firm.json by merging new entries with existing ones.
+Updates fca-dashboard/data/fca_individuals_by_firm.json by merging new entries with existing ones.
 """
 import os
 import json
@@ -33,13 +33,14 @@ HEADERS  = {
 limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
+    """Fetch one page of JSON, respecting rate limits."""
     limiter.wait()
     resp = requests.get(url, headers=HEADERS, timeout=10)
     resp.raise_for_status()
     return resp.json()
 
 def fetch_paginated(url: str) -> list:
-    """Follow pagination via ResultInfo.Next, collecting all Data entries"""
+    """Follow pagination via ResultInfo.Next, collecting all Data entries."""
     items = []
     next_url = url
     while next_url:
@@ -52,17 +53,8 @@ def fetch_paginated(url: str) -> list:
 
 def main():
     parser = argparse.ArgumentParser(description='Fetch firm individuals for each FRN')
-    parser.add_argument(
-        '--limit',
-        type=int,
-        help='Only process this many FRNs (after offset); blank = all remaining'
-    )
-    parser.add_argument(
-        '--offset',
-        type=int,
-        default=0,
-        help='Skip this many FRNs before fetching'
-    )
+    parser.add_argument('--limit', type=int,
+                        help='Only process first N FRNs for testing')
     args = parser.parse_args()
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -71,11 +63,6 @@ def main():
     with open(FRNS_JSON, 'r', encoding='utf-8') as f:
         frn_items = json.load(f)
     frns = [item['frn'] for item in frn_items]
-
-    # Apply offset & limit
-    if args.offset:
-        frns = frns[args.offset:]
-        print(f"▶️  Skipping first {args.offset} FRNs")
     if args.limit:
         frns = frns[: args.limit]
         print(f"🔍 Test mode: will fetch individuals for {len(frns)} FRNs")
@@ -103,12 +90,12 @@ def main():
                     'Status': e.get('Status'),
                     'URL':    e.get('URL'),
                 })
-            store[frn] = norm
+            store[str(frn)] = norm
             print(f"✅ Fetched {len(norm)} individuals for FRN {frn}")
         except Exception as e:
             print(f"⚠️  Failed to fetch individuals for FRN {frn}: {e}")
 
-    # Write back
+    # Write back to JSON
     with open(OUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(store, f, indent=2, ensure_ascii=False)
     print(f"✅ Wrote individuals for {len(store)} firms to {OUT_JSON}")
