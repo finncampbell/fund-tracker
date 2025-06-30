@@ -136,27 +136,24 @@ $(document).ready(function() {
             $btn.removeClass('active').text('Expand for Directors');
           } else {
             const dirs = row.data().Directors || [];
-
-            // Build the <table> header:
             let html = '<table class="child-table"><tr>' +
-              '<th>Director Name</th>' +
-              '<th>Appointment</th>' +
-              '<th>Date of Birth</th>' +
-              '<th># of Appointments</th>' +
-              '<th>Officer Role</th>' +
-              '<th>Nationality</th>' +
-              '<th>Occupation</th>' +
-              '<th>Details Link</th>' +
-              '</tr>';
+                       '<th>Director Name</th>' +
+                       '<th>Appointment</th>' +
+                       '<th>Date of Birth</th>' +
+                       '<th># of Appointments</th>' +
+                       '<th>Officer Role</th>' +
+                       '<th>Nationality</th>' +
+                       '<th>Occupation</th>' +
+                       '<th>Details Link</th>' +
+                       '</tr>';
 
             if (dirs.length === 0) {
-              // If no directors at all, show one row with "No Data" in each of the 8 cells
               html += '<tr>' + '<td>No Data</td>'.repeat(8) + '</tr>';
             } else {
-              // Otherwise render each director normally, formatting name
               dirs.forEach(d => {
                 const formattedName = formatName(d.title || '');
-                html += '<tr>' +
+                html +=
+                  '<tr>' +
                   `<td>${formattedName}</td>` +
                   `<td>${d.appointment || ''}</td>` +
                   `<td>${d.dateOfBirth || ''}</td>` +
@@ -168,7 +165,6 @@ $(document).ready(function() {
                   '</tr>';
               });
             }
-
             html += '</table>';
             row.child(html).show();
             $btn.addClass('active').text('Hide Directors');
@@ -197,9 +193,12 @@ $(document).ready(function() {
           $(this).addClass('active');
           const filter = $(this).data('filter') || '';
           $('#companies-container').toggle(filter !== 'SIC');
-          $('#sic-companies-container').toggle(filter === 'SIC');
+          $('#sic-companies-container').toggle(filter === '
+SIC');
           if (filter !== 'SIC') {
             companyTable.draw();
+          } else {
+            sicTable.columns.adjust().draw();
           }
         });
       }
@@ -272,3 +271,66 @@ $(document).ready(function() {
 
       alert('Fetch Directors workflow dispatched successfully!');
     } catch (err) {
+      console.error('Error dispatching Fetch Directors:', err);
+      alert('Failed to dispatch Fetch Directors. See console for details.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Fetch Directors Now';
+    }
+  });
+
+  // 9) Display “Next scheduled run” (every 10 minutes) in local time
+  function updateNextRunDisplay() {
+    const now = new Date();
+
+    // Compute minutes to next multiple of 10
+    const minutes = now.getMinutes();
+    const remainder = minutes % 10;
+    let nextMinuteBucket = minutes - remainder + 10;
+    let nextHour = now.getHours();
+    let nextDay = now.getDate();
+    let nextMonth = now.getMonth();      // zero-based (Jan = 0)
+    let nextYear = now.getFullYear();
+
+    if (nextMinuteBucket >= 60) {
+      nextMinuteBucket = 0;
+      nextHour += 1;
+      if (nextHour >= 24) {
+        nextHour = 0;
+        // Advance to next day (accounting for month/year rollovers)
+        now.setDate(now.getDate() + 1);
+        nextYear = now.getFullYear();
+        nextMonth = now.getMonth();
+        nextDay = now.getDate();
+      }
+    }
+
+    // Construct a Date object for the next run
+    const nextRun = new Date(
+      nextYear,
+      nextMonth,
+      nextDay,
+      nextHour,
+      nextMinuteBucket,
+      0,   // seconds
+      0    // milliseconds
+    );
+
+    // Format as "YYYY-MM-DD HH:mm"
+    const pad = (n) => String(n).padStart(2, "0");
+    const yyyy = nextRun.getFullYear();
+    const mm   = pad(nextRun.getMonth() + 1); // Jan=0
+    const dd   = pad(nextRun.getDate());
+    const hh   = pad(nextRun.getHours());
+    const mins = pad(nextRun.getMinutes());
+
+    const formatted = `${yyyy}-${mm}-${dd} ${hh}:${mins}`;
+    document.getElementById("next-run-timestamp").textContent = formatted;
+  }
+
+  // Initial call
+  updateNextRunDisplay();
+  // Refresh every 30 seconds
+  setInterval(updateNextRunDisplay, 30000);
+
+}); // <-- end of document.ready
