@@ -193,8 +193,7 @@ $(document).ready(function() {
           $(this).addClass('active');
           const filter = $(this).data('filter') || '';
           $('#companies-container').toggle(filter !== 'SIC');
-          $('#sic-companies-container').toggle(filter === '
-SIC');
+          $('#sic-companies-container').toggle(filter === 'SIC');
           if (filter !== 'SIC') {
             companyTable.draw();
           } else {
@@ -260,7 +259,7 @@ SIC');
         'https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors',
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type':''application/json' },
           body: JSON.stringify({})
         }
       );
@@ -314,23 +313,4 @@ SIC');
       nextMinuteBucket,
       0,   // seconds
       0    // milliseconds
-    );
-
-    // Format as "YYYY-MM-DD HH:mm"
-    const pad = (n) => String(n).padStart(2, "0");
-    const yyyy = nextRun.getFullYear();
-    const mm   = pad(nextRun.getMonth() + 1); // Jan=0
-    const dd   = pad(nextRun.getDate());
-    const hh   = pad(nextRun.getHours());
-    const mins = pad(nextRun.getMinutes());
-
-    const formatted = `${yyyy}-${mm}-${dd} ${hh}:${mins}`;
-    document.getElementById("next-run-timestamp").textContent = formatted;
-  }
-
-  // Initial call
-  updateNextRunDisplay();
-  // Refresh every 30 seconds
-  setInterval(updateNextRunDisplay, 30000);
-
-}); // <-- end of document.ready
+    );```
