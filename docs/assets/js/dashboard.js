@@ -204,7 +204,7 @@ $(document).ready(function() {
     }
   });
 
-  // Flatpickr range picker & backfill button
+  // Flatpickr range picker & backfill button setup
   flatpickr("#backfill-range", {
     mode: "range",
     dateFormat: "Y-m-d",
@@ -259,7 +259,7 @@ $(document).ready(function() {
         'https://fund-tracker-functions.netlify.app/.netlify/functions/trigger-fetch-directors',
         {
           method: 'POST',
-          headers: { 'Content-Type':''application/json' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({})
         }
       );
@@ -281,14 +281,12 @@ $(document).ready(function() {
   // 9) Display “Next scheduled run” (every 10 minutes) in local time
   function updateNextRunDisplay() {
     const now = new Date();
-
-    // Compute minutes to next multiple of 10
     const minutes = now.getMinutes();
     const remainder = minutes % 10;
     let nextMinuteBucket = minutes - remainder + 10;
     let nextHour = now.getHours();
     let nextDay = now.getDate();
-    let nextMonth = now.getMonth();      // zero-based (Jan = 0)
+    let nextMonth = now.getMonth();
     let nextYear = now.getFullYear();
 
     if (nextMinuteBucket >= 60) {
@@ -296,7 +294,6 @@ $(document).ready(function() {
       nextHour += 1;
       if (nextHour >= 24) {
         nextHour = 0;
-        // Advance to next day (accounting for month/year rollovers)
         now.setDate(now.getDate() + 1);
         nextYear = now.getFullYear();
         nextMonth = now.getMonth();
@@ -304,13 +301,29 @@ $(document).ready(function() {
       }
     }
 
-    // Construct a Date object for the next run
     const nextRun = new Date(
       nextYear,
       nextMonth,
       nextDay,
       nextHour,
       nextMinuteBucket,
-      0,   // seconds
-      0    // milliseconds
-    );```
+      0,
+      0
+    );
+
+    const pad = n => String(n).padStart(2, "0");
+    const yyyy = nextRun.getFullYear();
+    const mm   = pad(nextRun.getMonth() + 1);
+    const dd   = pad(nextRun.getDate());
+    const hh   = pad(nextRun.getHours());
+    const mins = pad(nextRun.getMinutes());
+
+    document.getElementById("next-run-timestamp").textContent =
+      `${yyyy}-${mm}-${dd} ${hh}:${mins}`;
+  }
+
+  // Initial call & refresh
+  updateNextRunDisplay();
+  setInterval(updateNextRunDisplay, 30000);
+
+}); // end document.ready
