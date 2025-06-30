@@ -6,27 +6,27 @@ permissions:
 on:
   workflow_dispatch:
     inputs:
-      offset:
-        description: 'Number of FRNs to skip at start (for chunking)'
-        required: false
-        default: '0'
+      chunks:
+        description: 'JSON array of zero-based chunk indices (e.g. [0,1,2,3])'
+        required: true
+        default: '[0,1,2,3]'
       limit:
-        description: 'How many FRNs to fetch individuals for (blank = remainder)'
+        description: 'Number of FRNs per chunk (blank = full list segment)'
         required: false
         default: ''
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: ${{ fromJson(github.event.inputs.chunks) }}
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-
-      - name: Pull latest main
-        run: git pull --rebase origin main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -36,22 +36,22 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individuals chunk
+      - name: Fetch individuals chunk ${{ matrix.chunk }}
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          CMD="python fca-dashboard/scripts/fetch_firm_individuals.py --offset ${{ github.event.inputs.offset }}"
+          CMD="python fca-dashboard/scripts/fetch_firm_individuals.py --offset ${{ matrix.chunk }}"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             CMD+=" --limit ${{ github.event.inputs.limit }}"
           fi
           echo "▶️ Running: $CMD"
-          $CMD
+          eval $CMD
 
       - name: Commit & push updated individuals
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          git diff --cached --quiet || git commit -m "chore(fca): update firm individuals (offset=${{ github.event.inputs.offset }}, limit=${{ github.event.inputs.limit }})"
+          git diff --cached --quiet || git commit -m "chore(fca): update firm individuals"
           git push origin HEAD:main
