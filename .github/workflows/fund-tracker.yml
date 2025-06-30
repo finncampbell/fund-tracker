@@ -41,7 +41,7 @@ jobs:
             data-branch
           mkdir -p docs/assets/data
           cp data-branch/docs/assets/data/master_companies.csv   docs/assets/data/  || true
-          cp data-branch/docs/assets/data/relevant_companies.csv docs/assets/data/  || true
+          # no more copying relevant_companies.csv/xlsx here
           cp data-branch/docs/assets/data/directors.json         docs/assets/data/  || true
           cp data-branch/docs/assets/data/no_directors.json      docs/assets/data/  || true
 
