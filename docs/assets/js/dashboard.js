@@ -1,12 +1,13 @@
 $(document).ready(function() {
   // Repository parameters
-  const repoOwner = 'finncampbell';
-  const repoName  = 'fund-tracker';
-  const dataBranch = 'data';
+  const repoOwner   = 'finncampbell';
+  const repoName    = 'fund-tracker';
+  const dataBranch  = 'data';   // for JSON
+  const pagesBranch = 'main';   // for CSV
 
   // Raw GitHub URLs for data (always fetch fresh with a timestamp param)
-  const csvUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/relevant_companies.csv?v=${Date.now()}`;
-  const directorsUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/directors.json`;
+  const csvUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${pagesBranch}/docs/assets/data/relevant_companies.csv?v=${Date.now()}`;
+  const directorsUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${dataBranch}/docs/assets/data/directors.json?v=${Date.now()}`;
 
   // Regex to detect “Fund Entities” by company name
   const fundEntitiesRE = /\bFund\b|\bG[.\-\s]?P\b|\bL[.\-\s]?L[.\-\s]?P\b|\bL[.\-\s]?P\b/i;
@@ -23,7 +24,7 @@ $(document).ready(function() {
     return name;
   }
 
-  // 1) Load the CSV from the data branch
+  // 1) Load the CSV from the Pages-served main branch
   Papa.parse(csvUrl, {
     download: true,
     header: true,
@@ -271,66 +272,3 @@ $(document).ready(function() {
 
       alert('Fetch Directors workflow dispatched successfully!');
     } catch (err) {
-      console.error('Error dispatching Fetch Directors:', err);
-      alert('Failed to dispatch Fetch Directors. See console for details.');
-    } finally {
-      btn.disabled = false;
-      btn.textContent = 'Fetch Directors Now';
-    }
-  });
-
-  // 9) Display “Next scheduled run” (every 10 minutes) in local time
-  function updateNextRunDisplay() {
-    const now = new Date();
-
-    // Compute minutes to next multiple of 10
-    const minutes = now.getMinutes();
-    const remainder = minutes % 10;
-    let nextMinuteBucket = minutes - remainder + 10;
-    let nextHour = now.getHours();
-    let nextDay = now.getDate();
-    let nextMonth = now.getMonth();      // zero-based (Jan = 0)
-    let nextYear = now.getFullYear();
-
-    if (nextMinuteBucket >= 60) {
-      nextMinuteBucket = 0;
-      nextHour += 1;
-      if (nextHour >= 24) {
-        nextHour = 0;
-        // Advance to next day (accounting for month/year rollovers)
-        now.setDate(now.getDate() + 1);
-        nextYear = now.getFullYear();
-        nextMonth = now.getMonth();
-        nextDay = now.getDate();
-      }
-    }
-
-    // Construct a Date object for the next run
-    const nextRun = new Date(
-      nextYear,
-      nextMonth,
-      nextDay,
-      nextHour,
-      nextMinuteBucket,
-      0,   // seconds
-      0    // milliseconds
-    );
-
-    // Format as "YYYY-MM-DD HH:mm"
-    const pad = (n) => String(n).padStart(2, "0");
-    const yyyy = nextRun.getFullYear();
-    const mm   = pad(nextRun.getMonth() + 1); // Jan=0
-    const dd   = pad(nextRun.getDate());
-    const hh   = pad(nextRun.getHours());
-    const mins = pad(nextRun.getMinutes());
-
-    const formatted = `${yyyy}-${mm}-${dd} ${hh}:${mins}`;
-    document.getElementById("next-run-timestamp").textContent = formatted;
-  }
-
-  // Initial call
-  updateNextRunDisplay();
-  // Refresh every 30 seconds
-  setInterval(updateNextRunDisplay, 30000);
-
-}); // <-- end of document.ready
