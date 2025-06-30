@@ -25,11 +25,11 @@ jobs:
       - name: Calculate offsets
         id: calculate
         run: |
-          # Load full length of FRN list
-          full=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
+          # count total FRNs in the mirrored JSON
+          full=$(jq 'length' docs/fca-dashboard/data/all_frns_with_names.json)
           echo "Full FRN count: $full"
 
-          # Apply optional limit
+          # apply optional limit
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             total=${{ github.event.inputs.limit }}
           else
@@ -37,24 +37,23 @@ jobs:
           fi
           echo "Using total = $total"
 
-          # Determine number of chunks
+          # determine number of chunks
           chunks=${{ github.event.inputs.chunks }}
           echo "Splitting into $chunks chunks"
 
-          # Compute size of each slice (ceil division)
+          # compute chunk size (ceiling division)
           step=$(( (total + chunks - 1) / chunks ))
-          echo "Chunk size (step) = $step"
+          echo "Chunk size = $step"
 
-          # Build offset array
+          # build zero-based offset list
           offsets=()
-          for ((i=0;i<total;i+=step)); do
+          for ((i=0; i<total; i+=step)); do
             offsets+=($i)
           done
 
-          # Emit JSON array of offsets
+          # emit JSON array of offsets
           json=$(printf '%s\n' "${offsets[@]}" | jq -R . | jq -s .)
           echo "::set-output name=chunk-list::$json"
-          echo "Chunk list: $json"
 
   fetch:
     needs: split
