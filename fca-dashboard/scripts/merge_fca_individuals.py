@@ -1,42 +1,92 @@
-#!/usr/bin/env python3
-"""
-scripts/merge_fca_individuals.py
+name: Fetch FCA Firm Individuals (Ad-hoc)
 
-Takes multiple partial JSON outputs (each a dict mapping FRN→list)
-and merges them into one consolidated JSON file.
-"""
-import sys
-import os
-import json
+permissions:
+  contents: write
 
-def merge_chunks(chunk_dir, out_path):
-    merged = {}
-    for fname in os.listdir(chunk_dir):
-        if not fname.endswith('.json'):
-            continue
-        full_path = os.path.join(chunk_dir, fname)
-        try:
-            with open(full_path, 'r', encoding='utf-8') as f:
-                part = json.load(f)
-            if not isinstance(part, dict):
-                print(f"⚠️  Skipping non-dict chunk {fname}")
-                continue
-            for frn, lst in part.items():
-                # override any previous entry for this FRN
-                merged[frn] = lst
-        except Exception as e:
-            print(f"❌ Failed to load {fname}: {e}")
+on:
+  workflow_dispatch:
+    inputs:
+      chunks:
+        description: 'Number of parallel chunks to split into'
+        required: false
+        default: '4'
+      limit:
+        description: 'How many FRNs per chunk (blank = full list / auto-calculated)'
+        required: false
+        default: ''
 
-    # write the merged result
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, 'w', encoding='utf-8') as f:
-        json.dump(merged, f, indent=2, ensure_ascii=False)
-    print(f"✅ Merged {len(merged)} FRNs into {out_path}")
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    outputs:
+      chunk-list: ${{ steps.split.outputs.chunk-list }}
+    steps:
+      - uses: actions/checkout@v3
 
-if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Usage: merge_fca_individuals.py <chunks_dir> <output_json>")
-        sys.exit(1)
-    chunks_directory = sys.argv[1]
-    output_file      = sys.argv[2]
-    merge_chunks(chunks_directory, output_file)
+      - name: Read total FRNs and build chunk list
+        id: split
+        run: |
+          total=$(jq '. | length' fca-dashboard/data/all_frns_with_names.json)
+          chunks=${{ github.event.inputs.chunks }}
+          # if no limit provided, auto-calc limit per chunk
+          if [ -z "${{ github.event.inputs.limit }}" ]; then
+            limit=$(( (total + chunks - 1) / chunks ))
+          else
+            limit=${{ github.event.inputs.limit }}
+          fi
+          # build JSON array of chunk offsets
+          offsets=()
+          for ((i=0; i<total; i+=limit)); do
+            offsets+=($i)
+          done
+          echo "Built offsets: ${offsets[*]}"
+          # emit as JSON array for matrix
+          echo "::set-output name=chunk-list::[$(printf '%s\n' "${offsets[@]}" | paste -sd, -)]"
+
+  fetch:
+    needs: split
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        offset: ${{ fromJson(needs.split.outputs.chunk-list) }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch individuals chunk ${{ matrix.offset }}
+        env:
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: |
+          mkdir -p fca-dashboard/data/chunks
+          python fca-dashboard/scripts/fetch_firm_individuals.py \
+            --offset ${{ matrix.offset }} \
+            --limit ${limit:-} \
+          > fca-dashboard/data/chunks/part_${{ matrix.offset }}.json
+
+  merge:
+    needs: fetch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Merge chunked results
+        run: |
+          python fca-dashboard/scripts/merge_fca_individuals.py \
+            fca-dashboard/data/chunks \
+            fca-dashboard/data/fca_individuals_by_firm.json
+
+      - name: Commit & push merged file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/fca_individuals_by_firm.json
+          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals"
+          git push origin HEAD:main
