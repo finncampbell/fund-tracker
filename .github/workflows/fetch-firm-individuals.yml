@@ -1,4 +1,3 @@
-# .github/workflows/fetch-firm-individuals.yml
 name: Fetch FCA Firm Individuals (Ad-hoc)
 
 permissions:
@@ -45,8 +44,11 @@ jobs:
           for ((i=0;i<CHUNKS;i++)); do
             OFFSETS+=("$(( i * SIZE ))")
           done
-          # emit JSON array of offsets and chunk count
-          echo "offsets=$(printf '%s\n' "${OFFSETS[@]}" | jq -R . | jq -s .)" >> $GITHUB_OUTPUT
+          # produce a compact single-line JSON array
+          OFFSETS_JSON=$(printf '%s\n' "${OFFSETS[@]}" \
+            | jq -R . \
+            | jq -cs .)
+          echo "offsets=$OFFSETS_JSON" >> $GITHUB_OUTPUT
           echo "chunk_count=$CHUNKS" >> $GITHUB_OUTPUT
 
   fetch:
@@ -69,17 +71,17 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individuals chunk
+      - name: Fetch individuals chunk at offset ${{ matrix.offset }}
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
           CMD="python fca-dashboard/scripts/fetch_firm_individuals.py --offset ${{ matrix.offset }}"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
+            CMD+=" --limit ${{ github.event.inputs.limit }}"
           fi
           echo "→ Running: $CMD"
-          $CMD
+          eval $CMD
 
       - name: Upload chunk artifact
         uses: actions/upload-artifact@v4
