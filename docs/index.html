@@ -15,7 +15,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
   />
-  <!-- Custom neon‑glow CSS -->
+  <!-- Custom neon-glow CSS -->
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body>
@@ -35,6 +35,10 @@
         <a href="assets/data/relevant_companies.xlsx" download>
           Download filtered Excel
         </a>
+      </p>
+      <!-- Added for the scheduled‐run timestamp -->
+      <p class="ft-next-run">
+        Next update: <span id="next-run-timestamp"></span>
       </p>
     </div>
 
@@ -80,6 +84,28 @@
             <th class="cat-ventures">Category</th>
             <th class="cat-sic">Date Downloaded</th>
             <th class="cat-directors">Directors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS will populate rows here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SIC DATA TABLE (hidden by default) -->
+    <div class="table-container" id="sic-companies-container" style="display:none;">
+      <table id="sic-companies" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Company Name</th>
+            <th>Company Number</th>
+            <th>Incorporation Date</th>
+            <th>Category</th>
+            <th>Date Downloaded</th>
+            <th>SIC Codes</th>
+            <th>SIC Description</th>
+            <th>Typical Use Case</th>
+            <th>Directors</th>
           </tr>
         </thead>
         <tbody>
