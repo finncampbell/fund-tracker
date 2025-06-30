@@ -24,7 +24,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Compute chunk start indices
+      - name: Compute chunk indices
         id: set-chunks
         run: |
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
@@ -33,7 +33,7 @@ jobs:
 import math, json
 total = int($TOTAL)
 n = int("$CHUNKS")
-size = math.ceil(total/n)
+size = math.ceil(total / n)
 print(json.dumps(list(range(0, total, size))))
 EOF
           echo "chunk-list=$(cat indices.json)" >> $GITHUB_OUTPUT
