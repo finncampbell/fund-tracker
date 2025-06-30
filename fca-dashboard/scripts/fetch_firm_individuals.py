@@ -3,6 +3,7 @@
 scripts/fetch_firm_individuals.py
 
 Fetch the list of individuals for each firm (FRN) via the paginated /Firm/{frn}/Individuals endpoint.
+Supports chunked runs via --offset and --limit so the full list can be split across multiple jobs.
 Updates data/fca_individuals_by_firm.json by merging new entries with existing ones.
 """
 import os
@@ -38,7 +39,6 @@ def fetch_json(url: str) -> dict:
     resp.raise_for_status()
     return resp.json()
 
-
 def fetch_paginated(url: str) -> list:
     """Follow pagination via ResultInfo.Next, collecting all Data entries"""
     items = []
@@ -47,15 +47,14 @@ def fetch_paginated(url: str) -> list:
         pkg = fetch_json(next_url)
         data = pkg.get('Data') or []
         items.extend(data)
-        # get next page URL if present
         ri = pkg.get('ResultInfo', {})
         next_url = ri.get('Next')
     return items
 
-
 def main():
     parser = argparse.ArgumentParser(description='Fetch firm individuals for each FRN')
-    parser.add_argument('--limit', type=int, help='Only process first N FRNs for testing')
+    parser.add_argument('--limit',  type=int, help='Only process N FRNs')
+    parser.add_argument('--offset', type=int, default=0, help='Skip first N FRNs')
     args = parser.parse_args()
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -63,10 +62,13 @@ def main():
     # Load FRN list
     with open(FRNS_JSON, 'r', encoding='utf-8') as f:
         frn_items = json.load(f)
-    frns = [item['frn'] for item in frn_items]
-    if args.limit:
-        frns = frns[: args.limit]
-        print(f"🔍 Test mode: will fetch individuals for {len(frns)} FRNs")
+    all_frns = [item['frn'] for item in frn_items]
+
+    # Slice for this chunk
+    start = args.offset
+    end   = args.offset + args.limit if args.limit else None
+    frns  = all_frns[start:end]
+    print(f"⏱️  Processing FRNs[{start}:{end or 'end'}] → {len(frns)} firms")
 
     # Load existing store
     if os.path.exists(OUT_JSON):
@@ -79,23 +81,21 @@ def main():
     # Fetch & merge
     for frn in frns:
         try:
-            url = f"{BASE_URL}/Firm/{frn}/Individuals"
+            url     = f"{BASE_URL}/Firm/{frn}/Individuals"
             entries = fetch_paginated(url)
-            # Normalize entries: keep IRN, Name, Status, URL
-            norm = []
+            norm    = []
             for e in entries:
-                if not isinstance(e, dict):
-                    continue
-                norm.append({
-                    'IRN':    e.get('IRN'),
-                    'Name':   e.get('Name'),
-                    'Status': e.get('Status'),
-                    'URL':    e.get('URL'),
-                })
+                if isinstance(e, dict):
+                    norm.append({
+                        'IRN':    e.get('IRN'),
+                        'Name':   e.get('Name'),
+                        'Status': e.get('Status'),
+                        'URL':    e.get('URL'),
+                    })
             store[frn] = norm
             print(f"✅ Fetched {len(norm)} individuals for FRN {frn}")
         except Exception as e:
-            print(f"⚠️  Failed to fetch individuals for FRN {frn}: {e}")
+            print(f"⚠️  Failed FRN {frn}: {e}")
 
     # Write back
     with open(OUT_JSON, 'w', encoding='utf-8') as f:
