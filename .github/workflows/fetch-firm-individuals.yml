@@ -17,43 +17,52 @@ jobs:
   split:
     runs-on: ubuntu-latest
     outputs:
-      chunk-list: ${{ steps.calculate.outputs.chunk-list }}
+      chunk-list: ${{ steps.calc.outputs.chunk-list }}
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Calculate offsets
-        id: calculate
+      - name: Calculate chunk offsets
+        id: calc
         run: |
-          # count total FRNs in the mirrored JSON
-          full=$(jq 'length' docs/fca-dashboard/data/all_frns_with_names.json)
-          echo "Full FRN count: $full"
+          # locate the mirrored FRN list
+          FILE=docs/fca-dashboard/data/all_frns_with_names.json
+          if [ ! -f "$FILE" ]; then
+            echo "❌ $FILE not found" >&2
+            exit 1
+          fi
 
-          # apply optional limit
+          # how many total?
+          full=$(jq 'length' "$FILE")
+          echo "ℹ️ Found $full FRNs"
+
+          # apply user-specified limit?
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             total=${{ github.event.inputs.limit }}
           else
             total=$full
           fi
-          echo "Using total = $total"
+          echo "ℹ️ Using total = $total"
 
-          # determine number of chunks
+          # how many chunks?
           chunks=${{ github.event.inputs.chunks }}
-          echo "Splitting into $chunks chunks"
+          echo "ℹ️ Splitting into $chunks chunks"
 
-          # compute chunk size (ceiling division)
+          # compute chunk size (ceiling)
           step=$(( (total + chunks - 1) / chunks ))
-          echo "Chunk size = $step"
+          echo "ℹ️ Chunk size = $step"
 
-          # build zero-based offset list
+          # build starting offsets 0, step, 2*step, ...
           offsets=()
           for ((i=0; i<total; i+=step)); do
             offsets+=($i)
           done
 
-          # emit JSON array of offsets
+          # serialize to JSON array
           json=$(printf '%s\n' "${offsets[@]}" | jq -R . | jq -s .)
-          echo "::set-output name=chunk-list::$json"
+          echo "ℹ️ Offsets = $json"
+
+          # emit via new output syntax
+          echo "chunk-list=$json" >> $GITHUB_OUTPUT
 
   fetch:
     needs: split
@@ -62,29 +71,27 @@ jobs:
       matrix:
         offset: ${{ fromJson(needs.split.outputs.chunk-list) }}
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individuals chunk
+      - name: Fetch individuals chunk ${{ matrix.offset }}
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          args="--offset ${{ matrix.offset }}"
+          ARGS="--offset ${{ matrix.offset }}"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            args="$args --limit ${{ github.event.inputs.limit }}"
+            ARGS="$ARGS --limit ${{ github.event.inputs.limit }}"
           fi
-          python fca-dashboard/scripts/fetch_firm_individuals.py $args
+          python fca-dashboard/scripts/fetch_firm_individuals.py $ARGS
 
-      - name: Archive chunk JSON
+      - name: Archive chunk
         uses: actions/upload-artifact@v3
         with:
           name: individuals-chunk-${{ matrix.offset }}
@@ -94,8 +101,7 @@ jobs:
     needs: fetch
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Download all chunk artifacts
         uses: actions/download-artifact@v3
@@ -104,7 +110,8 @@ jobs:
 
       - name: Merge chunks
         run: |
-          python fca-dashboard/scripts/merge_fca_individuals.py chunks/ fca-dashboard/data/fca_individuals_by_firm.json
+          python fca-dashboard/scripts/merge_fca_individuals.py \
+            chunks/ fca-dashboard/data/fca_individuals_by_firm.json
 
       - name: Commit & push
         run: |
