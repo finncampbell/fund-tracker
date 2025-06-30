@@ -3,9 +3,9 @@
 scripts/fetch_firm_individuals.py
 
 Fetch the list of individuals for each firm (FRN) via the paginated /Firm/{frn}/Individuals endpoint.
-Updates fca-dashboard/data/fca_individuals_by_firm.json by merging new entries with existing ones.
+Supports --offset and --limit to process in chunks.
+Updates data/fca_individuals_by_firm.json by merging new entries with existing ones.
 """
-
 import os
 import json
 import argparse
@@ -13,10 +13,10 @@ import requests
 from rate_limiter import RateLimiter
 
 # ─── Paths & Config ──────────────────────────────────────────────────────────
-SCRIPT_DIR     = os.path.dirname(__file__)
-DATA_DIR       = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
-FRNS_JSON      = os.path.join(DATA_DIR, 'all_frns_with_names.json')
-OUT_JSON       = os.path.join(DATA_DIR, 'fca_individuals_by_firm.json')
+SCRIPT_DIR = os.path.dirname(__file__)
+DATA_DIR   = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
+FRNS_JSON  = os.path.join(DATA_DIR, 'all_frns_with_names.json')
+OUT_JSON   = os.path.join(DATA_DIR, 'fca_individuals_by_firm.json')
 
 # ─── FCA Register API setup ────────────────────────────────────────────────────
 API_EMAIL = os.getenv('FCA_API_EMAIL')
@@ -34,50 +34,38 @@ HEADERS  = {
 limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
-    """Fetch one page of JSON, respecting rate limits."""
     limiter.wait()
     resp = requests.get(url, headers=HEADERS, timeout=10)
     resp.raise_for_status()
     return resp.json()
 
-def fetch_paginated(url: str, max_pages: int = 100) -> list:
-    """
-    Follow pagination via ResultInfo.Next, collecting all Data entries.
-    Stops if:
-      - ResultInfo.Next is null
-      - we detect the same URL twice
-      - we've looped max_pages times
-    """
+def fetch_paginated(url: str) -> list:
+    """Follow pagination via ResultInfo.Next, collecting all Data entries"""
     items = []
     next_url = url
-    seen_urls = set()
-    pages = 0
-
     while next_url:
-        if pages >= max_pages:
-            print(f"⚠️  Reached max_pages ({max_pages}) for URL {url}; stopping pagination.")
-            break
-        if next_url in seen_urls:
-            print(f"⚠️  Detected repeated URL in pagination: {next_url}; stopping.")
-            break
-
-        seen_urls.add(next_url)
         pkg = fetch_json(next_url)
         data = pkg.get('Data') or []
         items.extend(data)
-
         ri = pkg.get('ResultInfo', {})
         next_url = ri.get('Next')
-        pages += 1
-
     return items
 
 def main():
-    parser = argparse.ArgumentParser(description='Fetch firm individuals for each FRN')
-    parser.add_argument('--offset', type=int, default=0,
-                        help='Zero-based offset into the FRN list (chunk index)')
-    parser.add_argument('--limit', type=int,
-                        help='Process at most N FRNs after offset (blank = all remaining)')
+    parser = argparse.ArgumentParser(
+        description='Fetch firm individuals for each FRN (supports offset & limit)'
+    )
+    parser.add_argument(
+        '--offset',
+        type=int,
+        default=0,
+        help='Skip this many FRNs at the start'
+    )
+    parser.add_argument(
+        '--limit',
+        type=int,
+        help='Only process this many FRNs after offset'
+    )
     args = parser.parse_args()
 
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -85,31 +73,30 @@ def main():
     # Load FRN list
     with open(FRNS_JSON, 'r', encoding='utf-8') as f:
         frn_items = json.load(f)
-    all_frns = [item['frn'] for item in frn_items]
+    frns = [item['frn'] for item in frn_items]
 
-    # Determine slice for this chunk
-    if args.limit:
-        start = args.offset * args.limit
+    # Apply offset & limit slicing
+    start = args.offset or 0
+    end = None
+    if args.limit is not None:
         end = start + args.limit
-        frns = all_frns[start:end]
-        print(f"🔍 Chunk {args.offset}: processing FRNs {start}–{end-1} (of {len(all_frns)})")
-    else:
-        frns = all_frns
-        print(f"🔍 No --limit; processing all {len(frns)} FRNs starting at offset {args.offset}")
+    slice_frns = frns[start:end]
+    print(f"🔍 Processing FRNs {start}:{end or 'end'} → {len(slice_frns)} items")
 
     # Load existing store
     if os.path.exists(OUT_JSON):
         with open(OUT_JSON, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        store = data if isinstance(data, dict) else {}
+            existing = json.load(f)
+        store = existing if isinstance(existing, dict) else {}
     else:
         store = {}
 
     # Fetch & merge
-    for frn in frns:
+    for frn in slice_frns:
         try:
             url = f"{BASE_URL}/Firm/{frn}/Individuals"
             entries = fetch_paginated(url)
+            # Normalize entries
             norm = []
             for e in entries:
                 if not isinstance(e, dict):
