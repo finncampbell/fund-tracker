@@ -17,21 +17,18 @@ PATH_ONLY_DIRS       = {
 CODE_EXTENSIONS      = {
     '.py', '.js', '.ts', '.java', '.cpp', '.c', '.h',
     '.go', '.rb', '.rs', '.sh', '.html', '.css',
-    '.json', '.yml', '.yaml', '.md', '.tsx', '.jsx'
+    '.yml', '.yaml', '.md', '.tsx', '.jsx'
 }
-PATH_ONLY_EXTENSIONS = {'.csv'}
+PATH_ONLY_EXTENSIONS = {'.csv', '.json'}
 
 def run(cmd):
-    """Run a shell command and return its output lines."""
     return subprocess.check_output(cmd, text=True).splitlines()
 
 def fetch_all():
-    """Ensure we have every commit from every remote."""
     print("🔄 Fetching all remotes...", file=sys.stderr)
     run(['git', 'fetch', '--all', '--prune'])
 
 def get_all_branches():
-    """Return a sorted list of all local and remote branches."""
     lines = run(['git', 'branch', '-a'])
     branches = []
     for ln in lines:
@@ -42,11 +39,9 @@ def get_all_branches():
     return sorted(set(branches))
 
 def list_files(branch):
-    """List all files in the given branch."""
     return run(['git', 'ls-tree', '-r', '--name-only', branch])
 
 def show_file(branch, path):
-    """Return the contents of file at branch:path, or None on error."""
     try:
         return subprocess.check_output(
             ['git', 'show', f'{branch}:{path}'],
@@ -56,10 +51,6 @@ def show_file(branch, path):
         return None
 
 def build_tree(paths):
-    """
-    Given a list of file paths, build a nested dict
-    where keys are path components and leaves are {}.
-    """
     tree = {}
     for p in paths:
         parts = p.split('/')
@@ -69,14 +60,6 @@ def build_tree(paths):
     return tree
 
 def print_tree(node, prefix='', branch='', current_path='', out=None):
-    """
-    Recursively print an ASCII tree.
-    - node: nested dict
-    - prefix: current drawing prefix
-    - branch: name of the branch (for git show)
-    - current_path: real filesystem path to this node
-    - out: file handle
-    """
     items = sorted(node.items())
     for idx, (name, child) in enumerate(items):
         is_last = (idx == len(items) - 1)
@@ -86,16 +69,16 @@ def print_tree(node, prefix='', branch='', current_path='', out=None):
         ext = os.path.splitext(name)[1].lower()
 
         if child:
-            # Directory: print and recurse
             print(line, file=out)
             new_prefix = prefix + ('    ' if is_last else '│   ')
             print_tree(child, new_prefix, branch, full_path, out)
         else:
-            # Leaf file
+            # data-only directories or explicit path-only extensions
             if any(full_path.startswith(d.rstrip('/') + os.sep) for d in PATH_ONLY_DIRS) \
                or ext in PATH_ONLY_EXTENSIONS:
                 print(f"{line}  [PATH ONLY]", file=out)
 
+            # code files only
             elif ext in CODE_EXTENSIONS:
                 print(line, file=out)
                 content = show_file(branch, full_path)
@@ -103,7 +86,7 @@ def print_tree(node, prefix='', branch='', current_path='', out=None):
                     for cl in content.splitlines():
                         print(f"{prefix}    {cl}", file=out)
                 else:
-                    print(f"{prefix}    [Unable to read content for '{full_path}']", file=out)
+                    print(f"{prefix}    [Unable to read '{full_path}']", file=out)
 
             else:
                 print(f"{line}  [SKIPPED NON-CODE]", file=out)
