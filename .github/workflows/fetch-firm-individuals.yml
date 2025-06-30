@@ -1,4 +1,4 @@
-name: Fetch FCA Firm Individuals
+name: Fetch FCA Firm Individuals (Ad-hoc)
 
 permissions:
   contents: write
@@ -6,18 +6,18 @@ permissions:
 on:
   workflow_dispatch:
     inputs:
-      chunks:
-        description: 'Number of parallel chunks (default: 4)'
+      offset:
+        description: 'Number of FRNs to skip at start (for chunking)'
         required: false
-        default: '4'
+        default: '0'
+      limit:
+        description: 'How many FRNs to fetch individuals for (blank = remainder)'
+        required: false
+        default: ''
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # generate chunk indices [0..chunks-1]
-        chunk: [0,1,2,3]
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
@@ -36,52 +36,22 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Calculate offsets
-        id: calc
-        run: |
-          TOTAL=$(jq length fca-dashboard/data/all_frns_with_names.json)
-          CHUNKS=${{ github.event.inputs.chunks }}
-          SIZE=$(( (TOTAL + CHUNKS - 1) / CHUNKS ))
-          echo "OFFSET=$(( matrix.chunk * SIZE ))" >> $GITHUB_OUTPUT
-          echo "LIMIT=$SIZE"                     >> $GITHUB_OUTPUT
-
-      - name: Fetch individuals chunk ${{ matrix.chunk }}
+      - name: Fetch individuals chunk
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          python fca-dashboard/scripts/fetch_firm_individuals.py \
-            --offset ${{ steps.calc.outputs.OFFSET }} \
-            --limit  ${{ steps.calc.outputs.LIMIT }}
+          CMD="python fca-dashboard/scripts/fetch_firm_individuals.py --offset ${{ github.event.inputs.offset }}"
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            CMD+=" --limit ${{ github.event.inputs.limit }}"
+          fi
+          echo "▶️ Running: $CMD"
+          $CMD
 
-      - name: Upload chunk artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: individuals-chunk-${{ matrix.chunk }}
-          path: fca-dashboard/data/fca_individuals_by_firm.json
-
-  merge:
-    needs: fetch
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-
-      - name: Download all chunk artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: chunks
-
-      - name: Merge FCA individuals JSON
-        run: python fca-dashboard/scripts/merge_fca_individuals.py
-
-      - name: Commit & push merged file
+      - name: Commit & push updated individuals
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          git diff --cached --quiet || git commit -m "chore(fca): merge firm-individuals chunks"
+          git diff --cached --quiet || git commit -m "chore(fca): update firm individuals (offset=${{ github.event.inputs.offset }}, limit=${{ github.event.inputs.limit }})"
           git push origin HEAD:main
