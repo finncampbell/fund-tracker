@@ -30,15 +30,15 @@ jobs:
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
           CHUNKS=${{ github.event.inputs.chunks }}
 
-          # split into N equal‐sized windows
+          # split into N equal-sized windows
           python3 - << 'EOF' > indices.json
-import math, json
-total = int("$TOTAL")
-n = int("$CHUNKS")
-size = math.ceil(total / n)
-indices = list(range(0, total, size))
-print(json.dumps(indices))
-EOF
+            import math, json
+            total = int("$TOTAL")
+            n     = int("$CHUNKS")
+            size  = math.ceil(total / n)
+            indices = list(range(0, total, size))
+            print(json.dumps(indices))
+          EOF
 
           echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
@@ -70,13 +70,13 @@ EOF
 
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             python3 fca-dashboard/scripts/fetch_firm_individuals.py \
-              --offset $OFFSET \
-              --limit ${{ github.event.inputs.limit }} \
-              --output fca-dashboard/data/individuals_chunk_${OFFSET}.json
+              --offset "$OFFSET" \
+              --limit  "${{ github.event.inputs.limit }}" \
+              --output fca-dashboard/data/individuals_chunk_"$OFFSET".json
           else
             python3 fca-dashboard/scripts/fetch_firm_individuals.py \
-              --offset $OFFSET \
-              --output fca-dashboard/data/individuals_chunk_${OFFSET}.json
+              --offset "$OFFSET" \
+              --output fca-dashboard/data/individuals_chunk_"$OFFSET".json
           fi
 
       - name: Upload this chunk
@@ -108,5 +108,5 @@ EOF
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals"
+          git diff --quiet --cached || git commit -m "chore(fca): merge firm individuals"
           git push origin HEAD:main
