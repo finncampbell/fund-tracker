@@ -33,19 +33,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      # 2) Clone data-branch and bootstrap all existing CSVs & JSONs
+      # 2) Clone data-branch and bootstrap existing CSVs & JSONs
       - name: Bootstrap existing data from data branch
         run: |
           git clone --branch data \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
             data-branch
           mkdir -p docs/assets/data
-          cp data-branch/docs/assets/data/master_companies.csv     docs/assets/data/  || true
-          cp data-branch/docs/assets/data/master_companies.xlsx    docs/assets/data/  || true
-          cp data-branch/docs/assets/data/relevant_companies.csv   docs/assets/data/  || true
-          cp data-branch/docs/assets/data/relevant_companies.xlsx  docs/assets/data/  || true
-          cp data-branch/docs/assets/data/directors.json           docs/assets/data/  || true
-          cp data-branch/docs/assets/data/no_directors.json        docs/assets/data/  || true
+          cp data-branch/docs/assets/data/master_companies.csv   docs/assets/data/  || true
+          cp data-branch/docs/assets/data/relevant_companies.csv docs/assets/data/  || true
+          cp data-branch/docs/assets/data/directors.json         docs/assets/data/  || true
+          cp data-branch/docs/assets/data/no_directors.json      docs/assets/data/  || true
 
       # 3) Setup Python & install deps
       - name: Set up Python 3.10
@@ -62,10 +60,8 @@ jobs:
       - name: Run fund_tracker
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SD="${{ github.event.inputs.start_date }}"
-            ED="${{ github.event.inputs.end_date }}"
-            [ -z "$SD" ] && SD="today"
-            [ -z "$ED" ] && ED="today"
+            SD="${{ github.event.inputs.start_date }}"; ED="${{ github.event.inputs.end_date }}"
+            [ -z "$SD" ] && SD="today"; [ -z "$ED" ] && ED="today"
             python fund_tracker.py --start_date "$SD" --end_date "$ED"
           else
             python fund_tracker.py
@@ -75,24 +71,41 @@ jobs:
       - name: Fetch directors for relevant companies
         run: python fetch_directors.py
 
-      # 6) Copy *all* updated data files back into data-branch
-      - name: Copy updated data files into data-branch
+      # 6) Copy & commit **only** master CSV back into data-branch
+      - name: Copy master CSV into data-branch
         run: |
           mkdir -p data-branch/docs/assets/data
-          cp docs/assets/data/master_companies.csv     data-branch/docs/assets/data/
-          cp docs/assets/data/master_companies.xlsx    data-branch/docs/assets/data/
-          cp docs/assets/data/relevant_companies.csv   data-branch/docs/assets/data/
-          cp docs/assets/data/relevant_companies.xlsx  data-branch/docs/assets/data/
-          cp docs/assets/data/directors.json           data-branch/docs/assets/data/
-          cp docs/assets/data/no_directors.json        data-branch/docs/assets/data/
-
-      # 7) Commit & push everything in one go
-      - name: Commit & push updated data files to data branch
+          cp docs/assets/data/master_companies.csv data-branch/docs/assets/data/
+      - name: Commit & push master CSV to data branch
         run: |
           cd data-branch
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/assets/data/
+          git add docs/assets/data/master_companies.csv
           git diff --cached --quiet || \
-            (git commit -m "chore(data): update data files [skip ci]" && \
+            (git commit -m "chore(data): update master CSV [skip ci]" && \
              git push origin data)
+
+      # 7) Check out main and mirror **relevant_companies.csv** into it
+      - name: Check out main branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+          ref: main
+          path: pages-branch
+
+      - name: Copy relevant CSV to Pages branch
+        run: |
+          mkdir -p pages-branch/docs/assets/data
+          cp docs/assets/data/relevant_companies.csv pages-branch/docs/assets/data/
+
+      - name: Commit & push relevant CSV to main
+        run: |
+          cd pages-branch
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/data/relevant_companies.csv
+          git diff --cached --quiet || \
+            (git commit -m "chore(pages): publish relevant_companies.csv [skip ci]" && \
+             git push origin main)
