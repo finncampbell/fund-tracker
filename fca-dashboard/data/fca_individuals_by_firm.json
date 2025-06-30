@@ -446,5 +446,131 @@
       "Status": "Regulatory approval no longer required",
       "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXZ00028"
     }
+  ],
+  "1002091": [
+    {
+      "IRN": "DAA01046",
+      "Name": "Douglas Alexander Armstrong",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DAA01046"
+    },
+    {
+      "IRN": "DAC01315",
+      "Name": "David Andrew Clark",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DAC01315"
+    },
+    {
+      "IRN": "DXM00996",
+      "Name": "Dickson Minto LLP",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM00996"
+    },
+    {
+      "IRN": "FXT00030",
+      "Name": "Fiona Thompson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXT00030"
+    },
+    {
+      "IRN": "DXC00111",
+      "Name": "Duncan Iain Christison",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXC00111"
+    },
+    {
+      "IRN": "JXS04195",
+      "Name": "James MacNaughtan Seedhouse",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXS04195"
+    },
+    {
+      "IRN": "AXC03478",
+      "Name": "Andrew Jamie Clark",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXC03478"
+    },
+    {
+      "IRN": "AXM05575",
+      "Name": "Andrew John Manson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM05575"
+    },
+    {
+      "IRN": "MXR00469",
+      "Name": "Michael Robertson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXR00469"
+    }
+  ],
+  "1002237": [
+    {
+      "IRN": "CJJ01042",
+      "Name": "Chris Jackson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJJ01042"
+    },
+    {
+      "IRN": "JXO01300",
+      "Name": "Jonathan O'Leary",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXO01300"
+    }
+  ],
+  "1002298": [
+    {
+      "IRN": "IXH00118",
+      "Name": "Ian Hogarth",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXH00118"
+    },
+    {
+      "IRN": "KXH01412",
+      "Name": "Khaled Helioui",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXH01412"
+    },
+    {
+      "IRN": "VAD00032",
+      "Name": "Victoria Adrienne Kennard",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VAD00032"
+    },
+    {
+      "IRN": "TXH00261",
+      "Name": "Taavet Hinrikus",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00261"
+    },
+    {
+      "IRN": "CXN07508",
+      "Name": "Carina Namih",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXN07508"
+    },
+    {
+      "IRN": "SXT00719",
+      "Name": "Sten Tamkivi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXT00719"
+    },
+    {
+      "IRN": "TXH00261",
+      "Name": "Taavet Hinrikus",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00261"
+    },
+    {
+      "IRN": "TXR00235",
+      "Name": "Tamsin Fiona Ashworth Reeves",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXR00235"
+    },
+    {
+      "IRN": "DJT01238",
+      "Name": "Daniel Joseph Charles Tarver",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJT01238"
+    }
   ]
 }
