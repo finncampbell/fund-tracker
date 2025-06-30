@@ -1,4 +1,3 @@
-# .github/workflows/fetch-directors.yml
 name: Fetch Directors
 
 permissions:
@@ -16,29 +15,32 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      # 1) Checkout main so we have requirements.txt & scripts
-      - name: Check out code (main)
+      # 1) Checkout main so we have relevant_companies.csv & scripts
+      - name: Check out repository (main)
         uses: actions/checkout@v3
         with:
+          ref: main
           fetch-depth: 0
           persist-credentials: true
 
-      # 2) Clone data branch separately
+      # 2) Clone data branch separately (for directors JSON)
       - name: Clone data branch
         run: |
           git clone --branch data \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} \
             data-branch
 
-      # 3) Seed existing CSV/JSON into docs/assets/data/
+      # 3) Bootstrap existing data files
       - name: Bootstrap existing data files
         run: |
           mkdir -p docs/assets/data
-          cp data-branch/docs/assets/data/relevant_companies.csv docs/assets/data/
-          cp data-branch/docs/assets/data/directors.json          docs/assets/data/  || true
-          cp data-branch/docs/assets/data/no_directors.json       docs/assets/data/  || true
+          # Copy the filtered CSV from main checkout
+          cp docs/assets/data/relevant_companies.csv docs/assets/data/
+          # Pull the JSONs from data-branch
+          cp data-branch/docs/assets/data/directors.json    docs/assets/data/  || true
+          cp data-branch/docs/assets/data/no_directors.json docs/assets/data/  || true
 
-      # 4) Restore rate limiter cache
+      # 4) Restore rate_limiter.db cache
       - name: Restore rate_limiter.db cache
         uses: actions/cache@v3
         with:
@@ -59,24 +61,24 @@ jobs:
       - name: Fetch directors for relevant companies
         run: python fetch_directors.py
 
-      # 7) Save rate limiter state
+      # 7) Save rate_limiter.db to cache
       - name: Save rate_limiter.db to cache
         uses: actions/cache@v3
         with:
           path: rate_limiter.db
           key: rate-limiter-db
 
-      # 8) Copy updated JSONs back into the data-branch clone
+      # 8) Copy updated JSONs back into data-branch clone
       - name: Copy updated JSONs into data-branch
         run: |
           cp docs/assets/data/directors.json    data-branch/docs/assets/data/
           cp docs/assets/data/no_directors.json data-branch/docs/assets/data/
 
-      # 9) Commit & push on data branch
+      # 9) Commit & push updated directors
       - name: Commit & push updated directors
         run: |
           cd data-branch
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/assets/data/directors.json docs/assets/data/no_directors.json
           if git diff --cached --quiet; then
