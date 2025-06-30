@@ -21,25 +21,28 @@ jobs:
     outputs:
       chunk_list: ${{ steps.set-chunks.outputs.chunk_list }}
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - id: set-chunks
         name: Compute chunk start indices
         run: |
+          # count total FRNs
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
+          # number of parallel chunks, from dispatch input
           CHUNKS=${{ github.event.inputs.chunks }}
 
           # split into N equal-sized windows
           python3 - << 'EOF' > indices.json
-            import math, json
-            total = int("$TOTAL")
-            n     = int("$CHUNKS")
-            size  = math.ceil(total / n)
-            indices = list(range(0, total, size))
-            print(json.dumps(indices))
-          EOF
+import math, json
+total = int("$TOTAL")
+n     = int("$CHUNKS")
+size  = math.ceil(total / n)
+indices = list(range(0, total, size))
+print(json.dumps(indices))
+EOF
 
+          # expose to subsequent jobs
           echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
   fetch:
@@ -49,64 +52,54 @@ jobs:
       matrix:
         start: ${{ fromJson(needs.split.outputs.chunk_list) }}
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Fetch individuals (offset ${{ matrix.start }})
-        env:
-          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
-          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+      - name: Determine limit parameter
+        id: calc-limit
         run: |
-          OFFSET=${{ matrix.start }}
-          mkdir -p fca-dashboard/data
-
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            python3 fca-dashboard/scripts/fetch_firm_individuals.py \
-              --offset "$OFFSET" \
-              --limit  "${{ github.event.inputs.limit }}" \
-              --output fca-dashboard/data/individuals_chunk_"$OFFSET".json
+            echo "limit=--limit ${{ github.event.inputs.limit }}" >> $GITHUB_OUTPUT
           else
-            python3 fca-dashboard/scripts/fetch_firm_individuals.py \
-              --offset "$OFFSET" \
-              --output fca-dashboard/data/individuals_chunk_"$OFFSET".json
+            echo "limit=" >> $GITHUB_OUTPUT
           fi
 
-      - name: Upload this chunk
+      - name: Fetch individuals chunk
+        run: |
+          OFFSET=${{ matrix.start }}
+          python3 fca-dashboard/scripts/fetch_firm_individuals.py --offset $OFFSET ${{ steps.calc-limit.outputs.limit }}
+
+      - name: Upload chunk artifact
         uses: actions/upload-artifact@v4
         with:
           name: individuals-chunk-${{ matrix.start }}
-          path: fca-dashboard/data/individuals_chunk_${{ matrix.start }}.json
+          path: fca-dashboard/data/fca_individuals_by_firm.json
 
   merge:
     needs: fetch
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Download chunk artifacts
+      - name: Download all chunk artifacts
         uses: actions/download-artifact@v4
         with:
           path: chunks
 
-      - name: Merge all chunks
+      - name: Merge chunk files
         run: |
-          python3 fca-dashboard/scripts/merge_fca_individuals.py \
-            chunks \
-            fca-dashboard/data/fca_individuals_by_firm.json
+          python3 fca-dashboard/scripts/merge_fca_individuals.py chunks fca-dashboard/data/fca_individuals_by_firm.json
 
-      - name: Commit & push merged JSON
+      - name: Commit & push merged data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          git diff --quiet --cached || git commit -m "chore(fca): merge firm individuals"
+          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals chunks"
           git push origin HEAD:main
