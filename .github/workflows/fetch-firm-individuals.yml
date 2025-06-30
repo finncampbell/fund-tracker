@@ -1,47 +1,60 @@
+# .github/workflows/fetch-firm-individuals.yml
 name: Fetch FCA Firm Individuals (Ad-hoc)
-
-permissions:
-  contents: write
 
 on:
   workflow_dispatch:
     inputs:
-      chunks:
-        description: 'Number of parallel chunks to split into'
-        required: false
-        default: '4'
       limit:
-        description: 'How many FRNs per chunk (blank = full list / auto-calculated)'
+        description: 'How many FRNs to fetch (blank = all)'
         required: false
         default: ''
+      chunks:
+        description: 'Into how many parallel chunks to split (default: 4)'
+        required: false
+        default: '4'
 
 jobs:
   split:
     runs-on: ubuntu-latest
     outputs:
-      chunk-list: ${{ steps.split.outputs.chunk-list }}
+      chunk-list: ${{ steps.calculate.outputs.chunk-list }}
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
 
-      - name: Read total FRNs and build chunk list
-        id: split
+      - name: Calculate offsets
+        id: calculate
         run: |
-          total=$(jq '. | length' fca-dashboard/data/all_frns_with_names.json)
-          chunks=${{ github.event.inputs.chunks }}
-          # if no limit provided, auto-calc limit per chunk
-          if [ -z "${{ github.event.inputs.limit }}" ]; then
-            limit=$(( (total + chunks - 1) / chunks ))
+          # Load full length of FRN list
+          full=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
+          echo "Full FRN count: $full"
+
+          # Apply optional limit
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            total=${{ github.event.inputs.limit }}
           else
-            limit=${{ github.event.inputs.limit }}
+            total=$full
           fi
-          # build JSON array of chunk offsets
+          echo "Using total = $total"
+
+          # Determine number of chunks
+          chunks=${{ github.event.inputs.chunks }}
+          echo "Splitting into $chunks chunks"
+
+          # Compute size of each slice (ceil division)
+          step=$(( (total + chunks - 1) / chunks ))
+          echo "Chunk size (step) = $step"
+
+          # Build offset array
           offsets=()
-          for ((i=0; i<total; i+=limit)); do
+          for ((i=0;i<total;i+=step)); do
             offsets+=($i)
           done
-          echo "Built offsets: ${offsets[*]}"
-          # emit as JSON array for matrix
-          echo "::set-output name=chunk-list::[$(printf '%s\n' "${offsets[@]}" | paste -sd, -)]"
+
+          # Emit JSON array of offsets
+          json=$(printf '%s\n' "${offsets[@]}" | jq -R . | jq -s .)
+          echo "::set-output name=chunk-list::$json"
+          echo "Chunk list: $json"
 
   fetch:
     needs: split
@@ -50,7 +63,8 @@ jobs:
       matrix:
         offset: ${{ fromJson(needs.split.outputs.chunk-list) }}
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -60,33 +74,43 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individuals chunk ${{ matrix.offset }}
+      - name: Fetch individuals chunk
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          mkdir -p fca-dashboard/data/chunks
-          python fca-dashboard/scripts/fetch_firm_individuals.py \
-            --offset ${{ matrix.offset }} \
-            --limit ${limit:-} \
-          > fca-dashboard/data/chunks/part_${{ matrix.offset }}.json
+          args="--offset ${{ matrix.offset }}"
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            args="$args --limit ${{ github.event.inputs.limit }}"
+          fi
+          python fca-dashboard/scripts/fetch_firm_individuals.py $args
+
+      - name: Archive chunk JSON
+        uses: actions/upload-artifact@v3
+        with:
+          name: individuals-chunk-${{ matrix.offset }}
+          path: fca-dashboard/data/individuals_chunk_${{ matrix.offset }}.json
 
   merge:
     needs: fetch
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
 
-      - name: Merge chunked results
+      - name: Download all chunk artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: chunks/
+
+      - name: Merge chunks
         run: |
-          python fca-dashboard/scripts/merge_fca_individuals.py \
-            fca-dashboard/data/chunks \
-            fca-dashboard/data/fca_individuals_by_firm.json
+          python fca-dashboard/scripts/merge_fca_individuals.py chunks/ fca-dashboard/data/fca_individuals_by_firm.json
 
-      - name: Commit & push merged file
+      - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals"
+          git diff --cached --quiet || git commit -m "chore(fca): update firm individuals"
           git push origin HEAD:main
