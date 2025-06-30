@@ -19,13 +19,13 @@ jobs:
   split:
     runs-on: ubuntu-latest
     outputs:
-      chunk-list: ${{ steps.set-chunks.outputs.chunk-list }}
+      chunk_list: ${{ steps.set-chunks.outputs.chunk_list }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Compute chunk indices
-        id: set-chunks
+      - id: set-chunks
+        name: Compute chunk start indices
         run: |
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
           CHUNKS=${{ github.event.inputs.chunks }}
@@ -36,14 +36,14 @@ n = int("$CHUNKS")
 size = math.ceil(total / n)
 print(json.dumps(list(range(0, total, size))))
 EOF
-          echo "chunk-list=$(cat indices.json)" >> $GITHUB_OUTPUT
+          echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
   fetch:
     needs: split
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        start: ${{ fromJson(needs.split.outputs['chunk-list']) }}
+        start: ${{ fromJson(needs.split.outputs.chunk_list) }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
