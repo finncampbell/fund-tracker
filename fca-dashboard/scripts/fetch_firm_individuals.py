@@ -5,6 +5,7 @@ scripts/fetch_firm_individuals.py
 Fetch the list of individuals for each firm (FRN) via the paginated /Firm/{frn}/Individuals endpoint.
 Updates fca-dashboard/data/fca_individuals_by_firm.json by merging new entries with existing ones.
 """
+
 import os
 import json
 import argparse
@@ -39,16 +40,36 @@ def fetch_json(url: str) -> dict:
     resp.raise_for_status()
     return resp.json()
 
-def fetch_paginated(url: str) -> list:
-    """Follow pagination via ResultInfo.Next, collecting all Data entries."""
+def fetch_paginated(url: str, max_pages: int = 100) -> list:
+    """
+    Follow pagination via ResultInfo.Next, collecting all Data entries.
+    Stops if:
+      - ResultInfo.Next is null
+      - we detect the same URL twice
+      - we've looped max_pages times
+    """
     items = []
     next_url = url
+    seen_urls = set()
+    pages = 0
+
     while next_url:
+        if pages >= max_pages:
+            print(f"⚠️  Reached max_pages ({max_pages}) for URL {url}; stopping pagination.")
+            break
+        if next_url in seen_urls:
+            print(f"⚠️  Detected repeated URL in pagination: {next_url}; stopping.")
+            break
+
+        seen_urls.add(next_url)
         pkg = fetch_json(next_url)
         data = pkg.get('Data') or []
         items.extend(data)
+
         ri = pkg.get('ResultInfo', {})
         next_url = ri.get('Next')
+        pages += 1
+
     return items
 
 def main():
