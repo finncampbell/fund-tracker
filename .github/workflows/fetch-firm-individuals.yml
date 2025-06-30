@@ -29,13 +29,17 @@ jobs:
         run: |
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
           CHUNKS=${{ github.event.inputs.chunks }}
-          python - <<EOF > indices.json
+
+          # split into N equal‐sized windows
+          python3 - << 'EOF' > indices.json
 import math, json
-total = int($TOTAL)
+total = int("$TOTAL")
 n = int("$CHUNKS")
 size = math.ceil(total / n)
-print(json.dumps(list(range(0, total, size))))
+indices = list(range(0, total, size))
+print(json.dumps(indices))
 EOF
+
           echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
   fetch:
@@ -63,13 +67,14 @@ EOF
         run: |
           OFFSET=${{ matrix.start }}
           mkdir -p fca-dashboard/data
+
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            python fca-dashboard/scripts/fetch_firm_individuals.py \
+            python3 fca-dashboard/scripts/fetch_firm_individuals.py \
               --offset $OFFSET \
               --limit ${{ github.event.inputs.limit }} \
               --output fca-dashboard/data/individuals_chunk_${OFFSET}.json
           else
-            python fca-dashboard/scripts/fetch_firm_individuals.py \
+            python3 fca-dashboard/scripts/fetch_firm_individuals.py \
               --offset $OFFSET \
               --output fca-dashboard/data/individuals_chunk_${OFFSET}.json
           fi
@@ -94,7 +99,7 @@ EOF
 
       - name: Merge all chunks
         run: |
-          python fca-dashboard/scripts/merge_fca_individuals.py \
+          python3 fca-dashboard/scripts/merge_fca_individuals.py \
             chunks \
             fca-dashboard/data/fca_individuals_by_firm.json
 
