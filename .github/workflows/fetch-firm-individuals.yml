@@ -28,23 +28,15 @@ jobs:
       - name: Compute chunk start indices
         id: set-chunks
         run: |
-          # total FRNs in your JSON
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
-
-          # how many chunks?
           CHUNKS=${{ github.event.inputs.chunks }}
-
-          # compute zero-based start indices evenly
           python - <<EOF > indices.json
 import math, json
 total = int($TOTAL)
 n = int("$CHUNKS")
 size = math.ceil(total/n)
-starts = list(range(0, total, size))
-print(json.dumps(starts))
+print(json.dumps(list(range(0, total, size))))
 EOF
-
-          # emit for use in the matrix
           echo "chunk-list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
   fetch:
@@ -52,8 +44,7 @@ EOF
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # JSON-decode the output from 'split'
-        start: ${{ fromJson(needs.split.outputs.chunk-list) }}
+        start: ${{ fromJson(needs.split.outputs['chunk-list']) }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -66,13 +57,13 @@ EOF
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individuals (chunk starting at ${{ matrix.start }})
+      - name: Fetch individuals (offset ${{ matrix.start }})
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
           OFFSET=${{ matrix.start }}
-          # call your script, writing to a per-chunk JSON
+          mkdir -p fca-dashboard/data
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             python fca-dashboard/scripts/fetch_firm_individuals.py \
               --offset $OFFSET \
@@ -84,7 +75,7 @@ EOF
               --output fca-dashboard/data/individuals_chunk_${OFFSET}.json
           fi
 
-      - name: Upload this chunk as an artifact
+      - name: Upload this chunk
         uses: actions/upload-artifact@v4
         with:
           name: individuals-chunk-${{ matrix.start }}
@@ -97,7 +88,7 @@ EOF
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Download all chunk artifacts
+      - name: Download chunk artifacts
         uses: actions/download-artifact@v4
         with:
           path: chunks
@@ -105,8 +96,7 @@ EOF
       - name: Merge all chunks
         run: |
           python fca-dashboard/scripts/merge_fca_individuals.py \
-            chunks \
-            fca-dashboard/data/fca_individuals_by_firm.json
+            chunks fca-dashboard/data/fca_individuals_by_firm.json
 
       - name: Commit & push merged JSON
         run: |
