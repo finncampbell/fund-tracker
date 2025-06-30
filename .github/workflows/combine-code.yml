@@ -1,35 +1,51 @@
-name: Combine All Code
+name: Generate Repo Tree
 
+# Trigger manually or once per day at midnight UTC
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (full history & all branches)
+      - name: Checkout full history
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python
+      # ▶️ Cache pip downloads to speed up installs
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-
-      - name: Install dependencies
         run: |
           pip install --upgrade pip wheel
           pip install --only-binary=:all: -r requirements.txt
 
-      - name: Run combine script
+      - name: Ensure all remotes are fetched
+        run: git fetch --all --prune
+
+      # ▶️ Fail fast on any error in this block
+      - name: Run repo-tree script
+        shell: bash -e {0}
         run: |
           chmod +x scripts/combine_code.py
-          ./scripts/combine_code.py -o combined_code.txt
+          ./scripts/combine_code.py -o repo_tree.txt
 
-      - name: Upload combined file
+      - name: Upload repo-tree artifact
         uses: actions/upload-artifact@v4
         with:
-          name: all-code
-          path: combined_code.txt
+          # ▶️ include run number for uniqueness
+          name: repo-tree-${{ github.run_number }}
+          path: repo_tree.txt
+          # ▶️ keep artifacts only a week
+          retention-days: 7
