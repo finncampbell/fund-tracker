@@ -34,8 +34,7 @@ jobs:
       - name: Bootstrap existing data files
         run: |
           mkdir -p docs/assets/data
-          # Copy the filtered CSV from main checkout
-          cp docs/assets/data/relevant_companies.csv docs/assets/data/
+          # CSV is already in docs/assets/data from the main checkout, so no need to copy it
           # Pull the JSONs from data-branch
           cp data-branch/docs/assets/data/directors.json    docs/assets/data/  || true
           cp data-branch/docs/assets/data/no_directors.json docs/assets/data/  || true
