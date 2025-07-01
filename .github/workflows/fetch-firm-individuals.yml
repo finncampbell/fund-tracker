@@ -7,14 +7,14 @@ name: Fetch FCA Firm Individuals (Ad-hoc)
 permissions:
   contents: write
 
-# Manual trigger only
+# Manual trigger only, with a default of 5 parallel chunks
 on:
   workflow_dispatch:
     inputs:
       chunks:
         description: 'Number of parallel chunks to split the FRN list into'
         required: true
-        default: '4'
+        default: '5'
       limit:
         description: 'Max FRNs per chunk (blank = full list)'
         required: false
@@ -24,32 +24,41 @@ jobs:
   # -----------------------------------------------------------------------------
   # JOB 1: split
   #   - Partition the master FRN list into N start indices
+  #   - Emit both the list and the actual chunk count for downstream use
   # -----------------------------------------------------------------------------
   split:
     runs-on: ubuntu-latest
     outputs:
       chunk_list: ${{ steps.set-chunks.outputs.chunk_list }}
+      chunk_count: ${{ steps.set-chunks.outputs.chunk_count }}
 
     steps:
-      - name: Check out repository
+      - name: Check out repository    # Ensures FRN list is available
         uses: actions/checkout@v3
 
       - id: set-chunks
         name: Compute chunk start indices
         run: |
-          # Count total FRNs
+          # 1. Count total FRNs
           TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
-          # Desired number of chunks
+
+          # 2. Desired number of chunks
           CHUNKS=${{ github.event.inputs.chunks }}
-          # Build JSON array of start indices in one Python line
+
+          # 3. Compute start indices evenly spaced
           python3 -c "import math, json; total=int('$TOTAL'); n=int('$CHUNKS'); size=math.ceil(total/n); print(json.dumps(list(range(0,total,size))))" \
             > indices.json
-          # Expose for matrix
+
+          # 4. Expose start indices for the fetch matrix
           echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
+
+          # 5. Expose how many chunks we actually created
+          echo "chunk_count=$(jq 'length' indices.json)" >> $GITHUB_OUTPUT
 
   # -----------------------------------------------------------------------------
   # JOB 2: fetch
-  #   - Parallel matrix: each runner fetches one slice via our rate-limited script
+  #   - Parallel workers: each worker uses its offset to fetch a slice of FRNs
+  #   - Throttles API calls to floor(50/chunk_count) per 10 seconds per worker
   # -----------------------------------------------------------------------------
   fetch:
     needs: split
@@ -62,27 +71,39 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Fetch individuals chunk
+      - name: Fetch individuals chunk (throttled)
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          # This worker’s offset
+          # 1. Determine this worker’s slice offset and the total number of chunks
           OFFSET=${{ matrix.start }}
-          # Pass --limit if supplied
+          COUNT=${{ needs.split.outputs.chunk_count }}
+
+          # 2. Compute per-worker rate limits: floor(50 calls / COUNT) per 10s
+          RL_MAX_CALLS=$((50 / COUNT))
+          RL_WINDOW_S=10
+          echo "🔢 Rate limit per worker: $RL_MAX_CALLS calls per $RL_WINDOW_S seconds"
+
+          # 3. Export for the Python RateLimiter in fetch_firm_individuals.py
+          export RL_MAX_CALLS RL_WINDOW_S
+
+          # 4. Pass through --limit for quick testing, if provided
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             LIMIT="--limit ${{ github.event.inputs.limit }}"
           else
             LIMIT=""
           fi
-          # Prepare output folder
+
+          # 5. Prepare output directory for this chunk
           mkdir -p "chunks/individuals-chunk-${OFFSET}"
-          # Fetch via Python script (handles pagination + rate limiting)
+
+          # 6. Invoke the fetch script (handles pagination & rate limiting)
           python3 fca-dashboard/scripts/fetch_firm_individuals.py \
             --offset "$OFFSET" $LIMIT \
             --output "chunks/individuals-chunk-${OFFSET}/fca_individuals_by_firm.json"
 
-      - name: Upload chunk artifact
+      - name: Upload chunk artifact    # Persist partial results for merging
         uses: actions/upload-artifact@v4
         with:
           name: individuals-chunk-${{ matrix.start }}
@@ -90,7 +111,8 @@ jobs:
 
   # -----------------------------------------------------------------------------
   # JOB 3: merge
-  #   - Merge all chunk artifacts into the single UI JSON under docs/
+  #   - Combine all chunk artifacts into the single UI JSON under docs/
+  #   - Commit only if the docs JSON has changed
   # -----------------------------------------------------------------------------
   merge:
     needs: fetch
@@ -105,11 +127,9 @@ jobs:
         with:
           path: chunks
 
-      - name: Merge into UI data folder
+      - name: Merge into UI data folder    # Write directly into docs for Pages
         run: |
-          # Ensure the docs data folder exists
           mkdir -p docs/fca-dashboard/data
-          # Run merge script, targeting the docs path
           python3 fca-dashboard/scripts/merge_fca_individuals.py \
             chunks docs/fca-dashboard/data/fca_individuals_by_firm.json
 
@@ -119,12 +139,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
 
-          # Stage the single JSON file in docs/
+          # Stage the merged JSON in docs/
           git add docs/fca-dashboard/data/fca_individuals_by_firm.json
 
-          # Commit only if there are staged changes vs. HEAD
+          # Commit if there are staged changes vs. HEAD
           git diff --cached --quiet || \
             git commit -m "chore(fca): merge firm individuals into docs"
 
-          # Push back to main
+          # Push updates back to main
           git push origin HEAD:main
