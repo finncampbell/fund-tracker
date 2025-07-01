@@ -1,37 +1,28 @@
+#!/usr/bin/env python3
+import os
 import time
+from collections import deque
 
 class RateLimiter:
-    """
-    Simple sliding-window rate limiter: allows up to max_requests per
-    interval (in seconds).  On overflow, sleeps just long enough to
-    stay within the limit.
-    """
-    def __init__(self, max_requests=50, interval=10):
-        # e.g. 50 calls per 10 seconds
-        self.max_requests = max_requests
-        self.interval     = interval
-        self.request_times = []  # timestamps of recent requests
+    def __init__(self, max_calls=50, window_s=10):
+        # Allow per-worker override via env-vars RL_MAX_CALLS and RL_WINDOW_S
+        self.max_calls = int(os.getenv('RL_MAX_CALLS', max_calls))
+        self.window_s  = int(os.getenv('RL_WINDOW_S',  window_s))
+        self.calls     = deque()
 
     def wait(self):
-        """
-        Before each new request, purge timestamps older than interval,
-        then if we’ve already made max_requests in that window, sleep
-        until the window moves forward.
-        """
         now = time.time()
-
-        # Keep only those within the last `interval` seconds
-        self.request_times = [
-            t for t in self.request_times
-            if now - t < self.interval
-        ]
-
-        # If we’re at capacity, sleep until the oldest timestamp falls out
-        if len(self.request_times) >= self.max_requests:
-            sleep_for = self.interval - (now - self.request_times[0])
-            if sleep_for > 0:
-                print(f"Rate limit hit — sleeping {sleep_for:.2f}s")
-                time.sleep(sleep_for)
-
-        # Record our new request timestamp
-        self.request_times.append(time.time())
+        # 1. Drop timestamps older than window_s
+        while self.calls and self.calls[0] <= now - self.window_s:
+            self.calls.popleft()
+        # 2. If we've hit the cap, sleep just enough to free one slot
+        if len(self.calls) >= self.max_calls:
+            sleep_time = self.window_s - (now - self.calls[0])
+            if sleep_time > 0:
+                time.sleep(sleep_time)
+                now = time.time()
+                # purge again after waking
+                while self.calls and self.calls[0] <= now - self.window_s:
+                    self.calls.popleft()
+        # 3. Record this call
+        self.calls.append(now)
