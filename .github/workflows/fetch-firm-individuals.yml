@@ -34,13 +34,13 @@ jobs:
 
           # split into N equal-sized windows
           python3 - << 'EOF' > indices.json
-            import math, json
-            total = int("$TOTAL")
-            n     = int("$CHUNKS")
-            size  = math.ceil(total / n)
-            indices = list(range(0, total, size))
-            print(json.dumps(indices))
-          EOF
+import math, json
+total = int("$TOTAL")
+n     = int("$CHUNKS")
+size  = math.ceil(total / n)
+indices = list(range(0, total, size))
+print(json.dumps(indices))
+EOF
 
           # expose to subsequent jobs
           echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
