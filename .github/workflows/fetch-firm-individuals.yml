@@ -125,9 +125,15 @@ jobs:
 
       - name: Commit & push merged result
         run: |
+          # 1. Configure the bot’s identity
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
+
+          # 2. Stage the merged JSON (new, changed, or deleted)
           git add fca-dashboard/data/fca_individuals_by_firm.json
-          # Only commit if there are changes
-          git diff --quiet || git commit -m "chore(fca): merge firm individuals"
+
+          # 3. Commit if there are staged changes vs. HEAD
+          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals"
+
+          # 4. Push back to main
           git push origin HEAD:main
