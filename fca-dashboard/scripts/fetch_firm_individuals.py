@@ -1,161 +1,123 @@
-# ============================================================================= 
-# Workflow: Fetch FCA Firm Individuals (Ad-hoc, chunked + throttled)
-# =============================================================================
-name: Fetch FCA Firm Individuals (Ad-hoc)
+#!/usr/bin/env python3
+"""
+scripts/fetch_firm_individuals.py
 
-# Grant write so we can commit back to main
-permissions:
-  contents: write
+Fetch paginated “Individuals” entries for a slice of FRNs, supporting:
+  • --offset: start index into the master FRN list
+  • --limit:  max number of FRNs to process (omit for full slice)
+  • --output: path to write this chunk’s JSON
 
-# Manual trigger only, with default of 5 parallel chunks
-on:
-  workflow_dispatch:
-    inputs:
-      chunks:
-        description: 'Number of parallel chunks to split the FRN list into'
-        required: true
-        default: '5'
-      limit:
-        description: 'Max FRNs per chunk (blank = full slice)'
-        required: false
-        default: ''
+Rate limiting uses RL_MAX_CALLS / RL_WINDOW_S from environment (defaults to 50/10).
+"""
 
-jobs:
-  # -----------------------------------------------------------------------------
-  # JOB 1: split
-  #   - Partition the master FRN list into start offsets
-  #   - Emit both `chunk_list` and `chunk_count` for downstream jobs
-  # -----------------------------------------------------------------------------
-  split:
-    runs-on: ubuntu-latest
-    outputs:
-      chunk_list: ${{ steps.set-chunks.outputs.chunk_list }}
-      chunk_count: ${{ steps.set-chunks.outputs.chunk_count }}
+import os
+import json
+import argparse
+import requests
+from rate_limiter import RateLimiter
 
-    steps:
-      - name: Check out repository    # bring in all_frns_with_names.json
-        uses: actions/checkout@v3
+# ─── Paths & Config ──────────────────────────────────────────────────────────
+SCRIPT_DIR    = os.path.dirname(__file__)
+DATA_DIR      = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
+FRN_LIST_FILE = os.path.join(DATA_DIR, 'all_frns_with_names.json')
 
-      - id: set-chunks
-        name: Compute chunk start indices
-        run: |
-          # 1. Count total FRNs
-          TOTAL=$(jq 'length' fca-dashboard/data/all_frns_with_names.json)
+# ─── FCA API setup ────────────────────────────────────────────────────────────
+API_EMAIL = os.getenv('FCA_API_EMAIL')
+API_KEY   = os.getenv('FCA_API_KEY')
+if not API_EMAIL or not API_KEY:
+    raise EnvironmentError('FCA_API_EMAIL and FCA_API_KEY must be set')
 
-          # 2. Desired number of chunks
-          CHUNKS=${{ github.event.inputs.chunks }}
+BASE_URL = 'https://register.fca.org.uk/services/V0.1'
+HEADERS  = {
+    'Accept':       'application/json',
+    'X-AUTH-EMAIL': API_EMAIL,
+    'X-AUTH-KEY':   API_KEY,
+}
 
-          # 3. Compute spaced offsets via Python
-          python3 -c "import math,json; total=int('$TOTAL'); n=int('$CHUNKS'); size=math.ceil(total/n); print(json.dumps(list(range(0,total,size))))" \
-            > indices.json
+# Initialize rate limiter (reads RL_MAX_CALLS and RL_WINDOW_S)
+limiter = RateLimiter()
 
-          # 4. Expose offsets for the fetch matrix
-          echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
 
-          # 5. Expose actual chunk count for rate-limit calc
-          echo "chunk_count=$(jq 'length' indices.json)" >> $GITHUB_OUTPUT
+def fetch_json(url: str) -> dict:
+    """
+    Perform a GET to the given URL with rate limiting.
+    Returns the parsed JSON payload.
+    """
+    limiter.wait()
+    resp = requests.get(url, headers=HEADERS, timeout=10)
+    resp.raise_for_status()
+    return resp.json()
 
-  # -----------------------------------------------------------------------------
-  # JOB 2: fetch
-  #   - Parallel matrix: each worker fetches one slice of FRNs
-  #   - Throttles API calls to floor(50/COUNT) per 10s per runner
-  # -----------------------------------------------------------------------------
-  fetch:
-    needs: split
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        start: ${{ fromJson(needs.split.outputs.chunk_list) }}
 
-    steps:
-      - name: Check out repository          # get code & data
-        uses: actions/checkout@v3
+def main():
+    # ─── CLI Arguments ────────────────────────────────────────────────────────
+    parser = argparse.ArgumentParser(
+        description='Fetch paginated individual entries for a slice of FRNs'
+    )
+    parser.add_argument(
+        '--offset', type=int, required=True,
+        help='Start index into the master FRN list'
+    )
+    parser.add_argument(
+        '--limit', type=int, required=False, default=None,
+        help='Max number of FRNs to process (omit for full slice)'
+    )
+    parser.add_argument(
+        '--output', type=str, required=True,
+        help='File path to write this chunk’s JSON'
+    )
+    args = parser.parse_args()
 
-      - name: Set up Python                # ensure python3 + pip
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    # ─── Load master FRN list ──────────────────────────────────────────────────
+    if not os.path.exists(FRN_LIST_FILE):
+        raise FileNotFoundError(f"Missing {FRN_LIST_FILE}: run update_frn_list.py first")
+    with open(FRN_LIST_FILE, 'r', encoding='utf-8') as f:
+        frns = [entry['frn'] for entry in json.load(f)]
 
-      - name: Install dependencies         # install requests for API
-        run: pip install requests
+    # ─── Compute this worker’s slice ──────────────────────────────────────────
+    start = args.offset
+    end   = start + args.limit if args.limit is not None else None
+    slice_frns = frns[start:end]
+    print(f"🔍 Processing FRNs[{start}:{'' if end is None else end}] → {len(slice_frns)} firms")
 
-      - name: Fetch individuals chunk (throttled)
-        env:
-          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
-          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
-        run: |
-          # 1. Compute this worker’s offset & total chunks
-          OFFSET=${{ matrix.start }}
-          COUNT=${{ needs.split.outputs.chunk_count }}
+    os.makedirs(os.path.dirname(args.output), exist_ok=True)
+    merged = {}
 
-          # 2. Compute per-worker rate limits
-          RL_MAX_CALLS=$((50 / COUNT))
-          RL_WINDOW_S=10
-          echo "🔢 Rate limit per worker: $RL_MAX_CALLS calls per $RL_WINDOW_S seconds"
-          export RL_MAX_CALLS RL_WINDOW_S
+    # ─── Fetch & normalize per FRN ───────────────────────────────────────────
+    for frn in slice_frns:
+        url = f"{BASE_URL}/Firm/{frn}/Individuals"
+        all_recs = []
 
-          # 3. Pass test limit if provided
-          if [ -n "${{ github.event.inputs.limit }}" ]; then
-            LIMIT="--limit ${{ github.event.inputs.limit }}"
-          else
-            LIMIT=""
-          fi
+        # Page through results
+        while url:
+            pkg = fetch_json(url)
 
-          # 4. Prepare output directory
-          OUT_DIR="chunks/individuals-chunk-${OFFSET}"
-          mkdir -p "$OUT_DIR"
+            # ─── Handle possible null Data blocks ───────────────────────────
+            data_list = pkg.get('Data') or []
+            all_recs.extend(data_list)
 
-          # 5. Run the chunked fetch script
-          python3 fca-dashboard/scripts/fetch_firm_individuals.py \
-            --offset "$OFFSET" $LIMIT \
-            --output "$OUT_DIR/fca_individuals_by_firm.json"
+            # ─── Guard against null ResultInfo before .get('Next') ─────────
+            ri = pkg.get('ResultInfo') or {}
+            url = ri.get('Next')
 
-      - name: Upload chunk artifact         # save partial JSON
-        uses: actions/upload-artifact@v4
-        with:
-          name: individuals-chunk-${{ matrix.start }}
-          path: chunks/individuals-chunk-${{ matrix.start }}/fca_individuals_by_firm.json
+        # Normalize each record to essential fields
+        normalized = [
+            {
+                'IRN':    rec.get('IRN'),
+                'Name':   rec.get('Name'),
+                'Status': rec.get('Status'),
+                'URL':    rec.get('URL')
+            }
+            for rec in all_recs
+        ]
+        merged[str(frn)] = normalized
+        print(f"✅ FRN {frn}: fetched {len(normalized)} individuals")
 
-  # -----------------------------------------------------------------------------
-  # JOB 3: merge
-  #   - Download all chunk artifacts
-  #   - Merge into one UI JSON under docs/, then commit & rebase before pushing
-  # -----------------------------------------------------------------------------
-  merge:
-    needs: fetch
-    runs-on: ubuntu-latest
+    # ─── Write this chunk’s output ────────────────────────────────────────────
+    with open(args.output, 'w', encoding='utf-8') as f:
+        json.dump(merged, f, indent=2, ensure_ascii=False)
+    print(f"✅ Wrote {len(merged)} FRN entries to {args.output}")
 
-    steps:
-      - name: Check out repository (full history)
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
-      - name: Download chunk artifacts       # pull all chunk outputs
-        uses: actions/download-artifact@v4
-        with:
-          path: chunks
-
-      - name: Merge into UI data folder      # combine into docs JSON
-        run: |
-          mkdir -p docs/fca-dashboard/data
-          python3 fca-dashboard/scripts/merge_fca_individuals.py \
-            chunks docs/fca-dashboard/data/fca_individuals_by_firm.json
-
-      - name: Commit & push merged result    # commit and rebase to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
-
-          # Stage the updated JSON
-          git add docs/fca-dashboard/data/fca_individuals_by_firm.json
-
-          # Commit if there are changes
-          git diff --cached --quiet || git commit -m "chore(fca): merge firm individuals into docs"
-
-          # Rebase onto latest remote main to allow fast-forward push
-          git pull --rebase origin main
-
-          # Push commits (merge commit + any rebased)
-          git push origin HEAD:main
+if __name__ == '__main__':
+    main()
