@@ -2,108 +2,111 @@
 """
 scripts/fetch_firm_individuals.py
 
-Fetch the list of individuals for each firm (by FRN) via the paginated
-/Firm/{frn}/Individuals endpoint, but only for a slice of the FRN list
-(defined by --offset and --limit).  Writes one chunk’s results to --output.
+Fetch paginated “Individuals” for each FCA firm (by FRN), supporting chunked
+slices via --offset/--limit, with built-in rate limiting.
 """
 
 import os
 import json
 import argparse
 import requests
-
-# ─── Import & initialize our rate limiter (enforces FCA’s 50 calls / 10s) ───
 from rate_limiter import RateLimiter
-limiter = RateLimiter()
 
-# ─── Paths & Constants ───────────────────────────────────────────────────────
-SCRIPT_DIR = os.path.dirname(__file__)
-DATA_DIR   = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
-FRNS_JSON  = os.path.join(DATA_DIR, 'all_frns_with_names.json')
-BASE_URL   = 'https://register.fca.org.uk/services/V0.1'
-HEADERS    = {
+# ─── Paths & Config ──────────────────────────────────────────────────────────
+SCRIPT_DIR    = os.path.dirname(__file__)
+DATA_DIR      = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
+FRN_LIST_FILE = os.path.join(DATA_DIR, 'all_frns_with_names.json')
+
+# ─── FCA Register API setup ────────────────────────────────────────────────────
+API_EMAIL = os.getenv('FCA_API_EMAIL')
+API_KEY   = os.getenv('FCA_API_KEY')
+if not API_EMAIL or not API_KEY:
+    raise EnvironmentError('FCA_API_EMAIL and FCA_API_KEY must be set in the environment')
+
+BASE_URL = 'https://register.fca.org.uk/services/V0.1'
+HEADERS  = {
     'Accept':       'application/json',
-    'X-AUTH-EMAIL': os.getenv('FCA_API_EMAIL'),
-    'X-AUTH-KEY':   os.getenv('FCA_API_KEY'),
+    'X-AUTH-EMAIL': API_EMAIL,
+    'X-AUTH-KEY':   API_KEY,
 }
 
-# ─── Validate environment variables ───────────────────────────────────────────
-if not HEADERS['X-AUTH-EMAIL'] or not HEADERS['X-AUTH-KEY']:
-    raise EnvironmentError('FCA_API_EMAIL and FCA_API_KEY must be set')
+limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
-    """
-    GET JSON from the FCA API, waiting according to rate limits before each call.
-    Raises on HTTP errors.
-    """
     limiter.wait()
     resp = requests.get(url, headers=HEADERS, timeout=10)
     resp.raise_for_status()
     return resp.json()
 
-def fetch_paginated(url: str) -> list:
-    """
-    Follow the API’s pagination via Data + ResultInfo.Next, returning
-    the concatenated list of all Data entries.
-    """
-    items = []
-    next_url = url
-    while next_url:
-        pkg = fetch_json(next_url)
-        # Append whatever’s in "Data" (or empty list if absent)
-        items.extend(pkg.get('Data') or [])
-        # Continue if the server provided a Next link
-        next_url = pkg.get('ResultInfo', {}).get('Next')
-    return items
-
 def main():
-    # ─── Parse arguments for our slice and output path ────────────────────────
-    p = argparse.ArgumentParser(description='Fetch a slice of firm-individuals')
-    p.add_argument('--offset', type=int, required=True,
-                   help='Zero-based start index into the FRN list')
-    p.add_argument('--limit',  type=int, required=True,
-                   help='How many FRNs to process in this chunk')
-    p.add_argument('--output', required=True,
-                   help='Filepath to write this chunk’s JSON')
-    args = p.parse_args()
+    parser = argparse.ArgumentParser(
+        description='Fetch paginated individual entries for a slice of FRNs'
+    )
+    parser.add_argument(
+        '--offset',
+        type=int,
+        required=True,
+        help='Start index into the FRN list to begin processing'
+    )
+    parser.add_argument(
+        '--limit',
+        type=int,
+        required=False,      # ← Now optional
+        default=None,        # ← None means “process until end of list”
+        help='Max number of FRNs to process from the offset (omit for full slice)'
+    )
+    parser.add_argument(
+        '--output',
+        type=str,
+        required=True,
+        help='File path to write this chunk’s JSON (FRN→individuals map)'
+    )
+    args = parser.parse_args()
 
-    # ─── Load the master FRN list (all_frns_with_names.json) ──────────────────
-    with open(FRNS_JSON, encoding='utf-8') as f:
-        frn_items = json.load(f)
-    frns = [item['frn'] for item in frn_items]
+    # Ensure the FRN list exists
+    if not os.path.exists(FRN_LIST_FILE):
+        raise RuntimeError(f"Missing {FRN_LIST_FILE}: run update_frn_list.py first")
 
-    # ─── Slice out only this chunk’s FRNs ────────────────────────────────────
-    slice_frns = frns[args.offset : args.offset + args.limit]
+    # Load the full FRN list
+    with open(FRN_LIST_FILE, 'r', encoding='utf-8') as f:
+        frns = [entry['frn'] for entry in json.load(f)]
 
-    store = {}
-    for frn in slice_frns:
-        try:
-            # Build the URL and fetch all pages
-            url     = f"{BASE_URL}/Firm/{frn}/Individuals"
-            entries = fetch_paginated(url)
+    # Compute the slice for this worker
+    start = args.offset
+    end   = start + args.limit if args.limit is not None else None
+    slice_frns = frns[start:end]
+    print(f"🔍 Processing FRNs[{start}:{'' if end is None else end}] → {len(slice_frns)} firms")
 
-            # Normalize each entry to just IRN, Name, Status, URL
-            norm = [
-                {
-                  'IRN':    e.get('IRN'),
-                  'Name':   e.get('Name'),
-                  'Status': e.get('Status'),
-                  'URL':    e.get('URL')
-                }
-                for e in entries if isinstance(e, dict)
-            ]
-
-            store[frn] = norm
-            print(f"✅ Fetched {len(norm)} individuals for FRN {frn}")
-        except Exception as e:
-            # Log failures but continue the loop
-            print(f"⚠️  Failed FRN {frn}: {e}")
-
-    # ─── Ensure the output directory exists, then write JSON ────────────────
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
+    merged = {}
+
+    # Fetch each FRN’s individuals, paging through ResultInfo.Next
+    for frn in slice_frns:
+        url = f"{BASE_URL}/Firm/{frn}/Individuals"
+        all_recs = []
+        while url:
+            pkg = fetch_json(url)
+            all_recs.extend(pkg.get('Data', []))
+            # Follow pagination
+            url = pkg.get('ResultInfo', {}).get('Next', None)
+
+        # Normalize to simple list of {IRN, Name, Status, URL}
+        normalized = [
+            {
+                'IRN':    rec.get('IRN'),
+                'Name':   rec.get('Name'),
+                'Status': rec.get('Status'),
+                'URL':    rec.get('URL')
+            }
+            for rec in all_recs
+        ]
+        merged[str(frn)] = normalized
+        print(f"✅ FRN {frn}: fetched {len(normalized)} individuals")
+
+    # Write out this chunk’s map
     with open(args.output, 'w', encoding='utf-8') as f:
-        json.dump(store, f, indent=2, ensure_ascii=False)
-    print(f"✅ Wrote {len(store)} firms to {args.output}")
+        json.dump(merged, f, indent=2, ensure_ascii=False)
+    print(f"✅ Wrote {len(merged)} FRN entries to {args.output}")
 
 if __name__ == '__main__':
     main()
