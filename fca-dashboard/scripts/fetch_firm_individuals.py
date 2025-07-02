@@ -34,7 +34,7 @@ HEADERS  = {
     'X-AUTH-KEY':   API_KEY,
 }
 
-# Initialize the rate limiter, which reads RL_MAX_CALLS and RL_WINDOW_S env-vars
+# Initialize rate limiter (reads RL_MAX_CALLS and RL_WINDOW_S)
 limiter = RateLimiter()
 
 
@@ -55,22 +55,15 @@ def main():
         description='Fetch paginated individual entries for a slice of FRNs'
     )
     parser.add_argument(
-        '--offset',
-        type=int,
-        required=True,
+        '--offset', type=int, required=True,
         help='Start index into the master FRN list'
     )
     parser.add_argument(
-        '--limit',
-        type=int,
-        required=False,
-        default=None,
+        '--limit', type=int, required=False, default=None,
         help='Max number of FRNs to process (omit for full slice)'
     )
     parser.add_argument(
-        '--output',
-        type=str,
-        required=True,
+        '--output', type=str, required=True,
         help='File path to write this chunk’s JSON'
     )
     args = parser.parse_args()
@@ -87,9 +80,7 @@ def main():
     slice_frns = frns[start:end]
     print(f"🔍 Processing FRNs[{start}:{'' if end is None else end}] → {len(slice_frns)} firms")
 
-    # Ensure output directory exists
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
-
     merged = {}
 
     # ─── Fetch & normalize per FRN ───────────────────────────────────────────
@@ -101,12 +92,13 @@ def main():
         while url:
             pkg = fetch_json(url)
 
-            # ─── FIX: ensure Data is iterable even if API returns null ───
+            # ─── Handle possible null Data blocks ───────────────────────────
             data_list = pkg.get('Data') or []
             all_recs.extend(data_list)
 
-            # Grab the next page URL, or None if done
-            url = pkg.get('ResultInfo', {}).get('Next')
+            # ─── FIX: guard against null ResultInfo before .get('Next') ────
+            ri = pkg.get('ResultInfo') or {}
+            url = ri.get('Next')
 
         # Normalize each record to essential fields
         normalized = [
