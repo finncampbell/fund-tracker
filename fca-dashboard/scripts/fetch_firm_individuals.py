@@ -5,10 +5,11 @@ scripts/fetch_firm_individuals.py
 Fetch all FCA firm individuals in parallel threads (work-stealing),
 with live progress counter and shared rate limiting.
 
-Supports:
-  • --threads: number of worker threads (default 5)
-  • --limit:   optional cap on total FRNs to process (for testing)
-  • --output:  path to write the final JSON (default: docs/.../fca_individuals_by_firm.json)
+Now reads the master FRN list from docs/fca-dashboard/data/all_frns_with_names.json,
+so it always uses the consolidated seed list in your GitHub Pages source.
+
+Usage:
+  python3 fca-dashboard/scripts/fetch_firm_individuals.py [--threads N] [--limit M] [--output PATH]
 """
 
 import os
@@ -30,7 +31,7 @@ parser.add_argument(
 )
 parser.add_argument(
     '--limit', type=int, default=None,
-    help='Optional cap on total FRNs to process'
+    help='Optional cap on total FRNs to process (for quick tests)'
 )
 parser.add_argument(
     '--output', type=str,
@@ -38,14 +39,17 @@ parser.add_argument(
         os.path.dirname(__file__),
         '../../docs/fca-dashboard/data/fca_individuals_by_firm.json'
     )),
-    help='Path to write the final merged JSON'
+    help='Path where the final merged JSON will be written'
 )
 args = parser.parse_args()
 
 # ─── Paths & Data ───────────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(__file__)
-DATA_DIR   = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
-FRN_FILE   = os.path.join(DATA_DIR, 'all_frns_with_names.json')
+# Point at the docs copy of the FRN seed list
+FRN_FILE = os.path.abspath(os.path.join(
+    SCRIPT_DIR,
+    '../../docs/fca-dashboard/data/all_frns_with_names.json'
+))
 
 # ─── FCA API setup ───────────────────────────────────────────────────────────
 API_EMAIL = os.getenv('FCA_API_EMAIL')
@@ -60,7 +64,7 @@ HEADERS = {
     'X-AUTH-KEY':   API_KEY,
 }
 
-# Shared rate limiter (reads RL_MAX_CALLS and RL_WINDOW_S, default 50/10)
+# Shared RateLimiter reads RL_MAX_CALLS and RL_WINDOW_S from env
 limiter = RateLimiter()
 
 # ─── Worker & Progress Setup ────────────────────────────────────────────────
@@ -76,7 +80,10 @@ def fetch_json(url):
     return resp.json()
 
 def worker(results, total):
-    """Thread worker: pulls FRNs from the queue, fetches, stores, updates counter."""
+    """
+    Thread worker: pulls FRNs from the queue, pages through their /Individuals endpoint,
+    normalizes the records, stores in `results`, and prints a live counter.
+    """
     global processed
     while True:
         try:
@@ -84,16 +91,17 @@ def worker(results, total):
         except Empty:
             return
 
-        # Page through this FRN’s individuals
+        # 1) Page through this firm's individuals
         url = f"{BASE_URL}/Firm/{frn}/Individuals"
         all_recs = []
         while url:
             pkg = fetch_json(url)
+            # pkg['Data'] may be None → coerce to empty list
             all_recs.extend(pkg.get('Data') or [])
             ri = pkg.get('ResultInfo') or {}
             url = ri.get('Next')
 
-        # Normalize records
+        # 2) Normalize each record to essential fields
         normalized = [
             {
                 'IRN':    rec.get('IRN'),
@@ -105,7 +113,7 @@ def worker(results, total):
         ]
         results[frn] = normalized
 
-        # Update and print live progress
+        # 3) Update shared progress counter
         with lock:
             processed += 1
             print(f"▶️  Processed {processed}/{total} FRNs ({total-processed} remaining)")
@@ -113,33 +121,35 @@ def worker(results, total):
         q.task_done()
 
 def main():
-    # Load FRN list
+    # ─── Load and optionally trim the FRN list ────────────────────────────────
     with open(FRN_FILE, 'r', encoding='utf-8') as f:
         frn_entries = json.load(f)
     frns = [entry['frn'] for entry in frn_entries]
 
-    # Apply test limit if provided
     if args.limit:
+        # Test mode: only process the first M FRNs
         frns = frns[:args.limit]
 
     total = len(frns)
+    print(f"🔍 Starting threaded fetch for {total} FRNs using {args.threads} threads")
 
-    # Populate queue
+    # ─── Enqueue all work ─────────────────────────────────────────────────────
     for frn in frns:
         q.put(frn)
 
-    # Shared dict for results
+    # Shared results dict
     results = {}
 
-    # ThreadPool with dynamic work-stealing
+    # ─── Execute threads for dynamic work-stealing ────────────────────────────
     with ThreadPoolExecutor(max_workers=args.threads) as executor:
+        # Submit one worker task per thread
         futures = [executor.submit(worker, results, total)
                    for _ in range(args.threads)]
-        # Wait for all threads to finish
+        # Wait for all to complete
         for _ in as_completed(futures):
             pass
 
-    # Write final merged JSON
+    # ─── Write final JSON for the UI ──────────────────────────────────────────
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
