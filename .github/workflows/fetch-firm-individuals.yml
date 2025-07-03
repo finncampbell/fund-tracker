@@ -1,13 +1,12 @@
-# .github/workflows/fetch-firm-individuals.yml
 name: Fetch FCA Firm Individuals (Threaded)
 
-# Allow pushing the final JSON back to main
+# We need write access so the final JSON can be pushed back
 permissions:
   contents: write
 
-# Manual trigger with options for threads & testing limit
 on:
   workflow_dispatch:
+    # ── Controls for parallelism and quick tests ─────────────────────────────
     inputs:
       threads:
         description: 'Number of parallel threads to use'
@@ -18,11 +17,52 @@ on:
         required: false
         default: ''
 
+    # ── New modes for selective processing ──────────────────────────────────
+      only_missing:
+        description: '☑️ Only fetch FRNs not yet in the UI JSON'
+        required: false
+        default: false
+        type: boolean
+      only_blank:
+        description: '☑️ Only fetch FRNs whose last-run results were empty'
+        required: false
+        default: false
+        type: boolean
+      retry_failed:
+        description: '☑️ Only retry FRNs that errored in the previous run'
+        required: false
+        default: false
+        type: boolean
+      skip_large:
+        description: '☑️ Skip FRNs whose existing individual-count > large_threshold'
+        required: false
+        default: false
+        type: boolean
+      only_large:
+        description: '☑️ Only fetch FRNs with existing individual-count > large_threshold'
+        required: false
+        default: false
+        type: boolean
+      large_threshold:
+        description: 'Threshold number of individuals to consider a firm “large”'
+        required: false
+        default: '50'
+      dry_run:
+        description: '☑️ Dry run: show which FRNs would be processed, don’t call the API'
+        required: false
+        default: false
+        type: boolean
+      no_push:
+        description: '☑️ Don’t commit/push the final JSON (for testing)'
+        required: false
+        default: false
+        type: boolean
+
 jobs:
   fetch:
-    # You can enforce a timeout here if desired:
-    # timeout-minutes: 360
     runs-on: ubuntu-latest
+    # (Optionally enforce your own timeout here)
+    # timeout-minutes: 360
 
     steps:
       - name: Check out repository (full history)
@@ -31,28 +71,62 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Set up Python  # ensure python3 & pip
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies  # bring in requests
+      - name: Install dependencies
         run: pip install requests
 
       - name: Fetch all firm individuals (threaded)
-        # Expose API credentials and pass inputs through
+        # Pass all dispatch inputs through as flags
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          CMD="python3 fca-dashboard/scripts/fetch_firm_individuals.py --threads ${{ github.event.inputs.threads }}"
+          # Build base command
+          CMD="python3 fca-dashboard/scripts/fetch_firm_individuals.py"
+          CMD="$CMD --threads ${{ github.event.inputs.threads }}"
+
+          # Quick-test cap
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             CMD="$CMD --limit ${{ github.event.inputs.limit }}"
           fi
+
+          # Selective modes
+          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
+            CMD="$CMD --only-missing"
+          fi
+          if [ "${{ github.event.inputs.only_blank }}" = "true" ]; then
+            CMD="$CMD --only-blank"
+          fi
+          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
+            CMD="$CMD --retry-failed"
+          fi
+          if [ "${{ github.event.inputs.skip_large }}" = "true" ]; then
+            CMD="$CMD --skip-large"
+          fi
+          if [ "${{ github.event.inputs.only_large }}" = "true" ]; then
+            CMD="$CMD --only-large"
+          fi
+
+          # Large-threshold parameter
+          if [ -n "${{ github.event.inputs.large_threshold }}" ]; then
+            CMD="$CMD --large-threshold ${{ github.event.inputs.large_threshold }}"
+          fi
+
+          # Dry-run flag
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+
           echo "▶️ Running: $CMD"
           $CMD
 
       - name: Commit & push updated data
+        # Skip commit/push if no_push is true
+        if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
@@ -60,9 +134,9 @@ jobs:
           # Stage the updated JSON
           git add docs/fca-dashboard/data/fca_individuals_by_firm.json
 
-          # Commit if changed
+          # Commit only if there are changes
           git diff --cached --quiet || git commit -m "chore(fca): update firm individuals"
 
-          # Integrate any remote changes and push
+          # Rebase any remote changes, then push
           git pull --rebase origin main
           git push origin HEAD:main
