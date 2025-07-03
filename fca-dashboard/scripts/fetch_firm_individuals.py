@@ -41,7 +41,7 @@ parser.add_argument('--retry-failed',    action='store_true',
 parser.add_argument('--skip-large',      action='store_true',
                     help='Skip FRNs with existing-count > threshold')
 parser.add_argument('--only-large',      action='store_true',
-                    help='Only fetch FRNs with existing-count > threshold (single-thread)')
+                    help='Only fetch FRNs with existing-count > threshold (forces single-thread)')
 parser.add_argument('--large-threshold', type=int,    default=50,
                     help='Threshold for large firms in record count')
 parser.add_argument('--dry-run',         action='store_true',
@@ -54,11 +54,11 @@ parser.add_argument('--output',          type=str,
                     help='Path where the final merged JSON will be written')
 args = parser.parse_args()
 
-# ─── Force single-thread in only-large mode ────────────────────────────────
+# ─── Force single-thread in only-large mode ─────────────────────────────────
 if args.only_large:
     orig = args.threads
     args.threads = 1
-    print(f"ℹ️  only_large mode: overriding threads from {orig} to 1 to maximize rate capacity")
+    print(f"ℹ️  only_large mode: overriding threads from {orig} to 1 for max rate")
 
 # ─── Paths & Data ───────────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(__file__)
@@ -112,7 +112,7 @@ print(f"🔍 Preparing to process {total} FRNs "
 if args.dry_run:
     for f in frns:
         print(f"➡️  Would fetch FRN {f}")
-    print("✅ Dry run complete; no HTTP calls made.")
+    print("✅ Dry run complete; no API calls.")
     exit(0)
 
 # ─── Set up rate limiter, queue, locks ─────────────────────────────────────
@@ -138,9 +138,9 @@ def fetch_json(url):
     resp.raise_for_status()
     return resp.json()
 
-# ─── Worker definition ─────────────────────────────────────────────────────
 BASE_URL = 'https://register.fca.org.uk/services/V0.1'
 
+# ─── Worker definition ─────────────────────────────────────────────────────
 def worker(total):
     global processed
     while True:
@@ -148,8 +148,19 @@ def worker(total):
             frn = q.get_nowait()
         except Empty:
             return
+
         try:
-            # Page through this FRN's individuals
+            # Peek missing/failed FRNs: one quick call to check total_count
+            if str(frn) not in existing or existing.get(str(frn), []) == [] or frn in failed_last:
+                peek_pkg = fetch_json(f"{BASE_URL}/Firm/{frn}/Individuals")
+                ri = peek_pkg.get('ResultInfo') or {}
+                total_count = int(ri.get('total_count') or 0)
+                if total_count == 0:
+                    results[frn] = []
+                    print(f"ℹ️  FRN {frn}: peeked zero individuals, skipping deep fetch")
+                    continue
+
+            # 1) Page through this FRN's individuals
             url = f"{BASE_URL}/Firm/{frn}/Individuals"
             all_recs = []
             while url:
@@ -157,7 +168,8 @@ def worker(total):
                 all_recs.extend(pkg.get('Data') or [])
                 ri = pkg.get('ResultInfo') or {}
                 url = ri.get('Next')
-            # Normalize
+
+            # 2) Normalize records
             normalized = [
                 {
                     'IRN':    rec.get('IRN'),
@@ -170,10 +182,12 @@ def worker(total):
             results[frn] = normalized
             if not normalized:
                 print(f"ℹ️  FRN {frn}: no individuals found")
+
         except Exception as e:
             results[frn] = []
             fails.append(frn)
             print(f"⚠️  Error fetching FRN {frn}: {e}")
+
         finally:
             with lock:
                 processed += 1
