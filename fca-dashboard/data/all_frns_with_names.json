@@ -304,6 +304,10 @@
     "name": "Daxton Capital Limited"
   },
   {
+    "frn": "1019537",
+    "name": "Alpha Investment Office Limited"
+  },
+  {
     "frn": "1019749",
     "name": "BBB Investment Services Limited"
   },
@@ -324,6 +328,10 @@
     "name": "Impera Capital LLP"
   },
   {
+    "frn": "1022406",
+    "name": "Como Capital Limited"
+  },
+  {
     "frn": "1022748",
     "name": "PRECISION THEATRE INVESTMENTS LIMITED"
   },
@@ -334,6 +342,10 @@
   {
     "frn": "1023168",
     "name": "SCYLD Capital LLP"
+  },
+  {
+    "frn": "1023255",
+    "name": "Jefferies Credit Partners Europe Limited"
   },
   {
     "frn": "1023836",
@@ -358,6 +370,10 @@
   {
     "frn": "1026803",
     "name": "Fig Markets Limited"
+  },
+  {
+    "frn": "1029668",
+    "name": "MOMENTUM INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "1031259",
@@ -801,7 +817,7 @@
   },
   {
     "frn": "124412",
-    "name": "Charles Stanley & Co Ltd"
+    "name": "RAYMOND JAMES WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "124422",
@@ -1021,7 +1037,7 @@
   },
   {
     "frn": "143097",
-    "name": "Premier Fund Managers Ltd"
+    "name": "PREMIER FUND MANAGERS LIMITED"
   },
   {
     "frn": "143286",
@@ -1565,7 +1581,7 @@
   },
   {
     "frn": "179391",
-    "name": "Clarksons Platou Futures Limited"
+    "name": "Clarksons Futures Limited"
   },
   {
     "frn": "179392",
@@ -2090,10 +2106,6 @@
   {
     "frn": "193705",
     "name": "Tradeweb Europe Limited"
-  },
-  {
-    "frn": "193707",
-    "name": "abrdn Alternative Investments Limited"
   },
   {
     "frn": "193905",
@@ -4697,7 +4709,7 @@
   },
   {
     "frn": "514394",
-    "name": "IUR Capital Ltd"
+    "name": "IUR CAPITAL LIMITED"
   },
   {
     "frn": "514518",
@@ -5901,7 +5913,7 @@
   },
   {
     "frn": "595785",
-    "name": "Aquis Exchange PLC"
+    "name": "AQUIS EXCHANGE LIMITED"
   },
   {
     "frn": "595861",
@@ -6685,7 +6697,7 @@
   },
   {
     "frn": "650245",
-    "name": "Avellemy Limited"
+    "name": "Ascot Lloyd Investment Management Limited"
   },
   {
     "frn": "650279",
@@ -9217,7 +9229,7 @@
   },
   {
     "frn": "825344",
-    "name": "Arbrook Investors Ltd"
+    "name": "ARBROOK INVESTORS LIMITED"
   },
   {
     "frn": "825426",
@@ -9757,7 +9769,7 @@
   },
   {
     "frn": "917403",
-    "name": "Thomson Tyndall Limited"
+    "name": "THOMSON TYNDALL LTD"
   },
   {
     "frn": "917602",
@@ -9837,7 +9849,7 @@
   },
   {
     "frn": "922358",
-    "name": "Galaev & Co Ltd"
+    "name": "Enterprise Investment Systems Ltd"
   },
   {
     "frn": "922590",
