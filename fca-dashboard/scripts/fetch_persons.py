@@ -1,124 +1,93 @@
-#!/usr/bin/env python3
-"""
-scripts/fetch_persons.py
+name: Fetch FCA Individual Records (Threaded)
 
-Fetch main individual records (core metadata) for all IRNs discovered or a limited subset.
-Updates data/fca_persons.json by merging new entries with existing ones.
-"""
-import os
-import json
-import argparse
-import requests
-from rate_limiter import RateLimiter
+permissions:
+  contents: write
 
-# ─── Paths & Config ──────────────────────────────────────────────────────────
-SCRIPT_DIR    = os.path.dirname(__file__)
-DATA_DIR      = os.path.abspath(os.path.join(SCRIPT_DIR, '../data'))
-IND_BY_FIRM   = os.path.join(DATA_DIR, 'fca_individuals_by_firm.json')
-PERSONS_JSON  = os.path.join(DATA_DIR, 'fca_persons.json')
+on:
+  workflow_dispatch:
+    inputs:
+      threads:
+        description: 'Number of parallel threads'
+        required: true
+        default: '5'
+      limit:
+        description: 'Max IRNs to process (blank = full run)'
+        required: false
+        default: ''
+      only_missing:
+        description: '☑️ Only fetch IRNs not in existing store'
+        required: false
+        default: false
+        type: boolean
+      retry_failed:
+        description: '☑️ Only retry IRNs that errored last run'
+        required: false
+        default: false
+        type: boolean
+      fresh:
+        description: '☑️ Full refresh: ignore existing records'
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: '☑️ Dry run: list IRNs without API calls'
+        required: false
+        default: false
+        type: boolean
+      no_push:
+        description: '☑️ Don’t commit/push the final JSON'
+        required: false
+        default: false
+        type: boolean
 
-# ─── FCA Register API setup ────────────────────────────────────────────────────
-API_EMAIL = os.getenv('FCA_API_EMAIL')
-API_KEY   = os.getenv('FCA_API_KEY')
-if not API_EMAIL or not API_KEY:
-    raise EnvironmentError('FCA_API_EMAIL and FCA_API_KEY must be set in the environment')
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
 
-BASE_URL = 'https://register.fca.org.uk/services/V0.1'
-HEADERS  = {
-    'Accept':       'application/json',
-    'X-AUTH-EMAIL': API_EMAIL,
-    'X-AUTH-KEY':   API_KEY,
-}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-limiter = RateLimiter()
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-def fetch_json(url: str) -> dict:
-    limiter.wait()
-    resp = requests.get(url, headers=HEADERS, timeout=10)
-    resp.raise_for_status()
-    return resp.json()
+      - name: Install dependencies
+        run: pip install requests
 
-def fetch_individual_record(irn: str) -> dict | None:
-    """Fetch core individual record for a single IRN and return selected fields."""
-    try:
-        pkg = fetch_json(f"{BASE_URL}/Individuals/{irn}")
-    except Exception as e:
-        print(f"⚠️  Failed fetch for IRN {irn}: {e}")
-        return None
+      - name: Fetch individual records (threaded)
+        env:
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: |
+          CMD="python3 fca-dashboard/scripts/fetch_persons.py --threads ${{ github.event.inputs.threads }}"
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
+          fi
+          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
+            CMD="$CMD --only-missing"
+          fi
+          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
+            CMD="$CMD --retry-failed"
+          fi
+          if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
+            CMD="$CMD --fresh"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          echo "▶️  Running: $CMD"
+          $CMD
 
-    data_list = pkg.get('Data') or []
-    if not data_list:
-        print(f"⚠️  No Data block for IRN {irn}")
-        return None
-
-    rec = data_list[0]
-    details = rec.get('Details', {})
-
-    # Helper to pick the first existing key from details or top-level record
-    def pick(*keys):
-        for k in keys:
-            if k in details:
-                return details[k]
-            if k in rec:
-                return rec[k]
-        return None
-
-    return {
-        'irn': irn,
-        'name': pick('Name', 'Full Name', 'Commonly Used Name'),
-        'status': pick('Status', 'Registration Status'),
-        'date_of_birth': pick('Date of Birth', 'DOB', 'DateOfBirth'),
-        'system_timestamp': pick('System Timestamp', 'SystemTimestamp'),
-    }
-
-def main():
-    parser = argparse.ArgumentParser(description='Fetch and merge individual records')
-    parser.add_argument('--limit', type=int, help='Only process first N IRNs for testing')
-    args = parser.parse_args()
-
-    os.makedirs(DATA_DIR, exist_ok=True)
-
-    # Load IRNs from fca_individuals_by_firm.json
-    if not os.path.exists(IND_BY_FIRM):
-        print(f"❌ Missing {IND_BY_FIRM}: run fetch_firm_individuals.py first")
-        return
-    with open(IND_BY_FIRM, 'r', encoding='utf-8') as f:
-        firm_map = json.load(f)
-
-    # Collect unique IRNs
-    all_irns = []
-    for entries in firm_map.values():
-        for e in entries:
-            irn_val = e.get('IRN')
-            if irn_val:
-                all_irns.append(irn_val)
-    # Dedupe preserving order
-    seen = set()
-    irns = [x for x in all_irns if not (x in seen or seen.add(x))]
-
-    if args.limit:
-        irns = irns[:args.limit]
-        print(f"🔍 Test mode: will fetch {len(irns)} individual records")
-
-    # Load existing store
-    if os.path.exists(PERSONS_JSON):
-        with open(PERSONS_JSON, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        store = data if isinstance(data, dict) else {}
-    else:
-        store = {}
-
-    # Fetch & merge
-    for irn in irns:
-        rec = fetch_individual_record(irn)
-        if rec:
-            store[irn] = rec
-            print(f"✅ Fetched and stored individual record for IRN {irn}")
-
-    # Write back
-    with open(PERSONS_JSON, 'w', encoding='utf-8') as f:
-        json.dump(store, f, indent=2, ensure_ascii=False)
-    print(f"✅ Wrote {len(store)} individual records to {PERSONS_JSON}")
-
-if __name__ == '__main__':
-    main()
+      - name: Commit & push updated persons
+        if: ${{ github.event.inputs.no_push != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add fca-dashboard/data/fca_persons.json
+          git diff --cached --quiet || git commit -m "chore(fca): update individual records"
+          git pull --rebase origin main
+          git push origin HEAD:main
