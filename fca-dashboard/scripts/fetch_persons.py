@@ -63,9 +63,21 @@ HEADERS  = {
 limiter = RateLimiter()
 
 def fetch_json(url: str) -> dict:
-    """Rate-limited GET → parsed JSON."""
+    """Rate-limited GET → parsed JSON, with explicit FCA API error logging."""
     limiter.wait()
-    resp = requests.get(url, headers=HEADERS, timeout=10)
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=10)
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️  Network error when calling {url}: {e}")
+        raise
+
+    code = resp.status_code
+    if code == 429:
+        print(f"⚠️  FCA API rate limit hit (429) for URL: {url}")
+    elif code >= 400:
+        snippet = resp.text[:200].replace('\n', ' ')
+        print(f"⚠️  FCA API error {code} for URL: {url}: {snippet!r}")
+
     resp.raise_for_status()
     return resp.json()
 
@@ -85,7 +97,6 @@ def fetch_individual_record(irn: str) -> dict | None:
         return None
 
     details = data_list[0].get('Details', {})
-
     return {
         'irn':                  details.get('IRN'),
         'name':                 details.get('Full Name') or details.get('Commonly Used Name'),
