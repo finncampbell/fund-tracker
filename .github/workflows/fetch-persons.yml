@@ -1,154 +1,93 @@
-# ============================================================================= 
-# Workflow: Fetch FCA Individual Records (Ad-hoc, chunked + throttled)
-# =============================================================================
-name: Fetch FCA Individual Records (Ad-hoc)
+name: Fetch FCA Individual Records (Threaded)
 
-# Grant write so we can commit back to main
 permissions:
   contents: write
 
-# Manual trigger only, with throttling and chunking inputs
 on:
   workflow_dispatch:
     inputs:
-      chunks:
-        description: 'Number of parallel chunks to split the IRN list into'
+      threads:
+        description: 'Number of parallel threads'
         required: true
         default: '5'
       limit:
-        description: 'Max IRNs per chunk (blank = full run)'
+        description: 'Max IRNs to process (blank = full run)'
         required: false
         default: ''
+      only_missing:
+        description: '☑️ Only fetch IRNs not in existing store'
+        required: false
+        default: false
+        type: boolean
+      retry_failed:
+        description: '☑️ Only retry IRNs that errored last run'
+        required: false
+        default: false
+        type: boolean
+      fresh:
+        description: '☑️ Full refresh: ignore existing records'
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: '☑️ Dry run: list IRNs without API calls'
+        required: false
+        default: false
+        type: boolean
+      no_push:
+        description: '☑️ Don’t commit/push the final JSON'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
-  # ---------------------------------------------------------------------------
-  # JOB 1: split
-  #   - Read full IRN list, divide into parallel slices
-  #   - Export both slice start offsets and total chunk count
-  # ---------------------------------------------------------------------------
-  split:
-    runs-on: ubuntu-latest
-    outputs:
-      chunk_list: ${{ steps.set-chunks.outputs.chunk_list }}
-      chunk_count: ${{ steps.set-chunks.outputs.chunk_count }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-        # Ensures fca-dashboard/data/fca_individuals_by_firm.json is present
-
-      - id: set-chunks
-        name: Compute chunk start indices
-        run: |
-          # 1. Load total IRNs from the firm→individuals map
-          TOTAL=$(jq 'length | floor' fca-dashboard/data/fca_individuals_by_firm.json)
-
-          # 2. Desired parallelism
-          CHUNKS=${{ github.event.inputs.chunks }}
-
-          # 3. Build JSON array of start indices via Python one-liner
-          python3 -c "import math, json; total=int('$TOTAL'); n=int('$CHUNKS'); size=math.ceil(total/n); print(json.dumps(list(range(0,total,size))))" \
-            > indices.json
-
-          # 4. Expose start offsets for matrix
-          echo "chunk_list=$(cat indices.json)" >> $GITHUB_OUTPUT
-
-          # 5. Expose actual number of chunks created
-          echo "chunk_count=$(jq 'length' indices.json)" >> $GITHUB_OUTPUT
-
-  # ---------------------------------------------------------------------------
-  # JOB 2: fetch
-  #   - Parallel workers: each pulls one slice of IRNs
-  #   - Throttles API calls to floor(50/chunk_count) per 10s per worker
-  # ---------------------------------------------------------------------------
   fetch:
-    needs: split
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        start: ${{ fromJson(needs.split.outputs.chunk_list) }}
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Fetch persons chunk (throttled)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch individual records (threaded)
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          # 1. This worker’s slice offset & total number of chunks
-          OFFSET=${{ matrix.start }}
-          COUNT=${{ needs.split.outputs.chunk_count }}
-
-          # 2. Compute per-worker rate limits (floor(50/COUNT) calls per 10s)
-          RL_MAX_CALLS=$((50 / COUNT))
-          RL_WINDOW_S=10
-          echo "🔢 Each worker: up to $RL_MAX_CALLS calls per $RL_WINDOW_S seconds"
-
-          # 3. Export for RateLimiter in Python script
-          export RL_MAX_CALLS RL_WINDOW_S
-
-          # 4. Pass --limit for test runs, if provided
+          CMD="python3 fca-dashboard/scripts/fetch_persons.py --threads ${{ github.event.inputs.threads }}"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            LIMIT="--limit ${{ github.event.inputs.limit }}"
-          else
-            LIMIT=""
+            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
           fi
+          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
+            CMD="$CMD --only-missing"
+          fi
+          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
+            CMD="$CMD --retry-failed"
+          fi
+          if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
+            CMD="$CMD --fresh"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          echo "▶️  Running: $CMD"
+          $CMD
 
-          # 5. Prepare output folder for this chunk
-          mkdir -p "chunks/persons-chunk-${OFFSET}"
-
-          # 6. Invoke chunked fetch script (writes IRN→record JSON)
-          python3 fca-dashboard/scripts/fetch_persons.py \
-            --offset "$OFFSET" $LIMIT \
-            --output "chunks/persons-chunk-${OFFSET}/fca_persons.json"
-
-      - name: Upload chunk artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: persons-chunk-${{ matrix.start }}
-          path: chunks/persons-chunk-${{ matrix.start }}/fca_persons.json
-
-  # ---------------------------------------------------------------------------
-  # JOB 3: merge
-  #   - Download all chunk artifacts
-  #   - Merge into single UI JSON under docs/
-  # ---------------------------------------------------------------------------
-  merge:
-    needs: fetch
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Download all chunk artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: chunks
-
-      - name: Merge into UI data folder
+      - name: Commit & push updated persons
+        if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
-          # 1. Ensure target folder exists
-          mkdir -p docs/fca-dashboard/data
-
-          # 2. Run merge script to combine all partial JSONs
-          python3 fca-dashboard/scripts/merge_persons.py \
-            chunks docs/fca-dashboard/data/fca_persons.json
-
-      - name: Commit & push merged result
-        run: |
-          # Configure bot identity
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-
-          # Stage the final JSON in docs/
-          git add docs/fca-dashboard/data/fca_persons.json
-
-          # Commit if content changed vs. HEAD
-          git diff --cached --quiet || \
-            git commit -m "chore(fca): merge individual records into docs"
-
-          # Push back to main
+          git add fca-dashboard/data/fca_persons.json
+          git diff --cached --quiet || git commit -m "chore(fca): update individual records"
+          git pull --rebase origin main
           git push origin HEAD:main
