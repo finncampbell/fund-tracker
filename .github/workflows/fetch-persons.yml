@@ -45,33 +45,23 @@ on:
         type: boolean
 
 jobs:
-  # ──────────────────────────────────────────────────────────────────────────────
-  # 1) Split job: turn 'shards' input into a JSON array [1,2,...,N]
-  # ──────────────────────────────────────────────────────────────────────────────
   split:
     runs-on: ubuntu-latest
     outputs:
       shard_list: ${{ steps.set-shards.outputs.shard_list }}
-
     steps:
-      - name: Checkout code (to get Python)
+      - name: Checkout code (shallow)
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: Generate shard list
-        id: set-shards
+      - id: set-shards
+        name: Generate shard list
         run: |
-          N="${{ github.event.inputs.shards }}"
-          python3 - << 'EOF' > shards.json
-import json
-print(json.dumps(list(range(1, int("$N") + 1))))
-EOF
+          N=${{ github.event.inputs.shards }}
+          python3 -c "import json; print(json.dumps(list(range(1, int('$N')+1))))" > shards.json
           echo "shard_list=$(cat shards.json)" >> $GITHUB_OUTPUT
 
-  # ──────────────────────────────────────────────────────────────────────────────
-  # 2) Fetch job: one matrix entry per shard, run sequentially (max-parallel:1)
-  # ──────────────────────────────────────────────────────────────────────────────
   fetch:
     needs: split
     runs-on: ubuntu-latest
@@ -81,7 +71,7 @@ EOF
       max-parallel: 1
 
     steps:
-      - name: Checkout code
+      - name: Checkout code (shallow)
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
@@ -103,7 +93,7 @@ EOF
             --threads ${{ github.event.inputs.threads }} \
             --shards ${{ github.event.inputs.shards }} \
             --shard-index ${{ matrix.shard }} \
-            $([[ -n "${{ github.event.inputs.limit }}" ]] && echo "--limit ${{ github.event.inputs.limit }}") \
+            $([[ -n "${{ github.event.inputs.limit }}" ]]   && echo "--limit ${{ github.event.inputs.limit }}") \
             $([[ "${{ github.event.inputs.only_missing }}" == "true" ]]   && echo "--only-missing") \
             $([[ "${{ github.event.inputs.retry_failed }}" == "true" ]] && echo "--retry-failed") \
             $([[ "${{ github.event.inputs.fresh }}" == "true" ]]        && echo "--fresh") \
@@ -115,16 +105,12 @@ EOF
           name: persons-part-${{ matrix.shard }}
           path: docs/fca-dashboard/data/fca_persons_part${{ matrix.shard }}.json
 
-  # ──────────────────────────────────────────────────────────────────────────────
-  # 3) Merge job: once all shards are done, download their artifacts, merge,
-  #    and commit the final docs/fca_dashboard/data/fca_persons.json
-  # ──────────────────────────────────────────────────────────────────────────────
   merge:
     needs: fetch
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout code (shallow)
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
@@ -135,8 +121,10 @@ EOF
           path: docs/fca-dashboard/data
 
       - name: Merge partitioned JSONs
-        run: python3 fca-dashboard/scripts/merge_person_parts.py \
-          docs/fca-dashboard/data docs/fca-dashboard/data/fca_persons.json
+        run: |
+          python3 fca-dashboard/scripts/merge_person_parts.py \
+            docs/fca-dashboard/data \
+            docs/fca-dashboard/data/fca_persons.json
 
       - name: Commit & push merged JSON
         run: |
