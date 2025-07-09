@@ -45,11 +45,39 @@ on:
         type: boolean
 
 jobs:
+  # ──────────────────────────────────────────────────────────────────────────────
+  # 1) Split job: turn 'shards' input into a JSON array [1,2,...,N]
+  # ──────────────────────────────────────────────────────────────────────────────
+  split:
+    runs-on: ubuntu-latest
+    outputs:
+      shard_list: ${{ steps.set-shards.outputs.shard_list }}
+
+    steps:
+      - name: Checkout code (to get Python)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Generate shard list
+        id: set-shards
+        run: |
+          N="${{ github.event.inputs.shards }}"
+          python3 - << 'EOF' > shards.json
+import json
+print(json.dumps(list(range(1, int("$N") + 1))))
+EOF
+          echo "shard_list=$(cat shards.json)" >> $GITHUB_OUTPUT
+
+  # ──────────────────────────────────────────────────────────────────────────────
+  # 2) Fetch job: one matrix entry per shard, run sequentially (max-parallel:1)
+  # ──────────────────────────────────────────────────────────────────────────────
   fetch:
+    needs: split
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        shard: ${{ fromJson(format('[{}]', join(',', range(1, int(github.event.inputs.shards)+1)))) }}
+        shard: ${{ fromJson(needs.split.outputs.shard_list) }}
       max-parallel: 1
 
     steps:
@@ -66,7 +94,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch shard ${{ matrix.shard }}
+      - name: Fetch shard #${{ matrix.shard }}
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
@@ -76,10 +104,10 @@ jobs:
             --shards ${{ github.event.inputs.shards }} \
             --shard-index ${{ matrix.shard }} \
             $([[ -n "${{ github.event.inputs.limit }}" ]] && echo "--limit ${{ github.event.inputs.limit }}") \
-            $([[ "${{ github.event.inputs.only_missing }}" == "true" ]] && echo "--only-missing") \
+            $([[ "${{ github.event.inputs.only_missing }}" == "true" ]]   && echo "--only-missing") \
             $([[ "${{ github.event.inputs.retry_failed }}" == "true" ]] && echo "--retry-failed") \
-            $([[ "${{ github.event.inputs.fresh }}" == "true" ]] && echo "--fresh") \
-            $([[ "${{ github.event.inputs.dry_run }}" == "true" ]] && echo "--dry-run")
+            $([[ "${{ github.event.inputs.fresh }}" == "true" ]]        && echo "--fresh") \
+            $([[ "${{ github.event.inputs.dry_run }}" == "true" ]]      && echo "--dry-run")
 
       - name: Upload shard artifact
         uses: actions/upload-artifact@v4
@@ -87,6 +115,10 @@ jobs:
           name: persons-part-${{ matrix.shard }}
           path: docs/fca-dashboard/data/fca_persons_part${{ matrix.shard }}.json
 
+  # ──────────────────────────────────────────────────────────────────────────────
+  # 3) Merge job: once all shards are done, download their artifacts, merge,
+  #    and commit the final docs/fca_dashboard/data/fca_persons.json
+  # ──────────────────────────────────────────────────────────────────────────────
   merge:
     needs: fetch
     runs-on: ubuntu-latest
