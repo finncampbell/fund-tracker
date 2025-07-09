@@ -7,61 +7,62 @@ on:
   workflow_dispatch:
     inputs:
       threads:
-        description: 'Number of threads per shard (optimum ≃5)'
+        description: 'Number of threads per shard (≈5)'
         required: true
         default: '5'
       shards:
-        description: 'Number of sequential shards to split IRN list into'
+        description: 'How many sequential shards to split IRNs into'
         required: true
         default: '1'
       limit:
-        description: 'Max IRNs to process (blank = full run)'
+        description: 'Max IRNs to process (blank = no cap)'
         required: false
         default: ''
       only_missing:
-        description: 'Only fetch IRNs not yet present in store'
+        description: 'Only fetch IRNs missing from the store'
         required: false
         default: false
         type: boolean
       retry_failed:
-        description: 'Only retry IRNs that errored last run'
+        description: 'Only retry previously failed IRNs'
         required: false
         default: false
         type: boolean
       fresh:
-        description: 'Full refresh: ignore existing data'
+        description: 'Ignore existing data and re-fetch all IRNs'
         required: false
         default: false
         type: boolean
       dry_run:
-        description: 'Dry run: list IRNs without making any API calls'
+        description: 'Dry run: list IRNs without API calls'
         required: false
         default: false
         type: boolean
       no_push:
-        description: 'Don’t commit/push the JSON outputs (for testing)'
+        description: 'Do not commit/push results (for testing)'
         required: false
         default: false
         type: boolean
 
 jobs:
+  # 1) Split into [1,2,…,shards]
   split:
     runs-on: ubuntu-latest
     outputs:
-      shard_list: ${{ steps.set-shards.outputs.shard_list }}
+      shard_list: ${{ steps.make-list.outputs.shard_list }}
     steps:
-      - name: Checkout code (shallow)
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - id: set-shards
-        name: Generate shard list
+      - id: make-list
+        name: Build shard list
         run: |
-          N=${{ github.event.inputs.shards }}
+          N="${{ github.event.inputs.shards }}"
           python3 -c "import json; print(json.dumps(list(range(1, int('$N')+1))))" > shards.json
           echo "shard_list=$(cat shards.json)" >> $GITHUB_OUTPUT
 
+  # 2) Fetch each shard in its own job (1-at-a-time)
   fetch:
     needs: split
     runs-on: ubuntu-latest
@@ -71,17 +72,15 @@ jobs:
       max-parallel: 1
 
     steps:
-      - name: Checkout code (shallow)
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install requests
         run: pip install requests
 
       - name: Fetch shard #${{ matrix.shard }}
@@ -89,44 +88,56 @@ jobs:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          python3 fca-dashboard/scripts/fetch_persons.py \
-            --threads ${{ github.event.inputs.threads }} \
-            --shards ${{ github.event.inputs.shards }} \
-            --shard-index ${{ matrix.shard }} \
-            $([[ -n "${{ github.event.inputs.limit }}" ]]   && echo "--limit ${{ github.event.inputs.limit }}") \
-            $([[ "${{ github.event.inputs.only_missing }}" == "true" ]]   && echo "--only-missing") \
-            $([[ "${{ github.event.inputs.retry_failed }}" == "true" ]] && echo "--retry-failed") \
-            $([[ "${{ github.event.inputs.fresh }}" == "true" ]]        && echo "--fresh") \
-            $([[ "${{ github.event.inputs.dry_run }}" == "true" ]]      && echo "--dry-run")
+          THREADS=${{ github.event.inputs.threads }}
+          SHARDS=${{ github.event.inputs.shards }}
+          SHARD_INDEX=${{ matrix.shard }}
+          CMD="python3 fca-dashboard/scripts/fetch_persons.py \
+            --threads $THREADS \
+            --shards $SHARDS \
+            --shard-index $SHARD_INDEX"
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
+          fi
+          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
+            CMD="$CMD --only-missing"
+          fi
+          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
+            CMD="$CMD --retry-failed"
+          fi
+          if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
+            CMD="$CMD --fresh"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          echo "▶️ Running: $CMD"
+          eval "$CMD"
 
-      - name: Upload shard artifact
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: persons-part-${{ matrix.shard }}
           path: docs/fca-dashboard/data/fca_persons_part${{ matrix.shard }}.json
 
+  # 3) Merge all parts & push
   merge:
     needs: fetch
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code (shallow)
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           path: docs/fca-dashboard/data
 
-      - name: Merge partitioned JSONs
-        run: |
-          python3 fca-dashboard/scripts/merge_person_parts.py \
-            docs/fca-dashboard/data \
-            docs/fca-dashboard/data/fca_persons.json
+      - name: Merge shards
+        run: python3 fca-dashboard/scripts/merge_person_parts.py \
+               docs/fca-dashboard/data \
+               docs/fca-dashboard/data/fca_persons.json
 
-      - name: Commit & push merged JSON
+      - name: Commit & push final JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
