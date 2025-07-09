@@ -1,4 +1,4 @@
-name: Fetch FCA Individual Records (Threaded)
+name: Fetch FCA Individual Records (Sharded)
 
 permissions:
   contents: write
@@ -7,35 +7,39 @@ on:
   workflow_dispatch:
     inputs:
       threads:
-        description: 'Number of parallel threads'
+        description: 'Number of parallel threads per shard (optimum ≃5)'
         required: true
         default: '5'
+      shards:
+        description: 'Number of sequential shards to split the IRN list into'
+        required: true
+        default: '1'
       limit:
         description: 'Max IRNs to process (blank = full run)'
         required: false
         default: ''
       only_missing:
-        description: '☑️ Only fetch IRNs not in existing store'
+        description: 'Only fetch IRNs not yet present in store'
         required: false
         default: false
         type: boolean
       retry_failed:
-        description: '☑️ Only retry IRNs that errored last run'
+        description: 'Only retry IRNs that errored last run'
         required: false
         default: false
         type: boolean
       fresh:
-        description: '☑️ Full refresh: ignore existing records'
+        description: 'Full refresh: ignore existing data'
         required: false
         default: false
         type: boolean
       dry_run:
-        description: '☑️ Dry run: list IRNs without API calls'
+        description: 'Dry run: list IRNs without making any API calls'
         required: false
         default: false
         type: boolean
       no_push:
-        description: '☑️ Don’t commit/push the final JSON'
+        description: 'Don’t commit/push the JSON outputs (for testing)'
         required: false
         default: false
         type: boolean
@@ -58,13 +62,14 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch individual records (threaded)
+      - name: Fetch individual records (sharded)
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
-          GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
         run: |
-          CMD="python3 fca-dashboard/scripts/fetch_persons.py --threads ${{ github.event.inputs.threads }}"
+          CMD="python3 fca-dashboard/scripts/fetch_persons.py \
+--shards ${{ github.event.inputs.shards }} \
+--threads ${{ github.event.inputs.threads }}"
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             CMD="$CMD --limit ${{ github.event.inputs.limit }}"
           fi
@@ -83,12 +88,12 @@ jobs:
           echo "▶️ Running: $CMD"
           $CMD
 
-      - name: Commit & push updated persons
+      - name: Commit & push results
         if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add docs/fca-dashboard/data/fca_persons.json
-          git diff --cached --quiet || git commit -m "chore(fca): update individual records"
+          git add docs/fca-dashboard/data/fca_persons_part*.json docs/fca-dashboard/data/fca_persons.json
+          git diff --cached --quiet || git commit -m "chore(fca): update individual records (sharded)"
           git pull --rebase origin main
           git push origin HEAD:main
