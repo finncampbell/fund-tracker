@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       threads:
-        description: 'Number of parallel threads per shard (optimum ≃5)'
+        description: 'Number of threads per shard (optimum ≃5)'
         required: true
         default: '5'
       shards:
-        description: 'Number of sequential shards to split the IRN list into'
+        description: 'Number of sequential shards to split IRN list into'
         required: true
         default: '1'
       limit:
@@ -47,58 +47,70 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        shard: ${{ fromJson(format('[{}]', join(',', range(1, int(github.event.inputs.shards)+1)))) }}
+      max-parallel: 1
 
     steps:
-      # 1. Shallow checkout of the latest commit only
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 1    # ← only pull the latest commit for speed
+          fetch-depth: 1
 
-      # 2. Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3. Install dependencies
       - name: Install dependencies
         run: pip install requests
 
-      # 4. Run sharded fetch script
-      - name: Fetch individual records (sharded)
+      - name: Fetch shard ${{ matrix.shard }}
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          CMD="python3 fca-dashboard/scripts/fetch_persons.py \
+          python3 fca-dashboard/scripts/fetch_persons.py \
             --threads ${{ github.event.inputs.threads }} \
-            --shards ${{ github.event.inputs.shards }}"
-          if [ -n "${{ github.event.inputs.limit }}" ]; then
-            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
-          fi
-          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
-            CMD="$CMD --only-missing"
-          fi
-          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
-            CMD="$CMD --retry-failed"
-          fi
-          if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
-            CMD="$CMD --fresh"
-          fi
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            CMD="$CMD --dry-run"
-          fi
-          echo "▶️ Running: $CMD"
-          $CMD
+            --shards ${{ github.event.inputs.shards }} \
+            --shard-index ${{ matrix.shard }} \
+            $([[ -n "${{ github.event.inputs.limit }}" ]] && echo "--limit ${{ github.event.inputs.limit }}") \
+            $([[ "${{ github.event.inputs.only_missing }}" == "true" ]] && echo "--only-missing") \
+            $([[ "${{ github.event.inputs.retry_failed }}" == "true" ]] && echo "--retry-failed") \
+            $([[ "${{ github.event.inputs.fresh }}" == "true" ]] && echo "--fresh") \
+            $([[ "${{ github.event.inputs.dry_run }}" == "true" ]] && echo "--dry-run")
 
-      # 5. Commit & push results
-      - name: Commit & push results
-        if: ${{ github.event.inputs.no_push != 'true' }}
+      - name: Upload shard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: persons-part-${{ matrix.shard }}
+          path: docs/fca-dashboard/data/fca_persons_part${{ matrix.shard }}.json
+
+  merge:
+    needs: fetch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: docs/fca-dashboard/data
+
+      - name: Merge partitioned JSONs
+        run: python3 fca-dashboard/scripts/merge_person_parts.py \
+          docs/fca-dashboard/data docs/fca-dashboard/data/fca_persons.json
+
+      - name: Commit & push merged JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add docs/fca-dashboard/data/fca_persons_part*.json docs/fca-dashboard/data/fca_persons.json
-          git diff --cached --quiet || git commit -m "chore(fca): update individual records (sharded)"
+          git add docs/fca-dashboard/data/fca_persons.json
+          git diff --cached --quiet || git commit -m "chore(fca): merge individual records"
           git pull --rebase origin main
           git push origin HEAD:main
