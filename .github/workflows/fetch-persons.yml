@@ -49,23 +49,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Check out the repository
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # 2. Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3. Install dependencies
-      - name: Install Python deps
+      - name: Install dependencies
         run: pip install requests
 
-      # 4. Run sharded fetch script
       - name: Fetch individual records (sharded)
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
@@ -73,30 +69,25 @@ jobs:
         run: |
           # Build the base command
           CMD="python3 fca-dashboard/scripts/fetch_persons.py \
---threads ${{ github.event.inputs.threads }} \
---shards ${{ github.event.inputs.shards }}"
+            --threads ${{ github.event.inputs.threads }} \
+            --shards ${{ github.event.inputs.shards }}"
 
-          # Optional cap on total IRNs
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             CMD="$CMD --limit ${{ github.event.inputs.limit }}"
           fi
 
-          # Only-missing mode
           if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
             CMD="$CMD --only-missing"
           fi
 
-          # Retry-failed mode
           if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
             CMD="$CMD --retry-failed"
           fi
 
-          # Fresh mode
           if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
             CMD="$CMD --fresh"
           fi
 
-          # Dry-run mode
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             CMD="$CMD --dry-run"
           fi
@@ -104,20 +95,12 @@ jobs:
           echo "▶️ Running: $CMD"
           $CMD
 
-      # 5. Commit & push results (unless no_push)
       - name: Commit & push results
         if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
-          # Configure git
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-
-          # Stage all per-shard and merged JSON files
           git add docs/fca-dashboard/data/fca_persons_part*.json docs/fca-dashboard/data/fca_persons.json
-
-          # Commit if there are changes
           git diff --cached --quiet || git commit -m "chore(fca): update individual records (sharded)"
-
-          # Pull, rebase, and push
           git pull --rebase origin main
           git push origin HEAD:main
