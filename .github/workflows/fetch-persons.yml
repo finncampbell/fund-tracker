@@ -49,52 +49,50 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Shallow checkout of the latest commit only
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 1    # ← only pull the latest commit for speed
 
+      # 2. Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 3. Install dependencies
       - name: Install dependencies
         run: pip install requests
 
+      # 4. Run sharded fetch script
       - name: Fetch individual records (sharded)
         env:
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
-          # Build the base command
           CMD="python3 fca-dashboard/scripts/fetch_persons.py \
             --threads ${{ github.event.inputs.threads }} \
             --shards ${{ github.event.inputs.shards }}"
-
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             CMD="$CMD --limit ${{ github.event.inputs.limit }}"
           fi
-
           if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
             CMD="$CMD --only-missing"
           fi
-
           if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
             CMD="$CMD --retry-failed"
           fi
-
           if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
             CMD="$CMD --fresh"
           fi
-
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             CMD="$CMD --dry-run"
           fi
-
           echo "▶️ Running: $CMD"
           $CMD
 
+      # 5. Commit & push results
       - name: Commit & push results
         if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
