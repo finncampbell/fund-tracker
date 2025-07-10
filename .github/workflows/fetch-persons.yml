@@ -11,7 +11,7 @@ on:
         required: true
         default: '5'
       shards:
-        description: 'How many sequential shards to split IRNs into'
+        description: 'How many shards to split missing IRNs into'
         required: true
         default: '1'
       limit:
@@ -19,7 +19,7 @@ on:
         required: false
         default: ''
       only_missing:
-        description: 'Only fetch IRNs missing from the store'
+        description: 'Only fetch IRNs not already in store'
         required: false
         default: false
         type: boolean
@@ -39,30 +39,28 @@ on:
         default: false
         type: boolean
       no_push:
-        description: 'Do not commit/push results (for testing)'
+        description: 'Do not commit/push results'
         required: false
         default: false
         type: boolean
 
 jobs:
-  # 1) Split into [1,2,…,shards]
   split:
     runs-on: ubuntu-latest
     outputs:
       shard_list: ${{ steps.make-list.outputs.shard_list }}
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
+        with: { fetch-depth: 1 }
 
       - id: make-list
         name: Build shard list
         run: |
           N="${{ github.event.inputs.shards }}"
-          python3 -c "import json; print(json.dumps(list(range(1, int('$N')+1))))" > shards.json
-          echo "shard_list=$(cat shards.json)" >> $GITHUB_OUTPUT
+          python3 -c "import json; print(json.dumps(list(range(1, int('$N')+1))))" \
+            > shards.json
+          echo "shard_list=$(<shards.json)" >> $GITHUB_OUTPUT
 
-  # 2) Fetch each shard in its own job (1-at-a-time)
   fetch:
     needs: split
     runs-on: ubuntu-latest
@@ -73,18 +71,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
+        with: { fetch-depth: 1 }
 
       - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+        with: { python-version: '3.x' }
 
-      - name: Install requests
+      - name: Install dependencies
         run: pip install requests
 
       - name: Fetch shard #${{ matrix.shard }}
         env:
+          RL_MAX_CALLS: '45'
+          RL_WINDOW_S:  '10'
           FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
           FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
         run: |
@@ -118,26 +116,24 @@ jobs:
           name: persons-part-${{ matrix.shard }}
           path: docs/fca-dashboard/data/fca_persons_part${{ matrix.shard }}.json
 
-  # 3) Merge all parts & push
   merge:
     needs: fetch
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
+        with: { fetch-depth: 1 }
 
       - uses: actions/download-artifact@v4
         with:
-          path: docs/fca-dashboard/data
+          path: .   # place shard files under docs/fca-dashboard/data/
 
       - name: Merge shards
         run: python3 fca-dashboard/scripts/merge_person_parts.py \
-               docs/fca-dashboard/data \
-               docs/fca-dashboard/data/fca_persons.json
+               docs/fca-dashboard/data docs/fca-dashboard/data/fca_persons.json
 
       - name: Commit & push final JSON
+        if: ${{ github.event.inputs.no_push != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
