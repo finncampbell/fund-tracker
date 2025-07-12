@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-07-04
+ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-07-11
 835233,Chetwood Investment Management Ltd,,Authorised,2019-08-14 00:00:00
 835577,TPIO Limited,,Authorised,2019-09-02 00:00:00
 804843,Alp Financial Limited,2549006INHOBUTJA1X91,Authorised,2018-10-08 00:00:00
@@ -43,7 +43,7 @@
 224540,GMO UK Limited,54930034SOKGN7MX2I37,Authorised,2003-12-05 00:00:00
 225544,Louis Capital Markets UK LLP,213800KL2QZT2GQMQQ34,Authorised,2003-11-03 00:00:00
 429806,DWS Investments UK Limited,529900IDIVPXHQ72XG19,Authorised,2005-06-28 00:00:00
-454330,CBA Europe Ltd,2138009Y2MYL1IVAUL46,Authorised,2007-01-02 00:00:00
+454330,CBA EUROPE LIMITED,2138009Y2MYL1IVAUL46,Authorised,2007-01-02 00:00:00
 454814,BGC Brokers L.P,ZWNFQ48RUL8VJZ2AIC12,Authorised,2006-11-16 00:00:00
 467283,Westhall Partners LLP,,Authorised,2007-06-27 00:00:00
 469094,Mitsui Bussan Commodities Ltd,KBKKYLHYO9UROVENIL92,Authorised,2008-04-01 00:00:00
@@ -1503,7 +1503,7 @@
 602082,Currency Solutions Limited,213800JCBMV4BGSVIB06,Authorised,2014-04-01 00:00:00
 500498,BERNSTEIN AUTONOMOUS LLP,213800LBM6PT85IGM996,Authorised,2009-07-30 00:00:00
 188130,Amius Limited,213800C1LJRHXHO5QC19,Authorised,2001-12-01 00:00:00
-150142,C.Czarnikow Sugar Futures Ltd,2138007CJI27QYS3KL61,Authorised,2001-12-01 00:00:00
+150142,C. CZARNIKOW SUGAR FUTURES LIMITED,2138007CJI27QYS3KL61,Authorised,2001-12-01 00:00:00
 115231,Marlborough Investment Management Limited,,Authorised,2001-12-01 00:00:00
 590299,Vantage Global Prime LLP,213800EXN2WUODF1C670,Authorised,2013-07-01 00:00:00
 552790,Pegasus Capital LLP,,Authorised,2011-08-25 00:00:00
@@ -1519,7 +1519,7 @@
 465131,Northern Trust Securities LLP,549300EF8AZLRG0UC208,Authorised,2007-06-25 00:00:00
 225747,CTC London Ltd,529900OP1AIJT0F8KH40,Authorised,2003-10-08 00:00:00
 187863,Swiss Re Capital Markets Limited,549300HPMMQNID51T022,Authorised,2001-12-01 00:00:00
-163296,Thomas Grant & Co Ltd,213800AB46IBMI36YY02,Authorised,2001-12-01 00:00:00
+163296,THOMAS GRANT & COMPANY LIMITED,213800AB46IBMI36YY02,Authorised,2001-12-01 00:00:00
 515334,Aviva Investment Solutions UK Limited,5493007CDYM7I1M5DZ80,Authorised,2010-07-01 00:00:00
 116413,Jarvis Investment Management Limited,213800HBDYZM8J5CHJ19,Authorised,2001-12-01 00:00:00
 188244,Raymond James Financial International Limited,213800GH3F4OW1COOV72,Authorised,2001-12-01 00:00:00
@@ -2340,7 +2340,7 @@
 784448,Seismic Venture Partners Ltd,,Authorised,2018-02-14 00:00:00
 432999,Eden Rock Capital Management LLP,,Authorised,2005-08-15 00:00:00
 476739,Elbrus Capital Partners LLP,,Authorised,2008-02-15 00:00:00
-226249,Elcot Capital Management Ltd,,Authorised,2003-11-28 00:00:00
+226249,ELCOT CAPITAL MANAGEMENT LIMITED,,Authorised,2003-11-28 00:00:00
 604439,Enterprise Investment Partners LLP,,Authorised,2014-07-10 00:00:00
 807367,Entrepreneurs First Investment Manager LLP,,Authorised,2019-02-18 00:00:00
 217457,EPIC Investment Partners (UK) Limited,,Authorised,2002-12-13 00:00:00
@@ -2419,6 +2419,7 @@
 122335,HSBC Global Asset Management (UK) Limited,213800L6ERIFAN15KI98,Authorised,2001-12-01 00:00:00
 1026803,Fig Markets Limited,6488C2F77ABT2N2A0153,Authorised,2025-05-01 00:00:00
 749440,Causeway Securities Limited,21380031FDWN3OJV4R73,Authorised,2016-12-09 00:00:00
+1032566,iCapital UK Services Limited,,Authorised,2025-07-09 00:00:00
 599294,XHE Capital LLP,,Authorised,2013-10-01 00:00:00
 610729,Arabesque Asset Management Limited,2138008MNTSBNXO33Y86,Authorised,2014-06-04 00:00:00
 740528,PROGENY ASSET MANAGEMENT LIMITED,,Authorised,2016-09-01 00:00:00
