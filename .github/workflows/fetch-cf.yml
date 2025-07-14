@@ -1,198 +1,157 @@
-#!/usr/bin/env python3
-"""
-scripts/fetch_cf.py
+# .github/workflows/fetch-cf.yml
+name: Fetch FCA Individual Controlled Functions (Sharded)
 
-Threaded, sharded fetch of each individual’s Controlled-Functions history,
-peeking to cost only one call for 0 or 1-page cases, and emitting only a
-simple counter per IRN.
+permissions:
+  contents: write
 
-Loads its IRNs from fca-dashboard/data/fca_individuals_by_firm.json
-(rather than from fca_persons.json).
-"""
+on:
+  workflow_dispatch:
+    inputs:
+      threads:
+        description: 'Number of threads per shard'
+        required: true
+        default: '5'
+      shards:
+        description: 'How many shards to split the IRNs into'
+        required: true
+        default: '1'
+      limit:
+        description: 'Max IRNs to process (blank = no cap)'
+        required: false
+        default: ''
+      only_missing:
+        description: 'Only fetch CF for IRNs not yet in store'
+        required: false
+        default: false
+        type: boolean
+      retry_failed:
+        description: 'Only retry CF fetches that failed previously'
+        required: false
+        default: false
+        type: boolean
+      fresh:
+        description: 'Ignore existing CF store and re-fetch all IRNs'
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: 'Dry run: list IRNs without making API calls'
+        required: false
+        default: false
+        type: boolean
+      no_push:
+        description: 'Don’t commit/push the final merged CF JSON'
+        required: false
+        default: false
+        type: boolean
 
-import os
-import sys
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    outputs:
+      shard_list: ${{ steps.build-list.outputs.shard_list }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - id: build-list
+        name: Build shard indices
+        run: |
+          N="${{ github.event.inputs.shards }}"
+          python3 - << 'EOF' > shards.json
 import json
-import time
-import math
-import argparse
-import requests
-from threading import Lock
-from queue import Queue, Empty
-from concurrent.futures import ThreadPoolExecutor
-from rate_limiter import RateLimiter
+print(json.dumps(list(range(1, int(N)+1))))
+EOF
+          echo "shard_list=$(cat shards.json)" >> $GITHUB_OUTPUT
 
-# ─── CLI ARGUMENTS ────────────────────────────────────────────────────────────
-parser = argparse.ArgumentParser(
-    description="Fetch CF data for IRNs in parallel, sharded"
-)
-parser.add_argument('--threads',     type=int, help='Worker threads',    required=True)
-parser.add_argument('--shards',      type=int, help='Total shards',      required=True)
-parser.add_argument('--shard-index', type=int, help='1-based shard idx', required=True)
-parser.add_argument('--limit',       type=int, default=None,     help='Cap IRNs for testing')
-parser.add_argument('--only-missing',action='store_true',         help='Skip IRNs already in store')
-parser.add_argument('--retry-failed',action='store_true',         help='Only retry previous failures')
-parser.add_argument('--fresh',       action='store_true',         help='Ignore existing store')
-parser.add_argument('--dry-run',     action='store_true',         help='List IRNs without API calls')
-args = parser.parse_args()
+  fetch:
+    needs: split
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        shard: ${{ fromJson(needs.split.outputs.shard_list) }}
+      max-parallel: 1
 
-# ─── PATHS ─────────────────────────────────────────────────────────────────────
-SCRIPT_DIR       = os.path.dirname(__file__)
-IND_BY_FIRM_JSON = os.path.abspath(os.path.join(SCRIPT_DIR, '../data/fca_individuals_by_firm.json'))
-CF_STORE         = os.path.abspath(os.path.join(SCRIPT_DIR, '../../docs/fca-dashboard/data/fca_cf_part{}.json'.format(args.shard_index)))
-CF_FAILS         = os.path.abspath(os.path.join(SCRIPT_DIR, '../../docs/fca-dashboard/data/fca_cf_fails_part{}.json'.format(args.shard_index)))
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
 
-# ─── FCA API SETUP ────────────────────────────────────────────────────────────
-API_EMAIL = os.getenv('FCA_API_EMAIL'); API_KEY = os.getenv('FCA_API_KEY')
-if not API_EMAIL or not API_KEY:
-    raise RuntimeError("FCA_API_EMAIL and FCA_API_KEY must be set")
-BASE_URL = 'https://register.fca.org.uk/services/V0.1'
-HEADERS  = {
-    'Accept':       'application/json',
-    'X-AUTH-EMAIL': API_EMAIL,
-    'X-AUTH-KEY':   API_KEY,
-}
-limiter = RateLimiter()
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-def safe_get(url: str) -> dict:
-    """Rate-limited GET with simple 429 backoff."""
-    retries = 0
-    while True:
-        limiter.wait()
-        resp = requests.get(url, headers=HEADERS, timeout=10)
-        if resp.status_code == 429 and retries < 5:
-            retries += 1
-            time.sleep(limiter.window)
-            continue
-        resp.raise_for_status()
-        return resp.json()
+      - name: Install dependencies
+        run: pip install requests
 
-def fetch_cf_for_irn(irn: str) -> list:
-    """
-    Peek & paginate `/Individuals/{irn}/CF`.
-    - 0 entries  → return []
-    - ≤ per_page → return that page only
-    - > per_page → page through Next links
-    """
-    url = f"{BASE_URL}/Individuals/{irn}/CF"
-    pkg = safe_get(url)                     # peek / first page
-    ri = pkg.get('ResultInfo') or {}
-    total = int(ri.get('total_count') or 0)
-    if total == 0:
-        return []
+      - name: Fetch CF shard #${{ matrix.shard }}
+        env:
+          RL_MAX_CALLS: '45'
+          RL_WINDOW_S:  '10'
+          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+        run: |
+          THREADS=${{ github.event.inputs.threads }}
+          SHARDS=${{ github.event.inputs.shards }}
+          SHARD_INDEX=${{ matrix.shard }}
+          CMD="python3 fca-dashboard/scripts/fetch_cf.py \
+            --threads $THREADS \
+            --shards $SHARDS \
+            --shard-index $SHARD_INDEX"
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            CMD="$CMD --limit ${{ github.event.inputs.limit }}"
+          fi
+          if [ "${{ github.event.inputs.only_missing }}" = "true" ]; then
+            CMD="$CMD --only-missing"
+          fi
+          if [ "${{ github.event.inputs.retry_failed }}" = "true" ]; then
+            CMD="$CMD --retry-failed"
+          fi
+          if [ "${{ github.event.inputs.fresh }}" = "true" ]; then
+            CMD="$CMD --fresh"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          echo "▶️ Running: $CMD"
+          eval "$CMD"
 
-    all_data = pkg.get('Data') or []
-    next_url = ri.get('Next')
-    while next_url:
-        pkg2 = safe_get(next_url)
-        all_data.extend(pkg2.get('Data') or [])
-        next_url = (pkg2.get('ResultInfo') or {}).get('Next')
+      - name: Upload shard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cf-part-${{ matrix.shard }}
+          path: docs/fca-dashboard/data/fca_cf_part${{ matrix.shard }}.json
 
-    # Flatten the single-object Current/Previous into a list of entries
-    cf0 = all_data[0] if all_data else {}
-    out = []
-    for section in ('Previous', 'Current'):
-        for name, vals in (cf0.get(section) or {}).items():
-            entry = {**vals, 'role': name, 'when': section.lower()}
-            out.append(entry)
-    return out
+  merge:
+    needs: fetch
+    runs-on: ubuntu-latest
 
-def main():
-    # ─── Prepare data directory
-    os.makedirs(os.path.dirname(CF_STORE), exist_ok=True)
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
 
-    # ─── Load FRN→Individuals map and flatten to IRN list
-    if not os.path.exists(IND_BY_FIRM_JSON):
-        print(f"❌ Missing {IND_BY_FIRM_JSON}")
-        sys.exit(1)
-    with open(IND_BY_FIRM_JSON, 'r', encoding='utf-8') as f:
-        mapping = json.load(f)
-    # mapping is FRN -> [ { 'IRN': xxx, ... }, ... ]
-    all_irns = [
-        rec.get('IRN')
-        for entries in mapping.values()
-        for rec in entries
-        if rec.get('IRN')
-    ]
-    # dedupe preserving order
-    seen = set()
-    irns = [x for x in all_irns if x not in seen and not seen.add(x)]
+      - name: Download CF shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: docs/fca-dashboard/data
 
-    # ─── Load existing store & previous failures
-    store, prev_fails = {}, []
-    if os.path.exists(CF_STORE) and not args.fresh:
-        with open(CF_STORE, 'r', encoding='utf-8') as f:
-            store = json.load(f)
-    if args.retry_failed and os.path.exists(CF_FAILS):
-        with open(CF_FAILS, 'r', encoding='utf-8') as f:
-            prev_fails = json.load(f)
+      - name: Merge CF shards
+        run: python3 fca-dashboard/scripts/merge_cf_parts.py \
+               docs/fca-dashboard/data \
+               docs/fca-dashboard/data/fca_cf.json
 
-    # ─── Apply filters
-    if args.only_missing:
-        irns = [i for i in irns if i not in store]
-    elif args.retry_failed:
-        irns = prev_fails
-
-    # ─── Testing limit
-    if args.limit:
-        irns = irns[:args.limit]
-
-    # ─── Compute shard slice
-    total = len(irns)
-    size  = math.ceil(total / args.shards)
-    idx   = args.shard_index - 1
-    if idx < 0 or idx >= args.shards:
-        print(f"❌ Invalid shard-index {args.shard_index}")
-        sys.exit(1)
-    subset = irns[idx*size : (idx+1)*size]
-    print(f"🔍 Shard {args.shard_index}/{args.shards}: {len(subset)} IRNs")
-
-    # ─── Dry run?
-    if args.dry_run:
-        for i in subset:
-            print(f"➡️  Would fetch CF for {i}")
-        return
-
-    # ─── Threaded fetch with simple counter
-    q = Queue()
-    for i in subset:
-        q.put(i)
-    lock = Lock()
-    processed = 0
-    results, fails = {}, []
-
-    def worker():
-        nonlocal processed
-        while True:
-            try:
-                irn = q.get_nowait()
-            except Empty:
-                return
-
-            try:
-                cf_list = fetch_cf_for_irn(irn)
-                results[irn] = cf_list
-            except Exception:
-                fails.append(irn)
-
-            with lock:
-                processed += 1
-                # only the counter, no IRN details
-                print(f"▶️  {processed}/{len(subset)} IRNs done")
-            q.task_done()
-
-    with ThreadPoolExecutor(max_workers=args.threads) as executor:
-        for _ in range(args.threads):
-            executor.submit(worker)
-        q.join()
-
-    # ─── Write out shard results & failures
-    with open(CF_STORE, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-    with open(CF_FAILS, 'w', encoding='utf-8') as f:
-        json.dump(fails, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Completed shard: {len(results)} CF entries, {len(fails)} failures")
-
-if __name__ == '__main__':
-    main()
+      - name: Commit & push merged CF
+        if: ${{ github.event.inputs.no_push != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add docs/fca-dashboard/data/fca_cf.json
+          git diff --cached --quiet || git commit -m "chore(fca): merge controlled functions"
+          git pull --rebase origin main
+          git push origin HEAD:main
