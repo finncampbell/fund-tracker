@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
 Fetch Firm Details from FCA, in deduped, sharded, threaded batches under a rate limit.
-Writes each shard to fca-dashboard/data/fca_main_<shard>.json
+Writes each shard to fca-dashboard/data/fca_main_shard_<shard-index>.json
 """
-import os, json, argparse, time, requests
+import os
+import json
+import argparse
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from rate_limiter import RateLimiter
 
 BASE_URL  = "https://register.fca.org.uk/services/V0.1/Firm"
-SEED_PATH = "fca-dashboard/data/all_frns_with_names.json"
+SEED_PATH = "docs/fca-dashboard/data/all_frns_with_names.json"
 OUT_DIR   = "fca-dashboard/data"
 API_KEY   = os.getenv("FCA_API_KEY")
 API_EMAIL = os.getenv("FCA_API_EMAIL")
@@ -61,13 +64,16 @@ def fetch_firm(frn, limiter):
 
 def main():
     args = parse_args()
-    # Load & dedupe FRN list
-    frns = [ str(x["frn"]) for x in json.load(open(SEED_PATH)) ]
-    seen = set(); unique = [x for x in frns if x not in seen and not seen.add(x)]
 
-    # Shard the list by index modulo
+    # Load & dedupe FRN list
+    raw = json.load(open(SEED_PATH, encoding="utf-8"))
+    frns = [str(x["frn"]) for x in raw]
+    seen = set()
+    unique_frns = [x for x in frns if x not in seen and not seen.add(x)]
+
+    # Determine this shard’s slice
     slice_frns = [
-        frn for idx, frn in enumerate(unique)
+        frn for idx, frn in enumerate(unique_frns)
         if (idx % args.shards) + 1 == args.shard_index
     ]
 
@@ -75,13 +81,11 @@ def main():
     out_path = os.path.join(OUT_DIR, f"fca_main_shard_{args.shard_index}.json")
     existing = {}
     if args.only_missing and os.path.exists(out_path):
-        existing = json.load(open(out_path))
+        existing = json.load(open(out_path, encoding="utf-8"))
     store = existing.copy()
 
-    # Scale rate limit so total across all shards is <=45 calls/10s
-    GLOBAL_MAX = 45
-    calls_per_shard = max(1, GLOBAL_MAX // args.shards)
-    limiter = RateLimiter(max_calls=calls_per_shard, per_seconds=10)
+    # Each shard now runs sequentially, so use full rate limit
+    limiter = RateLimiter(max_calls=45, window_s=10)
 
     # Threaded fetch
     with ThreadPoolExecutor(max_workers=args.threads) as exe:
