@@ -1,17 +1,16 @@
 name: Init FRN Profiles
 
-permissions:
-  contents: write
-
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   init_profiles:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out code
+      - name: Check out code (includes seed JSON)
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
@@ -28,6 +27,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add docs/fca-dashboard/data/frn
+          git add docs/fca-dashboard/data/frn/*.json
           git diff --cached --quiet || git commit -m "chore(fca): init FRN profiles"
           git push origin HEAD:main
