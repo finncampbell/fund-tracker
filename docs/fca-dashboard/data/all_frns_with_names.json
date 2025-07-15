@@ -304,6 +304,10 @@
     "name": "Daxton Capital Limited"
   },
   {
+    "frn": "1019537",
+    "name": "Alpha Investment Office Limited"
+  },
+  {
     "frn": "1019749",
     "name": "BBB Investment Services Limited"
   },
@@ -324,6 +328,10 @@
     "name": "Impera Capital LLP"
   },
   {
+    "frn": "1022406",
+    "name": "Como Capital Limited"
+  },
+  {
     "frn": "1022748",
     "name": "PRECISION THEATRE INVESTMENTS LIMITED"
   },
@@ -334,6 +342,10 @@
   {
     "frn": "1023168",
     "name": "SCYLD Capital LLP"
+  },
+  {
+    "frn": "1023255",
+    "name": "Jefferies Credit Partners Europe Limited"
   },
   {
     "frn": "1023836",
@@ -358,6 +370,18 @@
   {
     "frn": "1026803",
     "name": "Fig Markets Limited"
+  },
+  {
+    "frn": "1029668",
+    "name": "MOMENTUM INVESTMENT MANAGEMENT LIMITED"
+  },
+  {
+    "frn": "1031259",
+    "name": "ECOFIN U.S. RENEWABLES INFRASTRUCTURE TRUST PLC"
+  },
+  {
+    "frn": "1032566",
+    "name": "iCapital UK Services Limited"
   },
   {
     "frn": "110134",
@@ -797,7 +821,7 @@
   },
   {
     "frn": "124412",
-    "name": "Charles Stanley & Co Ltd"
+    "name": "RAYMOND JAMES WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "124422",
@@ -1017,7 +1041,7 @@
   },
   {
     "frn": "143097",
-    "name": "Premier Fund Managers Ltd"
+    "name": "PREMIER FUND MANAGERS LIMITED"
   },
   {
     "frn": "143286",
@@ -1245,7 +1269,7 @@
   },
   {
     "frn": "150142",
-    "name": "C.Czarnikow Sugar Futures Ltd"
+    "name": "C. CZARNIKOW SUGAR FUTURES LIMITED"
   },
   {
     "frn": "150403",
@@ -1333,7 +1357,7 @@
   },
   {
     "frn": "163296",
-    "name": "Thomas Grant & Co Ltd"
+    "name": "THOMAS GRANT & COMPANY LIMITED"
   },
   {
     "frn": "163299",
@@ -1346,10 +1370,6 @@
   {
     "frn": "163584",
     "name": "Sarasin Asset Management Ltd"
-  },
-  {
-    "frn": "164380",
-    "name": "PVM Oil Futures Ltd"
   },
   {
     "frn": "164689",
@@ -1409,7 +1429,7 @@
   },
   {
     "frn": "170423",
-    "name": "HSBC Alternative Investments  Limited"
+    "name": "HSBC Alternative Investments Limited"
   },
   {
     "frn": "170479",
@@ -1565,7 +1585,7 @@
   },
   {
     "frn": "179391",
-    "name": "Clarksons Platou Futures Limited"
+    "name": "Clarksons Futures Limited"
   },
   {
     "frn": "179392",
@@ -1969,7 +1989,7 @@
   },
   {
     "frn": "190780",
-    "name": "First Global (UK) Limited"
+    "name": "FIRST GLOBAL (UK) LTD."
   },
   {
     "frn": "190782",
@@ -2090,10 +2110,6 @@
   {
     "frn": "193705",
     "name": "Tradeweb Europe Limited"
-  },
-  {
-    "frn": "193707",
-    "name": "abrdn Alternative Investments Limited"
   },
   {
     "frn": "193905",
@@ -2645,7 +2661,7 @@
   },
   {
     "frn": "226249",
-    "name": "Elcot Capital Management Ltd"
+    "name": "ELCOT CAPITAL MANAGEMENT LIMITED"
   },
   {
     "frn": "226338",
@@ -2870,10 +2886,6 @@
   {
     "frn": "401905",
     "name": "Titon Associates Ltd"
-  },
-  {
-    "frn": "401953",
-    "name": "Elm Capital Associates Ltd"
   },
   {
     "frn": "402125",
@@ -3185,7 +3197,7 @@
   },
   {
     "frn": "437558",
-    "name": "Global Investment Strategy UK Ltd"
+    "name": "GLOBAL INVESTMENT STRATEGY UK LIMITED"
   },
   {
     "frn": "438377",
@@ -3461,7 +3473,7 @@
   },
   {
     "frn": "454330",
-    "name": "CBA Europe Ltd"
+    "name": "CBA EUROPE LIMITED"
   },
   {
     "frn": "454571",
@@ -3817,7 +3829,7 @@
   },
   {
     "frn": "471210",
-    "name": "Arup Corporate Finance Ltd"
+    "name": "ARUP CORPORATE FINANCE LIMITED"
   },
   {
     "frn": "471342",
@@ -3845,7 +3857,7 @@
   },
   {
     "frn": "472818",
-    "name": "Capital Systematics Ltd"
+    "name": "CAPITAL SYSTEMATICS LTD."
   },
   {
     "frn": "472929",
@@ -4309,7 +4321,7 @@
   },
   {
     "frn": "491367",
-    "name": "Infinity Capital Partners Ltd"
+    "name": "INFINITY CAPITAL PARTNERS LIMITED"
   },
   {
     "frn": "492519",
@@ -4701,7 +4713,7 @@
   },
   {
     "frn": "514394",
-    "name": "IUR Capital Ltd"
+    "name": "IUR CAPITAL LIMITED"
   },
   {
     "frn": "514518",
@@ -5765,7 +5777,7 @@
   },
   {
     "frn": "588344",
-    "name": "J Stern & Co. LLP"
+    "name": "J. STERN & CO LLP"
   },
   {
     "frn": "588370",
@@ -5905,7 +5917,7 @@
   },
   {
     "frn": "595785",
-    "name": "Aquis Exchange PLC"
+    "name": "AQUIS EXCHANGE LIMITED"
   },
   {
     "frn": "595861",
@@ -6161,7 +6173,7 @@
   },
   {
     "frn": "607482",
-    "name": "Proprium Capital  Management (UK) LLP"
+    "name": "Proprium Capital Management (UK) LLP"
   },
   {
     "frn": "607483",
@@ -6301,7 +6313,7 @@
   },
   {
     "frn": "613381",
-    "name": "VIBHS Financial Ltd"
+    "name": "VIBHS FINANCIAL LTD"
   },
   {
     "frn": "613498",
@@ -6689,7 +6701,7 @@
   },
   {
     "frn": "650245",
-    "name": "Avellemy Limited"
+    "name": "Ascot Lloyd Investment Management Limited"
   },
   {
     "frn": "650279",
@@ -7129,7 +7141,7 @@
   },
   {
     "frn": "660067",
-    "name": "Mobeus Income & Growth VCT PLC"
+    "name": "GRESHAM HOUSE INCOME & GROWTH 2 VCT PLC"
   },
   {
     "frn": "660074",
@@ -7157,7 +7169,7 @@
   },
   {
     "frn": "660133",
-    "name": "The Income & Growth VCT PLC"
+    "name": "GRESHAM HOUSE INCOME & GROWTH VCT PLC"
   },
   {
     "frn": "660212",
@@ -7557,7 +7569,7 @@
   },
   {
     "frn": "714242",
-    "name": "Above Wealth Management  LLP"
+    "name": "Above Wealth Management LLP"
   },
   {
     "frn": "714282",
@@ -8437,7 +8449,7 @@
   },
   {
     "frn": "775330",
-    "name": "Risksave Technologies Ltd."
+    "name": "RISKSAVE TECHNOLOGIES LTD"
   },
   {
     "frn": "775385",
@@ -8936,10 +8948,6 @@
     "name": "Woburn Asset Management Limited"
   },
   {
-    "frn": "806010",
-    "name": "Stratos Aviation Limited"
-  },
-  {
     "frn": "806100",
     "name": "North Star Asset Management Limited"
   },
@@ -9225,7 +9233,7 @@
   },
   {
     "frn": "825344",
-    "name": "Arbrook Investors Ltd"
+    "name": "ARBROOK INVESTORS LIMITED"
   },
   {
     "frn": "825426",
@@ -9765,7 +9773,7 @@
   },
   {
     "frn": "917403",
-    "name": "Thomson Tyndall Limited"
+    "name": "THOMSON TYNDALL LTD"
   },
   {
     "frn": "917602",
@@ -9845,7 +9853,7 @@
   },
   {
     "frn": "922358",
-    "name": "Galaev & Co Ltd"
+    "name": "Enterprise Investment Systems Ltd"
   },
   {
     "frn": "922590",
@@ -10449,7 +10457,7 @@
   },
   {
     "frn": "953665",
-    "name": "24/7 Investment Management Ltd"
+    "name": "24/7 INVESTMENT MANAGEMENT LTD"
   },
   {
     "frn": "954103",
