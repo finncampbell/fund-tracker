@@ -3,15 +3,20 @@ name: Merge FCA CF From Artifacts
 permissions:
   contents: write
 
-# Trigger after your CF-shard workflow finishes successfully
 on:
+  # Auto-run when the CF-shard workflow completes successfully
   workflow_run:
-    workflows: ["Fetch FCA Individual Controlled Functions (Sharded)"]
-    types: [ completed ]
+    workflows:
+      - "Fetch FCA Individual Controlled Functions (Sharded)"
+    types:
+      - completed
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
 
 jobs:
   merge_from_artifacts:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +28,7 @@ jobs:
       - name: Download CF shard artifacts
         uses: actions/download-artifact@v3
         with:
-          run-id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ github.event.workflow_run.id || github.run_id }}
           path: docs/fca-dashboard/data
 
       - name: Merge shards into single CF JSON
