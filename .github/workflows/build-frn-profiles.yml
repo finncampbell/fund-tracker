@@ -1,4 +1,4 @@
-name: Build FRN Profiles (Manual)
+name: Build FRN Profiles
 
 permissions:
   contents: write
@@ -11,27 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Grab the latest data under docs/fca-dashboard/data
-      - name: Check out repository (shallow)
+      - name: Check out code (shallow)
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      # 2) Bring up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3) Run our profile-builder
-      - name: Build per-FRN profiles
+      - name: Install dependencies
+        run: pip install requests  # only if your slices ever need HTTP; else you can skip
+
+      - name: Build & merge FRN profiles
         run: python3 fca-dashboard/scripts/build_frn_profiles.py
 
-      # 4) Commit & push the new files under docs/fca-dashboard/data/frn/
-      - name: Commit & push profile files
+      - name: Commit & push updated profiles
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add docs/fca-dashboard/data/frn
-          git diff --cached --quiet || git commit -m "chore(fca): add FRN profiles"
+          git diff --cached --quiet || git commit -m "chore(fca): build FRN profiles"
           git push origin HEAD:main
