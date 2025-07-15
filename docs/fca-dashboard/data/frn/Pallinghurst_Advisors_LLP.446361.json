@@ -1,7 +1,18 @@
 {
   "frn": 446361,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "446361",
+    "organisation_name": "Pallinghurst Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC315855",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "27/02/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

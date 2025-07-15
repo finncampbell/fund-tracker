@@ -1,7 +1,17 @@
 {
   "frn": 603935,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "603935",
+    "organisation_name": "Greensledge Capital Markets Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC380220",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "12/09/2013"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

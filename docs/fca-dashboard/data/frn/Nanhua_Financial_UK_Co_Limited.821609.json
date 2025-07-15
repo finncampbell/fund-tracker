@@ -1,7 +1,18 @@
 {
   "frn": 821609,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "821609",
+    "organisation_name": "Nanhua Financial (UK) Co Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11468101",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "10/06/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

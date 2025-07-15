@@ -1,7 +1,18 @@
 {
   "frn": 915004,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "915004",
+    "organisation_name": "PHOENIX COURT GROUP LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12156857",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "13/01/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

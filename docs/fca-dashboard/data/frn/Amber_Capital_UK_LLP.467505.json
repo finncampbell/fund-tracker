@@ -1,7 +1,17 @@
 {
   "frn": 467505,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "467505",
+    "organisation_name": "Amber Capital UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC322586",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "13/07/2007"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

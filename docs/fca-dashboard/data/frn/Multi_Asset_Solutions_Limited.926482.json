@@ -1,7 +1,18 @@
 {
   "frn": 926482,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "926482",
+    "organisation_name": "Multi Asset Solutions Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12590608",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "07/12/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 466684,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "466684",
+    "organisation_name": "LGT Wealth Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC317950",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "19/09/2007"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

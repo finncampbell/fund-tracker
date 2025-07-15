@@ -1,7 +1,18 @@
 {
   "frn": 182011,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "182011",
+    "organisation_name": "Canaccord Genuity Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01774003",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

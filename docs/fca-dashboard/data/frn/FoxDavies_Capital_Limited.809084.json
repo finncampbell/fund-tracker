@@ -1,7 +1,18 @@
 {
   "frn": 809084,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "809084",
+    "organisation_name": "Fox-Davies Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10165213",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "18/09/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

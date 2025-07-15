@@ -1,7 +1,18 @@
 {
   "frn": 224510,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "224510",
+    "organisation_name": "Evolution Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04679177",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "01/09/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

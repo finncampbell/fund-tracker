@@ -1,7 +1,17 @@
 {
   "frn": 473948,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "473948",
+    "organisation_name": "Zephyrus Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06316253",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "02/01/2008"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

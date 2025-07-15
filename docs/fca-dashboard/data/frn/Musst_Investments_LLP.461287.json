@@ -1,7 +1,18 @@
 {
   "frn": 461287,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "461287",
+    "organisation_name": "Musst Investments LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC317593",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "01/10/2007"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

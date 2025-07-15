@@ -1,7 +1,18 @@
 {
   "frn": 582104,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "582104",
+    "organisation_name": "J H Lowson & Company Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08013456",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "02/10/2012"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

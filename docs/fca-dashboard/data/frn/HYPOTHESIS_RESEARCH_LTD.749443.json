@@ -1,7 +1,18 @@
 {
   "frn": 749443,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "749443",
+    "organisation_name": "HYPOTHESIS RESEARCH LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09949356",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "03/10/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

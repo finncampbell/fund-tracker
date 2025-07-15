@@ -1,7 +1,17 @@
 {
   "frn": 911636,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "911636",
+    "organisation_name": "Millennium Global Treasury Services Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "11790385",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "05/03/2020"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

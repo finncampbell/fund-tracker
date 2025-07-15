@@ -1,7 +1,18 @@
 {
   "frn": 224952,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "224952",
+    "organisation_name": "MCF Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04673347",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "18/07/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

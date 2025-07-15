@@ -1,7 +1,17 @@
 {
   "frn": 500593,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "500593",
+    "organisation_name": "Avon Capital Estates Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04581023",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "18/12/2009"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,17 @@
 {
   "frn": 526604,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "526604",
+    "organisation_name": "Beacon Wealth Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05164505",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "01/10/2010"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

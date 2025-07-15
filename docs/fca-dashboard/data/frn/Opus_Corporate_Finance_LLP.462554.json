@@ -1,8 +1,35 @@
 {
   "frn": 462554,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "462554",
+    "organisation_name": "Opus Corporate Finance LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC324433",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "27/02/2007"
+  },
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/527941",
+        "Termination Date": "30/11/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "462554",
+        "Principal Firm Name": "Opus Corporate Finance LLP",
+        "Effective Date": "15/07/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "527941",
+        "Name": "William John Craven"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

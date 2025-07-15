@@ -1,7 +1,18 @@
 {
   "frn": 849840,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "849840",
+    "organisation_name": "Camco Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09902551",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "15/10/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

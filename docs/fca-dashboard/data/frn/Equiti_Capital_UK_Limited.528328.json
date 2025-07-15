@@ -1,7 +1,18 @@
 {
   "frn": 528328,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "528328",
+    "organisation_name": "Equiti Capital UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07216039",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "27/04/2011"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

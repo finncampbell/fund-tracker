@@ -1,7 +1,18 @@
 {
   "frn": 462085,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "462085",
+    "organisation_name": "Parmenion Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC322243",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "17/04/2007"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

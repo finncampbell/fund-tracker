@@ -1,7 +1,17 @@
 {
   "frn": 513632,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "513632",
+    "organisation_name": "QuantBot Technologies Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07023019",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "14/04/2010"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

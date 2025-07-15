@@ -1,7 +1,18 @@
 {
   "frn": 454814,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "454814",
+    "organisation_name": "BGC Brokers L.P",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "LP011453",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "16/11/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

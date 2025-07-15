@@ -1,7 +1,18 @@
 {
   "frn": 801104,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "801104",
+    "organisation_name": "Astral Financial Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10950145",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "18/04/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

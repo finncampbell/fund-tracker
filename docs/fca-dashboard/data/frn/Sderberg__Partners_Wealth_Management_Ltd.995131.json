@@ -1,7 +1,18 @@
 {
   "frn": 995131,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "995131",
+    "organisation_name": "Söderberg & Partners Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14035487",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "08/04/2024"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

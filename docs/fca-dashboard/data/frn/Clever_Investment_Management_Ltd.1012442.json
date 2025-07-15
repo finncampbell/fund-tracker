@@ -1,7 +1,17 @@
 {
   "frn": 1012442,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "1012442",
+    "organisation_name": "Clever Investment Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13850171",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "13/09/2024"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

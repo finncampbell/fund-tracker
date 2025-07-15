@@ -1,8 +1,36 @@
 {
   "frn": 470392,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "470392",
+    "organisation_name": "YCM-Invest Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06039502",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "08/11/2007"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/503491",
+        "Termination Date": "30/10/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "470392",
+        "Principal Firm Name": "YCM-Invest Ltd",
+        "Effective Date": "10/07/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "503491",
+        "Name": "Sceptre Capital Markets Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

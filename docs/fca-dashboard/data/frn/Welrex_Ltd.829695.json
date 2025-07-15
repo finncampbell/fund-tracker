@@ -1,7 +1,18 @@
 {
   "frn": 829695,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "829695",
+    "organisation_name": "Welrex Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10996323",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "14/10/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

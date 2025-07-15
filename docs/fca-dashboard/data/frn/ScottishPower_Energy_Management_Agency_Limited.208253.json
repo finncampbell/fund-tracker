@@ -1,7 +1,18 @@
 {
   "frn": 208253,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "208253",
+    "organisation_name": "ScottishPower Energy Management (Agency) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC222524",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "19/03/2002"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

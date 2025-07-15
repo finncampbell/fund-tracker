@@ -1,7 +1,18 @@
 {
   "frn": 414207,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "414207",
+    "organisation_name": "TrendWatch Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04704606",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "07/01/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

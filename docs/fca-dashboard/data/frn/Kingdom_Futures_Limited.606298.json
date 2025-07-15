@@ -1,7 +1,17 @@
 {
   "frn": 606298,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "606298",
+    "organisation_name": "Kingdom Futures Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08636362",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "08/01/2014"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

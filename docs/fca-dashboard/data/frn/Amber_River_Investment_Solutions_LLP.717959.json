@@ -1,7 +1,18 @@
 {
   "frn": 717959,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "717959",
+    "organisation_name": "Amber River Investment Solutions LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC368475",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "15/07/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

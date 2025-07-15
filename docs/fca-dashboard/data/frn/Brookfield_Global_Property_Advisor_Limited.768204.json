@@ -1,7 +1,17 @@
 {
   "frn": 768204,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "768204",
+    "organisation_name": "Brookfield Global Property Advisor Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08367059",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "20/06/2017"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

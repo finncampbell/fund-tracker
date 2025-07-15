@@ -1,7 +1,18 @@
 {
   "frn": 446173,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "446173",
+    "organisation_name": "ROSEMOOR CAPITAL MANAGEMENT LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC313492",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "11/04/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

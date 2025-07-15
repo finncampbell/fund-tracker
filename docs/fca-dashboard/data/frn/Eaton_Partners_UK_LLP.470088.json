@@ -1,7 +1,18 @@
 {
   "frn": 470088,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "470088",
+    "organisation_name": "Eaton Partners (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC326771",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "04/02/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

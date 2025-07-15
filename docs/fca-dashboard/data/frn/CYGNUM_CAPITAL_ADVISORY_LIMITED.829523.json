@@ -1,7 +1,18 @@
 {
   "frn": 829523,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "829523",
+    "organisation_name": "CYGNUM CAPITAL ADVISORY LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11543029",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "16/05/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

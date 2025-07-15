@@ -1,9 +1,3059 @@
 {
   "frn": 400262,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "400262",
+    "organisation_name": "Sun European Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC307206",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "09/09/2004"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
-  "person_records": {},
-  "controlled_functions": {}
+  "individuals": [
+    {
+      "IRN": "AXW01956",
+      "Name": "Alexander Wyndham",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXW01956"
+    },
+    {
+      "IRN": "XXS01162",
+      "Name": ". Sun European Holdings Ltd",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXS01162"
+    },
+    {
+      "IRN": "ASL01051",
+      "Name": "Antony Simon Levinson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASL01051"
+    },
+    {
+      "IRN": "PDD01037",
+      "Name": "Paul David Daccus",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PDD01037"
+    },
+    {
+      "IRN": "MRM01193",
+      "Name": "MARC ROSS MABON",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MRM01193"
+    },
+    {
+      "IRN": "GXD01538",
+      "Name": "Gabriel Danielachvili",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXD01538"
+    },
+    {
+      "IRN": "NXD01518",
+      "Name": "Nicolas Devriese",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXD01518"
+    },
+    {
+      "IRN": "AXM75511",
+      "Name": "Aurelien Meyer",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM75511"
+    },
+    {
+      "IRN": "LXE39681",
+      "Name": "Laila EL OUADIH",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXE39681"
+    },
+    {
+      "IRN": "HXR00282",
+      "Name": "Helene Anna Rasmusson Egebøl",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXR00282"
+    },
+    {
+      "IRN": "XXS01162",
+      "Name": ". Sun European Holdings Ltd",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXS01162"
+    },
+    {
+      "IRN": "PDD01037",
+      "Name": "Paul David Daccus",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PDD01037"
+    },
+    {
+      "IRN": "DXV21035",
+      "Name": "Davide Vassena",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXV21035"
+    },
+    {
+      "IRN": "UXO25215",
+      "Name": "Ulrich Benno Otto",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/UXO25215"
+    },
+    {
+      "IRN": "AXW01956",
+      "Name": "Alexander Wyndham",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXW01956"
+    },
+    {
+      "IRN": "MRM01193",
+      "Name": "MARC ROSS MABON",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MRM01193"
+    },
+    {
+      "IRN": "AAD01095",
+      "Name": "Andrew Albert Dunkley",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAD01095"
+    },
+    {
+      "IRN": "ASL01051",
+      "Name": "Antony Simon Levinson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASL01051"
+    },
+    {
+      "IRN": "TRS01079",
+      "Name": "Timothy Rupert John Stubbs",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TRS01079"
+    },
+    {
+      "IRN": "EDF01010",
+      "Name": "Elena Dimova Filekova",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EDF01010"
+    },
+    {
+      "IRN": "SXS04243",
+      "Name": "SERGEI SPIRIDONOV",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXS04243"
+    },
+    {
+      "IRN": "AXA01930",
+      "Name": "Afzal Amijee",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA01930"
+    },
+    {
+      "IRN": "NXH01493",
+      "Name": "Nikolaus Hubmann",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXH01493"
+    },
+    {
+      "IRN": "MXV01250",
+      "Name": "Massimo Vendramini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXV01250"
+    },
+    {
+      "IRN": "GXD01538",
+      "Name": "Gabriel Danielachvili",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXD01538"
+    },
+    {
+      "IRN": "HXM01726",
+      "Name": "Harsh Sudheer Mehta",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXM01726"
+    },
+    {
+      "IRN": "MSB01153",
+      "Name": "Mark Stanley Braganza",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MSB01153"
+    },
+    {
+      "IRN": "JAN01101",
+      "Name": "Jerome Andre Nomme",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JAN01101"
+    },
+    {
+      "IRN": "CJC01297",
+      "Name": "Christopher John Carney",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJC01297"
+    },
+    {
+      "IRN": "MAC01314",
+      "Name": "Mark Andrew Corbidge",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAC01314"
+    },
+    {
+      "IRN": "CHK01018",
+      "Name": "Case Henry Kuehn",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CHK01018"
+    },
+    {
+      "IRN": "PNG01029",
+      "Name": "Paul Noel Gerard Graham",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PNG01029"
+    },
+    {
+      "IRN": "TXM01197",
+      "Name": "Timothy John Rollit Mason",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXM01197"
+    },
+    {
+      "IRN": "DAM01249",
+      "Name": "David Anthony Mezzanotte, JR.",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DAM01249"
+    },
+    {
+      "IRN": "MXN01442",
+      "Name": "Markus Nagel",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXN01442"
+    },
+    {
+      "IRN": "JXW02187",
+      "Name": "Jordan Wadsworth",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW02187"
+    },
+    {
+      "IRN": "JXK01426",
+      "Name": "Joel Killion",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXK01426"
+    },
+    {
+      "IRN": "PAD01129",
+      "Name": "Philip Antony Dougall",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PAD01129"
+    },
+    {
+      "IRN": "JJS01135",
+      "Name": "Jacobus Johannes Maria Straathof",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JJS01135"
+    },
+    {
+      "IRN": "AXS01964",
+      "Name": "Anuj Singh",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS01964"
+    },
+    {
+      "IRN": "AVC01039",
+      "Name": "Alain Vittorio-Paul Cianchini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AVC01039"
+    },
+    {
+      "IRN": "LXB09602",
+      "Name": "Loriane Bayon",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXB09602"
+    },
+    {
+      "IRN": "SDO01023",
+      "Name": "Sean Daegan O'Neill",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SDO01023"
+    },
+    {
+      "IRN": "MDS01229",
+      "Name": "MICHAEL DAVID SHEPARD",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MDS01229"
+    },
+    {
+      "IRN": "MHK01029",
+      "Name": "Michael Hayes Kalb",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MHK01029"
+    },
+    {
+      "IRN": "NXM01185",
+      "Name": "Nathaniel Jerome Meyohas",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXM01185"
+    },
+    {
+      "IRN": "BXM01492",
+      "Name": "Brian Meyer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXM01492"
+    },
+    {
+      "IRN": "FID01000",
+      "Name": "Fabrice Ivan Dumontheil",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FID01000"
+    },
+    {
+      "IRN": "MTG01032",
+      "Name": "Matthias Thorsten Philipp Gundlach",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MTG01032"
+    },
+    {
+      "IRN": "SEF01061",
+      "Name": "Sharon Emma Flood",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SEF01061"
+    },
+    {
+      "IRN": "PFN01010",
+      "Name": "Philippe Frederic Neuschaefer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PFN01010"
+    },
+    {
+      "IRN": "XXI01029",
+      "Name": ". Investec Trust (Switzerland) S.A., as tr",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXI01029"
+    },
+    {
+      "IRN": "DJC01427",
+      "Name": "David James Culpan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJC01427"
+    },
+    {
+      "IRN": "LXD01318",
+      "Name": "Lionel De Posson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXD01318"
+    },
+    {
+      "IRN": "JDA01070",
+      "Name": "James Douglas Allen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDA01070"
+    },
+    {
+      "IRN": "BJB01061",
+      "Name": "Benjamin Johannes Buerstedde",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BJB01061"
+    },
+    {
+      "IRN": "MXC02662",
+      "Name": "MARTIN CLIFFORD-KING",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC02662"
+    },
+    {
+      "IRN": "BJU00004",
+      "Name": "Brian Jospeh Urbanek",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BJU00004"
+    },
+    {
+      "IRN": "MXB02508",
+      "Name": "Marcus Billman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXB02508"
+    },
+    {
+      "IRN": "FXM01278",
+      "Name": "Frank Maassen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXM01278"
+    },
+    {
+      "IRN": "DFF01018",
+      "Name": "David Francis Finnigan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DFF01018"
+    },
+    {
+      "IRN": "APW01147",
+      "Name": "Aaron Paul Wolfe",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/APW01147"
+    }
+  ],
+  "person_records": {
+    "AXW01956": {
+      "irn": "AXW01956",
+      "name": "Alexander Wyndham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXS01162": {
+      "irn": "XXS01162",
+      "name": ". Sun European Holdings Ltd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ASL01051": {
+      "irn": "ASL01051",
+      "name": "Antony Simon Levinson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PDD01037": {
+      "irn": "PDD01037",
+      "name": "Paul David Daccus",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MRM01193": {
+      "irn": "MRM01193",
+      "name": "MARC ROSS MABON",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXD01538": {
+      "irn": "GXD01538",
+      "name": "Gabriel Danielachvili",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXD01518": {
+      "irn": "NXD01518",
+      "name": "Nicolas Devriese",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM75511": {
+      "irn": "AXM75511",
+      "name": "Aurelien Meyer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXE39681": {
+      "irn": "LXE39681",
+      "name": "Laila EL OUADIH",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXR00282": {
+      "irn": "HXR00282",
+      "name": "Helene Anna Rasmusson Egebøl",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXV21035": {
+      "irn": "DXV21035",
+      "name": "Davide Vassena",
+      "status": null,
+      "controlled_functions": null
+    },
+    "UXO25215": {
+      "irn": "UXO25215",
+      "name": "Ulrich Benno Otto",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAD01095": {
+      "irn": "AAD01095",
+      "name": "Andrew Albert Dunkley",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TRS01079": {
+      "irn": "TRS01079",
+      "name": "Timothy Rupert John Stubbs",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EDF01010": {
+      "irn": "EDF01010",
+      "name": "Elena Dimova Filekova",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXS04243": {
+      "irn": "SXS04243",
+      "name": "SERGEI SPIRIDONOV",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA01930": {
+      "irn": "AXA01930",
+      "name": "Afzal Amijee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXH01493": {
+      "irn": "NXH01493",
+      "name": "Nikolaus Hubmann",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXV01250": {
+      "irn": "MXV01250",
+      "name": "Massimo Vendramini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXM01726": {
+      "irn": "HXM01726",
+      "name": "Harsh Sudheer Mehta",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MSB01153": {
+      "irn": "MSB01153",
+      "name": "Mark Stanley Braganza",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JAN01101": {
+      "irn": "JAN01101",
+      "name": "Jerome Andre Nomme",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CJC01297": {
+      "irn": "CJC01297",
+      "name": "Christopher John Carney",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAC01314": {
+      "irn": "MAC01314",
+      "name": "Mark Andrew Corbidge",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CHK01018": {
+      "irn": "CHK01018",
+      "name": "Case Henry Kuehn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PNG01029": {
+      "irn": "PNG01029",
+      "name": "Paul Noel Gerard Graham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXM01197": {
+      "irn": "TXM01197",
+      "name": "Timothy John Rollit Mason",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DAM01249": {
+      "irn": "DAM01249",
+      "name": "David Anthony Mezzanotte, JR.",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXN01442": {
+      "irn": "MXN01442",
+      "name": "Markus Nagel",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW02187": {
+      "irn": "JXW02187",
+      "name": "Jordan Wadsworth",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXK01426": {
+      "irn": "JXK01426",
+      "name": "Joel Killion",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PAD01129": {
+      "irn": "PAD01129",
+      "name": "Philip Antony Dougall",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JJS01135": {
+      "irn": "JJS01135",
+      "name": "Jacobus Johannes Maria Straathof",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS01964": {
+      "irn": "AXS01964",
+      "name": "Anuj Singh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AVC01039": {
+      "irn": "AVC01039",
+      "name": "Alain Vittorio-Paul Cianchini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXB09602": {
+      "irn": "LXB09602",
+      "name": "Loriane Bayon",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SDO01023": {
+      "irn": "SDO01023",
+      "name": "Sean Daegan O'Neill",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MDS01229": {
+      "irn": "MDS01229",
+      "name": "MICHAEL DAVID SHEPARD",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MHK01029": {
+      "irn": "MHK01029",
+      "name": "Michael Hayes Kalb",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXM01185": {
+      "irn": "NXM01185",
+      "name": "Nathaniel Jerome Meyohas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXM01492": {
+      "irn": "BXM01492",
+      "name": "Brian Meyer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FID01000": {
+      "irn": "FID01000",
+      "name": "Fabrice Ivan Dumontheil",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MTG01032": {
+      "irn": "MTG01032",
+      "name": "Matthias Thorsten Philipp Gundlach",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SEF01061": {
+      "irn": "SEF01061",
+      "name": "Sharon Emma Flood",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PFN01010": {
+      "irn": "PFN01010",
+      "name": "Philippe Frederic Neuschaefer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXI01029": {
+      "irn": "XXI01029",
+      "name": ". Investec Trust (Switzerland) S.A., as tr",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJC01427": {
+      "irn": "DJC01427",
+      "name": "David James Culpan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXD01318": {
+      "irn": "LXD01318",
+      "name": "Lionel De Posson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDA01070": {
+      "irn": "JDA01070",
+      "name": "James Douglas Allen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BJB01061": {
+      "irn": "BJB01061",
+      "name": "Benjamin Johannes Buerstedde",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC02662": {
+      "irn": "MXC02662",
+      "name": "MARTIN CLIFFORD-KING",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BJU00004": {
+      "irn": "BJU00004",
+      "name": "Brian Jospeh Urbanek",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXB02508": {
+      "irn": "MXB02508",
+      "name": "Marcus Billman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXM01278": {
+      "irn": "FXM01278",
+      "name": "Frank Maassen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DFF01018": {
+      "irn": "DFF01018",
+      "name": "David Francis Finnigan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "APW01147": {
+      "irn": "APW01147",
+      "name": "Aaron Paul Wolfe",
+      "status": null,
+      "controlled_functions": null
+    }
+  },
+  "controlled_functions": {
+    "AXW01956": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/08/2012",
+        "Firm Name": "N. M. Rothschild & Sons Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124451",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/01/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/01/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "XXS01162": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/02/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "ASL01051": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/01/2008",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/01/2008",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/09/2007",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/04/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/10/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)SMF16 Compliance Oversight",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/06/2023",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF1 Chief Executive",
+        "when": "current"
+      }
+    ],
+    "PDD01037": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/08/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Andersen Corporate Finance",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/196826",
+        "role": "(4)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/11/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/08/2002",
+        "Firm Name": "Deloitte & Touche",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/104973",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2003",
+        "Firm Name": "Deloitte LLP",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/213218",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/02/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "MRM01193": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/08/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/08/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "GXD01538": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/09/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2021",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/10/2012",
+        "Firm Name": "Morgan Stanley & Co Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165934",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/10/2012",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/02/2023",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "NXD01518": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/10/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/04/2018",
+        "Firm Name": "Evercore Partners International LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/532714",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/05/2023",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "AXM75511": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/10/2018",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/06/2025",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "LXE39681": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/12/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/04/2019",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/06/2025",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "HXR00282": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/06/2025",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "DXV21035": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/07/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/11/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/11/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "UXO25215": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/02/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/03/2020",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)SMF27 Partner",
+        "when": "previous"
+      }
+    ],
+    "AAD01095": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/05/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "cmostores.com Limited",
+        "Name": "SMF29 Limited scope function (limited scope SMCR firms only)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/750007",
+        "role": "(4)SMF29 Limited scope function (limited scope SMCR firms only)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/05/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/07/2016",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/04/2019",
+        "Firm Name": "cmostores.com Limited",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/750007",
+        "role": "(2)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/11/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/07/2016",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "TRS01079": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/10/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/10/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "EDF01010": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/12/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/09/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/10/2011",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "SXS04243": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/02/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/08/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/08/2015",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "AXA01930": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/03/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/11/2020",
+        "Firm Name": "Ponte Finance Limited",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/925838",
+        "role": "(3)SMF3 Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/09/2008",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "NXH01493": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/10/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/01/2017",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/10/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/08/2012",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/01/2017",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MXV01250": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/01/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/04/2020",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2011",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/03/2016",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "HXM01726": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/07/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/03/2023",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/10/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/07/2016",
+        "Firm Name": "BC Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/738808",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/03/2016",
+        "Firm Name": "BC Partners Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122001",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      }
+    ],
+    "MSB01153": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/11/2021",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(6)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/05/2014",
+        "Firm Name": "GHO Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612589",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/02/2013",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/12/2012",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(3)CF29 Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/05/2014",
+        "Firm Name": "GHO Capital Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612589",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/01/2010",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/09/2024",
+        "Firm Name": "EQT Partners Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917788",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JAN01101": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/04/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/11/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/04/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/11/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/01/2020",
+        "Firm Name": "Kohlberg Kravis Roberts & Co. Partners LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593180",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/05/2023",
+        "Firm Name": "Kohlberg Kravis Roberts & Co. Partners LLP",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593180",
+        "role": "(1)[FCA CF] Manager of certification employee",
+        "when": "current"
+      }
+    ],
+    "CJC01297": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/01/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/06/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/06/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/08/2021",
+        "Firm Name": "G10 Capital Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/648953",
+        "role": "(1)CF30 Customer",
+        "when": "current"
+      }
+    ],
+    "MAC01314": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(11)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(10)SMF1 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/11/2015",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/09/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/02/2009",
+        "Firm Name": "Doughty Hanson & Co Managers Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/172381",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/09/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/08/2018",
+        "Firm Name": "Time Partners Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748075",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/07/2017",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(5)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/09/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/08/2018",
+        "Firm Name": "Time Partners Limited",
+        "Name": "CF4 Partner (AR)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748075",
+        "role": "(4)CF4 Partner (AR)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/11/2015",
+        "Firm Name": "TPG Europe, LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/407891",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/06/2024",
+        "Firm Name": "Time Partners Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748075",
+        "role": "(2)CF30 Customer",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/06/2024",
+        "Firm Name": "Time Partners Limited",
+        "Name": "CF3 Chief Executive (AR)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748075",
+        "role": "(1)CF3 Chief Executive (AR)",
+        "when": "current"
+      }
+    ],
+    "CHK01018": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/07/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/01/2008",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "PNG01029": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/02/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/11/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/02/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/11/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "TXM01197": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/05/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/04/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/05/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/04/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/08/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Tesco Personal Finance Limited",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186022",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "DAM01249": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/11/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/11/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MXN01442": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/11/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/11/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "JXW02187": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/07/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/09/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/07/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/09/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "JXK01426": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/02/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2006",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "PAD01129": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/12/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/09/2011",
+        "Firm Name": "Kelso Place Asset Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472182",
+        "role": "(12)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2011",
+        "Firm Name": "Fairstone Capital LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538755",
+        "role": "(11)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/07/2017",
+        "Firm Name": "Metric Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/547974",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/01/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(8)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/01/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(7)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(6)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/09/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2011",
+        "Firm Name": "Fairstone Capital LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538755",
+        "role": "(5)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/12/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/09/2011",
+        "Firm Name": "Kelso Place Asset Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472182",
+        "role": "(4)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/01/2015",
+        "Firm Name": "Metric Capital Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/547974",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF3 Chief Executive",
+        "when": "previous"
+      }
+    ],
+    "JJS01135": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/02/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "AXS01964": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/06/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "AVC01039": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/03/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/05/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/03/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/05/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "LXB09602": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/03/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/01/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/03/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/01/2019",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "SDO01023": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/09/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/05/2017",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/09/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/05/2017",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MDS01229": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/08/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/08/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/08/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/08/2014",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MHK01029": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/04/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/04/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/09/2007",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/04/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF3 Chief Executive",
+        "when": "previous"
+      }
+    ],
+    "NXM01185": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "18/04/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/12/2002",
+        "Firm Name": "Lansdowne Capital Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185604",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/09/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2014",
+        "Firm Name": "Greybull Capital LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616239",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2004",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "BXM01492": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/01/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/06/2007",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "FID01000": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/12/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      }
+    ],
+    "MTG01032": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/07/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/03/2003",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/09/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "SEF01061": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/08/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/05/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/08/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/05/2012",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "PFN01010": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/03/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "XXI01029": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "DJC01427": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/05/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/05/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "LXD01318": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/04/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/04/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "JDA01070": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/04/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/04/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "BJB01061": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/02/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/10/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/01/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(5)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/01/2004",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/11/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/03/2002",
+        "Firm Name": "Canaccord Genuity Hawkpoint Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190868",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/01/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Credit Suisse International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146702",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/10/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/04/2010",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MXC02662": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/08/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/09/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/08/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/09/2013",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "BJU00004": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "MXB02508": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/03/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/06/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/03/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/06/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "FXM01278": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/04/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2006",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "DFF01018": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/09/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/11/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/09/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/11/2011",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "APW01147": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/08/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/03/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/08/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/02/2009",
+        "Firm Name": "Sun European Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400262",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ]
+  }
 }

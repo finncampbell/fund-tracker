@@ -1,7 +1,18 @@
 {
   "frn": 484589,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "484589",
+    "organisation_name": "BTIG Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06405184",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "21/11/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

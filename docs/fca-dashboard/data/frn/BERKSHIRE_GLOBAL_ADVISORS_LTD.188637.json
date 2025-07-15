@@ -1,7 +1,18 @@
 {
   "frn": 188637,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "188637",
+    "organisation_name": "BERKSHIRE GLOBAL ADVISORS LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03615526",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

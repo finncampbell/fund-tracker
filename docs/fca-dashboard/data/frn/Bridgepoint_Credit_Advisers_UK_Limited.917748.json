@@ -1,7 +1,18 @@
 {
   "frn": 917748,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "917748",
+    "organisation_name": "Bridgepoint Credit Advisers UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12011559",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "28/04/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

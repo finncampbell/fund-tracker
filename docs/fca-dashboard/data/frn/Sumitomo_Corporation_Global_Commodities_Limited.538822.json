@@ -1,7 +1,17 @@
 {
   "frn": 538822,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "538822",
+    "organisation_name": "Sumitomo Corporation Global Commodities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05712149",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "20/12/2011"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

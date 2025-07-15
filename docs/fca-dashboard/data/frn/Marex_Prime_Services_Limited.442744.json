@@ -1,7 +1,18 @@
 {
   "frn": 442744,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "442744",
+    "organisation_name": "Marex Prime Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05622839",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "27/04/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,17 @@
 {
   "frn": 537103,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "537103",
+    "organisation_name": "Future Value Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC359493",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "20/06/2011"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 923827,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "923827",
+    "organisation_name": "Navera Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12516583",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "01/10/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

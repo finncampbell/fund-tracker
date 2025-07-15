@@ -1,7 +1,18 @@
 {
   "frn": 224540,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "224540",
+    "organisation_name": "GMO UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04658801",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "05/12/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

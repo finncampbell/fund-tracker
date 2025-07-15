@@ -1,7 +1,18 @@
 {
   "frn": 488822,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "488822",
+    "organisation_name": "Albert E Sharp LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC339858",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "17/11/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

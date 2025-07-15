@@ -1,7 +1,18 @@
 {
   "frn": 679331,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "679331",
+    "organisation_name": "Alter Domus Agency Services (UK) Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "09271383",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "03/08/2015"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

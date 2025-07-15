@@ -1,7 +1,18 @@
 {
   "frn": 967142,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "967142",
+    "organisation_name": "Old Mill Financial Planning Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13565826",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "03/10/2022"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

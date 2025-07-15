@@ -1,7 +1,18 @@
 {
   "frn": 1019749,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "1019749",
+    "organisation_name": "BBB Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15662260",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "06/05/2025"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

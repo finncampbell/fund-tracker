@@ -2,7 +2,10 @@
   "frn": 929013,
   "metadata": {},
   "trading_names": [],
-  "appointed_reps": [],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

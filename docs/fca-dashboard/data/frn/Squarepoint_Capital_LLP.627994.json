@@ -1,7 +1,18 @@
 {
   "frn": 627994,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "627994",
+    "organisation_name": "Squarepoint Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC393269",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "02/01/2015"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

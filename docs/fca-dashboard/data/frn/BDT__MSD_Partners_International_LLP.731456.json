@@ -1,7 +1,18 @@
 {
   "frn": 731456,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "731456",
+    "organisation_name": "BDT & MSD Partners International, LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC401498",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "12/09/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,17 @@
 {
   "frn": 954256,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "954256",
+    "organisation_name": "Robocap Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09624725",
+    "system_timestamp": "23/06/2025 22:19",
+    "status_effective_date": "23/08/2022"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

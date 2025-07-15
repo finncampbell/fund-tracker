@@ -1,7 +1,17 @@
 {
   "frn": 783493,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "783493",
+    "organisation_name": "Xconnect Market Maker LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC328508",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "20/12/2017"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

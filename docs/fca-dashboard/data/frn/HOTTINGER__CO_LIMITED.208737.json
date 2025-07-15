@@ -1,7 +1,18 @@
 {
   "frn": 208737,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "208737",
+    "organisation_name": "HOTTINGER & CO. LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01573969",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "23/01/2002"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 231157,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "231157",
+    "organisation_name": "Mako Financial Markets Partnership LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC306611",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "05/03/2004"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 489530,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "489530",
+    "organisation_name": "Maven Global LLP",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "OC339098",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "25/11/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 737180,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "737180",
+    "organisation_name": "SPX International Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09799467",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "03/11/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

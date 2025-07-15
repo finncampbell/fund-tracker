@@ -1,7 +1,17 @@
 {
   "frn": 738512,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "738512",
+    "organisation_name": "Blackadders Wealth Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SO305466",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "25/08/2016"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

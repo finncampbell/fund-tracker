@@ -1,7 +1,18 @@
 {
   "frn": 796070,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "796070",
+    "organisation_name": "A&M Capital Advisors Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC419571",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "22/06/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

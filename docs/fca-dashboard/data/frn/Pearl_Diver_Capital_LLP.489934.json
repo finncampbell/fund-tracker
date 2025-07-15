@@ -1,7 +1,17 @@
 {
   "frn": 489934,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "489934",
+    "organisation_name": "Pearl Diver Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC339542",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "08/01/2009"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

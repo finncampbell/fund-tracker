@@ -1,7 +1,18 @@
 {
   "frn": 973249,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "973249",
+    "organisation_name": "Candriam",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "FC030783",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "31/07/2023"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

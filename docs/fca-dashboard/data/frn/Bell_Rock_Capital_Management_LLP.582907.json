@@ -1,9 +1,4423 @@
 {
   "frn": 582907,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "582907",
+    "organisation_name": "Bell Rock Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355426",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "01/10/2012"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
-  "person_records": {},
-  "controlled_functions": {}
+  "individuals": [
+    {
+      "IRN": "XXE01102",
+      "Name": ". Enclume Limited",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXE01102"
+    },
+    {
+      "IRN": "MXK01164",
+      "Name": "Mats Kummelstedt",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK01164"
+    },
+    {
+      "IRN": "RWH01067",
+      "Name": "Roger William Edward Harlow",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RWH01067"
+    },
+    {
+      "IRN": "MPO01025",
+      "Name": "Michael Patrick O'Mara",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPO01025"
+    },
+    {
+      "IRN": "NJC01228",
+      "Name": "Niall Justin Corkery",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJC01228"
+    },
+    {
+      "IRN": "AXM01253",
+      "Name": "Alex Manning",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM01253"
+    },
+    {
+      "IRN": "DXI00054",
+      "Name": "Diana Iacob",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXI00054"
+    },
+    {
+      "IRN": "AXB01626",
+      "Name": "Andrew Ballard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB01626"
+    },
+    {
+      "IRN": "RXD01314",
+      "Name": "Rainer Dullnig",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXD01314"
+    },
+    {
+      "IRN": "BXA00069",
+      "Name": "Benjamin Louis Brice Augereau",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXA00069"
+    },
+    {
+      "IRN": "CEB01099",
+      "Name": "Charles Edward Avenon Bull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CEB01099"
+    },
+    {
+      "IRN": "FXC75503",
+      "Name": "Frederick Henry Charlton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXC75503"
+    },
+    {
+      "IRN": "YXS15253",
+      "Name": "Young Sam Son",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXS15253"
+    },
+    {
+      "IRN": "MAA01311",
+      "Name": "Mark Andrew Ashton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAA01311"
+    },
+    {
+      "IRN": "JPP01087",
+      "Name": "Juan Pablo Platt",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPP01087"
+    },
+    {
+      "IRN": "OXS71958",
+      "Name": "Oliver Simmons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXS71958"
+    },
+    {
+      "IRN": "RFL01031",
+      "Name": "Robert Fredrick Lloyd",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RFL01031"
+    },
+    {
+      "IRN": "EXC00204",
+      "Name": "Emanuele Cavaliere",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXC00204"
+    },
+    {
+      "IRN": "AXA00968",
+      "Name": "Aitor Agorreta Alvarez",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA00968"
+    },
+    {
+      "IRN": "AXB04267",
+      "Name": "Ana Baez",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB04267"
+    },
+    {
+      "IRN": "JRL01104",
+      "Name": "Jeffrey Richard Largey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JRL01104"
+    },
+    {
+      "IRN": "AAL01062",
+      "Name": "Andre Alexander Leue",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAL01062"
+    },
+    {
+      "IRN": "DXA11893",
+      "Name": "Daniel Allcock",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXA11893"
+    },
+    {
+      "IRN": "JXR00703",
+      "Name": "Julian Robinson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXR00703"
+    },
+    {
+      "IRN": "AXA00854",
+      "Name": "Ardit Aubeelack",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA00854"
+    },
+    {
+      "IRN": "JFK01036",
+      "Name": "John Frederick Kroeger",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JFK01036"
+    },
+    {
+      "IRN": "PXP00253",
+      "Name": "Pantelis Protogeros",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXP00253"
+    },
+    {
+      "IRN": "MXC03079",
+      "Name": "Matteo Cataldi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC03079"
+    },
+    {
+      "IRN": "AXK01838",
+      "Name": "Alexey Kormschikov",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK01838"
+    },
+    {
+      "IRN": "RXP81580",
+      "Name": "RIKIN PATEL",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXP81580"
+    },
+    {
+      "IRN": "AAG01047",
+      "Name": "Andrew Greetham",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAG01047"
+    },
+    {
+      "IRN": "EJM01053",
+      "Name": "Evan Jon George Morris",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EJM01053"
+    },
+    {
+      "IRN": "CXC00455",
+      "Name": "Corentin Rodolphe Chabaud",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXC00455"
+    },
+    {
+      "IRN": "GXX00005",
+      "Name": "Guo Xi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXX00005"
+    },
+    {
+      "IRN": "XXE01102",
+      "Name": ". Enclume Limited",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXE01102"
+    },
+    {
+      "IRN": "RWH01067",
+      "Name": "Roger William Edward Harlow",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RWH01067"
+    },
+    {
+      "IRN": "AMB01120",
+      "Name": "Anders Martin Brege",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AMB01120"
+    },
+    {
+      "IRN": "SXT01245",
+      "Name": "Tullio Salvatore",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXT01245"
+    },
+    {
+      "IRN": "MXK01164",
+      "Name": "Mats Kummelstedt",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK01164"
+    },
+    {
+      "IRN": "NJC01228",
+      "Name": "Niall Justin Corkery",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJC01228"
+    },
+    {
+      "IRN": "MPO01025",
+      "Name": "Michael Patrick O'Mara",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPO01025"
+    },
+    {
+      "IRN": "RMR01029",
+      "Name": "Roger Mark Reynolds",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RMR01029"
+    },
+    {
+      "IRN": "SXD02486",
+      "Name": "Sachin Duggal",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXD02486"
+    },
+    {
+      "IRN": "CXG00089",
+      "Name": "Carl Philip Victor Gustafsson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXG00089"
+    },
+    {
+      "IRN": "BXL01181",
+      "Name": "Benedikt Loy",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXL01181"
+    },
+    {
+      "IRN": "DPF01026",
+      "Name": "Daryn Paul Hewburn Fletcher",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DPF01026"
+    },
+    {
+      "IRN": "EXV01017",
+      "Name": "Eloise Catherine Brigitte Veillet",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXV01017"
+    },
+    {
+      "IRN": "PCE01018",
+      "Name": "Per Christian Joakim Engstrom",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PCE01018"
+    },
+    {
+      "IRN": "OCN00002",
+      "Name": "Oliver Charles Neal",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OCN00002"
+    },
+    {
+      "IRN": "GXP00129",
+      "Name": "Gareth William Potter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXP00129"
+    },
+    {
+      "IRN": "LXA00078",
+      "Name": "Lorenzo Angelini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXA00078"
+    },
+    {
+      "IRN": "TXE00030",
+      "Name": "Thomas Michael Ellis",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXE00030"
+    },
+    {
+      "IRN": "MAS01576",
+      "Name": "Mateusz Aleksander Stawarz",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAS01576"
+    },
+    {
+      "IRN": "NIP01008",
+      "Name": "Nicholas Ian Hamish Prys-Owen",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NIP01008"
+    },
+    {
+      "IRN": "PXK01758",
+      "Name": "Pierre Kling",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01758"
+    },
+    {
+      "IRN": "GXC02096",
+      "Name": "Giancarlo Cassoni",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXC02096"
+    },
+    {
+      "IRN": "CAR01115",
+      "Name": "Anders Christian Roos",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CAR01115"
+    },
+    {
+      "IRN": "AXK01838",
+      "Name": "Alexey Kormschikov",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK01838"
+    },
+    {
+      "IRN": "BXL72026",
+      "Name": "Benjamin Lyons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXL72026"
+    },
+    {
+      "IRN": "FXD00096",
+      "Name": "Frederick George Dakin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXD00096"
+    },
+    {
+      "IRN": "PXK01585",
+      "Name": "Pradipta Kumar",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01585"
+    },
+    {
+      "IRN": "XXG01076",
+      "Name": "Xiaoyong Guo",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXG01076"
+    },
+    {
+      "IRN": "DXM00993",
+      "Name": "Dominic McQuade",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM00993"
+    },
+    {
+      "IRN": "IXK01347",
+      "Name": "Inigo Kelsey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXK01347"
+    },
+    {
+      "IRN": "CFH01045",
+      "Name": "Carl Fredrik Joel Hagerman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CFH01045"
+    },
+    {
+      "IRN": "CPG01057",
+      "Name": "Clemens Philipp Gamstätter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CPG01057"
+    },
+    {
+      "IRN": "YXS15253",
+      "Name": "Young Sam Son",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXS15253"
+    },
+    {
+      "IRN": "MOB01008",
+      "Name": "Mattias Olof Johannes Boden",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MOB01008"
+    },
+    {
+      "IRN": "MXS01991",
+      "Name": "Marco Signorini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXS01991"
+    },
+    {
+      "IRN": "AXL16386",
+      "Name": "Amanda Corenne Lyons",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXL16386"
+    },
+    {
+      "IRN": "CEB01099",
+      "Name": "Charles Edward Avenon Bull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CEB01099"
+    },
+    {
+      "IRN": "PSH01061",
+      "Name": "Philipp Sebastian Hoegg",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PSH01061"
+    },
+    {
+      "IRN": "AXB01626",
+      "Name": "Andrew Ballard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB01626"
+    },
+    {
+      "IRN": "RXD01314",
+      "Name": "Rainer Dullnig",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXD01314"
+    },
+    {
+      "IRN": "PJT01143",
+      "Name": "Pasi Juhani Tolmunen",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJT01143"
+    },
+    {
+      "IRN": "JMV01006",
+      "Name": "John Michael Van Steenberghe",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JMV01006"
+    },
+    {
+      "IRN": "APB01200",
+      "Name": "Adam Bowler",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/APB01200"
+    },
+    {
+      "IRN": "WEH01027",
+      "Name": "William Edward Hanbury",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/WEH01027"
+    },
+    {
+      "IRN": "JXH01983",
+      "Name": "Jorg-Oliver Hampe",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXH01983"
+    },
+    {
+      "IRN": "XXS01199",
+      "Name": ". Stone Sky Ltd",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXS01199"
+    },
+    {
+      "IRN": "OJR01011",
+      "Name": "Oliver James Reece",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OJR01011"
+    },
+    {
+      "IRN": "DXS01366",
+      "Name": "Daniele Serruya",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXS01366"
+    },
+    {
+      "IRN": "XXD01080",
+      "Name": ". De Putron Fund Management Ltd",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXD01080"
+    },
+    {
+      "IRN": "TXA01047",
+      "Name": "Torbjorn Andreassen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXA01047"
+    },
+    {
+      "IRN": "PJW01164",
+      "Name": "Peter John Walters",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJW01164"
+    },
+    {
+      "IRN": "JDS01128",
+      "Name": "John Dwight Shook",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDS01128"
+    },
+    {
+      "IRN": "PXK01092",
+      "Name": "Paul Keohane",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01092"
+    }
+  ],
+  "person_records": {
+    "XXE01102": {
+      "irn": "XXE01102",
+      "name": ". Enclume Limited",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXK01164": {
+      "irn": "MXK01164",
+      "name": "Mats Kummelstedt",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RWH01067": {
+      "irn": "RWH01067",
+      "name": "Roger William Edward Harlow",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MPO01025": {
+      "irn": "MPO01025",
+      "name": "Michael Patrick O'Mara",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NJC01228": {
+      "irn": "NJC01228",
+      "name": "Niall Justin Corkery",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM01253": {
+      "irn": "AXM01253",
+      "name": "Alex Manning",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXI00054": {
+      "irn": "DXI00054",
+      "name": "Diana Iacob",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB01626": {
+      "irn": "AXB01626",
+      "name": "Andrew Ballard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXD01314": {
+      "irn": "RXD01314",
+      "name": "Rainer Dullnig",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXA00069": {
+      "irn": "BXA00069",
+      "name": "Benjamin Louis Brice Augereau",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CEB01099": {
+      "irn": "CEB01099",
+      "name": "Charles Edward Avenon Bull",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXC75503": {
+      "irn": "FXC75503",
+      "name": "Frederick Henry Charlton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXS15253": {
+      "irn": "YXS15253",
+      "name": "Young Sam Son",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAA01311": {
+      "irn": "MAA01311",
+      "name": "Mark Andrew Ashton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPP01087": {
+      "irn": "JPP01087",
+      "name": "Juan Pablo Platt",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXS71958": {
+      "irn": "OXS71958",
+      "name": "Oliver Simmons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RFL01031": {
+      "irn": "RFL01031",
+      "name": "Robert Fredrick Lloyd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXC00204": {
+      "irn": "EXC00204",
+      "name": "Emanuele Cavaliere",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA00968": {
+      "irn": "AXA00968",
+      "name": "Aitor Agorreta Alvarez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB04267": {
+      "irn": "AXB04267",
+      "name": "Ana Baez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JRL01104": {
+      "irn": "JRL01104",
+      "name": "Jeffrey Richard Largey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAL01062": {
+      "irn": "AAL01062",
+      "name": "Andre Alexander Leue",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXA11893": {
+      "irn": "DXA11893",
+      "name": "Daniel Allcock",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXR00703": {
+      "irn": "JXR00703",
+      "name": "Julian Robinson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA00854": {
+      "irn": "AXA00854",
+      "name": "Ardit Aubeelack",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JFK01036": {
+      "irn": "JFK01036",
+      "name": "John Frederick Kroeger",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXP00253": {
+      "irn": "PXP00253",
+      "name": "Pantelis Protogeros",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC03079": {
+      "irn": "MXC03079",
+      "name": "Matteo Cataldi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXK01838": {
+      "irn": "AXK01838",
+      "name": "Alexey Kormschikov",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXP81580": {
+      "irn": "RXP81580",
+      "name": "RIKIN PATEL",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAG01047": {
+      "irn": "AAG01047",
+      "name": "Andrew Greetham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EJM01053": {
+      "irn": "EJM01053",
+      "name": "Evan Jon George Morris",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXC00455": {
+      "irn": "CXC00455",
+      "name": "Corentin Rodolphe Chabaud",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXX00005": {
+      "irn": "GXX00005",
+      "name": "Guo Xi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AMB01120": {
+      "irn": "AMB01120",
+      "name": "Anders Martin Brege",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXT01245": {
+      "irn": "SXT01245",
+      "name": "Tullio Salvatore",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RMR01029": {
+      "irn": "RMR01029",
+      "name": "Roger Mark Reynolds",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXD02486": {
+      "irn": "SXD02486",
+      "name": "Sachin Duggal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXG00089": {
+      "irn": "CXG00089",
+      "name": "Carl Philip Victor Gustafsson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXL01181": {
+      "irn": "BXL01181",
+      "name": "Benedikt Loy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DPF01026": {
+      "irn": "DPF01026",
+      "name": "Daryn Paul Hewburn Fletcher",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXV01017": {
+      "irn": "EXV01017",
+      "name": "Eloise Catherine Brigitte Veillet",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PCE01018": {
+      "irn": "PCE01018",
+      "name": "Per Christian Joakim Engstrom",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OCN00002": {
+      "irn": "OCN00002",
+      "name": "Oliver Charles Neal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXP00129": {
+      "irn": "GXP00129",
+      "name": "Gareth William Potter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXA00078": {
+      "irn": "LXA00078",
+      "name": "Lorenzo Angelini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXE00030": {
+      "irn": "TXE00030",
+      "name": "Thomas Michael Ellis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAS01576": {
+      "irn": "MAS01576",
+      "name": "Mateusz Aleksander Stawarz",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NIP01008": {
+      "irn": "NIP01008",
+      "name": "Nicholas Ian Hamish Prys-Owen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01758": {
+      "irn": "PXK01758",
+      "name": "Pierre Kling",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXC02096": {
+      "irn": "GXC02096",
+      "name": "Giancarlo Cassoni",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CAR01115": {
+      "irn": "CAR01115",
+      "name": "Anders Christian Roos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXL72026": {
+      "irn": "BXL72026",
+      "name": "Benjamin Lyons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXD00096": {
+      "irn": "FXD00096",
+      "name": "Frederick George Dakin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01585": {
+      "irn": "PXK01585",
+      "name": "Pradipta Kumar",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXG01076": {
+      "irn": "XXG01076",
+      "name": "Xiaoyong Guo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXM00993": {
+      "irn": "DXM00993",
+      "name": "Dominic McQuade",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXK01347": {
+      "irn": "IXK01347",
+      "name": "Inigo Kelsey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CFH01045": {
+      "irn": "CFH01045",
+      "name": "Carl Fredrik Joel Hagerman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CPG01057": {
+      "irn": "CPG01057",
+      "name": "Clemens Philipp Gamstätter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MOB01008": {
+      "irn": "MOB01008",
+      "name": "Mattias Olof Johannes Boden",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXS01991": {
+      "irn": "MXS01991",
+      "name": "Marco Signorini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXL16386": {
+      "irn": "AXL16386",
+      "name": "Amanda Corenne Lyons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PSH01061": {
+      "irn": "PSH01061",
+      "name": "Philipp Sebastian Hoegg",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJT01143": {
+      "irn": "PJT01143",
+      "name": "Pasi Juhani Tolmunen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JMV01006": {
+      "irn": "JMV01006",
+      "name": "John Michael Van Steenberghe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "APB01200": {
+      "irn": "APB01200",
+      "name": "Adam Bowler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "WEH01027": {
+      "irn": "WEH01027",
+      "name": "William Edward Hanbury",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXH01983": {
+      "irn": "JXH01983",
+      "name": "Jorg-Oliver Hampe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXS01199": {
+      "irn": "XXS01199",
+      "name": ". Stone Sky Ltd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OJR01011": {
+      "irn": "OJR01011",
+      "name": "Oliver James Reece",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXS01366": {
+      "irn": "DXS01366",
+      "name": "Daniele Serruya",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXD01080": {
+      "irn": "XXD01080",
+      "name": ". De Putron Fund Management Ltd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXA01047": {
+      "irn": "TXA01047",
+      "name": "Torbjorn Andreassen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJW01164": {
+      "irn": "PJW01164",
+      "name": "Peter John Walters",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDS01128": {
+      "irn": "JDS01128",
+      "name": "John Dwight Shook",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01092": {
+      "irn": "PXK01092",
+      "name": "Paul Keohane",
+      "status": null,
+      "controlled_functions": null
+    }
+  },
+  "controlled_functions": {
+    "XXE01102": [],
+    "MXK01164": [],
+    "RWH01067": [],
+    "MPO01025": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/10/2010",
+        "Firm Name": "HSBC Global Asset Management (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122335",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/03/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/07/2013",
+        "Firm Name": "Mojna Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597181",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Halbis Capital Management (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/217957",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/03/2017",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/02/2003",
+        "Firm Name": "Halbis Capital Management (UK) Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/217957",
+        "role": "(3)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/03/2017",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/03/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/07/2013",
+        "Firm Name": "Mojna Capital Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597181",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "NJC01228": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/08/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/02/2011",
+        "Firm Name": "KCG Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/189090",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/04/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/03/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/11/2012",
+        "Firm Name": "Liquidnet Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/198039",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/04/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/04/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2022",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/03/2025",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXM01253": [],
+    "DXI00054": [],
+    "AXB01626": [],
+    "RXD01314": [],
+    "BXA00069": [],
+    "CEB01099": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/04/2008",
+        "Firm Name": "DTZ Corporate Finance Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/139135",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/06/2011",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/05/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/05/2009",
+        "Firm Name": "UBS Asset Management (UK) Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119319",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "FXC75503": [],
+    "YXS15253": [],
+    "MAA01311": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/05/2013",
+        "Firm Name": "GLG Partners LP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JPP01087": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/10/2013",
+        "Firm Name": "GLG Partners LP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/10/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2010",
+        "Firm Name": "Oakley Capital Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/506482",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/04/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/03/2014",
+        "Firm Name": "AHL Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593791",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/05/2018",
+        "Firm Name": "AHL Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593791",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/06/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Plutus Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/229234",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/10/2010",
+        "Firm Name": "Edoma Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/525851",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/10/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/08/2013",
+        "Firm Name": "Stonehedge Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592077",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/10/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/08/2013",
+        "Firm Name": "Stonehedge Partners LLP",
+        "Name": "CF28 Systems and controls",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592077",
+        "role": "(3)CF28 Systems and controls",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/05/2006",
+        "Firm Name": "Plutus Capital Management LLP",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/229234",
+        "role": "(2)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "GLG Partners LP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/11/2022",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "OXS71958": [],
+    "RFL01031": [],
+    "EXC00204": [],
+    "AXA00968": [],
+    "AXB04267": [],
+    "JRL01104": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/07/2010",
+        "Firm Name": "Nomura International Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124422",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/07/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/09/2011",
+        "Firm Name": "Macquarie Capital (Europe) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193905",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/06/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "J.P. Morgan Securities plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/155240",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/11/2015",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/11/2015",
+        "Firm Name": "Goldman Sachs International Bank",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124659",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/10/2007",
+        "Firm Name": "J.P. Morgan Securities plc",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/155240",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/03/2016",
+        "Firm Name": "Goldman Sachs International Bank",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124659",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/03/2016",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/05/2019",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(1)[FCA CF] Manager of certification employee",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/06/2023",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AAL01062": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/12/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/08/2011",
+        "Firm Name": "UBS Asset Management (UK) Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119319",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/02/2018",
+        "Firm Name": "Citadel Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491120",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/06/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Citadel Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491120",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/07/2023",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "DXA11893": [],
+    "JXR00703": [],
+    "AXA00854": [],
+    "JFK01036": [],
+    "PXP00253": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/06/2022",
+        "Firm Name": "Morgan Stanley Investment Management Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/121920",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/01/2025",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXC03079": [],
+    "AXK01838": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/04/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/10/2009",
+        "Firm Name": "Morgan Stanley & Co Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165934",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/04/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/05/2013",
+        "Firm Name": "Alpcot Capital Management Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/455367",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/10/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/10/2023",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/01/2025",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "RXP81580": [],
+    "AAG01047": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FIL Pensions Management",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/144345",
+        "role": "(11)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/03/2013",
+        "Firm Name": "Marshall Wace LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/228531",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FIL Investment Advisors (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/159360",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FIL Investment Services (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/121939",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/06/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/07/2010",
+        "Firm Name": "Lancaster Investment Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472385",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/05/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FIL Investments International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122170",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/07/2007",
+        "Firm Name": "FIL Investments International",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122170",
+        "role": "(5)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/07/2007",
+        "Firm Name": "FIL Investment Services (UK) Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/121939",
+        "role": "(4)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/07/2007",
+        "Firm Name": "FIL Pensions Management",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/144345",
+        "role": "(3)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/07/2007",
+        "Firm Name": "FIL Investment Advisors (UK) Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/159360",
+        "role": "(2)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/06/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/02/2011",
+        "Firm Name": "Lancaster Investment Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472385",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/07/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "EJM01053": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2014",
+        "Firm Name": "Stifel Nicolaus Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190412",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/06/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Keefe, Bruyette & Woods Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221627",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/07/2004",
+        "Firm Name": "Keefe, Bruyette & Woods Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221627",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/07/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Fox-Pitt, Kelton Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124681",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/04/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Stifel Nicolaus Europe Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190412",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CXC00455": [],
+    "GXX00005": [],
+    "AMB01120": [],
+    "SXT01245": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/06/2019",
+        "Firm Name": "Agora Securities Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769233",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/10/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/12/2014",
+        "Firm Name": "Magnetar Financial (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/447225",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/11/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Elliott Advisors (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/401411",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/03/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Lehman Brothers Europe Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/192290",
+        "role": "(5)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/03/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Lehman Brothers International (Europe)",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147475",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2005",
+        "Firm Name": "Elliott Advisors (UK) Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/401411",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/08/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/01/2022",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "18/01/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Agora Securities Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769233",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/01/2025",
+        "Firm Name": "Sargasso Partners LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1011387",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "RMR01029": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/04/2009",
+        "Firm Name": "Nomura International Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124422",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/03/2019",
+        "Firm Name": "Exane SA",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/207359",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/05/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2013",
+        "Firm Name": "Exane Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/176483",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/09/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/09/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Credit Suisse First Boston Equities Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/143849",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/08/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/08/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Exane SA",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/207359",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "SXD02486": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/05/2018",
+        "Firm Name": "Instinet Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/140822",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/08/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Instinet Europe Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/140822",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/03/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/09/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "CXG00089": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/05/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/10/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/09/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/11/2020",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/09/2024",
+        "Firm Name": "Hudson Bay Capital UK LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1003945",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "BXL01181": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/09/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/04/2013",
+        "Firm Name": "Goldman Sachs International Bank",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124659",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/09/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/03/2013",
+        "Firm Name": "Goldman Sachs Bank USA",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582328",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/09/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/05/2006",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF22 Investment Adviser (Trainee)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(2)CF22 Investment Adviser (Trainee)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "18/02/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "DPF01026": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/12/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/05/2011",
+        "Firm Name": "AlphaGen Capital Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119304",
+        "role": "(11)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/12/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/05/2011",
+        "Firm Name": "Janus Henderson Investors UK Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/121857",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/12/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/05/2011",
+        "Firm Name": "Henderson Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/149356",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Societe Generale",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124866",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/12/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/04/2011",
+        "Firm Name": "Gartmore Investment Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119236",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/11/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/02/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/04/2011",
+        "Firm Name": "Gartmore Global Partners",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/172616",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/04/2004",
+        "Firm Name": "Societe Generale",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124866",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "18/03/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Fox-Pitt, Kelton Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124681",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/11/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/03/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/06/2024",
+        "Firm Name": "Kyte Broking Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/174863",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "EXV01017": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/03/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/12/2012",
+        "Firm Name": "Benros Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539014",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/11/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/08/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/05/2013",
+        "Firm Name": "Marble Bar Asset Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/475857",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/06/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/09/2008",
+        "Firm Name": "Societe Generale",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124866",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/05/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(6)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/11/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(5)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/03/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/12/2012",
+        "Firm Name": "Benros Capital Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539014",
+        "role": "(4)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/02/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/06/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/04/2022",
+        "Firm Name": "RWC Asset Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/474286",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/06/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/08/2022",
+        "Firm Name": "RWC Asset Management LLP",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/474286",
+        "role": "(1)[FCA CF] Manager of certification employee",
+        "when": "previous"
+      }
+    ],
+    "PCE01018": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/10/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/01/2009",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/10/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "BANK OF AMERICA MERRILL LYNCH INTERNATIONAL LIMITED",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124509",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/01/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/10/2009",
+        "Firm Name": "Centerview Partners UK LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/502957",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/09/2007",
+        "Firm Name": "BANK OF AMERICA MERRILL LYNCH INTERNATIONAL LIMITED",
+        "Name": "CF22 Investment Adviser (Trainee)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124509",
+        "role": "(2)CF22 Investment Adviser (Trainee)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/05/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "OCN00002": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/06/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/08/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/02/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/12/2003",
+        "Firm Name": "Royal London Asset Management Ltd",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/141665",
+        "role": "(5)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/07/2006",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/06/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/09/2005",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/08/2013",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/02/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2023",
+        "Firm Name": "Balyasny Asset Management (UK) LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/403302",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "GXP00129": [],
+    "LXA00078": [],
+    "TXE00030": [],
+    "MAS01576": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/03/2015",
+        "Firm Name": "Citadel Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491120",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/02/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/06/2025",
+        "Firm Name": "Hudson Bay Capital UK LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1003945",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "NIP01008": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/03/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/04/2014",
+        "Firm Name": "Jefferies International Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/139253",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/07/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/10/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/11/2018",
+        "Firm Name": "UBS AG",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186958",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/01/2025",
+        "Firm Name": "ExodusPoint Capital Management UK, LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/828549",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "PXK01758": [],
+    "GXC02096": [],
+    "CAR01115": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/01/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Thames River Capital LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/426349",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/03/2011",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/09/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/08/2006",
+        "Firm Name": "PGIM LIMITED",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193418",
+        "role": "(5)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/10/2007",
+        "Firm Name": "Thames River Capital LLP",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/426349",
+        "role": "(4)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/08/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/01/2006",
+        "Firm Name": "PGIM LIMITED",
+        "Name": "CF26 Customer Trading",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193418",
+        "role": "(3)CF26 Customer Trading",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/06/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "BXL72026": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/09/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/02/2023",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2019",
+        "Firm Name": "Credit Suisse International",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146702",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2019",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/01/2025",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "FXD00096": [],
+    "PXK01585": [],
+    "XXG01076": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/06/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "06/12/2017",
+        "Firm Name": "UBS MTF Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122627",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/03/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/04/2011",
+        "Firm Name": "Denjoy Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539421",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2019",
+        "Firm Name": "Schonfeld Strategic Advisors (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816269",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/06/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/04/2015",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/03/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2011",
+        "Firm Name": "Denjoy Capital Partners LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539421",
+        "role": "(4)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/05/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Schonfeld Strategic Advisors (UK) LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816269",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/02/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/10/2023",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/12/2019",
+        "Firm Name": "Schonfeld Strategic Advisors (UK) LLP",
+        "Name": "[FCA CF] Material risk taker",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816269",
+        "role": "(1)[FCA CF] Material risk taker",
+        "when": "previous"
+      }
+    ],
+    "DXM00993": [],
+    "IXK01347": [],
+    "CFH01045": [],
+    "CPG01057": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/11/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/09/2011",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/11/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/11/2013",
+        "Firm Name": "Citadel Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491120",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/03/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "MOB01008": [],
+    "MXS01991": [],
+    "AXL16386": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/06/2019",
+        "Firm Name": "GAM International Management Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122331",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/06/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/02/2021",
+        "Firm Name": "GAM International Management Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122331",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/02/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/07/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "PSH01061": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/06/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/10/2008",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/01/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/05/2014",
+        "Firm Name": "BlueCrest Capital Management (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/515304",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/04/2005",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/02/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/04/2002",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/08/2004",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2023",
+        "Firm Name": "Schonfeld Strategic Advisors (UK) LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816269",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "PJT01143": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/01/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/08/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/09/2008",
+        "Firm Name": "Citadel Investment Group (Europe) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190260",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/10/2009",
+        "Firm Name": "Societe Generale",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124866",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/12/2010",
+        "Firm Name": "Societe Generale",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124866",
+        "role": "(4)CF29 Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/03/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/11/2005",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF22 Investment Adviser (Trainee)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(3)CF22 Investment Adviser (Trainee)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/03/2007",
+        "Firm Name": "Goldman Sachs International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/142888",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/01/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/08/2020",
+        "Firm Name": "Mirabella Financial Services LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/415559",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JMV01006": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/11/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/02/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/01/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/03/2009",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/04/2018",
+        "Firm Name": "GLG Partners LP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/11/2016",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/11/2020",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "APB01200": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/01/2012",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2018",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/02/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/03/2016",
+        "Firm Name": "Deutsche Bank AG",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/150018",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/03/2023",
+        "Firm Name": "Millennium Capital Partners LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439327",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "WEH01027": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/10/2014",
+        "Firm Name": "W1M Investment Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/116404",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/08/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "W1M Investment Management Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/116404",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/02/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2021",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "Face To Face; Telephone",
+        "End Date": "23/08/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "W1M Investment Management Limited",
+        "Name": "[FCA CF] Functions requiring qualifications",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/116404",
+        "role": "(1)[FCA CF] Functions requiring qualifications",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/03/2024",
+        "Firm Name": "Reviresco Partners Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/980391",
+        "role": "(2)CF30 Customer",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/03/2024",
+        "Firm Name": "Reviresco Partners Ltd",
+        "Name": "CF1 Director (AR)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/980391",
+        "role": "(1)CF1 Director (AR)",
+        "when": "current"
+      }
+    ],
+    "JXH01983": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/10/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "12/08/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/10/2014",
+        "Firm Name": "Mako Global Investors LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576153",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/12/2005",
+        "Firm Name": "Merrill Lynch International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/147150",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "XXS01199": [],
+    "OJR01011": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/07/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/11/2008",
+        "Firm Name": "Morgan Stanley Securities Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/139238",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/08/2010",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/01/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/07/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/07/2009",
+        "Firm Name": "Cheyne Capital Management (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456864",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/07/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/11/2008",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/01/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "DXS01366": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(18)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(17)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroder Investment Management Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119348",
+        "role": "(16)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2002",
+        "Firm Name": "Schroder Investment Management North America Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/144543",
+        "role": "(15)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroder Investment Management North America Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/144543",
+        "role": "(14)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/11/2004",
+        "Firm Name": "Olympus Capital LLP",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/403024",
+        "role": "(13)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/08/2005",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(12)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroder Investment Management (UK) Ltd",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146782",
+        "role": "(11)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2002",
+        "Firm Name": "Schroder Investment Management (UK) Ltd",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146782",
+        "role": "(10)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/12/2004",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/03/2003",
+        "Firm Name": "Olympus Capital Management Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185290",
+        "role": "(9)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroders Investment Management North America Inc",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/189597",
+        "role": "(8)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2002",
+        "Firm Name": "Schroders Investment Management North America Inc",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/189597",
+        "role": "(7)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroders Investment Management North America Inc",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/189597",
+        "role": "(6)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/07/2002",
+        "Firm Name": "Schroder Investment Management International Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186493",
+        "role": "(5)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroder Investment Management International Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186493",
+        "role": "(4)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Schroder Investment Management Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119348",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/11/2004",
+        "Firm Name": "Olympus Capital LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/403024",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "XXD01080": [],
+    "TXA01047": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/07/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/09/2014",
+        "Firm Name": "Balyasny Asset Management (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/403302",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/04/2007",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(6)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/02/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "JPMorgan Chase Bank, National Association",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124491",
+        "role": "(5)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/02/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "J.P. Morgan Securities plc",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/155240",
+        "role": "(4)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/02/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "J.P. Morgan Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124536",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/02/2003",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "J.P. Morgan Europe Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124579",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "PJW01164": [],
+    "JDS01128": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "GLG Partners LP",
+        "Name": "CF27 Investment Management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(4)CF27 Investment Management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/04/2006",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "GLG Partners LP",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/186093",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "PXK01092": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/07/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/07/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/07/2009",
+        "Firm Name": "Cheyne Capital Management (UK) LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456864",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/08/2010",
+        "Firm Name": "De Putron Fund Management Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/185173",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/07/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/07/2009",
+        "Firm Name": "Cheyne Capital Management (UK) LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456864",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2012",
+        "Firm Name": "Bell Rock Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582907",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ]
+  }
 }

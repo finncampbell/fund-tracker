@@ -1,7 +1,18 @@
 {
   "frn": 738538,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "738538",
+    "organisation_name": "Trade Capital UK (TCUK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09203957",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "17/01/2017"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

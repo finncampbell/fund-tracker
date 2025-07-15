@@ -1,7 +1,17 @@
 {
   "frn": 1012912,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "1012912",
+    "organisation_name": "BPX Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15240592",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "27/03/2025"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

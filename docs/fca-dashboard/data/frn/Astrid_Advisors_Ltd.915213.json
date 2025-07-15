@@ -1,7 +1,17 @@
 {
   "frn": 915213,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "915213",
+    "organisation_name": "Astrid Advisors Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12205401",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "16/10/2019"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

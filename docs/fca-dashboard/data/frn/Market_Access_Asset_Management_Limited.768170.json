@@ -1,7 +1,18 @@
 {
   "frn": 768170,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "768170",
+    "organisation_name": "Market Access Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09955866",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "14/06/2017"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

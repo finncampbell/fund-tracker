@@ -1,7 +1,18 @@
 {
   "frn": 507945,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "507945",
+    "organisation_name": "JTC Fund Services (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05944318",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "30/07/2010"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 516918,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "516918",
+    "organisation_name": "Rougemont Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04473580",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "01/07/2010"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

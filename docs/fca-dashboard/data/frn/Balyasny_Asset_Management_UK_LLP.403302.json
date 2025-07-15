@@ -1,7 +1,18 @@
 {
   "frn": 403302,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "403302",
+    "organisation_name": "Balyasny Asset Management (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC308795",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "07/06/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

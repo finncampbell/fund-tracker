@@ -1,7 +1,18 @@
 {
   "frn": 172073,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "172073",
+    "organisation_name": "SMBC Derivative Products Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02988637",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

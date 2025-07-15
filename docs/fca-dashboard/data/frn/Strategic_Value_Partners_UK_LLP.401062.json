@@ -1,7 +1,17 @@
 {
   "frn": 401062,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "401062",
+    "organisation_name": "Strategic Value Partners (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC306906",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "10/12/2004"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

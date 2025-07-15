@@ -1,7 +1,18 @@
 {
   "frn": 481871,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "481871",
+    "organisation_name": "Eriswell Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC334533",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "01/08/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

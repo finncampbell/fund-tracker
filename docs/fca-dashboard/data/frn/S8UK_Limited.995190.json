@@ -1,7 +1,17 @@
 {
   "frn": 995190,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "995190",
+    "organisation_name": "S8UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12640831",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "01/12/2023"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

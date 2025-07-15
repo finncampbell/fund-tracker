@@ -1,7 +1,18 @@
 {
   "frn": 417367,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "417367",
+    "organisation_name": "Wealth At Work Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05225819",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "16/05/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

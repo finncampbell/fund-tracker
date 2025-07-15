@@ -1,7 +1,18 @@
 {
   "frn": 191278,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "191278",
+    "organisation_name": "Sterling ISA Managers Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02395416",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

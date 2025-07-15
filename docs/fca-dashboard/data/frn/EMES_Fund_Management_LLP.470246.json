@@ -1,7 +1,17 @@
 {
   "frn": 470246,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "470246",
+    "organisation_name": "EM-ES Fund Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC327761",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "09/11/2007"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 624571,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "624571",
+    "organisation_name": "Qatalyst Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07844621",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "22/10/2014"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

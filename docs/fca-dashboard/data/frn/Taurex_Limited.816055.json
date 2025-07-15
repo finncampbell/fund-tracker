@@ -1,7 +1,18 @@
 {
   "frn": 816055,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "816055",
+    "organisation_name": "Taurex Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11077380",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "11/03/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

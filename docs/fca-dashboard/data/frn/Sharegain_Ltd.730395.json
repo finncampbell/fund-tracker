@@ -1,7 +1,18 @@
 {
   "frn": 730395,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "730395",
+    "organisation_name": "Sharegain Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09600298",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "01/11/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

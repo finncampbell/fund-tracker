@@ -1,7 +1,18 @@
 {
   "frn": 657309,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "657309",
+    "organisation_name": "Sandglass Capital Advisors (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09284654",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "19/05/2015"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

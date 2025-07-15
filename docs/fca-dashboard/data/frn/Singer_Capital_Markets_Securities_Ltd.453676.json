@@ -1,7 +1,18 @@
 {
   "frn": 453676,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "453676",
+    "organisation_name": "Singer Capital Markets Securities Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05792780",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "12/09/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

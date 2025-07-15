@@ -1,7 +1,18 @@
 {
   "frn": 765691,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "765691",
+    "organisation_name": "Ardea Partners International LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC413815",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "01/09/2017"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

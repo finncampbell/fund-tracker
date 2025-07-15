@@ -1,7 +1,18 @@
 {
   "frn": 846073,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "846073",
+    "organisation_name": "Aperture Investors UK Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11575470",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "04/02/2020"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

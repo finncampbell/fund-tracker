@@ -1,7 +1,18 @@
 {
   "frn": 801701,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "801701",
+    "organisation_name": "HF Markets (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11118651",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "14/11/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

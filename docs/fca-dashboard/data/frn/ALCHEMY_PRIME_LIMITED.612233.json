@@ -1,8 +1,36 @@
 {
   "frn": 612233,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "612233",
+    "organisation_name": "ALCHEMY PRIME LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08698974",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "05/08/2014"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916441",
+        "Termination Date": "22/11/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "612233",
+        "Principal Firm Name": "ALCHEMY PRIME LIMITED",
+        "Effective Date": "07/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916441",
+        "Name": "K2 Markets Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

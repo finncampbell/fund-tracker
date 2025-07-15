@@ -1,7 +1,18 @@
 {
   "frn": 436243,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "436243",
+    "organisation_name": "Cavenham Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05482935",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "09/01/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

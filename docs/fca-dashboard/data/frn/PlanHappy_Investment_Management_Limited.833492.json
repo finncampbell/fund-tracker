@@ -1,7 +1,18 @@
 {
   "frn": 833492,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "833492",
+    "organisation_name": "PlanHappy Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09511883",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "16/07/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

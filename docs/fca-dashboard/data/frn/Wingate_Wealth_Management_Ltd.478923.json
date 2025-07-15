@@ -1,7 +1,18 @@
 {
   "frn": 478923,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "478923",
+    "organisation_name": "Wingate Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06469596",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "03/03/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

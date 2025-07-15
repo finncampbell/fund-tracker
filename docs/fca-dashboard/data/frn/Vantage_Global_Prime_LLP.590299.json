@@ -1,7 +1,18 @@
 {
   "frn": 590299,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "590299",
+    "organisation_name": "Vantage Global Prime LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC376560",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "01/07/2013"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

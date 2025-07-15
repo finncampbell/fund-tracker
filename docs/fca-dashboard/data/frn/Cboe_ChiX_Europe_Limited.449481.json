@@ -1,7 +1,18 @@
 {
   "frn": 449481,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "449481",
+    "organisation_name": "Cboe Chi-X Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01651728",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "30/06/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

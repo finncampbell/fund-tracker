@@ -1,7 +1,18 @@
 {
   "frn": 434823,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "434823",
+    "organisation_name": "Palatium Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05455959",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "05/12/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

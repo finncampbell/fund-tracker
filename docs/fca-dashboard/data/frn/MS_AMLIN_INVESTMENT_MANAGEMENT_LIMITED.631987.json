@@ -1,7 +1,18 @@
 {
   "frn": 631987,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "631987",
+    "organisation_name": "MS AMLIN INVESTMENT MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09110461",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "12/03/2015"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

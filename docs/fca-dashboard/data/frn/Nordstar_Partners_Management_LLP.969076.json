@@ -1,7 +1,17 @@
 {
   "frn": 969076,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "969076",
+    "organisation_name": "Nordstar Partners Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC435429",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "06/04/2023"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 487904,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "487904",
+    "organisation_name": "Blue River Wealth Management Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "06658888",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "01/10/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

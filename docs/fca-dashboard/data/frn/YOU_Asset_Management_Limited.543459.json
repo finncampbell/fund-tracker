@@ -1,7 +1,18 @@
 {
   "frn": 543459,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "543459",
+    "organisation_name": "YOU Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06150317",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "12/03/2012"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

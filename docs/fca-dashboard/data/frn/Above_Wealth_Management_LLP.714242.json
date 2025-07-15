@@ -1,7 +1,18 @@
 {
   "frn": 714242,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "714242",
+    "organisation_name": "Above Wealth Management  LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC400854",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "01/06/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

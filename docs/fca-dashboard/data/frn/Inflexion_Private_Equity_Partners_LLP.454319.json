@@ -1,7 +1,17 @@
 {
   "frn": 454319,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "454319",
+    "organisation_name": "Inflexion Private Equity Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC316601",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "06/11/2006"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

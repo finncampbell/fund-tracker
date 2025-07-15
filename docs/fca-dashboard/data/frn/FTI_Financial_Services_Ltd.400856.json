@@ -1,9 +1,3537 @@
 {
   "frn": 400856,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "400856",
+    "organisation_name": "FTI Financial Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04851184",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "18/11/2004"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
-  "person_records": {},
-  "controlled_functions": {}
+  "individuals": [
+    {
+      "IRN": "SXB00724",
+      "Name": "Silke Maria Burzle-Brayley",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXB00724"
+    },
+    {
+      "IRN": "DPT01053",
+      "Name": "Duncan Philip Turner",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DPT01053"
+    },
+    {
+      "IRN": "PNI01000",
+      "Name": "Paul Inglis",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PNI01000"
+    },
+    {
+      "IRN": "DJM01563",
+      "Name": "David Morris",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJM01563"
+    },
+    {
+      "IRN": "APH01167",
+      "Name": "Andrew Hall",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/APH01167"
+    },
+    {
+      "IRN": "GRW01038",
+      "Name": "Glenn Wight",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GRW01038"
+    },
+    {
+      "IRN": "NAC01052",
+      "Name": "Nicholas Carmichael",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NAC01052"
+    },
+    {
+      "IRN": "AXK02259",
+      "Name": "Andrew Kirkpatrick",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK02259"
+    },
+    {
+      "IRN": "LXR00145",
+      "Name": "Lisa Rickelton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXR00145"
+    },
+    {
+      "IRN": "AXA13046",
+      "Name": "Alexis Anaman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA13046"
+    },
+    {
+      "IRN": "SXF00251",
+      "Name": "Stewart Federman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXF00251"
+    },
+    {
+      "IRN": "PXN00082",
+      "Name": "Peter Nower",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXN00082"
+    },
+    {
+      "IRN": "OXC00028",
+      "Name": "Oliver Carter",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXC00028"
+    },
+    {
+      "IRN": "AXJ00249",
+      "Name": "Andrew Johnson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXJ00249"
+    },
+    {
+      "IRN": "FLF01005",
+      "Name": "Fiona Freeman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FLF01005"
+    },
+    {
+      "IRN": "AAK01114",
+      "Name": "Ali Khaki",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAK01114"
+    },
+    {
+      "IRN": "AXB00819",
+      "Name": "Adam Broadbent",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB00819"
+    },
+    {
+      "IRN": "CXB00480",
+      "Name": "Craig Ballard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXB00480"
+    },
+    {
+      "IRN": "LXN00051",
+      "Name": "Liam Nolan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXN00051"
+    },
+    {
+      "IRN": "IXG00069",
+      "Name": "Iain Graham",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXG00069"
+    },
+    {
+      "IRN": "BXJ00082",
+      "Name": "Benjamin Johnson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXJ00082"
+    },
+    {
+      "IRN": "DXV00050",
+      "Name": "Diederick van der Plas",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXV00050"
+    },
+    {
+      "IRN": "CXB00481",
+      "Name": "Christopher Bennett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXB00481"
+    },
+    {
+      "IRN": "SXB00726",
+      "Name": "Samuel Ballinger",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXB00726"
+    },
+    {
+      "IRN": "JXL00398",
+      "Name": "James Long",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXL00398"
+    },
+    {
+      "IRN": "JXD00461",
+      "Name": "Jonathan Dyer",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXD00461"
+    },
+    {
+      "IRN": "MXC00578",
+      "Name": "Matthew Callaghan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC00578"
+    },
+    {
+      "IRN": "MXA00446",
+      "Name": "Michael Axtell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXA00446"
+    },
+    {
+      "IRN": "CXG00272",
+      "Name": "Callum Greig",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXG00272"
+    },
+    {
+      "IRN": "RXH00412",
+      "Name": "Richard Hall",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXH00412"
+    },
+    {
+      "IRN": "GXP00203",
+      "Name": "Giovanni Patricelli",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXP00203"
+    },
+    {
+      "IRN": "AXG00552",
+      "Name": "Alexander Galezowski",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXG00552"
+    },
+    {
+      "IRN": "KXH00339",
+      "Name": "Katherine Hewing-Powell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXH00339"
+    },
+    {
+      "IRN": "LXB00508",
+      "Name": "Lucy Elisabeth Brocklebank",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXB00508"
+    },
+    {
+      "IRN": "AXR00897",
+      "Name": "Andrew Rodrigues",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXR00897"
+    },
+    {
+      "IRN": "JXB03751",
+      "Name": "James Balser",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB03751"
+    },
+    {
+      "IRN": "MIJ01014",
+      "Name": "Matthew Ian Johnston",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MIJ01014"
+    },
+    {
+      "IRN": "OXW00067",
+      "Name": "Oliver Wright",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXW00067"
+    },
+    {
+      "IRN": "PXL00313",
+      "Name": "Pui Hei Lee",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXL00313"
+    },
+    {
+      "IRN": "AXM05316",
+      "Name": "Abhishek Manjunath",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM05316"
+    },
+    {
+      "IRN": "IXR00115",
+      "Name": "Iain Reilly",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXR00115"
+    },
+    {
+      "IRN": "JXH03144",
+      "Name": "Joanne Hewitt-Schembri",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXH03144"
+    },
+    {
+      "IRN": "JXA00722",
+      "Name": "Jack Anstis",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXA00722"
+    },
+    {
+      "IRN": "YXC00102",
+      "Name": "Yean Weng Sherilyn Chee",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXC00102"
+    },
+    {
+      "IRN": "MXT00697",
+      "Name": "Melek Tonguc",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXT00697"
+    },
+    {
+      "IRN": "JXD01035",
+      "Name": "Julio Dal Poz",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXD01035"
+    },
+    {
+      "IRN": "SXM00550",
+      "Name": "Shamil Malde",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXM00550"
+    },
+    {
+      "IRN": "CJR01162",
+      "Name": "Christopher Ruell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJR01162"
+    },
+    {
+      "IRN": "PNI01000",
+      "Name": "Paul Inglis",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PNI01000"
+    },
+    {
+      "IRN": "SJG01296",
+      "Name": "Simon John Granger",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SJG01296"
+    },
+    {
+      "IRN": "DPT01053",
+      "Name": "Duncan Philip Turner",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DPT01053"
+    },
+    {
+      "IRN": "MGV01011",
+      "Name": "Michael Vivian",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MGV01011"
+    },
+    {
+      "IRN": "BAH01083",
+      "Name": "Benjamin Hughes",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BAH01083"
+    },
+    {
+      "IRN": "AXW32971",
+      "Name": "Alexandra Welch",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXW32971"
+    },
+    {
+      "IRN": "CXP00322",
+      "Name": "Christopher Pearson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXP00322"
+    },
+    {
+      "IRN": "DXM00539",
+      "Name": "Declan McDonnell",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM00539"
+    },
+    {
+      "IRN": "VXG00043",
+      "Name": "Vaughan Grandin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXG00043"
+    },
+    {
+      "IRN": "SXM00824",
+      "Name": "Sergio Masip Bodi",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXM00824"
+    },
+    {
+      "IRN": "KXD00183",
+      "Name": "Kieran Douglas",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXD00183"
+    },
+    {
+      "IRN": "BXH00183",
+      "Name": "Brittany Hancock",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXH00183"
+    },
+    {
+      "IRN": "AXC00605",
+      "Name": "Alexander Chandler",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXC00605"
+    },
+    {
+      "IRN": "AXG00497",
+      "Name": "Adriana Gomes Silva Castro Fortunato",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXG00497"
+    },
+    {
+      "IRN": "RXR00155",
+      "Name": "Ronald Reno",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXR00155"
+    },
+    {
+      "IRN": "FLF01005",
+      "Name": "Fiona Freeman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FLF01005"
+    },
+    {
+      "IRN": "APH01167",
+      "Name": "Andrew Hall",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/APH01167"
+    },
+    {
+      "IRN": "DJM01563",
+      "Name": "David Morris",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJM01563"
+    },
+    {
+      "IRN": "CJR01162",
+      "Name": "Christopher Ruell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJR01162"
+    },
+    {
+      "IRN": "AXK02259",
+      "Name": "Andrew Kirkpatrick",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK02259"
+    },
+    {
+      "IRN": "AXA13046",
+      "Name": "Alexis Anaman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA13046"
+    },
+    {
+      "IRN": "SIK01012",
+      "Name": "Simon Kirkhope",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SIK01012"
+    },
+    {
+      "IRN": "SMO01045",
+      "Name": "Shaun Matthew Paul O'Callaghan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SMO01045"
+    },
+    {
+      "IRN": "MXK02162",
+      "Name": "Michael Knott",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK02162"
+    },
+    {
+      "IRN": "LST01018",
+      "Name": "Lindsey Harding",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LST01018"
+    },
+    {
+      "IRN": "BJW01057",
+      "Name": "Barnaby John Wakinshaw Whiter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BJW01057"
+    },
+    {
+      "IRN": "TMC01102",
+      "Name": "Thomas Michael Crease",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TMC01102"
+    },
+    {
+      "IRN": "SHW01035",
+      "Name": "Stephen Hamilton Welch",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SHW01035"
+    },
+    {
+      "IRN": "SXK01382",
+      "Name": "Stewart Kahn",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXK01382"
+    },
+    {
+      "IRN": "GWC01051",
+      "Name": "Greg William Cooper",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GWC01051"
+    },
+    {
+      "IRN": "MJD01357",
+      "Name": "Mark James Dewar",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MJD01357"
+    },
+    {
+      "IRN": "TNB01018",
+      "Name": "Trevor Nigel Birch",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TNB01018"
+    },
+    {
+      "IRN": "MXP01548",
+      "Name": "Michael Pokrassa",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXP01548"
+    },
+    {
+      "IRN": "JBD01043",
+      "Name": "Jack Dunn",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JBD01043"
+    },
+    {
+      "IRN": "DXD01355",
+      "Name": "Dinapoli Dominic",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXD01355"
+    },
+    {
+      "IRN": "DJW01211",
+      "Name": "David Jonathon William Whiteley",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJW01211"
+    },
+    {
+      "IRN": "KXH01457",
+      "Name": "Kevin Hewitt",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXH01457"
+    },
+    {
+      "IRN": "DEH01077",
+      "Name": "Donald Eugene Harer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DEH01077"
+    },
+    {
+      "IRN": "PRS01129",
+      "Name": "Paul Robin Monrad Smith",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PRS01129"
+    },
+    {
+      "IRN": "FXO01043",
+      "Name": "Finbarr O'Connor",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXO01043"
+    },
+    {
+      "IRN": "CXG01350",
+      "Name": "Chad Griffin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXG01350"
+    },
+    {
+      "IRN": "CRJ01026",
+      "Name": "Carl Robert Jenkins",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CRJ01026"
+    },
+    {
+      "IRN": "JXS02918",
+      "Name": "Julia Sherlock",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXS02918"
+    }
+  ],
+  "person_records": {
+    "SXB00724": {
+      "irn": "SXB00724",
+      "name": "Silke Maria Burzle-Brayley",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DPT01053": {
+      "irn": "DPT01053",
+      "name": "Duncan Philip Turner",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PNI01000": {
+      "irn": "PNI01000",
+      "name": "Paul Inglis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJM01563": {
+      "irn": "DJM01563",
+      "name": "David Morris",
+      "status": null,
+      "controlled_functions": null
+    },
+    "APH01167": {
+      "irn": "APH01167",
+      "name": "Andrew Hall",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GRW01038": {
+      "irn": "GRW01038",
+      "name": "Glenn Wight",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NAC01052": {
+      "irn": "NAC01052",
+      "name": "Nicholas Carmichael",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXK02259": {
+      "irn": "AXK02259",
+      "name": "Andrew Kirkpatrick",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXR00145": {
+      "irn": "LXR00145",
+      "name": "Lisa Rickelton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA13046": {
+      "irn": "AXA13046",
+      "name": "Alexis Anaman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXF00251": {
+      "irn": "SXF00251",
+      "name": "Stewart Federman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXN00082": {
+      "irn": "PXN00082",
+      "name": "Peter Nower",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXC00028": {
+      "irn": "OXC00028",
+      "name": "Oliver Carter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXJ00249": {
+      "irn": "AXJ00249",
+      "name": "Andrew Johnson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FLF01005": {
+      "irn": "FLF01005",
+      "name": "Fiona Freeman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAK01114": {
+      "irn": "AAK01114",
+      "name": "Ali Khaki",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB00819": {
+      "irn": "AXB00819",
+      "name": "Adam Broadbent",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXB00480": {
+      "irn": "CXB00480",
+      "name": "Craig Ballard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXN00051": {
+      "irn": "LXN00051",
+      "name": "Liam Nolan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXG00069": {
+      "irn": "IXG00069",
+      "name": "Iain Graham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXJ00082": {
+      "irn": "BXJ00082",
+      "name": "Benjamin Johnson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXV00050": {
+      "irn": "DXV00050",
+      "name": "Diederick van der Plas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXB00481": {
+      "irn": "CXB00481",
+      "name": "Christopher Bennett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXB00726": {
+      "irn": "SXB00726",
+      "name": "Samuel Ballinger",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXL00398": {
+      "irn": "JXL00398",
+      "name": "James Long",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXD00461": {
+      "irn": "JXD00461",
+      "name": "Jonathan Dyer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC00578": {
+      "irn": "MXC00578",
+      "name": "Matthew Callaghan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXA00446": {
+      "irn": "MXA00446",
+      "name": "Michael Axtell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXG00272": {
+      "irn": "CXG00272",
+      "name": "Callum Greig",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXH00412": {
+      "irn": "RXH00412",
+      "name": "Richard Hall",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXP00203": {
+      "irn": "GXP00203",
+      "name": "Giovanni Patricelli",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXG00552": {
+      "irn": "AXG00552",
+      "name": "Alexander Galezowski",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXH00339": {
+      "irn": "KXH00339",
+      "name": "Katherine Hewing-Powell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXB00508": {
+      "irn": "LXB00508",
+      "name": "Lucy Elisabeth Brocklebank",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXR00897": {
+      "irn": "AXR00897",
+      "name": "Andrew Rodrigues",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB03751": {
+      "irn": "JXB03751",
+      "name": "James Balser",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MIJ01014": {
+      "irn": "MIJ01014",
+      "name": "Matthew Ian Johnston",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXW00067": {
+      "irn": "OXW00067",
+      "name": "Oliver Wright",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXL00313": {
+      "irn": "PXL00313",
+      "name": "Pui Hei Lee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM05316": {
+      "irn": "AXM05316",
+      "name": "Abhishek Manjunath",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXR00115": {
+      "irn": "IXR00115",
+      "name": "Iain Reilly",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXH03144": {
+      "irn": "JXH03144",
+      "name": "Joanne Hewitt-Schembri",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXA00722": {
+      "irn": "JXA00722",
+      "name": "Jack Anstis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXC00102": {
+      "irn": "YXC00102",
+      "name": "Yean Weng Sherilyn Chee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXT00697": {
+      "irn": "MXT00697",
+      "name": "Melek Tonguc",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXD01035": {
+      "irn": "JXD01035",
+      "name": "Julio Dal Poz",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXM00550": {
+      "irn": "SXM00550",
+      "name": "Shamil Malde",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CJR01162": {
+      "irn": "CJR01162",
+      "name": "Christopher Ruell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SJG01296": {
+      "irn": "SJG01296",
+      "name": "Simon John Granger",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MGV01011": {
+      "irn": "MGV01011",
+      "name": "Michael Vivian",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BAH01083": {
+      "irn": "BAH01083",
+      "name": "Benjamin Hughes",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXW32971": {
+      "irn": "AXW32971",
+      "name": "Alexandra Welch",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXP00322": {
+      "irn": "CXP00322",
+      "name": "Christopher Pearson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXM00539": {
+      "irn": "DXM00539",
+      "name": "Declan McDonnell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXG00043": {
+      "irn": "VXG00043",
+      "name": "Vaughan Grandin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXM00824": {
+      "irn": "SXM00824",
+      "name": "Sergio Masip Bodi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXD00183": {
+      "irn": "KXD00183",
+      "name": "Kieran Douglas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXH00183": {
+      "irn": "BXH00183",
+      "name": "Brittany Hancock",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXC00605": {
+      "irn": "AXC00605",
+      "name": "Alexander Chandler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXG00497": {
+      "irn": "AXG00497",
+      "name": "Adriana Gomes Silva Castro Fortunato",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXR00155": {
+      "irn": "RXR00155",
+      "name": "Ronald Reno",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SIK01012": {
+      "irn": "SIK01012",
+      "name": "Simon Kirkhope",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SMO01045": {
+      "irn": "SMO01045",
+      "name": "Shaun Matthew Paul O'Callaghan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXK02162": {
+      "irn": "MXK02162",
+      "name": "Michael Knott",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LST01018": {
+      "irn": "LST01018",
+      "name": "Lindsey Harding",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BJW01057": {
+      "irn": "BJW01057",
+      "name": "Barnaby John Wakinshaw Whiter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TMC01102": {
+      "irn": "TMC01102",
+      "name": "Thomas Michael Crease",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SHW01035": {
+      "irn": "SHW01035",
+      "name": "Stephen Hamilton Welch",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXK01382": {
+      "irn": "SXK01382",
+      "name": "Stewart Kahn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GWC01051": {
+      "irn": "GWC01051",
+      "name": "Greg William Cooper",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MJD01357": {
+      "irn": "MJD01357",
+      "name": "Mark James Dewar",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TNB01018": {
+      "irn": "TNB01018",
+      "name": "Trevor Nigel Birch",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXP01548": {
+      "irn": "MXP01548",
+      "name": "Michael Pokrassa",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JBD01043": {
+      "irn": "JBD01043",
+      "name": "Jack Dunn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXD01355": {
+      "irn": "DXD01355",
+      "name": "Dinapoli Dominic",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJW01211": {
+      "irn": "DJW01211",
+      "name": "David Jonathon William Whiteley",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXH01457": {
+      "irn": "KXH01457",
+      "name": "Kevin Hewitt",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DEH01077": {
+      "irn": "DEH01077",
+      "name": "Donald Eugene Harer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PRS01129": {
+      "irn": "PRS01129",
+      "name": "Paul Robin Monrad Smith",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXO01043": {
+      "irn": "FXO01043",
+      "name": "Finbarr O'Connor",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXG01350": {
+      "irn": "CXG01350",
+      "name": "Chad Griffin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CRJ01026": {
+      "irn": "CRJ01026",
+      "name": "Carl Robert Jenkins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXS02918": {
+      "irn": "JXS02918",
+      "name": "Julia Sherlock",
+      "status": null,
+      "controlled_functions": null
+    }
+  },
+  "controlled_functions": {
+    "SXB00724": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/11/2022",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/11/2021",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)SMF16 Compliance Oversight",
+        "when": "current"
+      }
+    ],
+    "DPT01053": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/02/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/02/2009",
+        "Firm Name": "PricewaterhouseCoopers LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221411",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/09/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/10/2021",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF3 Executive Director",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "PNI01000": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/02/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/06/2011",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF3 Executive Director",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "DJM01563": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/08/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "APH01167": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/05/2012",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "GRW01038": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "J.P. Morgan Cazenove Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/140767",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/12/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/12/2003",
+        "Firm Name": "ARC Partners Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/172075",
+        "role": "(1)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "NAC01052": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/03/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "CIBC World Markets Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/176515",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/07/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/03/2008",
+        "Firm Name": "RBC Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124543",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/03/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Canadian Imperial Bank of Commerce",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/141285",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/03/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/10/2010",
+        "Firm Name": "Evolution Securities Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/143999",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/02/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/10/2011",
+        "Firm Name": "PricewaterhouseCoopers LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221411",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/07/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/03/2008",
+        "Firm Name": "Royal Bank of Canada",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124783",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/11/2006",
+        "Firm Name": "CIBC World Markets Limited",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/176515",
+        "role": "(3)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/11/2006",
+        "Firm Name": "Canadian Imperial Bank of Commerce",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/141285",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Credit Agricole Corporate and Investment Bank",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124344",
+        "role": "(1)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXK02259": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/02/2013",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "LXR00145": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXA13046": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/03/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "SXF00251": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "PXN00082": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "OXC00028": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXJ00249": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "FLF01005": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "25/01/2016",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AAK01114": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/07/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/02/2017",
+        "Firm Name": "Signal Capital Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716450",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXB00819": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/11/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2021",
+        "Firm Name": "KPMG LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/210513",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CXB00480": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "LXN00051": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "IXG00069": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "BXJ00082": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "DXV00050": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CXB00481": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "SXB00726": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXL00398": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXD00461": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXC00578": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXA00446": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CXG00272": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "RXH00412": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "GXP00203": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXG00552": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/03/2022",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "KXH00339": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/07/2022",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "LXB00508": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/09/2022",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXR00897": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/03/2024",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXB03751": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/03/2024",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MIJ01014": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/09/2010",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/07/2010",
+        "Firm Name": "Argyll Advisory LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/483503",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/05/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Andersen Corporate Finance",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/196826",
+        "role": "(1)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/07/2023",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "OXW00067": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/06/2023",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "PXL00313": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/09/2023",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXM05316": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2024",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "IXR00115": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2024",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXH03144": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/01/2025",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXA00722": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/02/2025",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "YXC00102": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/03/2025",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXT00697": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/05/2025",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXD01035": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/04/2025",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "SXM00550": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/06/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/02/2020",
+        "Firm Name": "Lazard & Co., Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/114054",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/06/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/02/2020",
+        "Firm Name": "Lazard & Co., Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/114054",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/08/2021",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CJR01162": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/10/2007",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "SJG01296": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/05/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)SMF16 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/04/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/11/2021",
+        "Firm Name": "Financial Guaranty UK Limited",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400238",
+        "role": "(3)SMF3 Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/05/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF3 Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/06/2011",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/01/2025",
+        "Firm Name": "Financial Guaranty UK Limited",
+        "Name": "Responsible for Insurance Distribution",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400238",
+        "role": "(6)Responsible for Insurance Distribution",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/08/2021",
+        "Firm Name": "GoldenTree Asset Management UK LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/433066",
+        "role": "(5)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/01/2025",
+        "Firm Name": "Financial Guaranty UK Limited",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400238",
+        "role": "(4)SMF3 Executive Director",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/04/2022",
+        "Firm Name": "Financial Guaranty UK Limited",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400238",
+        "role": "(3)SMF1 Chief Executive",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/05/2021",
+        "Firm Name": "GoldenTree Asset Management UK LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/433066",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/07/2023",
+        "Firm Name": "GoldenTree Asset Management UK LLP",
+        "Name": "[FCA CF] Material risk taker",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/433066",
+        "role": "(1)[FCA CF] Material risk taker",
+        "when": "current"
+      }
+    ],
+    "MGV01011": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/11/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/02/2008",
+        "Firm Name": "AlixPartners Corporate Finance Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193420",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/05/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/10/2008",
+        "Firm Name": "THM Partners LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/489272",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "BAH01083": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/04/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/01/2013",
+        "Firm Name": "AlixPartners Corporate Finance Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193420",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/08/2018",
+        "Firm Name": "Deloitte LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/213218",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/11/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Deloitte LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/213218",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/07/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "AXW32971": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "18/10/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2020",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/02/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "CXP00322": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/07/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "DXM00539": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/05/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "VXG00043": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/09/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "SXM00824": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/06/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "KXD00183": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/07/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/10/2022",
+        "Firm Name": "Mizuho Bank, Ltd.",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/139195",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/10/2022",
+        "Firm Name": "Mizuho International plc",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119256",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Mizuho International plc",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/119256",
+        "role": "(1)[FCA CF] Manager of certification employee",
+        "when": "current"
+      }
+    ],
+    "BXH00183": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/07/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "AXC00605": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/03/2025",
+        "Firm Name": "Namier Capital Partners Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/977303",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXG00497": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "09/11/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/11/2021",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "RXR00155": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/04/2020",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "Director of firm who is not a certification employee or a SMF manager",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)Director of firm who is not a certification employee or a SMF manager",
+        "when": "previous"
+      }
+    ],
+    "SIK01012": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/05/2012",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/09/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      }
+    ],
+    "SMO01045": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/03/2014",
+        "Firm Name": "Grant Thornton UK LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231791",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2012",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/06/2011",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/02/2025",
+        "Firm Name": "Grant Thornton UK LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231791",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Grant Thornton UK LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231791",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/03/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Grant Thornton UK LLP",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231791",
+        "role": "(1)[FCA CF] Manager of certification employee",
+        "when": "previous"
+      }
+    ],
+    "MXK02162": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/02/2013",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      }
+    ],
+    "LST01018": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/01/2009",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      }
+    ],
+    "BJW01057": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/06/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "RSM & Co (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/197185",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/09/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/09/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/02/2005",
+        "Firm Name": "RSM & Co (UK) Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/197185",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "KPMG",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/104983",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/07/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/04/2002",
+        "Firm Name": "KPMG LLP",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/210513",
+        "role": "(1)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      }
+    ],
+    "TMC01102": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/02/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/08/2018",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF11 Money Laundering Reporting",
+        "when": "previous"
+      }
+    ],
+    "SHW01035": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/07/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2013",
+        "Firm Name": "Martin Brokers (UK) Limited",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187916",
+        "role": "(6)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2013",
+        "Firm Name": "MBG Europe Limited",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/164383",
+        "role": "(5)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/06/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/04/2013",
+        "Firm Name": "Martin Brokers (UK) Limited",
+        "Name": "CF2 Non Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187916",
+        "role": "(4)CF2 Non Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/06/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/05/2013",
+        "Firm Name": "MBG Europe Limited",
+        "Name": "CF2 Non Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/164383",
+        "role": "(3)CF2 Non Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2013",
+        "Firm Name": "Martin Brokers (UK) Limited",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187916",
+        "role": "(2)CF1 Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2013",
+        "Firm Name": "MBG Europe Limited",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/164383",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "SXK01382": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(3)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "GWC01051": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/08/2011",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/08/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "30/01/2007",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF10 Compliance Oversight",
+        "when": "previous"
+      }
+    ],
+    "MJD01357": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "27/06/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF30 Customer",
+        "when": "previous"
+      }
+    ],
+    "TNB01018": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "22/09/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/12/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      }
+    ],
+    "MXP01548": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF11 Money Laundering Reporting",
+        "when": "previous"
+      }
+    ],
+    "JBD01043": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(3)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/01/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "12/09/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF2 Non Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF2 Non Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "24/08/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "DXD01355": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/01/2015",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/09/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF2 Non Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF2 Non Executive Director",
+        "when": "previous"
+      }
+    ],
+    "DJW01211": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/03/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/11/2009",
+        "Firm Name": "Barclays Bank Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122702",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/11/2009",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/05/2009",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/03/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/12/2012",
+        "Firm Name": "Barclays Capital Securities Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124431",
+        "role": "(7)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/12/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Credit Suisse International",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146702",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "10/12/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "11/04/2002",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "11/04/2002",
+        "Firm Name": "Dresdner Kleinwort Securities Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124369",
+        "role": "(4)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/11/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Dresdner Kleinwort Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124534",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/12/2005",
+        "Firm Name": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124611",
+        "role": "(2)CF21 Investment Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/12/2005",
+        "Firm Name": "Credit Suisse International",
+        "Name": "CF21 Investment Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/146702",
+        "role": "(1)CF21 Investment Adviser",
+        "when": "previous"
+      }
+    ],
+    "KXH01457": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/08/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "27/11/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/06/2011",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "DEH01077": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/01/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "29/07/2005",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/01/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF17 Significant Mgt (Other Business Operations)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF17 Significant Mgt (Other Business Operations)",
+        "when": "previous"
+      }
+    ],
+    "PRS01129": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/06/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "RSM & Co (UK) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/197185",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/12/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/06/2008",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/01/2003",
+        "Firm Name": "RSM & Co (UK) Limited",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/197185",
+        "role": "(2)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/12/2001",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Ernst & Young LLP",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/196203",
+        "role": "(1)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      }
+    ],
+    "FXO01043": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(8)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/03/2007",
+        "Firm Name": "Fortelus Capital Management LLP",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456643",
+        "role": "(7)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(6)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/03/2007",
+        "Firm Name": "Fortelus Capital Management LLP",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456643",
+        "role": "(5)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/03/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/03/2007",
+        "Firm Name": "Fortelus Capital Management LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456643",
+        "role": "(3)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/11/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/11/2004",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "CXG01350": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/10/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/07/2006",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/10/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "CRJ01026": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/06/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/06/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(3)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/06/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/08/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/06/2006",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/06/2005",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "JXS02918": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/06/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2014",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/06/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/09/2014",
+        "Firm Name": "FTI Financial Services Ltd",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400856",
+        "role": "(1)CF10 Compliance Oversight",
+        "when": "previous"
+      }
+    ]
+  }
 }

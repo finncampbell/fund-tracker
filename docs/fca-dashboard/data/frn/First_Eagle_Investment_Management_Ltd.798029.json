@@ -1,7 +1,18 @@
 {
   "frn": 798029,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "798029",
+    "organisation_name": "First Eagle Investment Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10464101",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "17/08/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

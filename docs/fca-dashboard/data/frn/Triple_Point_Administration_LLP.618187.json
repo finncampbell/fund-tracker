@@ -1,7 +1,18 @@
 {
   "frn": 618187,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "618187",
+    "organisation_name": "Triple Point Administration LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC391352",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "03/07/2014"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

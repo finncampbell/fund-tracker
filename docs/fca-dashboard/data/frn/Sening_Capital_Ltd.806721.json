@@ -1,7 +1,18 @@
 {
   "frn": 806721,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "806721",
+    "organisation_name": "Sening Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11237561",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "18/06/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

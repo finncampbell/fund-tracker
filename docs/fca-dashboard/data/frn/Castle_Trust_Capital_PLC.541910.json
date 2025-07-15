@@ -1,7 +1,18 @@
 {
   "frn": 541910,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "541910",
+    "organisation_name": "Castle Trust Capital PLC",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07454474",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "05/09/2012"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

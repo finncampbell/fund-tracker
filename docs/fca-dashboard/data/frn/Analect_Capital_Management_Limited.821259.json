@@ -1,7 +1,18 @@
 {
   "frn": 821259,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "821259",
+    "organisation_name": "Analect Capital Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11019345",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "09/11/2018"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

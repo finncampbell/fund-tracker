@@ -1,7 +1,18 @@
 {
   "frn": 541427,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "541427",
+    "organisation_name": "Napier Park Global Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07480435",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "04/05/2011"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

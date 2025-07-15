@@ -1,7 +1,18 @@
 {
   "frn": 739949,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "739949",
+    "organisation_name": "Britannia Global Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09879649",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "02/01/2017"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

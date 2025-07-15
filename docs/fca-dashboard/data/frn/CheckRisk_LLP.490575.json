@@ -1,7 +1,18 @@
 {
   "frn": 490575,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "490575",
+    "organisation_name": "CheckRisk LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC338765",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "11/12/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

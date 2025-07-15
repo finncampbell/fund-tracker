@@ -1,7 +1,18 @@
 {
   "frn": 609970,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "609970",
+    "organisation_name": "Fortrade Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08619610",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "17/04/2014"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

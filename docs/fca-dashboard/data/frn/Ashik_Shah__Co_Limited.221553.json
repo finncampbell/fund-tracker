@@ -1,7 +1,18 @@
 {
   "frn": 221553,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "221553",
+    "organisation_name": "Ashik Shah & Co Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04551353",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "25/02/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

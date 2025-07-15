@@ -1,7 +1,18 @@
 {
   "frn": 562299,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "562299",
+    "organisation_name": "OMERS INFRASTRUCTURE EUROPE LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07560225",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "02/07/2012"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

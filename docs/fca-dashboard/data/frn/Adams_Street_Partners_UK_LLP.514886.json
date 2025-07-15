@@ -1,7 +1,17 @@
 {
   "frn": 514886,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "514886",
+    "organisation_name": "Adams Street Partners UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC350269",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "06/04/2010"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

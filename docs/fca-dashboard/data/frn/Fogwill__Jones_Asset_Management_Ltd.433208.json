@@ -1,7 +1,18 @@
 {
   "frn": 433208,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "433208",
+    "organisation_name": "Fogwill & Jones Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05459286",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "10/06/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

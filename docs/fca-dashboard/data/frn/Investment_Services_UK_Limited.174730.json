@@ -1,8 +1,35 @@
 {
   "frn": 174730,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "174730",
+    "organisation_name": "Investment Services UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03074508",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/625566",
+        "Termination Date": "21/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "174730",
+        "Principal Firm Name": "Investment Services UK Limited",
+        "Effective Date": "12/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "625566",
+        "Name": "Oxford Portfolio Advisers Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

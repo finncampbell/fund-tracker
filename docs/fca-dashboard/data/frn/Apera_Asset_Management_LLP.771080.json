@@ -1,7 +1,18 @@
 {
   "frn": 771080,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "771080",
+    "organisation_name": "Apera Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC413428",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "09/06/2017"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

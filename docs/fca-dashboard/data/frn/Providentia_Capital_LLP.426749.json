@@ -1,7 +1,18 @@
 {
   "frn": 426749,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "426749",
+    "organisation_name": "Providentia Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC310567",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "12/07/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

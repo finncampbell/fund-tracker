@@ -1,7 +1,17 @@
 {
   "frn": 778937,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "778937",
+    "organisation_name": "Hamilton Stuart Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08214098",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "03/07/2017"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

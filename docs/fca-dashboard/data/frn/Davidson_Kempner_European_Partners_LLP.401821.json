@@ -1,7 +1,18 @@
 {
   "frn": 401821,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "401821",
+    "organisation_name": "Davidson Kempner European Partners, LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC308054",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "07/10/2004"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

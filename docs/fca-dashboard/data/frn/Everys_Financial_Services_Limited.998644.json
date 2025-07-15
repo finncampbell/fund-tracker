@@ -1,7 +1,18 @@
 {
   "frn": 998644,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "998644",
+    "organisation_name": "Everys Financial Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14819837",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "21/11/2023"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

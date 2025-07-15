@@ -1,7 +1,18 @@
 {
   "frn": 402248,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "402248",
+    "organisation_name": "Altair Treasury and Finance Solutions Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05098211",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "01/10/2004"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

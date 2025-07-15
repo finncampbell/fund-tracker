@@ -1,7 +1,18 @@
 {
   "frn": 537585,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "537585",
+    "organisation_name": "Affinity Financial Products LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC359674",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "20/04/2011"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

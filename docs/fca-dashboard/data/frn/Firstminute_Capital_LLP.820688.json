@@ -1,7 +1,18 @@
 {
   "frn": 820688,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "820688",
+    "organisation_name": "Firstminute Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC403024",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "03/06/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

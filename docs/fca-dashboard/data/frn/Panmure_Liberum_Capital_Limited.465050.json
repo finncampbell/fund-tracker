@@ -1,7 +1,18 @@
 {
   "frn": 465050,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "465050",
+    "organisation_name": "Panmure Liberum Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05912554",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "05/06/2007"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

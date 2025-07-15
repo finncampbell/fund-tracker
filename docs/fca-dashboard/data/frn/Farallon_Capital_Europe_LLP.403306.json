@@ -1,7 +1,18 @@
 {
   "frn": 403306,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "403306",
+    "organisation_name": "Farallon Capital Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC308897",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "16/12/2004"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

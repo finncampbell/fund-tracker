@@ -1,7 +1,17 @@
 {
   "frn": 966627,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "966627",
+    "organisation_name": "Quoniam Asset Management GmbH",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC031987",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "09/01/2023"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

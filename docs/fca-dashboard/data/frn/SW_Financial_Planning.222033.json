@@ -1,7 +1,18 @@
 {
   "frn": 222033,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "222033",
+    "organisation_name": "SW Financial Planning",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03462625",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "21/05/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

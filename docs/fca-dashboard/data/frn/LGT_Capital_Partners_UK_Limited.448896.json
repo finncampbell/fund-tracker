@@ -1,7 +1,18 @@
 {
   "frn": 448896,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "448896",
+    "organisation_name": "LGT Capital Partners (U.K.) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04804821",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "06/07/2006"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

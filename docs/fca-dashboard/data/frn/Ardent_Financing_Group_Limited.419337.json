@@ -1,7 +1,18 @@
 {
   "frn": 419337,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "419337",
+    "organisation_name": "Ardent Financing Group Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04974713",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "26/05/2005"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

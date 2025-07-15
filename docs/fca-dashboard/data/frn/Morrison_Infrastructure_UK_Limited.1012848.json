@@ -1,7 +1,18 @@
 {
   "frn": 1012848,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "1012848",
+    "organisation_name": "Morrison Infrastructure (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11292181",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "24/06/2024"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

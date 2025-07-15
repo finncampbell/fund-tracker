@@ -1,7 +1,18 @@
 {
   "frn": 483062,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "483062",
+    "organisation_name": "Clearwater Corporate Finance LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC311299",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "24/07/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,17 @@
 {
   "frn": 501695,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "501695",
+    "organisation_name": "S&T Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC344828",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "12/11/2009"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

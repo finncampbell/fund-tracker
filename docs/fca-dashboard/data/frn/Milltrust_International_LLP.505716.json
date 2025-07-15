@@ -1,7 +1,18 @@
 {
   "frn": 505716,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "505716",
+    "organisation_name": "Milltrust International LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC344800",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "04/01/2010"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

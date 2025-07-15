@@ -1,7 +1,18 @@
 {
   "frn": 807367,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "807367",
+    "organisation_name": "Entrepreneurs First Investment Manager LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC397263",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "18/02/2019"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

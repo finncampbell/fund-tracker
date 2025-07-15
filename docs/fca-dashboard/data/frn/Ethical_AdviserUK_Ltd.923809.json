@@ -1,7 +1,17 @@
 {
   "frn": 923809,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "923809",
+    "organisation_name": "Ethical Adviser(UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11261622",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "02/11/2020"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

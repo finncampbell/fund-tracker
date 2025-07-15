@@ -1,7 +1,18 @@
 {
   "frn": 563704,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "563704",
+    "organisation_name": "PATRIA INVESTMENTS UK LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07381124",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "21/02/2012"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

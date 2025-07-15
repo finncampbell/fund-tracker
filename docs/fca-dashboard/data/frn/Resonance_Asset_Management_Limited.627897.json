@@ -1,7 +1,18 @@
 {
   "frn": 627897,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "627897",
+    "organisation_name": "Resonance Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09028327",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "05/12/2014"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

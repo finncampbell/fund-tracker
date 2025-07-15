@@ -1,7 +1,18 @@
 {
   "frn": 496413,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "496413",
+    "organisation_name": "Wylie & Heyworth Asset Management LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC341489",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "11/05/2009"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

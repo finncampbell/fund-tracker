@@ -1,7 +1,17 @@
 {
   "frn": 500908,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "500908",
+    "organisation_name": "Townsend Group Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06766828",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "03/03/2010"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

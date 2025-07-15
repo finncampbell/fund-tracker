@@ -1,8 +1,35 @@
 {
   "frn": 416226,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "416226",
+    "organisation_name": "Thome Asset Management & Asset Controlling",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "01/07/2005"
+  },
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709409",
+        "Termination Date": "18/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "416226",
+        "Principal Firm Name": "Thome Asset Management & Asset Controlling",
+        "Effective Date": "07/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "709409",
+        "Name": "Qilin Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

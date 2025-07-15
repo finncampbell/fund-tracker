@@ -1,7 +1,18 @@
 {
   "frn": 498309,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "498309",
+    "organisation_name": "Retail Investor Limited",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "06899059",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "03/07/2009"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

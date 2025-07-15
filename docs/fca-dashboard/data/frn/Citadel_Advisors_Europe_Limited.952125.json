@@ -1,7 +1,18 @@
 {
   "frn": 952125,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "952125",
+    "organisation_name": "Citadel Advisors Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10930267",
+    "system_timestamp": "23/06/2025 22:19",
+    "status_effective_date": "01/11/2021"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

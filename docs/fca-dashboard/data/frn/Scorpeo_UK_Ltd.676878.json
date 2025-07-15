@@ -1,8 +1,35 @@
 {
   "frn": 676878,
-  "metadata": {},
-  "trading_names": [],
-  "appointed_reps": [],
+  "metadata": {
+    "frn": "676878",
+    "organisation_name": "Scorpeo UK Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08229215",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "25/06/2015"
+  },
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749284",
+        "Termination Date": "18/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "676878",
+        "Principal Firm Name": "Scorpeo UK Ltd",
+        "Effective Date": "07/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749284",
+        "Name": "Scorpeo Analytics Ltd."
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_records": {},
   "controlled_functions": {}

@@ -1,7 +1,17 @@
 {
   "frn": 710908,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "710908",
+    "organisation_name": "ValuAnalysis Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09505284",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "07/03/2016"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

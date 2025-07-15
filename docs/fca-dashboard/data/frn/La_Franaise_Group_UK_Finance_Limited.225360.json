@@ -1,7 +1,18 @@
 {
   "frn": 225360,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "225360",
+    "organisation_name": "La Française Group UK Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04717154",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "27/02/2004"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

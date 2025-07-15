@@ -1,7 +1,17 @@
 {
   "frn": 493437,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "493437",
+    "organisation_name": "American Century Investment Management (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06520426",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "24/08/2009"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

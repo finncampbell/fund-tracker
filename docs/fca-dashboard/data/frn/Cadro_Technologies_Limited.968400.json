@@ -1,7 +1,18 @@
 {
   "frn": 968400,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "968400",
+    "organisation_name": "Cadro Technologies Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11797448",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "11/11/2022"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

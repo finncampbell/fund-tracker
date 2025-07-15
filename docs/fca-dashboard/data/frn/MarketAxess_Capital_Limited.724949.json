@@ -1,7 +1,18 @@
 {
   "frn": 724949,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "724949",
+    "organisation_name": "MarketAxess Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09777893",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "03/06/2016"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 221555,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "221555",
+    "organisation_name": "Vollman Brothers Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04498821",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "07/04/2003"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 497525,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "497525",
+    "organisation_name": "SCM Private LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC342778",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "24/04/2009"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

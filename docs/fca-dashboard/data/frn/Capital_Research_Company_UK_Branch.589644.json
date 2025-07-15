@@ -1,7 +1,17 @@
 {
   "frn": 589644,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "589644",
+    "organisation_name": "Capital Research Company UK Branch",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR002162",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "30/09/2013"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

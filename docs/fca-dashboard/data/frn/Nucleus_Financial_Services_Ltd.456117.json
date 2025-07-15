@@ -1,7 +1,17 @@
 {
   "frn": 456117,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "456117",
+    "organisation_name": "Nucleus Financial Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05629686",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "19/12/2006"
+  },
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

@@ -1,7 +1,18 @@
 {
   "frn": 492834,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "492834",
+    "organisation_name": "TU Financial Management Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06555903",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "28/04/2009"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

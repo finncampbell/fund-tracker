@@ -1,7 +1,18 @@
 {
   "frn": 208551,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "208551",
+    "organisation_name": "Nedgroup Investments (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02627187",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "27/03/2002"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

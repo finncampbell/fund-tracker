@@ -1,7 +1,18 @@
 {
   "frn": 486368,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "486368",
+    "organisation_name": "BT Pension Scheme Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05154287",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "13/02/2009"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

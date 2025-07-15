@@ -1,7 +1,18 @@
 {
   "frn": 489432,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "489432",
+    "organisation_name": "Featherstone Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC340239",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "05/11/2008"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

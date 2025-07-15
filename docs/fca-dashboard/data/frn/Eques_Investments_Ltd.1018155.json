@@ -1,7 +1,18 @@
 {
   "frn": 1018155,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "1018155",
+    "organisation_name": "Eques Investments Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15844826",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "08/11/2024"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},

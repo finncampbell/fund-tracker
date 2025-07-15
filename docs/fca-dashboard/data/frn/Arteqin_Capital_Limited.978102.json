@@ -1,7 +1,18 @@
 {
   "frn": 978102,
-  "metadata": {},
-  "trading_names": [],
+  "metadata": {
+    "frn": "978102",
+    "organisation_name": "Arteqin Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13522576",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "19/06/2023"
+  },
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_records": {},
