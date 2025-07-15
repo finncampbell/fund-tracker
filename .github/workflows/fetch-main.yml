@@ -1,54 +1,96 @@
-# .github/workflows/fetch-main.yml
-name: Fetch FCA Main Records (Ad‑hoc)
+name: Fetch FCA Main Slice
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-on:
-  workflow_dispatch:
-    inputs:
-      limit:
-        description: 'How many FRNs to fetch (blank = full run)'
-        required: false
-        default: ''
-
 jobs:
-  fetch-main:
+  split:
     runs-on: ubuntu-latest
-
+    outputs:
+      shards: ${{ steps.set.outputs.shards }}
+      indices: ${{ steps.set.outputs.indices }}
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - id: set
+        run: |
+          python3 - <<'EOF'
+          import json, math
+          frns = json.load(open('docs/fca-dashboard/data/all_frns_with_names.json'))
+          total = len(frns); shards = 5
+          size = math.ceil(total/shards)
+          offsets = [i*size for i in range(shards)]
+          print(f"::set-output name=shards::{shards}")
+          print("::set-output name=indices::" + ",".join(map(str, offsets)))
+          EOF
+
+  fetch:
+    needs: split
+    strategy:
+      matrix:
+        shard-index: [1,2,3,4,5]
+    runs-on: ubuntu-latest
+    env:
+      FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+      FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
+    steps:
+      - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 1
 
-      - name: Pull latest main
-        run: git pull --rebase origin main
-
-      - name: Set up Python
+      - name: Set up Python & deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+      - run: pip install requests
 
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Fetch main firm records
-        env:
-          FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
-          FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
+      - name: Fetch main slice (shard ${{ matrix.shard-index }})
         run: |
-          if [ -n "${{ github.event.inputs.limit }}" ]; then
-            python fca-dashboard/scripts/fetch_main.py --limit ${{ github.event.inputs.limit }}
-          else
-            python fca-dashboard/scripts/fetch_main.py
-          fi
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards ${{ needs.split.outputs.shards }} \
+            --shard-index ${{ matrix.shard-index }} \
+            --threads 10 \
+            --only-missing
 
-      - name: Commit & push updated data
+      - name: Upload main shard
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-${{ matrix.shard-index }}
+          path: fca-dashboard/data/fca_main_shard_${{ matrix.shard-index }}.json
+
+  merge:
+    needs: fetch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Download main shards
+        uses: actions/download-artifact@v4
+        with:
+          path: fca-dashboard/data
+
+      - name: Merge main shards
+        run: |
+          python3 - <<'EOF'
+          import json, glob
+          combined = {}
+          for shard in glob.glob('fca-dashboard/data/fca_main_shard_*.json'):
+              combined.update(json.load(open(shard)))
+          with open('fca-dashboard/data/fca_main.json','w') as f:
+              json.dump(combined, f, indent=2)
+          print(f"Merged {len(combined)} FRNs")
+          EOF
+
+      - name: Commit & push merged main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add fca-dashboard/data/fca_main.json
-          git diff --cached --quiet || git commit -m "chore(fca): update main records"
+          git diff --cached --quiet || git commit -m "chore(fca): merge main shards"
           git push origin HEAD:main
