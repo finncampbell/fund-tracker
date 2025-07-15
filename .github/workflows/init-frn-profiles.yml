@@ -1,0 +1,33 @@
+name: Init FRN Profiles
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+  init_profiles:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Initialize FRN profile skeletons
+        run: python3 fca-dashboard/scripts/init_frn_profiles.py
+
+      - name: Commit & push profile files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add docs/fca-dashboard/data/frn
+          git diff --cached --quiet || git commit -m "chore(fca): init FRN profiles"
+          git push origin HEAD:main
