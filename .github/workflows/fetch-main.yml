@@ -1,4 +1,4 @@
-name: Fetch FCA Main Slice
+name: Fetch FCA Main Slice (Chained Shards)
 
 on:
   schedule:
@@ -9,85 +9,141 @@ permissions:
   contents: write
 
 jobs:
-  split:
+  fetch-shard-1:
     runs-on: ubuntu-latest
-    outputs:
-      shards: ${{ steps.set.outputs.shards }}
-      indices: ${{ steps.set.outputs.indices }}
     steps:
       - uses: actions/checkout@v3
-      - id: set
-        run: |
-          python3 - <<'EOF'
-          import json, math
-          frns = json.load(open('docs/fca-dashboard/data/all_frns_with_names.json'))
-          total = len(frns); shards = 5
-          size = math.ceil(total/shards)
-          offsets = [i*size for i in range(shards)]
-          print(f"::set-output name=shards::{shards}")
-          print("::set-output name=indices::" + ",".join(map(str, offsets)))
-          EOF
-
-  fetch:
-    needs: split
-    strategy:
-      matrix:
-        shard-index: [1,2,3,4,5]
-    runs-on: ubuntu-latest
-    env:
-      FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
-      FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
       - run: pip install requests
-
-      - name: Fetch main slice (shard ${{ matrix.shard-index }})
+      - name: Fetch shard #1
         run: |
           python3 fca-dashboard/scripts/fetch_main.py \
-            --shards ${{ needs.split.outputs.shards }} \
-            --shard-index ${{ matrix.shard-index }} \
+            --shards 5 \
+            --shard-index 1 \
             --threads 10 \
             --only-missing
-
-      - name: Upload main shard
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: main-shard-${{ matrix.shard-index }}
-          path: fca-dashboard/data/fca_main_shard_${{ matrix.shard-index }}.json
+          name: main-shard-1
+          path: fca-dashboard/data/fca_main_shard_1.json
 
-  merge:
-    needs: fetch
+  fetch-shard-2:
+    needs: fetch-shard-1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          fetch-depth: 1
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Fetch shard #2
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 2 \
+            --threads 10 \
+            --only-missing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-2
+          path: fca-dashboard/data/fca_main_shard_2.json
 
-      - name: Download main shards
+  fetch-shard-3:
+    needs: fetch-shard-2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Fetch shard #3
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 3 \
+            --threads 10 \
+            --only-missing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-3
+          path: fca-dashboard/data/fca_main_shard_3.json
+
+  fetch-shard-4:
+    needs: fetch-shard-3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Fetch shard #4
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 4 \
+            --threads 10 \
+            --only-missing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-4
+          path: fca-dashboard/data/fca_main_shard_4.json
+
+  fetch-shard-5:
+    needs: fetch-shard-4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Fetch shard #5
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 5 \
+            --threads 10 \
+            --only-missing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-5
+          path: fca-dashboard/data/fca_main_shard_5.json
+
+  merge:
+    needs:
+      - fetch-shard-1
+      - fetch-shard-2
+      - fetch-shard-3
+      - fetch-shard-4
+      - fetch-shard-5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download all shards
         uses: actions/download-artifact@v4
         with:
           path: fca-dashboard/data
-
       - name: Merge main shards
         run: |
           python3 - <<'EOF'
           import json, glob
           combined = {}
           for shard in glob.glob('fca-dashboard/data/fca_main_shard_*.json'):
-              combined.update(json.load(open(shard)))
-          with open('fca-dashboard/data/fca_main.json','w') as f:
-              json.dump(combined, f, indent=2)
+              combined.update(json.load(open(shard, encoding="utf-8")))
+          with open('fca-dashboard/data/fca_main.json','w', encoding="utf-8") as f:
+              json.dump(combined, f, indent=2, ensure_ascii=False)
           print(f"Merged {len(combined)} FRNs")
           EOF
-
-      - name: Commit & push merged main
+      - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
