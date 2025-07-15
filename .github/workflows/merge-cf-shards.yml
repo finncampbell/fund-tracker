@@ -1,0 +1,38 @@
+# .github/workflows/merge-cf-shards.yml
+name: Merge FCA CF Shard Files
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge_shards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository (shallow)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Merge CF shard files
+        run: |
+          python3 fca-dashboard/scripts/merge_cf_shards.py \
+            docs/fca-dashboard/data \
+            docs/fca-dashboard/data/fca_cf.json
+
+      - name: Commit & push merged CF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add docs/fca-dashboard/data/fca_cf.json
+          git diff --cached --quiet || git commit -m "chore(fca): merge CF shards"
+          git pull --rebase origin main
+          git push origin HEAD:main
