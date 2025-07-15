@@ -2,6 +2,7 @@
 """
 Fetch Firm Details from FCA, in deduped, sharded, threaded batches under a rate limit.
 Writes each shard to fca-dashboard/data/fca_main_shard_<shard-index>.json
+Handles HTTP errors (403, 404, etc.) by skipping those FRNs.
 """
 import os
 import json
@@ -9,6 +10,7 @@ import argparse
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from rate_limiter import RateLimiter
+from threading import Lock
 
 BASE_URL  = "https://register.fca.org.uk/services/V0.1/Firm"
 SEED_PATH = "docs/fca-dashboard/data/all_frns_with_names.json"
@@ -32,11 +34,23 @@ def fetch_firm(frn, limiter):
         "x-auth-email": API_EMAIL,
         "Content-Type": "application/json"
     }
-    resp = requests.get(url, headers=headers, timeout=10)
-    resp.raise_for_status()
+    try:
+        resp = requests.get(url, headers=headers, timeout=10)
+        resp.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        # Log and skip forbidden or other HTTP errors
+        print(f"⚠️ Skipping FRN {frn}: HTTP {resp.status_code} {resp.reason}")
+        return frn, None
+    except Exception as e:
+        # Catch network/timeouts etc.
+        print(f"⚠️ Error fetching FRN {frn}: {e}")
+        return frn, None
+
     data = resp.json().get("Data", [])
     if not data:
+        print(f"⚠️ No data for FRN {frn}")
         return frn, None
+
     info = data[0]
     return frn, {
         "frn": str(frn),
@@ -76,30 +90,44 @@ def main():
         frn for idx, frn in enumerate(unique_frns)
         if (idx % args.shards) + 1 == args.shard_index
     ]
+    total = len(slice_frns)
 
-    # Prepare output path for this shard
+    # Prepare output path
     out_path = os.path.join(OUT_DIR, f"fca_main_shard_{args.shard_index}.json")
     existing = {}
     if args.only_missing and os.path.exists(out_path):
         existing = json.load(open(out_path, encoding="utf-8"))
     store = existing.copy()
 
-    # Each shard now runs sequentially, so use full rate limit
+    # Full rate limit per sequential shard
     limiter = RateLimiter(max_calls=45, window_s=10)
+
+    # Progress lock/counter
+    lock = Lock()
+    completed = 0
+
+    def _fetch_and_count(frn):
+        nonlocal completed
+        frn_key, record = fetch_firm(frn, limiter)
+        with lock:
+            completed += 1
+            print(f"Progress: {completed}/{total} FRNs fetched (shard {args.shard_index})")
+        return frn_key, record
 
     # Threaded fetch
     with ThreadPoolExecutor(max_workers=args.threads) as exe:
-        futures = {exe.submit(fetch_firm, frn, limiter): frn for frn in slice_frns}
+        futures = {exe.submit(_fetch_and_count, frn): frn for frn in slice_frns}
         for fut in as_completed(futures):
-            frn, record = fut.result()
+            frn_key, record = fut.result()
             if record:
-                store[frn] = record
-                print(f"✅ {frn}")
+                store[frn_key] = record
 
-    # Write this shard’s results
+    # Final summary
+    print(f"🔔 Completed shard {args.shard_index}: {len(store)} records written")
+
+    # Write out
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(store, f, indent=2, ensure_ascii=False)
-    print(f"🎉 Wrote {len(store)} records to {out_path}")
 
 if __name__ == "__main__":
     main()
