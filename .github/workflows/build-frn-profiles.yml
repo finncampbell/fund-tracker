@@ -1,36 +1,38 @@
 name: Build FRN Profiles
 
-permissions:
-  contents: write
-
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build_profiles:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code (shallow)
+      - name: Check out code
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
+
+      - name: Download CF chunk artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: chunks
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: pip install requests  # only if your slices ever need HTTP; else you can skip
-
-      - name: Build & merge FRN profiles
+      - name: Merge FCA data into FRN profiles
         run: python3 fca-dashboard/scripts/build_frn_profiles.py
 
       - name: Commit & push updated profiles
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add docs/fca-dashboard/data/frn
-          git diff --cached --quiet || git commit -m "chore(fca): build FRN profiles"
+          git add docs/fca-dashboard/data/frn/*.json
+          git diff --cached --quiet || git commit -m "chore(fca): merge profile data"
           git push origin HEAD:main
