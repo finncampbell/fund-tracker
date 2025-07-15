@@ -2,93 +2,85 @@
 """
 scripts/build_frn_profiles.py
 
-For each profile skeleton in docs/fca-dashboard/data/frn/*.json,
-merge in data from the various FCA slices:
+For each FRN‐stub in docs/fca-dashboard/data/frn/*.json, merge in:
+  • fca_main.json
+  • fca_names.json
+  • fca_ars.json
+  • fca_individuals_by_firm.json
+  • fca_persons.json
+  • all CF chunk artifacts under chunks/cf-part-*/…/*.json
 
-  • fca-dashboard/data/fca_main.json           → main firm metadata
-  • fca-dashboard/data/fca_names.json          → trading names
-  • fca-dashboard/data/fca_ars.json            → appointed reps
-  • fca-dashboard/data/fca_individuals_by_firm.json
-                                                → firm→list of IRNs
-  • fca-dashboard/data/fca_persons.json        → per-IRN person_metadata
-  • fca-dashboard/data/fca_cf.json             → per-IRN controlled functions
-
-Writes back each profile JSON in place.
+Writes each profile JSON in place.
 """
 import os
 import json
 import glob
 
-# ─── Paths ───────────────────────────────────────────────────────────────────
-RAW_DIR    = os.path.join('fca-dashboard', 'data')
-PROF_DIR   = os.path.join('docs', 'fca-dashboard', 'data', 'frn')
+# ─── PATHS ───────────────────────────────────────────────────────────────────
+RAW_DIR     = os.path.abspath('fca-dashboard/data')
+PROFILE_DIR = os.path.abspath('docs/fca-dashboard/data/frn')
+CF_CHUNKS   = os.path.abspath('chunks')  # where your CF artifacts land
 
-# ─── Load all slices once ─────────────────────────────────────────────────────
-def load_json(name):
-    path = os.path.join(RAW_DIR, name)
+def load_json(path):
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-print("⏳ Loading raw FCA data slices…")
-main_slice      = load_json('fca_main.json')                           # {frn: {...}}
-names_slice     = load_json('fca_names.json')                          # {frn: [name, …]}
-ars_list        = load_json('fca_ars.json')                            # [ { principal_frn, … }, … ]
-indiv_by_firm   = load_json('fca_individuals_by_firm.json')            # {frn: [ {IRN,…},… ], …}
-persons_metadata= load_json('fca_persons.json')                         # { irn: {...}, … }
-cf_list         = load_json('fca_cf.json')                              # [ { IRN, …CF fields… }, … ]
+# ─── LOAD MASTER SLICES ─────────────────────────────────────────────────────
+main_slice    = load_json(os.path.join(RAW_DIR, 'fca_main.json'))                   
+names_slice   = load_json(os.path.join(RAW_DIR, 'fca_names.json'))                  
+ars_slice     = load_json(os.path.join(RAW_DIR, 'fca_ars.json'))                    
+indiv_slice   = load_json(os.path.join(RAW_DIR, 'fca_individuals_by_firm.json'))    
+persons_slice = load_json(os.path.join(RAW_DIR, 'fca_persons.json'))                
 
-# Build quick lookups
-print("🔨 Indexing ARs and CFs…")
-ars_by_firm = {}
-for rec in ars_list:
-    frn = str(rec.get('principal_frn') or rec.get('FRN'))
-    ars_by_firm.setdefault(frn, []).append(rec)
-
+# ─── MERGE CF CHUNKS IN MEMORY ─────────────────────────────────────────────────
 cf_by_irn = {}
-for rec in cf_list:
-    irn = str(rec.get('IRN'))
-    cf_by_irn.setdefault(irn, []).append(rec)
+for chunk in glob.glob(os.path.join(CF_CHUNKS, 'cf-part-*', '*.json')):
+    try:
+        data = load_json(chunk)
+    except Exception:
+        continue
+    if not isinstance(data, dict):
+        continue
+    for irn, entries in data.items():
+        cf_by_irn.setdefault(irn, []).extend(entries or [])
+print(f"🔄 Loaded CF for {len(cf_by_irn)} IRNs from {CF_CHUNKS}")
 
-# ─── Process each skeleton profile ───────────────────────────────────────────
-skeletons = glob.glob(os.path.join(PROF_DIR, '*.json'))
-print(f"⚙️  Found {len(skeletons)} profile files to fill…")
+# ─── BUILD/UPDATE PROFILES ───────────────────────────────────────────────────
+for profile_path in glob.glob(os.path.join(PROFILE_DIR, '*.json')):
+    profile = load_json(profile_path)
+    frn = str(profile.get('frn'))
 
-for path in skeletons:
-    with open(path, 'r', encoding='utf-8') as f:
-        profile = json.load(f)
+    # 1) Firm metadata
+    profile['metadata'] = main_slice.get(frn, {})
 
-    frn_str = str(profile.get('frn'))
-    # 1) main metadata (if present)
-    profile['main'] = main_slice.get(frn_str, {})
+    # 2) Trading names
+    profile['trading_names'] = names_slice.get(frn, [])
 
-    # 2) trading names
-    profile['trading_names'] = names_slice.get(frn_str, [])
+    # 3) Appointed reps
+    profile['appointed_reps'] = ars_slice.get(frn, [])
 
-    # 3) appointed reps
-    profile['appointed_reps'] = ars_by_firm.get(frn_str, [])
-
-    # 4) individuals list
-    indivs = indiv_by_firm.get(frn_str, [])
+    # 4) List of IRNs
+    indivs = indiv_slice.get(frn, [])
     profile['individuals'] = indivs
 
-    # 5) person_metadata per IRN
-    pm = {}
+    # 5) Per-IRN person records
+    person_records = {}
     for rec in indivs:
         irn = str(rec.get('IRN'))
-        if irn in persons_metadata:
-            pm[irn] = persons_metadata[irn]
-    profile['person_metadata'] = pm
+        if irn in persons_slice:
+            person_records[irn] = persons_slice[irn]
+    profile['person_records'] = person_records
 
-    # 6) controlled_functions per IRN
-    cf = {}
-    for irn in pm.keys():
-        cf[irn] = cf_by_irn.get(irn, [])
-    profile['controlled_functions'] = cf
+    # 6) Per-IRN CF entries
+    controlled_functions = {
+        irn: cf_by_irn.get(irn, [])
+        for irn in person_records
+    }
+    profile['controlled_functions'] = controlled_functions
 
-    # write back
-    with open(path, 'w', encoding='utf-8') as f:
+    # Write back
+    with open(profile_path, 'w', encoding='utf-8') as f:
         json.dump(profile, f, indent=2, ensure_ascii=False)
+    print(f"✅ Updated {os.path.basename(profile_path)}")
 
-    print(f"✅ Filled profile: {os.path.basename(path)}")
-
-print("\n🎉 All profiles updated.")
+print("\n🎉 All FRN profiles merged.")
