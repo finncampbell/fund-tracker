@@ -57,14 +57,323 @@
   ],
   "person_metadata": {},
   "controlled_functions": {
-    "IMB01081": [],
-    "JXH02501": [],
-    "YXL00097": [],
-    "QXT00003": [],
-    "WXH00162": [],
-    "XXZ00032": [],
-    "YXZ00082": [],
-    "XXZ00028": []
+    "IMB01081": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/02/2014",
+        "Firm Name": "Vining-Sparks IBG, Limited Partnership",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/182860",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/03/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/02/2014",
+        "Firm Name": "Vining-Sparks IBG, Limited Partnership",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/182860",
+        "role": "(1)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/12/2023",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/12/2023",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)SMF16 Compliance Oversight",
+        "when": "current"
+      }
+    ],
+    "JXH02501": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/07/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "GF International Asset Management (UK) Company Limited",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709896",
+        "role": "(7)SMF3 Executive Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/07/2020",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "GF International Asset Management (UK) Company Limited",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709896",
+        "role": "(6)SMF1 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "22/12/2014",
+        "Firm Name": "China Construction Bank Corporation London Branch",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/652628",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2018",
+        "Firm Name": "GF International Asset Management (UK) Company Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709896",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/03/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/10/2013",
+        "Firm Name": "China Construction Bank (London) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/481877",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2018",
+        "Firm Name": "GF International Asset Management (UK) Company Limited",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709896",
+        "role": "(2)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2018",
+        "Firm Name": "GF International Asset Management (UK) Company Limited",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709896",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/12/2023",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "SMF3 Executive Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)SMF3 Executive Director",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/12/2023",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)SMF1 Chief Executive",
+        "when": "current"
+      }
+    ],
+    "YXL00097": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "07/12/2023",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "SMF9 Chair of the Governing Body",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)SMF9 Chair of the Governing Body",
+        "when": "current"
+      }
+    ],
+    "QXT00003": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/07/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/04/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/07/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "29/04/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      }
+    ],
+    "WXH00162": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/08/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/08/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "XXZ00032": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/11/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/11/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "YXZ00082": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/02/2025",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/02/2025",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "XXZ00028": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/01/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/03/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/01/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/03/2024",
+        "Firm Name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001832",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      }
+    ]
   },
   "metadata": {
     "frn": "1001832",

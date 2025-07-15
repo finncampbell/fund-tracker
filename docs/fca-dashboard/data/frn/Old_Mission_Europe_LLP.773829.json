@@ -243,39 +243,1164 @@
   ],
   "person_metadata": {},
   "controlled_functions": {
-    "MXC10589": [],
-    "XXO01078": [],
-    "XXO01077": [],
-    "SXI00072": [],
-    "JXD00388": [],
-    "EXW00115": [],
-    "CXH00349": [],
-    "DXS02351": [],
-    "AXP00874": [],
-    "AXS04989": [],
-    "GXM00601": [],
-    "VXR00100": [],
-    "JXB01738": [],
-    "DXG00504": [],
-    "JXB02878": [],
-    "LXW00212": [],
-    "JXB00689": [],
-    "MXM02743": [],
-    "AXM00930": [],
-    "SXJ00584": [],
-    "CXB01085": [],
-    "KXS00854": [],
-    "AGH01129": [],
-    "KXS00337": [],
-    "GXS00310": [],
-    "TXP00125": [],
-    "MXR00900": [],
-    "TXH00226": [],
-    "RXW00315": [],
-    "AXT02200": [],
-    "SXP02902": [],
-    "KBL01013": [],
-    "ESW01007": []
+    "MXC10589": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/02/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "02/02/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)SMF16 Compliance Oversight",
+        "when": "current"
+      }
+    ],
+    "XXO01078": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "XXO01077": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "SXI00072": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CPD23 - Overseeing execution-only equity release sales",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CPD23 - Overseeing execution-only equity release sales",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "Telephone; Online",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "current"
+      }
+    ],
+    "JXD00388": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/01/2020",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "EXW00115": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/01/2020",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "CXH00349": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/01/2020",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "DXS02351": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/01/2014",
+        "Firm Name": "Bluefin Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/492678",
+        "role": "(8)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(7)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley Bank International Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195430",
+        "role": "(6)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "[FCA CF] Material risk taker",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(5)[FCA CF] Material risk taker",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley Bank International Limited",
+        "Name": "[FCA CF] Material risk taker",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195430",
+        "role": "(4)[FCA CF] Material risk taker",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(3)[FCA CF] Manager of certification employee",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "05/04/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "13/09/2021",
+        "Firm Name": "Morgan Stanley Bank International Limited",
+        "Name": "[FCA CF] Manager of certification employee",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195430",
+        "role": "(2)[FCA CF] Manager of certification employee",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/07/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2020",
+        "Firm Name": "Bluefin Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/492678",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)[FCA CF] Proprietary trader",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "18/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "AXP00874": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)[FCA CF] Proprietary trader",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "AXS04989": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "GXM00601": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "VXR00100": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "JXB01738": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/09/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "DXG00504": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/08/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "JXB02878": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/08/2023",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "LXW00212": [
+      {
+        "Customer Engagement Method": "Telephone; Online",
+        "End Date": "14/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/03/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXB00689": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/05/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2023",
+        "Firm Name": "Flow Traders London Ltd",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/960434",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "06/07/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Flow Traders B.V.",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/459639",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/03/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXM02743": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/07/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/04/2017",
+        "Firm Name": "BGC Brokers L.P",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/454814",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "03/02/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/10/2013",
+        "Firm Name": "Morgan Capital Advisors LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/579169",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "16/05/2018",
+        "Firm Name": "Stifel Nicolaus Europe Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190412",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/08/2013",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/05/2011",
+        "Firm Name": "Bluefin Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/492678",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "Telephone; Online",
+        "End Date": "14/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/03/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "AXM00930": [
+      {
+        "Customer Engagement Method": "Telephone; Online",
+        "End Date": "14/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "14/03/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "SXJ00584": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "17/03/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "CXB01085": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "08/02/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "KXS00854": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/04/2025",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "current"
+      }
+    ],
+    "AGH01129": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/04/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(8)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/04/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(7)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/02/2011",
+        "Firm Name": "Barclays Bank Plc",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/122702",
+        "role": "(6)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "19/12/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/02/2011",
+        "Firm Name": "Barclays Capital Securities Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124431",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(3)CF29 Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF11 Money Laundering Reporting",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CF11 Money Laundering Reporting",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF4 Partner",
+        "when": "previous"
+      }
+    ],
+    "KXS00337": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "04/03/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      }
+    ],
+    "GXS00310": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "17/05/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/09/2020",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      }
+    ],
+    "TXP00125": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/09/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2021",
+        "Firm Name": "Morgan Stanley Bank International Limited",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195430",
+        "role": "(3)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "23/09/2022",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "04/05/2021",
+        "Firm Name": "Morgan Stanley & Co. International Plc",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165935",
+        "role": "(2)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "20/09/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/02/2024",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      }
+    ],
+    "MXR00900": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "14/03/2025",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "03/06/2024",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "[FCA CF] Proprietary trader",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)[FCA CF] Proprietary trader",
+        "when": "previous"
+      }
+    ],
+    "TXH00226": [
+      {
+        "Customer Engagement Method": "Face To Face; Telephone; Online",
+        "End Date": "05/06/2023",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      }
+    ],
+    "RXW00315": [
+      {
+        "Customer Engagement Method": "Telephone; Online",
+        "End Date": "12/01/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/09/2021",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "Appointed representative dealing with clients for which they require qualification",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)Appointed representative dealing with clients for which they require qualification",
+        "when": "previous"
+      }
+    ],
+    "AXT02200": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/11/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "13/11/2017",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF29 Significant management",
+        "when": "previous"
+      }
+    ],
+    "SXP02902": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/05/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/05/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(1)CF29 Significant management",
+        "when": "previous"
+      }
+    ],
+    "KBL01013": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/01/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(14)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/08/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/06/2008",
+        "Firm Name": "Macquarie Bank Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/170934",
+        "role": "(13)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "21/06/2011",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/08/2008",
+        "Firm Name": "Macquarie Capital (Europe) Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193905",
+        "role": "(12)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/08/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "23/08/2013",
+        "Firm Name": "Mako Financial Markets Partnership LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231157",
+        "role": "(11)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(10)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/08/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "20/06/2008",
+        "Firm Name": "Macquarie Bank International Ltd",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/471080",
+        "role": "(9)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/01/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(8)CF29 Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/03/2006",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF26 Customer Trading",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(7)CF26 Customer Trading",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/03/2006",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(6)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/01/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(5)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/03/2006",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF8 Apportionment and Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(4)CF8 Apportionment and Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "02/01/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(3)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/03/2006",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(2)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "07/05/2008",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "24/03/2006",
+        "Firm Name": "COWEN INTERNATIONAL TRADING LIMITED",
+        "Name": "CF1 Director",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/438199",
+        "role": "(1)CF1 Director",
+        "when": "previous"
+      }
+    ],
+    "ESW01007": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "28/02/2014",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Brewin Dolphin Limited",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124444",
+        "role": "(4)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "26/08/2016",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "21/08/2014",
+        "Firm Name": "Mako Financial Markets Partnership LLP",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231157",
+        "role": "(3)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2017",
+        "Firm Name": "Old Mission Europe LLP",
+        "Name": "CF29 Significant management",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773829",
+        "role": "(2)CF29 Significant management",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Brewin Dolphin Limited",
+        "Name": "CF26 Customer Trading",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/124444",
+        "role": "(1)CF26 Customer Trading",
+        "when": "previous"
+      }
+    ]
   },
   "metadata": {
     "frn": "773829",

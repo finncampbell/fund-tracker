@@ -63,15 +63,377 @@
   ],
   "person_metadata": {},
   "controlled_functions": {
-    "DAA01046": [],
-    "DAC01315": [],
-    "DXM00996": [],
-    "FXT00030": [],
-    "DXC00111": [],
-    "JXS04195": [],
-    "AXC03478": [],
-    "AXM05575": [],
-    "MXR00469": []
+    "DAA01046": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "30/09/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2006",
+        "Firm Name": "Dickson Minto",
+        "Name": "Responsible for Insurance Mediation",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(9)Responsible for Insurance Mediation",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2018",
+        "Firm Name": "Dickson Minto",
+        "Name": "Responsible for Insurance Distribution",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(8)Responsible for Insurance Distribution",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(7)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(6)SMF1 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/11/2007",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF30 Customer",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(5)CF30 Customer",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "31/10/2007",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/12/2001",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF23 Corporate Finance Adviser",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(4)CF23 Corporate Finance Adviser",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "01/10/2018",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "19/11/2012",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(3)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "28/06/2006",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF4 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(2)CF4 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "10/06/2019",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF3 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(1)CF3 Chief Executive",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(3)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "15/05/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF1 Chief Executive",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)SMF1 Chief Executive",
+        "when": "current"
+      }
+    ],
+    "DAC01315": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "09/12/2019",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(2)SMF16 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "08/12/2019",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/10/2018",
+        "Firm Name": "Dickson Minto",
+        "Name": "CF10 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(1)CF10 Compliance Oversight",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(2)SMF27 Partner",
+        "when": "current"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF16 Compliance Oversight",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)SMF16 Compliance Oversight",
+        "when": "current"
+      }
+    ],
+    "DXM00996": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "FXT00030": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/04/2021",
+        "Firm Name": "Dickson Minto",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)SMF27 Partner",
+        "when": "current"
+      }
+    ],
+    "DXC00111": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "25/04/2021",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "26/01/2021",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(2)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "31/08/2021",
+        "Firm Name": "Dickson Minto",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2025",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "JXS04195": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2025",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXC03478": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2025",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "AXM05575": [
+      {
+        "Customer Engagement Method": "",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2025",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "[FCA CF] Client dealing",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(1)[FCA CF] Client dealing",
+        "when": "current"
+      }
+    ],
+    "MXR00469": [
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "05/09/2022",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF27 Partner",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(3)SMF27 Partner",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "15/05/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/04/2024",
+        "Firm Name": "Dickson Minto Advisers LLP",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1002091",
+        "role": "(2)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "previous"
+      },
+      {
+        "Customer Engagement Method": "",
+        "End Date": "16/04/2024",
+        "Suspension / Restriction End Date": "",
+        "Suspension / Restriction Start Date": "",
+        "Restriction": "",
+        "Effective Date": "01/05/2022",
+        "Firm Name": "Dickson Minto",
+        "Name": "SMF17 Money Laundering Reporting Officer (MLRO)",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/111421",
+        "role": "(1)SMF17 Money Laundering Reporting Officer (MLRO)",
+        "when": "previous"
+      }
+    ]
   },
   "metadata": {
     "frn": "1002091",
