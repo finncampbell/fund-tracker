@@ -1,113 +1,101 @@
 #!/usr/bin/env python3
 """
-scripts/fetch_main.py
-
-Fetch the main firm records (core metadata) for all FRNs or a limited subset.
-Updates data/fca_main.json by merging new entries with existing ones.
+Fetch Firm Details from FCA, in deduped, sharded, threaded batches under a rate limit.
+Writes each shard to fca-dashboard/data/fca_main_<shard>.json
 """
-import os
-import json
-import argparse
-import requests
+import os, json, argparse, time, requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from rate_limiter import RateLimiter
 
-# ─── Paths & Config ──────────────────────────────────────────────────────────
-SCRIPT_DIR     = os.path.dirname(__file__)
-DATA_DIR       = os.path.abspath(os.path.join(SCRIPT_DIR, "../data"))
-FRNS_JSON      = os.path.join(DATA_DIR, "all_frns_with_names.json")
-MAIN_JSON      = os.path.join(DATA_DIR, "fca_main.json")
-
-# ─── FCA Register API setup ────────────────────────────────────────────────────
-API_EMAIL = os.getenv("FCA_API_EMAIL")
+BASE_URL  = "https://register.fca.org.uk/services/V0.1/Firm"
+SEED_PATH = "fca-dashboard/data/all_frns_with_names.json"
+OUT_DIR   = "fca-dashboard/data"
 API_KEY   = os.getenv("FCA_API_KEY")
-if not API_EMAIL or not API_KEY:
-    raise EnvironmentError("FCA_API_EMAIL and FCA_API_KEY must be set in the environment")
+API_EMAIL = os.getenv("FCA_API_EMAIL")
 
-BASE_URL = "https://register.fca.org.uk/services/V0.1"
-HEADERS  = {
-    "Accept":       "application/json",
-    "X-AUTH-EMAIL": API_EMAIL,
-    "X-AUTH-KEY":   API_KEY,
-}
+def parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--shards",      type=int, default=1, help="Total parallel shards")
+    p.add_argument("--shard-index", type=int, default=1, help="1-based index of this shard")
+    p.add_argument("--threads",     type=int, default=10, help="Threads per shard")
+    p.add_argument("--only-missing", action="store_true", help="Fetch only FRNs not yet in output")
+    return p.parse_args()
 
-limiter = RateLimiter()
-
-def fetch_json(url: str) -> dict:
+def fetch_firm(frn, limiter):
     limiter.wait()
-    resp = requests.get(url, headers=HEADERS, timeout=10)
-    resp.raise_for_status()
-    return resp.json()
-
-
-def fetch_main_record(frn: str) -> dict | None:
-    """Fetch only the main firm record and return selected fields."""
-    try:
-        pkg = fetch_json(f"{BASE_URL}/Firm/{frn}")
-    except Exception as e:
-        print(f"⚠️  Failed fetch for FRN {frn}: {e}")
-        return None
-
-    data = pkg.get("Data") or []
-    if not data:
-        print(f"⚠️  No Data block for FRN {frn}")
-        return None
-
-    info = data[0]
-    # Whitelist of fields to keep
-    selected = {
-        'frn': info.get('FRN'),
-        'organisation_name': info.get('Organisation Name'),
-        'status': info.get('Status'),
-        'business_type': info.get('Business Type'),
-        'companies_house_number': info.get('Companies House Number'),
-        'system_timestamp': info.get('System Timestamp'),
-        'status_effective_date': info.get('Status Effective Date'),
+    url = f"{BASE_URL}/{frn}"
+    headers = {
+        "x-auth-key": API_KEY,
+        "x-auth-email": API_EMAIL,
+        "Content-Type": "application/json"
     }
-    return selected
-
+    resp = requests.get(url, headers=headers, timeout=10)
+    resp.raise_for_status()
+    data = resp.json().get("Data", [])
+    if not data:
+        return frn, None
+    info = data[0]
+    return frn, {
+        "frn": str(frn),
+        "organisation_name": info.get("Organisation Name"),
+        "status": info.get("Status"),
+        "status_effective_date": info.get("Status Effective Date"),
+        "business_type": info.get("Business Type"),
+        "system_timestamp": info.get("System Timestamp"),
+        "companies_house_number": info.get("Companies House Number"),
+        "exceptions": info.get("Exceptional Info Details", []),
+        "_links": {
+            "names":        info.get("Names"),
+            "individuals":  info.get("Individuals"),
+            "requirements": info.get("Requirements"),
+            "permissions":  info.get("Permissions"),
+            "passport":     info.get("Passport"),
+            "regulators":   info.get("Regulators"),
+            "appointed_reps": info.get("Appointed Representative"),
+            "address":      info.get("Address"),
+            "waivers":      info.get("Waivers"),
+            "exclusions":   info.get("Exclusions"),
+            "disciplinary_history": info.get("DisciplinaryHistory"),
+        }
+    }
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch and merge main firm records")
-    parser.add_argument("--limit", type=int, help="Only process first N FRNs for testing")
-    args = parser.parse_args()
+    args = parse_args()
+    # Load & dedupe FRN list
+    frns = [ str(x["frn"]) for x in json.load(open(SEED_PATH)) ]
+    seen = set(); unique = [x for x in frns if x not in seen and not seen.add(x)]
 
-    os.makedirs(DATA_DIR, exist_ok=True)
+    # Shard the list by index modulo
+    slice_frns = [
+        frn for idx, frn in enumerate(unique)
+        if (idx % args.shards) + 1 == args.shard_index
+    ]
 
-    # Load FRN list
-    with open(FRNS_JSON, "r", encoding="utf-8") as f:
-        frn_items = json.load(f)
-    frns = [item['frn'] for item in frn_items]
-    if args.limit:
-        frns = frns[: args.limit]
-        print(f"🔍 Test mode: will fetch {len(frns)} FRNs")
+    # Prepare output path for this shard
+    out_path = os.path.join(OUT_DIR, f"fca_main_shard_{args.shard_index}.json")
+    existing = {}
+    if args.only_missing and os.path.exists(out_path):
+        existing = json.load(open(out_path))
+    store = existing.copy()
 
-    # Load existing main JSON store
-    if os.path.exists(MAIN_JSON):
-        with open(MAIN_JSON, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        # Expecting a mapping of frn->record
-        if isinstance(data, dict):
-            store = data
-        elif isinstance(data, list):
-            # Convert list of records to dict
-            store = {item.get('frn'): item for item in data if isinstance(item, dict) and 'frn' in item}
-        else:
-            store = {}
-    else:
-        store = {}
+    # Scale rate limit so total across all shards is <=45 calls/10s
+    GLOBAL_MAX = 45
+    calls_per_shard = max(1, GLOBAL_MAX // args.shards)
+    limiter = RateLimiter(max_calls=calls_per_shard, per_seconds=10)
 
-    # Fetch & merge
-    for frn in frns:
-        rec = fetch_main_record(frn)
-        if rec:
-            store[frn] = rec
-            print(f"✅ Fetched and stored main record for FRN {frn}")
+    # Threaded fetch
+    with ThreadPoolExecutor(max_workers=args.threads) as exe:
+        futures = {exe.submit(fetch_firm, frn, limiter): frn for frn in slice_frns}
+        for fut in as_completed(futures):
+            frn, record = fut.result()
+            if record:
+                store[frn] = record
+                print(f"✅ {frn}")
 
-    # Write back as mapping
-    with open(MAIN_JSON, "w", encoding="utf-8") as f:
+    # Write this shard’s results
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(store, f, indent=2, ensure_ascii=False)
-    print(f"✅ Wrote {len(store)} firm records to {MAIN_JSON}")
-
+    print(f"🎉 Wrote {len(store)} records to {out_path}")
 
 if __name__ == "__main__":
     main()
