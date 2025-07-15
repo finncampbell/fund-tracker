@@ -2,8 +2,13 @@
   "frn": 793388,
   "name": "Curo Property Funds LLP",
   "trading_names": [],
-  "appointed_reps": [],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {},
+  "person_records": {}
 }

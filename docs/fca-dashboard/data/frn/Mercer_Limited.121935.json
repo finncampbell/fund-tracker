@@ -1,9 +1,142 @@
 {
   "frn": 121935,
   "name": "Mercer Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/932515",
+        "Termination Date": "01/02/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "29/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "932515",
+        "Name": "Building Engineering Services Association"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/985941",
+        "Termination Date": "02/08/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "25/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "985941",
+        "Name": "HR4UK.com Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/996465",
+        "Termination Date": "20/11/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "17/05/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "996465",
+        "Name": "IRIS Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491437",
+        "Termination Date": "31/10/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "01/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "491437",
+        "Name": "Market Makers Inc Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931652",
+        "Termination Date": "01/02/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "17/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "931652",
+        "Name": "REFCOM Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/475805",
+        "Termination Date": "27/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "17/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "475805",
+        "Name": "Sage (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/418908",
+        "Termination Date": "01/02/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "16/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "418908",
+        "Name": "Welplan Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1013116",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "05/06/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "1013116",
+        "Name": "Eurowage Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/584281",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121935",
+        "Principal Firm Name": "Mercer Limited",
+        "Effective Date": "07/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "584281",
+        "Name": "Recruitment and Employment Confederation"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "121935",
+    "organisation_name": "Mercer Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "00984275",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

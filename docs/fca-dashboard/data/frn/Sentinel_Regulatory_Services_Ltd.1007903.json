@@ -1,9 +1,145 @@
 {
   "frn": 1007903,
   "name": "Sentinel Regulatory Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/825523",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "20/05/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "825523",
+        "Name": "Alfaco Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/923228",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "27/02/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "923228",
+        "Name": "ArrowMark International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/985899",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "12/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "985899",
+        "Name": "Essex Woodlands Health Ventures UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845159",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "12/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845159",
+        "Name": "Financial Services Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/787501",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "04/04/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "787501",
+        "Name": "FinTech Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/936431",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "23/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "936431",
+        "Name": "MarchHarvey Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1029686",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "15/03/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1029686",
+        "Name": "Ness Investment Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/834081",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "31/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "834081",
+        "Name": "PARAVENE CAPITAL UK LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1021515",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "13/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1021515",
+        "Name": "TBC Partners Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1026135",
+        "RecordSubType": "Full",
+        "Principal FRN": "1007903",
+        "Principal Firm Name": "Sentinel Regulatory Services Ltd",
+        "Effective Date": "03/03/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1026135",
+        "Name": "Wyddial Capital Management LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1007903",
+    "organisation_name": "Sentinel Regulatory Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15256428",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "02/09/2024"
+  },
+  "person_records": {}
 }

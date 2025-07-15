@@ -1,9 +1,39 @@
 {
   "frn": 499028,
   "name": "Index Ventures (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/726853",
+        "Termination Date": "11/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "499028",
+        "Principal Firm Name": "Index Ventures (UK) LLP",
+        "Effective Date": "26/11/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "726853",
+        "Name": "Medicxi Ventures (UK) LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "499028",
+    "organisation_name": "Index Ventures (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC344205",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "29/06/2009"
+  },
+  "person_records": {}
 }

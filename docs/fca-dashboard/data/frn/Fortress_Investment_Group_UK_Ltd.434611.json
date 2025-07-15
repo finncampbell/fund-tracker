@@ -1,9 +1,21 @@
 {
   "frn": 434611,
   "name": "Fortress Investment Group (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "434611",
+    "organisation_name": "Fortress Investment Group (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03612389",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "22/11/2005"
+  },
+  "person_records": {}
 }

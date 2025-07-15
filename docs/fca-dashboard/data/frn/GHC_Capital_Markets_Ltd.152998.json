@@ -1,9 +1,91 @@
 {
   "frn": 152998,
   "name": "GHC Capital Markets Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597030",
+        "Termination Date": "12/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "152998",
+        "Principal Firm Name": "GHC Capital Markets Ltd",
+        "Effective Date": "11/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597030",
+        "Name": "Capital Financial Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231923",
+        "Termination Date": "31/01/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "152998",
+        "Principal Firm Name": "GHC Capital Markets Ltd",
+        "Effective Date": "27/02/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "231923",
+        "Name": "Investment Risk Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/431448",
+        "Termination Date": "04/05/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "152998",
+        "Principal Firm Name": "GHC Capital Markets Ltd",
+        "Effective Date": "22/04/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "431448",
+        "Name": "Leonard William Oram"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/466506",
+        "Termination Date": "02/08/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "152998",
+        "Principal Firm Name": "GHC Capital Markets Ltd",
+        "Effective Date": "11/04/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "466506",
+        "Name": "Nicholas William Plumbridge"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/432700",
+        "RecordSubType": "Full",
+        "Principal FRN": "152998",
+        "Principal Firm Name": "GHC Capital Markets Ltd",
+        "Effective Date": "13/05/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "432700",
+        "Name": "Mike Hall ACIB Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "152998",
+    "organisation_name": "GHC Capital Markets Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03113332",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

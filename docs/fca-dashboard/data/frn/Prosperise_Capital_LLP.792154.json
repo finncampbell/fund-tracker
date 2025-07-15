@@ -1,9 +1,21 @@
 {
   "frn": 792154,
   "name": "Prosperise Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "792154",
+    "organisation_name": "Prosperise Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC419495",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "01/02/2018"
+  },
+  "person_records": {}
 }

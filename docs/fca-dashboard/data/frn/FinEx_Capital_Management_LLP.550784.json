@@ -1,9 +1,38 @@
 {
   "frn": 550784,
   "name": "FinEx Capital Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845059",
+        "Termination Date": "01/12/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "550784",
+        "Principal Firm Name": "FinEx Capital Management LLP",
+        "Effective Date": "30/06/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845059",
+        "Name": "Asterisk Network Solutions Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "550784",
+    "organisation_name": "FinEx Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC364091",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "21/10/2011"
+  },
+  "person_records": {}
 }

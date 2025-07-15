@@ -1,9 +1,65 @@
 {
   "frn": 538762,
   "name": "Shard Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/745267",
+        "Termination Date": "19/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "538762",
+        "Principal Firm Name": "Shard Capital Partners LLP",
+        "Effective Date": "26/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "745267",
+        "Name": "Riverfort Global Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/694948",
+        "Termination Date": "18/07/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "538762",
+        "Principal Firm Name": "Shard Capital Partners LLP",
+        "Effective Date": "12/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "694948",
+        "Name": "Rubrics Asset Management (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/622819",
+        "Termination Date": "23/11/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "538762",
+        "Principal Firm Name": "Shard Capital Partners LLP",
+        "Effective Date": "07/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "622819",
+        "Name": "Shard Credit Partners Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "538762",
+    "organisation_name": "Shard Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC360394",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "18/10/2011"
+  },
+  "person_records": {}
 }

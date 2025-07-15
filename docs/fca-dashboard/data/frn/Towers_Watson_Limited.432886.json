@@ -1,9 +1,39 @@
 {
   "frn": 432886,
   "name": "Towers Watson Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/467823",
+        "Termination Date": "07/02/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "432886",
+        "Principal Firm Name": "Towers Watson Limited",
+        "Effective Date": "11/05/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "467823",
+        "Name": "Watson Wyatt International Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "432886",
+    "organisation_name": "Towers Watson Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05379716",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "30/07/2005"
+  },
+  "person_records": {}
 }

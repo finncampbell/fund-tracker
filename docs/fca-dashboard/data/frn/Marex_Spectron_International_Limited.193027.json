@@ -1,9 +1,39 @@
 {
   "frn": 193027,
   "name": "Marex Spectron International Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/455119",
+        "Termination Date": "20/10/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "193027",
+        "Principal Firm Name": "Marex Spectron International Limited",
+        "Effective Date": "25/07/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "455119",
+        "Name": "CIF Trading Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "193027",
+    "organisation_name": "Marex Spectron International Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03938219",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

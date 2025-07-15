@@ -1,9 +1,65 @@
 {
   "frn": 403721,
   "name": "Panmure Liberum Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/461535",
+        "Termination Date": "04/02/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "403721",
+        "Principal Firm Name": "Panmure Liberum Limited",
+        "Effective Date": "18/12/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "461535",
+        "Name": "GMP Securities Europe LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/764257",
+        "Termination Date": "07/09/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "403721",
+        "Principal Firm Name": "Panmure Liberum Limited",
+        "Effective Date": "11/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "764257",
+        "Name": "PrimeXtend Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1022870",
+        "RecordSubType": "Full",
+        "Principal FRN": "403721",
+        "Principal Firm Name": "Panmure Liberum Limited",
+        "Effective Date": "31/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1022870",
+        "Name": "Panmure Liberum Cambridge Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "403721",
+    "organisation_name": "Panmure Liberum Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04915201",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "11/02/2005"
+  },
+  "person_records": {}
 }

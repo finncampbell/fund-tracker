@@ -1,9 +1,241 @@
 {
   "frn": 472818,
   "name": "Capital Systematics Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/501498",
+        "Termination Date": "14/09/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "22/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "501498",
+        "Name": "Accesso Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597083",
+        "Termination Date": "06/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "12/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597083",
+        "Name": "Aimar Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/579551",
+        "Termination Date": "21/05/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "18/04/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "579551",
+        "Name": "ANKA Capital Solutions LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/568182",
+        "Termination Date": "24/05/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "07/11/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "568182",
+        "Name": "Aztekfin Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/599878",
+        "Termination Date": "24/02/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "22/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "599878",
+        "Name": "Bidwell Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576887",
+        "Termination Date": "01/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "08/03/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "576887",
+        "Name": "Clear Blue Carbon Solutions LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/558646",
+        "Termination Date": "11/07/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "01/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "558646",
+        "Name": "David Cain"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/788113",
+        "Termination Date": "18/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "04/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "788113",
+        "Name": "DSC Corporate Finance Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/947727",
+        "Termination Date": "21/09/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "23/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "947727",
+        "Name": "Eliseus Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/733509",
+        "Termination Date": "30/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "25/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "733509",
+        "Name": "Euclid Global Advisors LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716516",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "02/08/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716516",
+        "Name": "AXTRADE LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1013875",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "02/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1013875",
+        "Name": "Bean Partners Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/998531",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "23/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "998531",
+        "Name": "Craton Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1016725",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "02/08/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1016725",
+        "Name": "Kylemore Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1022632",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "11/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1022632",
+        "Name": "SailWealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1011434",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "15/05/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1011434",
+        "Name": "SCL Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/737236",
+        "RecordSubType": "Full",
+        "Principal FRN": "472818",
+        "Principal Firm Name": "Capital Systematics Ltd",
+        "Effective Date": "18/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "737236",
+        "Name": "The Fulford Group Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "472818",
+    "organisation_name": "Capital Systematics Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05712221",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "16/10/2007"
+  },
+  "person_records": {}
 }

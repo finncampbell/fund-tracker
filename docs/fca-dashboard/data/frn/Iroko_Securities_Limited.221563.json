@@ -1,9 +1,65 @@
 {
   "frn": 221563,
   "name": "Iroko Securities Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600533",
+        "Termination Date": "24/05/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "221563",
+        "Principal Firm Name": "Iroko Securities Limited",
+        "Effective Date": "03/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600533",
+        "Name": "Jaideep Puri"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/580481",
+        "Termination Date": "14/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "221563",
+        "Principal Firm Name": "Iroko Securities Limited",
+        "Effective Date": "01/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "580481",
+        "Name": "Sahel Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627320",
+        "Termination Date": "07/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "221563",
+        "Principal Firm Name": "Iroko Securities Limited",
+        "Effective Date": "02/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627320",
+        "Name": "TLG Capital Investments LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "221563",
+    "organisation_name": "Iroko Securities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04539852",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "13/10/2003"
+  },
+  "person_records": {}
 }

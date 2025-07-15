@@ -1,9 +1,64 @@
 {
   "frn": 488781,
   "name": "Resolution Operations LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/775767",
+        "Termination Date": "09/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "488781",
+        "Principal Firm Name": "Resolution Operations LLP",
+        "Effective Date": "04/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "775767",
+        "Name": "Resolution Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/518663",
+        "Termination Date": "24/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "488781",
+        "Principal Firm Name": "Resolution Operations LLP",
+        "Effective Date": "02/06/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "518663",
+        "Name": "Resolution Financial Markets LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790927",
+        "Termination Date": "20/10/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "488781",
+        "Principal Firm Name": "Resolution Operations LLP",
+        "Effective Date": "10/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790927",
+        "Name": "Resolution Life Group Services Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "488781",
+    "organisation_name": "Resolution Operations LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC339989",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "10/11/2008"
+  },
+  "person_records": {}
 }

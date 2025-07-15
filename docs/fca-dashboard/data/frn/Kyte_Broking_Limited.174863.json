@@ -1,9 +1,154 @@
 {
   "frn": 174863,
   "name": "Kyte Broking Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/673393",
+        "Termination Date": "30/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "24/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "673393",
+        "Name": "Arranmore Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/834413",
+        "Termination Date": "01/02/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "22/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "834413",
+        "Name": "David Alexandre Raccat"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/832778",
+        "Termination Date": "08/05/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "04/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "832778",
+        "Name": "Federica Meghnagi"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/501641",
+        "Termination Date": "01/06/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "27/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "501641",
+        "Name": "KKM Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/841996",
+        "Termination Date": "31/10/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "13/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "841996",
+        "Name": "Richard John Elves Booth"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/832650",
+        "Termination Date": "20/07/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "01/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "832650",
+        "Name": "Rudy Nicolas Perez"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/920603",
+        "Termination Date": "10/06/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "03/02/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "920603",
+        "Name": "Skew Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1006325",
+        "RecordSubType": "Full",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "05/01/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1006325",
+        "Name": "EC Financial Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/989786",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "11/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "989786",
+        "Name": "Marcel Guillaume Ricaud"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/519097",
+        "RecordSubType": "Full",
+        "Principal FRN": "174863",
+        "Principal Firm Name": "Kyte Broking Limited",
+        "Effective Date": "03/03/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "519097",
+        "Name": "Market Securities LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "174863",
+    "organisation_name": "Kyte Broking Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02781314",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

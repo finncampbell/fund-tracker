@@ -1,9 +1,39 @@
 {
   "frn": 717851,
   "name": "ASHENDEN FINANCE (UK) LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749562",
+        "Termination Date": "03/11/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "717851",
+        "Principal Firm Name": "ASHENDEN FINANCE (UK) LIMITED",
+        "Effective Date": "10/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749562",
+        "Name": "ASG Capital (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "717851",
+    "organisation_name": "ASHENDEN FINANCE (UK) LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08756957",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "01/03/2016"
+  },
+  "person_records": {}
 }

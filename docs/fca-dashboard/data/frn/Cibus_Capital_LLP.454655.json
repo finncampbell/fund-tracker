@@ -1,9 +1,22 @@
 {
   "frn": 454655,
   "name": "Cibus Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "454655",
+    "organisation_name": "Cibus Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC320407",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "02/10/2006"
+  },
+  "person_records": {}
 }

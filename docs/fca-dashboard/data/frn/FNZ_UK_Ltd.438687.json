@@ -1,9 +1,39 @@
 {
   "frn": 438687,
   "name": "FNZ (UK) Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/695505",
+        "Termination Date": "10/06/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "438687",
+        "Principal Firm Name": "FNZ (UK) Ltd",
+        "Effective Date": "15/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "695505",
+        "Name": "FNZ TA Services Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "438687",
+    "organisation_name": "FNZ (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05435760",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "06/01/2006"
+  },
+  "person_records": {}
 }

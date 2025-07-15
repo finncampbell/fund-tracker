@@ -1,9 +1,22 @@
 {
   "frn": 446352,
   "name": "Cerberus European Capital Advisors, LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "446352",
+    "organisation_name": "Cerberus European Capital Advisors, LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC315176",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "09/06/2006"
+  },
+  "person_records": {}
 }

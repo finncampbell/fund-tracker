@@ -1,9 +1,116 @@
 {
   "frn": 572148,
   "name": "SCR Investments Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/595131",
+        "Termination Date": "03/07/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "29/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "595131",
+        "Name": "Castle Rock Capital Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/756689",
+        "Termination Date": "08/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "24/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "756689",
+        "Name": "Cazadores Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/595098",
+        "Termination Date": "25/06/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "29/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "595098",
+        "Name": "Hamilton Stuart Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/596767",
+        "Termination Date": "14/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "04/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "596767",
+        "Name": "Ikona Global Opportunities Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/494374",
+        "Termination Date": "18/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "19/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "494374",
+        "Name": "Kensington Global Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607524",
+        "Termination Date": "03/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "19/09/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "607524",
+        "Name": "Spider Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576924",
+        "Termination Date": "26/04/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "572148",
+        "Principal Firm Name": "SCR Investments Ltd",
+        "Effective Date": "19/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "576924",
+        "Name": "Turret Investments (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "572148",
+    "organisation_name": "SCR Investments Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07392266",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "18/07/2012"
+  },
+  "person_records": {}
 }

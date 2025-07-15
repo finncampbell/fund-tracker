@@ -1,9 +1,39 @@
 {
   "frn": 121857,
   "name": "Janus Henderson Investors UK Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205630",
+        "Termination Date": "05/04/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "121857",
+        "Principal Firm Name": "Janus Henderson Investors UK Limited",
+        "Effective Date": "03/11/1997",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205630",
+        "Name": "Henderson Real Estate Strategy Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "121857",
+    "organisation_name": "Janus Henderson Investors UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "00906355",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

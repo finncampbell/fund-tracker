@@ -1,9 +1,39 @@
 {
   "frn": 144885,
   "name": "Richmond House Wealth Management",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/568784",
+        "Termination Date": "19/08/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "144885",
+        "Principal Firm Name": "Richmond House Wealth Management",
+        "Effective Date": "15/11/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "568784",
+        "Name": "Pictons Financial Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "144885",
+    "organisation_name": "Richmond House Wealth Management",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "01842995",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

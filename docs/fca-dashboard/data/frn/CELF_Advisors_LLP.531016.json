@@ -1,9 +1,39 @@
 {
   "frn": 531016,
   "name": "CELF Advisors LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/763985",
+        "Termination Date": "30/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "531016",
+        "Principal Firm Name": "CELF Advisors LLP",
+        "Effective Date": "09/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "763985",
+        "Name": "Emerging Sovereign Partners UK LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "531016",
+    "organisation_name": "CELF Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC357078",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "12/11/2010"
+  },
+  "person_records": {}
 }

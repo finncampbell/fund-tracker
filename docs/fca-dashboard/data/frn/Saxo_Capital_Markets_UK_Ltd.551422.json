@@ -1,9 +1,65 @@
 {
   "frn": 551422,
   "name": "Saxo Capital Markets UK Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591724",
+        "Termination Date": "06/03/2025",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "551422",
+        "Principal Firm Name": "Saxo Capital Markets UK Ltd",
+        "Effective Date": "29/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591724",
+        "Name": "Associated Newspapers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591724",
+        "Termination Date": "03/09/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "551422",
+        "Principal Firm Name": "Saxo Capital Markets UK Ltd",
+        "Effective Date": "03/09/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591724",
+        "Name": "Associated Newspapers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591724",
+        "Termination Date": "01/01/2001",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "551422",
+        "Principal Firm Name": "Saxo Capital Markets UK Ltd",
+        "Effective Date": "01/01/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591724",
+        "Name": "Associated Newspapers Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "551422",
+    "organisation_name": "Saxo Capital Markets UK Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07413871",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "05/10/2011"
+  },
+  "person_records": {}
 }

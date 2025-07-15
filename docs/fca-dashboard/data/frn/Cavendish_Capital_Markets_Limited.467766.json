@@ -1,9 +1,22 @@
 {
   "frn": 467766,
   "name": "Cavendish Capital Markets Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "467766",
+    "organisation_name": "Cavendish Capital Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06198898",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "31/07/2007"
+  },
+  "person_records": {}
 }

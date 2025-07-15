@@ -1,9 +1,21 @@
 {
   "frn": 571590,
   "name": "MOYES Financial Planning Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "571590",
+    "organisation_name": "MOYES Financial Planning Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07856963",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "08/03/2012"
+  },
+  "person_records": {}
 }

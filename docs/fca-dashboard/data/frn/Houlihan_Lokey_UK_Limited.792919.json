@@ -1,9 +1,22 @@
 {
   "frn": 792919,
   "name": "Houlihan Lokey UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "792919",
+    "organisation_name": "Houlihan Lokey UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09536762",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "01/05/2018"
+  },
+  "person_records": {}
 }

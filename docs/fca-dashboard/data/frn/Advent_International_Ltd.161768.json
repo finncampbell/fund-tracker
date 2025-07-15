@@ -1,9 +1,38 @@
 {
   "frn": 161768,
   "name": "Advent International Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751720",
+        "RecordSubType": "Full",
+        "Principal FRN": "161768",
+        "Principal Firm Name": "Advent International Ltd",
+        "Effective Date": "04/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "751720",
+        "Name": "Advent Global Opportunities Management Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "161768",
+    "organisation_name": "Advent International Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02342186",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

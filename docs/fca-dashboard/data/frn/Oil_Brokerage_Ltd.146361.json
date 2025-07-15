@@ -1,9 +1,38 @@
 {
   "frn": 146361,
   "name": "Oil Brokerage Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/603341",
+        "Termination Date": "29/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "146361",
+        "Principal Firm Name": "Oil Brokerage Ltd",
+        "Effective Date": "28/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "603341",
+        "Name": "OB-Affinity Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "146361",
+    "organisation_name": "Oil Brokerage Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02300831",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

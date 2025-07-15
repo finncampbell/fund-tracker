@@ -1,9 +1,21 @@
 {
   "frn": 599262,
   "name": "Njord Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "599262",
+    "organisation_name": "Njord Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC382816",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "15/07/2013"
+  },
+  "person_records": {}
 }

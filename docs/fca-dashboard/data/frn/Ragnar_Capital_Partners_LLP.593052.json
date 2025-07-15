@@ -1,9 +1,100 @@
 {
   "frn": 593052,
   "name": "Ragnar Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/987712",
+        "Termination Date": "29/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "25/11/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "987712",
+        "Name": "350 Investment Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/842777",
+        "Termination Date": "04/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "24/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "842777",
+        "Name": "Heytesbury Corporate LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/823540",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "01/07/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "823540",
+        "Name": "MINEXIA LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1016553",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "12/08/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1016553",
+        "Name": "NEWSPACE FINANCE LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/835691",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "08/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "835691",
+        "Name": "Orana Corporate LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/780925",
+        "RecordSubType": "Full",
+        "Principal FRN": "593052",
+        "Principal Firm Name": "Ragnar Capital Partners LLP",
+        "Effective Date": "30/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "780925",
+        "Name": "SD Capital Advisory Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "593052",
+    "organisation_name": "Ragnar Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC368809",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "18/02/2013"
+  },
+  "person_records": {}
 }

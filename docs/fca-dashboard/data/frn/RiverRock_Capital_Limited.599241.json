@@ -1,9 +1,39 @@
 {
   "frn": 599241,
   "name": "RiverRock Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/785199",
+        "Termination Date": "19/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "599241",
+        "Principal Firm Name": "RiverRock Capital Limited",
+        "Effective Date": "27/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "785199",
+        "Name": "GLC ADVISORS LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "599241",
+    "organisation_name": "RiverRock Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08322531",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "08/11/2013"
+  },
+  "person_records": {}
 }

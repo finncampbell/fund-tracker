@@ -1,9 +1,38 @@
 {
   "frn": 122331,
   "name": "GAM International Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/232525",
+        "Termination Date": "07/03/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "122331",
+        "Principal Firm Name": "GAM International Management Ltd",
+        "Effective Date": "01/04/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "232525",
+        "Name": "Hyde Pacific Consulting Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122331",
+    "organisation_name": "GAM International Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01802911",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

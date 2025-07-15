@@ -1,9 +1,22 @@
 {
   "frn": 464325,
   "name": "Equilibrium Capital Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "464325",
+    "organisation_name": "Equilibrium Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05849215",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "02/04/2007"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 828551,
   "name": "Lodge Quai Advisors LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "828551",
+    "organisation_name": "Lodge Quai Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC423287",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "01/11/2019"
+  },
+  "person_records": {}
 }

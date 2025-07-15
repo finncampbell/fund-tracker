@@ -1,9 +1,173 @@
 {
   "frn": 823316,
   "name": "Carne International Financial Services (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/997190",
+        "Termination Date": "28/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "01/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "997190",
+        "Name": "Twelve Capital (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/959083",
+        "Termination Date": "11/06/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "12/12/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "959083",
+        "Name": "VG Mobility (UK) Advisers Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/834177",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "09/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "834177",
+        "Name": "Cabot Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1004845",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "25/10/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1004845",
+        "Name": "COLESCO CAPITAL LTD."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942813",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "25/10/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942813",
+        "Name": "Cotton Ginsberg Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1012711",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "09/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1012711",
+        "Name": "Infranity"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1031012",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "30/04/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1031012",
+        "Name": "LCP Capital Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1010882",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "26/04/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1010882",
+        "Name": "LCP Investment Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/831120",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "31/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "831120",
+        "Name": "Pareto Capital Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/993446",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "16/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "993446",
+        "Name": "PLENISFER INVESTMENTS SGR S.p.A."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/921689",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "22/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "921689",
+        "Name": "Pretium UK Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1030159",
+        "RecordSubType": "Full",
+        "Principal FRN": "823316",
+        "Principal Firm Name": "Carne International Financial Services (UK) Limited",
+        "Effective Date": "29/03/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1030159",
+        "Name": "Rebalance Earth Venture Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "823316",
+    "organisation_name": "Carne International Financial Services (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11555138",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "16/05/2019"
+  },
+  "person_records": {}
 }

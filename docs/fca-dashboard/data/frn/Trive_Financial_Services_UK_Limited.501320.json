@@ -1,9 +1,22 @@
 {
   "frn": 501320,
   "name": "Trive Financial Services UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "501320",
+    "organisation_name": "Trive Financial Services UK Limited",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "06837942",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "15/02/2010"
+  },
+  "person_records": {}
 }

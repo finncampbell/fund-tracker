@@ -1,9 +1,65 @@
 {
   "frn": 564741,
   "name": "Gildencrest Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/772686",
+        "Termination Date": "26/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "564741",
+        "Principal Firm Name": "Gildencrest Capital Limited",
+        "Effective Date": "28/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "772686",
+        "Name": "Imperial Financial Global Holdings Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/777886",
+        "Termination Date": "09/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "564741",
+        "Principal Firm Name": "Gildencrest Capital Limited",
+        "Effective Date": "02/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "777886",
+        "Name": "MFM Group Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/753327",
+        "Termination Date": "06/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "564741",
+        "Principal Firm Name": "Gildencrest Capital Limited",
+        "Effective Date": "04/08/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "753327",
+        "Name": "Oma Broker LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "564741",
+    "organisation_name": "Gildencrest Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07604372",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "30/05/2012"
+  },
+  "person_records": {}
 }

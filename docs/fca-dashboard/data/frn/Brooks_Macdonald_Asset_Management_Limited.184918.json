@@ -1,9 +1,39 @@
 {
   "frn": 184918,
   "name": "Brooks Macdonald Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/225622",
+        "Termination Date": "10/11/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "184918",
+        "Principal Firm Name": "Brooks Macdonald Asset Management Limited",
+        "Effective Date": "20/06/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "225622",
+        "Name": "Portfolio Partnership (Peterborough) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "184918",
+    "organisation_name": "Brooks Macdonald Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03417519",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

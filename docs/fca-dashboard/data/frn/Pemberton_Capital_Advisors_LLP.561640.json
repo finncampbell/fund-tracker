@@ -1,9 +1,77 @@
 {
   "frn": 561640,
   "name": "Pemberton Capital Advisors LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/613212",
+        "Termination Date": "23/06/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "561640",
+        "Principal Firm Name": "Pemberton Capital Advisors LLP",
+        "Effective Date": "15/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "613212",
+        "Name": "P Sullivan & Sons Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/630974",
+        "Termination Date": "25/11/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "561640",
+        "Principal Firm Name": "Pemberton Capital Advisors LLP",
+        "Effective Date": "28/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "630974",
+        "Name": "TMT Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/911491",
+        "Termination Date": "17/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "561640",
+        "Principal Firm Name": "Pemberton Capital Advisors LLP",
+        "Effective Date": "22/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "911491",
+        "Name": "Tostock Capital Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/835810",
+        "RecordSubType": "Full",
+        "Principal FRN": "561640",
+        "Principal Firm Name": "Pemberton Capital Advisors LLP",
+        "Effective Date": "08/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "835810",
+        "Name": "Pemberton Operational Services UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "561640",
+    "organisation_name": "Pemberton Capital Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC359656",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "01/10/2013"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,206 @@
 {
   "frn": 1002543,
   "name": "Hydrogen Equity Partners UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "SXK00937",
+      "Name": "Shazad Khan",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXK00937"
+    },
+    {
+      "IRN": "JCB01320",
+      "Name": "Joseph Cyril Edward Bamford",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JCB01320"
+    },
+    {
+      "IRN": "JXM02759",
+      "Name": "James Munce",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXM02759"
+    },
+    {
+      "IRN": "RAW01091",
+      "Name": "Robert Alexander Mark Winter",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RAW01091"
+    },
+    {
+      "IRN": "JXW01123",
+      "Name": "James Woods",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW01123"
+    },
+    {
+      "IRN": "BXM00459",
+      "Name": "Ben Madden",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXM00459"
+    },
+    {
+      "IRN": "MXT00537",
+      "Name": "Matthew Stephen Townley Holgate",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXT00537"
+    },
+    {
+      "IRN": "JXB01085",
+      "Name": "Jamie Burns",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB01085"
+    },
+    {
+      "IRN": "OXC00086",
+      "Name": "Oliver Casale",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXC00086"
+    },
+    {
+      "IRN": "GXS00600",
+      "Name": "George Saunders",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXS00600"
+    },
+    {
+      "IRN": "CXP00591",
+      "Name": "Charles Portwain",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXP00591"
+    },
+    {
+      "IRN": "LXS01392",
+      "Name": "Luke Spencer-Wilson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXS01392"
+    },
+    {
+      "IRN": "TXF01216",
+      "Name": "Toby Fenwicke-Clennell",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXF01216"
+    },
+    {
+      "IRN": "SAL01100",
+      "Name": "Scott Allen Lanphere",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SAL01100"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "SXK00937": [],
+    "JCB01320": [],
+    "JXM02759": [],
+    "RAW01091": [],
+    "JXW01123": [],
+    "BXM00459": [],
+    "MXT00537": [],
+    "JXB01085": [],
+    "OXC00086": [],
+    "GXS00600": [],
+    "CXP00591": [],
+    "LXS01392": [],
+    "TXF01216": [],
+    "SAL01100": []
+  },
+  "metadata": {
+    "frn": "1002543",
+    "organisation_name": "Hydrogen Equity Partners UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13070981",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "11/01/2024"
+  },
+  "person_records": {
+    "SXK00937": {
+      "irn": "SXK00937",
+      "name": "Shazad Khan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JCB01320": {
+      "irn": "JCB01320",
+      "name": "Joseph Cyril Edward Bamford",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXM02759": {
+      "irn": "JXM02759",
+      "name": "James Munce",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RAW01091": {
+      "irn": "RAW01091",
+      "name": "Robert Alexander Mark Winter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW01123": {
+      "irn": "JXW01123",
+      "name": "James Woods",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXM00459": {
+      "irn": "BXM00459",
+      "name": "Ben Madden",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXT00537": {
+      "irn": "MXT00537",
+      "name": "Matthew Stephen Townley Holgate",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB01085": {
+      "irn": "JXB01085",
+      "name": "Jamie Burns",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXC00086": {
+      "irn": "OXC00086",
+      "name": "Oliver Casale",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXS00600": {
+      "irn": "GXS00600",
+      "name": "George Saunders",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXP00591": {
+      "irn": "CXP00591",
+      "name": "Charles Portwain",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXS01392": {
+      "irn": "LXS01392",
+      "name": "Luke Spencer-Wilson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXF01216": {
+      "irn": "TXF01216",
+      "name": "Toby Fenwicke-Clennell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SAL01100": {
+      "irn": "SAL01100",
+      "name": "Scott Allen Lanphere",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

@@ -1,9 +1,156 @@
 {
   "frn": 582160,
   "name": "Kession Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710259",
+        "Termination Date": "31/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "24/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710259",
+        "Name": "350 PPM Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/626167",
+        "Termination Date": "31/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "19/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "626167",
+        "Name": "Albert Capital & Finance Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/609953",
+        "Termination Date": "27/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "07/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "609953",
+        "Name": "ALPHA REAL (ARI) LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/732119",
+        "Termination Date": "20/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "15/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "732119",
+        "Name": "Amaryllis Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/965151",
+        "Termination Date": "09/12/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "08/12/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "965151",
+        "Name": "Arlington Capital Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/647454",
+        "Termination Date": "05/01/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "27/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "647454",
+        "Name": "Audere Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/744780",
+        "Termination Date": "20/09/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "21/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "744780",
+        "Name": "Avouch Capital UK LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/598295",
+        "Termination Date": "27/05/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "16/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "598295",
+        "Name": "BAM Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716733",
+        "Termination Date": "01/09/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "04/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716733",
+        "Name": "Beacon Securities International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716733",
+        "Termination Date": "31/08/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "582160",
+        "Principal Firm Name": "Kession Capital Limited",
+        "Effective Date": "15/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716733",
+        "Name": "Beacon Securities International Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "582160",
+    "organisation_name": "Kession Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07987057",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "16/07/2012"
+  },
+  "person_records": {}
 }

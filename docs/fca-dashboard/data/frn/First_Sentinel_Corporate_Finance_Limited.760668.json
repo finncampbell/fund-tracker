@@ -1,9 +1,77 @@
 {
   "frn": 760668,
   "name": "First Sentinel Corporate Finance Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/830441",
+        "Termination Date": "27/03/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "760668",
+        "Principal Firm Name": "First Sentinel Corporate Finance Limited",
+        "Effective Date": "10/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "830441",
+        "Name": "CONNECT X CAPITAL MARKETS (UK) LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/786026",
+        "Termination Date": "29/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "760668",
+        "Principal Firm Name": "First Sentinel Corporate Finance Limited",
+        "Effective Date": "04/08/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "786026",
+        "Name": "First Sentinel Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/775202",
+        "Termination Date": "29/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "760668",
+        "Principal Firm Name": "First Sentinel Corporate Finance Limited",
+        "Effective Date": "29/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "775202",
+        "Name": "First Sentinel Investments Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972923",
+        "RecordSubType": "Full",
+        "Principal FRN": "760668",
+        "Principal Firm Name": "First Sentinel Corporate Finance Limited",
+        "Effective Date": "27/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972923",
+        "Name": "First Sentinel Wealth Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "760668",
+    "organisation_name": "First Sentinel Corporate Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07832675",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "01/03/2017"
+  },
+  "person_records": {}
 }

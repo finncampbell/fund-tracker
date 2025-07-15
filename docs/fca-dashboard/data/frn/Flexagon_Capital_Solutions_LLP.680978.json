@@ -1,9 +1,87 @@
 {
   "frn": 680978,
   "name": "Flexagon Capital Solutions LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/654445",
+        "Termination Date": "04/11/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "680978",
+        "Principal Firm Name": "Flexagon Capital Solutions LLP",
+        "Effective Date": "09/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "654445",
+        "Name": "New Era Alternative Investments Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/760656",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "680978",
+        "Principal Firm Name": "Flexagon Capital Solutions LLP",
+        "Effective Date": "10/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "760656",
+        "Name": "Flexagon Corporate & Trust Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942962",
+        "RecordSubType": "Full",
+        "Principal FRN": "680978",
+        "Principal Firm Name": "Flexagon Capital Solutions LLP",
+        "Effective Date": "14/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942962",
+        "Name": "MANUFACTURING RENAISSANCE ITALIAN SOLUTIONS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845144",
+        "RecordSubType": "Full",
+        "Principal FRN": "680978",
+        "Principal Firm Name": "Flexagon Capital Solutions LLP",
+        "Effective Date": "02/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845144",
+        "Name": "Nivex Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917407",
+        "RecordSubType": "Full",
+        "Principal FRN": "680978",
+        "Principal Firm Name": "Flexagon Capital Solutions LLP",
+        "Effective Date": "26/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917407",
+        "Name": "Nivex Capital Management Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "680978",
+    "organisation_name": "Flexagon Capital Solutions LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC396554",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "07/12/2015"
+  },
+  "person_records": {}
 }

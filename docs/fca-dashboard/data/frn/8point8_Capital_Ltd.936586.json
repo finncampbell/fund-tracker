@@ -1,9 +1,76 @@
 {
   "frn": 936586,
   "name": "8point8 Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1000559",
+        "Termination Date": "10/06/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "936586",
+        "Principal Firm Name": "8point8 Capital Ltd",
+        "Effective Date": "07/09/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1000559",
+        "Name": "Bing Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/800527",
+        "Termination Date": "14/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "936586",
+        "Principal Firm Name": "8point8 Capital Ltd",
+        "Effective Date": "29/10/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "800527",
+        "Name": "Overmorrow Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1029925",
+        "RecordSubType": "Full",
+        "Principal FRN": "936586",
+        "Principal Firm Name": "8point8 Capital Ltd",
+        "Effective Date": "27/03/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1029925",
+        "Name": "FC GROUP HOLDING LTD."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1034361",
+        "RecordSubType": "Full",
+        "Principal FRN": "936586",
+        "Principal Firm Name": "8point8 Capital Ltd",
+        "Effective Date": "05/06/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1034361",
+        "Name": "Mayfair AI Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "936586",
+    "organisation_name": "8point8 Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12306646",
+    "system_timestamp": "23/06/2025 22:18",
+    "status_effective_date": "08/10/2021"
+  },
+  "person_records": {}
 }

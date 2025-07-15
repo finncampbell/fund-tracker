@@ -1,9 +1,38 @@
 {
   "frn": 468247,
   "name": "Crystal Amber Advisers (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/482228",
+        "Termination Date": "18/06/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "468247",
+        "Principal Firm Name": "Crystal Amber Advisers (UK) LLP",
+        "Effective Date": "21/04/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "482228",
+        "Name": "Nimrod Capital LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "468247",
+    "organisation_name": "Crystal Amber Advisers (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC328446",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "30/10/2007"
+  },
+  "person_records": {}
 }

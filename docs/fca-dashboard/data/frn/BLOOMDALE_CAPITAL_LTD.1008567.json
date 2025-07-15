@@ -1,9 +1,21 @@
 {
   "frn": 1008567,
   "name": "BLOOMDALE CAPITAL LTD",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1008567",
+    "organisation_name": "BLOOMDALE CAPITAL LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14958267",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "23/07/2024"
+  },
+  "person_records": {}
 }

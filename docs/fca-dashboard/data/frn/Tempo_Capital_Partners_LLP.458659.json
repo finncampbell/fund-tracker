@@ -1,9 +1,38 @@
 {
   "frn": 458659,
   "name": "Tempo Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748684",
+        "RecordSubType": "Full",
+        "Principal FRN": "458659",
+        "Principal Firm Name": "Tempo Capital Partners LLP",
+        "Effective Date": "01/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "748684",
+        "Name": "TempoCap Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "458659",
+    "organisation_name": "Tempo Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC317743",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "29/11/2006"
+  },
+  "person_records": {}
 }

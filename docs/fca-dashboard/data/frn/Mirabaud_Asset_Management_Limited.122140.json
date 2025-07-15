@@ -1,9 +1,91 @@
 {
   "frn": 122140,
   "name": "Mirabaud Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/223022",
+        "Termination Date": "21/05/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "122140",
+        "Principal Firm Name": "Mirabaud Asset Management Limited",
+        "Effective Date": "21/02/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "223022",
+        "Name": "Andrew Clark"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/486466",
+        "Termination Date": "31/12/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122140",
+        "Principal Firm Name": "Mirabaud Asset Management Limited",
+        "Effective Date": "24/07/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "486466",
+        "Name": "Anwar Siddiqi"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/486465",
+        "Termination Date": "31/12/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122140",
+        "Principal Firm Name": "Mirabaud Asset Management Limited",
+        "Effective Date": "24/07/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "486465",
+        "Name": "Balwant Nantunhai Patel"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617013",
+        "Termination Date": "31/12/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "122140",
+        "Principal Firm Name": "Mirabaud Asset Management Limited",
+        "Effective Date": "11/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617013",
+        "Name": "Kevin O'Kelly"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610336",
+        "Termination Date": "15/06/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "122140",
+        "Principal Firm Name": "Mirabaud Asset Management Limited",
+        "Effective Date": "15/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610336",
+        "Name": "Trenlewis Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122140",
+    "organisation_name": "Mirabaud Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01631005",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

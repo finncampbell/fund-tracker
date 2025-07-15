@@ -1,9 +1,51 @@
 {
   "frn": 583334,
   "name": "Colliers Capital Holdings Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/752320",
+        "Termination Date": "31/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "583334",
+        "Principal Firm Name": "Colliers Capital Holdings Limited",
+        "Effective Date": "11/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "752320",
+        "Name": "Colliers International Capital Markets UK LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975841",
+        "RecordSubType": "Full",
+        "Principal FRN": "583334",
+        "Principal Firm Name": "Colliers Capital Holdings Limited",
+        "Effective Date": "17/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "975841",
+        "Name": "Colliers International Property Advisers UK LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "583334",
+    "organisation_name": "Colliers Capital Holdings Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06430656",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "08/01/2013"
+  },
+  "person_records": {}
 }

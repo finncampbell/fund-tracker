@@ -1,9 +1,22 @@
 {
   "frn": 187769,
   "name": "Tethys Advisors Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "187769",
+    "organisation_name": "Tethys Advisors Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03534108",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

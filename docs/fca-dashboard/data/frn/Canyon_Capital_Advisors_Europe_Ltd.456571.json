@@ -1,9 +1,21 @@
 {
   "frn": 456571,
   "name": "Canyon Capital Advisors (Europe) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "456571",
+    "organisation_name": "Canyon Capital Advisors (Europe) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05886261",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "07/11/2006"
+  },
+  "person_records": {}
 }

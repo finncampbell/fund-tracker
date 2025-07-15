@@ -1,9 +1,62 @@
 {
   "frn": 815699,
   "name": "CIVITAS INVESTMENT MANAGEMENT LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972507",
+        "RecordSubType": "Full",
+        "Principal FRN": "815699",
+        "Principal Firm Name": "CIVITAS INVESTMENT MANAGEMENT LIMITED",
+        "Effective Date": "20/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972507",
+        "Name": "CIM Healthcare Property Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/913960",
+        "RecordSubType": "Full",
+        "Principal FRN": "815699",
+        "Principal Firm Name": "CIVITAS INVESTMENT MANAGEMENT LIMITED",
+        "Effective Date": "23/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "913960",
+        "Name": "Civitas Social Care Developments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/918985",
+        "RecordSubType": "Full",
+        "Principal FRN": "815699",
+        "Principal Firm Name": "CIVITAS INVESTMENT MANAGEMENT LIMITED",
+        "Effective Date": "03/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "918985",
+        "Name": "Civitas Social Healthcare Advisors Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "815699",
+    "organisation_name": "CIVITAS INVESTMENT MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10278444",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "21/01/2019"
+  },
+  "person_records": {}
 }

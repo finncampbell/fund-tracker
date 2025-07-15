@@ -1,9 +1,21 @@
 {
   "frn": 705617,
   "name": "Queens Gate Capital Advisors Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "705617",
+    "organisation_name": "Queens Gate Capital Advisors Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07823921",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "19/11/2015"
+  },
+  "person_records": {}
 }

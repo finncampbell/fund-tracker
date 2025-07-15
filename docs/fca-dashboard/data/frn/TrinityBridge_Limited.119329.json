@@ -1,9 +1,90 @@
 {
   "frn": 119329,
   "name": "TrinityBridge Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/753086",
+        "Termination Date": "09/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "119329",
+        "Principal Firm Name": "TrinityBridge Limited",
+        "Effective Date": "18/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "753086",
+        "Name": "CBF Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/402660",
+        "Termination Date": "11/11/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "119329",
+        "Principal Firm Name": "TrinityBridge Limited",
+        "Effective Date": "07/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "402660",
+        "Name": "CPRM Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/487543",
+        "Termination Date": "07/03/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "119329",
+        "Principal Firm Name": "TrinityBridge Limited",
+        "Effective Date": "15/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "487543",
+        "Name": "Lindsays Financial Planning L.L.P"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/978420",
+        "RecordSubType": "Full",
+        "Principal FRN": "119329",
+        "Principal Firm Name": "TrinityBridge Limited",
+        "Effective Date": "04/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "978420",
+        "Name": "Copestone Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/218893",
+        "RecordSubType": "Full",
+        "Principal FRN": "119329",
+        "Principal Firm Name": "TrinityBridge Limited",
+        "Effective Date": "08/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "218893",
+        "Name": "Place Campbell TrinityBridge Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "119329",
+    "organisation_name": "TrinityBridge Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01644127",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 627829,
   "name": "Smart Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/795822",
+        "Termination Date": "22/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "627829",
+        "Principal Firm Name": "Smart Investment Management Limited",
+        "Effective Date": "05/12/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "795822",
+        "Name": "Criteria Management & Research Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "627829",
+    "organisation_name": "Smart Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08704800",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "04/08/2015"
+  },
+  "person_records": {}
 }

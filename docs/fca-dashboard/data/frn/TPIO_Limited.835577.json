@@ -1,9 +1,37 @@
 {
   "frn": 835577,
   "name": "TPIO Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/952841",
+        "RecordSubType": "Full",
+        "Principal FRN": "835577",
+        "Principal Firm Name": "TPIO Limited",
+        "Effective Date": "14/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "952841",
+        "Name": "Stonecross Investment Office Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "835577",
+    "organisation_name": "TPIO Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11625638",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "02/09/2019"
+  },
+  "person_records": {}
 }

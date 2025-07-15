@@ -1,9 +1,39 @@
 {
   "frn": 115248,
   "name": "Hargreaves Lansdown Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205911",
+        "Termination Date": "22/06/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "115248",
+        "Principal Firm Name": "Hargreaves Lansdown Asset Management Limited",
+        "Effective Date": "13/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205911",
+        "Name": "Cambridge Securities Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "115248",
+    "organisation_name": "Hargreaves Lansdown Asset Management Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "01896481",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 966305,
   "name": "Convera UK Financial Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "966305",
+    "organisation_name": "Convera UK Financial Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "13682869",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "22/12/2022"
+  },
+  "person_records": {}
 }

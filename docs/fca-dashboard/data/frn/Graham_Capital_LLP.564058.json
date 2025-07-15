@@ -1,9 +1,21 @@
 {
   "frn": 564058,
   "name": "Graham Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "564058",
+    "organisation_name": "Graham Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC363326",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "24/04/2012"
+  },
+  "person_records": {}
 }

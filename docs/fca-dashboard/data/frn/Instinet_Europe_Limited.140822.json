@@ -1,9 +1,39 @@
 {
   "frn": 140822,
   "name": "Instinet Europe Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456169",
+        "Termination Date": "19/09/2006",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "140822",
+        "Principal Firm Name": "Instinet Europe Limited",
+        "Effective Date": "17/08/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "456169",
+        "Name": "Globeop Financial Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "140822",
+    "organisation_name": "Instinet Europe Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "01915961",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

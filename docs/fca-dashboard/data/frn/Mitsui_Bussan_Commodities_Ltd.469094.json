@@ -1,9 +1,22 @@
 {
   "frn": 469094,
   "name": "Mitsui Bussan Commodities Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "469094",
+    "organisation_name": "Mitsui Bussan Commodities Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04395895",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "01/04/2008"
+  },
+  "person_records": {}
 }

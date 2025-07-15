@@ -1,9 +1,78 @@
 {
   "frn": 705062,
   "name": "AB Investment Solutions Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/955611",
+        "Termination Date": "15/12/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "705062",
+        "Principal Firm Name": "AB Investment Solutions Limited",
+        "Effective Date": "08/07/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "955611",
+        "Name": "Host Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/976529",
+        "Termination Date": "03/04/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "705062",
+        "Principal Firm Name": "AB Investment Solutions Limited",
+        "Effective Date": "27/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "976529",
+        "Name": "Newhampton Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926529",
+        "Termination Date": "07/06/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "705062",
+        "Principal Firm Name": "AB Investment Solutions Limited",
+        "Effective Date": "04/10/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926529",
+        "Name": "Rockhold Investments Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/990035",
+        "Termination Date": "19/09/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "705062",
+        "Principal Firm Name": "AB Investment Solutions Limited",
+        "Effective Date": "16/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "990035",
+        "Name": "Select Investment Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "705062",
+    "organisation_name": "AB Investment Solutions Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09138865",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "04/01/2016"
+  },
+  "person_records": {}
 }

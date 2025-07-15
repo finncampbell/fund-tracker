@@ -1,9 +1,217 @@
 {
   "frn": 451073,
   "name": "Stoneware Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/528117",
+        "Termination Date": "07/09/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "12/09/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "528117",
+        "Name": "A H Loder Advisers Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/601858",
+        "Termination Date": "28/04/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "29/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "601858",
+        "Name": "Agora Private Markets LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/772004",
+        "Termination Date": "15/11/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "20/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "772004",
+        "Name": "Axius Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/690715",
+        "Termination Date": "30/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "30/04/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "690715",
+        "Name": "Belview Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/518899",
+        "Termination Date": "08/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "02/03/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "518899",
+        "Name": "Berora Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/624457",
+        "Termination Date": "02/07/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "30/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "624457",
+        "Name": "Boda Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/620099",
+        "Termination Date": "04/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "01/04/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "620099",
+        "Name": "Burnahyll LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/614763",
+        "Termination Date": "01/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "29/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "614763",
+        "Name": "Clerus LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600433",
+        "Termination Date": "31/07/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "01/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600433",
+        "Name": "Domius Capital Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/777602",
+        "Termination Date": "04/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "16/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "777602",
+        "Name": "Emona Capital LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/620792",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "10/04/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "620792",
+        "Name": "Agora Private Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/988282",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "05/12/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "988282",
+        "Name": "Alpine Capital Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917804",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "04/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917804",
+        "Name": "Fort Bay Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/959535",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "01/10/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "959535",
+        "Name": "LEOR Consulting Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749997",
+        "RecordSubType": "Full",
+        "Principal FRN": "451073",
+        "Principal Firm Name": "Stoneware Capital LLP",
+        "Effective Date": "14/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749997",
+        "Name": "Lime Street Research Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "451073",
+    "organisation_name": "Stoneware Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC319201",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "14/07/2006"
+  },
+  "person_records": {}
 }

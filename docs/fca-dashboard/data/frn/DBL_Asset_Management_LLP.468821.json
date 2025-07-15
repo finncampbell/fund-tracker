@@ -1,9 +1,21 @@
 {
   "frn": 468821,
   "name": "DBL Asset Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "468821",
+    "organisation_name": "DBL Asset Management LLP",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "OC328644",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "06/08/2007"
+  },
+  "person_records": {}
 }

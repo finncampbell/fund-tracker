@@ -1,9 +1,65 @@
 {
   "frn": 182644,
   "name": "Forvis Mazars Financial Planning Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/441536",
+        "Termination Date": "16/02/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "182644",
+        "Principal Firm Name": "Forvis Mazars Financial Planning Limited",
+        "Effective Date": "16/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "441536",
+        "Name": "Mazars Employee Benefits Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/441536",
+        "Termination Date": "03/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "182644",
+        "Principal Firm Name": "Forvis Mazars Financial Planning Limited",
+        "Effective Date": "19/04/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "441536",
+        "Name": "Mazars Employee Benefits Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/807694",
+        "Termination Date": "11/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "182644",
+        "Principal Firm Name": "Forvis Mazars Financial Planning Limited",
+        "Effective Date": "27/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "807694",
+        "Name": "Rowanmoor Consultancy Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "182644",
+    "organisation_name": "Forvis Mazars Financial Planning Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03172233",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

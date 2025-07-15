@@ -1,9 +1,52 @@
 {
   "frn": 116337,
   "name": "SDB Strategic Planners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193070",
+        "Termination Date": "11/08/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "116337",
+        "Principal Firm Name": "SDB Strategic Planners Limited",
+        "Effective Date": "15/08/2000",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "193070",
+        "Name": "Best Returns Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/458301",
+        "Termination Date": "31/12/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "116337",
+        "Principal Firm Name": "SDB Strategic Planners Limited",
+        "Effective Date": "09/10/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "458301",
+        "Name": "SDB Wealth Managers Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "116337",
+    "organisation_name": "SDB Strategic Planners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01849083",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,156 @@
 {
   "frn": 229906,
   "name": "Nexedge Markets Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/609753",
+        "Termination Date": "10/07/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "05/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "609753",
+        "Name": "7Hedge Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/789265",
+        "Termination Date": "13/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "19/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "789265",
+        "Name": "ATOM MARKETS LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/774657",
+        "Termination Date": "03/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "23/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "774657",
+        "Name": "Bondex Markets Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/605735",
+        "Termination Date": "27/01/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "12/08/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "605735",
+        "Name": "Club Rebate Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/757996",
+        "Termination Date": "26/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "19/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "757996",
+        "Name": "COZFX Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/784198",
+        "Termination Date": "12/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "13/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "784198",
+        "Name": "DCM Group Global Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/674716",
+        "Termination Date": "02/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "02/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "674716",
+        "Name": "DMA LINK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/675061",
+        "Termination Date": "29/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "03/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "675061",
+        "Name": "FX World Managed Account Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/786418",
+        "Termination Date": "13/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "10/08/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "786418",
+        "Name": "FXGLK GROUP COMPANY LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/777588",
+        "Termination Date": "04/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "229906",
+        "Principal Firm Name": "Nexedge Markets Ltd",
+        "Effective Date": "27/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "777588",
+        "Name": "GIANT GLOBAL MARKETS LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "229906",
+    "organisation_name": "Nexedge Markets Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04970928",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "28/01/2004"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,142 @@
 {
   "frn": 475069,
   "name": "Clerville Investment Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/602947",
+        "Termination Date": "19/10/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "24/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "602947",
+        "Name": "Bertrand Eugene Fitoussi"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/604359",
+        "Termination Date": "07/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "11/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "604359",
+        "Name": "BNF Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/822171",
+        "Termination Date": "20/05/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "03/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "822171",
+        "Name": "Charles Michael Metcalfe"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/489333",
+        "Termination Date": "03/08/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "25/09/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "489333",
+        "Name": "Francois Monot"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/604126",
+        "Termination Date": "15/02/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "10/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "604126",
+        "Name": "Mr Alain Gaudry"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917979",
+        "Termination Date": "08/11/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "09/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917979",
+        "Name": "Reza Ghodsi"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/808895",
+        "Termination Date": "24/01/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "11/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "808895",
+        "Name": "Simon Marshall-Lockyer"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/809013",
+        "Termination Date": "02/12/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "14/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "809013",
+        "Name": "Spice Capital Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/831115",
+        "RecordSubType": "Full",
+        "Principal FRN": "475069",
+        "Principal Firm Name": "Clerville Investment Management LLP",
+        "Effective Date": "16/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "831115",
+        "Name": "Pamber Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "475069",
+    "organisation_name": "Clerville Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC333739",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "12/03/2008"
+  },
+  "person_records": {}
 }

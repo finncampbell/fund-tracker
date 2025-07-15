@@ -1,9 +1,51 @@
 {
   "frn": 616032,
   "name": "SVK Capital Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812570",
+        "Termination Date": "18/05/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "616032",
+        "Principal Firm Name": "SVK Capital Management Ltd",
+        "Effective Date": "28/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "812570",
+        "Name": "SVK Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806483",
+        "Termination Date": "04/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "616032",
+        "Principal Firm Name": "SVK Capital Management Ltd",
+        "Effective Date": "13/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806483",
+        "Name": "SVK Media Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "616032",
+    "organisation_name": "SVK Capital Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08813195",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "01/07/2014"
+  },
+  "person_records": {}
 }

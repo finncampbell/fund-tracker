@@ -1,9 +1,52 @@
 {
   "frn": 537080,
   "name": "AURA HEXAA LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612859",
+        "Termination Date": "14/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "537080",
+        "Principal Firm Name": "AURA HEXAA LLP",
+        "Effective Date": "07/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "612859",
+        "Name": "Landy Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942409",
+        "Termination Date": "18/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "537080",
+        "Principal Firm Name": "AURA HEXAA LLP",
+        "Effective Date": "06/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942409",
+        "Name": "Tax Efficient Platform Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "537080",
+    "organisation_name": "AURA HEXAA LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC358200",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "01/07/2011"
+  },
+  "person_records": {}
 }

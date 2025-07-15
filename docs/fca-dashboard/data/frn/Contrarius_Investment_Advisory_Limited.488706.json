@@ -1,9 +1,21 @@
 {
   "frn": 488706,
   "name": "Contrarius Investment Advisory Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "488706",
+    "organisation_name": "Contrarius Investment Advisory Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06581705",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "03/12/2008"
+  },
+  "person_records": {}
 }

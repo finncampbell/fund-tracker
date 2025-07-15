@@ -1,9 +1,65 @@
 {
   "frn": 209530,
   "name": "D B Wood Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/990960",
+        "Termination Date": "18/12/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "209530",
+        "Principal Firm Name": "D B Wood Limited",
+        "Effective Date": "01/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "990960",
+        "Name": "Andy Roe Financial Services"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221272",
+        "Termination Date": "30/10/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "209530",
+        "Principal Firm Name": "D B Wood Limited",
+        "Effective Date": "17/07/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "221272",
+        "Name": "C&L Financial Planning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/822191",
+        "Termination Date": "24/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "209530",
+        "Principal Firm Name": "D B Wood Limited",
+        "Effective Date": "03/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "822191",
+        "Name": "RJW Risk Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "209530",
+    "organisation_name": "D B Wood Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04312250",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "16/05/2002"
+  },
+  "person_records": {}
 }

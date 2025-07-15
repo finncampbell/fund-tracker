@@ -1,9 +1,52 @@
 {
   "frn": 401809,
   "name": "HENDERSON ROWE LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/979766",
+        "Termination Date": "31/03/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "401809",
+        "Principal Firm Name": "HENDERSON ROWE LIMITED",
+        "Effective Date": "26/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "979766",
+        "Name": "Ben Alexander Ashby"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/979700",
+        "Termination Date": "31/03/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "401809",
+        "Principal Firm Name": "HENDERSON ROWE LIMITED",
+        "Effective Date": "25/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "979700",
+        "Name": "Calvin Cheuk Lun Man"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "401809",
+    "organisation_name": "HENDERSON ROWE LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04379340",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "03/09/2004"
+  },
+  "person_records": {}
 }

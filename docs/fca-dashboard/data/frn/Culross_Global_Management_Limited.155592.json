@@ -1,9 +1,49 @@
 {
   "frn": 155592,
   "name": "Culross Global Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/949523",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "155592",
+        "Principal Firm Name": "Culross Global Management Limited",
+        "Effective Date": "30/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "949523",
+        "Name": "Byfield Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/835206",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "155592",
+        "Principal Firm Name": "Culross Global Management Limited",
+        "Effective Date": "04/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "835206",
+        "Name": "Culland Capital Advisors Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "155592",
+    "organisation_name": "Culross Global Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02736036",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 786372,
   "name": "Axia Markets Pro Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "786372",
+    "organisation_name": "Axia Markets Pro Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02892233",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "03/01/2018"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,193 @@
 {
   "frn": 603332,
   "name": "Share In Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/830578",
+        "Termination Date": "29/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "11/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "830578",
+        "Name": "Academic Strategy Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/918238",
+        "Termination Date": "13/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "13/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "918238",
+        "Name": "Advisory Direct Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798691",
+        "Termination Date": "16/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "16/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798691",
+        "Name": "Berkeley Rutherford Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/784620",
+        "Termination Date": "22/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "19/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "784620",
+        "Name": "Bonhill Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/792716",
+        "Termination Date": "02/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "30/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "792716",
+        "Name": "Centracap Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/811606",
+        "Termination Date": "10/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "14/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "811606",
+        "Name": "Champerty Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/838588",
+        "Termination Date": "17/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "27/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "838588",
+        "Name": "Co-Lend Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917926",
+        "Termination Date": "13/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "06/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917926",
+        "Name": "Commune Invest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/707804",
+        "Termination Date": "20/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "16/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "707804",
+        "Name": "Crowd With Us Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/656561",
+        "Termination Date": "16/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "03/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "656561",
+        "Name": "Crowdlords Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/776908",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "17/08/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "776908",
+        "Name": "Lendahand Ethex Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/921442",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "20/02/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "921442",
+        "Name": "Qardus Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747022",
+        "RecordSubType": "Full",
+        "Principal FRN": "603332",
+        "Principal Firm Name": "Share In Ltd",
+        "Effective Date": "13/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747022",
+        "Name": "Simple Property Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "603332",
+    "organisation_name": "Share In Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC408803",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "19/06/2014"
+  },
+  "person_records": {}
 }

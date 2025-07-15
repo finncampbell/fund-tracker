@@ -1,9 +1,21 @@
 {
   "frn": 647088,
   "name": "Aerius Associates Advisers LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "647088",
+    "organisation_name": "Aerius Associates Advisers LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC392744",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "02/02/2015"
+  },
+  "person_records": {}
 }

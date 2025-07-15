@@ -1,9 +1,156 @@
 {
   "frn": 173730,
   "name": "CMC Markets UK plc",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/494919",
+        "Termination Date": "13/10/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "21/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "494919",
+        "Name": "32Red Plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/483357",
+        "Termination Date": "15/09/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "15/05/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "483357",
+        "Name": "Cantos Communications Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/480803",
+        "Termination Date": "26/03/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "26/03/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "480803",
+        "Name": "City AM Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/484371",
+        "Termination Date": "08/04/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "16/09/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "484371",
+        "Name": "Clickthemarkets.com.Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/484371",
+        "Termination Date": "28/08/2009",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "09/06/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "484371",
+        "Name": "Clickthemarkets.com.Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/467277",
+        "Termination Date": "24/01/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "30/04/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "467277",
+        "Name": "Digital Look Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/488396",
+        "Termination Date": "06/08/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "04/09/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "488396",
+        "Name": "Equals Money PLC"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/486104",
+        "Termination Date": "17/06/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "15/07/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "486104",
+        "Name": "EquityTrades4u Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/455524",
+        "Termination Date": "02/12/2009",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "12/06/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "455524",
+        "Name": "Express Newspapers"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491742",
+        "Termination Date": "17/06/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "173730",
+        "Principal Firm Name": "CMC Markets UK plc",
+        "Effective Date": "21/11/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "491742",
+        "Name": "Ezeetrader Markets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "173730",
+    "organisation_name": "CMC Markets UK plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02448409",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

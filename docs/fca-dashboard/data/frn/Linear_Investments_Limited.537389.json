@@ -1,9 +1,156 @@
 {
   "frn": 537389,
   "name": "Linear Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/656935",
+        "Termination Date": "16/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "02/12/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "656935",
+        "Name": "A&M Capital Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/602672",
+        "Termination Date": "28/08/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "18/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "602672",
+        "Name": "ACG Advisors (UK) LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710371",
+        "Termination Date": "31/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "16/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710371",
+        "Name": "Alpamayo Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/583611",
+        "Termination Date": "22/08/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "27/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "583611",
+        "Name": "Anglo Dutch Trading Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/670101",
+        "Termination Date": "20/05/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "05/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "670101",
+        "Name": "AQX Capital Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/653794",
+        "Termination Date": "20/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "12/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "653794",
+        "Name": "Arcturus Investment Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/782279",
+        "Termination Date": "29/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "21/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "782279",
+        "Name": "Aria Global Services Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/613242",
+        "Termination Date": "29/02/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "16/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "613242",
+        "Name": "Ashenden Finbro Finance (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/602239",
+        "Termination Date": "23/07/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "05/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "602239",
+        "Name": "Autilla Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/595271",
+        "Termination Date": "02/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "537389",
+        "Principal Firm Name": "Linear Investments Limited",
+        "Effective Date": "01/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "595271",
+        "Name": "Axen Management LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "537389",
+    "organisation_name": "Linear Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07330725",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "09/03/2011"
+  },
+  "person_records": {}
 }

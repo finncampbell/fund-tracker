@@ -1,9 +1,22 @@
 {
   "frn": 806010,
   "name": "Stratos Aviation Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "806010",
+    "organisation_name": "Stratos Aviation Limited",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "08850269",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "01/08/2018"
+  },
+  "person_records": {}
 }

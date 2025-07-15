@@ -1,9 +1,65 @@
 {
   "frn": 534842,
   "name": "Miria Capital Advisors LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/541429",
+        "Termination Date": "03/12/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "534842",
+        "Principal Firm Name": "Miria Capital Advisors LLP",
+        "Effective Date": "14/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "541429",
+        "Name": "Aura Capital Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815773",
+        "Termination Date": "12/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "534842",
+        "Principal Firm Name": "Miria Capital Advisors LLP",
+        "Effective Date": "08/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815773",
+        "Name": "Aura RE Capital Advisors Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/988169",
+        "RecordSubType": "Full",
+        "Principal FRN": "534842",
+        "Principal Firm Name": "Miria Capital Advisors LLP",
+        "Effective Date": "02/12/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "988169",
+        "Name": "Almage Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "534842",
+    "organisation_name": "Miria Capital Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC356931",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "04/01/2011"
+  },
+  "person_records": {}
 }

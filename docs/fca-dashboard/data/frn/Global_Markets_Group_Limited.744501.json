@@ -1,9 +1,39 @@
 {
   "frn": 744501,
   "name": "Global Markets Group Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/781426",
+        "Termination Date": "06/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "744501",
+        "Principal Firm Name": "Global Markets Group Limited",
+        "Effective Date": "12/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "781426",
+        "Name": "X Spot Markets Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "744501",
+    "organisation_name": "Global Markets Group Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09493910",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "12/09/2016"
+  },
+  "person_records": {}
 }

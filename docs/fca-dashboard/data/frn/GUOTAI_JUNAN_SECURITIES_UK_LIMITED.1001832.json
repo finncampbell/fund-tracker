@@ -1,9 +1,128 @@
 {
   "frn": 1001832,
   "name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "IMB01081",
+      "Name": "Ian Malcolm Bernard",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IMB01081"
+    },
+    {
+      "IRN": "JXH02501",
+      "Name": "Jinming Hu",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXH02501"
+    },
+    {
+      "IRN": "YXL00097",
+      "Name": "Yiwei Liu",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXL00097"
+    },
+    {
+      "IRN": "QXT00003",
+      "Name": "QI TANG",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/QXT00003"
+    },
+    {
+      "IRN": "WXH00162",
+      "Name": "WEILI HU",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/WXH00162"
+    },
+    {
+      "IRN": "XXZ00032",
+      "Name": "Xiaoxuan Zhu",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXZ00032"
+    },
+    {
+      "IRN": "YXZ00082",
+      "Name": "Youming ZHENG",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXZ00082"
+    },
+    {
+      "IRN": "XXZ00028",
+      "Name": "xiaohui zhai",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXZ00028"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "IMB01081": [],
+    "JXH02501": [],
+    "YXL00097": [],
+    "QXT00003": [],
+    "WXH00162": [],
+    "XXZ00032": [],
+    "YXZ00082": [],
+    "XXZ00028": []
+  },
+  "metadata": {
+    "frn": "1001832",
+    "organisation_name": "GUOTAI JUNAN SECURITIES (UK) LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14818921",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "07/12/2023"
+  },
+  "person_records": {
+    "IMB01081": {
+      "irn": "IMB01081",
+      "name": "Ian Malcolm Bernard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXH02501": {
+      "irn": "JXH02501",
+      "name": "Jinming Hu",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXL00097": {
+      "irn": "YXL00097",
+      "name": "Yiwei Liu",
+      "status": null,
+      "controlled_functions": null
+    },
+    "QXT00003": {
+      "irn": "QXT00003",
+      "name": "QI TANG",
+      "status": null,
+      "controlled_functions": null
+    },
+    "WXH00162": {
+      "irn": "WXH00162",
+      "name": "WEILI HU",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXZ00032": {
+      "irn": "XXZ00032",
+      "name": "Xiaoxuan Zhu",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXZ00082": {
+      "irn": "YXZ00082",
+      "name": "Youming ZHENG",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXZ00028": {
+      "irn": "XXZ00028",
+      "name": "xiaohui zhai",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

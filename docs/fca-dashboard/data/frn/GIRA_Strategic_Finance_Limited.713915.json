@@ -1,9 +1,168 @@
 {
   "frn": 713915,
   "name": "GIRA Strategic Finance Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/953211",
+        "Termination Date": "24/10/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "19/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "953211",
+        "Name": "Andina Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/919267",
+        "Termination Date": "01/09/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "16/07/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "919267",
+        "Name": "Auctus Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/930365",
+        "Termination Date": "02/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "22/07/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "930365",
+        "Name": "Axelium Capital Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806033",
+        "Termination Date": "01/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "09/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806033",
+        "Name": "Flow Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/913450",
+        "Termination Date": "02/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "13/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "913450",
+        "Name": "Full Circle Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/822046",
+        "Termination Date": "18/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "01/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "822046",
+        "Name": "MON Consulting Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/841994",
+        "Termination Date": "08/02/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "13/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "841994",
+        "Name": "Moonstone Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806642",
+        "Termination Date": "01/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "16/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806642",
+        "Name": "Umbra Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806656",
+        "Termination Date": "06/12/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "16/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806656",
+        "Name": "Umbria Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/799544",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "13/03/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "799544",
+        "Name": "Artha Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/997553",
+        "RecordSubType": "Full",
+        "Principal FRN": "713915",
+        "Principal Firm Name": "GIRA Strategic Finance Limited",
+        "Effective Date": "07/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "997553",
+        "Name": "GKA Advisors LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "713915",
+    "organisation_name": "GIRA Strategic Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02286287",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "30/12/2015"
+  },
+  "person_records": {}
 }

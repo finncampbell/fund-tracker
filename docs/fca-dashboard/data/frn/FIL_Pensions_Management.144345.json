@@ -1,9 +1,39 @@
 {
   "frn": 144345,
   "name": "FIL Pensions Management",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/225972",
+        "Termination Date": "09/08/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "144345",
+        "Principal Firm Name": "FIL Pensions Management",
+        "Effective Date": "30/06/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "225972",
+        "Name": "Fidelity Technology India Private Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "144345",
+    "organisation_name": "FIL Pensions Management",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02015142",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

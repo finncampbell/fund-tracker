@@ -1,9 +1,61 @@
 {
   "frn": 121818,
   "name": "Baillie Gifford Overseas Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728348",
+        "RecordSubType": "Full",
+        "Principal FRN": "121818",
+        "Principal Firm Name": "Baillie Gifford Overseas Limited",
+        "Effective Date": "08/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "728348",
+        "Name": "Baillie Gifford Asia (Hong Kong) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/658926",
+        "RecordSubType": "Full",
+        "Principal FRN": "121818",
+        "Principal Firm Name": "Baillie Gifford Overseas Limited",
+        "Effective Date": "09/12/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "658926",
+        "Name": "Baillie Gifford Funds Services LLC"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/830612",
+        "RecordSubType": "Full",
+        "Principal FRN": "121818",
+        "Principal Firm Name": "Baillie Gifford Overseas Limited",
+        "Effective Date": "11/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "830612",
+        "Name": "Baillie Gifford Investment Management (Europe) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "121818",
+    "organisation_name": "Baillie Gifford Overseas Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC084807",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

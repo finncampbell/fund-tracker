@@ -1,9 +1,38 @@
 {
   "frn": 462967,
   "name": "Helios Investment Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/663659",
+        "Termination Date": "31/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "462967",
+        "Principal Firm Name": "Helios Investment Partners LLP",
+        "Effective Date": "05/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "663659",
+        "Name": "Hattington Investment Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "462967",
+    "organisation_name": "Helios Investment Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC320980",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "03/05/2007"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 193705,
   "name": "Tradeweb Europe Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "193705",
+    "organisation_name": "Tradeweb Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03912826",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

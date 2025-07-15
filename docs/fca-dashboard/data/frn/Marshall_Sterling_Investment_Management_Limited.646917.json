@@ -1,9 +1,78 @@
 {
   "frn": 646917,
   "name": "Marshall Sterling Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/824386",
+        "Termination Date": "02/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "646917",
+        "Principal Firm Name": "Marshall Sterling Investment Management Limited",
+        "Effective Date": "29/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "824386",
+        "Name": "CROWDJET LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790936",
+        "Termination Date": "20/11/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "646917",
+        "Principal Firm Name": "Marshall Sterling Investment Management Limited",
+        "Effective Date": "10/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790936",
+        "Name": "Eurex Multi Assets Exchange"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/924518",
+        "Termination Date": "16/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "646917",
+        "Principal Firm Name": "Marshall Sterling Investment Management Limited",
+        "Effective Date": "16/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "924518",
+        "Name": "Thameside Technology Group"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/780894",
+        "Termination Date": "10/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "646917",
+        "Principal Firm Name": "Marshall Sterling Investment Management Limited",
+        "Effective Date": "16/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "780894",
+        "Name": "WeTrade International Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "646917",
+    "organisation_name": "Marshall Sterling Investment Management Limited",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "09170695",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "15/12/2014"
+  },
+  "person_records": {}
 }

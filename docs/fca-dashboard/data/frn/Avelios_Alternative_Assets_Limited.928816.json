@@ -1,9 +1,37 @@
 {
   "frn": 928816,
   "name": "Avelios Alternative Assets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/996592",
+        "RecordSubType": "Full",
+        "Principal FRN": "928816",
+        "Principal Firm Name": "Avelios Alternative Assets Limited",
+        "Effective Date": "01/05/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "996592",
+        "Name": "ARBRA WEALTH MANAGEMENT LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "928816",
+    "organisation_name": "Avelios Alternative Assets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12178036",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "29/06/2021"
+  },
+  "person_records": {}
 }

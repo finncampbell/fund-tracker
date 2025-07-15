@@ -1,9 +1,38 @@
 {
   "frn": 114493,
   "name": "Chelsea Financial Services Plc",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/624603",
+        "RecordSubType": "Full",
+        "Principal FRN": "114493",
+        "Principal Firm Name": "Chelsea Financial Services Plc",
+        "Effective Date": "01/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "624603",
+        "Name": "FundCalibre Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "114493",
+    "organisation_name": "Chelsea Financial Services Plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01728085",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

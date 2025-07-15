@@ -1,9 +1,22 @@
 {
   "frn": 989311,
   "name": "UniCredit Bank GmbH",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "989311",
+    "organisation_name": "UniCredit Bank GmbH",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR001757",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "07/11/2023"
+  },
+  "person_records": {}
 }

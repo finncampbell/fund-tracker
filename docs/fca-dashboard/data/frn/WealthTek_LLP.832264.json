@@ -1,9 +1,22 @@
 {
   "frn": 832264,
   "name": "WealthTek LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "832264",
+    "organisation_name": "WealthTek LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355200",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "28/01/2020"
+  },
+  "person_records": {}
 }

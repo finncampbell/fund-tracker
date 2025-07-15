@@ -1,9 +1,22 @@
 {
   "frn": 441896,
   "name": "Bain Capital Credit, Ltd.",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "441896",
+    "organisation_name": "Bain Capital Credit, Ltd.",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05512934",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "10/03/2006"
+  },
+  "person_records": {}
 }

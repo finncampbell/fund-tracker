@@ -1,9 +1,156 @@
 {
   "frn": 216704,
   "name": "AFH Independent Financial Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/200500",
+        "Termination Date": "31/07/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "23/12/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "200500",
+        "Name": "AFH Executive Financial Planning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/525254",
+        "Termination Date": "04/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "04/06/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "525254",
+        "Name": "Bloomer Heaven Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/473478",
+        "Termination Date": "12/02/2009",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "03/10/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "473478",
+        "Name": "Brian Potter & Associates Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/574362",
+        "Termination Date": "03/06/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "02/02/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "574362",
+        "Name": "Broomfield & Alexander Wealth Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/493780",
+        "Termination Date": "02/03/2009",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "30/12/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "493780",
+        "Name": "Cherish Financial Services Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/494365",
+        "Termination Date": "09/10/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "09/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "494365",
+        "Name": "Cotswold Financial Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/434915",
+        "Termination Date": "31/03/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "26/04/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "434915",
+        "Name": "Friar Court Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/725533",
+        "Termination Date": "01/11/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "13/11/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "725533",
+        "Name": "FSB Independent Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/479107",
+        "Termination Date": "18/08/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "15/02/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "479107",
+        "Name": "G.R. Brickstock & Associates Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/453364",
+        "Termination Date": "17/09/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "216704",
+        "Principal Firm Name": "AFH Independent Financial Services Limited",
+        "Effective Date": "14/06/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "453364",
+        "Name": "Groucott Moor Financial Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "216704",
+    "organisation_name": "AFH Independent Financial Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04049180",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "02/12/2002"
+  },
+  "person_records": {}
 }

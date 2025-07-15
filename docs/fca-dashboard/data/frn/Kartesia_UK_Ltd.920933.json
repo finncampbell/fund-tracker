@@ -1,9 +1,52 @@
 {
   "frn": 920933,
   "name": "Kartesia UK Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/529918",
+        "Termination Date": "01/04/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "920933",
+        "Principal Firm Name": "Kartesia UK Ltd",
+        "Effective Date": "18/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "529918",
+        "Name": "LFGAC Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/767646",
+        "Termination Date": "20/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "920933",
+        "Principal Firm Name": "Kartesia UK Ltd",
+        "Effective Date": "18/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "767646",
+        "Name": "Vale Advisors Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "920933",
+    "organisation_name": "Kartesia UK Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11924749",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "06/08/2020"
+  },
+  "person_records": {}
 }

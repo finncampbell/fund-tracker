@@ -1,9 +1,64 @@
 {
   "frn": 467283,
   "name": "Westhall Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/594428",
+        "Termination Date": "19/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "467283",
+        "Principal Firm Name": "Westhall Partners LLP",
+        "Effective Date": "24/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "594428",
+        "Name": "Cresta Westhall LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/594616",
+        "Termination Date": "19/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "467283",
+        "Principal Firm Name": "Westhall Partners LLP",
+        "Effective Date": "18/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "594616",
+        "Name": "Westhall Alternatives Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/594448",
+        "Termination Date": "19/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "467283",
+        "Principal Firm Name": "Westhall Partners LLP",
+        "Effective Date": "17/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "594448",
+        "Name": "Westhall Research Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "467283",
+    "organisation_name": "Westhall Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC325646",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "27/06/2007"
+  },
+  "person_records": {}
 }

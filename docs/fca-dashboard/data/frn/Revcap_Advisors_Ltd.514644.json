@@ -1,9 +1,21 @@
 {
   "frn": 514644,
   "name": "Revcap Advisors Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "514644",
+    "organisation_name": "Revcap Advisors Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07211394",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "14/06/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,117 @@
 {
   "frn": 196124,
   "name": "Trevally Capital Advisers Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771995",
+        "Termination Date": "30/06/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "20/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771995",
+        "Name": "Albany Investment Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/793321",
+        "Termination Date": "03/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "03/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "793321",
+        "Name": "Dot Matrix Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/732868",
+        "Termination Date": "11/12/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "31/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "732868",
+        "Name": "ELSTON ADVISORY LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/731176",
+        "Termination Date": "01/11/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "09/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "731176",
+        "Name": "Growthdeck Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771994",
+        "Termination Date": "13/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "20/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771994",
+        "Name": "Nash Private Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/820232",
+        "Termination Date": "30/09/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "05/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "820232",
+        "Name": "STONE WELCH CUNNINGHAM LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/824726",
+        "RecordSubType": "Full",
+        "Principal FRN": "196124",
+        "Principal Firm Name": "Trevally Capital Advisers Ltd",
+        "Effective Date": "01/11/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "824726",
+        "Name": "Bradda Capital Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "196124",
+    "organisation_name": "Trevally Capital Advisers Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04001724",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

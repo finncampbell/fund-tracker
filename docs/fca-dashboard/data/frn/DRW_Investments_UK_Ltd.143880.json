@@ -1,9 +1,22 @@
 {
   "frn": 143880,
   "name": "DRW Investments (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "143880",
+    "organisation_name": "DRW Investments (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02329842",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

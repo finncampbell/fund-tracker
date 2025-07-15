@@ -1,9 +1,21 @@
 {
   "frn": 544237,
   "name": "SECOR Investment Advisors (UK) LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "544237",
+    "organisation_name": "SECOR Investment Advisors (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC357067",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "04/07/2011"
+  },
+  "person_records": {}
 }

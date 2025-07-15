@@ -1,9 +1,91 @@
 {
   "frn": 647122,
   "name": "Accredo Financial Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/811378",
+        "Termination Date": "09/02/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "647122",
+        "Principal Firm Name": "Accredo Financial Services Limited",
+        "Effective Date": "12/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "811378",
+        "Name": "Albemarle and Company Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/914405",
+        "Termination Date": "17/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "647122",
+        "Principal Firm Name": "Accredo Financial Services Limited",
+        "Effective Date": "02/10/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "914405",
+        "Name": "Cairn Capital Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/927310",
+        "Termination Date": "21/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "647122",
+        "Principal Firm Name": "Accredo Financial Services Limited",
+        "Effective Date": "04/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "927310",
+        "Name": "Fiduciary Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/922489",
+        "Termination Date": "03/05/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "647122",
+        "Principal Firm Name": "Accredo Financial Services Limited",
+        "Effective Date": "10/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "922489",
+        "Name": "Lombard Capital Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812074",
+        "Termination Date": "05/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "647122",
+        "Principal Firm Name": "Accredo Financial Services Limited",
+        "Effective Date": "21/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "812074",
+        "Name": "Oxford Capital Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "647122",
+    "organisation_name": "Accredo Financial Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09175326",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "01/04/2015"
+  },
+  "person_records": {}
 }

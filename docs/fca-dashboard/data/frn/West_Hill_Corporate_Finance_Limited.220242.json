@@ -1,9 +1,64 @@
 {
   "frn": 220242,
   "name": "West Hill Corporate Finance Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/556523",
+        "Termination Date": "19/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "220242",
+        "Principal Firm Name": "West Hill Corporate Finance Limited",
+        "Effective Date": "20/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "556523",
+        "Name": "Finaxiom LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/556508",
+        "Termination Date": "19/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "220242",
+        "Principal Firm Name": "West Hill Corporate Finance Limited",
+        "Effective Date": "20/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "556508",
+        "Name": "Finaxiom Shareef LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612467",
+        "RecordSubType": "Full",
+        "Principal FRN": "220242",
+        "Principal Firm Name": "West Hill Corporate Finance Limited",
+        "Effective Date": "30/12/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "612467",
+        "Name": "West Hill Capital LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "220242",
+    "organisation_name": "West Hill Corporate Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04529986",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "14/04/2003"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 629630,
   "name": "Alken Asset Management Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "629630",
+    "organisation_name": "Alken Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09071203",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "14/11/2014"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 121779,
   "name": "Franklin Templeton Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/574451",
+        "Termination Date": "05/04/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "121779",
+        "Principal Firm Name": "Franklin Templeton Investment Management Limited",
+        "Effective Date": "03/02/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "574451",
+        "Name": "CES Investments Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "121779",
+    "organisation_name": "Franklin Templeton Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01902009",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

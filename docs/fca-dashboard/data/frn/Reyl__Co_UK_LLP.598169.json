@@ -1,9 +1,51 @@
 {
   "frn": 598169,
   "name": "Reyl & Co (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/663044",
+        "Termination Date": "04/03/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "598169",
+        "Principal Firm Name": "Reyl & Co (UK) LLP",
+        "Effective Date": "30/12/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "663044",
+        "Name": "RAM Active Investments (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/933198",
+        "Termination Date": "09/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "598169",
+        "Principal Firm Name": "Reyl & Co (UK) LLP",
+        "Effective Date": "01/09/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "933198",
+        "Name": "RSF CAPITAL PARTNERS LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "598169",
+    "organisation_name": "Reyl & Co (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC380472",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "11/07/2013"
+  },
+  "person_records": {}
 }

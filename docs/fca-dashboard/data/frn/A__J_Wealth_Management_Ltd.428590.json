@@ -1,9 +1,22 @@
 {
   "frn": 428590,
   "name": "A & J Wealth Management Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "428590",
+    "organisation_name": "A & J Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05105933",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "04/10/2005"
+  },
+  "person_records": {}
 }

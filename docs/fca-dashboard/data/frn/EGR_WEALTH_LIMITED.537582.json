@@ -1,9 +1,65 @@
 {
   "frn": 537582,
   "name": "EGR WEALTH LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/821723",
+        "Termination Date": "28/03/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "537582",
+        "Principal Firm Name": "EGR WEALTH LIMITED",
+        "Effective Date": "26/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "821723",
+        "Name": "Egremont Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/759600",
+        "Termination Date": "11/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "537582",
+        "Principal Firm Name": "EGR WEALTH LIMITED",
+        "Effective Date": "30/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "759600",
+        "Name": "Exeter Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771325",
+        "Termination Date": "19/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "537582",
+        "Principal Firm Name": "EGR WEALTH LIMITED",
+        "Effective Date": "09/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771325",
+        "Name": "Parkmoore Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "537582",
+    "organisation_name": "EGR WEALTH LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07443787",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "01/12/2011"
+  },
+  "person_records": {}
 }

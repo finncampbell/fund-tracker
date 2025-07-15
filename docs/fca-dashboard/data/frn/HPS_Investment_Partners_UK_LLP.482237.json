@@ -1,9 +1,38 @@
 {
   "frn": 482237,
   "name": "HPS Investment Partners (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942169",
+        "RecordSubType": "Full",
+        "Principal FRN": "482237",
+        "Principal Firm Name": "HPS Investment Partners (UK) LLP",
+        "Effective Date": "02/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942169",
+        "Name": "HPS Investment Partners, LLC (UK Branch)"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "482237",
+    "organisation_name": "HPS Investment Partners (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC333558",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "21/08/2008"
+  },
+  "person_records": {}
 }

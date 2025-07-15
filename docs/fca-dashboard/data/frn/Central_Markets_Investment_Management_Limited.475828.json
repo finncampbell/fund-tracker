@@ -1,9 +1,78 @@
 {
   "frn": 475828,
   "name": "Central Markets Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592788",
+        "Termination Date": "22/12/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "475828",
+        "Principal Firm Name": "Central Markets Investment Management Limited",
+        "Effective Date": "12/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "592788",
+        "Name": "Alternative Investment Initiatives Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/561993",
+        "Termination Date": "12/11/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "475828",
+        "Principal Firm Name": "Central Markets Investment Management Limited",
+        "Effective Date": "11/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "561993",
+        "Name": "PIA - First Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591182",
+        "Termination Date": "04/04/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "475828",
+        "Principal Firm Name": "Central Markets Investment Management Limited",
+        "Effective Date": "14/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591182",
+        "Name": "PIA-First Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616584",
+        "Termination Date": "19/11/2014",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475828",
+        "Principal Firm Name": "Central Markets Investment Management Limited",
+        "Effective Date": "04/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616584",
+        "Name": "Primo Asset Management SARL"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "475828",
+    "organisation_name": "Central Markets Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06082865",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "02/01/2008"
+  },
+  "person_records": {}
 }

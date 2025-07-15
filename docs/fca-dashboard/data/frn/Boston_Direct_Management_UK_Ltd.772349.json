@@ -1,9 +1,43 @@
 {
   "frn": 772349,
   "name": "Boston Direct Management (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "JMV00001",
+      "Name": "Jason Mark Vincent",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JMV00001"
+    },
+    {
+      "IRN": "JMV00001",
+      "Name": "Jason Mark Vincent",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JMV00001"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "JMV00001": []
+  },
+  "metadata": {
+    "frn": "772349",
+    "organisation_name": "Boston Direct Management (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05464047",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "12/07/2017"
+  },
+  "person_records": {
+    "JMV00001": {
+      "irn": "JMV00001",
+      "name": "Jason Mark Vincent",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

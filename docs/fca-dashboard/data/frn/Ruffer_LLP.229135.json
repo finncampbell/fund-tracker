@@ -1,9 +1,21 @@
 {
   "frn": 229135,
   "name": "Ruffer LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "229135",
+    "organisation_name": "Ruffer LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC305288",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "02/04/2004"
+  },
+  "person_records": {}
 }

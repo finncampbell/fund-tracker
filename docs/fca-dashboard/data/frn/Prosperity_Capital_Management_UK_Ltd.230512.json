@@ -1,9 +1,21 @@
 {
   "frn": 230512,
   "name": "Prosperity Capital Management (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "230512",
+    "organisation_name": "Prosperity Capital Management (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04959887",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "26/05/2004"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 471207,
   "name": "Hedley & Company Stockbrokers Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/551785",
+        "Termination Date": "23/01/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "471207",
+        "Principal Firm Name": "Hedley & Company Stockbrokers Limited",
+        "Effective Date": "24/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "551785",
+        "Name": "Seneca Asset Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "471207",
+    "organisation_name": "Hedley & Company Stockbrokers Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06355300",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "26/10/2007"
+  },
+  "person_records": {}
 }

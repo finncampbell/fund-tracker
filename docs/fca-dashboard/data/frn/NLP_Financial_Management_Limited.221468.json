@@ -1,9 +1,65 @@
 {
   "frn": 221468,
   "name": "NLP Financial Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612210",
+        "Termination Date": "22/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "221468",
+        "Principal Firm Name": "NLP Financial Management Limited",
+        "Effective Date": "23/12/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "612210",
+        "Name": "Get Dental Plans Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612205",
+        "Termination Date": "08/05/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "221468",
+        "Principal Firm Name": "NLP Financial Management Limited",
+        "Effective Date": "23/12/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "612205",
+        "Name": "Get Private Individual Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231893",
+        "Termination Date": "13/05/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "221468",
+        "Principal Firm Name": "NLP Financial Management Limited",
+        "Effective Date": "13/06/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "231893",
+        "Name": "Get Private Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "221468",
+    "organisation_name": "NLP Financial Management Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "04339336",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "01/04/2003"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 710855,
   "name": "Aurium Capital UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "710855",
+    "organisation_name": "Aurium Capital UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09581184",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "04/04/2016"
+  },
+  "person_records": {}
 }

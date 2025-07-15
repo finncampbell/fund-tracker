@@ -1,9 +1,21 @@
 {
   "frn": 596682,
   "name": "Cambridge Mercantile Risk Management (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "596682",
+    "organisation_name": "Cambridge Mercantile Risk Management (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08363276",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "10/02/2014"
+  },
+  "person_records": {}
 }

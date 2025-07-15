@@ -1,9 +1,39 @@
 {
   "frn": 150000,
   "name": "Hermes Investment Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/547678",
+        "Termination Date": "28/02/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "150000",
+        "Principal Firm Name": "Hermes Investment Management Ltd",
+        "Effective Date": "19/04/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "547678",
+        "Name": "i2i Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "150000",
+    "organisation_name": "Hermes Investment Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02466043",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

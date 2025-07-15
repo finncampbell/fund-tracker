@@ -1,9 +1,117 @@
 {
   "frn": 442767,
   "name": "Marex Financial",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/447737",
+        "Termination Date": "15/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "06/02/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "447737",
+        "Name": "Delphi Derivatives Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/625570",
+        "Termination Date": "05/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "12/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "625570",
+        "Name": "Domex Invest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/572745",
+        "Termination Date": "31/03/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "04/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "572745",
+        "Name": "Elpis Derivatives Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/572745",
+        "Termination Date": "31/03/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "13/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "572745",
+        "Name": "Elpis Derivatives Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610589",
+        "Termination Date": "11/07/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "20/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610589",
+        "Name": "JVA Brokers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/471392",
+        "Termination Date": "21/03/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "09/08/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "471392",
+        "Name": "Manro Haydan Brokers Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/453023",
+        "Termination Date": "30/06/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "442767",
+        "Principal Firm Name": "Marex Financial",
+        "Effective Date": "08/06/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "453023",
+        "Name": "Trafalgar Commodities Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "442767",
+    "organisation_name": "Marex Financial",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05613061",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "13/01/2006"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,51 @@
 {
   "frn": 532447,
   "name": "Eme Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/672897",
+        "Termination Date": "15/08/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "532447",
+        "Principal Firm Name": "Eme Capital LLP",
+        "Effective Date": "20/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "672897",
+        "Name": "Cantara Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805781",
+        "RecordSubType": "Full",
+        "Principal FRN": "532447",
+        "Principal Firm Name": "Eme Capital LLP",
+        "Effective Date": "05/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805781",
+        "Name": "GCR Partners Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "532447",
+    "organisation_name": "Eme Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355115",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "06/01/2011"
+  },
+  "person_records": {}
 }

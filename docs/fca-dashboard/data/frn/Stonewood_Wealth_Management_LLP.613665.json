@@ -1,9 +1,39 @@
 {
   "frn": 613665,
   "name": "Stonewood Wealth Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798210",
+        "Termination Date": "29/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "613665",
+        "Principal Firm Name": "Stonewood Wealth Management LLP",
+        "Effective Date": "09/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798210",
+        "Name": "Galilei Investment Office LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "613665",
+    "organisation_name": "Stonewood Wealth Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC389370",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "19/09/2014"
+  },
+  "person_records": {}
 }

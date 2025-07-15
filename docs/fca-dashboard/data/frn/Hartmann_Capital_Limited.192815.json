@@ -1,9 +1,78 @@
 {
   "frn": 192815,
   "name": "Hartmann Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/429365",
+        "Termination Date": "13/04/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "192815",
+        "Principal Firm Name": "Hartmann Capital Limited",
+        "Effective Date": "10/03/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "429365",
+        "Name": "Ascent Finance Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/505260",
+        "Termination Date": "31/01/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "192815",
+        "Principal Firm Name": "Hartmann Capital Limited",
+        "Effective Date": "18/08/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "505260",
+        "Name": "AU Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472341",
+        "Termination Date": "08/02/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "192815",
+        "Principal Firm Name": "Hartmann Capital Limited",
+        "Effective Date": "30/11/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "472341",
+        "Name": "Netrent Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/490982",
+        "Termination Date": "21/11/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "192815",
+        "Principal Firm Name": "Hartmann Capital Limited",
+        "Effective Date": "03/11/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "490982",
+        "Name": "OPM Securities Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "192815",
+    "organisation_name": "Hartmann Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03918455",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

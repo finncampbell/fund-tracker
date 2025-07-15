@@ -1,9 +1,90 @@
 {
   "frn": 179392,
   "name": "Emergent Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/499871",
+        "Termination Date": "06/06/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "179392",
+        "Principal Firm Name": "Emergent Asset Management Limited",
+        "Effective Date": "23/04/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "499871",
+        "Name": "Claydon Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/606164",
+        "Termination Date": "11/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "179392",
+        "Principal Firm Name": "Emergent Asset Management Limited",
+        "Effective Date": "20/08/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "606164",
+        "Name": "Donald Iain Alasdair Mackinnon"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716562",
+        "Termination Date": "11/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "179392",
+        "Principal Firm Name": "Emergent Asset Management Limited",
+        "Effective Date": "14/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716562",
+        "Name": "Emergent Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/601034",
+        "Termination Date": "11/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "179392",
+        "Principal Firm Name": "Emergent Asset Management Limited",
+        "Effective Date": "15/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "601034",
+        "Name": "Lakestar Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/670579",
+        "Termination Date": "11/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "179392",
+        "Principal Firm Name": "Emergent Asset Management Limited",
+        "Effective Date": "09/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "670579",
+        "Name": "Richard Thwaites Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "179392",
+    "organisation_name": "Emergent Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03126825",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

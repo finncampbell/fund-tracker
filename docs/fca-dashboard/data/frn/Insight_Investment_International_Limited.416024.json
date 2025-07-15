@@ -1,9 +1,52 @@
 {
   "frn": 416024,
   "name": "Insight Investment International Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/448112",
+        "Termination Date": "28/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "416024",
+        "Principal Firm Name": "Insight Investment International Limited",
+        "Effective Date": "13/02/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "448112",
+        "Name": "Pareto Australia Pty Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/448110",
+        "Termination Date": "28/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "416024",
+        "Principal Firm Name": "Insight Investment International Limited",
+        "Effective Date": "13/02/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "448110",
+        "Name": "Pareto New York LLC"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "416024",
+    "organisation_name": "Insight Investment International Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03169281",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "01/06/2005"
+  },
+  "person_records": {}
 }

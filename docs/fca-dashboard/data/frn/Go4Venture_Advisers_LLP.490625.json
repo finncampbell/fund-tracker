@@ -1,9 +1,51 @@
 {
   "frn": 490625,
   "name": "Go4Venture Advisers LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/714977",
+        "Termination Date": "28/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "490625",
+        "Principal Firm Name": "Go4Venture Advisers LLP",
+        "Effective Date": "25/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "714977",
+        "Name": "Go4Venture Hub Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748037",
+        "Termination Date": "01/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "490625",
+        "Principal Firm Name": "Go4Venture Advisers LLP",
+        "Effective Date": "25/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "748037",
+        "Name": "Maycoutt Investors Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "490625",
+    "organisation_name": "Go4Venture Advisers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC336611",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "05/05/2009"
+  },
+  "person_records": {}
 }

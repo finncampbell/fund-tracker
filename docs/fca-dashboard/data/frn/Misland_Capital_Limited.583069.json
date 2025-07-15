@@ -1,9 +1,327 @@
 {
   "frn": 583069,
   "name": "Misland Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "ANJ01022",
+      "Name": "Andrea Nora Catherine Johnson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ANJ01022"
+    },
+    {
+      "IRN": "IPB01028",
+      "Name": "Ian Peter Buchanan",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IPB01028"
+    },
+    {
+      "IRN": "OJP00001",
+      "Name": "Oliver John Prodhan",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OJP00001"
+    },
+    {
+      "IRN": "GBS01028",
+      "Name": "Gareth Bryant Stingemore",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GBS01028"
+    },
+    {
+      "IRN": "MEP01087",
+      "Name": "Michael Edward Power",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MEP01087"
+    },
+    {
+      "IRN": "TXG00036",
+      "Name": "Thomas Gavin",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXG00036"
+    },
+    {
+      "IRN": "JXC00769",
+      "Name": "James Phillip Cheng",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXC00769"
+    },
+    {
+      "IRN": "OXB00095",
+      "Name": "Oliver Bassett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXB00095"
+    },
+    {
+      "IRN": "SSK01050",
+      "Name": "Sanjit Singh Khuman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SSK01050"
+    },
+    {
+      "IRN": "AXM05335",
+      "Name": "Alastair Millar",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM05335"
+    },
+    {
+      "IRN": "KXE08282",
+      "Name": "Katie Elkins",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXE08282"
+    },
+    {
+      "IRN": "HXD00229",
+      "Name": "Hugo De Vries",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXD00229"
+    },
+    {
+      "IRN": "PDR01091",
+      "Name": "Peter Drummond Rochow",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PDR01091"
+    },
+    {
+      "IRN": "ANJ01022",
+      "Name": "Andrea Nora Catherine Johnson",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ANJ01022"
+    },
+    {
+      "IRN": "IPB01028",
+      "Name": "Ian Peter Buchanan",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IPB01028"
+    },
+    {
+      "IRN": "OJP00001",
+      "Name": "Oliver John Prodhan",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OJP00001"
+    },
+    {
+      "IRN": "MEP01087",
+      "Name": "Michael Edward Power",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MEP01087"
+    },
+    {
+      "IRN": "GBS01028",
+      "Name": "Gareth Bryant Stingemore",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GBS01028"
+    },
+    {
+      "IRN": "KSO01002",
+      "Name": "Karen Suzanne O'Mahony",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KSO01002"
+    },
+    {
+      "IRN": "EJM01120",
+      "Name": "Enda James McKenna",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EJM01120"
+    },
+    {
+      "IRN": "GCB01049",
+      "Name": "Gareth Clive Edward Boardman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GCB01049"
+    },
+    {
+      "IRN": "AKG01020",
+      "Name": "Alexander Kim Godwin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AKG01020"
+    },
+    {
+      "IRN": "FJC01052",
+      "Name": "Frank John Cooke",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FJC01052"
+    },
+    {
+      "IRN": "DXV01088",
+      "Name": "Diana Vitkova",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXV01088"
+    },
+    {
+      "IRN": "SXF01552",
+      "Name": "Sarah-Jane Fallon",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXF01552"
+    },
+    {
+      "IRN": "AHG01048",
+      "Name": "Alexander Harold Samuel Green",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AHG01048"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "ANJ01022": [],
+    "IPB01028": [],
+    "OJP00001": [],
+    "GBS01028": [],
+    "MEP01087": [],
+    "TXG00036": [],
+    "JXC00769": [],
+    "OXB00095": [],
+    "SSK01050": [],
+    "AXM05335": [],
+    "KXE08282": [],
+    "HXD00229": [],
+    "PDR01091": [],
+    "KSO01002": [],
+    "EJM01120": [],
+    "GCB01049": [],
+    "AKG01020": [],
+    "FJC01052": [],
+    "DXV01088": [],
+    "SXF01552": [],
+    "AHG01048": []
+  },
+  "metadata": {
+    "frn": "583069",
+    "organisation_name": "Misland Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07433118",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "13/09/2012"
+  },
+  "person_records": {
+    "ANJ01022": {
+      "irn": "ANJ01022",
+      "name": "Andrea Nora Catherine Johnson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IPB01028": {
+      "irn": "IPB01028",
+      "name": "Ian Peter Buchanan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OJP00001": {
+      "irn": "OJP00001",
+      "name": "Oliver John Prodhan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GBS01028": {
+      "irn": "GBS01028",
+      "name": "Gareth Bryant Stingemore",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MEP01087": {
+      "irn": "MEP01087",
+      "name": "Michael Edward Power",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXG00036": {
+      "irn": "TXG00036",
+      "name": "Thomas Gavin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXC00769": {
+      "irn": "JXC00769",
+      "name": "James Phillip Cheng",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXB00095": {
+      "irn": "OXB00095",
+      "name": "Oliver Bassett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SSK01050": {
+      "irn": "SSK01050",
+      "name": "Sanjit Singh Khuman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM05335": {
+      "irn": "AXM05335",
+      "name": "Alastair Millar",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXE08282": {
+      "irn": "KXE08282",
+      "name": "Katie Elkins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXD00229": {
+      "irn": "HXD00229",
+      "name": "Hugo De Vries",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PDR01091": {
+      "irn": "PDR01091",
+      "name": "Peter Drummond Rochow",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KSO01002": {
+      "irn": "KSO01002",
+      "name": "Karen Suzanne O'Mahony",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EJM01120": {
+      "irn": "EJM01120",
+      "name": "Enda James McKenna",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GCB01049": {
+      "irn": "GCB01049",
+      "name": "Gareth Clive Edward Boardman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AKG01020": {
+      "irn": "AKG01020",
+      "name": "Alexander Kim Godwin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FJC01052": {
+      "irn": "FJC01052",
+      "name": "Frank John Cooke",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXV01088": {
+      "irn": "DXV01088",
+      "name": "Diana Vitkova",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXF01552": {
+      "irn": "SXF01552",
+      "name": "Sarah-Jane Fallon",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AHG01048": {
+      "irn": "AHG01048",
+      "name": "Alexander Harold Samuel Green",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

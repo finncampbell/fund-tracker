@@ -1,9 +1,91 @@
 {
   "frn": 560872,
   "name": "AFX Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790278",
+        "Termination Date": "12/07/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "560872",
+        "Principal Firm Name": "AFX Markets Limited",
+        "Effective Date": "03/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790278",
+        "Name": "Advantage Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/793435",
+        "Termination Date": "09/08/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "560872",
+        "Principal Firm Name": "AFX Markets Limited",
+        "Effective Date": "06/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "793435",
+        "Name": "ICE CASTLE LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/779519",
+        "Termination Date": "08/08/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "560872",
+        "Principal Firm Name": "AFX Markets Limited",
+        "Effective Date": "22/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "779519",
+        "Name": "MFP Trading Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591335",
+        "Termination Date": "13/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "560872",
+        "Principal Firm Name": "AFX Markets Limited",
+        "Effective Date": "29/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591335",
+        "Name": "TopTradr Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813472",
+        "Termination Date": "15/08/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "560872",
+        "Principal Firm Name": "AFX Markets Limited",
+        "Effective Date": "10/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "813472",
+        "Name": "WB Markets limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "560872",
+    "organisation_name": "AFX Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07612002",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "15/05/2012"
+  },
+  "person_records": {}
 }

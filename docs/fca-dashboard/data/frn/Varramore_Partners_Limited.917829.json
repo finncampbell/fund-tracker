@@ -1,9 +1,212 @@
 {
   "frn": 917829,
   "name": "Varramore Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/959019",
+        "Termination Date": "31/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "27/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "959019",
+        "Name": "ADG Verto Advisers LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/983926",
+        "Termination Date": "30/05/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "14/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "983926",
+        "Name": "Bluesquare and Associates Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/837403",
+        "Termination Date": "16/04/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "18/09/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "837403",
+        "Name": "Consilience Group Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/958543",
+        "Termination Date": "31/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "16/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "958543",
+        "Name": "SSBelbo Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/946165",
+        "Termination Date": "07/04/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "03/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "946165",
+        "Name": "Sustainable Investing LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/767101",
+        "Termination Date": "30/11/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "26/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "767101",
+        "Name": "Welbeck Ventures Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/946297",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "04/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "946297",
+        "Name": "Capital Code Group Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/992038",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "17/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "992038",
+        "Name": "ImpactA Global Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1014933",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "26/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1014933",
+        "Name": "InnovateX Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/987745",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "25/11/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "987745",
+        "Name": "Matrixport Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1022965",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "22/11/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1022965",
+        "Name": "New World Corporate Finance Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1019385",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "17/10/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1019385",
+        "Name": "Oros Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972209",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "16/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972209",
+        "Name": "Recode Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/999568",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "12/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "999568",
+        "Name": "Sarnia Asset Management (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627320",
+        "RecordSubType": "Full",
+        "Principal FRN": "917829",
+        "Principal Firm Name": "Varramore Partners Limited",
+        "Effective Date": "27/09/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627320",
+        "Name": "TLG Capital Investments LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "917829",
+    "organisation_name": "Varramore Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09951961",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "03/08/2020"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,557 @@
 {
   "frn": 1001689,
   "name": "Arrow Energy Markets (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "RAR01094",
+      "Name": "Ross Anthony Revell",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RAR01094"
+    },
+    {
+      "IRN": "MXK00650",
+      "Name": "Mark Knight",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK00650"
+    },
+    {
+      "IRN": "JJS01150",
+      "Name": "James Snow",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JJS01150"
+    },
+    {
+      "IRN": "JGP01053",
+      "Name": "Jeremy George Palin",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JGP01053"
+    },
+    {
+      "IRN": "JXW02135",
+      "Name": "Jack Wallis",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW02135"
+    },
+    {
+      "IRN": "AXG02287",
+      "Name": "Alvaro Garay",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXG02287"
+    },
+    {
+      "IRN": "JXB14802",
+      "Name": "Josef Barnett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB14802"
+    },
+    {
+      "IRN": "RXO00168",
+      "Name": "Ralph Oueiss",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXO00168"
+    },
+    {
+      "IRN": "NXS00471",
+      "Name": "Nicolas William Spicer",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXS00471"
+    },
+    {
+      "IRN": "LXM00731",
+      "Name": "Leo Mabb",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXM00731"
+    },
+    {
+      "IRN": "MPW01118",
+      "Name": "Matthew Wedlake",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPW01118"
+    },
+    {
+      "IRN": "BXL00089",
+      "Name": "Benjamin Lancaster",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXL00089"
+    },
+    {
+      "IRN": "DJG01119",
+      "Name": "Daniel James Green",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJG01119"
+    },
+    {
+      "IRN": "RXC01643",
+      "Name": "Romain Chautard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXC01643"
+    },
+    {
+      "IRN": "TEN01012",
+      "Name": "Thomas Newman Sanders",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TEN01012"
+    },
+    {
+      "IRN": "JXC02658",
+      "Name": "Joshua Callaghan Sloane",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXC02658"
+    },
+    {
+      "IRN": "SPK01080",
+      "Name": "Steven Knight",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SPK01080"
+    },
+    {
+      "IRN": "BXR00246",
+      "Name": "Benjamin Robinson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXR00246"
+    },
+    {
+      "IRN": "AXM05452",
+      "Name": "Angus McCurdie",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM05452"
+    },
+    {
+      "IRN": "HXB00372",
+      "Name": "Harrison Blake",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXB00372"
+    },
+    {
+      "IRN": "DXA01488",
+      "Name": "DAVID AUINGER",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXA01488"
+    },
+    {
+      "IRN": "ZXL00052",
+      "Name": "Zhengyu Lin",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ZXL00052"
+    },
+    {
+      "IRN": "TXB00631",
+      "Name": "Tom Brodie",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXB00631"
+    },
+    {
+      "IRN": "EJN01019",
+      "Name": "Elliott Nelson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EJN01019"
+    },
+    {
+      "IRN": "AOC01001",
+      "Name": "Alexander Oliver Cuchet",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AOC01001"
+    },
+    {
+      "IRN": "EXS00421",
+      "Name": "Eluned Circe Clementine Start",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXS00421"
+    },
+    {
+      "IRN": "JXM04234",
+      "Name": "Joseph Macgregor",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXM04234"
+    },
+    {
+      "IRN": "MED01071",
+      "Name": "Michael, Edward Delaney",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MED01071"
+    },
+    {
+      "IRN": "CXN12448",
+      "Name": "Christian Needham",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXN12448"
+    },
+    {
+      "IRN": "JXW01235",
+      "Name": "Joseph Digby Walsh",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW01235"
+    },
+    {
+      "IRN": "GXM00746",
+      "Name": "Giles Ingram Matthey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXM00746"
+    },
+    {
+      "IRN": "RXD14847",
+      "Name": "Richard Doughty",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXD14847"
+    },
+    {
+      "IRN": "JPM01143",
+      "Name": "Joseph Paul Michaels",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPM01143"
+    },
+    {
+      "IRN": "NXM00578",
+      "Name": "Nojitha Mandawala",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXM00578"
+    },
+    {
+      "IRN": "JAF01169",
+      "Name": "Joshua Arthur Fullam",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JAF01169"
+    },
+    {
+      "IRN": "TXP01310",
+      "Name": "Thomas Parker",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXP01310"
+    },
+    {
+      "IRN": "RXP70626",
+      "Name": "Rufus James Hardy Parsons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXP70626"
+    },
+    {
+      "IRN": "NMB01051",
+      "Name": "Nicholas Martin Ball",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NMB01051"
+    },
+    {
+      "IRN": "LXJ00112",
+      "Name": "Lewis Jones",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXJ00112"
+    },
+    {
+      "IRN": "JXH01219",
+      "Name": "Joseph Alexander Horton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXH01219"
+    },
+    {
+      "IRN": "JXM04230",
+      "Name": "Johannes Marthinus March-Ludick",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXM04230"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "RAR01094": [],
+    "MXK00650": [],
+    "JJS01150": [],
+    "JGP01053": [],
+    "JXW02135": [],
+    "AXG02287": [],
+    "JXB14802": [],
+    "RXO00168": [],
+    "NXS00471": [],
+    "LXM00731": [],
+    "MPW01118": [],
+    "BXL00089": [],
+    "DJG01119": [],
+    "RXC01643": [],
+    "TEN01012": [],
+    "JXC02658": [],
+    "SPK01080": [],
+    "BXR00246": [],
+    "AXM05452": [],
+    "HXB00372": [],
+    "DXA01488": [],
+    "ZXL00052": [],
+    "TXB00631": [],
+    "EJN01019": [],
+    "AOC01001": [],
+    "EXS00421": [],
+    "JXM04234": [],
+    "MED01071": [],
+    "CXN12448": [],
+    "JXW01235": [],
+    "GXM00746": [],
+    "RXD14847": [],
+    "JPM01143": [],
+    "NXM00578": [],
+    "JAF01169": [],
+    "TXP01310": [],
+    "RXP70626": [],
+    "NMB01051": [],
+    "LXJ00112": [],
+    "JXH01219": [],
+    "JXM04230": []
+  },
+  "metadata": {
+    "frn": "1001689",
+    "organisation_name": "Arrow Energy Markets (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15039862",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "02/01/2024"
+  },
+  "person_records": {
+    "RAR01094": {
+      "irn": "RAR01094",
+      "name": "Ross Anthony Revell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXK00650": {
+      "irn": "MXK00650",
+      "name": "Mark Knight",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JJS01150": {
+      "irn": "JJS01150",
+      "name": "James Snow",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JGP01053": {
+      "irn": "JGP01053",
+      "name": "Jeremy George Palin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW02135": {
+      "irn": "JXW02135",
+      "name": "Jack Wallis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXG02287": {
+      "irn": "AXG02287",
+      "name": "Alvaro Garay",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB14802": {
+      "irn": "JXB14802",
+      "name": "Josef Barnett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXO00168": {
+      "irn": "RXO00168",
+      "name": "Ralph Oueiss",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXS00471": {
+      "irn": "NXS00471",
+      "name": "Nicolas William Spicer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXM00731": {
+      "irn": "LXM00731",
+      "name": "Leo Mabb",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MPW01118": {
+      "irn": "MPW01118",
+      "name": "Matthew Wedlake",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXL00089": {
+      "irn": "BXL00089",
+      "name": "Benjamin Lancaster",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJG01119": {
+      "irn": "DJG01119",
+      "name": "Daniel James Green",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXC01643": {
+      "irn": "RXC01643",
+      "name": "Romain Chautard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TEN01012": {
+      "irn": "TEN01012",
+      "name": "Thomas Newman Sanders",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXC02658": {
+      "irn": "JXC02658",
+      "name": "Joshua Callaghan Sloane",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SPK01080": {
+      "irn": "SPK01080",
+      "name": "Steven Knight",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXR00246": {
+      "irn": "BXR00246",
+      "name": "Benjamin Robinson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM05452": {
+      "irn": "AXM05452",
+      "name": "Angus McCurdie",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXB00372": {
+      "irn": "HXB00372",
+      "name": "Harrison Blake",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXA01488": {
+      "irn": "DXA01488",
+      "name": "DAVID AUINGER",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ZXL00052": {
+      "irn": "ZXL00052",
+      "name": "Zhengyu Lin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXB00631": {
+      "irn": "TXB00631",
+      "name": "Tom Brodie",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EJN01019": {
+      "irn": "EJN01019",
+      "name": "Elliott Nelson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AOC01001": {
+      "irn": "AOC01001",
+      "name": "Alexander Oliver Cuchet",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXS00421": {
+      "irn": "EXS00421",
+      "name": "Eluned Circe Clementine Start",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXM04234": {
+      "irn": "JXM04234",
+      "name": "Joseph Macgregor",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MED01071": {
+      "irn": "MED01071",
+      "name": "Michael, Edward Delaney",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXN12448": {
+      "irn": "CXN12448",
+      "name": "Christian Needham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW01235": {
+      "irn": "JXW01235",
+      "name": "Joseph Digby Walsh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXM00746": {
+      "irn": "GXM00746",
+      "name": "Giles Ingram Matthey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXD14847": {
+      "irn": "RXD14847",
+      "name": "Richard Doughty",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPM01143": {
+      "irn": "JPM01143",
+      "name": "Joseph Paul Michaels",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXM00578": {
+      "irn": "NXM00578",
+      "name": "Nojitha Mandawala",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JAF01169": {
+      "irn": "JAF01169",
+      "name": "Joshua Arthur Fullam",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXP01310": {
+      "irn": "TXP01310",
+      "name": "Thomas Parker",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXP70626": {
+      "irn": "RXP70626",
+      "name": "Rufus James Hardy Parsons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NMB01051": {
+      "irn": "NMB01051",
+      "name": "Nicholas Martin Ball",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXJ00112": {
+      "irn": "LXJ00112",
+      "name": "Lewis Jones",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXH01219": {
+      "irn": "JXH01219",
+      "name": "Joseph Alexander Horton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXM04230": {
+      "irn": "JXM04230",
+      "name": "Johannes Marthinus March-Ludick",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

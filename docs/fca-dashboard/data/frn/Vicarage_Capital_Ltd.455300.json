@@ -1,9 +1,180 @@
 {
   "frn": 455300,
   "name": "Vicarage Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/776309",
+        "Termination Date": "01/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "11/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "776309",
+        "Name": "Energiser Investments Plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/829726",
+        "Termination Date": "17/01/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "02/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "829726",
+        "Name": "Epsion Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/919420",
+        "Termination Date": "10/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "13/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "919420",
+        "Name": "galiant Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/919328",
+        "Termination Date": "23/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "10/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "919328",
+        "Name": "Kiyo Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/712329",
+        "Termination Date": "05/06/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "31/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "712329",
+        "Name": "New Leaf Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/780925",
+        "Termination Date": "28/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "06/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "780925",
+        "Name": "SD Capital Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/672403",
+        "Termination Date": "06/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "19/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "672403",
+        "Name": "Smaller Company Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/496687",
+        "Termination Date": "19/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "07/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "496687",
+        "Name": "Stedman Denny Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1010865",
+        "Termination Date": "08/08/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "25/04/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1010865",
+        "Name": "Verdigris Strategic Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/770924",
+        "Termination Date": "01/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "03/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "770924",
+        "Name": "White Amba Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/974889",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "29/04/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "974889",
+        "Name": "G Force Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739399",
+        "RecordSubType": "Full",
+        "Principal FRN": "455300",
+        "Principal Firm Name": "Vicarage Capital Ltd",
+        "Effective Date": "07/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739399",
+        "Name": "LHC Mine Finance Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "455300",
+    "organisation_name": "Vicarage Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04807387",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "01/11/2006"
+  },
+  "person_records": {}
 }

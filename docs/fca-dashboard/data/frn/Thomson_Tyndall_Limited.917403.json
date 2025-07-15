@@ -1,9 +1,61 @@
 {
   "frn": 917403,
   "name": "Thomson Tyndall Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/947782",
+        "RecordSubType": "Full",
+        "Principal FRN": "917403",
+        "Principal Firm Name": "Thomson Tyndall Limited",
+        "Effective Date": "24/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "947782",
+        "Name": "28 Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/949881",
+        "RecordSubType": "Full",
+        "Principal FRN": "917403",
+        "Principal Firm Name": "Thomson Tyndall Limited",
+        "Effective Date": "27/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "949881",
+        "Name": "St Andrews Financial Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/945605",
+        "RecordSubType": "Full",
+        "Principal FRN": "917403",
+        "Principal Firm Name": "Thomson Tyndall Limited",
+        "Effective Date": "18/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "945605",
+        "Name": "The Thomson's Partnership LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "917403",
+    "organisation_name": "Thomson Tyndall Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "09779579",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "27/07/2020"
+  },
+  "person_records": {}
 }

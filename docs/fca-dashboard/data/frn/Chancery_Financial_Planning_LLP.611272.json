@@ -1,9 +1,38 @@
 {
   "frn": 611272,
   "name": "Chancery Financial Planning LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/958843",
+        "Termination Date": "17/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "611272",
+        "Principal Firm Name": "Chancery Financial Planning LLP",
+        "Effective Date": "22/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "958843",
+        "Name": "Neal Ross Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "611272",
+    "organisation_name": "Chancery Financial Planning LLP",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "OC388382",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "08/04/2014"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,65 @@
 {
   "frn": 580185,
   "name": "Lumin Wealth Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/838647",
+        "Termination Date": "13/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "580185",
+        "Principal Firm Name": "Lumin Wealth Management Limited",
+        "Effective Date": "28/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "838647",
+        "Name": "Grunberg Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813751",
+        "Termination Date": "23/09/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "580185",
+        "Principal Firm Name": "Lumin Wealth Management Limited",
+        "Effective Date": "12/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "813751",
+        "Name": "Lumin Insurance Solutions Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/408277",
+        "RecordSubType": "Full",
+        "Principal FRN": "580185",
+        "Principal Firm Name": "Lumin Wealth Management Limited",
+        "Effective Date": "03/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "408277",
+        "Name": "Davidson Deem Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "580185",
+    "organisation_name": "Lumin Wealth Management Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "07366158",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "02/07/2012"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 449269,
   "name": "CANTAB ASSET MANAGEMENT LTD",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "449269",
+    "organisation_name": "CANTAB ASSET MANAGEMENT LTD",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "05691283",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "01/08/2006"
+  },
+  "person_records": {}
 }

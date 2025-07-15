@@ -1,9 +1,51 @@
 {
   "frn": 190548,
   "name": "Church House Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/219917",
+        "Termination Date": "29/01/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "190548",
+        "Principal Firm Name": "Church House Investments Limited",
+        "Effective Date": "21/10/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "219917",
+        "Name": "Johnsen Asset Management"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/583499",
+        "RecordSubType": "Full",
+        "Principal FRN": "190548",
+        "Principal Firm Name": "Church House Investments Limited",
+        "Effective Date": "26/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "583499",
+        "Name": "The Cayzer Trust Company Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "190548",
+    "organisation_name": "Church House Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03475556",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 434413,
   "name": "Activtrades Plc",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "434413",
+    "organisation_name": "Activtrades Plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05367727",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "27/10/2005"
+  },
+  "person_records": {}
 }

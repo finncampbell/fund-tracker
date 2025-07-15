@@ -1,9 +1,113 @@
 {
   "frn": 662530,
   "name": "Wealthify Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/611240",
+        "Termination Date": "24/04/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "31/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "611240",
+        "Name": "Invitation Digital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942018",
+        "Termination Date": "21/04/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "19/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942018",
+        "Name": "Pay Dashboard Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/476083",
+        "Termination Date": "24/04/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "11/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "476083",
+        "Name": "Submission Technology Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1020194",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "13/11/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1020194",
+        "Name": "Country and Town House Ltd."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972716",
+        "RecordSubType": "Full",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "09/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972716",
+        "Name": "Leadenhall Learning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/808298",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "17/04/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "808298",
+        "Name": "Quidco Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/476080",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "662530",
+        "Principal Firm Name": "Wealthify Limited",
+        "Effective Date": "12/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "476080",
+        "Name": "Topcashback Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "662530",
+    "organisation_name": "Wealthify Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09034828",
+    "system_timestamp": "23/06/2025 22:05",
+    "status_effective_date": "12/10/2015"
+  },
+  "person_records": {}
 }

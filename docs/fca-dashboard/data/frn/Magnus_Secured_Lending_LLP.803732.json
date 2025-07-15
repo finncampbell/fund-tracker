@@ -2,8 +2,13 @@
   "frn": 803732,
   "name": "Magnus Secured Lending LLP",
   "trading_names": [],
-  "appointed_reps": [],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {},
+  "person_records": {}
 }

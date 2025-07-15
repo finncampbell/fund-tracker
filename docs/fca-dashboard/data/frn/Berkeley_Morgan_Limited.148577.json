@@ -1,9 +1,116 @@
 {
   "frn": 148577,
   "name": "Berkeley Morgan Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/210230",
+        "Termination Date": "01/12/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "01/03/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "210230",
+        "Name": "Cranfield & Moore Compliance & Training Consultants Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/197025",
+        "Termination Date": "02/08/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "16/08/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "197025",
+        "Name": "Moneyhill Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/432764",
+        "Termination Date": "04/05/2006",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "16/05/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "432764",
+        "Name": "My Choice Health Plans Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/425675",
+        "Termination Date": "27/10/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "01/02/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "425675",
+        "Name": "R E Gee & Co Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/210080",
+        "Termination Date": "28/01/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "22/02/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "210080",
+        "Name": "Rapid Money Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/416343",
+        "Termination Date": "01/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "02/12/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "416343",
+        "Name": "Rapidinsure.Co.Uk Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/418235",
+        "Termination Date": "11/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "148577",
+        "Principal Firm Name": "Berkeley Morgan Limited",
+        "Effective Date": "17/12/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "418235",
+        "Name": "Universal Provident Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "148577",
+    "organisation_name": "Berkeley Morgan Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02601046",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

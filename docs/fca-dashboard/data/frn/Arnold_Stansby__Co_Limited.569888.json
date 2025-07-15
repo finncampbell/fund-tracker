@@ -1,9 +1,21 @@
 {
   "frn": 569888,
   "name": "Arnold Stansby & Co. Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "569888",
+    "organisation_name": "Arnold Stansby & Co. Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07691778",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "30/08/2012"
+  },
+  "person_records": {}
 }

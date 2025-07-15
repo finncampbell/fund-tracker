@@ -1,9 +1,38 @@
 {
   "frn": 597200,
   "name": "Quadra Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/746162",
+        "Termination Date": "05/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "597200",
+        "Principal Firm Name": "Quadra Capital Partners LLP",
+        "Effective Date": "05/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "746162",
+        "Name": "CARE Investment Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "597200",
+    "organisation_name": "Quadra Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC382486",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "17/02/2014"
+  },
+  "person_records": {}
 }

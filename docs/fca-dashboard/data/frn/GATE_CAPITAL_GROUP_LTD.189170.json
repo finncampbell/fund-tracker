@@ -1,9 +1,104 @@
 {
   "frn": 189170,
   "name": "GATE CAPITAL GROUP LTD.",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608705",
+        "Termination Date": "20/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "02/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608705",
+        "Name": "Domum-UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747663",
+        "Termination Date": "16/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "20/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747663",
+        "Name": "GCOM Private Wealth Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/741078",
+        "Termination Date": "09/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "07/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "741078",
+        "Name": "HUNTSMAN HAWKES WEALTH MANAGEMENT LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/687402",
+        "Termination Date": "31/07/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "21/04/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "687402",
+        "Name": "Spread Angel Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/631206",
+        "Termination Date": "23/02/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "01/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "631206",
+        "Name": "Take the SIPP Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/625218",
+        "Termination Date": "20/08/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "189170",
+        "Principal Firm Name": "GATE CAPITAL GROUP LTD.",
+        "Effective Date": "09/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "625218",
+        "Name": "Time Capital Investments Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "189170",
+    "organisation_name": "GATE CAPITAL GROUP LTD.",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03631066",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

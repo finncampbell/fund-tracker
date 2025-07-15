@@ -1,9 +1,39 @@
 {
   "frn": 191237,
   "name": "Royal London Savings Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/201096",
+        "Termination Date": "01/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "191237",
+        "Principal Firm Name": "Royal London Savings Limited",
+        "Effective Date": "01/11/1993",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "201096",
+        "Name": "Royal London Management Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "191237",
+    "organisation_name": "Royal London Savings Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03642633",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

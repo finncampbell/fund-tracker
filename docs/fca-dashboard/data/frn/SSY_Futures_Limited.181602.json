@@ -1,9 +1,52 @@
 {
   "frn": 181602,
   "name": "SSY Futures Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/509023",
+        "Termination Date": "29/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "181602",
+        "Principal Firm Name": "SSY Futures Limited",
+        "Effective Date": "07/10/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "509023",
+        "Name": "SSY Capital (UK) LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815840",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "181602",
+        "Principal Firm Name": "SSY Futures Limited",
+        "Effective Date": "08/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815840",
+        "Name": "SSY Finance LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "181602",
+    "organisation_name": "SSY Futures Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03163656",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

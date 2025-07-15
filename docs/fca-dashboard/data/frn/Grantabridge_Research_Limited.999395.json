@@ -1,9 +1,21 @@
 {
   "frn": 999395,
   "name": "Grantabridge Research Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "999395",
+    "organisation_name": "Grantabridge Research Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14479785",
+    "system_timestamp": "23/06/2025 22:23",
+    "status_effective_date": "28/02/2024"
+  },
+  "person_records": {}
 }

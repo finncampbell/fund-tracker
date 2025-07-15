@@ -1,9 +1,39 @@
 {
   "frn": 620330,
   "name": "IronMarket Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/842053",
+        "Termination Date": "25/06/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "620330",
+        "Principal Firm Name": "IronMarket Ltd",
+        "Effective Date": "14/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "842053",
+        "Name": "DPC Financial Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "620330",
+    "organisation_name": "IronMarket Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "08411874",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "19/06/2014"
+  },
+  "person_records": {}
 }

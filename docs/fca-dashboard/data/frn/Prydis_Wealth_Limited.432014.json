@@ -1,9 +1,153 @@
 {
   "frn": 432014,
   "name": "Prydis Wealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/722409",
+        "Termination Date": "22/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "20/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "722409",
+        "Name": "P1 Investment Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/705461",
+        "Termination Date": "27/06/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "04/06/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "705461",
+        "Name": "Prydis Consulting Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/740579",
+        "Termination Date": "19/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "16/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "740579",
+        "Name": "Prydis Insurance Brokers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/836310",
+        "Termination Date": "28/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "13/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "836310",
+        "Name": "Riche Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/732572",
+        "Termination Date": "14/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "19/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "732572",
+        "Name": "Seismic Venture Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/671713",
+        "Termination Date": "22/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "16/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "671713",
+        "Name": "Strawberry Invest Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/624004",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "15/12/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "624004",
+        "Name": "Armstrong Wealth Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/717673",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "24/02/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "717673",
+        "Name": "Crystal Wealth Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769548",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "17/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "769548",
+        "Name": "Financial Solutions Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931588",
+        "RecordSubType": "Full",
+        "Principal FRN": "432014",
+        "Principal Firm Name": "Prydis Wealth Limited",
+        "Effective Date": "07/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "931588",
+        "Name": "Prydis Wealth (Scotland) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "432014",
+    "organisation_name": "Prydis Wealth Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "04319996",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "07/04/2006"
+  },
+  "person_records": {}
 }

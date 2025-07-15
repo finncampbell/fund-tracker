@@ -1,9 +1,38 @@
 {
   "frn": 586570,
   "name": "Triton Investments Advisers LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/684421",
+        "Termination Date": "15/04/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "586570",
+        "Principal Firm Name": "Triton Investments Advisers LLP",
+        "Effective Date": "14/04/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "684421",
+        "Name": "Triton Group LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "586570",
+    "organisation_name": "Triton Investments Advisers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC374555",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "23/10/2012"
+  },
+  "person_records": {}
 }

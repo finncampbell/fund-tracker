@@ -1,9 +1,21 @@
 {
   "frn": 211690,
   "name": "Hanover Square Capital (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "211690",
+    "organisation_name": "Hanover Square Capital (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04211603",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "03/10/2002"
+  },
+  "person_records": {}
 }

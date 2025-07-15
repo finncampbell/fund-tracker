@@ -1,9 +1,22 @@
 {
   "frn": 526528,
   "name": "Multrees Investor Services Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "526528",
+    "organisation_name": "Multrees Investor Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07225386",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "06/01/2011"
+  },
+  "person_records": {}
 }

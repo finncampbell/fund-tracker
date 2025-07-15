@@ -1,9 +1,167 @@
 {
   "frn": 1001446,
   "name": "AlpInvest Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "MCC01120",
+      "Name": "Matthew Christian Cottrell",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MCC01120"
+    },
+    {
+      "IRN": "AXA00919",
+      "Name": "AlpInvest Holdings UK, L.L.C AlpInvest Holdings UK, L.L.C",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA00919"
+    },
+    {
+      "IRN": "VXS01564",
+      "Name": "Vjerana Spajic Burleigh",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXS01564"
+    },
+    {
+      "IRN": "MXZ80773",
+      "Name": "Michael Zornitta",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXZ80773"
+    },
+    {
+      "IRN": "PXE00137",
+      "Name": "Pieter Egberts",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXE00137"
+    },
+    {
+      "IRN": "LXF00276",
+      "Name": "Lucas Fee",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXF00276"
+    },
+    {
+      "IRN": "SXO00167",
+      "Name": "Sangwon Oh",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXO00167"
+    },
+    {
+      "IRN": "LXC00216",
+      "Name": "Louis Choy",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXC00216"
+    },
+    {
+      "IRN": "NXG00222",
+      "Name": "Neel Gangani",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXG00222"
+    },
+    {
+      "IRN": "NXC00205",
+      "Name": "Neal Costello",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXC00205"
+    },
+    {
+      "IRN": "LXM00682",
+      "Name": "Lesedi Nikosazana Mbatha",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXM00682"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "MCC01120": [],
+    "AXA00919": [],
+    "VXS01564": [],
+    "MXZ80773": [],
+    "PXE00137": [],
+    "LXF00276": [],
+    "SXO00167": [],
+    "LXC00216": [],
+    "NXG00222": [],
+    "NXC00205": [],
+    "LXM00682": []
+  },
+  "metadata": {
+    "frn": "1001446",
+    "organisation_name": "AlpInvest Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC441856",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "22/04/2024"
+  },
+  "person_records": {
+    "MCC01120": {
+      "irn": "MCC01120",
+      "name": "Matthew Christian Cottrell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA00919": {
+      "irn": "AXA00919",
+      "name": "AlpInvest Holdings UK, L.L.C AlpInvest Holdings UK, L.L.C",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXS01564": {
+      "irn": "VXS01564",
+      "name": "Vjerana Spajic Burleigh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXZ80773": {
+      "irn": "MXZ80773",
+      "name": "Michael Zornitta",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXE00137": {
+      "irn": "PXE00137",
+      "name": "Pieter Egberts",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXF00276": {
+      "irn": "LXF00276",
+      "name": "Lucas Fee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXO00167": {
+      "irn": "SXO00167",
+      "name": "Sangwon Oh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXC00216": {
+      "irn": "LXC00216",
+      "name": "Louis Choy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXG00222": {
+      "irn": "NXG00222",
+      "name": "Neel Gangani",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXC00205": {
+      "irn": "NXC00205",
+      "name": "Neal Costello",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXM00682": {
+      "irn": "LXM00682",
+      "name": "Lesedi Nikosazana Mbatha",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

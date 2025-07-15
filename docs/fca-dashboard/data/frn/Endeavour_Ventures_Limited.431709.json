@@ -1,9 +1,129 @@
 {
   "frn": 431709,
   "name": "Endeavour Ventures Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/586830",
+        "Termination Date": "06/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "01/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "586830",
+        "Name": "BlueHaven Capital Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627406",
+        "Termination Date": "05/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "03/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627406",
+        "Name": "Cloisters Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/596373",
+        "Termination Date": "22/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "26/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "596373",
+        "Name": "Cogendo Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916828",
+        "Termination Date": "01/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "15/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916828",
+        "Name": "ENDEAVOUR VENTURES TIER 1 INVESTOR SCHEME LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/787996",
+        "Termination Date": "22/03/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "01/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "787996",
+        "Name": "Foxlion Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/772024",
+        "Termination Date": "01/11/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "20/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "772024",
+        "Name": "Marks Consulting Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/629607",
+        "Termination Date": "08/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "04/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "629607",
+        "Name": "Portfolio Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/800694",
+        "Termination Date": "18/04/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "431709",
+        "Principal Firm Name": "Endeavour Ventures Limited",
+        "Effective Date": "05/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "800694",
+        "Name": "SpecFin Capital Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "431709",
+    "organisation_name": "Endeavour Ventures Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05244123",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "26/08/2005"
+  },
+  "person_records": {}
 }

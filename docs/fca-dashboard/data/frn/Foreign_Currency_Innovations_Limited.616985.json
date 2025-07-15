@@ -1,9 +1,52 @@
 {
   "frn": 616985,
   "name": "Foreign Currency Innovations Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/969010",
+        "Termination Date": "13/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "616985",
+        "Principal Firm Name": "Foreign Currency Innovations Limited",
+        "Effective Date": "01/02/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "969010",
+        "Name": "GIV Trade Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/928000",
+        "Termination Date": "12/04/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "616985",
+        "Principal Firm Name": "Foreign Currency Innovations Limited",
+        "Effective Date": "17/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "928000",
+        "Name": "Quam VC LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "616985",
+    "organisation_name": "Foreign Currency Innovations Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07274218",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "10/07/2014"
+  },
+  "person_records": {}
 }

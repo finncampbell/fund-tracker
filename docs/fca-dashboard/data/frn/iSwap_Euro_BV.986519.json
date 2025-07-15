@@ -1,9 +1,21 @@
 {
   "frn": 986519,
   "name": "iSwap Euro BV",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "986519",
+    "organisation_name": "iSwap Euro BV",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "72364610",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "20/12/2023"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 228551,
   "name": "Sberbank CIB (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "228551",
+    "organisation_name": "Sberbank CIB (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04783112",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "10/05/2004"
+  },
+  "person_records": {}
 }

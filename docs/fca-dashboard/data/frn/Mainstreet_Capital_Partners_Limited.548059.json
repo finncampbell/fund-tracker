@@ -1,9 +1,38 @@
 {
   "frn": 548059,
   "name": "Mainstreet Capital Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/821831",
+        "Termination Date": "20/01/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "548059",
+        "Principal Firm Name": "Mainstreet Capital Partners Limited",
+        "Effective Date": "27/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "821831",
+        "Name": "MainStreet Analytics Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "548059",
+    "organisation_name": "Mainstreet Capital Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07509746",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "03/01/2012"
+  },
+  "person_records": {}
 }

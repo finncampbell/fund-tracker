@@ -1,9 +1,178 @@
 {
   "frn": 502619,
   "name": "Hubwise Securities Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/837226",
+        "Termination Date": "12/05/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "19/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "837226",
+        "Name": "Grosvenor Independent Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/782555",
+        "Termination Date": "08/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "23/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "782555",
+        "Name": "Hubwise Connect Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/830611",
+        "Termination Date": "01/02/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "11/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "830611",
+        "Name": "IFA Direct Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/784442",
+        "Termination Date": "29/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "18/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "784442",
+        "Name": "IFSL Platform Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/847326",
+        "Termination Date": "23/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "20/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "847326",
+        "Name": "Lakeside Investment Platform Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/820737",
+        "Termination Date": "27/05/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "13/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "820737",
+        "Name": "Morgan Lloyd Invest Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/922723",
+        "Termination Date": "08/04/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "13/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "922723",
+        "Name": "Optimum Platform Services Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812965",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "04/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "812965",
+        "Name": "Advance Platform Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912328",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "16/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912328",
+        "Name": "Advice Champion Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912176",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "12/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912176",
+        "Name": "LUCI Platform Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912757",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "29/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912757",
+        "Name": "Niche Platform Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/923555",
+        "RecordSubType": "Full",
+        "Principal FRN": "502619",
+        "Principal Firm Name": "Hubwise Securities Limited",
+        "Effective Date": "30/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "923555",
+        "Name": "Wealth Tracker Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "502619",
+    "organisation_name": "Hubwise Securities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06071374",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "06/01/2010"
+  },
+  "person_records": {}
 }

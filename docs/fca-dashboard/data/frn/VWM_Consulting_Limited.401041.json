@@ -1,9 +1,274 @@
 {
   "frn": 401041,
   "name": "VWM Consulting Limited",
-  "trading_names": [],
-  "appointed_reps": [],
-  "individuals": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/471619",
+        "Termination Date": "26/07/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "401041",
+        "Principal Firm Name": "VWM Consulting Limited",
+        "Effective Date": "14/08/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "471619",
+        "Name": "VWM Investment Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/471621",
+        "Termination Date": "26/07/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "401041",
+        "Principal Firm Name": "VWM Consulting Limited",
+        "Effective Date": "14/08/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "471621",
+        "Name": "VWM Wealth Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
+  "individuals": [
+    {
+      "IRN": "DMT00002",
+      "Name": "David Matthew Thomson",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DMT00002"
+    },
+    {
+      "IRN": "GPH01079",
+      "Name": "Grahame Peter Hopper",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GPH01079"
+    },
+    {
+      "IRN": "LJJ01043",
+      "Name": "Lisa Johnstone",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LJJ01043"
+    },
+    {
+      "IRN": "AXB00939",
+      "Name": "Ann-Marie Brooks",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB00939"
+    },
+    {
+      "IRN": "EXW01315",
+      "Name": "Elaine Wallace",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXW01315"
+    },
+    {
+      "IRN": "LJJ01043",
+      "Name": "Lisa Johnstone",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LJJ01043"
+    },
+    {
+      "IRN": "DMT00002",
+      "Name": "David Matthew Thomson",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DMT00002"
+    },
+    {
+      "IRN": "GPH01079",
+      "Name": "Grahame Peter Hopper",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GPH01079"
+    },
+    {
+      "IRN": "NRT01041",
+      "Name": "Nicola Rachel Coates",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NRT01041"
+    },
+    {
+      "IRN": "AXB00939",
+      "Name": "Ann-Marie Brooks",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB00939"
+    },
+    {
+      "IRN": "CCC01037",
+      "Name": "Christine Lau",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CCC01037"
+    },
+    {
+      "IRN": "FHM00003",
+      "Name": "Fergus Hugh Muirhead",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FHM00003"
+    },
+    {
+      "IRN": "AXW02337",
+      "Name": "Alison Welsh",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXW02337"
+    },
+    {
+      "IRN": "KXH01450",
+      "Name": "Karen Hassan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXH01450"
+    },
+    {
+      "IRN": "KAW00013",
+      "Name": "Kenneth Anderson Welsh",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KAW00013"
+    },
+    {
+      "IRN": "OXK00038",
+      "Name": "Orsolya Andrea Katona",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXK00038"
+    },
+    {
+      "IRN": "LXR00172",
+      "Name": "Lynne Reid",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXR00172"
+    },
+    {
+      "IRN": "ISV01002",
+      "Name": "Ian Stuart Vance",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ISV01002"
+    },
+    {
+      "IRN": "TMM01058",
+      "Name": "Tracy Mary McGowan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TMM01058"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "DMT00002": [],
+    "GPH01079": [],
+    "LJJ01043": [],
+    "AXB00939": [],
+    "EXW01315": [],
+    "NRT01041": [],
+    "CCC01037": [],
+    "FHM00003": [],
+    "AXW02337": [],
+    "KXH01450": [],
+    "KAW00013": [],
+    "OXK00038": [],
+    "LXR00172": [],
+    "ISV01002": [],
+    "TMM01058": []
+  },
+  "metadata": {
+    "frn": "401041",
+    "organisation_name": "VWM Consulting Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC216348",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "01/08/2004"
+  },
+  "person_records": {
+    "DMT00002": {
+      "irn": "DMT00002",
+      "name": "David Matthew Thomson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GPH01079": {
+      "irn": "GPH01079",
+      "name": "Grahame Peter Hopper",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LJJ01043": {
+      "irn": "LJJ01043",
+      "name": "Lisa Johnstone",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB00939": {
+      "irn": "AXB00939",
+      "name": "Ann-Marie Brooks",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXW01315": {
+      "irn": "EXW01315",
+      "name": "Elaine Wallace",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NRT01041": {
+      "irn": "NRT01041",
+      "name": "Nicola Rachel Coates",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CCC01037": {
+      "irn": "CCC01037",
+      "name": "Christine Lau",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FHM00003": {
+      "irn": "FHM00003",
+      "name": "Fergus Hugh Muirhead",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXW02337": {
+      "irn": "AXW02337",
+      "name": "Alison Welsh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXH01450": {
+      "irn": "KXH01450",
+      "name": "Karen Hassan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KAW00013": {
+      "irn": "KAW00013",
+      "name": "Kenneth Anderson Welsh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXK00038": {
+      "irn": "OXK00038",
+      "name": "Orsolya Andrea Katona",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXR00172": {
+      "irn": "LXR00172",
+      "name": "Lynne Reid",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ISV01002": {
+      "irn": "ISV01002",
+      "name": "Ian Stuart Vance",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TMM01058": {
+      "irn": "TMM01058",
+      "name": "Tracy Mary McGowan",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

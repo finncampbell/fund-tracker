@@ -1,9 +1,52 @@
 {
   "frn": 197193,
   "name": "Cooper Parry Wealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/222873",
+        "Termination Date": "31/03/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "197193",
+        "Principal Firm Name": "Cooper Parry Wealth Limited",
+        "Effective Date": "13/02/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "222873",
+        "Name": "Kilby Fox (Financial Services) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/712571",
+        "RecordSubType": "Full",
+        "Principal FRN": "197193",
+        "Principal Firm Name": "Cooper Parry Wealth Limited",
+        "Effective Date": "01/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "712571",
+        "Name": "Cooper Parry Wealth (TW) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "197193",
+    "organisation_name": "Cooper Parry Wealth Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04220777",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 579310,
   "name": "Asset Match Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/915177",
+        "Termination Date": "08/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "579310",
+        "Principal Firm Name": "Asset Match Limited",
+        "Effective Date": "16/10/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "915177",
+        "Name": "Craven Hill Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "579310",
+    "organisation_name": "Asset Match Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07681197",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "16/08/2012"
+  },
+  "person_records": {}
 }

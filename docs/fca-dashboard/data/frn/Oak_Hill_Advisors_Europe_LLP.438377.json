@@ -1,9 +1,21 @@
 {
   "frn": 438377,
   "name": "Oak Hill Advisors (Europe) LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "438377",
+    "organisation_name": "Oak Hill Advisors (Europe) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC314278",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "27/01/2006"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 533039,
   "name": "Titan Settlement & Custody Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608583",
+        "Termination Date": "15/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "533039",
+        "Principal Firm Name": "Titan Settlement & Custody Ltd",
+        "Effective Date": "10/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608583",
+        "Name": "FX Knowledge Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "533039",
+    "organisation_name": "Titan Settlement & Custody Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06962351",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "01/04/2011"
+  },
+  "person_records": {}
 }

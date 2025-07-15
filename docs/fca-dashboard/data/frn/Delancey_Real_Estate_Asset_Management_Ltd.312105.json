@@ -1,9 +1,112 @@
 {
   "frn": 312105,
   "name": "Delancey Real Estate Asset Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/971278",
+        "Termination Date": "14/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "04/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "971278",
+        "Name": "Delancey Real Estate Investment Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751724",
+        "Termination Date": "01/09/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "04/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "751724",
+        "Name": "Newincco 1404 Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/602927",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "24/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "602927",
+        "Name": "Delancey Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/973240",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "31/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "973240",
+        "Name": "Delancey Investment Advisory Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/955036",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "18/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "955036",
+        "Name": "DQR Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728751",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "11/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "728751",
+        "Name": "Mount Kendal Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/775989",
+        "RecordSubType": "Full",
+        "Principal FRN": "312105",
+        "Principal Firm Name": "Delancey Real Estate Asset Management Ltd",
+        "Effective Date": "06/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "775989",
+        "Name": "NW1 Partners UK LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "312105",
+    "organisation_name": "Delancey Real Estate Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04517621",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "14/01/2005"
+  },
+  "person_records": {}
 }

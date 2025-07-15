@@ -1,9 +1,227 @@
 {
   "frn": 681420,
   "name": "Crito Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/913358",
+        "Termination Date": "25/06/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "12/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "913358",
+        "Name": "Balnageith Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/809721",
+        "Termination Date": "22/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "22/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "809721",
+        "Name": "Calpa Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/918986",
+        "Termination Date": "20/02/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "29/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "918986",
+        "Name": "CASSANDRA WEALTH LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/839415",
+        "Termination Date": "06/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "03/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "839415",
+        "Name": "Efficient Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/734821",
+        "Termination Date": "06/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "03/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "734821",
+        "Name": "Evidence Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/726140",
+        "Termination Date": "30/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "19/11/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "726140",
+        "Name": "Fox Point Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/801987",
+        "Termination Date": "28/02/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "16/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "801987",
+        "Name": "Place Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/760371",
+        "Termination Date": "06/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "06/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "760371",
+        "Name": "Prosperitas Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/939712",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "29/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "939712",
+        "Name": "Aevus Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/791636",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "16/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "791636",
+        "Name": "Cohen Brothers (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616320",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "28/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616320",
+        "Name": "Fair Value Capital (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710262",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "01/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710262",
+        "Name": "Farlap Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805893",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "08/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805893",
+        "Name": "Grenville Fox Holdings Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773791",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "10/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "773791",
+        "Name": "Keel Harbour Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/977229",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "10/06/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "977229",
+        "Name": "Meantime Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/828530",
+        "RecordSubType": "Full",
+        "Principal FRN": "681420",
+        "Principal Firm Name": "Crito Capital LLP",
+        "Effective Date": "12/12/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "828530",
+        "Name": "Silver Spire Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "681420",
+    "organisation_name": "Crito Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC384167",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "01/09/2015"
+  },
+  "person_records": {}
 }

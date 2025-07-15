@@ -1,9 +1,52 @@
 {
   "frn": 402459,
   "name": "KNG Securities LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627457",
+        "Termination Date": "29/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "402459",
+        "Principal Firm Name": "KNG Securities LLP",
+        "Effective Date": "04/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627457",
+        "Name": "Corsair Capital Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728155",
+        "Termination Date": "04/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "402459",
+        "Principal Firm Name": "KNG Securities LLP",
+        "Effective Date": "07/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "728155",
+        "Name": "KNG Securities Fixed Income LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "402459",
+    "organisation_name": "KNG Securities LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC307150",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "04/11/2004"
+  },
+  "person_records": {}
 }

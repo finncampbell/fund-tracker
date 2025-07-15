@@ -1,9 +1,37 @@
 {
   "frn": 145280,
   "name": "Theisen Securities Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/963158",
+        "RecordSubType": "Full",
+        "Principal FRN": "145280",
+        "Principal Firm Name": "Theisen Securities Limited",
+        "Effective Date": "02/11/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "963158",
+        "Name": "Theisen Insurance Services Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "145280",
+    "organisation_name": "Theisen Securities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02401040",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

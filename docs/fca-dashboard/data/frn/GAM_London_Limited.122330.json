@@ -1,9 +1,39 @@
 {
   "frn": 122330,
   "name": "GAM London Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/232525",
+        "Termination Date": "30/10/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "122330",
+        "Principal Firm Name": "GAM London Limited",
+        "Effective Date": "30/03/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "232525",
+        "Name": "Hyde Pacific Consulting Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122330",
+    "organisation_name": "GAM London Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "00874802",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,37 @@
 {
   "frn": 976859,
   "name": "Delancey Real Estate Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1020500",
+        "RecordSubType": "Full",
+        "Principal FRN": "976859",
+        "Principal Firm Name": "Delancey Real Estate Investment Management Limited",
+        "Effective Date": "22/11/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1020500",
+        "Name": "Evermill Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "976859",
+    "organisation_name": "Delancey Real Estate Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13863012",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "14/07/2023"
+  },
+  "person_records": {}
 }

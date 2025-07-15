@@ -1,9 +1,38 @@
 {
   "frn": 766786,
   "name": "Diagram Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917673",
+        "Termination Date": "21/09/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "766786",
+        "Principal Firm Name": "Diagram Capital Ltd",
+        "Effective Date": "02/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917673",
+        "Name": "Onforce Investments UK Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "766786",
+    "organisation_name": "Diagram Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10437925",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "02/05/2017"
+  },
+  "person_records": {}
 }

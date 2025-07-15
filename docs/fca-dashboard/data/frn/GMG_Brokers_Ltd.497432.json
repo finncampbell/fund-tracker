@@ -1,9 +1,104 @@
 {
   "frn": 497432,
   "name": "GMG Brokers Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972116",
+        "Termination Date": "10/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "15/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972116",
+        "Name": "Ana Loncar"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/925512",
+        "Termination Date": "10/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "01/05/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "925512",
+        "Name": "Anton Morozov"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926386",
+        "Termination Date": "10/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "19/05/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926386",
+        "Name": "EVGENI RUDMAN"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/563811",
+        "Termination Date": "10/10/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "02/09/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "563811",
+        "Name": "GETAMAX Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/589484",
+        "Termination Date": "26/06/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "09/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "589484",
+        "Name": "LEAP Energy Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/554451",
+        "Termination Date": "10/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "497432",
+        "Principal Firm Name": "GMG Brokers Ltd",
+        "Effective Date": "28/06/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "554451",
+        "Name": "Wall Consulting Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "497432",
+    "organisation_name": "GMG Brokers Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06775037",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "19/06/2009"
+  },
+  "person_records": {}
 }

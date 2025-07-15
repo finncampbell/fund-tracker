@@ -1,9 +1,62 @@
 {
   "frn": 211205,
   "name": "Nemesis Asset Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/923226",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "211205",
+        "Principal Firm Name": "Nemesis Asset Management LLP",
+        "Effective Date": "24/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "923226",
+        "Name": "Calyx Private Office LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/999742",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "211205",
+        "Principal Firm Name": "Nemesis Asset Management LLP",
+        "Effective Date": "06/08/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "999742",
+        "Name": "Newfield Private Office Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/955310",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "211205",
+        "Principal Firm Name": "Nemesis Asset Management LLP",
+        "Effective Date": "22/07/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "955310",
+        "Name": "Norman-K London Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "211205",
+    "organisation_name": "Nemesis Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC301714",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "23/09/2002"
+  },
+  "person_records": {}
 }

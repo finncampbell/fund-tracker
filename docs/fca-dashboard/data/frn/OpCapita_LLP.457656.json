@@ -1,9 +1,39 @@
 {
   "frn": 457656,
   "name": "OpCapita LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/557018",
+        "Termination Date": "02/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "457656",
+        "Principal Firm Name": "OpCapita LLP",
+        "Effective Date": "25/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "557018",
+        "Name": "OpCapita LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "457656",
+    "organisation_name": "OpCapita LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC318670",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "05/02/2007"
+  },
+  "person_records": {}
 }

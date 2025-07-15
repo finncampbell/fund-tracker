@@ -1,9 +1,102 @@
 {
   "frn": 579506,
   "name": "CPN Investment Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/223373",
+        "Termination Date": "28/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "20/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "223373",
+        "Name": "Agora Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/999363",
+        "Termination Date": "21/03/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "09/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "999363",
+        "Name": "CPN & Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/630602",
+        "Termination Date": "08/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "21/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "630602",
+        "Name": "Money on Toast Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/731205",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "07/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "731205",
+        "Name": "CPN Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/979410",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "20/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "979410",
+        "Name": "CPN Private Wealth"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/914616",
+        "RecordSubType": "Full",
+        "Principal FRN": "579506",
+        "Principal Firm Name": "CPN Investment Management LLP",
+        "Effective Date": "07/10/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "914616",
+        "Name": "Redwood Mortgage Brokers"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "579506",
+    "organisation_name": "CPN Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC372035",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "20/11/2012"
+  },
+  "person_records": {}
 }

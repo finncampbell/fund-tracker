@@ -1,9 +1,91 @@
 {
   "frn": 443586,
   "name": "City House Investors Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/449341",
+        "Termination Date": "09/07/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "443586",
+        "Principal Firm Name": "City House Investors Limited",
+        "Effective Date": "16/03/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "449341",
+        "Name": "Bright Future IFA Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/454909",
+        "Termination Date": "17/06/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "443586",
+        "Principal Firm Name": "City House Investors Limited",
+        "Effective Date": "20/07/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "454909",
+        "Name": "City House Mortgage Brokers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/654967",
+        "Termination Date": "04/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "443586",
+        "Principal Firm Name": "City House Investors Limited",
+        "Effective Date": "20/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "654967",
+        "Name": "City House Securities LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/459022",
+        "Termination Date": "27/02/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "443586",
+        "Principal Firm Name": "City House Investors Limited",
+        "Effective Date": "25/10/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "459022",
+        "Name": "Pennine Financial Planning Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/452953",
+        "RecordSubType": "Full",
+        "Principal FRN": "443586",
+        "Principal Firm Name": "City House Investors Limited",
+        "Effective Date": "06/06/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "452953",
+        "Name": "Fundsnet Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "443586",
+    "organisation_name": "City House Investors Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05608435",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "02/02/2006"
+  },
+  "person_records": {}
 }

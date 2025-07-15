@@ -1,9 +1,21 @@
 {
   "frn": 1003207,
   "name": "FIL Platform Solutions (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1003207",
+    "organisation_name": "FIL Platform Solutions (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15018212",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "04/04/2025"
+  },
+  "person_records": {}
 }

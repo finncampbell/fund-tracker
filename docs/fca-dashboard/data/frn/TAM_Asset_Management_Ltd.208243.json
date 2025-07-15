@@ -1,9 +1,78 @@
 {
   "frn": 208243,
   "name": "TAM Asset Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/759142",
+        "Termination Date": "26/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "208243",
+        "Principal Firm Name": "TAM Asset Management Ltd",
+        "Effective Date": "22/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "759142",
+        "Name": "FinchTech Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/524424",
+        "Termination Date": "05/08/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "208243",
+        "Principal Firm Name": "TAM Asset Management Ltd",
+        "Effective Date": "25/05/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "524424",
+        "Name": "First Scottish Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/429076",
+        "Termination Date": "18/01/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "208243",
+        "Principal Firm Name": "TAM Asset Management Ltd",
+        "Effective Date": "03/03/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "429076",
+        "Name": "Lombard Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/449219",
+        "Termination Date": "02/08/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "208243",
+        "Principal Firm Name": "TAM Asset Management Ltd",
+        "Effective Date": "14/03/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "449219",
+        "Name": "S.P. Angel Corporate Finance LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "208243",
+    "organisation_name": "TAM Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04077709",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "31/05/2002"
+  },
+  "person_records": {}
 }

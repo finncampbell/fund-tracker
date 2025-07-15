@@ -1,9 +1,37 @@
 {
   "frn": 983917,
   "name": "Anchor Capital Asset Management (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/833265",
+        "RecordSubType": "Full",
+        "Principal FRN": "983917",
+        "Principal Firm Name": "Anchor Capital Asset Management (UK) Limited",
+        "Effective Date": "31/01/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "833265",
+        "Name": "MUSGRAVE CAPITAL PARTNERS LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "983917",
+    "organisation_name": "Anchor Capital Asset Management (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14072185",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "02/03/2023"
+  },
+  "person_records": {}
 }

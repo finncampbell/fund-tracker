@@ -1,9 +1,39 @@
 {
   "frn": 124490,
   "name": "Daiwa Capital Markets Europe Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205898",
+        "Termination Date": "24/08/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "124490",
+        "Principal Firm Name": "Daiwa Capital Markets Europe Limited",
+        "Effective Date": "02/08/1990",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205898",
+        "Name": "Daiwa Institute of Research Europe Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "124490",
+    "organisation_name": "Daiwa Capital Markets Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01487359",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

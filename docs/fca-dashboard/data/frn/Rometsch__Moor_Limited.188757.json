@@ -1,9 +1,52 @@
 {
   "frn": 188757,
   "name": "Rometsch & Moor Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762049",
+        "Termination Date": "02/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "188757",
+        "Principal Firm Name": "Rometsch & Moor Limited",
+        "Effective Date": "18/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762049",
+        "Name": "NOVALISfinance"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/479030",
+        "Termination Date": "13/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "188757",
+        "Principal Firm Name": "Rometsch & Moor Limited",
+        "Effective Date": "13/02/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "479030",
+        "Name": "Sutterluty Investment Management GmbH"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "188757",
+    "organisation_name": "Rometsch & Moor Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03581017",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

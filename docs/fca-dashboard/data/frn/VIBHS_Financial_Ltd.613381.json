@@ -1,9 +1,156 @@
 {
   "frn": 613381,
   "name": "VIBHS Financial Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845858",
+        "Termination Date": "24/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "15/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845858",
+        "Name": "BPS Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769334",
+        "Termination Date": "18/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "13/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "769334",
+        "Name": "Capital Quotes Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/767263",
+        "Termination Date": "09/02/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "01/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "767263",
+        "Name": "Dabbl Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815057",
+        "Termination Date": "04/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "30/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815057",
+        "Name": "Edward Technology Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912919",
+        "Termination Date": "03/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "03/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912919",
+        "Name": "FB SECURITIES LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/820442",
+        "Termination Date": "27/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "10/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "820442",
+        "Name": "IEE MARKETS CO., LTD."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/788430",
+        "Termination Date": "31/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "07/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "788430",
+        "Name": "New Tick Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/789078",
+        "Termination Date": "15/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "18/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "789078",
+        "Name": "PANBAY SHARE LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710925",
+        "Termination Date": "06/06/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "24/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710925",
+        "Name": "Silicon Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805697",
+        "Termination Date": "02/01/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "613381",
+        "Principal Firm Name": "VIBHS Financial Ltd",
+        "Effective Date": "04/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805697",
+        "Name": "UNION GLOBAL MARKET LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "613381",
+    "organisation_name": "VIBHS Financial Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08279988",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "17/11/2014"
+  },
+  "person_records": {}
 }

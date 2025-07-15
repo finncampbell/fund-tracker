@@ -1,9 +1,21 @@
 {
   "frn": 831234,
   "name": "Hedosophia Services Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "831234",
+    "organisation_name": "Hedosophia Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08975224",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "18/04/2019"
+  },
+  "person_records": {}
 }

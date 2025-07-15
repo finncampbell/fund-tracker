@@ -1,9 +1,65 @@
 {
   "frn": 231328,
   "name": "I F MACKINNON & COMPANY LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/488569",
+        "Termination Date": "22/07/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "231328",
+        "Principal Firm Name": "I F MACKINNON & COMPANY LLP",
+        "Effective Date": "08/09/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "488569",
+        "Name": "Amalgam Corporate Finance LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/759536",
+        "Termination Date": "16/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "231328",
+        "Principal Firm Name": "I F MACKINNON & COMPANY LLP",
+        "Effective Date": "30/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "759536",
+        "Name": "Ardmair Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608307",
+        "Termination Date": "31/10/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "231328",
+        "Principal Firm Name": "I F MACKINNON & COMPANY LLP",
+        "Effective Date": "07/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608307",
+        "Name": "Arthur John LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "231328",
+    "organisation_name": "I F MACKINNON & COMPANY LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC302422",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "06/04/2004"
+  },
+  "person_records": {}
 }

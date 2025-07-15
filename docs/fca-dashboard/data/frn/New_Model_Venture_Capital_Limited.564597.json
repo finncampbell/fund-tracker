@@ -1,9 +1,64 @@
 {
   "frn": 564597,
   "name": "New Model Venture Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/562473",
+        "Termination Date": "26/06/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "564597",
+        "Principal Firm Name": "New Model Venture Capital Limited",
+        "Effective Date": "15/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "562473",
+        "Name": "Find Invest Grow Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/919729",
+        "Termination Date": "13/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "564597",
+        "Principal Firm Name": "New Model Venture Capital Limited",
+        "Effective Date": "17/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "919729",
+        "Name": "Trinovantes Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/920300",
+        "Termination Date": "16/06/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "564597",
+        "Principal Firm Name": "New Model Venture Capital Limited",
+        "Effective Date": "28/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "920300",
+        "Name": "TRINOVANTES CAPITAL LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "564597",
+    "organisation_name": "New Model Venture Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07723365",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "02/04/2012"
+  },
+  "person_records": {}
 }

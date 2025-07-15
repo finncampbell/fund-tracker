@@ -1,9 +1,38 @@
 {
   "frn": 525956,
   "name": "Turquoise Global Holdings Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/753326",
+        "Termination Date": "04/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "525956",
+        "Principal Firm Name": "Turquoise Global Holdings Ltd",
+        "Effective Date": "20/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "753326",
+        "Name": "Turquoise Swapmatch Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "525956",
+    "organisation_name": "Turquoise Global Holdings Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07102717",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "31/01/2011"
+  },
+  "person_records": {}
 }

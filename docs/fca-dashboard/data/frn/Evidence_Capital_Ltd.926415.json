@@ -1,9 +1,51 @@
 {
   "frn": 926415,
   "name": "Evidence Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931056",
+        "Termination Date": "23/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "926415",
+        "Principal Firm Name": "Evidence Capital Ltd",
+        "Effective Date": "21/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "931056",
+        "Name": "falconpeak securities (uk) limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/970004",
+        "Termination Date": "23/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "926415",
+        "Principal Firm Name": "Evidence Capital Ltd",
+        "Effective Date": "17/02/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "970004",
+        "Name": "Private Markets Alpha Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "926415",
+    "organisation_name": "Evidence Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09902758",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "12/11/2020"
+  },
+  "person_records": {}
 }

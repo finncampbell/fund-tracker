@@ -1,9 +1,38 @@
 {
   "frn": 484392,
   "name": "Chenavari Credit Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/490186",
+        "Termination Date": "08/07/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "484392",
+        "Principal Firm Name": "Chenavari Credit Partners LLP",
+        "Effective Date": "16/10/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "490186",
+        "Name": "Toro Capital Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "484392",
+    "organisation_name": "Chenavari Credit Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC337434",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "24/07/2008"
+  },
+  "person_records": {}
 }

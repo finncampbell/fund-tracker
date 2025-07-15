@@ -1,9 +1,22 @@
 {
   "frn": 776033,
   "name": "HPC Investment Services Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "776033",
+    "organisation_name": "HPC Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09491361",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "13/09/2017"
+  },
+  "person_records": {}
 }

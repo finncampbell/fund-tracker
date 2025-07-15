@@ -1,9 +1,21 @@
 {
   "frn": 755398,
   "name": "EMK Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "755398",
+    "organisation_name": "EMK Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC403928",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "17/01/2017"
+  },
+  "person_records": {}
 }

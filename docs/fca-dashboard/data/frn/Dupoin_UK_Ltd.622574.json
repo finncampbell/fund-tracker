@@ -1,9 +1,104 @@
 {
   "frn": 622574,
   "name": "Dupoin UK Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/732386",
+        "Termination Date": "02/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "18/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "732386",
+        "Name": "Berryburn Farming Company Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710111",
+        "Termination Date": "18/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "14/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710111",
+        "Name": "CEC Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/713410",
+        "Termination Date": "28/11/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "10/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "713410",
+        "Name": "Deauville Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/720159",
+        "Termination Date": "08/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "12/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "720159",
+        "Name": "IA Europe Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710156",
+        "Termination Date": "28/11/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "14/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710156",
+        "Name": "Suite Equity Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1017430",
+        "RecordSubType": "Full",
+        "Principal FRN": "622574",
+        "Principal Firm Name": "Dupoin UK Ltd",
+        "Effective Date": "03/10/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1017430",
+        "Name": "KVB Europe Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "622574",
+    "organisation_name": "Dupoin UK Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "08909079",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "18/11/2014"
+  },
+  "person_records": {}
 }

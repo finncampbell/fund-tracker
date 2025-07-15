@@ -1,9 +1,155 @@
 {
   "frn": 451634,
   "name": "Grosvenor Financial Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/495452",
+        "Termination Date": "23/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "26/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "495452",
+        "Name": "Aether Capital Investments Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/516703",
+        "Termination Date": "31/05/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "25/01/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "516703",
+        "Name": "Allegra Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533511",
+        "Termination Date": "23/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "14/10/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533511",
+        "Name": "Brick Lane Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/479781",
+        "Termination Date": "05/02/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "29/02/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "479781",
+        "Name": "Hawk Emerging Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/494374",
+        "Termination Date": "02/12/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "09/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "494374",
+        "Name": "Kensington Global Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/537214",
+        "Termination Date": "23/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "07/12/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "537214",
+        "Name": "Kuberan Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539778",
+        "Termination Date": "26/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "20/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "539778",
+        "Name": "Leeds Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/553768",
+        "Termination Date": "23/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "17/06/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "553768",
+        "Name": "Market Trend Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/463330",
+        "Termination Date": "23/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "01/02/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "463330",
+        "Name": "Ox Investment Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/518791",
+        "Termination Date": "02/12/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "451634",
+        "Principal Firm Name": "Grosvenor Financial Asset Management Limited",
+        "Effective Date": "26/02/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "518791",
+        "Name": "Qualpoint Capital Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "451634",
+    "organisation_name": "Grosvenor Financial Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04691505",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "13/11/2006"
+  },
+  "person_records": {}
 }

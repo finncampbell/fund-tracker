@@ -1,9 +1,64 @@
 {
   "frn": 917788,
   "name": "EQT Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950537",
+        "Termination Date": "31/05/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "917788",
+        "Principal Firm Name": "EQT Partners Limited",
+        "Effective Date": "07/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "950537",
+        "Name": "EQT Exeter Advisors UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950646",
+        "Termination Date": "22/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "917788",
+        "Principal Firm Name": "EQT Partners Limited",
+        "Effective Date": "09/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "950646",
+        "Name": "Exeter UK Advisor, LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942767",
+        "RecordSubType": "Full",
+        "Principal FRN": "917788",
+        "Principal Firm Name": "EQT Partners Limited",
+        "Effective Date": "12/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942767",
+        "Name": "EQT Partners AB"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "917788",
+    "organisation_name": "EQT Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06590781",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "28/04/2020"
+  },
+  "person_records": {}
 }

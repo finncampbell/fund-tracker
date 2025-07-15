@@ -1,9 +1,39 @@
 {
   "frn": 122169,
   "name": "Financial Administration Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/225972",
+        "Termination Date": "09/08/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "122169",
+        "Principal Firm Name": "Financial Administration Services Limited",
+        "Effective Date": "30/06/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "225972",
+        "Name": "Fidelity Technology India Private Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122169",
+    "organisation_name": "Financial Administration Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01629709",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

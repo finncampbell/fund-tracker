@@ -1,9 +1,52 @@
 {
   "frn": 140854,
   "name": "Jones Lang Lasalle Corporate Finance Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/449187",
+        "Termination Date": "31/07/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "140854",
+        "Principal Firm Name": "Jones Lang Lasalle Corporate Finance Limited",
+        "Effective Date": "13/03/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "449187",
+        "Name": "Brockton Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/406347",
+        "Termination Date": "11/06/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "140854",
+        "Principal Firm Name": "Jones Lang Lasalle Corporate Finance Limited",
+        "Effective Date": "09/11/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "406347",
+        "Name": "Jones Lang Lasalle Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "140854",
+    "organisation_name": "Jones Lang Lasalle Corporate Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01144849",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

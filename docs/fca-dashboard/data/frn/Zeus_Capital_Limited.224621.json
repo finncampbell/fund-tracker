@@ -1,9 +1,51 @@
 {
   "frn": 224621,
   "name": "Zeus Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/679999",
+        "Termination Date": "08/06/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "224621",
+        "Principal Firm Name": "Zeus Capital Limited",
+        "Effective Date": "05/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "679999",
+        "Name": "Jonathan Laughton"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/432410",
+        "Termination Date": "12/11/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "224621",
+        "Principal Firm Name": "Zeus Capital Limited",
+        "Effective Date": "10/05/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "432410",
+        "Name": "Kennet Corporate Finance Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "224621",
+    "organisation_name": "Zeus Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04417845",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "22/09/2003"
+  },
+  "person_records": {}
 }

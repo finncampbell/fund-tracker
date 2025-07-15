@@ -1,9 +1,39 @@
 {
   "frn": 206018,
   "name": "TFS-ICAP Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/208385",
+        "Termination Date": "11/02/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "206018",
+        "Principal Firm Name": "TFS-ICAP Limited",
+        "Effective Date": "12/02/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "208385",
+        "Name": "TFS-ICAP Currency Options Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "206018",
+    "organisation_name": "TFS-ICAP Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04025995",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

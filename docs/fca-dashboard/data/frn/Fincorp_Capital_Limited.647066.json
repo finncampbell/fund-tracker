@@ -1,9 +1,21 @@
 {
   "frn": 647066,
   "name": "Fincorp Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "647066",
+    "organisation_name": "Fincorp Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08960404",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "19/03/2015"
+  },
+  "person_records": {}
 }

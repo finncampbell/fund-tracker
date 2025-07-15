@@ -1,9 +1,64 @@
 {
   "frn": 479172,
   "name": "Milkstone Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917847",
+        "Termination Date": "29/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "479172",
+        "Principal Firm Name": "Milkstone Ltd",
+        "Effective Date": "05/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917847",
+        "Name": "Chacey Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815212",
+        "Termination Date": "28/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "479172",
+        "Principal Firm Name": "Milkstone Ltd",
+        "Effective Date": "01/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815212",
+        "Name": "Green Saturn Energy Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/807934",
+        "RecordSubType": "Full",
+        "Principal FRN": "479172",
+        "Principal Firm Name": "Milkstone Ltd",
+        "Effective Date": "01/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "807934",
+        "Name": "Allinea Corporate Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "479172",
+    "organisation_name": "Milkstone Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06465425",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "01/07/2008"
+  },
+  "person_records": {}
 }

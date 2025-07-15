@@ -1,9 +1,77 @@
 {
   "frn": 119230,
   "name": "Columbia Threadneedle Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/155150",
+        "Termination Date": "06/03/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "119230",
+        "Principal Firm Name": "Columbia Threadneedle Management Limited",
+        "Effective Date": "01/04/1992",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "155150",
+        "Name": "F & C Retail Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/151421",
+        "Termination Date": "06/03/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "119230",
+        "Principal Firm Name": "Columbia Threadneedle Management Limited",
+        "Effective Date": "22/07/1988",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "151421",
+        "Name": "F&C Fixed Interest Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/151422",
+        "Termination Date": "06/03/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "119230",
+        "Principal Firm Name": "Columbia Threadneedle Management Limited",
+        "Effective Date": "22/07/1988",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "151422",
+        "Name": "F&C Institutional Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/173390",
+        "Termination Date": "24/04/2002",
+        "Principal FRN": "119230",
+        "Principal Firm Name": "Columbia Threadneedle Management Limited",
+        "Effective Date": "01/08/1995",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "173390",
+        "Name": "Utilities Investment Research Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "119230",
+    "organisation_name": "Columbia Threadneedle Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "00517895",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

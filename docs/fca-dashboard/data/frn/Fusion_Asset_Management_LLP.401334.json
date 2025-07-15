@@ -1,9 +1,78 @@
 {
   "frn": 401334,
   "name": "Fusion Asset Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608700",
+        "Termination Date": "08/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "401334",
+        "Principal Firm Name": "Fusion Asset Management LLP",
+        "Effective Date": "11/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608700",
+        "Name": "Fusion Asset Management (Services) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/779273",
+        "Termination Date": "02/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "401334",
+        "Principal Firm Name": "Fusion Asset Management LLP",
+        "Effective Date": "18/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "779273",
+        "Name": "H & D Financial Planning Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/794957",
+        "Termination Date": "15/08/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "401334",
+        "Principal Firm Name": "Fusion Asset Management LLP",
+        "Effective Date": "24/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "794957",
+        "Name": "Mayfair Research Associates Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/729584",
+        "RecordSubType": "Full",
+        "Principal FRN": "401334",
+        "Principal Firm Name": "Fusion Asset Management LLP",
+        "Effective Date": "21/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "729584",
+        "Name": "JustFA Technology Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "401334",
+    "organisation_name": "Fusion Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC308197",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "09/12/2004"
+  },
+  "person_records": {}
 }

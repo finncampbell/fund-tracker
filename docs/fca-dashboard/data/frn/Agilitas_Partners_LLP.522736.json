@@ -1,9 +1,61 @@
 {
   "frn": 522736,
   "name": "Agilitas Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/999673",
+        "RecordSubType": "Full",
+        "Principal FRN": "522736",
+        "Principal Firm Name": "Agilitas Partners LLP",
+        "Effective Date": "28/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "999673",
+        "Name": "Agilitas Corporate Finance LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/599585",
+        "RecordSubType": "Full",
+        "Principal FRN": "522736",
+        "Principal Firm Name": "Agilitas Partners LLP",
+        "Effective Date": "17/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "599585",
+        "Name": "Agilitas Private Equity LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/774854",
+        "RecordSubType": "Full",
+        "Principal FRN": "522736",
+        "Principal Firm Name": "Agilitas Partners LLP",
+        "Effective Date": "24/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "774854",
+        "Name": "Agilitas Private Equity Services Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "522736",
+    "organisation_name": "Agilitas Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC354049",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "03/02/2011"
+  },
+  "person_records": {}
 }

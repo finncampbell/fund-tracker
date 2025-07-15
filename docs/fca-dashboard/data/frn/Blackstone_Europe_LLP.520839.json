@@ -1,9 +1,39 @@
 {
   "frn": 520839,
   "name": "Blackstone Europe LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/565822",
+        "Termination Date": "15/02/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "520839",
+        "Principal Firm Name": "Blackstone Europe LLP",
+        "Effective Date": "06/10/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "565822",
+        "Name": "Blackstone Real Estate Debt Advisors UK Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "520839",
+    "organisation_name": "Blackstone Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC352581",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "01/10/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 784063,
   "name": "Ebury Partners Markets Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "784063",
+    "organisation_name": "Ebury Partners Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10841975",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "27/12/2017"
+  },
+  "person_records": {}
 }

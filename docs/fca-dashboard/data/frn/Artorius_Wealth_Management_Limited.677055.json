@@ -1,9 +1,52 @@
 {
   "frn": 677055,
   "name": "Artorius Wealth Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/666612",
+        "Termination Date": "22/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "677055",
+        "Principal Firm Name": "Artorius Wealth Management Limited",
+        "Effective Date": "03/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "666612",
+        "Name": "Artorius Wealth London Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/671348",
+        "Termination Date": "07/01/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "677055",
+        "Principal Firm Name": "Artorius Wealth Management Limited",
+        "Effective Date": "03/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "671348",
+        "Name": "Artorius Wealth Manchester Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "677055",
+    "organisation_name": "Artorius Wealth Management Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "09285538",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "03/08/2015"
+  },
+  "person_records": {}
 }

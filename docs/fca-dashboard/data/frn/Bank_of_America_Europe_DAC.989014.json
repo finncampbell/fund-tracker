@@ -1,9 +1,21 @@
 {
   "frn": 989014,
   "name": "Bank of America Europe DAC",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "989014",
+    "organisation_name": "Bank of America Europe DAC",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR008339",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "01/11/2023"
+  },
+  "person_records": {}
 }

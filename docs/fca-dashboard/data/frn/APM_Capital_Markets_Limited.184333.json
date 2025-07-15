@@ -1,9 +1,78 @@
 {
   "frn": 184333,
   "name": "APM Capital Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591040",
+        "Termination Date": "14/04/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "184333",
+        "Principal Firm Name": "APM Capital Markets Limited",
+        "Effective Date": "09/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591040",
+        "Name": "ayondo Markets Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/775034",
+        "Termination Date": "19/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "184333",
+        "Principal Firm Name": "APM Capital Markets Limited",
+        "Effective Date": "27/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "775034",
+        "Name": "CFDS.COM LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/777136",
+        "Termination Date": "19/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "184333",
+        "Principal Firm Name": "APM Capital Markets Limited",
+        "Effective Date": "21/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "777136",
+        "Name": "Continental Market Trading Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/575851",
+        "Termination Date": "30/01/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "184333",
+        "Principal Firm Name": "APM Capital Markets Limited",
+        "Effective Date": "23/02/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "575851",
+        "Name": "Ideal World Network Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "184333",
+    "organisation_name": "APM Capital Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03148972",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

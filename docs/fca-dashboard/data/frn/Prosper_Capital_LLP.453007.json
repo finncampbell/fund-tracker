@@ -1,9 +1,192 @@
 {
   "frn": 453007,
   "name": "Prosper Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/766550",
+        "Termination Date": "12/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "07/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "766550",
+        "Name": "Byoot Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/997439",
+        "Termination Date": "01/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "06/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "997439",
+        "Name": "Cahootz Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739181",
+        "Termination Date": "08/07/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "19/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739181",
+        "Name": "Capitalrise Finance Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/743371",
+        "Termination Date": "22/08/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "07/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "743371",
+        "Name": "Crowd2Let Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/797322",
+        "Termination Date": "17/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "25/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "797322",
+        "Name": "Estateducation Ventures Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/731401",
+        "Termination Date": "05/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "11/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "731401",
+        "Name": "IFP Technology Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/949176",
+        "Termination Date": "01/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "16/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "949176",
+        "Name": "KODUR FINTECH LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/822425",
+        "Termination Date": "26/03/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "05/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "822425",
+        "Name": "Kuflink Landlord Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608341",
+        "Termination Date": "30/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "07/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608341",
+        "Name": "OneE Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912903",
+        "Termination Date": "06/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "02/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912903",
+        "Name": "Optima Property Group Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845617",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "03/06/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845617",
+        "Name": "DISTILL VENTURES (LONDON) LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950991",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "13/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "950991",
+        "Name": "InfinitX Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/980150",
+        "RecordSubType": "Full",
+        "Principal FRN": "453007",
+        "Principal Firm Name": "Prosper Capital LLP",
+        "Effective Date": "01/08/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "980150",
+        "Name": "Unbiased Group Services Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "453007",
+    "organisation_name": "Prosper Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC318663",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "04/08/2006"
+  },
+  "person_records": {}
 }

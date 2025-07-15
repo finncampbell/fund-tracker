@@ -1,9 +1,52 @@
 {
   "frn": 416932,
   "name": "Cavendish Securities PLC",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/563535",
+        "Termination Date": "07/04/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "416932",
+        "Principal Firm Name": "Cavendish Securities PLC",
+        "Effective Date": "22/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "563535",
+        "Name": "Highland Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/468569",
+        "Termination Date": "06/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "416932",
+        "Principal Firm Name": "Cavendish Securities PLC",
+        "Effective Date": "01/06/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "468569",
+        "Name": "HLFM Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "416932",
+    "organisation_name": "Cavendish Securities PLC",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05210733",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "10/03/2005"
+  },
+  "person_records": {}
 }

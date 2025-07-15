@@ -1,9 +1,38 @@
 {
   "frn": 489702,
   "name": "Tritax Securities LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/495147",
+        "Termination Date": "01/07/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "489702",
+        "Principal Firm Name": "Tritax Securities LLP",
+        "Effective Date": "22/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "495147",
+        "Name": "Tritax Management LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489702",
+    "organisation_name": "Tritax Securities LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC326501",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "06/01/2009"
+  },
+  "person_records": {}
 }

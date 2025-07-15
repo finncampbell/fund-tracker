@@ -1,9 +1,64 @@
 {
   "frn": 569000,
   "name": "European and Global Advisers LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/777304",
+        "Termination Date": "17/10/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "569000",
+        "Principal Firm Name": "European and Global Advisers LLP",
+        "Effective Date": "24/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "777304",
+        "Name": "Adimus Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/988217",
+        "RecordSubType": "Full",
+        "Principal FRN": "569000",
+        "Principal Firm Name": "European and Global Advisers LLP",
+        "Effective Date": "05/12/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "988217",
+        "Name": "FORTILAND LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1000158",
+        "RecordSubType": "Full",
+        "Principal FRN": "569000",
+        "Principal Firm Name": "European and Global Advisers LLP",
+        "Effective Date": "20/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1000158",
+        "Name": "Zetta Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "569000",
+    "organisation_name": "European and Global Advisers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC364593",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "14/05/2012"
+  },
+  "person_records": {}
 }

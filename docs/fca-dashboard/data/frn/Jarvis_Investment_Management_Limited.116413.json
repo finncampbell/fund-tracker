@@ -1,9 +1,91 @@
 {
   "frn": 116413,
   "name": "Jarvis Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/455518",
+        "Termination Date": "01/10/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "116413",
+        "Principal Firm Name": "Jarvis Investment Management Limited",
+        "Effective Date": "28/08/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "455518",
+        "Name": "Astor Securities Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/435373",
+        "Termination Date": "22/02/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "116413",
+        "Principal Firm Name": "Jarvis Investment Management Limited",
+        "Effective Date": "11/07/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "435373",
+        "Name": "Bridge Hall Stockbrokers Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/191791",
+        "Termination Date": "30/05/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "116413",
+        "Principal Firm Name": "Jarvis Investment Management Limited",
+        "Effective Date": "08/05/2000",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "191791",
+        "Name": "Dudley Road Nominees Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456187",
+        "Termination Date": "20/09/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "116413",
+        "Principal Firm Name": "Jarvis Investment Management Limited",
+        "Effective Date": "17/08/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "456187",
+        "Name": "Share Gain Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195619",
+        "Termination Date": "01/11/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "116413",
+        "Principal Firm Name": "Jarvis Investment Management Limited",
+        "Effective Date": "01/05/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "195619",
+        "Name": "Unquoted Trader Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "116413",
+    "organisation_name": "Jarvis Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01844601",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

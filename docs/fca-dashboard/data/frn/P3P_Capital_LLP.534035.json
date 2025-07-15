@@ -1,9 +1,39 @@
 {
   "frn": 534035,
   "name": "P3P Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/726598",
+        "Termination Date": "27/03/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "534035",
+        "Principal Firm Name": "P3P Capital LLP",
+        "Effective Date": "25/11/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "726598",
+        "Name": "P3P Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "534035",
+    "organisation_name": "P3P Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC358807",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "06/05/2011"
+  },
+  "person_records": {}
 }

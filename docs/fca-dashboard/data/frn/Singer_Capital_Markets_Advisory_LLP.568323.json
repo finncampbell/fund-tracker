@@ -1,9 +1,52 @@
 {
   "frn": 568323,
   "name": "Singer Capital Markets Advisory LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/563535",
+        "Termination Date": "15/04/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "568323",
+        "Principal Firm Name": "Singer Capital Markets Advisory LLP",
+        "Effective Date": "10/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "563535",
+        "Name": "Highland Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582321",
+        "Termination Date": "28/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "568323",
+        "Principal Firm Name": "Singer Capital Markets Advisory LLP",
+        "Effective Date": "31/05/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582321",
+        "Name": "JI Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "568323",
+    "organisation_name": "Singer Capital Markets Advisory LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC364131",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "09/01/2012"
+  },
+  "person_records": {}
 }

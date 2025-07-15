@@ -1,9 +1,39 @@
 {
   "frn": 528940,
   "name": "Bishopsfield Capital Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533358",
+        "Termination Date": "12/11/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "528940",
+        "Principal Firm Name": "Bishopsfield Capital Partners Limited",
+        "Effective Date": "15/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533358",
+        "Name": "id3 Capital Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "528940",
+    "organisation_name": "Bishopsfield Capital Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07276948",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "16/12/2010"
+  },
+  "person_records": {}
 }

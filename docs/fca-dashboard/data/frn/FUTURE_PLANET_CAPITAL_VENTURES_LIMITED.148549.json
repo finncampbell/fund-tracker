@@ -1,9 +1,38 @@
 {
   "frn": 148549,
   "name": "FUTURE PLANET CAPITAL (VENTURES) LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/799635",
+        "RecordSubType": "Full",
+        "Principal FRN": "148549",
+        "Principal Firm Name": "FUTURE PLANET CAPITAL (VENTURES) LIMITED",
+        "Effective Date": "14/09/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "799635",
+        "Name": "Future Planet Capital (UK)"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "148549",
+    "organisation_name": "FUTURE PLANET CAPITAL (VENTURES) LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02500898",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,52 @@
 {
   "frn": 455718,
   "name": "Casteel Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592099",
+        "Termination Date": "15/08/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "455718",
+        "Principal Firm Name": "Casteel Capital LLP",
+        "Effective Date": "29/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "592099",
+        "Name": "Arpege Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592099",
+        "Termination Date": "19/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "455718",
+        "Principal Firm Name": "Casteel Capital LLP",
+        "Effective Date": "17/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "592099",
+        "Name": "Arpege Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "455718",
+    "organisation_name": "Casteel Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC320694",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "30/10/2006"
+  },
+  "person_records": {}
 }

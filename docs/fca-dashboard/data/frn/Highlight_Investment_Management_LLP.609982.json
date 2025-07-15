@@ -1,9 +1,22 @@
 {
   "frn": 609982,
   "name": "Highlight Investment Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "609982",
+    "organisation_name": "Highlight Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SO304581",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "01/05/2014"
+  },
+  "person_records": {}
 }

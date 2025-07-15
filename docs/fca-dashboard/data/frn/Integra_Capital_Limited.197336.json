@@ -1,9 +1,104 @@
 {
   "frn": 197336,
   "name": "Integra Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/561005",
+        "Termination Date": "07/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "08/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "561005",
+        "Name": "BLACKROCK EQUITY LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/482556",
+        "Termination Date": "11/12/2008",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "28/04/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "482556",
+        "Name": "Mary Daunter"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/569562",
+        "Termination Date": "07/02/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "23/11/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "569562",
+        "Name": "Philippe Joseph Francois"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/561007",
+        "Termination Date": "08/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "08/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "561007",
+        "Name": "SCR INVESTMENTS LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/569663",
+        "Termination Date": "08/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "24/11/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "569663",
+        "Name": "TELESTO CAPITAL LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/561013",
+        "Termination Date": "08/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "197336",
+        "Principal Firm Name": "Integra Capital Limited",
+        "Effective Date": "08/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "561013",
+        "Name": "Weymouth Capital Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "197336",
+    "organisation_name": "Integra Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03915449",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

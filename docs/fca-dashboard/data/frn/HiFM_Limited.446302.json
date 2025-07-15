@@ -1,9 +1,52 @@
 {
   "frn": 446302,
   "name": "HiFM Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/598754",
+        "Termination Date": "18/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "446302",
+        "Principal Firm Name": "HiFM Limited",
+        "Effective Date": "05/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "598754",
+        "Name": "TJK Treasury Solutions Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1023110",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446302",
+        "Principal Firm Name": "HiFM Limited",
+        "Effective Date": "11/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1023110",
+        "Name": "HiFX Europe Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "446302",
+    "organisation_name": "HiFM Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05448864",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "25/08/2006"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,489 @@
 {
   "frn": 773829,
   "name": "Old Mission Europe LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "MXC10589",
+      "Name": "Mike Zee Chaplee",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC10589"
+    },
+    {
+      "IRN": "XXO01078",
+      "Name": ". Old Mission International LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXO01078"
+    },
+    {
+      "IRN": "XXO01077",
+      "Name": ". Old Mission Group LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXO01077"
+    },
+    {
+      "IRN": "SXI00072",
+      "Name": "Sofia Ioannou",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXI00072"
+    },
+    {
+      "IRN": "JXD00388",
+      "Name": "Justin DeVito",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXD00388"
+    },
+    {
+      "IRN": "EXW00115",
+      "Name": "Elliott Wood",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXW00115"
+    },
+    {
+      "IRN": "CXH00349",
+      "Name": "Clark Hailston",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXH00349"
+    },
+    {
+      "IRN": "DXS02351",
+      "Name": "Dominykas Serksnas",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXS02351"
+    },
+    {
+      "IRN": "AXP00874",
+      "Name": "Alexandros Papadopoulos",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXP00874"
+    },
+    {
+      "IRN": "AXS04989",
+      "Name": "Atulya Shetty",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS04989"
+    },
+    {
+      "IRN": "GXM00601",
+      "Name": "Grace McHugh",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXM00601"
+    },
+    {
+      "IRN": "VXR00100",
+      "Name": "VIDYASAGAR Reddy",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXR00100"
+    },
+    {
+      "IRN": "JXB01738",
+      "Name": "John Beltran",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB01738"
+    },
+    {
+      "IRN": "DXG00504",
+      "Name": "David Graovac",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXG00504"
+    },
+    {
+      "IRN": "JXB02878",
+      "Name": "Jahan Balani",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB02878"
+    },
+    {
+      "IRN": "LXW00212",
+      "Name": "Lee Williams",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXW00212"
+    },
+    {
+      "IRN": "JXB00689",
+      "Name": "Jonathan Matthew Briggs",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB00689"
+    },
+    {
+      "IRN": "MXM02743",
+      "Name": "Mark Miller",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXM02743"
+    },
+    {
+      "IRN": "AXM00930",
+      "Name": "Alexander McCauley",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM00930"
+    },
+    {
+      "IRN": "SXJ00584",
+      "Name": "Shreyans Jain",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXJ00584"
+    },
+    {
+      "IRN": "CXB01085",
+      "Name": "Christopher Butler",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXB01085"
+    },
+    {
+      "IRN": "KXS00854",
+      "Name": "Kristijan Stefanec",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXS00854"
+    },
+    {
+      "IRN": "MXC10589",
+      "Name": "Mike Zee Chaplee",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC10589"
+    },
+    {
+      "IRN": "AGH01129",
+      "Name": "Alexander Gerard Horan Hedges",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AGH01129"
+    },
+    {
+      "IRN": "XXO01078",
+      "Name": ". Old Mission International LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXO01078"
+    },
+    {
+      "IRN": "XXO01077",
+      "Name": ". Old Mission Group LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXO01077"
+    },
+    {
+      "IRN": "KXS00337",
+      "Name": "Ke Shen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXS00337"
+    },
+    {
+      "IRN": "MXM02743",
+      "Name": "Mark Miller",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXM02743"
+    },
+    {
+      "IRN": "AXM00930",
+      "Name": "Alexander McCauley",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM00930"
+    },
+    {
+      "IRN": "LXW00212",
+      "Name": "Lee Williams",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXW00212"
+    },
+    {
+      "IRN": "GXS00310",
+      "Name": "George Simmons",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXS00310"
+    },
+    {
+      "IRN": "TXP00125",
+      "Name": "Tze Liang Phua",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXP00125"
+    },
+    {
+      "IRN": "MXR00900",
+      "Name": "Max Robertson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXR00900"
+    },
+    {
+      "IRN": "TXH00226",
+      "Name": "Todd Hollander",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00226"
+    },
+    {
+      "IRN": "RXW00315",
+      "Name": "Ryan Wilkins",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXW00315"
+    },
+    {
+      "IRN": "AXT02200",
+      "Name": "Ari Tenzer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXT02200"
+    },
+    {
+      "IRN": "SXP02902",
+      "Name": "Stephen Platz",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXP02902"
+    },
+    {
+      "IRN": "KBL01013",
+      "Name": "Kevin Brian Lee",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KBL01013"
+    },
+    {
+      "IRN": "ESW01007",
+      "Name": "Elliott Stephen Wood",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ESW01007"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "MXC10589": [],
+    "XXO01078": [],
+    "XXO01077": [],
+    "SXI00072": [],
+    "JXD00388": [],
+    "EXW00115": [],
+    "CXH00349": [],
+    "DXS02351": [],
+    "AXP00874": [],
+    "AXS04989": [],
+    "GXM00601": [],
+    "VXR00100": [],
+    "JXB01738": [],
+    "DXG00504": [],
+    "JXB02878": [],
+    "LXW00212": [],
+    "JXB00689": [],
+    "MXM02743": [],
+    "AXM00930": [],
+    "SXJ00584": [],
+    "CXB01085": [],
+    "KXS00854": [],
+    "AGH01129": [],
+    "KXS00337": [],
+    "GXS00310": [],
+    "TXP00125": [],
+    "MXR00900": [],
+    "TXH00226": [],
+    "RXW00315": [],
+    "AXT02200": [],
+    "SXP02902": [],
+    "KBL01013": [],
+    "ESW01007": []
+  },
+  "metadata": {
+    "frn": "773829",
+    "organisation_name": "Old Mission Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC403724",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "01/11/2017"
+  },
+  "person_records": {
+    "MXC10589": {
+      "irn": "MXC10589",
+      "name": "Mike Zee Chaplee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXO01078": {
+      "irn": "XXO01078",
+      "name": ". Old Mission International LLC",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXO01077": {
+      "irn": "XXO01077",
+      "name": ". Old Mission Group LLC",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXI00072": {
+      "irn": "SXI00072",
+      "name": "Sofia Ioannou",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXD00388": {
+      "irn": "JXD00388",
+      "name": "Justin DeVito",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXW00115": {
+      "irn": "EXW00115",
+      "name": "Elliott Wood",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXH00349": {
+      "irn": "CXH00349",
+      "name": "Clark Hailston",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXS02351": {
+      "irn": "DXS02351",
+      "name": "Dominykas Serksnas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXP00874": {
+      "irn": "AXP00874",
+      "name": "Alexandros Papadopoulos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS04989": {
+      "irn": "AXS04989",
+      "name": "Atulya Shetty",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXM00601": {
+      "irn": "GXM00601",
+      "name": "Grace McHugh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXR00100": {
+      "irn": "VXR00100",
+      "name": "VIDYASAGAR Reddy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB01738": {
+      "irn": "JXB01738",
+      "name": "John Beltran",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXG00504": {
+      "irn": "DXG00504",
+      "name": "David Graovac",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB02878": {
+      "irn": "JXB02878",
+      "name": "Jahan Balani",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXW00212": {
+      "irn": "LXW00212",
+      "name": "Lee Williams",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB00689": {
+      "irn": "JXB00689",
+      "name": "Jonathan Matthew Briggs",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXM02743": {
+      "irn": "MXM02743",
+      "name": "Mark Miller",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM00930": {
+      "irn": "AXM00930",
+      "name": "Alexander McCauley",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXJ00584": {
+      "irn": "SXJ00584",
+      "name": "Shreyans Jain",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXB01085": {
+      "irn": "CXB01085",
+      "name": "Christopher Butler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXS00854": {
+      "irn": "KXS00854",
+      "name": "Kristijan Stefanec",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AGH01129": {
+      "irn": "AGH01129",
+      "name": "Alexander Gerard Horan Hedges",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXS00337": {
+      "irn": "KXS00337",
+      "name": "Ke Shen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXS00310": {
+      "irn": "GXS00310",
+      "name": "George Simmons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXP00125": {
+      "irn": "TXP00125",
+      "name": "Tze Liang Phua",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXR00900": {
+      "irn": "MXR00900",
+      "name": "Max Robertson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXH00226": {
+      "irn": "TXH00226",
+      "name": "Todd Hollander",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXW00315": {
+      "irn": "RXW00315",
+      "name": "Ryan Wilkins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXT02200": {
+      "irn": "AXT02200",
+      "name": "Ari Tenzer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXP02902": {
+      "irn": "SXP02902",
+      "name": "Stephen Platz",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KBL01013": {
+      "irn": "KBL01013",
+      "name": "Kevin Brian Lee",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ESW01007": {
+      "irn": "ESW01007",
+      "name": "Elliott Stephen Wood",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

@@ -1,9 +1,64 @@
 {
   "frn": 435492,
   "name": "Struan Financial Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538590",
+        "Termination Date": "16/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "435492",
+        "Principal Firm Name": "Struan Financial Management Limited",
+        "Effective Date": "01/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "538590",
+        "Name": "Richard Garth Travers"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/948733",
+        "RecordSubType": "Full",
+        "Principal FRN": "435492",
+        "Principal Firm Name": "Struan Financial Management Limited",
+        "Effective Date": "09/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "948733",
+        "Name": "Mark Hayball"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1023073",
+        "RecordSubType": "Full",
+        "Principal FRN": "435492",
+        "Principal Firm Name": "Struan Financial Management Limited",
+        "Effective Date": "08/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "1023073",
+        "Name": "Stonehaven Wealth Management Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "435492",
+    "organisation_name": "Struan Financial Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05542744",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "10/10/2005"
+  },
+  "person_records": {}
 }

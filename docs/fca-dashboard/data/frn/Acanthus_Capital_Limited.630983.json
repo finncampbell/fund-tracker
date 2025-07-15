@@ -1,9 +1,64 @@
 {
   "frn": 630983,
   "name": "Acanthus Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/476749",
+        "Termination Date": "01/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "630983",
+        "Principal Firm Name": "Acanthus Capital Limited",
+        "Effective Date": "03/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "476749",
+        "Name": "Acanthus Advisers LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600532",
+        "Termination Date": "01/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "630983",
+        "Principal Firm Name": "Acanthus Capital Limited",
+        "Effective Date": "03/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600532",
+        "Name": "Acanthus Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/922961",
+        "RecordSubType": "Full",
+        "Principal FRN": "630983",
+        "Principal Firm Name": "Acanthus Capital Limited",
+        "Effective Date": "18/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "922961",
+        "Name": "Acanthus Global Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "630983",
+    "organisation_name": "Acanthus Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09125604",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "03/11/2014"
+  },
+  "person_records": {}
 }

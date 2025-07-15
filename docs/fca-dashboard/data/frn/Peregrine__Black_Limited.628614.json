@@ -1,9 +1,52 @@
 {
   "frn": 628614,
   "name": "Peregrine & Black Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/787122",
+        "Termination Date": "18/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "628614",
+        "Principal Firm Name": "Peregrine & Black Limited",
+        "Effective Date": "21/08/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "787122",
+        "Name": "Deltec Global Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/779091",
+        "Termination Date": "22/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "628614",
+        "Principal Firm Name": "Peregrine & Black Limited",
+        "Effective Date": "16/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "779091",
+        "Name": "Peregrine & Black FX Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "628614",
+    "organisation_name": "Peregrine & Black Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08321754",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "17/02/2015"
+  },
+  "person_records": {}
 }

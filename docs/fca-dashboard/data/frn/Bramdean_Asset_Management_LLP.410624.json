@@ -1,9 +1,129 @@
 {
   "frn": 410624,
   "name": "Bramdean Asset Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/624111",
+        "Termination Date": "24/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "27/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "624111",
+        "Name": "Denmark Square Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616054",
+        "Termination Date": "26/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "18/02/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616054",
+        "Name": "Glentham Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/590000",
+        "Termination Date": "22/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "19/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "590000",
+        "Name": "IW Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/590000",
+        "Termination Date": "09/11/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "15/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "590000",
+        "Name": "IW Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762710",
+        "Termination Date": "23/02/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "01/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762710",
+        "Name": "Lazarus & Maverick Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/817179",
+        "Termination Date": "20/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "24/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "817179",
+        "Name": "Money&Co. Portfolio Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/567702",
+        "Termination Date": "06/11/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "29/03/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "567702",
+        "Name": "Rockpool Investments LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/578828",
+        "Termination Date": "06/06/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "410624",
+        "Principal Firm Name": "Bramdean Asset Management LLP",
+        "Effective Date": "19/04/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "578828",
+        "Name": "Utopia Media Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "410624",
+    "organisation_name": "Bramdean Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC309481",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "17/12/2004"
+  },
+  "person_records": {}
 }

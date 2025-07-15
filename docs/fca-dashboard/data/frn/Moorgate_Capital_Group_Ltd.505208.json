@@ -1,9 +1,74 @@
 {
   "frn": 505208,
   "name": "Moorgate Capital Group Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533585",
+        "RecordSubType": "Full",
+        "Principal FRN": "505208",
+        "Principal Firm Name": "Moorgate Capital Group Ltd",
+        "Effective Date": "15/10/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533585",
+        "Name": "MCCF UK SOLUTIONS LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/572129",
+        "RecordSubType": "Full",
+        "Principal FRN": "505208",
+        "Principal Firm Name": "Moorgate Capital Group Ltd",
+        "Effective Date": "04/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "572129",
+        "Name": "Moorgate Capital Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/572144",
+        "RecordSubType": "Full",
+        "Principal FRN": "505208",
+        "Principal Firm Name": "Moorgate Capital Group Ltd",
+        "Effective Date": "05/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "572144",
+        "Name": "Moorgate Capital Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/572131",
+        "RecordSubType": "Full",
+        "Principal FRN": "505208",
+        "Principal Firm Name": "Moorgate Capital Group Ltd",
+        "Effective Date": "05/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "572131",
+        "Name": "Moorgate Capital Markets Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "505208",
+    "organisation_name": "Moorgate Capital Group Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06876348",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "03/06/2010"
+  },
+  "person_records": {}
 }

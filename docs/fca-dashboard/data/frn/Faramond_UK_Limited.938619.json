@@ -1,9 +1,21 @@
 {
   "frn": 938619,
   "name": "Faramond UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "938619",
+    "organisation_name": "Faramond UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06606642",
+    "system_timestamp": "23/06/2025 22:18",
+    "status_effective_date": "01/06/2021"
+  },
+  "person_records": {}
 }

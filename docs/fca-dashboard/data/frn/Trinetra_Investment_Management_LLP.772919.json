@@ -1,9 +1,166 @@
 {
   "frn": 772919,
   "name": "Trinetra Investment Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "BXU01060",
+      "Name": "Beatriz Urgel Esteban",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXU01060"
+    },
+    {
+      "IRN": "SXW01239",
+      "Name": "Stephanie Winterhagen",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXW01239"
+    },
+    {
+      "IRN": "AXS01561",
+      "Name": "Anastasios Stassopoulos",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS01561"
+    },
+    {
+      "IRN": "OCC01008",
+      "Name": "Oliver Claude Chetwode Crawley",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OCC01008"
+    },
+    {
+      "IRN": "ASR01061",
+      "Name": "Andrew Simon Reiss",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASR01061"
+    },
+    {
+      "IRN": "AXV15353",
+      "Name": "Andreas Valanides",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXV15353"
+    },
+    {
+      "IRN": "VXN01005",
+      "Name": "Valli Sumathy Srikanthapalan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXN01005"
+    },
+    {
+      "IRN": "BXU01060",
+      "Name": "Beatriz Urgel Esteban",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXU01060"
+    },
+    {
+      "IRN": "ASR01061",
+      "Name": "Andrew Simon Reiss",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASR01061"
+    },
+    {
+      "IRN": "AXS01561",
+      "Name": "Anastasios Stassopoulos",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS01561"
+    },
+    {
+      "IRN": "VXN01005",
+      "Name": "Valli Sumathy Srikanthapalan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXN01005"
+    },
+    {
+      "IRN": "PXR09822",
+      "Name": "Panos Iasonas Razos",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXR09822"
+    },
+    {
+      "IRN": "EXC01225",
+      "Name": "Evripides Constantinou",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXC01225"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "BXU01060": [],
+    "SXW01239": [],
+    "AXS01561": [],
+    "OCC01008": [],
+    "ASR01061": [],
+    "AXV15353": [],
+    "VXN01005": [],
+    "PXR09822": [],
+    "EXC01225": []
+  },
+  "metadata": {
+    "frn": "772919",
+    "organisation_name": "Trinetra Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC415873",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "15/06/2017"
+  },
+  "person_records": {
+    "BXU01060": {
+      "irn": "BXU01060",
+      "name": "Beatriz Urgel Esteban",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXW01239": {
+      "irn": "SXW01239",
+      "name": "Stephanie Winterhagen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS01561": {
+      "irn": "AXS01561",
+      "name": "Anastasios Stassopoulos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OCC01008": {
+      "irn": "OCC01008",
+      "name": "Oliver Claude Chetwode Crawley",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ASR01061": {
+      "irn": "ASR01061",
+      "name": "Andrew Simon Reiss",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXV15353": {
+      "irn": "AXV15353",
+      "name": "Andreas Valanides",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXN01005": {
+      "irn": "VXN01005",
+      "name": "Valli Sumathy Srikanthapalan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXR09822": {
+      "irn": "PXR09822",
+      "name": "Panos Iasonas Razos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXC01225": {
+      "irn": "EXC01225",
+      "name": "Evripides Constantinou",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

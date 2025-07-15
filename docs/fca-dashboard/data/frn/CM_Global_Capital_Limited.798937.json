@@ -2,8 +2,13 @@
   "frn": 798937,
   "name": "C&M Global Capital Limited",
   "trading_names": [],
-  "appointed_reps": [],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {},
+  "person_records": {}
 }

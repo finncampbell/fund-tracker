@@ -1,9 +1,38 @@
 {
   "frn": 124412,
   "name": "Charles Stanley & Co Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806986",
+        "RecordSubType": "Full",
+        "Principal FRN": "124412",
+        "Principal Firm Name": "Charles Stanley & Co Ltd",
+        "Effective Date": "19/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "806986",
+        "Name": "Fitzrovia Financial Planning Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "124412",
+    "organisation_name": "Charles Stanley & Co Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "01903304",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

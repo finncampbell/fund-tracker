@@ -1,9 +1,39 @@
 {
   "frn": 707896,
   "name": "Leodis Wealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/841469",
+        "Termination Date": "02/09/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "707896",
+        "Principal Firm Name": "Leodis Wealth Limited",
+        "Effective Date": "07/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "841469",
+        "Name": "Leodis Wealth Financial Planning Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "707896",
+    "organisation_name": "Leodis Wealth Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09634747",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "01/12/2015"
+  },
+  "person_records": {}
 }

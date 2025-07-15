@@ -1,9 +1,52 @@
 {
   "frn": 122170,
   "name": "FIL Investments International",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/414496",
+        "Termination Date": "13/08/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "122170",
+        "Principal Firm Name": "FIL Investments International",
+        "Effective Date": "12/11/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "414496",
+        "Name": "Fidelity Business Services India Private Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/225972",
+        "Termination Date": "24/11/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "122170",
+        "Principal Firm Name": "FIL Investments International",
+        "Effective Date": "30/06/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "225972",
+        "Name": "Fidelity Technology India Private Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122170",
+    "organisation_name": "FIL Investments International",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01448245",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 1007140,
   "name": "TTX Services UK Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1007140",
+    "organisation_name": "TTX Services UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "14253026",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "18/04/2024"
+  },
+  "person_records": {}
 }

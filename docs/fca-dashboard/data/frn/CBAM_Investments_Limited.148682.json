@@ -1,9 +1,39 @@
 {
   "frn": 148682,
   "name": "CBAM Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/210805",
+        "Termination Date": "31/12/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "148682",
+        "Principal Firm Name": "CBAM Investments Limited",
+        "Effective Date": "03/04/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "210805",
+        "Name": "N K Partnership"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "148682",
+    "organisation_name": "CBAM Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02594987",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

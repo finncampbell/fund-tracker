@@ -1,9 +1,65 @@
 {
   "frn": 539422,
   "name": "EQ Investors Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/565658",
+        "Termination Date": "21/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "539422",
+        "Principal Firm Name": "EQ Investors Limited",
+        "Effective Date": "03/10/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "565658",
+        "Name": "Truestone Corporate Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/583152",
+        "Termination Date": "24/03/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "539422",
+        "Principal Firm Name": "EQ Investors Limited",
+        "Effective Date": "20/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "583152",
+        "Name": "Truestone Wellers LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190820",
+        "Termination Date": "24/03/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "539422",
+        "Principal Firm Name": "EQ Investors Limited",
+        "Effective Date": "17/09/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "190820",
+        "Name": "Wellserve Financial Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "539422",
+    "organisation_name": "EQ Investors Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07223330",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "01/06/2011"
+  },
+  "person_records": {}
 }

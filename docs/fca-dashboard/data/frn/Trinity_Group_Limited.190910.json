@@ -1,9 +1,117 @@
 {
   "frn": 190910,
   "name": "Trinity Group Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/488685",
+        "Termination Date": "17/03/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "10/09/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "488685",
+        "Name": "Charcot Capital (UK) LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/653009",
+        "Termination Date": "10/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "05/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "653009",
+        "Name": "GDK Advisors (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/529736",
+        "Termination Date": "16/09/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "16/08/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "529736",
+        "Name": "Park Lane Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/529736",
+        "Termination Date": "04/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "14/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "529736",
+        "Name": "Park Lane Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/535524",
+        "Termination Date": "31/12/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "10/11/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "535524",
+        "Name": "Trinity Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/493782",
+        "Termination Date": "26/10/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "01/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "493782",
+        "Name": "Trinity Strategic Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/493782",
+        "Termination Date": "30/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "190910",
+        "Principal Firm Name": "Trinity Group Limited",
+        "Effective Date": "27/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "493782",
+        "Name": "Trinity Strategic Advisors Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "190910",
+    "organisation_name": "Trinity Group Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03262845",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

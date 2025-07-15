@@ -1,9 +1,38 @@
 {
   "frn": 232088,
   "name": "Investment Quorum Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/227510",
+        "Termination Date": "30/09/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "232088",
+        "Principal Firm Name": "Investment Quorum Limited",
+        "Effective Date": "29/10/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "227510",
+        "Name": "Absolute Investment Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "232088",
+    "organisation_name": "Investment Quorum Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04064060",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "01/10/2004"
+  },
+  "person_records": {}
 }

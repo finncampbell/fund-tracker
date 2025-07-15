@@ -1,9 +1,22 @@
 {
   "frn": 186093,
   "name": "GLG Partners LP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "186093",
+    "organisation_name": "GLG Partners LP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "LP006776",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

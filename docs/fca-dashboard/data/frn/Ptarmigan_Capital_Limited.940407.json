@@ -1,9 +1,22 @@
 {
   "frn": 940407,
   "name": "Ptarmigan Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "940407",
+    "organisation_name": "Ptarmigan Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12715470",
+    "system_timestamp": "23/06/2025 22:18",
+    "status_effective_date": "23/08/2021"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,156 @@
 {
   "frn": 446677,
   "name": "Spread Co Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/503679",
+        "Termination Date": "27/08/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "15/07/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "503679",
+        "Name": "ADVFN PLC"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/499925",
+        "Termination Date": "01/07/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "09/09/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "499925",
+        "Name": "Austen Lewis Wealth Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/484371",
+        "Termination Date": "03/07/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "17/03/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "484371",
+        "Name": "Clickthemarkets.com.Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/499562",
+        "Termination Date": "04/12/2009",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "17/04/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "499562",
+        "Name": "Compupeople Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/502692",
+        "Termination Date": "03/07/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "22/06/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "502692",
+        "Name": "Infi Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538873",
+        "Termination Date": "03/07/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "10/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "538873",
+        "Name": "Javin Financials Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/485018",
+        "Termination Date": "28/01/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "23/11/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "485018",
+        "Name": "London South East Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/503718",
+        "Termination Date": "16/04/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "16/07/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "503718",
+        "Name": "Mark Maffia"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/511165",
+        "Termination Date": "03/07/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "26/10/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "511165",
+        "Name": "Mohammed Amin Choudhury"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/523998",
+        "Termination Date": "03/07/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446677",
+        "Principal Firm Name": "Spread Co Limited",
+        "Effective Date": "14/05/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "523998",
+        "Name": "Platinum International Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "446677",
+    "organisation_name": "Spread Co Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05614477",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "06/10/2006"
+  },
+  "person_records": {}
 }

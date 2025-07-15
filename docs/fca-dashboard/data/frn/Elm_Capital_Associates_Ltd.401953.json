@@ -1,9 +1,37 @@
 {
   "frn": 401953,
   "name": "Elm Capital Associates Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538066",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "401953",
+        "Principal Firm Name": "Elm Capital Associates Ltd",
+        "Effective Date": "21/12/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "538066",
+        "Name": "ELM CAPITAL USA LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "401953",
+    "organisation_name": "Elm Capital Associates Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05131113",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "08/10/2004"
+  },
+  "person_records": {}
 }

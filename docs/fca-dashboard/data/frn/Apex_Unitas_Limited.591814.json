@@ -1,9 +1,22 @@
 {
   "frn": 591814,
   "name": "Apex Unitas Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "591814",
+    "organisation_name": "Apex Unitas Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08255713",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "27/02/2013"
+  },
+  "person_records": {}
 }

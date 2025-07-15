@@ -1,9 +1,22 @@
 {
   "frn": 928010,
   "name": "Tembo Savings Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "928010",
+    "organisation_name": "Tembo Savings Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12008146",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "02/03/2021"
+  },
+  "person_records": {}
 }

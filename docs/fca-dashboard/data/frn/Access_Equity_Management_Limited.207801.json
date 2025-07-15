@@ -1,9 +1,264 @@
 {
   "frn": 207801,
   "name": "Access Equity Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/737721",
+        "Termination Date": "20/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "23/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "737721",
+        "Name": "Aeos Health Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/492905",
+        "Termination Date": "28/06/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "31/05/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "492905",
+        "Name": "Amara Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805696",
+        "Termination Date": "25/09/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "04/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805696",
+        "Name": "Black Mountain Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/228593",
+        "Termination Date": "02/07/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "22/09/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "228593",
+        "Name": "Capital Index Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/232315",
+        "Termination Date": "23/07/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "23/03/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "232315",
+        "Name": "Citiconsult Emerging Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/684420",
+        "Termination Date": "16/09/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "19/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "684420",
+        "Name": "FB Advisers Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/810241",
+        "Termination Date": "03/06/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "29/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "810241",
+        "Name": "Fomi Technology UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/927519",
+        "Termination Date": "16/12/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "09/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "927519",
+        "Name": "Keats Capital Europe Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/911983",
+        "Termination Date": "27/04/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "05/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "911983",
+        "Name": "KS Capital Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/750163",
+        "Termination Date": "06/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "15/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "750163",
+        "Name": "MMG CAPITAL LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/996994",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "30/05/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "996994",
+        "Name": "Clota Varde Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1005618",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "07/12/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1005618",
+        "Name": "Denman Capital Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/839246",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "01/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "839246",
+        "Name": "Derrycastle Investments Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/800704",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "05/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "800704",
+        "Name": "Fiduciary Co-Investment Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/946912",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "12/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "946912",
+        "Name": "Millemont Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/952323",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "05/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "952323",
+        "Name": "Napatree Capital Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/976371",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "25/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "976371",
+        "Name": "Real Assets Investment Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/654885",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "25/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "654885",
+        "Name": "Savuti Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926644",
+        "RecordSubType": "Full",
+        "Principal FRN": "207801",
+        "Principal Firm Name": "Access Equity Management Limited",
+        "Effective Date": "22/05/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926644",
+        "Name": "TAG ADVISERS LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "207801",
+    "organisation_name": "Access Equity Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04077379",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "20/05/2002"
+  },
+  "person_records": {}
 }

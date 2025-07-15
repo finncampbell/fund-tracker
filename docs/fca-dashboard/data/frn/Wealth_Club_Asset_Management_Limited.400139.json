@@ -1,9 +1,471 @@
 {
   "frn": 400139,
   "name": "Wealth Club Asset Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "AJD01271",
+      "Name": "Alexander James Fraser Davies",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AJD01271"
+    },
+    {
+      "IRN": "RGR01043",
+      "Name": "Ruth Gillian Richards",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RGR01043"
+    },
+    {
+      "IRN": "MXC03202",
+      "Name": "Marta Caricato",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC03202"
+    },
+    {
+      "IRN": "SXP01327",
+      "Name": "Simon Silvester Power",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXP01327"
+    },
+    {
+      "IRN": "SXL00207",
+      "Name": "Sheridan Arthur Harold Leech",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXL00207"
+    },
+    {
+      "IRN": "TDD01015",
+      "Name": "Thomas Dominic Dimonaco",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TDD01015"
+    },
+    {
+      "IRN": "BXO00020",
+      "Name": "Benjamin O'Sullivan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXO00020"
+    },
+    {
+      "IRN": "CJH01372",
+      "Name": "Charles James Huggins",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJH01372"
+    },
+    {
+      "IRN": "HXT00214",
+      "Name": "Harry Halford Thistlethwaite",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXT00214"
+    },
+    {
+      "IRN": "PXV00084",
+      "Name": "Philippa Vassallo",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXV00084"
+    },
+    {
+      "IRN": "NCH01079",
+      "Name": "Nicholas Charles Hyett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NCH01079"
+    },
+    {
+      "IRN": "JSM01250",
+      "Name": "Jonathan Stuart Moyes",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JSM01250"
+    },
+    {
+      "IRN": "IMS01085",
+      "Name": "Isaac Stell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IMS01085"
+    },
+    {
+      "IRN": "JMH01322",
+      "Name": "Jason Mark Hanshaw",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JMH01322"
+    },
+    {
+      "IRN": "GXA00276",
+      "Name": "George Arnold",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXA00276"
+    },
+    {
+      "IRN": "LXH00613",
+      "Name": "Leon George Harris",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXH00613"
+    },
+    {
+      "IRN": "TXG00133",
+      "Name": "Tristram Gibbons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXG00133"
+    },
+    {
+      "IRN": "MXC03202",
+      "Name": "Marta Caricato",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC03202"
+    },
+    {
+      "IRN": "RGR01043",
+      "Name": "Ruth Gillian Richards",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RGR01043"
+    },
+    {
+      "IRN": "AJD01271",
+      "Name": "Alexander James Fraser Davies",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AJD01271"
+    },
+    {
+      "IRN": "CJB01484",
+      "Name": "Christopher James Bowles",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJB01484"
+    },
+    {
+      "IRN": "GXB01351",
+      "Name": "Gayle Elizabeth Bowen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXB01351"
+    },
+    {
+      "IRN": "DJS01274",
+      "Name": "David James Scrivens",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJS01274"
+    },
+    {
+      "IRN": "JDM01277",
+      "Name": "Jonathon David Mitchell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDM01277"
+    },
+    {
+      "IRN": "CJH01372",
+      "Name": "Charles James Huggins",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJH01372"
+    },
+    {
+      "IRN": "AXM04157",
+      "Name": "Amman Meah",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM04157"
+    },
+    {
+      "IRN": "CXR00465",
+      "Name": "Carlo Revel-Chion",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXR00465"
+    },
+    {
+      "IRN": "IXE00040",
+      "Name": "Isabella Evans",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXE00040"
+    },
+    {
+      "IRN": "KXP00359",
+      "Name": "Katie Prior",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXP00359"
+    },
+    {
+      "IRN": "NCH01079",
+      "Name": "Nicholas Charles Hyett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NCH01079"
+    },
+    {
+      "IRN": "SMS01279",
+      "Name": "Samuel Malcolm Stephens",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SMS01279"
+    },
+    {
+      "IRN": "AJD01199",
+      "Name": "Alison Jane Briggs",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AJD01199"
+    },
+    {
+      "IRN": "DXW00408",
+      "Name": "Dominic Weir",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXW00408"
+    },
+    {
+      "IRN": "IXA00085",
+      "Name": "India Ayling",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXA00085"
+    },
+    {
+      "IRN": "OXN00015",
+      "Name": "Oliver Nicholas",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXN00015"
+    },
+    {
+      "IRN": "AXW00260",
+      "Name": "Adam Daniel Watts",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXW00260"
+    },
+    {
+      "IRN": "PKR01017",
+      "Name": "Philip Keith Rhoden",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PKR01017"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "AJD01271": [],
+    "RGR01043": [],
+    "MXC03202": [],
+    "SXP01327": [],
+    "SXL00207": [],
+    "TDD01015": [],
+    "BXO00020": [],
+    "CJH01372": [],
+    "HXT00214": [],
+    "PXV00084": [],
+    "NCH01079": [],
+    "JSM01250": [],
+    "IMS01085": [],
+    "JMH01322": [],
+    "GXA00276": [],
+    "LXH00613": [],
+    "TXG00133": [],
+    "CJB01484": [],
+    "GXB01351": [],
+    "DJS01274": [],
+    "JDM01277": [],
+    "AXM04157": [],
+    "CXR00465": [],
+    "IXE00040": [],
+    "KXP00359": [],
+    "SMS01279": [],
+    "AJD01199": [],
+    "DXW00408": [],
+    "IXA00085": [],
+    "OXN00015": [],
+    "AXW00260": [],
+    "PKR01017": []
+  },
+  "metadata": {
+    "frn": "400139",
+    "organisation_name": "Wealth Club Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04522114",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "25/10/2004"
+  },
+  "person_records": {
+    "AJD01271": {
+      "irn": "AJD01271",
+      "name": "Alexander James Fraser Davies",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RGR01043": {
+      "irn": "RGR01043",
+      "name": "Ruth Gillian Richards",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC03202": {
+      "irn": "MXC03202",
+      "name": "Marta Caricato",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXP01327": {
+      "irn": "SXP01327",
+      "name": "Simon Silvester Power",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXL00207": {
+      "irn": "SXL00207",
+      "name": "Sheridan Arthur Harold Leech",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TDD01015": {
+      "irn": "TDD01015",
+      "name": "Thomas Dominic Dimonaco",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXO00020": {
+      "irn": "BXO00020",
+      "name": "Benjamin O'Sullivan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CJH01372": {
+      "irn": "CJH01372",
+      "name": "Charles James Huggins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXT00214": {
+      "irn": "HXT00214",
+      "name": "Harry Halford Thistlethwaite",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXV00084": {
+      "irn": "PXV00084",
+      "name": "Philippa Vassallo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NCH01079": {
+      "irn": "NCH01079",
+      "name": "Nicholas Charles Hyett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JSM01250": {
+      "irn": "JSM01250",
+      "name": "Jonathan Stuart Moyes",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IMS01085": {
+      "irn": "IMS01085",
+      "name": "Isaac Stell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JMH01322": {
+      "irn": "JMH01322",
+      "name": "Jason Mark Hanshaw",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXA00276": {
+      "irn": "GXA00276",
+      "name": "George Arnold",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXH00613": {
+      "irn": "LXH00613",
+      "name": "Leon George Harris",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXG00133": {
+      "irn": "TXG00133",
+      "name": "Tristram Gibbons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CJB01484": {
+      "irn": "CJB01484",
+      "name": "Christopher James Bowles",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXB01351": {
+      "irn": "GXB01351",
+      "name": "Gayle Elizabeth Bowen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJS01274": {
+      "irn": "DJS01274",
+      "name": "David James Scrivens",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDM01277": {
+      "irn": "JDM01277",
+      "name": "Jonathon David Mitchell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM04157": {
+      "irn": "AXM04157",
+      "name": "Amman Meah",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXR00465": {
+      "irn": "CXR00465",
+      "name": "Carlo Revel-Chion",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXE00040": {
+      "irn": "IXE00040",
+      "name": "Isabella Evans",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXP00359": {
+      "irn": "KXP00359",
+      "name": "Katie Prior",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SMS01279": {
+      "irn": "SMS01279",
+      "name": "Samuel Malcolm Stephens",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AJD01199": {
+      "irn": "AJD01199",
+      "name": "Alison Jane Briggs",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXW00408": {
+      "irn": "DXW00408",
+      "name": "Dominic Weir",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXA00085": {
+      "irn": "IXA00085",
+      "name": "India Ayling",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXN00015": {
+      "irn": "OXN00015",
+      "name": "Oliver Nicholas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXW00260": {
+      "irn": "AXW00260",
+      "name": "Adam Daniel Watts",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PKR01017": {
+      "irn": "PKR01017",
+      "name": "Philip Keith Rhoden",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

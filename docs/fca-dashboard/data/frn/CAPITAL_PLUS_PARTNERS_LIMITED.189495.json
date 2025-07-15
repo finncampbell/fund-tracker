@@ -1,9 +1,104 @@
 {
   "frn": 189495,
   "name": "CAPITAL PLUS PARTNERS LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/922607",
+        "Termination Date": "13/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "12/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "922607",
+        "Name": "360-EQUITY LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747283",
+        "Termination Date": "18/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "17/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747283",
+        "Name": "Angel Business Club EBT Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747970",
+        "Termination Date": "22/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "24/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747970",
+        "Name": "Angel Equity International Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815598",
+        "Termination Date": "17/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "06/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815598",
+        "Name": "Brigg Macadam Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/589748",
+        "Termination Date": "19/06/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "15/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "589748",
+        "Name": "HARDWICKW GODSALL LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/844773",
+        "Termination Date": "28/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "189495",
+        "Principal Firm Name": "CAPITAL PLUS PARTNERS LIMITED",
+        "Effective Date": "25/06/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "844773",
+        "Name": "ST Investment Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "189495",
+    "organisation_name": "CAPITAL PLUS PARTNERS LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03672149",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,65 @@
 {
   "frn": 475285,
   "name": "Accendo Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/652121",
+        "Termination Date": "01/03/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475285",
+        "Principal Firm Name": "Accendo Markets Limited",
+        "Effective Date": "29/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "652121",
+        "Name": "Assid Ashraf"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747828",
+        "Termination Date": "25/05/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475285",
+        "Principal Firm Name": "Accendo Markets Limited",
+        "Effective Date": "24/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747828",
+        "Name": "Stephen Sutherland"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/745545",
+        "Termination Date": "06/03/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "475285",
+        "Principal Firm Name": "Accendo Markets Limited",
+        "Effective Date": "29/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "745545",
+        "Name": "Suketu Kothari"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "475285",
+    "organisation_name": "Accendo Markets Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "06417051",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "07/01/2008"
+  },
+  "person_records": {}
 }

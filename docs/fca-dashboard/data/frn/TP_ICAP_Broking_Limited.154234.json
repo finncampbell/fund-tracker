@@ -1,9 +1,65 @@
 {
   "frn": 154234,
   "name": "TP ICAP Broking Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/839516",
+        "Termination Date": "30/10/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "154234",
+        "Principal Firm Name": "TP ICAP Broking Limited",
+        "Effective Date": "04/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "839516",
+        "Name": "CLEARCOMPRESS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749171",
+        "Termination Date": "30/10/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "154234",
+        "Principal Firm Name": "TP ICAP Broking Limited",
+        "Effective Date": "06/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749171",
+        "Name": "COEX Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/730375",
+        "Termination Date": "09/12/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "154234",
+        "Principal Firm Name": "TP ICAP Broking Limited",
+        "Effective Date": "29/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "730375",
+        "Name": "tpSYNREX LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "154234",
+    "organisation_name": "TP ICAP Broking Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02670499",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,90 @@
 {
   "frn": 770616,
   "name": "CubicStone Capital Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/833460",
+        "Termination Date": "19/09/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "770616",
+        "Principal Firm Name": "CubicStone Capital Management Limited",
+        "Effective Date": "12/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "833460",
+        "Name": "Capital Kinetics Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/817177",
+        "Termination Date": "23/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "770616",
+        "Principal Firm Name": "CubicStone Capital Management Limited",
+        "Effective Date": "15/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "817177",
+        "Name": "CNDX Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806667",
+        "Termination Date": "25/09/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "770616",
+        "Principal Firm Name": "CubicStone Capital Management Limited",
+        "Effective Date": "16/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806667",
+        "Name": "HANDB CAPITAL PARTNERS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/935972",
+        "Termination Date": "20/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "770616",
+        "Principal Firm Name": "CubicStone Capital Management Limited",
+        "Effective Date": "09/10/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "935972",
+        "Name": "HV Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/843634",
+        "Termination Date": "02/09/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "770616",
+        "Principal Firm Name": "CubicStone Capital Management Limited",
+        "Effective Date": "08/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "843634",
+        "Name": "Syon Wealth Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "770616",
+    "organisation_name": "CubicStone Capital Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10503741",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "19/09/2017"
+  },
+  "person_records": {}
 }

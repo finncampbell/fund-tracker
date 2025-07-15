@@ -1,9 +1,52 @@
 {
   "frn": 441360,
   "name": "Creditex Brokerage LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533570",
+        "Termination Date": "09/12/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "441360",
+        "Principal Firm Name": "Creditex Brokerage LLP",
+        "Effective Date": "14/10/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533570",
+        "Name": "K.C. BUSINESS CONSULTANCY LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/490833",
+        "Termination Date": "07/07/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "441360",
+        "Principal Firm Name": "Creditex Brokerage LLP",
+        "Effective Date": "30/10/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "490833",
+        "Name": "Markit Group (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "441360",
+    "organisation_name": "Creditex Brokerage LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC315800",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "23/12/2005"
+  },
+  "person_records": {}
 }

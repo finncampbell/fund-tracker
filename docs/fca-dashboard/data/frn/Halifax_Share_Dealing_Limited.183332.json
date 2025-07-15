@@ -1,9 +1,39 @@
 {
   "frn": 183332,
   "name": "Halifax Share Dealing Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/422737",
+        "Termination Date": "15/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "183332",
+        "Principal Firm Name": "Halifax Share Dealing Limited",
+        "Effective Date": "25/08/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "422737",
+        "Name": "The Motley Fool Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "183332",
+    "organisation_name": "Halifax Share Dealing Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03195646",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

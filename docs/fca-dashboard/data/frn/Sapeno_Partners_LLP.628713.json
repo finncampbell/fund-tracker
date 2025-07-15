@@ -1,9 +1,264 @@
 {
   "frn": 628713,
   "name": "Sapeno Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/923295",
+        "Termination Date": "12/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "25/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "923295",
+        "Name": "1723 Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805349",
+        "Termination Date": "27/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "29/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805349",
+        "Name": "8F Investment Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/825433",
+        "Termination Date": "13/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "08/11/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "825433",
+        "Name": "Advbeca Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/763083",
+        "Termination Date": "16/12/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "01/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "763083",
+        "Name": "Alpstone Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/951719",
+        "Termination Date": "01/08/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "25/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "951719",
+        "Name": "Ascender Capital UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/723435",
+        "Termination Date": "31/10/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "09/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "723435",
+        "Name": "Bosham Capital Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749285",
+        "Termination Date": "30/12/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "07/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749285",
+        "Name": "CBLR Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/746020",
+        "Termination Date": "16/12/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "04/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "746020",
+        "Name": "Chenevert Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762801",
+        "Termination Date": "11/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "06/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762801",
+        "Name": "Cornerstone Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942886",
+        "Termination Date": "11/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "13/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942886",
+        "Name": "Diversifying Strategies Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/983879",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "22/09/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "983879",
+        "Name": "CAPULET CAPITAL MANAGEMENT LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/968725",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "27/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "968725",
+        "Name": "Connexxion Markets Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/958296",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "10/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "958296",
+        "Name": "Dohan Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001272",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "09/12/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1001272",
+        "Name": "Forge Europe UK Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975905",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "18/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "975905",
+        "Name": "Moonbeam Capital Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001637",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "18/08/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1001637",
+        "Name": "Refined Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/917466",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "27/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "917466",
+        "Name": "S64 Ventures Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1015445",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "06/06/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1015445",
+        "Name": "Sousou Connect Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1007610",
+        "RecordSubType": "Full",
+        "Principal FRN": "628713",
+        "Principal Firm Name": "Sapeno Partners LLP",
+        "Effective Date": "22/02/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1007610",
+        "Name": "WATKINS RANGE LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "628713",
+    "organisation_name": "Sapeno Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC388955",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "10/10/2014"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 195463,
   "name": "Macrocapital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/824256",
+        "RecordSubType": "Full",
+        "Principal FRN": "195463",
+        "Principal Firm Name": "Macrocapital Limited",
+        "Effective Date": "04/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "824256",
+        "Name": "Boustead Capital Markets LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "195463",
+    "organisation_name": "Macrocapital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04014398",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

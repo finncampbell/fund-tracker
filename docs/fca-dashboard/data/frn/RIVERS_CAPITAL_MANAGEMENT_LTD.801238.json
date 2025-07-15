@@ -1,9 +1,51 @@
 {
   "frn": 801238,
   "name": "RIVERS CAPITAL MANAGEMENT LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/915478",
+        "Termination Date": "01/05/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "801238",
+        "Principal Firm Name": "RIVERS CAPITAL MANAGEMENT LTD",
+        "Effective Date": "21/10/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "915478",
+        "Name": "PINNACLE INVESTMENT ADVISERS LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/832796",
+        "RecordSubType": "Full",
+        "Principal FRN": "801238",
+        "Principal Firm Name": "RIVERS CAPITAL MANAGEMENT LTD",
+        "Effective Date": "04/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "832796",
+        "Name": "Endeavour Ventures EIS Portfolio Services Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "801238",
+    "organisation_name": "RIVERS CAPITAL MANAGEMENT LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10169304",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "08/05/2018"
+  },
+  "person_records": {}
 }

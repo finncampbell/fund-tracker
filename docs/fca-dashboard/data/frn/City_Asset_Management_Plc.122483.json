@@ -1,9 +1,65 @@
 {
   "frn": 122483,
   "name": "City Asset Management Plc",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190846",
+        "Termination Date": "05/04/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "122483",
+        "Principal Firm Name": "City Asset Management Plc",
+        "Effective Date": "29/11/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "190846",
+        "Name": "Ford Reynolds & Associates Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205623",
+        "Termination Date": "01/06/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "122483",
+        "Principal Firm Name": "City Asset Management Plc",
+        "Effective Date": "12/12/1996",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205623",
+        "Name": "Jonathan William Askew Woodall"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/574952",
+        "Termination Date": "22/10/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "122483",
+        "Principal Firm Name": "City Asset Management Plc",
+        "Effective Date": "13/02/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "574952",
+        "Name": "Temple Private Wealth Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122483",
+    "organisation_name": "City Asset Management Plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02215617",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

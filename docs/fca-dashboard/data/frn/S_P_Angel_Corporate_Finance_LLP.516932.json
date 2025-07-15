@@ -1,9 +1,64 @@
 {
   "frn": 516932,
   "name": "S. P. Angel Corporate Finance LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582885",
+        "Termination Date": "25/07/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "516932",
+        "Principal Firm Name": "S. P. Angel Corporate Finance LLP",
+        "Effective Date": "15/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582885",
+        "Name": "International Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/918341",
+        "Termination Date": "31/07/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "516932",
+        "Principal Firm Name": "S. P. Angel Corporate Finance LLP",
+        "Effective Date": "16/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "918341",
+        "Name": "KK Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/594332",
+        "Termination Date": "14/11/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "516932",
+        "Principal Firm Name": "S. P. Angel Corporate Finance LLP",
+        "Effective Date": "15/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "594332",
+        "Name": "S M Advisory Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "516932",
+    "organisation_name": "S. P. Angel Corporate Finance LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC317049",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "01/07/2010"
+  },
+  "person_records": {}
 }

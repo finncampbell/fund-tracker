@@ -1,9 +1,100 @@
 {
   "frn": 119184,
   "name": "Zedra Trust Company (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187802",
+        "Termination Date": "24/12/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "27/08/1997",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "187802",
+        "Name": "B2 Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/201545",
+        "Termination Date": "26/05/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "16/10/1999",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "201545",
+        "Name": "Barclays Financial Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/952570",
+        "Termination Date": "14/05/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "09/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "952570",
+        "Name": "ZEDRA CORPORATE SOLUTIONS UK LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/938782",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "18/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "938782",
+        "Name": "ZEDRA CLIENT ACCOUNTS (UK) LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/939006",
+        "RecordSubType": "Full",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "20/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "939006",
+        "Name": "ZEDRA CLIENT ACCOUNTS (UK) LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950306",
+        "Principal FRN": "119184",
+        "Principal Firm Name": "Zedra Trust Company (UK) Limited",
+        "Effective Date": "04/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "950306",
+        "Name": "ZEDRA CORPORATE SOLUTIONS UK LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "119184",
+    "organisation_name": "Zedra Trust Company (UK) Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "00920880",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

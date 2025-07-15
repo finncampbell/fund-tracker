@@ -1,9 +1,37 @@
 {
   "frn": 725992,
   "name": "True Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617118",
+        "RecordSubType": "Full",
+        "Principal FRN": "725992",
+        "Principal Firm Name": "True Capital Limited",
+        "Effective Date": "03/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617118",
+        "Name": "TrueStart Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "725992",
+    "organisation_name": "True Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04705175",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "01/04/2016"
+  },
+  "person_records": {}
 }

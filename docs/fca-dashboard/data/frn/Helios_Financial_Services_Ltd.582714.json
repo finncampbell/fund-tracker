@@ -1,9 +1,236 @@
 {
   "frn": 582714,
   "name": "Helios Financial Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
-  "individuals": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/615014",
+        "Termination Date": "14/07/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "582714",
+        "Principal Firm Name": "Helios Financial Services Ltd",
+        "Effective Date": "29/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "615014",
+        "Name": "Cirdan Capital Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/567835",
+        "Termination Date": "07/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "582714",
+        "Principal Firm Name": "Helios Financial Services Ltd",
+        "Effective Date": "28/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "567835",
+        "Name": "Lumon Risk Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
+  "individuals": [
+    {
+      "IRN": "ZXP06914",
+      "Name": "Zbigniew Popowski",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ZXP06914"
+    },
+    {
+      "IRN": "IHV01001",
+      "Name": "Ian Hugh William Van Stratum",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IHV01001"
+    },
+    {
+      "IRN": "ZXP06914",
+      "Name": "Zbigniew Popowski",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ZXP06914"
+    },
+    {
+      "IRN": "BXM01994",
+      "Name": "Ben Millensted",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXM01994"
+    },
+    {
+      "IRN": "IHV01001",
+      "Name": "Ian Hugh William Van Stratum",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IHV01001"
+    },
+    {
+      "IRN": "NJE01030",
+      "Name": "Nicholas John Edwards",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJE01030"
+    },
+    {
+      "IRN": "EXS00330",
+      "Name": "Emmanouil Spanakis",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXS00330"
+    },
+    {
+      "IRN": "AMD01222",
+      "Name": "Antonio Maria De Negri",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AMD01222"
+    },
+    {
+      "IRN": "SAS01333",
+      "Name": "Scott Anthony Soutter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SAS01333"
+    },
+    {
+      "IRN": "AXS04383",
+      "Name": "Alessandro Sannini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS04383"
+    },
+    {
+      "IRN": "GAO01010",
+      "Name": "Gregor Andrew O'Brien",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GAO01010"
+    },
+    {
+      "IRN": "MAH01339",
+      "Name": "Mark Alan Hewlett",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAH01339"
+    },
+    {
+      "IRN": "VXD01135",
+      "Name": "Vladimir Diminic",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXD01135"
+    },
+    {
+      "IRN": "JPF01082",
+      "Name": "John Philip William Farrer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPF01082"
+    },
+    {
+      "IRN": "TXN01272",
+      "Name": "Theodoris Nel",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXN01272"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "ZXP06914": [],
+    "IHV01001": [],
+    "BXM01994": [],
+    "NJE01030": [],
+    "EXS00330": [],
+    "AMD01222": [],
+    "SAS01333": [],
+    "AXS04383": [],
+    "GAO01010": [],
+    "MAH01339": [],
+    "VXD01135": [],
+    "JPF01082": [],
+    "TXN01272": []
+  },
+  "metadata": {
+    "frn": "582714",
+    "organisation_name": "Helios Financial Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07905779",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "11/01/2013"
+  },
+  "person_records": {
+    "ZXP06914": {
+      "irn": "ZXP06914",
+      "name": "Zbigniew Popowski",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IHV01001": {
+      "irn": "IHV01001",
+      "name": "Ian Hugh William Van Stratum",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXM01994": {
+      "irn": "BXM01994",
+      "name": "Ben Millensted",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NJE01030": {
+      "irn": "NJE01030",
+      "name": "Nicholas John Edwards",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXS00330": {
+      "irn": "EXS00330",
+      "name": "Emmanouil Spanakis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AMD01222": {
+      "irn": "AMD01222",
+      "name": "Antonio Maria De Negri",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SAS01333": {
+      "irn": "SAS01333",
+      "name": "Scott Anthony Soutter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS04383": {
+      "irn": "AXS04383",
+      "name": "Alessandro Sannini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GAO01010": {
+      "irn": "GAO01010",
+      "name": "Gregor Andrew O'Brien",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAH01339": {
+      "irn": "MAH01339",
+      "name": "Mark Alan Hewlett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXD01135": {
+      "irn": "VXD01135",
+      "name": "Vladimir Diminic",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPF01082": {
+      "irn": "JPF01082",
+      "name": "John Philip William Farrer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXN01272": {
+      "irn": "TXN01272",
+      "name": "Theodoris Nel",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

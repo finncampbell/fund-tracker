@@ -1,9 +1,76 @@
 {
   "frn": 1000594,
   "name": "NCM FINANCIAL UK LTD",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "KXS00604",
+      "Name": "Khurram Sayeed",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXS00604"
+    },
+    {
+      "IRN": "RPW01067",
+      "Name": "Richard Paul Wynn",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RPW01067"
+    },
+    {
+      "IRN": "SXH01763",
+      "Name": "Simon Charles Henry",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXH01763"
+    },
+    {
+      "IRN": "YXS00140",
+      "Name": "Yasir Sayeed",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXS00140"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "KXS00604": [],
+    "RPW01067": [],
+    "SXH01763": [],
+    "YXS00140": []
+  },
+  "metadata": {
+    "frn": "1000594",
+    "organisation_name": "NCM FINANCIAL UK LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13815702",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "22/07/2024"
+  },
+  "person_records": {
+    "KXS00604": {
+      "irn": "KXS00604",
+      "name": "Khurram Sayeed",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RPW01067": {
+      "irn": "RPW01067",
+      "name": "Richard Paul Wynn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXH01763": {
+      "irn": "SXH01763",
+      "name": "Simon Charles Henry",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXS00140": {
+      "irn": "YXS00140",
+      "name": "Yasir Sayeed",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

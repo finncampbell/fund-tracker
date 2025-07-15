@@ -1,9 +1,78 @@
 {
   "frn": 402258,
   "name": "Howden Capital Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/462614",
+        "Termination Date": "04/09/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "402258",
+        "Principal Firm Name": "Howden Capital Markets Limited",
+        "Effective Date": "16/01/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "462614",
+        "Name": "Pensionsrisk LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/969097",
+        "Termination Date": "06/10/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "402258",
+        "Principal Firm Name": "Howden Capital Markets Limited",
+        "Effective Date": "01/02/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "969097",
+        "Name": "Perspective Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/451666",
+        "Termination Date": "10/03/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "402258",
+        "Principal Firm Name": "Howden Capital Markets Limited",
+        "Effective Date": "09/05/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "451666",
+        "Name": "Tiger Re Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/775106",
+        "RecordSubType": "Full",
+        "Principal FRN": "402258",
+        "Principal Firm Name": "Howden Capital Markets Limited",
+        "Effective Date": "19/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "775106",
+        "Name": "Howden M&A Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "402258",
+    "organisation_name": "Howden Capital Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05022286",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "04/01/2005"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 709693,
   "name": "Capital Index (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "709693",
+    "organisation_name": "Capital Index (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09532185",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "04/12/2015"
+  },
+  "person_records": {}
 }

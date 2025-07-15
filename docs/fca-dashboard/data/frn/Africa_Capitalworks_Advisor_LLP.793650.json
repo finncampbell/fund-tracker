@@ -1,9 +1,49 @@
 {
   "frn": 793650,
   "name": "Africa Capitalworks Advisor LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597532",
+        "RecordSubType": "Full",
+        "Principal FRN": "793650",
+        "Principal Firm Name": "Africa Capitalworks Advisor LLP",
+        "Effective Date": "18/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597532",
+        "Name": "Capitalworks Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/972603",
+        "RecordSubType": "Full",
+        "Principal FRN": "793650",
+        "Principal Firm Name": "Africa Capitalworks Advisor LLP",
+        "Effective Date": "22/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "972603",
+        "Name": "Confluence Investors LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "793650",
+    "organisation_name": "Africa Capitalworks Advisor LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC416250",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "02/02/2018"
+  },
+  "person_records": {}
 }

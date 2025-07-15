@@ -1,9 +1,52 @@
 {
   "frn": 708307,
   "name": "London Bridge Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/754172",
+        "Termination Date": "15/09/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "708307",
+        "Principal Firm Name": "London Bridge Capital Limited",
+        "Effective Date": "27/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "754172",
+        "Name": "BRIDGE CAPITAL ADVISORS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/609304",
+        "Termination Date": "31/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "708307",
+        "Principal Firm Name": "London Bridge Capital Limited",
+        "Effective Date": "24/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "609304",
+        "Name": "Oregon Capital Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "708307",
+    "organisation_name": "London Bridge Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09456416",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "17/02/2016"
+  },
+  "person_records": {}
 }

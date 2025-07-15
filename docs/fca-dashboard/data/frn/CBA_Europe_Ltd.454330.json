@@ -1,9 +1,21 @@
 {
   "frn": 454330,
   "name": "CBA Europe Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "454330",
+    "organisation_name": "CBA Europe Ltd",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "05687023",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "02/01/2007"
+  },
+  "person_records": {}
 }

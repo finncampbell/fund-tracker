@@ -1,9 +1,77 @@
 {
   "frn": 462728,
   "name": "Foster Denovo Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/794161",
+        "Termination Date": "09/10/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "462728",
+        "Principal Firm Name": "Foster Denovo Limited",
+        "Effective Date": "26/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "794161",
+        "Name": "Caroola Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616064",
+        "Termination Date": "05/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "462728",
+        "Principal Firm Name": "Foster Denovo Limited",
+        "Effective Date": "18/02/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616064",
+        "Name": "Foster Denovo Enrolsme Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/830043",
+        "RecordSubType": "Full",
+        "Principal FRN": "462728",
+        "Principal Firm Name": "Foster Denovo Limited",
+        "Effective Date": "30/12/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "830043",
+        "Name": "FD Dynamic Portfolios Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/602456",
+        "RecordSubType": "Full",
+        "Principal FRN": "462728",
+        "Principal Firm Name": "Foster Denovo Limited",
+        "Effective Date": "23/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "602456",
+        "Name": "Sequel Investments Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "462728",
+    "organisation_name": "Foster Denovo Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05970987",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "26/07/2007"
+  },
+  "person_records": {}
 }

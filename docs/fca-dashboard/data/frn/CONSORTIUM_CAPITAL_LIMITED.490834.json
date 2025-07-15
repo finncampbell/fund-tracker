@@ -1,9 +1,38 @@
 {
   "frn": 490834,
   "name": "CONSORTIUM CAPITAL LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/500444",
+        "Termination Date": "01/10/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "490834",
+        "Principal Firm Name": "CONSORTIUM CAPITAL LIMITED",
+        "Effective Date": "05/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "500444",
+        "Name": "Consortium Finance Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "490834",
+    "organisation_name": "CONSORTIUM CAPITAL LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06476367",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "29/01/2009"
+  },
+  "person_records": {}
 }

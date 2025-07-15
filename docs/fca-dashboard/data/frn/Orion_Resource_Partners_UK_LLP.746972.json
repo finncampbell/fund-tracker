@@ -1,9 +1,21 @@
 {
   "frn": 746972,
   "name": "Orion Resource Partners (UK) LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "746972",
+    "organisation_name": "Orion Resource Partners (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC404376",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "09/08/2016"
+  },
+  "person_records": {}
 }

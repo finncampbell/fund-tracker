@@ -1,9 +1,243 @@
 {
   "frn": 774437,
   "name": "Latitude Investment Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "JFL01046",
+      "Name": "Jonathan Frederick Lait",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JFL01046"
+    },
+    {
+      "IRN": "FWR01012",
+      "Name": "Frederick William Ryecart",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FWR01012"
+    },
+    {
+      "IRN": "JEF01076",
+      "Name": "James Edward Bonhote Foster",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JEF01076"
+    },
+    {
+      "IRN": "PXV01101",
+      "Name": "Patrick James Valentine",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXV01101"
+    },
+    {
+      "IRN": "GXH00032",
+      "Name": "Gabriel Hull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXH00032"
+    },
+    {
+      "IRN": "MIT01023",
+      "Name": "Michael Totton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MIT01023"
+    },
+    {
+      "IRN": "PXG00243",
+      "Name": "Paul Goddard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXG00243"
+    },
+    {
+      "IRN": "AXH00592",
+      "Name": "Alexandra Hamilton - Briscoe",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXH00592"
+    },
+    {
+      "IRN": "JAD01362",
+      "Name": "Jacopo Alfredo Salvatore Di Nardo",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JAD01362"
+    },
+    {
+      "IRN": "ELB01032",
+      "Name": "Emma Megan Louise Barrat",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ELB01032"
+    },
+    {
+      "IRN": "RXS16926",
+      "Name": "Robert Scott Moncrieff",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXS16926"
+    },
+    {
+      "IRN": "JFL01046",
+      "Name": "Jonathan Frederick Lait",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JFL01046"
+    },
+    {
+      "IRN": "JEF01076",
+      "Name": "James Edward Bonhote Foster",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JEF01076"
+    },
+    {
+      "IRN": "PXV01101",
+      "Name": "Patrick James Valentine",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXV01101"
+    },
+    {
+      "IRN": "MDC01166",
+      "Name": "Mark David Carter",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MDC01166"
+    },
+    {
+      "IRN": "FWR01012",
+      "Name": "Frederick William Ryecart",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FWR01012"
+    },
+    {
+      "IRN": "CXW00339",
+      "Name": "Charles Walker",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXW00339"
+    },
+    {
+      "IRN": "AGR01070",
+      "Name": "Alexander George Vivian Robins",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AGR01070"
+    },
+    {
+      "IRN": "CXS01928",
+      "Name": "Camilla Tamworth",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXS01928"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "JFL01046": [],
+    "FWR01012": [],
+    "JEF01076": [],
+    "PXV01101": [],
+    "GXH00032": [],
+    "MIT01023": [],
+    "PXG00243": [],
+    "AXH00592": [],
+    "JAD01362": [],
+    "ELB01032": [],
+    "RXS16926": [],
+    "MDC01166": [],
+    "CXW00339": [],
+    "AGR01070": [],
+    "CXS01928": []
+  },
+  "metadata": {
+    "frn": "774437",
+    "organisation_name": "Latitude Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC411255",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "03/07/2017"
+  },
+  "person_records": {
+    "JFL01046": {
+      "irn": "JFL01046",
+      "name": "Jonathan Frederick Lait",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FWR01012": {
+      "irn": "FWR01012",
+      "name": "Frederick William Ryecart",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JEF01076": {
+      "irn": "JEF01076",
+      "name": "James Edward Bonhote Foster",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXV01101": {
+      "irn": "PXV01101",
+      "name": "Patrick James Valentine",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXH00032": {
+      "irn": "GXH00032",
+      "name": "Gabriel Hull",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MIT01023": {
+      "irn": "MIT01023",
+      "name": "Michael Totton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXG00243": {
+      "irn": "PXG00243",
+      "name": "Paul Goddard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXH00592": {
+      "irn": "AXH00592",
+      "name": "Alexandra Hamilton - Briscoe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JAD01362": {
+      "irn": "JAD01362",
+      "name": "Jacopo Alfredo Salvatore Di Nardo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ELB01032": {
+      "irn": "ELB01032",
+      "name": "Emma Megan Louise Barrat",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXS16926": {
+      "irn": "RXS16926",
+      "name": "Robert Scott Moncrieff",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MDC01166": {
+      "irn": "MDC01166",
+      "name": "Mark David Carter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXW00339": {
+      "irn": "CXW00339",
+      "name": "Charles Walker",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AGR01070": {
+      "irn": "AGR01070",
+      "name": "Alexander George Vivian Robins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXS01928": {
+      "irn": "CXS01928",
+      "name": "Camilla Tamworth",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

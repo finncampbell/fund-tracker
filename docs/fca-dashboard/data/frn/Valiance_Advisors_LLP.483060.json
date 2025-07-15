@@ -1,9 +1,51 @@
 {
   "frn": 483060,
   "name": "Valiance Advisors LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/527910",
+        "Termination Date": "25/02/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "483060",
+        "Principal Firm Name": "Valiance Advisors LLP",
+        "Effective Date": "15/07/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "527910",
+        "Name": "Anton Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/592960",
+        "Termination Date": "08/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "483060",
+        "Principal Firm Name": "Valiance Advisors LLP",
+        "Effective Date": "14/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "592960",
+        "Name": "Barou Advisers Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "483060",
+    "organisation_name": "Valiance Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC336579",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "10/07/2008"
+  },
+  "person_records": {}
 }

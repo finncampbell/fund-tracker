@@ -1,9 +1,65 @@
 {
   "frn": 141668,
   "name": "Nuveen Investment Management International Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205617",
+        "Termination Date": "31/05/2000",
+        "RecordSubType": "Full",
+        "Principal FRN": "141668",
+        "Principal Firm Name": "Nuveen Investment Management International Limited",
+        "Effective Date": "24/07/1996",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205617",
+        "Name": "WorldInvest Bermuda Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205612",
+        "Termination Date": "31/12/2000",
+        "RecordSubType": "Full",
+        "Principal FRN": "141668",
+        "Principal Firm Name": "Nuveen Investment Management International Limited",
+        "Effective Date": "01/03/1996",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205612",
+        "Name": "Worldinvest International Inc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205616",
+        "Termination Date": "23/12/1998",
+        "RecordSubType": "Full",
+        "Principal FRN": "141668",
+        "Principal Firm Name": "Nuveen Investment Management International Limited",
+        "Effective Date": "24/07/1996",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205616",
+        "Name": "WorldInvest Management Australia Pty Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "141668",
+    "organisation_name": "Nuveen Investment Management International Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02137726",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

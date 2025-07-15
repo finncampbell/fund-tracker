@@ -1,9 +1,90 @@
 {
   "frn": 739696,
   "name": "Trinity Investment Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790723",
+        "Termination Date": "09/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "739696",
+        "Principal Firm Name": "Trinity Investment Partners Limited",
+        "Effective Date": "09/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790723",
+        "Name": "Damian Von Stauffenberg"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/756603",
+        "Termination Date": "09/06/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "739696",
+        "Principal Firm Name": "Trinity Investment Partners Limited",
+        "Effective Date": "23/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "756603",
+        "Name": "David John Charters"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/807940",
+        "Termination Date": "23/05/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "739696",
+        "Principal Firm Name": "Trinity Investment Partners Limited",
+        "Effective Date": "01/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "807940",
+        "Name": "FISCUS GLOBAL ADVISORS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/755034",
+        "Termination Date": "09/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "739696",
+        "Principal Firm Name": "Trinity Investment Partners Limited",
+        "Effective Date": "04/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "755034",
+        "Name": "IFP Manager Selection AG"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/748572",
+        "RecordSubType": "Full",
+        "Principal FRN": "739696",
+        "Principal Firm Name": "Trinity Investment Partners Limited",
+        "Effective Date": "07/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "748572",
+        "Name": "Fastagos Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "739696",
+    "organisation_name": "Trinity Investment Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09975044",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "24/06/2016"
+  },
+  "person_records": {}
 }

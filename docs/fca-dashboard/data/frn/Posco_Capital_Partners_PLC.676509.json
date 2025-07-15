@@ -1,9 +1,52 @@
 {
   "frn": 676509,
   "name": "Posco Capital Partners PLC",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/923518",
+        "Termination Date": "03/08/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "676509",
+        "Principal Firm Name": "Posco Capital Partners PLC",
+        "Effective Date": "30/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "923518",
+        "Name": "A U ADVISORS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/811295",
+        "Termination Date": "08/07/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "676509",
+        "Principal Firm Name": "Posco Capital Partners PLC",
+        "Effective Date": "11/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "811295",
+        "Name": "Kanaka Advisors Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "676509",
+    "organisation_name": "Posco Capital Partners PLC",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08831417",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "08/07/2015"
+  },
+  "person_records": {}
 }

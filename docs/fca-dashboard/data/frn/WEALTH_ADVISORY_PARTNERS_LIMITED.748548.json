@@ -1,9 +1,116 @@
 {
   "frn": 748548,
   "name": "WEALTH ADVISORY PARTNERS LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/588888",
+        "Termination Date": "10/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "31/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "588888",
+        "Name": "Agenda Invest Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/933399",
+        "Termination Date": "21/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "03/09/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "933399",
+        "Name": "Gestio Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/463929",
+        "Termination Date": "01/04/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "14/02/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "463929",
+        "Name": "JR Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/944506",
+        "Termination Date": "15/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "08/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "944506",
+        "Name": "Northbay Invest Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798025",
+        "Termination Date": "20/06/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "08/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798025",
+        "Name": "Syntagma Global Investments Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926176",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "15/05/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926176",
+        "Name": "QW Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/948398",
+        "RecordSubType": "Full",
+        "Principal FRN": "748548",
+        "Principal Firm Name": "WEALTH ADVISORY PARTNERS LIMITED",
+        "Effective Date": "31/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "948398",
+        "Name": "Vektor Partners Advisors LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "748548",
+    "organisation_name": "WEALTH ADVISORY PARTNERS LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10019736",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "03/10/2016"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 217180,
   "name": "Wilton Corporate Finance Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931397",
+        "Termination Date": "08/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "217180",
+        "Principal Firm Name": "Wilton Corporate Finance Ltd",
+        "Effective Date": "05/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "931397",
+        "Name": "One Planet Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "217180",
+    "organisation_name": "Wilton Corporate Finance Ltd",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "04307411",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "09/04/2003"
+  },
+  "person_records": {}
 }

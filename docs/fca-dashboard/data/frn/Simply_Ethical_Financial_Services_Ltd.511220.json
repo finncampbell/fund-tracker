@@ -1,9 +1,39 @@
 {
   "frn": 511220,
   "name": "Simply Ethical Financial Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/534405",
+        "Termination Date": "26/10/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "511220",
+        "Principal Firm Name": "Simply Ethical Financial Services Ltd",
+        "Effective Date": "26/10/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "534405",
+        "Name": "Imran Azam"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "511220",
+    "organisation_name": "Simply Ethical Financial Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07046241",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "24/08/2010"
+  },
+  "person_records": {}
 }

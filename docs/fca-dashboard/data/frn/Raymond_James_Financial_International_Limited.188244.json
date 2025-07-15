@@ -1,9 +1,39 @@
 {
   "frn": 188244,
   "name": "Raymond James Financial International Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/590077",
+        "Termination Date": "22/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "188244",
+        "Principal Firm Name": "Raymond James Financial International Limited",
+        "Effective Date": "23/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "590077",
+        "Name": "Mr. David Neil O'Keeffe"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "188244",
+    "organisation_name": "Raymond James Financial International Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03127076",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

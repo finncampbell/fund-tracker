@@ -1,9 +1,38 @@
 {
   "frn": 478269,
   "name": "Acoro Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/630152",
+        "Termination Date": "08/03/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "478269",
+        "Principal Firm Name": "Acoro Capital Partners LLP",
+        "Effective Date": "13/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "630152",
+        "Name": "Crowd Tech Funders Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "478269",
+    "organisation_name": "Acoro Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC333823",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "28/04/2008"
+  },
+  "person_records": {}
 }

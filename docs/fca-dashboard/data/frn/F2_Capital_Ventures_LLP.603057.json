@@ -1,9 +1,142 @@
 {
   "frn": 603057,
   "name": "F2 Capital Ventures LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/770342",
+        "Termination Date": "13/04/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "26/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "770342",
+        "Name": "Bespoke Capital Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/601806",
+        "Termination Date": "26/04/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "30/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "601806",
+        "Name": "Greenhouse Media Investment Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751526",
+        "Termination Date": "30/06/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "01/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "751526",
+        "Name": "Isca Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790806",
+        "Termination Date": "14/08/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "09/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "790806",
+        "Name": "My Care My Home Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/774114",
+        "Termination Date": "01/03/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "15/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "774114",
+        "Name": "Seymour Wealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773790",
+        "Termination Date": "03/07/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "10/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "773790",
+        "Name": "Significant Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/469639",
+        "Termination Date": "19/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "21/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "469639",
+        "Name": "The Complete Financial Player LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812968",
+        "RecordSubType": "Full",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "04/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "812968",
+        "Name": "Friel Advisory LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710282",
+        "RecordSubType": "Full",
+        "Principal FRN": "603057",
+        "Principal Firm Name": "F2 Capital Ventures LLP",
+        "Effective Date": "15/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710282",
+        "Name": "LCP Capital Investments Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "603057",
+    "organisation_name": "F2 Capital Ventures LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC385031",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "02/01/2014"
+  },
+  "person_records": {}
 }

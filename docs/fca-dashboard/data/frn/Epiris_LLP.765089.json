@@ -1,9 +1,21 @@
 {
   "frn": 765089,
   "name": "Epiris LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "765089",
+    "organisation_name": "Epiris LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC412384",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "07/04/2017"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,52 @@
 {
   "frn": 188534,
   "name": "Computershare Investor Services Plc",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/209721",
+        "Termination Date": "14/02/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "188534",
+        "Principal Firm Name": "Computershare Investor Services Plc",
+        "Effective Date": "27/04/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "209721",
+        "Name": "Georgeson Shareholder Communications Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/219022",
+        "Termination Date": "27/04/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "188534",
+        "Principal Firm Name": "Computershare Investor Services Plc",
+        "Effective Date": "27/04/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "219022",
+        "Name": "Georgeson Shareholder Communications Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "188534",
+    "organisation_name": "Computershare Investor Services Plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03498808",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

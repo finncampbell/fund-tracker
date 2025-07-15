@@ -1,9 +1,37 @@
 {
   "frn": 750717,
   "name": "Compass Partners International II LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709471",
+        "RecordSubType": "Full",
+        "Principal FRN": "750717",
+        "Principal Firm Name": "Compass Partners International II LLP",
+        "Effective Date": "14/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "709471",
+        "Name": "Compass LKL LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "750717",
+    "organisation_name": "Compass Partners International II LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC402586",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "03/10/2016"
+  },
+  "person_records": {}
 }

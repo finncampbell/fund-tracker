@@ -1,9 +1,22 @@
 {
   "frn": 216145,
   "name": "Five Arrows Managers LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "216145",
+    "organisation_name": "Five Arrows Managers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC302492",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "11/11/2002"
+  },
+  "person_records": {}
 }

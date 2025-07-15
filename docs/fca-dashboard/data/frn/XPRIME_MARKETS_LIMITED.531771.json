@@ -1,9 +1,104 @@
 {
   "frn": 531771,
   "name": "XPRIME MARKETS LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/992562",
+        "Termination Date": "24/05/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "28/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "992562",
+        "Name": "CONZEPT CAPITAL MARKETS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931014",
+        "Termination Date": "24/05/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "30/07/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "931014",
+        "Name": "Oasis Capital Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610586",
+        "Termination Date": "30/06/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "20/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610586",
+        "Name": "Pip Index Capital Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/990586",
+        "Termination Date": "24/05/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "24/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "990586",
+        "Name": "TVCM Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751829",
+        "Termination Date": "27/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "05/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "751829",
+        "Name": "Volopa Bullion Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931063",
+        "Termination Date": "24/05/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531771",
+        "Principal Firm Name": "XPRIME MARKETS LIMITED",
+        "Effective Date": "30/07/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "931063",
+        "Name": "XPRIME MARKETS (UK) LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "531771",
+    "organisation_name": "XPRIME MARKETS LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07363659",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "03/05/2011"
+  },
+  "person_records": {}
 }

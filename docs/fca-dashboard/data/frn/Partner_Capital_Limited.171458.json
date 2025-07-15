@@ -1,9 +1,52 @@
 {
   "frn": 171458,
   "name": "Partner Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/472480",
+        "Termination Date": "08/08/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "171458",
+        "Principal Firm Name": "Partner Capital Limited",
+        "Effective Date": "06/09/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "472480",
+        "Name": "Winter Hagmann Heminway & Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/953293",
+        "RecordSubType": "Full",
+        "Principal FRN": "171458",
+        "Principal Firm Name": "Partner Capital Limited",
+        "Effective Date": "21/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "953293",
+        "Name": "DOU INVEST LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "171458",
+    "organisation_name": "Partner Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02933861",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

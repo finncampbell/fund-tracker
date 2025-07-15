@@ -1,9 +1,22 @@
 {
   "frn": 571764,
   "name": "Hauck Aufhauser IB Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "571764",
+    "organisation_name": "Hauck Aufhauser IB Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07753010",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "01/06/2012"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 147956,
   "name": "AllianceBernstein Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/937850",
+        "Termination Date": "03/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "147956",
+        "Principal Firm Name": "AllianceBernstein Limited",
+        "Effective Date": "05/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "937850",
+        "Name": "Lacarne Holdings Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "147956",
+    "organisation_name": "AllianceBernstein Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02551144",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

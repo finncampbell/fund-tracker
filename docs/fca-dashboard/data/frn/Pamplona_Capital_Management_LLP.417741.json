@@ -1,9 +1,38 @@
 {
   "frn": 417741,
   "name": "Pamplona Capital Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616216",
+        "Termination Date": "10/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "417741",
+        "Principal Firm Name": "Pamplona Capital Management LLP",
+        "Effective Date": "20/02/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616216",
+        "Name": "Debt & Equity Capital UK LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "417741",
+    "organisation_name": "Pamplona Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC309813",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "22/03/2005"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,64 @@
 {
   "frn": 541404,
   "name": "Fusion Wealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/727493",
+        "Termination Date": "02/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "541404",
+        "Principal Firm Name": "Fusion Wealth Limited",
+        "Effective Date": "01/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "727493",
+        "Name": "Fusion Funds Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/727493",
+        "Termination Date": "12/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "541404",
+        "Principal Firm Name": "Fusion Wealth Limited",
+        "Effective Date": "21/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "727493",
+        "Name": "Fusion Funds Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/985076",
+        "RecordSubType": "Full",
+        "Principal FRN": "541404",
+        "Principal Firm Name": "Fusion Wealth Limited",
+        "Effective Date": "11/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "985076",
+        "Name": "Family Wealth Platform Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "541404",
+    "organisation_name": "Fusion Wealth Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07469060",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "04/08/2011"
+  },
+  "person_records": {}
 }

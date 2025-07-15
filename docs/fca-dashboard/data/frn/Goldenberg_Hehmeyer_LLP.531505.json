@@ -1,9 +1,21 @@
 {
   "frn": 531505,
   "name": "Goldenberg Hehmeyer LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "531505",
+    "organisation_name": "Goldenberg Hehmeyer LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC316522",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "09/05/2011"
+  },
+  "person_records": {}
 }

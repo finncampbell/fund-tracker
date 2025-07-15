@@ -1,9 +1,38 @@
 {
   "frn": 651385,
   "name": "Envent Capital Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/778690",
+        "Termination Date": "21/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "651385",
+        "Principal Firm Name": "Envent Capital Markets Limited",
+        "Effective Date": "10/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "778690",
+        "Name": "Mote Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "651385",
+    "organisation_name": "Envent Capital Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09178742",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "02/02/2015"
+  },
+  "person_records": {}
 }

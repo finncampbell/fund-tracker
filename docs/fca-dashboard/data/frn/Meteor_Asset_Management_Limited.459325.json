@@ -1,9 +1,153 @@
 {
   "frn": 459325,
   "name": "Meteor Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/491987",
+        "Termination Date": "04/04/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "26/11/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "491987",
+        "Name": "Cashcade Financial Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/464656",
+        "Termination Date": "22/09/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "01/03/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "464656",
+        "Name": "Meteor Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/552146",
+        "Termination Date": "27/09/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "26/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "552146",
+        "Name": "METEOR INVESTMENT SOLUTIONS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533300",
+        "Termination Date": "20/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "11/10/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533300",
+        "Name": "NWS Fund Managers LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/604755",
+        "Termination Date": "12/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "23/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "604755",
+        "Name": "Racing Green Investment Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769182",
+        "Termination Date": "26/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "11/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "769182",
+        "Name": "STURLA FINANCIAL SOLUTIONS LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739746",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "10/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739746",
+        "Name": "J & S Structured Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/928746",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "29/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "928746",
+        "Name": "M B Structured Investments (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/704231",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "29/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "704231",
+        "Name": "Meteor Consulting Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/998128",
+        "RecordSubType": "Full",
+        "Principal FRN": "459325",
+        "Principal Firm Name": "Meteor Asset Management Limited",
+        "Effective Date": "16/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "998128",
+        "Name": "SEHA FS LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "459325",
+    "organisation_name": "Meteor Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05712610",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "27/02/2007"
+  },
+  "person_records": {}
 }

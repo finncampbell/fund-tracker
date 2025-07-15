@@ -1,9 +1,38 @@
 {
   "frn": 516153,
   "name": "Sequoia Investment Management Company Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/585963",
+        "Termination Date": "11/10/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "516153",
+        "Principal Firm Name": "Sequoia Investment Management Company Limited",
+        "Effective Date": "07/08/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "585963",
+        "Name": "African Alpha Investment Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "516153",
+    "organisation_name": "Sequoia Investment Management Company Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05902847",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "03/12/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 469459,
   "name": "DBG MARKETS (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/821712",
+        "Termination Date": "07/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "469459",
+        "Principal Firm Name": "DBG MARKETS (UK) LLP",
+        "Effective Date": "26/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "821712",
+        "Name": "Khosla Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "469459",
+    "organisation_name": "DBG MARKETS (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC300984",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "01/10/2007"
+  },
+  "person_records": {}
 }

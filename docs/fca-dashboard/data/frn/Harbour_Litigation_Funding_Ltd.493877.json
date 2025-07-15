@@ -1,9 +1,21 @@
 {
   "frn": 493877,
   "name": "Harbour Litigation Funding Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "493877",
+    "organisation_name": "Harbour Litigation Funding Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06426478",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "03/04/2009"
+  },
+  "person_records": {}
 }

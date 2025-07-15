@@ -1,9 +1,39 @@
 {
   "frn": 225539,
   "name": "Sova Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/477127",
+        "Termination Date": "26/06/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "225539",
+        "Principal Firm Name": "Sova Capital Limited",
+        "Effective Date": "02/01/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "477127",
+        "Name": "Rutherford Capital Markets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "225539",
+    "organisation_name": "Sova Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04621383",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "26/03/2004"
+  },
+  "person_records": {}
 }

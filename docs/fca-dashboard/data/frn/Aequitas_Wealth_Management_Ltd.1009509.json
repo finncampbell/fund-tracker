@@ -1,9 +1,21 @@
 {
   "frn": 1009509,
   "name": "Aequitas Wealth Management Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1009509",
+    "organisation_name": "Aequitas Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13799594",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "20/01/2025"
+  },
+  "person_records": {}
 }

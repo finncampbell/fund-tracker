@@ -1,9 +1,65 @@
 {
   "frn": 732318,
   "name": "42 Wealth Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/944162",
+        "Termination Date": "27/12/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "732318",
+        "Principal Firm Name": "42 Wealth Management Ltd",
+        "Effective Date": "16/12/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "944162",
+        "Name": "Island FS Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916778",
+        "Termination Date": "10/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "732318",
+        "Principal Firm Name": "42 Wealth Management Ltd",
+        "Effective Date": "14/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "916778",
+        "Name": "Rockman Wealth Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/956465",
+        "Termination Date": "08/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "732318",
+        "Principal Firm Name": "42 Wealth Management Ltd",
+        "Effective Date": "10/08/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "956465",
+        "Name": "Temple Row Financial Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "732318",
+    "organisation_name": "42 Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09873045",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "12/07/2016"
+  },
+  "person_records": {}
 }

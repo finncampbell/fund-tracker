@@ -1,9 +1,22 @@
 {
   "frn": 971536,
   "name": "DNB Carnegie Investment Bank AB",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "971536",
+    "organisation_name": "DNB Carnegie Investment Bank AB",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC018658",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "01/12/2022"
+  },
+  "person_records": {}
 }

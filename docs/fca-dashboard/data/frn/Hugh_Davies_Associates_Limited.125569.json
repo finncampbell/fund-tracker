@@ -1,9 +1,39 @@
 {
   "frn": 125569,
   "name": "Hugh Davies Associates Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/460090",
+        "Termination Date": "15/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "125569",
+        "Principal Firm Name": "Hugh Davies Associates Limited",
+        "Effective Date": "08/01/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "460090",
+        "Name": "Revision Investment Services Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "125569",
+    "organisation_name": "Hugh Davies Associates Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01998413",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,64 @@
 {
   "frn": 418826,
   "name": "OCM Wealth Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/783606",
+        "Termination Date": "10/09/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "418826",
+        "Principal Firm Name": "OCM Wealth Management Ltd",
+        "Effective Date": "06/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "783606",
+        "Name": "OCM CR Wealth Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607231",
+        "RecordSubType": "Full",
+        "Principal FRN": "418826",
+        "Principal Firm Name": "OCM Wealth Management Ltd",
+        "Effective Date": "16/05/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "607231",
+        "Name": "Davis Financial Consulting Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1032625",
+        "RecordSubType": "Full",
+        "Principal FRN": "418826",
+        "Principal Firm Name": "OCM Wealth Management Ltd",
+        "Effective Date": "12/05/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "1032625",
+        "Name": "TeamChurchills Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "418826",
+    "organisation_name": "OCM Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05039809",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "01/04/2005"
+  },
+  "person_records": {}
 }

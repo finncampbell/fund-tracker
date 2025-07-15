@@ -1,9 +1,265 @@
 {
   "frn": 489839,
   "name": "Talbot Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616296",
+        "Termination Date": "16/02/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "24/02/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616296",
+        "Name": "Aether Energy Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/629545",
+        "Termination Date": "05/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "04/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "629545",
+        "Name": "Altamount Capital UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/629545",
+        "Termination Date": "10/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "31/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "629545",
+        "Name": "Altamount Capital UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/605620",
+        "Termination Date": "28/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "07/08/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "605620",
+        "Name": "APartners Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/525748",
+        "Termination Date": "17/11/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "25/08/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "525748",
+        "Name": "Aravis Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769689",
+        "Termination Date": "31/12/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "18/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "769689",
+        "Name": "AREAM International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/661233",
+        "Termination Date": "01/09/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "19/12/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "661233",
+        "Name": "Bayes Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608257",
+        "Termination Date": "31/08/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "28/04/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608257",
+        "Name": "BNKTOTHEFUTURE.COM LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593048",
+        "Termination Date": "06/06/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "18/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "593048",
+        "Name": "CAMBRIDGE INTERNATIONAL (UK) LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/705737",
+        "Termination Date": "19/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "08/06/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "705737",
+        "Name": "Coalface UK Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/911837",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "14/12/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "911837",
+        "Name": "01 Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/989936",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "13/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "989936",
+        "Name": "Bond Financial Technologies Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/962398",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "06/06/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "962398",
+        "Name": "Join Odin Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/948923",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "13/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "948923",
+        "Name": "Liverpool Street Capital Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/970548",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "23/02/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "970548",
+        "Name": "Mara Invest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/987170",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "16/11/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "987170",
+        "Name": "Pretiosum Ventures Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/969013",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "01/02/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "969013",
+        "Name": "RatesNet Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1022837",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "07/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1022837",
+        "Name": "Sequel Technologies Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1033576",
+        "RecordSubType": "Full",
+        "Principal FRN": "489839",
+        "Principal Firm Name": "Talbot Capital Ltd",
+        "Effective Date": "10/06/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1033576",
+        "Name": "Vennre Ventures Advisers (VVA) Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489839",
+    "organisation_name": "Talbot Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06736536",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "24/04/2009"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 220743,
   "name": "Mattioli Woods Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "220743",
+    "organisation_name": "Mattioli Woods Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "03140521",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "18/07/2003"
+  },
+  "person_records": {}
 }

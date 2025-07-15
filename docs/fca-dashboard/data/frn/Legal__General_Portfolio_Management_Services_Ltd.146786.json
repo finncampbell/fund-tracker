@@ -1,9 +1,155 @@
 {
   "frn": 146786,
   "name": "Legal & General (Portfolio Management Services) Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/175493",
+        "Termination Date": "30/04/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "16/09/1993",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "175493",
+        "Name": "1st Choice"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/165046",
+        "Termination Date": "01/12/2001",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "08/03/1992",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "165046",
+        "Name": "1st Choice Financial Appointments"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195402",
+        "Termination Date": "13/05/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "22/03/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "195402",
+        "Name": "1st Class Mortgages (Scotland) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/191992",
+        "Termination Date": "01/12/2001",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "01/04/2000",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "191992",
+        "Name": "2000 Mortgages.co.uk"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/193659",
+        "Termination Date": "08/04/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "19/06/2000",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "193659",
+        "Name": "3C Developments Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/157013",
+        "Termination Date": "03/04/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "21/12/1982",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "157013",
+        "Name": "A & B Griffiths (Life and Pension) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/206247",
+        "Termination Date": "19/06/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "22/06/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "206247",
+        "Name": "A & L Mortgages (Scotland) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/195477",
+        "Termination Date": "08/08/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "20/09/1999",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "195477",
+        "Name": "A J Seymour Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/156949",
+        "Termination Date": "27/05/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "01/01/1989",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "156949",
+        "Name": "A Lawler and Co"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/214139",
+        "Termination Date": "05/03/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "146786",
+        "Principal Firm Name": "Legal & General (Portfolio Management Services) Ltd",
+        "Effective Date": "01/12/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "214139",
+        "Name": "A O'Reilly"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "146786",
+    "organisation_name": "Legal & General (Portfolio Management Services) Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "02457525",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

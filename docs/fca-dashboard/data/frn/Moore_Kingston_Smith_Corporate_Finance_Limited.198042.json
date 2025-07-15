@@ -1,9 +1,39 @@
 {
   "frn": 198042,
   "name": "Moore Kingston Smith Corporate Finance Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/647640",
+        "Termination Date": "19/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "198042",
+        "Principal Firm Name": "Moore Kingston Smith Corporate Finance Limited",
+        "Effective Date": "25/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "647640",
+        "Name": "Devonshire Corporate Finance Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "198042",
+    "organisation_name": "Moore Kingston Smith Corporate Finance Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01516845",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,141 @@
 {
   "frn": 595504,
   "name": "PROFIN PARTNERS LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/736138",
+        "Termination Date": "23/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "10/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "736138",
+        "Name": "Enhance Group (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716658",
+        "Termination Date": "02/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "14/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716658",
+        "Name": "Hellier Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/746477",
+        "Termination Date": "06/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "09/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "746477",
+        "Name": "Matherprofit Consulting UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608991",
+        "Termination Date": "16/05/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "17/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608991",
+        "Name": "NewMill Asset Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/694873",
+        "Termination Date": "05/08/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "12/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "694873",
+        "Name": "Nippon Investment Bespoke Research UK Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/630689",
+        "Termination Date": "01/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "22/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "630689",
+        "Name": "Range Capital Advisers Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/842899",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "28/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "842899",
+        "Name": "Blue Castle Capital Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1021160",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "31/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1021160",
+        "Name": "BTA FINANCE UK LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/774593",
+        "RecordSubType": "Full",
+        "Principal FRN": "595504",
+        "Principal Firm Name": "PROFIN PARTNERS LTD",
+        "Effective Date": "22/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "774593",
+        "Name": "Silcarv Consulting Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "595504",
+    "organisation_name": "PROFIN PARTNERS LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06915047",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "18/04/2013"
+  },
+  "person_records": {}
 }

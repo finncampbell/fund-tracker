@@ -1,9 +1,22 @@
 {
   "frn": 756913,
   "name": "Henderson Park Capital Partners UK LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "756913",
+    "organisation_name": "Henderson Park Capital Partners UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC403232",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "03/10/2016"
+  },
+  "person_records": {}
 }

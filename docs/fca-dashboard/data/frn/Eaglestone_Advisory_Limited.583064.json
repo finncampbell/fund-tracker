@@ -1,9 +1,170 @@
 {
   "frn": 583064,
   "name": "Eaglestone Advisory Limited",
-  "trading_names": [],
-  "appointed_reps": [],
-  "individuals": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/708694",
+        "Termination Date": "21/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "583064",
+        "Principal Firm Name": "Eaglestone Advisory Limited",
+        "Effective Date": "01/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "708694",
+        "Name": "Ana Maria Corvalan"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/727893",
+        "Termination Date": "21/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "583064",
+        "Principal Firm Name": "Eaglestone Advisory Limited",
+        "Effective Date": "03/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "727893",
+        "Name": "Eurolataf Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/580481",
+        "Termination Date": "13/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "583064",
+        "Principal Firm Name": "Eaglestone Advisory Limited",
+        "Effective Date": "13/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "580481",
+        "Name": "Sahel Advisory Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
+  "individuals": [
+    {
+      "IRN": "ABA01008",
+      "Name": "Alan Bret Apter",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ABA01008"
+    },
+    {
+      "IRN": "PXN01271",
+      "Name": "Pedro Neto",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXN01271"
+    },
+    {
+      "IRN": "PXN01271",
+      "Name": "Pedro Neto",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXN01271"
+    },
+    {
+      "IRN": "ABA01008",
+      "Name": "Alan Bret Apter",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ABA01008"
+    },
+    {
+      "IRN": "GRE01018",
+      "Name": "Guy Rene Essome",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GRE01018"
+    },
+    {
+      "IRN": "BPB01044",
+      "Name": "Brice Patrick Beumo Jaze",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BPB01044"
+    },
+    {
+      "IRN": "NKP01004",
+      "Name": "Nigel Keith Purse",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NKP01004"
+    },
+    {
+      "IRN": "FXR01229",
+      "Name": "Francisco Ramirez",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXR01229"
+    },
+    {
+      "IRN": "AMC01103",
+      "Name": "Ana Maria Corvalan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AMC01103"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "ABA01008": [],
+    "PXN01271": [],
+    "GRE01018": [],
+    "BPB01044": [],
+    "NKP01004": [],
+    "FXR01229": [],
+    "AMC01103": []
+  },
+  "metadata": {
+    "frn": "583064",
+    "organisation_name": "Eaglestone Advisory Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07802305",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "08/10/2012"
+  },
+  "person_records": {
+    "ABA01008": {
+      "irn": "ABA01008",
+      "name": "Alan Bret Apter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXN01271": {
+      "irn": "PXN01271",
+      "name": "Pedro Neto",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GRE01018": {
+      "irn": "GRE01018",
+      "name": "Guy Rene Essome",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BPB01044": {
+      "irn": "BPB01044",
+      "name": "Brice Patrick Beumo Jaze",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NKP01004": {
+      "irn": "NKP01004",
+      "name": "Nigel Keith Purse",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXR01229": {
+      "irn": "FXR01229",
+      "name": "Francisco Ramirez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AMC01103": {
+      "irn": "AMC01103",
+      "name": "Ana Maria Corvalan",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

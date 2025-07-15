@@ -1,9 +1,52 @@
 {
   "frn": 810629,
   "name": "Arlington Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/824611",
+        "Termination Date": "07/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "810629",
+        "Principal Firm Name": "Arlington Capital Ltd",
+        "Effective Date": "31/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "824611",
+        "Name": "MoorgateHanson"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/819435",
+        "Termination Date": "12/11/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "810629",
+        "Principal Firm Name": "Arlington Capital Ltd",
+        "Effective Date": "03/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "819435",
+        "Name": "Phi Consulting Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "810629",
+    "organisation_name": "Arlington Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09578016",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "24/07/2018"
+  },
+  "person_records": {}
 }

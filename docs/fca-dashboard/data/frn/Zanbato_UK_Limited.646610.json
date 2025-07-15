@@ -1,9 +1,38 @@
 {
   "frn": 646610,
   "name": "Zanbato UK Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/715840",
+        "Termination Date": "22/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "646610",
+        "Principal Firm Name": "Zanbato UK Limited",
+        "Effective Date": "03/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "715840",
+        "Name": "Institutional Investor Zanbato Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "646610",
+    "organisation_name": "Zanbato UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08885567",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "17/04/2015"
+  },
+  "person_records": {}
 }

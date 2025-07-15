@@ -1,9 +1,22 @@
 {
   "frn": 927552,
   "name": "EBC Financial Group (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "927552",
+    "organisation_name": "EBC Financial Group (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12503674",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "08/02/2021"
+  },
+  "person_records": {}
 }

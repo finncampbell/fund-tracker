@@ -1,9 +1,104 @@
 {
   "frn": 470388,
   "name": "Generation Asset Management (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/604740",
+        "Termination Date": "31/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "23/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "604740",
+        "Name": "Arrow Capital Management (UK) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/772001",
+        "Termination Date": "09/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "20/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "772001",
+        "Name": "Nekton Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582457",
+        "Termination Date": "12/03/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "06/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582457",
+        "Name": "Plinian Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/552243",
+        "Termination Date": "22/05/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "27/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "552243",
+        "Name": "SOVEREIGNTY CAPITAL ADVISORS UK LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617032",
+        "Termination Date": "31/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "11/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617032",
+        "Name": "Tomlinson Research Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582457",
+        "RecordSubType": "Full",
+        "Principal FRN": "470388",
+        "Principal Firm Name": "Generation Asset Management (UK) Limited",
+        "Effective Date": "02/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582457",
+        "Name": "Plinian Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "470388",
+    "organisation_name": "Generation Asset Management (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06163539",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "09/01/2008"
+  },
+  "person_records": {}
 }

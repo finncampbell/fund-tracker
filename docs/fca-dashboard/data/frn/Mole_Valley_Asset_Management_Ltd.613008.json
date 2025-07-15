@@ -1,9 +1,22 @@
 {
   "frn": 613008,
   "name": "Mole Valley Asset Management Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "613008",
+    "organisation_name": "Mole Valley Asset Management Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "08600041",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "28/08/2014"
+  },
+  "person_records": {}
 }

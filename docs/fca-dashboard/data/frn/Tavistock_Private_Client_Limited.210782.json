@@ -1,9 +1,103 @@
 {
   "frn": 210782,
   "name": "Tavistock Private Client Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/465217",
+        "Termination Date": "18/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "13/03/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "465217",
+        "Name": "Ashton KCJ Financial Planning LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/504056",
+        "Termination Date": "01/01/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "24/07/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "504056",
+        "Name": "La Playa Wealth LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/465216",
+        "Termination Date": "25/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "13/03/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "465216",
+        "Name": "Price Bailey Private Client LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/417501",
+        "Termination Date": "17/12/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "04/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "417501",
+        "Name": "The Law Society"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/945082",
+        "RecordSubType": "Full",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "16/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "945082",
+        "Name": "Tavistock Chater Allan LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/991884",
+        "RecordSubType": "Full",
+        "Principal FRN": "210782",
+        "Principal Firm Name": "Tavistock Private Client Limited",
+        "Effective Date": "15/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "991884",
+        "Name": "Tavistock Select LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "210782",
+    "organisation_name": "Tavistock Private Client Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04298592",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "16/08/2002"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 823315,
   "name": "King & Shaxson Asset Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "823315",
+    "organisation_name": "King & Shaxson Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03870667",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "11/04/2019"
+  },
+  "person_records": {}
 }

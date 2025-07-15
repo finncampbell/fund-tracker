@@ -1,9 +1,51 @@
 {
   "frn": 709689,
   "name": "Sarus Select Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/945663",
+        "Termination Date": "06/01/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "709689",
+        "Principal Firm Name": "Sarus Select Capital Ltd",
+        "Effective Date": "25/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "945663",
+        "Name": "D&D Consultancy Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/992066",
+        "RecordSubType": "Full",
+        "Principal FRN": "709689",
+        "Principal Firm Name": "Sarus Select Capital Ltd",
+        "Effective Date": "19/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "992066",
+        "Name": "ESAS HOLDING UK LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "709689",
+    "organisation_name": "Sarus Select Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09362852",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "09/03/2016"
+  },
+  "person_records": {}
 }

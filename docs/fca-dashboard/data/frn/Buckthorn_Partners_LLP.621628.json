@@ -1,9 +1,22 @@
 {
   "frn": 621628,
   "name": "Buckthorn Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "621628",
+    "organisation_name": "Buckthorn Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC392195",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "15/09/2014"
+  },
+  "person_records": {}
 }

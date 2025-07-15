@@ -1,9 +1,38 @@
 {
   "frn": 114428,
   "name": "Maunby Investment Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/474831",
+        "Termination Date": "08/03/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "114428",
+        "Principal Firm Name": "Maunby Investment Management Ltd",
+        "Effective Date": "06/11/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "474831",
+        "Name": "John Holian"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "114428",
+    "organisation_name": "Maunby Investment Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01676636",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

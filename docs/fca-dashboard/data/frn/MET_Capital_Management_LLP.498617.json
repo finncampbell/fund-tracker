@@ -1,9 +1,38 @@
 {
   "frn": 498617,
   "name": "MET Capital Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/544702",
+        "Termination Date": "03/01/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "498617",
+        "Principal Firm Name": "MET Capital Management LLP",
+        "Effective Date": "04/04/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "544702",
+        "Name": "Heath Capital LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "498617",
+    "organisation_name": "MET Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC344026",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "16/06/2009"
+  },
+  "person_records": {}
 }

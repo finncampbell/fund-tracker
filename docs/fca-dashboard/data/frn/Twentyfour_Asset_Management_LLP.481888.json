@@ -1,9 +1,38 @@
 {
   "frn": 481888,
   "name": "Twentyfour Asset Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/502698",
+        "Termination Date": "17/12/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "481888",
+        "Principal Firm Name": "Twentyfour Asset Management LLP",
+        "Effective Date": "22/06/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "502698",
+        "Name": "Gemini Investment Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "481888",
+    "organisation_name": "Twentyfour Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC335015",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "28/07/2008"
+  },
+  "person_records": {}
 }

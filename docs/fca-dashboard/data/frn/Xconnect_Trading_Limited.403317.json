@@ -1,9 +1,104 @@
 {
   "frn": 403317,
   "name": "Xconnect Trading Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762803",
+        "Termination Date": "10/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "26/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762803",
+        "Name": "FCS Capital Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/924305",
+        "Termination Date": "01/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "09/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "924305",
+        "Name": "Helix Securities LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/823917",
+        "Termination Date": "01/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "22/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "823917",
+        "Name": "Xconnect Securities Europe Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/764651",
+        "Termination Date": "08/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "16/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "764651",
+        "Name": "Xconnect Securities Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790498",
+        "Termination Date": "06/02/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "04/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790498",
+        "Name": "Xconnect USA Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1021961",
+        "RecordSubType": "Full",
+        "Principal FRN": "403317",
+        "Principal Firm Name": "Xconnect Trading Limited",
+        "Effective Date": "24/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1021961",
+        "Name": "Xconnect USA Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "403317",
+    "organisation_name": "Xconnect Trading Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04240845",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "14/04/2005"
+  },
+  "person_records": {}
 }

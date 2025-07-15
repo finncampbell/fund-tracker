@@ -1,9 +1,64 @@
 {
   "frn": 593186,
   "name": "HOBART CAPITAL MARKETS LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/646679",
+        "Termination Date": "01/07/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "593186",
+        "Principal Firm Name": "HOBART CAPITAL MARKETS LLP",
+        "Effective Date": "16/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "646679",
+        "Name": "DD&CO LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/646882",
+        "Termination Date": "23/12/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "593186",
+        "Principal Firm Name": "HOBART CAPITAL MARKETS LLP",
+        "Effective Date": "17/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "646882",
+        "Name": "DDGI Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/973454",
+        "RecordSubType": "Full",
+        "Principal FRN": "593186",
+        "Principal Firm Name": "HOBART CAPITAL MARKETS LLP",
+        "Effective Date": "04/04/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "973454",
+        "Name": "BOSH LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "593186",
+    "organisation_name": "HOBART CAPITAL MARKETS LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC380127",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "02/04/2013"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,51 @@
 {
   "frn": 232613,
   "name": "BSN Capital Partners Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/736608",
+        "Termination Date": "05/11/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "232613",
+        "Principal Firm Name": "BSN Capital Partners Ltd",
+        "Effective Date": "15/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "736608",
+        "Name": "Oliver Benkert"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/493788",
+        "RecordSubType": "Full",
+        "Principal FRN": "232613",
+        "Principal Firm Name": "BSN Capital Partners Ltd",
+        "Effective Date": "01/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "493788",
+        "Name": "BSN Capital LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "232613",
+    "organisation_name": "BSN Capital Partners Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05033394",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "30/06/2004"
+  },
+  "person_records": {}
 }

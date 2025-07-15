@@ -1,9 +1,38 @@
 {
   "frn": 769481,
   "name": "One Global Market Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/835518",
+        "Termination Date": "25/04/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "769481",
+        "Principal Firm Name": "One Global Market Limited",
+        "Effective Date": "06/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "835518",
+        "Name": "Orion Ridge Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "769481",
+    "organisation_name": "One Global Market Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10396402",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "05/10/2017"
+  },
+  "person_records": {}
 }

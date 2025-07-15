@@ -1,9 +1,22 @@
 {
   "frn": 189829,
   "name": "Thomas Miller Investment Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "189829",
+    "organisation_name": "Thomas Miller Investment Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02187502",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

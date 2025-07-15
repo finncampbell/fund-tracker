@@ -1,9 +1,51 @@
 {
   "frn": 929690,
   "name": "MML UK Advisor LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/944882",
+        "Termination Date": "20/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "929690",
+        "Principal Firm Name": "MML UK Advisor LLP",
+        "Effective Date": "12/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "944882",
+        "Name": "MML Capital Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/948625",
+        "RecordSubType": "Full",
+        "Principal FRN": "929690",
+        "Principal Firm Name": "MML UK Advisor LLP",
+        "Effective Date": "07/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "948625",
+        "Name": "MML Holdco 7 Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "929690",
+    "organisation_name": "MML UK Advisor LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC393766",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "16/10/2020"
+  },
+  "person_records": {}
 }

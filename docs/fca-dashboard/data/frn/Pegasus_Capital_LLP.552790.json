@@ -1,9 +1,51 @@
 {
   "frn": 552790,
   "name": "Pegasus Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582472",
+        "Termination Date": "03/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "552790",
+        "Principal Firm Name": "Pegasus Capital LLP",
+        "Effective Date": "06/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582472",
+        "Name": "Centrus Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/589128",
+        "Termination Date": "15/04/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "552790",
+        "Principal Firm Name": "Pegasus Capital LLP",
+        "Effective Date": "04/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "589128",
+        "Name": "Newbridge Advisors LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "552790",
+    "organisation_name": "Pegasus Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC359747",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "25/08/2011"
+  },
+  "person_records": {}
 }

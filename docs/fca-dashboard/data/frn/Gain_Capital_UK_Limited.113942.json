@@ -1,9 +1,65 @@
 {
   "frn": 113942,
   "name": "Gain Capital UK Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/587251",
+        "Termination Date": "02/10/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "113942",
+        "Principal Firm Name": "Gain Capital UK Limited",
+        "Effective Date": "30/08/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "587251",
+        "Name": "IO com Kereskedelrni és Szolgáltató koríatolt Felelosségú Táraság"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/496584",
+        "Termination Date": "19/01/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "113942",
+        "Principal Firm Name": "Gain Capital UK Limited",
+        "Effective Date": "19/02/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "496584",
+        "Name": "PGB Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/516583",
+        "Termination Date": "14/07/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "113942",
+        "Principal Firm Name": "Gain Capital UK Limited",
+        "Effective Date": "21/01/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "516583",
+        "Name": "Tom Hougaard"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "113942",
+    "organisation_name": "Gain Capital UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01761813",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

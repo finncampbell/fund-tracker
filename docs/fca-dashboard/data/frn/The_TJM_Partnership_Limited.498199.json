@@ -1,9 +1,156 @@
 {
   "frn": 498199,
   "name": "The TJM Partnership Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/729561",
+        "Termination Date": "26/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "21/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "729561",
+        "Name": "ANAFIN CAPITAL LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751661",
+        "Termination Date": "16/12/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "04/07/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "751661",
+        "Name": "Hunt 4 Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/730260",
+        "Termination Date": "13/04/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "28/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "730260",
+        "Name": "Lumiere Wealth (London) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728798",
+        "Termination Date": "30/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "14/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "728798",
+        "Name": "Monument Global Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/744231",
+        "Termination Date": "12/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "15/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "744231",
+        "Name": "Petra Asset Management"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/713886",
+        "Termination Date": "17/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "14/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "713886",
+        "Name": "Providence Wealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627669",
+        "Termination Date": "01/09/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "07/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627669",
+        "Name": "The London Trading Company (UK) PLC"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/573694",
+        "Termination Date": "31/05/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "26/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "573694",
+        "Name": "TJ Markets (UK) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/486515",
+        "Termination Date": "07/04/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "28/01/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "486515",
+        "Name": "TJM Partners (London) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/563623",
+        "Termination Date": "03/07/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "498199",
+        "Principal Firm Name": "The TJM Partnership Limited",
+        "Effective Date": "01/09/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "563623",
+        "Name": "TJM Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "498199",
+    "organisation_name": "The TJM Partnership Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06803933",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "11/01/2010"
+  },
+  "person_records": {}
 }

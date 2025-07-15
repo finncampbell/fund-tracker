@@ -1,9 +1,21 @@
 {
   "frn": 714687,
   "name": "Maya Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "714687",
+    "organisation_name": "Maya Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC391490",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "01/02/2016"
+  },
+  "person_records": {}
 }

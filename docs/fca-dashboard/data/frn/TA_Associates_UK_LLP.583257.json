@@ -1,9 +1,22 @@
 {
   "frn": 583257,
   "name": "TA Associates (UK), LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "583257",
+    "organisation_name": "TA Associates (UK), LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC375642",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "01/10/2012"
+  },
+  "person_records": {}
 }

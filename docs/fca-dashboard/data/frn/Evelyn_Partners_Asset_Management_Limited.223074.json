@@ -1,9 +1,22 @@
 {
   "frn": 223074,
   "name": "Evelyn Partners Asset Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "223074",
+    "organisation_name": "Evelyn Partners Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03900078",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "06/08/2003"
+  },
+  "person_records": {}
 }

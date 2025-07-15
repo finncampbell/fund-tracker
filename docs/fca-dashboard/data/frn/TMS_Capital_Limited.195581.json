@@ -1,9 +1,130 @@
 {
   "frn": 195581,
   "name": "TMS Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739396",
+        "Termination Date": "31/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "07/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739396",
+        "Name": "Alphaseeker Investment Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/769007",
+        "Termination Date": "24/04/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "09/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "769007",
+        "Name": "Anoushaa Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/741075",
+        "Termination Date": "31/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "18/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "741075",
+        "Name": "Ariolus Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739284",
+        "Termination Date": "05/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "04/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739284",
+        "Name": "Pathburner Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/735871",
+        "Termination Date": "09/11/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "09/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "735871",
+        "Name": "Pathburner Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/742935",
+        "Termination Date": "31/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "04/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "742935",
+        "Name": "Polden Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/743802",
+        "Termination Date": "01/11/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "12/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "743802",
+        "Name": "Samuel & Co. Trading Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739051",
+        "Termination Date": "01/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "195581",
+        "Principal Firm Name": "TMS Capital Limited",
+        "Effective Date": "03/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739051",
+        "Name": "Savernake Technology Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "195581",
+    "organisation_name": "TMS Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03960337",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 942618,
   "name": "Engage Wealth Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "942618",
+    "organisation_name": "Engage Wealth Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13010558",
+    "system_timestamp": "23/06/2025 22:19",
+    "status_effective_date": "24/05/2021"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 928905,
   "name": "Bridges Outcomes Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/953248",
+        "Termination Date": "26/02/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "928905",
+        "Principal Firm Name": "Bridges Outcomes Limited",
+        "Effective Date": "21/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "953248",
+        "Name": "Peiper Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "928905",
+    "organisation_name": "Bridges Outcomes Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12638672",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "01/03/2021"
+  },
+  "person_records": {}
 }

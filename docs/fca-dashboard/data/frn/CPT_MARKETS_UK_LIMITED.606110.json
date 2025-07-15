@@ -1,9 +1,65 @@
 {
   "frn": 606110,
   "name": "CPT MARKETS UK LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/732477",
+        "Termination Date": "17/08/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "606110",
+        "Principal Firm Name": "CPT MARKETS UK LIMITED",
+        "Effective Date": "23/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "732477",
+        "Name": "BASIS CAPITAL MARKETS UK LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/780322",
+        "Termination Date": "27/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "606110",
+        "Principal Firm Name": "CPT MARKETS UK LIMITED",
+        "Effective Date": "01/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "780322",
+        "Name": "CAXTON GLOBAL LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/778429",
+        "Termination Date": "26/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "606110",
+        "Principal Firm Name": "CPT MARKETS UK LIMITED",
+        "Effective Date": "08/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "778429",
+        "Name": "TECHO FX (UK) LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "606110",
+    "organisation_name": "CPT MARKETS UK LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06707165",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "31/07/2014"
+  },
+  "person_records": {}
 }

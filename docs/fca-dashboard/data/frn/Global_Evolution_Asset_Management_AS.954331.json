@@ -1,9 +1,22 @@
 {
   "frn": 954331,
   "name": "Global Evolution Asset Management A/S",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "954331",
+    "organisation_name": "Global Evolution Asset Management A/S",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR022050",
+    "system_timestamp": "23/06/2025 22:19",
+    "status_effective_date": "07/07/2022"
+  },
+  "person_records": {}
 }

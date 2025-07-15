@@ -1,9 +1,38 @@
 {
   "frn": 194779,
   "name": "Octopus Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1004074",
+        "RecordSubType": "Full",
+        "Principal FRN": "194779",
+        "Principal Firm Name": "Octopus Investments Limited",
+        "Effective Date": "31/10/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1004074",
+        "Name": "Octopus Money Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "194779",
+    "organisation_name": "Octopus Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03942880",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

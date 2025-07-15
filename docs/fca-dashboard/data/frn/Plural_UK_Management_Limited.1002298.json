@@ -1,9 +1,134 @@
 {
   "frn": 1002298,
   "name": "Plural UK Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "IXH00118",
+      "Name": "Ian Hogarth",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXH00118"
+    },
+    {
+      "IRN": "KXH01412",
+      "Name": "Khaled Helioui",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXH01412"
+    },
+    {
+      "IRN": "VAD00032",
+      "Name": "Victoria Adrienne Kennard",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VAD00032"
+    },
+    {
+      "IRN": "TXH00261",
+      "Name": "Taavet Hinrikus",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00261"
+    },
+    {
+      "IRN": "CXN07508",
+      "Name": "Carina Namih",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXN07508"
+    },
+    {
+      "IRN": "SXT00719",
+      "Name": "Sten Tamkivi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXT00719"
+    },
+    {
+      "IRN": "TXH00261",
+      "Name": "Taavet Hinrikus",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00261"
+    },
+    {
+      "IRN": "TXR00235",
+      "Name": "Tamsin Fiona Ashworth Reeves",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXR00235"
+    },
+    {
+      "IRN": "DJT01238",
+      "Name": "Daniel Joseph Charles Tarver",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJT01238"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "IXH00118": [],
+    "KXH01412": [],
+    "VAD00032": [],
+    "TXH00261": [],
+    "CXN07508": [],
+    "SXT00719": [],
+    "TXR00235": [],
+    "DJT01238": []
+  },
+  "metadata": {
+    "frn": "1002298",
+    "organisation_name": "Plural UK Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13703272",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "03/04/2024"
+  },
+  "person_records": {
+    "IXH00118": {
+      "irn": "IXH00118",
+      "name": "Ian Hogarth",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXH01412": {
+      "irn": "KXH01412",
+      "name": "Khaled Helioui",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VAD00032": {
+      "irn": "VAD00032",
+      "name": "Victoria Adrienne Kennard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXH00261": {
+      "irn": "TXH00261",
+      "name": "Taavet Hinrikus",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXN07508": {
+      "irn": "CXN07508",
+      "name": "Carina Namih",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXT00719": {
+      "irn": "SXT00719",
+      "name": "Sten Tamkivi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXR00235": {
+      "irn": "TXR00235",
+      "name": "Tamsin Fiona Ashworth Reeves",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJT01238": {
+      "irn": "DJT01238",
+      "name": "Daniel Joseph Charles Tarver",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

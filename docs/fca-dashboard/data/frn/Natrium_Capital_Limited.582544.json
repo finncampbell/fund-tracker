@@ -1,9 +1,179 @@
 {
   "frn": 582544,
   "name": "Natrium Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "EFG01012",
+      "Name": "Elizabeth Flora Goldhill",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EFG01012"
+    },
+    {
+      "IRN": "AHN01002",
+      "Name": "Alasdair Hugh Nisbet",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AHN01002"
+    },
+    {
+      "IRN": "MXB01147",
+      "Name": "Mia Balmforth",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXB01147"
+    },
+    {
+      "IRN": "EFG01012",
+      "Name": "Elizabeth Flora Goldhill",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EFG01012"
+    },
+    {
+      "IRN": "AHN01002",
+      "Name": "Alasdair Hugh Nisbet",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AHN01002"
+    },
+    {
+      "IRN": "SXB00705",
+      "Name": "Sophie Beadsmoore",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXB00705"
+    },
+    {
+      "IRN": "TXH00299",
+      "Name": "Thomas Hagan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00299"
+    },
+    {
+      "IRN": "LXM01979",
+      "Name": "Laura Marsh",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXM01979"
+    },
+    {
+      "IRN": "JXW00466",
+      "Name": "James Williamson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW00466"
+    },
+    {
+      "IRN": "JXT01171",
+      "Name": "Jonathan Tyler",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXT01171"
+    },
+    {
+      "IRN": "JXE16418",
+      "Name": "Jack Edgeworth",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXE16418"
+    },
+    {
+      "IRN": "NCM01049",
+      "Name": "Nicola Catherine Martin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NCM01049"
+    },
+    {
+      "IRN": "IXP01042",
+      "Name": "Iannis Phottiou",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXP01042"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "EFG01012": [],
+    "AHN01002": [],
+    "MXB01147": [],
+    "SXB00705": [],
+    "TXH00299": [],
+    "LXM01979": [],
+    "JXW00466": [],
+    "JXT01171": [],
+    "JXE16418": [],
+    "NCM01049": [],
+    "IXP01042": []
+  },
+  "metadata": {
+    "frn": "582544",
+    "organisation_name": "Natrium Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07948053",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "02/10/2012"
+  },
+  "person_records": {
+    "EFG01012": {
+      "irn": "EFG01012",
+      "name": "Elizabeth Flora Goldhill",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AHN01002": {
+      "irn": "AHN01002",
+      "name": "Alasdair Hugh Nisbet",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXB01147": {
+      "irn": "MXB01147",
+      "name": "Mia Balmforth",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXB00705": {
+      "irn": "SXB00705",
+      "name": "Sophie Beadsmoore",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXH00299": {
+      "irn": "TXH00299",
+      "name": "Thomas Hagan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXM01979": {
+      "irn": "LXM01979",
+      "name": "Laura Marsh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW00466": {
+      "irn": "JXW00466",
+      "name": "James Williamson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXT01171": {
+      "irn": "JXT01171",
+      "name": "Jonathan Tyler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXE16418": {
+      "irn": "JXE16418",
+      "name": "Jack Edgeworth",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NCM01049": {
+      "irn": "NCM01049",
+      "name": "Nicola Catherine Martin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXP01042": {
+      "irn": "IXP01042",
+      "name": "Iannis Phottiou",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

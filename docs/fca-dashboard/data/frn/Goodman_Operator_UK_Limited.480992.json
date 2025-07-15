@@ -1,9 +1,21 @@
 {
   "frn": 480992,
   "name": "Goodman Operator (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "480992",
+    "organisation_name": "Goodman Operator (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06303124",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "04/06/2008"
+  },
+  "person_records": {}
 }

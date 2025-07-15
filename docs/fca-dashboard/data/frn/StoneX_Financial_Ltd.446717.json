@@ -1,9 +1,78 @@
 {
   "frn": 446717,
   "name": "StoneX Financial Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/804520",
+        "Termination Date": "09/03/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446717",
+        "Principal Firm Name": "StoneX Financial Ltd",
+        "Effective Date": "20/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "804520",
+        "Name": "Alexandra Williams"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/522661",
+        "Termination Date": "07/11/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "446717",
+        "Principal Firm Name": "StoneX Financial Ltd",
+        "Effective Date": "06/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "522661",
+        "Name": "Clear Currency LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593307",
+        "Termination Date": "15/05/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446717",
+        "Principal Firm Name": "StoneX Financial Ltd",
+        "Effective Date": "20/12/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "593307",
+        "Name": "Halim Saad"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/779176",
+        "Termination Date": "11/09/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "446717",
+        "Principal Firm Name": "StoneX Financial Ltd",
+        "Effective Date": "17/05/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "779176",
+        "Name": "Price Consult Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "446717",
+    "organisation_name": "StoneX Financial Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "05616586",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "24/03/2006"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,51 @@
 {
   "frn": 602091,
   "name": "Virtue Capital Partners Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/742000",
+        "Termination Date": "29/01/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "602091",
+        "Principal Firm Name": "Virtue Capital Partners Ltd",
+        "Effective Date": "29/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "742000",
+        "Name": "Independent View UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610195",
+        "Termination Date": "11/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "602091",
+        "Principal Firm Name": "Virtue Capital Partners Ltd",
+        "Effective Date": "12/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610195",
+        "Name": "Virtue Capital Solutions Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "602091",
+    "organisation_name": "Virtue Capital Partners Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08094972",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "06/11/2013"
+  },
+  "person_records": {}
 }

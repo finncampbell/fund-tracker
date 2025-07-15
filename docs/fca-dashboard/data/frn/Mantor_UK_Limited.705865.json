@@ -1,9 +1,77 @@
 {
   "frn": 705865,
   "name": "Mantor (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813735",
+        "Termination Date": "07/01/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "705865",
+        "Principal Firm Name": "Mantor (UK) Limited",
+        "Effective Date": "12/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "813735",
+        "Name": "Amedia Wealth Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/794380",
+        "Termination Date": "16/12/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "705865",
+        "Principal Firm Name": "Mantor (UK) Limited",
+        "Effective Date": "17/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "794380",
+        "Name": "Antonio Winspeare Gucciardi"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/915813",
+        "Termination Date": "16/12/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "705865",
+        "Principal Firm Name": "Mantor (UK) Limited",
+        "Effective Date": "25/10/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "915813",
+        "Name": "Knightsbridge Ventures Private Equity Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/791394",
+        "Termination Date": "31/01/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "705865",
+        "Principal Firm Name": "Mantor (UK) Limited",
+        "Effective Date": "12/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "791394",
+        "Name": "Rosabel Paterson-Park"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "705865",
+    "organisation_name": "Mantor (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08640915",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "28/01/2016"
+  },
+  "person_records": {}
 }

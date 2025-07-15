@@ -1,9 +1,39 @@
 {
   "frn": 570942,
   "name": "Blue Horizon Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/755092",
+        "Termination Date": "23/06/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "570942",
+        "Principal Firm Name": "Blue Horizon Asset Management Limited",
+        "Effective Date": "04/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "755092",
+        "Name": "Bolt Markets Securities Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "570942",
+    "organisation_name": "Blue Horizon Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07612319",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "22/02/2012"
+  },
+  "person_records": {}
 }

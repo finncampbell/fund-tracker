@@ -1,9 +1,21 @@
 {
   "frn": 803483,
   "name": "Morphose Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "803483",
+    "organisation_name": "Morphose Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06635523",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "02/08/2018"
+  },
+  "person_records": {}
 }

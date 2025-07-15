@@ -1,9 +1,39 @@
 {
   "frn": 629628,
   "name": "TF Global Markets (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/976035",
+        "Termination Date": "07/12/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "629628",
+        "Principal Firm Name": "TF Global Markets (UK) Limited",
+        "Effective Date": "19/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "976035",
+        "Name": "Liquidity Holdings Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "629628",
+    "organisation_name": "TF Global Markets (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09042646",
+    "system_timestamp": "23/06/2025 22:03",
+    "status_effective_date": "23/01/2015"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,180 @@
 {
   "frn": 124995,
   "name": "Courtiers Investment Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/526073",
+        "Termination Date": "01/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "01/12/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "526073",
+        "Name": "Compton Row Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/480694",
+        "Termination Date": "01/12/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "20/03/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "480694",
+        "Name": "Courtiers (Castlebridge) Financial Consultants Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/793426",
+        "Termination Date": "23/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "06/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "793426",
+        "Name": "De Brae Investment Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/496328",
+        "Termination Date": "03/01/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "12/02/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "496328",
+        "Name": "DTM's Life & Pensions Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/523016",
+        "Termination Date": "08/01/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "27/04/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "523016",
+        "Name": "Geoffrey Crocker"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/206546",
+        "Termination Date": "09/01/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "20/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "206546",
+        "Name": "Graham Lawrence Wand"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/528417",
+        "Termination Date": "09/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "13/05/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "528417",
+        "Name": "Grosvenor Vokes Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/200446",
+        "Termination Date": "01/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "31/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "200446",
+        "Name": "Howard Scofield IFA Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/542005",
+        "Termination Date": "01/03/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "23/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "542005",
+        "Name": "John Morton Associates Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/744302",
+        "Termination Date": "01/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "15/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "744302",
+        "Name": "JRH Asset Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/419269",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "19/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "419269",
+        "Name": "Paragon Financial Planning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/847267",
+        "RecordSubType": "Full",
+        "Principal FRN": "124995",
+        "Principal Firm Name": "Courtiers Investment Services Limited",
+        "Effective Date": "19/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "847267",
+        "Name": "Snowdon Financial Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "124995",
+    "organisation_name": "Courtiers Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01387954",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

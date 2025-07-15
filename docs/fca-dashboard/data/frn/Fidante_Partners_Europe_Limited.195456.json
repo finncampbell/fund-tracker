@@ -1,9 +1,78 @@
 {
   "frn": 195456,
   "name": "Fidante Partners Europe Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/499734",
+        "Termination Date": "25/08/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "195456",
+        "Principal Firm Name": "Fidante Partners Europe Limited",
+        "Effective Date": "21/04/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "499734",
+        "Name": "Allium Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/957710",
+        "Termination Date": "18/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "195456",
+        "Principal Firm Name": "Fidante Partners Europe Limited",
+        "Effective Date": "01/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "957710",
+        "Name": "Ardea Investment Management (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/526988",
+        "Termination Date": "01/10/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "195456",
+        "Principal Firm Name": "Fidante Partners Europe Limited",
+        "Effective Date": "02/07/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "526988",
+        "Name": "Katalyst Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1021453",
+        "RecordSubType": "Full",
+        "Principal FRN": "195456",
+        "Principal Firm Name": "Fidante Partners Europe Limited",
+        "Effective Date": "14/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1021453",
+        "Name": "Hatch Room Pty Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "195456",
+    "organisation_name": "Fidante Partners Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04040660",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

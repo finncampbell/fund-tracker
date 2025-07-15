@@ -1,9 +1,104 @@
 {
   "frn": 431206,
   "name": "Oakham Wealth Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/799887",
+        "Termination Date": "11/01/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "18/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "799887",
+        "Name": "Alpha Beta Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/974909",
+        "Termination Date": "20/10/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "29/04/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "974909",
+        "Name": "Eragon Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1003158",
+        "Termination Date": "01/01/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "31/10/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1003158",
+        "Name": "Genesis 8 Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/954795",
+        "Termination Date": "12/06/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "15/07/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "954795",
+        "Name": "Harness Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/749561",
+        "Termination Date": "04/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "10/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "749561",
+        "Name": "Rivers Capital Management"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926529",
+        "Termination Date": "28/10/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "431206",
+        "Principal Firm Name": "Oakham Wealth Management Ltd",
+        "Effective Date": "21/05/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926529",
+        "Name": "Rockhold Investments Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "431206",
+    "organisation_name": "Oakham Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05281855",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "04/11/2005"
+  },
+  "person_records": {}
 }

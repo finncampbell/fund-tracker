@@ -1,9 +1,39 @@
 {
   "frn": 154146,
   "name": "Capel Court Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/500099",
+        "Termination Date": "01/01/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "154146",
+        "Principal Firm Name": "Capel Court Limited",
+        "Effective Date": "27/04/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "500099",
+        "Name": "CFJ Financial Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "154146",
+    "organisation_name": "Capel Court Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02686967",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

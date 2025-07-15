@@ -1,9 +1,156 @@
 {
   "frn": 171487,
   "name": "ITI Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/506630",
+        "Termination Date": "15/06/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "08/09/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "506630",
+        "Name": "Anna Maria Coulling"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/523755",
+        "Termination Date": "15/07/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "12/05/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "523755",
+        "Name": "Benedix Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/456412",
+        "Termination Date": "09/10/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "24/08/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "456412",
+        "Name": "Buttonwood Holding International Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/589450",
+        "Termination Date": "11/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "09/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "589450",
+        "Name": "CB London Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/520874",
+        "Termination Date": "17/06/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "22/03/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "520874",
+        "Name": "Cornhall Developments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/757996",
+        "Termination Date": "01/08/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "08/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "757996",
+        "Name": "COZFX Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/767263",
+        "Termination Date": "18/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "14/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "767263",
+        "Name": "Dabbl Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/511533",
+        "Termination Date": "15/06/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "02/11/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "511533",
+        "Name": "David Coulling"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/928449",
+        "Termination Date": "13/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "24/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "928449",
+        "Name": "ETC Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/459041",
+        "Termination Date": "30/06/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "171487",
+        "Principal Firm Name": "ITI Capital Limited",
+        "Effective Date": "25/10/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "459041",
+        "Name": "European American Equities"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "171487",
+    "organisation_name": "ITI Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02926252",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,64 @@
 {
   "frn": 474710,
   "name": "Stellar Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/664561",
+        "Termination Date": "30/04/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "474710",
+        "Principal Firm Name": "Stellar Asset Management Limited",
+        "Effective Date": "12/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "664561",
+        "Name": "DARTREE LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/587490",
+        "Termination Date": "05/08/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "474710",
+        "Principal Firm Name": "Stellar Asset Management Limited",
+        "Effective Date": "29/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "587490",
+        "Name": "John S. Bissett"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747645",
+        "Termination Date": "10/06/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "474710",
+        "Principal Firm Name": "Stellar Asset Management Limited",
+        "Effective Date": "20/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747645",
+        "Name": "Richard Bruce Elliott-Smith"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "474710",
+    "organisation_name": "Stellar Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06381679",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "20/02/2008"
+  },
+  "person_records": {}
 }

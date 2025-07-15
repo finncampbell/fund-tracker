@@ -1,9 +1,21 @@
 {
   "frn": 768168,
   "name": "Sequence Advisers LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "768168",
+    "organisation_name": "Sequence Advisers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC411948",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "01/03/2017"
+  },
+  "person_records": {}
 }

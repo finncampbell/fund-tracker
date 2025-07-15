@@ -1,9 +1,39 @@
 {
   "frn": 214206,
   "name": "Platform Securities LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400130",
+        "Termination Date": "31/10/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "214206",
+        "Principal Firm Name": "Platform Securities LLP",
+        "Effective Date": "15/04/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "400130",
+        "Name": "Havelock Hunter Stockbrokers Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "214206",
+    "organisation_name": "Platform Securities LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC301316",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "08/11/2002"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,37 @@
 {
   "frn": 960363,
   "name": "Bluegrove Capital Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1006329",
+        "RecordSubType": "Full",
+        "Principal FRN": "960363",
+        "Principal Firm Name": "Bluegrove Capital Management Ltd",
+        "Effective Date": "09/01/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1006329",
+        "Name": "KingsRock Advisors UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "960363",
+    "organisation_name": "Bluegrove Capital Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11284120",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "26/01/2022"
+  },
+  "person_records": {}
 }

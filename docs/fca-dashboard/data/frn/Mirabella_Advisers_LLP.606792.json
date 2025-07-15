@@ -1,9 +1,155 @@
 {
   "frn": 606792,
   "name": "Mirabella Advisers LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/810423",
+        "Termination Date": "02/10/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "31/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "810423",
+        "Name": "Absa Securities United Kingdom Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/821557",
+        "Termination Date": "10/03/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "25/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "821557",
+        "Name": "Acorn Capital Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/675271",
+        "Termination Date": "27/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "04/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "675271",
+        "Name": "Advance Global Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/627620",
+        "Termination Date": "23/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "07/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "627620",
+        "Name": "Aethel Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/659436",
+        "Termination Date": "19/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "10/12/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "659436",
+        "Name": "African Capital Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/841114",
+        "Termination Date": "03/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "30/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "841114",
+        "Name": "AIF Marketing Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/807845",
+        "Termination Date": "29/03/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "30/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "807845",
+        "Name": "Airborne Serviceco UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/756786",
+        "Termination Date": "03/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "25/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "756786",
+        "Name": "Albacore Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/766150",
+        "Termination Date": "27/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "02/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "766150",
+        "Name": "ALITER CAPITAL LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813600",
+        "Termination Date": "01/11/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "606792",
+        "Principal Firm Name": "Mirabella Advisers LLP",
+        "Effective Date": "11/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "813600",
+        "Name": "AP Ventures LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "606792",
+    "organisation_name": "Mirabella Advisers LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC384100",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "01/07/2014"
+  },
+  "person_records": {}
 }

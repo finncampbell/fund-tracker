@@ -1,9 +1,37 @@
 {
   "frn": 401049,
   "name": "Victoria Capital (UK) Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/939583",
+        "RecordSubType": "Full",
+        "Principal FRN": "401049",
+        "Principal Firm Name": "Victoria Capital (UK) Ltd",
+        "Effective Date": "27/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "939583",
+        "Name": "Helme & Daughters Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "401049",
+    "organisation_name": "Victoria Capital (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04988876",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "18/08/2004"
+  },
+  "person_records": {}
 }

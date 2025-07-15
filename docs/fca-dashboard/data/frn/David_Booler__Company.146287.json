@@ -1,9 +1,188 @@
 {
   "frn": 146287,
   "name": "David Booler & Company",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/224308",
+        "Termination Date": "31/10/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "11/04/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "224308",
+        "Name": "Ballards FS Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/482438",
+        "Termination Date": "08/07/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "24/04/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "482438",
+        "Name": "Godkin Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/452571",
+        "Termination Date": "30/04/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "25/05/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "452571",
+        "Name": "Kendall Wadley Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/481369",
+        "Termination Date": "15/08/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "08/04/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "481369",
+        "Name": "ParamountSM P.I.P. Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/498074",
+        "Termination Date": "13/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "19/03/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "498074",
+        "Name": "Spencer Hyde Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/190163",
+        "Termination Date": "31/12/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "19/01/1999",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "190163",
+        "Name": "Tonetip Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/189042",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "12/10/1998",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "189042",
+        "Name": "B W Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/224308",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "29/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "224308",
+        "Name": "Ballards FS Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/835254",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "05/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "835254",
+        "Name": "Integra Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/223754",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "20/03/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "223754",
+        "Name": "Nicholsons PSP Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/439964",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "26/09/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "439964",
+        "Name": "Ruthlyn House Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/957864",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "02/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "957864",
+        "Name": "RWB Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/708693",
+        "RecordSubType": "Full",
+        "Principal FRN": "146287",
+        "Principal Firm Name": "David Booler & Company",
+        "Effective Date": "01/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "708693",
+        "Name": "Vaughan Davies & Co (Pensions & Investments) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "146287",
+    "organisation_name": "David Booler & Company",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

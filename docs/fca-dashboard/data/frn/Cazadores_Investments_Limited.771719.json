@@ -1,9 +1,160 @@
 {
   "frn": 771719,
   "name": "Cazadores Investments Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "JHD01089",
+      "Name": "James Henry Dedman",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JHD01089"
+    },
+    {
+      "IRN": "SXP01212",
+      "Name": "Shailen Pau",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXP01212"
+    },
+    {
+      "IRN": "JJM01122",
+      "Name": "James John Miller",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JJM01122"
+    },
+    {
+      "IRN": "UXV01003",
+      "Name": "Umang Vithlani",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/UXV01003"
+    },
+    {
+      "IRN": "JHD01089",
+      "Name": "James Henry Dedman",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JHD01089"
+    },
+    {
+      "IRN": "JXM20118",
+      "Name": "Joel Jallong Ose Murang",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXM20118"
+    },
+    {
+      "IRN": "RXC01919",
+      "Name": "Ryan Collins",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXC01919"
+    },
+    {
+      "IRN": "LAM01058",
+      "Name": "Louis Andrew Moed",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LAM01058"
+    },
+    {
+      "IRN": "GXP90331",
+      "Name": "Gergely Palffy",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXP90331"
+    },
+    {
+      "IRN": "YXB01017",
+      "Name": "Yaron Ephraim Bull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXB01017"
+    },
+    {
+      "IRN": "GWY01005",
+      "Name": "Gavin Williams Youll",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GWY01005"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "JHD01089": [],
+    "SXP01212": [],
+    "JJM01122": [],
+    "UXV01003": [],
+    "JXM20118": [],
+    "RXC01919": [],
+    "LAM01058": [],
+    "GXP90331": [],
+    "YXB01017": [],
+    "GWY01005": []
+  },
+  "metadata": {
+    "frn": "771719",
+    "organisation_name": "Cazadores Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10181648",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "08/05/2017"
+  },
+  "person_records": {
+    "JHD01089": {
+      "irn": "JHD01089",
+      "name": "James Henry Dedman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXP01212": {
+      "irn": "SXP01212",
+      "name": "Shailen Pau",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JJM01122": {
+      "irn": "JJM01122",
+      "name": "James John Miller",
+      "status": null,
+      "controlled_functions": null
+    },
+    "UXV01003": {
+      "irn": "UXV01003",
+      "name": "Umang Vithlani",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXM20118": {
+      "irn": "JXM20118",
+      "name": "Joel Jallong Ose Murang",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXC01919": {
+      "irn": "RXC01919",
+      "name": "Ryan Collins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LAM01058": {
+      "irn": "LAM01058",
+      "name": "Louis Andrew Moed",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXP90331": {
+      "irn": "GXP90331",
+      "name": "Gergely Palffy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXB01017": {
+      "irn": "YXB01017",
+      "name": "Yaron Ephraim Bull",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GWY01005": {
+      "irn": "GWY01005",
+      "name": "Gavin Williams Youll",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

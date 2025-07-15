@@ -1,9 +1,37 @@
 {
   "frn": 513246,
   "name": "James Hambro & Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/585154",
+        "RecordSubType": "Full",
+        "Principal FRN": "513246",
+        "Principal Firm Name": "James Hambro & Partners LLP",
+        "Effective Date": "24/07/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "585154",
+        "Name": "James Hambro & Company Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "513246",
+    "organisation_name": "James Hambro & Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC350134",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "11/02/2010"
+  },
+  "person_records": {}
 }

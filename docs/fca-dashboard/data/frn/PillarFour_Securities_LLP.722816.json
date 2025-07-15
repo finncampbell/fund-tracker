@@ -1,9 +1,61 @@
 {
   "frn": 722816,
   "name": "PillarFour Securities LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716733",
+        "RecordSubType": "Full",
+        "Principal FRN": "722816",
+        "Principal Firm Name": "PillarFour Securities LLP",
+        "Effective Date": "05/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716733",
+        "Name": "Beacon Securities International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/827014",
+        "RecordSubType": "Full",
+        "Principal FRN": "722816",
+        "Principal Firm Name": "PillarFour Securities LLP",
+        "Effective Date": "27/11/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "827014",
+        "Name": "Occulis Capital (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771417",
+        "RecordSubType": "Full",
+        "Principal FRN": "722816",
+        "Principal Firm Name": "PillarFour Securities LLP",
+        "Effective Date": "10/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771417",
+        "Name": "SCP Partners UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "722816",
+    "organisation_name": "PillarFour Securities LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC402138",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "17/06/2016"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,65 @@
 {
   "frn": 562785,
   "name": "Olympia Wealth Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597187",
+        "Termination Date": "30/12/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "562785",
+        "Principal Firm Name": "Olympia Wealth Management Ltd",
+        "Effective Date": "13/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597187",
+        "Name": "Madison Street Partners (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612880",
+        "Termination Date": "08/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "562785",
+        "Principal Firm Name": "Olympia Wealth Management Ltd",
+        "Effective Date": "07/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "612880",
+        "Name": "Southborough Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/596451",
+        "Termination Date": "22/01/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "562785",
+        "Principal Firm Name": "Olympia Wealth Management Ltd",
+        "Effective Date": "28/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "596451",
+        "Name": "SZ Profocus Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "562785",
+    "organisation_name": "Olympia Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07690337",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "04/10/2011"
+  },
+  "person_records": {}
 }

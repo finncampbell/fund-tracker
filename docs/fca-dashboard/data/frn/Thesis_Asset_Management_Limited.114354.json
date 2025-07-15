@@ -1,9 +1,78 @@
 {
   "frn": 114354,
   "name": "Thesis Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/540923",
+        "Termination Date": "06/02/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "114354",
+        "Principal Firm Name": "Thesis Asset Management Limited",
+        "Effective Date": "04/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "540923",
+        "Name": "Anderida Investment Management Services LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/581195",
+        "Termination Date": "30/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "114354",
+        "Principal Firm Name": "Thesis Asset Management Limited",
+        "Effective Date": "14/05/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "581195",
+        "Name": "Lawinvest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/542843",
+        "Termination Date": "30/04/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "114354",
+        "Principal Firm Name": "Thesis Asset Management Limited",
+        "Effective Date": "09/03/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "542843",
+        "Name": "Pallant Independent Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/538251",
+        "RecordSubType": "Full",
+        "Principal FRN": "114354",
+        "Principal Firm Name": "Thesis Asset Management Limited",
+        "Effective Date": "01/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "538251",
+        "Name": "Hearthstone Asset Management Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "114354",
+    "organisation_name": "Thesis Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01802101",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

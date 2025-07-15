@@ -1,9 +1,52 @@
 {
   "frn": 178733,
   "name": "STIFEL EUROPE LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/631746",
+        "Termination Date": "19/02/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "178733",
+        "Principal Firm Name": "STIFEL EUROPE LIMITED",
+        "Effective Date": "25/09/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "631746",
+        "Name": "NOR Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/595772",
+        "RecordSubType": "Full",
+        "Principal FRN": "178733",
+        "Principal Firm Name": "STIFEL EUROPE LIMITED",
+        "Effective Date": "12/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "595772",
+        "Name": "Lyft derivatives Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "178733",
+    "organisation_name": "STIFEL EUROPE LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03034095",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,50 @@
 {
   "frn": 584025,
   "name": "B-FLEXION Advisors (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1003261",
+        "RecordSubType": "Full",
+        "Principal FRN": "584025",
+        "Principal Firm Name": "B-FLEXION Advisors (UK) LLP",
+        "Effective Date": "09/11/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1003261",
+        "Name": "Kedge Capital PE LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/984404",
+        "RecordSubType": "Full",
+        "Principal FRN": "584025",
+        "Principal Firm Name": "B-FLEXION Advisors (UK) LLP",
+        "Effective Date": "30/09/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "984404",
+        "Name": "Landfair Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "584025",
+    "organisation_name": "B-FLEXION Advisors (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC359666",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "23/04/2013"
+  },
+  "person_records": {}
 }

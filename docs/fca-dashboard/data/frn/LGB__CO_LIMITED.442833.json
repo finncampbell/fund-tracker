@@ -1,9 +1,39 @@
 {
   "frn": 442833,
   "name": "LGB & CO. LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/718975",
+        "Termination Date": "24/09/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "442833",
+        "Principal Firm Name": "LGB & CO. LIMITED",
+        "Effective Date": "01/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "718975",
+        "Name": "EQL Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "442833",
+    "organisation_name": "LGB & CO. LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05602072",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "21/02/2006"
+  },
+  "person_records": {}
 }

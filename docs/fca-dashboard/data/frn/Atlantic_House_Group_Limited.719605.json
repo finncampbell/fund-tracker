@@ -1,9 +1,39 @@
 {
   "frn": 719605,
   "name": "Atlantic House Group Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/914315",
+        "Termination Date": "17/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "719605",
+        "Principal Firm Name": "Atlantic House Group Limited",
+        "Effective Date": "30/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "914315",
+        "Name": "Atlantic House International Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "719605",
+    "organisation_name": "Atlantic House Group Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09770730",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "01/08/2016"
+  },
+  "person_records": {}
 }

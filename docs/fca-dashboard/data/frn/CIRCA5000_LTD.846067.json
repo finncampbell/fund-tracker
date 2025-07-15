@@ -1,9 +1,38 @@
 {
   "frn": 846067,
   "name": "CIRCA5000 LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950019",
+        "RecordSubType": "Full",
+        "Principal FRN": "846067",
+        "Principal Firm Name": "CIRCA5000 LTD",
+        "Effective Date": "28/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "950019",
+        "Name": "CIRCA5000 UK LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "846067",
+    "organisation_name": "CIRCA5000 LTD",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "11200977",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "10/07/2020"
+  },
+  "person_records": {}
 }

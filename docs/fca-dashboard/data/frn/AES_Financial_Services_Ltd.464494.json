@@ -1,9 +1,52 @@
 {
   "frn": 464494,
   "name": "AES Financial Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/513558",
+        "Termination Date": "25/06/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "464494",
+        "Principal Firm Name": "AES Financial Services Ltd",
+        "Effective Date": "30/11/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "513558",
+        "Name": "Altor Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/550958",
+        "Termination Date": "10/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "464494",
+        "Principal Firm Name": "AES Financial Services Ltd",
+        "Effective Date": "13/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "550958",
+        "Name": "Chawker & Co Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "464494",
+    "organisation_name": "AES Financial Services Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "06063185",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "17/04/2007"
+  },
+  "person_records": {}
 }

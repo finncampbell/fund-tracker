@@ -1,9 +1,38 @@
 {
   "frn": 492519,
   "name": "Guardian Stockbrokers Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/585217",
+        "Termination Date": "31/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "492519",
+        "Principal Firm Name": "Guardian Stockbrokers Ltd",
+        "Effective Date": "25/07/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "585217",
+        "Name": "Exedra Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "492519",
+    "organisation_name": "Guardian Stockbrokers Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06756375",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "27/04/2009"
+  },
+  "person_records": {}
 }

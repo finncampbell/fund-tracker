@@ -1,9 +1,39 @@
 {
   "frn": 165847,
   "name": "BOHLER & ASSOCIATES LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747646",
+        "Termination Date": "09/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "165847",
+        "Principal Firm Name": "BOHLER & ASSOCIATES LIMITED",
+        "Effective Date": "22/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747646",
+        "Name": "Colby Strategies Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "165847",
+    "organisation_name": "BOHLER & ASSOCIATES LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02804434",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

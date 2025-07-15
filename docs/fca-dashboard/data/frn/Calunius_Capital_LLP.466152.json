@@ -1,9 +1,21 @@
 {
   "frn": 466152,
   "name": "Calunius Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "466152",
+    "organisation_name": "Calunius Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC324721",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "15/06/2007"
+  },
+  "person_records": {}
 }

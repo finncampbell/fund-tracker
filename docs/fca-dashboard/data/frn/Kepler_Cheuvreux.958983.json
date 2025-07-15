@@ -1,9 +1,37 @@
 {
   "frn": 958983,
   "name": "Kepler Cheuvreux",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1016019",
+        "RecordSubType": "Full",
+        "Principal FRN": "958983",
+        "Principal Firm Name": "Kepler Cheuvreux",
+        "Effective Date": "30/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1016019",
+        "Name": "Centile Partners Advisory Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "958983",
+    "organisation_name": "Kepler Cheuvreux",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR010315",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "01/12/2022"
+  },
+  "person_records": {}
 }

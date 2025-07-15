@@ -1,9 +1,38 @@
 {
   "frn": 451422,
   "name": "Tassi & Co. Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/743751",
+        "RecordSubType": "Full",
+        "Principal FRN": "451422",
+        "Principal Firm Name": "Tassi & Co. Ltd",
+        "Effective Date": "09/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "743751",
+        "Name": "MGB Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "451422",
+    "organisation_name": "Tassi & Co. Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05707207",
+    "system_timestamp": "23/06/2025 21:47",
+    "status_effective_date": "08/06/2006"
+  },
+  "person_records": {}
 }

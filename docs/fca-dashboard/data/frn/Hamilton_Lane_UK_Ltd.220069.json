@@ -1,9 +1,21 @@
 {
   "frn": 220069,
   "name": "Hamilton Lane (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "220069",
+    "organisation_name": "Hamilton Lane (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04507221",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "25/03/2003"
+  },
+  "person_records": {}
 }

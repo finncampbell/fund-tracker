@@ -1,9 +1,115 @@
 {
   "frn": 188796,
   "name": "Standard Life Savings Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/201805",
+        "Termination Date": "16/12/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "14/08/2000",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "201805",
+        "Name": "David Lloyd Leisure Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/201247",
+        "Termination Date": "02/06/2004",
+        "RecordSubType": "Full",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "07/11/1983",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "201247",
+        "Name": "Heriot Enterprises Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/201110",
+        "Termination Date": "10/07/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "19/09/1995",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "201110",
+        "Name": "Johnson & Company"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/409080",
+        "Termination Date": "27/10/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "01/02/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "409080",
+        "Name": "Post Office Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/178008",
+        "Termination Date": "10/07/2003",
+        "RecordSubType": "Full",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "01/09/1991",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "178008",
+        "Name": "Ritchie A Cooper"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187878",
+        "Termination Date": "01/12/2001",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "22/04/1997",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "187878",
+        "Name": "Standard Life Bank Plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/110408",
+        "Termination Date": "30/11/2001",
+        "Principal FRN": "188796",
+        "Principal Firm Name": "Standard Life Savings Limited",
+        "Effective Date": "19/07/1994",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "110408",
+        "Name": "Unum Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "188796",
+    "organisation_name": "Standard Life Savings Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC180203",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

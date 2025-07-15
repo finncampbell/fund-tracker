@@ -1,9 +1,38 @@
 {
   "frn": 595861,
   "name": "WG Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/675842",
+        "Termination Date": "28/06/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "595861",
+        "Principal Firm Name": "WG Partners LLP",
+        "Effective Date": "06/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "675842",
+        "Name": "QMG Insights LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "595861",
+    "organisation_name": "WG Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC369354",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "15/01/2014"
+  },
+  "person_records": {}
 }

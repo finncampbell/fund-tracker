@@ -1,9 +1,39 @@
 {
   "frn": 489357,
   "name": "Brilliance Financial Planning Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/555652",
+        "Termination Date": "29/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "489357",
+        "Principal Firm Name": "Brilliance Financial Planning Ltd",
+        "Effective Date": "10/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "555652",
+        "Name": "Plan65 Limited trading as Davidson Rae Financial Management"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489357",
+    "organisation_name": "Brilliance Financial Planning Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06552147",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "02/01/2009"
+  },
+  "person_records": {}
 }

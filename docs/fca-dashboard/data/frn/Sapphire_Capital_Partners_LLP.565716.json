@@ -1,9 +1,204 @@
 {
   "frn": 565716,
   "name": "Sapphire Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/953615",
+        "Termination Date": "11/11/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "25/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "953615",
+        "Name": "8 Dimension Ventures"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/606764",
+        "Termination Date": "17/01/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "02/09/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "606764",
+        "Name": "Alternative Dynamiks Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/826519",
+        "Termination Date": "21/03/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "24/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "826519",
+        "Name": "Built Venture Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/820038",
+        "Termination Date": "20/02/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "03/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "820038",
+        "Name": "EMV Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/743752",
+        "Termination Date": "03/01/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "11/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "743752",
+        "Name": "EQ:IQ Services Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/723915",
+        "Termination Date": "03/06/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "30/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "723915",
+        "Name": "Fuel Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/943221",
+        "Termination Date": "10/02/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "19/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "943221",
+        "Name": "Future Group Asset Management"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/928721",
+        "Termination Date": "19/02/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "29/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "928721",
+        "Name": "Gather International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/956356",
+        "Termination Date": "09/10/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "09/08/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "956356",
+        "Name": "Juice Capital Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/707375",
+        "Termination Date": "06/03/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "19/06/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "707375",
+        "Name": "Karadoo llp"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/694945",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "09/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "694945",
+        "Name": "EIS Platforms LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1023547",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "13/03/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1023547",
+        "Name": "SUSTAINABLE VENTURES INVESTMENT MANAGEMENT LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/920486",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "31/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "920486",
+        "Name": "Velocity Credit Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916588",
+        "RecordSubType": "Full",
+        "Principal FRN": "565716",
+        "Principal Firm Name": "Sapphire Capital Partners LLP",
+        "Effective Date": "11/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916588",
+        "Name": "Zero Carbon Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "565716",
+    "organisation_name": "Sapphire Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "NC000562",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "21/05/2012"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 500498,
   "name": "BERNSTEIN AUTONOMOUS LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/758164",
+        "Termination Date": "01/10/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "500498",
+        "Principal Firm Name": "BERNSTEIN AUTONOMOUS LLP",
+        "Effective Date": "09/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "758164",
+        "Name": "Procensus Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "500498",
+    "organisation_name": "BERNSTEIN AUTONOMOUS LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC343985",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "30/07/2009"
+  },
+  "person_records": {}
 }

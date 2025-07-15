@@ -1,9 +1,155 @@
 {
   "frn": 551744,
   "name": "Ascot Wealth Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/804652",
+        "Termination Date": "22/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "21/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "804652",
+        "Name": "Ascot Estate Planning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916359",
+        "Termination Date": "06/09/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "06/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "916359",
+        "Name": "Consulo Wealth Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/823753",
+        "Termination Date": "16/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "19/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "823753",
+        "Name": "Finer Wealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582475",
+        "Termination Date": "25/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "06/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582475",
+        "Name": "Great Panther Wealth Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/803724",
+        "Termination Date": "22/01/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "09/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "803724",
+        "Name": "Impulse Invest Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798312",
+        "Termination Date": "05/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "10/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798312",
+        "Name": "Impulse Plan Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/504686",
+        "Termination Date": "18/02/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "25/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "504686",
+        "Name": "Stephen Michael Kinzett"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/828487",
+        "Termination Date": "08/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "12/12/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "828487",
+        "Name": "Sutton Winson Wealth Management"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/810800",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "05/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "810800",
+        "Name": "Cape Berkshire Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1014541",
+        "RecordSubType": "Full",
+        "Principal FRN": "551744",
+        "Principal Firm Name": "Ascot Wealth Management Limited",
+        "Effective Date": "26/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1014541",
+        "Name": "Chambers Wealth LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "551744",
+    "organisation_name": "Ascot Wealth Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07428369",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "21/07/2011"
+  },
+  "person_records": {}
 }

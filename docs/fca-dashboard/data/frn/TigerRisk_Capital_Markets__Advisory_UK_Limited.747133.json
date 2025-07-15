@@ -1,9 +1,22 @@
 {
   "frn": 747133,
   "name": "TigerRisk Capital Markets & Advisory (UK) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "747133",
+    "organisation_name": "TigerRisk Capital Markets & Advisory (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09925628",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "21/11/2016"
+  },
+  "person_records": {}
 }

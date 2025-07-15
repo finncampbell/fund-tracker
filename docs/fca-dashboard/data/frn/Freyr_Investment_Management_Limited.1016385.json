@@ -1,9 +1,21 @@
 {
   "frn": 1016385,
   "name": "Freyr Investment Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1016385",
+    "organisation_name": "Freyr Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "15490639",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "10/04/2025"
+  },
+  "person_records": {}
 }

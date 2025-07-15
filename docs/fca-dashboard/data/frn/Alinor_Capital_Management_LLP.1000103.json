@@ -1,9 +1,154 @@
 {
   "frn": 1000103,
   "name": "Alinor Capital Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "MJS01466",
+      "Name": "Michael James Christian Sutton",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MJS01466"
+    },
+    {
+      "IRN": "JAM01369",
+      "Name": "Johann Alexander Mahler",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JAM01369"
+    },
+    {
+      "IRN": "IVR01004",
+      "Name": "Ignatios Vasileios Radikopoulos",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IVR01004"
+    },
+    {
+      "IRN": "JXB02735",
+      "Name": "Johannes Bolzano",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB02735"
+    },
+    {
+      "IRN": "RXP00648",
+      "Name": "Robin Powell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXP00648"
+    },
+    {
+      "IRN": "RXL76205",
+      "Name": "Raphael Lederman",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXL76205"
+    },
+    {
+      "IRN": "TXH00407",
+      "Name": "Tom Hatful",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXH00407"
+    },
+    {
+      "IRN": "JXB04013",
+      "Name": "Jodie Blenkharn",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB04013"
+    },
+    {
+      "IRN": "BXD00245",
+      "Name": "Bailey Dillon-Burns",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXD00245"
+    },
+    {
+      "IRN": "JXA01712",
+      "Name": "JONAS AITA",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXA01712"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "MJS01466": [],
+    "JAM01369": [],
+    "IVR01004": [],
+    "JXB02735": [],
+    "RXP00648": [],
+    "RXL76205": [],
+    "TXH00407": [],
+    "JXB04013": [],
+    "BXD00245": [],
+    "JXA01712": []
+  },
+  "metadata": {
+    "frn": "1000103",
+    "organisation_name": "Alinor Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC448165",
+    "system_timestamp": "23/06/2025 21:30",
+    "status_effective_date": "23/11/2023"
+  },
+  "person_records": {
+    "MJS01466": {
+      "irn": "MJS01466",
+      "name": "Michael James Christian Sutton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JAM01369": {
+      "irn": "JAM01369",
+      "name": "Johann Alexander Mahler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IVR01004": {
+      "irn": "IVR01004",
+      "name": "Ignatios Vasileios Radikopoulos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB02735": {
+      "irn": "JXB02735",
+      "name": "Johannes Bolzano",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXP00648": {
+      "irn": "RXP00648",
+      "name": "Robin Powell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXL76205": {
+      "irn": "RXL76205",
+      "name": "Raphael Lederman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXH00407": {
+      "irn": "TXH00407",
+      "name": "Tom Hatful",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB04013": {
+      "irn": "JXB04013",
+      "name": "Jodie Blenkharn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXD00245": {
+      "irn": "BXD00245",
+      "name": "Bailey Dillon-Burns",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXA01712": {
+      "irn": "JXA01712",
+      "name": "JONAS AITA",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

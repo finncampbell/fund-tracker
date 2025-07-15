@@ -1,9 +1,64 @@
 {
   "frn": 208566,
   "name": "Oxeye Capital Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/219756",
+        "Termination Date": "31/03/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "208566",
+        "Principal Firm Name": "Oxeye Capital Management Limited",
+        "Effective Date": "14/10/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "219756",
+        "Name": "Inanda Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/479578",
+        "Termination Date": "31/03/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "208566",
+        "Principal Firm Name": "Oxeye Capital Management Limited",
+        "Effective Date": "26/02/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "479578",
+        "Name": "Peter Catarinella"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/968773",
+        "Termination Date": "22/03/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "208566",
+        "Principal Firm Name": "Oxeye Capital Management Limited",
+        "Effective Date": "27/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "968773",
+        "Name": "Tithe Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "208566",
+    "organisation_name": "Oxeye Capital Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04134088",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "15/04/2002"
+  },
+  "person_records": {}
 }

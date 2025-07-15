@@ -1,9 +1,38 @@
 {
   "frn": 198036,
   "name": "Citation Capital Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/583102",
+        "Termination Date": "16/01/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "198036",
+        "Principal Firm Name": "Citation Capital Management Limited",
+        "Effective Date": "19/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "583102",
+        "Name": "Argento Capital Markets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "198036",
+    "organisation_name": "Citation Capital Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03818070",
+    "system_timestamp": "23/06/2025 21:42",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

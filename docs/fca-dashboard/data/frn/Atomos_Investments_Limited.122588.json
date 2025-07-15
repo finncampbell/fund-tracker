@@ -1,9 +1,39 @@
 {
   "frn": 122588,
   "name": "Atomos Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/565824",
+        "Termination Date": "31/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "122588",
+        "Principal Firm Name": "Atomos Investments Limited",
+        "Effective Date": "06/01/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "565824",
+        "Name": "Sanlam UK Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122588",
+    "organisation_name": "Atomos Investments Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02041819",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,22 @@
 {
   "frn": 920840,
   "name": "Jackson Square Partners Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "920840",
+    "organisation_name": "Jackson Square Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12254809",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "06/04/2020"
+  },
+  "person_records": {}
 }

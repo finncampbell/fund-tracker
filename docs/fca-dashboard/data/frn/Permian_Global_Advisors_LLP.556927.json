@@ -1,9 +1,21 @@
 {
   "frn": 556927,
   "name": "Permian Global Advisors LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "556927",
+    "organisation_name": "Permian Global Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355305",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "01/06/2012"
+  },
+  "person_records": {}
 }

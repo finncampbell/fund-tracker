@@ -1,9 +1,22 @@
 {
   "frn": 763979,
   "name": "EMFI Securities Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "763979",
+    "organisation_name": "EMFI Securities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10447140",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "10/01/2017"
+  },
+  "person_records": {}
 }

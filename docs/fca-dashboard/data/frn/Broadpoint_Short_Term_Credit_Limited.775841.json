@@ -2,8 +2,13 @@
   "frn": 775841,
   "name": "Broadpoint Short Term Credit Limited",
   "trading_names": [],
-  "appointed_reps": [],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {},
+  "person_records": {}
 }

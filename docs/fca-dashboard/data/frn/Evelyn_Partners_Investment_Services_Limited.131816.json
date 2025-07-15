@@ -1,9 +1,39 @@
 {
   "frn": 131816,
   "name": "Evelyn Partners Investment Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/743276",
+        "Termination Date": "19/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "131816",
+        "Principal Firm Name": "Evelyn Partners Investment Services Limited",
+        "Effective Date": "06/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "743276",
+        "Name": "Smith & Williamson Holdings Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "131816",
+    "organisation_name": "Evelyn Partners Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "00976145",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

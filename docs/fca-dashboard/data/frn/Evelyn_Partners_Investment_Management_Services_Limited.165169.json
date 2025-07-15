@@ -1,9 +1,52 @@
 {
   "frn": 165169,
   "name": "Evelyn Partners Investment Management Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616540",
+        "Termination Date": "16/04/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "165169",
+        "Principal Firm Name": "Evelyn Partners Investment Management Services Limited",
+        "Effective Date": "03/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616540",
+        "Name": "News UK & Ireland Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/695101",
+        "Termination Date": "28/11/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "165169",
+        "Principal Firm Name": "Evelyn Partners Investment Management Services Limited",
+        "Effective Date": "13/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "695101",
+        "Name": "Saga Investment Services Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "165169",
+    "organisation_name": "Evelyn Partners Investment Management Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02830297",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

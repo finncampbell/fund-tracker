@@ -1,9 +1,39 @@
 {
   "frn": 122531,
   "name": "PineBridge Investments Europe Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/221561",
+        "Termination Date": "04/01/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "122531",
+        "Principal Firm Name": "PineBridge Investments Europe Limited",
+        "Effective Date": "23/12/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "221561",
+        "Name": "AIG Global Real Estate Investment (Europe) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122531",
+    "organisation_name": "PineBridge Investments Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02200753",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

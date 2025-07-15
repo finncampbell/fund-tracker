@@ -1,9 +1,38 @@
 {
   "frn": 456896,
   "name": "Shipman Wealth Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/994923",
+        "RecordSubType": "Full",
+        "Principal FRN": "456896",
+        "Principal Firm Name": "Shipman Wealth Management Ltd",
+        "Effective Date": "17/04/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "994923",
+        "Name": "Breed Elliott (S.W.) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "456896",
+    "organisation_name": "Shipman Wealth Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02837635",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "02/01/2007"
+  },
+  "person_records": {}
 }

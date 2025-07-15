@@ -1,9 +1,52 @@
 {
   "frn": 541623,
   "name": "Arda Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/582801",
+        "Termination Date": "03/02/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "541623",
+        "Principal Firm Name": "Arda Capital Limited",
+        "Effective Date": "14/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "582801",
+        "Name": "Core Treasury Solutions LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/668678",
+        "Termination Date": "15/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "541623",
+        "Principal Firm Name": "Arda Capital Limited",
+        "Effective Date": "01/06/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "668678",
+        "Name": "CRT System UK Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "541623",
+    "organisation_name": "Arda Capital Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "06805506",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "20/10/2011"
+  },
+  "person_records": {}
 }

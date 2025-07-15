@@ -1,9 +1,39 @@
 {
   "frn": 605564,
   "name": "Equities First (London) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/653437",
+        "Termination Date": "04/01/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "605564",
+        "Principal Firm Name": "Equities First (London) Limited",
+        "Effective Date": "10/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "653437",
+        "Name": "Ambrosia Capital Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "605564",
+    "organisation_name": "Equities First (London) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08120457",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "07/03/2014"
+  },
+  "person_records": {}
 }

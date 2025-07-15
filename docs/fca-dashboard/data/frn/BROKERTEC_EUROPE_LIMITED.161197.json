@@ -1,9 +1,39 @@
 {
   "frn": 161197,
   "name": "BROKERTEC EUROPE LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/793386",
+        "Termination Date": "20/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "161197",
+        "Principal Firm Name": "BROKERTEC EUROPE LIMITED",
+        "Effective Date": "27/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "793386",
+        "Name": "EBS Dealing Resources International Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "161197",
+    "organisation_name": "BROKERTEC EUROPE LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02645715",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

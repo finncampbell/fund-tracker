@@ -1,9 +1,39 @@
 {
   "frn": 574874,
   "name": "DRC Savills Investment Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/580216",
+        "Termination Date": "23/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "574874",
+        "Principal Firm Name": "DRC Savills Investment Management LLP",
+        "Effective Date": "01/10/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "580216",
+        "Name": "ERED Investment Adviser LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "574874",
+    "organisation_name": "DRC Savills Investment Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC371403",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "27/06/2012"
+  },
+  "person_records": {}
 }

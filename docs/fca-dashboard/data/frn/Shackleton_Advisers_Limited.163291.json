@@ -1,9 +1,39 @@
 {
   "frn": 163291,
   "name": "Shackleton Advisers Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806369",
+        "Termination Date": "01/07/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "163291",
+        "Principal Firm Name": "Shackleton Advisers Limited",
+        "Effective Date": "12/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806369",
+        "Name": "SKERRITTS LIFESTYLE LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "163291",
+    "organisation_name": "Shackleton Advisers Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04129116",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

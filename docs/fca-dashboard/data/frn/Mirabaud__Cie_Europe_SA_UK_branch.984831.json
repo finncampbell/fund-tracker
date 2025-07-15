@@ -1,9 +1,21 @@
 {
   "frn": 984831,
   "name": "Mirabaud & Cie (Europe) S.A. (UK branch)",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "984831",
+    "organisation_name": "Mirabaud & Cie (Europe) S.A. (UK branch)",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "BR018452",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "10/07/2023"
+  },
+  "person_records": {}
 }

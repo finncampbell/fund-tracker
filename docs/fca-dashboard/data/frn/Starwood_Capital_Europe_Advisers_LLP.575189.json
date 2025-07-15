@@ -1,9 +1,21 @@
 {
   "frn": 575189,
   "name": "Starwood Capital Europe Advisers LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "575189",
+    "organisation_name": "Starwood Capital Europe Advisers LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC371541",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "20/08/2012"
+  },
+  "person_records": {}
 }

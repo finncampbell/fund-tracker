@@ -1,9 +1,65 @@
 {
   "frn": 153871,
   "name": "Verso Wealth Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/450179",
+        "Termination Date": "01/07/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "153871",
+        "Principal Firm Name": "Verso Wealth Management Limited",
+        "Effective Date": "30/03/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "450179",
+        "Name": "A R Wylie (IFA) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/432854",
+        "Termination Date": "31/10/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "153871",
+        "Principal Firm Name": "Verso Wealth Management Limited",
+        "Effective Date": "18/05/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "432854",
+        "Name": "Investment Connections Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942419",
+        "Termination Date": "26/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "153871",
+        "Principal Firm Name": "Verso Wealth Management Limited",
+        "Effective Date": "06/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "942419",
+        "Name": "Pavis Financial Planning Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "153871",
+    "organisation_name": "Verso Wealth Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02625986",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

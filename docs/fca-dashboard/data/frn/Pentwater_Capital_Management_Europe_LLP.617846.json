@@ -1,9 +1,21 @@
 {
   "frn": 617846,
   "name": "Pentwater Capital Management Europe LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "617846",
+    "organisation_name": "Pentwater Capital Management Europe LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC332792",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "22/09/2014"
+  },
+  "person_records": {}
 }

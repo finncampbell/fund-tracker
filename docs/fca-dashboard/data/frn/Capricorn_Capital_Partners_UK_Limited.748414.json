@@ -1,9 +1,65 @@
 {
   "frn": 748414,
   "name": "Capricorn Capital Partners UK Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/729602",
+        "Termination Date": "13/02/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "748414",
+        "Principal Firm Name": "Capricorn Capital Partners UK Limited",
+        "Effective Date": "02/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "729602",
+        "Name": "Capricorn Real Assets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/583107",
+        "Termination Date": "31/08/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "748414",
+        "Principal Firm Name": "Capricorn Capital Partners UK Limited",
+        "Effective Date": "02/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "583107",
+        "Name": "CR Assets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/792259",
+        "RecordSubType": "Full",
+        "Principal FRN": "748414",
+        "Principal Firm Name": "Capricorn Capital Partners UK Limited",
+        "Effective Date": "24/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "792259",
+        "Name": "Westbrooke Alternative Asset Management UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "748414",
+    "organisation_name": "Capricorn Capital Partners UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09615026",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "03/10/2016"
+  },
+  "person_records": {}
 }

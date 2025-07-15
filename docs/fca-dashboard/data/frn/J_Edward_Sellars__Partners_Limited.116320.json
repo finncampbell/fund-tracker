@@ -1,9 +1,77 @@
 {
   "frn": 116320,
   "name": "J. Edward Sellars & Partners Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/737200",
+        "Termination Date": "12/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "116320",
+        "Principal Firm Name": "J. Edward Sellars & Partners Limited",
+        "Effective Date": "18/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "737200",
+        "Name": "EP Financial Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/502892",
+        "Termination Date": "15/03/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "116320",
+        "Principal Firm Name": "J. Edward Sellars & Partners Limited",
+        "Effective Date": "15/02/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "502892",
+        "Name": "MJT Consultants Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/196662",
+        "Termination Date": "26/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "116320",
+        "Principal Firm Name": "J. Edward Sellars & Partners Limited",
+        "Effective Date": "20/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "196662",
+        "Name": "Philip R Perry Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/849542",
+        "Termination Date": "22/02/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "116320",
+        "Principal Firm Name": "J. Edward Sellars & Partners Limited",
+        "Effective Date": "29/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "849542",
+        "Name": "Professional Financial Centre (North Devon & Quantocks) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "116320",
+    "organisation_name": "J. Edward Sellars & Partners Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01201277",
+    "system_timestamp": "23/06/2025 21:33",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

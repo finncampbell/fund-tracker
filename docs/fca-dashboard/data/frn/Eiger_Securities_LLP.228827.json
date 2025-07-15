@@ -1,9 +1,37 @@
 {
   "frn": 228827,
   "name": "Eiger Securities LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/440047",
+        "RecordSubType": "Full",
+        "Principal FRN": "228827",
+        "Principal Firm Name": "Eiger Securities LLP",
+        "Effective Date": "27/09/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "440047",
+        "Name": "Global Credit Securities LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "228827",
+    "organisation_name": "Eiger Securities LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC305711",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "02/03/2004"
+  },
+  "person_records": {}
 }

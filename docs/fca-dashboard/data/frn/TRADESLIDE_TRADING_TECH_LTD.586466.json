@@ -1,9 +1,52 @@
 {
   "frn": 586466,
   "name": "TRADESLIDE TRADING TECH LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/717299",
+        "Termination Date": "12/08/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "586466",
+        "Principal Firm Name": "TRADESLIDE TRADING TECH LTD",
+        "Effective Date": "18/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "717299",
+        "Name": "Beagle Capital Markets LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1005483",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "586466",
+        "Principal Firm Name": "TRADESLIDE TRADING TECH LTD",
+        "Effective Date": "02/11/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1005483",
+        "Name": "TRADESLIDE TECHNOLOGIES LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "586466",
+    "organisation_name": "TRADESLIDE TRADING TECH LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08061368",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "15/07/2013"
+  },
+  "person_records": {}
 }

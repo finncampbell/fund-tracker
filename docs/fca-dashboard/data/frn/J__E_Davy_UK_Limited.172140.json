@@ -1,9 +1,65 @@
 {
   "frn": 172140,
   "name": "J & E Davy (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610533",
+        "Termination Date": "29/01/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "172140",
+        "Principal Firm Name": "J & E Davy (UK) Limited",
+        "Effective Date": "19/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610533",
+        "Name": "PFC 2 Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610679",
+        "Termination Date": "29/01/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "172140",
+        "Principal Firm Name": "J & E Davy (UK) Limited",
+        "Effective Date": "21/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610679",
+        "Name": "PFC Pension Administration Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/531830",
+        "Termination Date": "21/04/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "172140",
+        "Principal Firm Name": "J & E Davy (UK) Limited",
+        "Effective Date": "17/09/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "531830",
+        "Name": "PFC Professional Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "172140",
+    "organisation_name": "J & E Davy (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "NI028952",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 495131,
   "name": "Ekhinos Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/675403",
+        "Termination Date": "17/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "495131",
+        "Principal Firm Name": "Ekhinos Ltd",
+        "Effective Date": "05/03/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "675403",
+        "Name": "Levantor Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "495131",
+    "organisation_name": "Ekhinos Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06794782",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "12/05/2009"
+  },
+  "person_records": {}
 }

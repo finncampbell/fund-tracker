@@ -1,9 +1,90 @@
 {
   "frn": 432503,
   "name": "Johnston Campbell Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/951028",
+        "Termination Date": "26/09/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "432503",
+        "Principal Firm Name": "Johnston Campbell Ltd",
+        "Effective Date": "14/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "951028",
+        "Name": "Barr and Law Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/518693",
+        "Termination Date": "10/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "432503",
+        "Principal Firm Name": "Johnston Campbell Ltd",
+        "Effective Date": "26/02/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "518693",
+        "Name": "DNT Wealth Management"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/466446",
+        "Termination Date": "10/11/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "432503",
+        "Principal Firm Name": "Johnston Campbell Ltd",
+        "Effective Date": "10/04/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "466446",
+        "Name": "H M Wealth Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/487161",
+        "Termination Date": "21/11/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "432503",
+        "Principal Firm Name": "Johnston Campbell Ltd",
+        "Effective Date": "04/08/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "487161",
+        "Name": "IDS Wealth Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/966712",
+        "Termination Date": "30/09/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "432503",
+        "Principal Firm Name": "Johnston Campbell Ltd",
+        "Effective Date": "05/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "966712",
+        "Name": "White McMullan Barnes Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "432503",
+    "organisation_name": "Johnston Campbell Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "NI046529",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "21/09/2005"
+  },
+  "person_records": {}
 }

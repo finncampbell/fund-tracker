@@ -1,9 +1,38 @@
 {
   "frn": 623190,
   "name": "Synergy Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771741",
+        "Termination Date": "29/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "623190",
+        "Principal Firm Name": "Synergy Markets Limited",
+        "Effective Date": "15/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771741",
+        "Name": "TRADEINBOX LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "623190",
+    "organisation_name": "Synergy Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08843450",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "12/11/2014"
+  },
+  "person_records": {}
 }

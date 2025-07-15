@@ -1,9 +1,181 @@
 {
   "frn": 183732,
   "name": "NCM Fund Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/804840",
+        "Termination Date": "26/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "23/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "804840",
+        "Name": "Akero Capital Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/770274",
+        "Termination Date": "30/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "26/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "770274",
+        "Name": "BGV Investment Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/663076",
+        "Termination Date": "15/08/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "18/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "663076",
+        "Name": "Cyrus Investment Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/788010",
+        "Termination Date": "20/12/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "01/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "788010",
+        "Name": "Imbiba Growth LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/966662",
+        "Termination Date": "04/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "04/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "966662",
+        "Name": "Liquid Venture Managers LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/766528",
+        "Termination Date": "17/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "07/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "766528",
+        "Name": "OXX Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/828815",
+        "Termination Date": "02/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "09/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "828815",
+        "Name": "Palladian Investment Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/498696",
+        "Termination Date": "14/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "14/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "498696",
+        "Name": "Select Money Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/498696",
+        "Termination Date": "16/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "14/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "498696",
+        "Name": "Select Money Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/763050",
+        "Termination Date": "30/06/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "28/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "763050",
+        "Name": "Seraphim Space (Manager) LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/758019",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "08/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "758019",
+        "Name": "Elaghmore Advisor LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805328",
+        "RecordSubType": "Full",
+        "Principal FRN": "183732",
+        "Principal Firm Name": "NCM Fund Services Limited",
+        "Effective Date": "16/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805328",
+        "Name": "Fundamentum Property Advisers Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "183732",
+    "organisation_name": "NCM Fund Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC166074",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

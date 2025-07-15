@@ -1,9 +1,22 @@
 {
   "frn": 987714,
   "name": "Virtu Europe Trading Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "987714",
+    "organisation_name": "Virtu Europe Trading Limited",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC032733",
+    "system_timestamp": "23/06/2025 22:22",
+    "status_effective_date": "07/12/2023"
+  },
+  "person_records": {}
 }

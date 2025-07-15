@@ -1,9 +1,103 @@
 {
   "frn": 752005,
   "name": "P1 Investment Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/833551",
+        "Termination Date": "30/09/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "29/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "833551",
+        "Name": "CHIP FINANCIAL LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/932110",
+        "Termination Date": "18/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "17/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "932110",
+        "Name": "Cradle Money Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/936690",
+        "Termination Date": "24/03/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "20/10/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "936690",
+        "Name": "Eurikah Invest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/840053",
+        "Termination Date": "31/05/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "11/04/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "840053",
+        "Name": "Wombat Invest Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/984773",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "05/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "984773",
+        "Name": "Pension Jar Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/671713",
+        "RecordSubType": "Full",
+        "Principal FRN": "752005",
+        "Principal Firm Name": "P1 Investment Services Limited",
+        "Effective Date": "22/09/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "671713",
+        "Name": "Strawberry Invest Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "752005",
+    "organisation_name": "P1 Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09810560",
+    "system_timestamp": "23/06/2025 22:09",
+    "status_effective_date": "08/09/2016"
+  },
+  "person_records": {}
 }

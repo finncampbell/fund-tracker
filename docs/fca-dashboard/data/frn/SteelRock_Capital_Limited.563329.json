@@ -1,9 +1,22 @@
 {
   "frn": 563329,
   "name": "SteelRock Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "563329",
+    "organisation_name": "SteelRock Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07705082",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "22/11/2011"
+  },
+  "person_records": {}
 }

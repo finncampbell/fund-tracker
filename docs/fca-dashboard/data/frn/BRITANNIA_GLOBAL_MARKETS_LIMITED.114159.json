@@ -1,9 +1,52 @@
 {
   "frn": 114159,
   "name": "BRITANNIA GLOBAL MARKETS LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400871",
+        "Termination Date": "04/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "114159",
+        "Principal Firm Name": "BRITANNIA GLOBAL MARKETS LIMITED",
+        "Effective Date": "13/05/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "400871",
+        "Name": "Investment Research of Cambridge Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/632018",
+        "Termination Date": "12/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "114159",
+        "Principal Firm Name": "BRITANNIA GLOBAL MARKETS LIMITED",
+        "Effective Date": "11/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "632018",
+        "Name": "RVassets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "114159",
+    "organisation_name": "BRITANNIA GLOBAL MARKETS LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01969442",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

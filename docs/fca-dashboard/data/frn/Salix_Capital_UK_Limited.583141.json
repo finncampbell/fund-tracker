@@ -1,9 +1,697 @@
 {
   "frn": 583141,
   "name": "Salix Capital (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
-  "individuals": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/933609",
+        "Termination Date": "17/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "583141",
+        "Principal Firm Name": "Salix Capital (UK) Limited",
+        "Effective Date": "07/09/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "933609",
+        "Name": "MCGUIGAN COMMODITY GROUP LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600429",
+        "Termination Date": "18/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583141",
+        "Principal Firm Name": "Salix Capital (UK) Limited",
+        "Effective Date": "01/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600429",
+        "Name": "Salix Capital Advisors LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600890",
+        "Termination Date": "23/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "583141",
+        "Principal Firm Name": "Salix Capital (UK) Limited",
+        "Effective Date": "10/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600890",
+        "Name": "Salix Capital FDFX Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
+  "individuals": [
+    {
+      "IRN": "JWG01039",
+      "Name": "Jonathan William Glassberg",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JWG01039"
+    },
+    {
+      "IRN": "PAS01152",
+      "Name": "Paul Anthony Snell",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PAS01152"
+    },
+    {
+      "IRN": "JWG01039",
+      "Name": "Jonathan William Glassberg",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JWG01039"
+    },
+    {
+      "IRN": "JAB01596",
+      "Name": "JAMES ALAN BARNARD",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JAB01596"
+    },
+    {
+      "IRN": "SXN00272",
+      "Name": "Stephen Noone",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXN00272"
+    },
+    {
+      "IRN": "LCD01038",
+      "Name": "Iain Charles Davis",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LCD01038"
+    },
+    {
+      "IRN": "ASH01110",
+      "Name": "Alexander Selby Homer",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASH01110"
+    },
+    {
+      "IRN": "SPM01110",
+      "Name": "Simon Paul McGuigan",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SPM01110"
+    },
+    {
+      "IRN": "MJH01587",
+      "Name": "Mark Hicks",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MJH01587"
+    },
+    {
+      "IRN": "GLD01033",
+      "Name": "Gemma Louise Dick",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GLD01033"
+    },
+    {
+      "IRN": "CAS01107",
+      "Name": "Christopher Allan Sayers",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CAS01107"
+    },
+    {
+      "IRN": "FTH01004",
+      "Name": "Francis Thomas James Heagney",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FTH01004"
+    },
+    {
+      "IRN": "DKG01008",
+      "Name": "David Kenneth Grundy",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DKG01008"
+    },
+    {
+      "IRN": "TPM01018",
+      "Name": "Thierry Paul Yves Metaireau",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TPM01018"
+    },
+    {
+      "IRN": "AXM02541",
+      "Name": "Arash Mahdavi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM02541"
+    },
+    {
+      "IRN": "MDE01031",
+      "Name": "Matthew David John Evans",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MDE01031"
+    },
+    {
+      "IRN": "SSP01031",
+      "Name": "Sean Steve Pereira",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SSP01031"
+    },
+    {
+      "IRN": "BRM01028",
+      "Name": "BENJAMIN REGINALD Manners",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BRM01028"
+    },
+    {
+      "IRN": "BRT01024",
+      "Name": "Bernard Robert Thompson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BRT01024"
+    },
+    {
+      "IRN": "JPR01070",
+      "Name": "Jonathan Paul Ratcliffe",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPR01070"
+    },
+    {
+      "IRN": "PJM01229",
+      "Name": "Peter Joseph McConnon",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJM01229"
+    },
+    {
+      "IRN": "AXK01162",
+      "Name": "Alexandra Kloss",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK01162"
+    },
+    {
+      "IRN": "JCH01099",
+      "Name": "Jeremy Charles Hale",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JCH01099"
+    },
+    {
+      "IRN": "DSS01111",
+      "Name": "Dev Singh Sahai",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DSS01111"
+    },
+    {
+      "IRN": "JXC02397",
+      "Name": "Jayraj Chokshi",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXC02397"
+    },
+    {
+      "IRN": "NTB01035",
+      "Name": "Nicholas Toby Mansell Bolton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NTB01035"
+    },
+    {
+      "IRN": "BRB01044",
+      "Name": "Bradley Ryan Burke",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BRB01044"
+    },
+    {
+      "IRN": "EAG01048",
+      "Name": "Elliott Allon Green",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EAG01048"
+    },
+    {
+      "IRN": "SXB00317",
+      "Name": "Sean Balmford",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXB00317"
+    },
+    {
+      "IRN": "JPB01332",
+      "Name": "JOSEPH PATRICK BUTTON",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPB01332"
+    },
+    {
+      "IRN": "KSP01036",
+      "Name": "Kevin Stephen Pritchard",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KSP01036"
+    },
+    {
+      "IRN": "TKW01008",
+      "Name": "Thomas Kenneth Wynn Welch",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TKW01008"
+    },
+    {
+      "IRN": "ARJ01076",
+      "Name": "Aled Rhys Jenkins",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ARJ01076"
+    },
+    {
+      "IRN": "MXH01515",
+      "Name": "Martin Hlusek",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXH01515"
+    },
+    {
+      "IRN": "PXR01240",
+      "Name": "Pari Rajkotia Lake",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXR01240"
+    },
+    {
+      "IRN": "JDH01235",
+      "Name": "James David Hilton",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDH01235"
+    },
+    {
+      "IRN": "FDD00002",
+      "Name": "Fraser David Danbury",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FDD00002"
+    },
+    {
+      "IRN": "SLC01037",
+      "Name": "Stephan Laurent Collet",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SLC01037"
+    },
+    {
+      "IRN": "MGP01050",
+      "Name": "Mark Garrett Prendiville",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MGP01050"
+    },
+    {
+      "IRN": "ACW01087",
+      "Name": "Andrew Charles Waite",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ACW01087"
+    },
+    {
+      "IRN": "MCM01158",
+      "Name": "Marc Christopher Messina",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MCM01158"
+    },
+    {
+      "IRN": "KRS01071",
+      "Name": "Kroum Raytchev Sourov",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KRS01071"
+    },
+    {
+      "IRN": "MBN01005",
+      "Name": "Matthew Barry Norways",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MBN01005"
+    },
+    {
+      "IRN": "DXR01882",
+      "Name": "Dana Riazi Nejad",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXR01882"
+    },
+    {
+      "IRN": "NNG01004",
+      "Name": "Nathan Naseem Gleeson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NNG01004"
+    },
+    {
+      "IRN": "AXL02236",
+      "Name": "AMANDA LOCKE",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXL02236"
+    },
+    {
+      "IRN": "TJY01007",
+      "Name": "Timothy John Yetman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TJY01007"
+    },
+    {
+      "IRN": "FDH01011",
+      "Name": "FINTAN DAVID HODDY",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FDH01011"
+    },
+    {
+      "IRN": "DJM01289",
+      "Name": "Damian John McCarthy",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJM01289"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "JWG01039": [],
+    "PAS01152": [],
+    "JAB01596": [],
+    "SXN00272": [],
+    "LCD01038": [],
+    "ASH01110": [],
+    "SPM01110": [],
+    "MJH01587": [],
+    "GLD01033": [],
+    "CAS01107": [],
+    "FTH01004": [],
+    "DKG01008": [],
+    "TPM01018": [],
+    "AXM02541": [],
+    "MDE01031": [],
+    "SSP01031": [],
+    "BRM01028": [],
+    "BRT01024": [],
+    "JPR01070": [],
+    "PJM01229": [],
+    "AXK01162": [],
+    "JCH01099": [],
+    "DSS01111": [],
+    "JXC02397": [],
+    "NTB01035": [],
+    "BRB01044": [],
+    "EAG01048": [],
+    "SXB00317": [],
+    "JPB01332": [],
+    "KSP01036": [],
+    "TKW01008": [],
+    "ARJ01076": [],
+    "MXH01515": [],
+    "PXR01240": [],
+    "JDH01235": [],
+    "FDD00002": [],
+    "SLC01037": [],
+    "MGP01050": [],
+    "ACW01087": [],
+    "MCM01158": [],
+    "KRS01071": [],
+    "MBN01005": [],
+    "DXR01882": [],
+    "NNG01004": [],
+    "AXL02236": [],
+    "TJY01007": [],
+    "FDH01011": [],
+    "DJM01289": []
+  },
+  "metadata": {
+    "frn": "583141",
+    "organisation_name": "Salix Capital (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07945442",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "12/10/2012"
+  },
+  "person_records": {
+    "JWG01039": {
+      "irn": "JWG01039",
+      "name": "Jonathan William Glassberg",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PAS01152": {
+      "irn": "PAS01152",
+      "name": "Paul Anthony Snell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JAB01596": {
+      "irn": "JAB01596",
+      "name": "JAMES ALAN BARNARD",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXN00272": {
+      "irn": "SXN00272",
+      "name": "Stephen Noone",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LCD01038": {
+      "irn": "LCD01038",
+      "name": "Iain Charles Davis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ASH01110": {
+      "irn": "ASH01110",
+      "name": "Alexander Selby Homer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SPM01110": {
+      "irn": "SPM01110",
+      "name": "Simon Paul McGuigan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MJH01587": {
+      "irn": "MJH01587",
+      "name": "Mark Hicks",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GLD01033": {
+      "irn": "GLD01033",
+      "name": "Gemma Louise Dick",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CAS01107": {
+      "irn": "CAS01107",
+      "name": "Christopher Allan Sayers",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FTH01004": {
+      "irn": "FTH01004",
+      "name": "Francis Thomas James Heagney",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DKG01008": {
+      "irn": "DKG01008",
+      "name": "David Kenneth Grundy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TPM01018": {
+      "irn": "TPM01018",
+      "name": "Thierry Paul Yves Metaireau",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM02541": {
+      "irn": "AXM02541",
+      "name": "Arash Mahdavi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MDE01031": {
+      "irn": "MDE01031",
+      "name": "Matthew David John Evans",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SSP01031": {
+      "irn": "SSP01031",
+      "name": "Sean Steve Pereira",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BRM01028": {
+      "irn": "BRM01028",
+      "name": "BENJAMIN REGINALD Manners",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BRT01024": {
+      "irn": "BRT01024",
+      "name": "Bernard Robert Thompson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPR01070": {
+      "irn": "JPR01070",
+      "name": "Jonathan Paul Ratcliffe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJM01229": {
+      "irn": "PJM01229",
+      "name": "Peter Joseph McConnon",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXK01162": {
+      "irn": "AXK01162",
+      "name": "Alexandra Kloss",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JCH01099": {
+      "irn": "JCH01099",
+      "name": "Jeremy Charles Hale",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DSS01111": {
+      "irn": "DSS01111",
+      "name": "Dev Singh Sahai",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXC02397": {
+      "irn": "JXC02397",
+      "name": "Jayraj Chokshi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NTB01035": {
+      "irn": "NTB01035",
+      "name": "Nicholas Toby Mansell Bolton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BRB01044": {
+      "irn": "BRB01044",
+      "name": "Bradley Ryan Burke",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EAG01048": {
+      "irn": "EAG01048",
+      "name": "Elliott Allon Green",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXB00317": {
+      "irn": "SXB00317",
+      "name": "Sean Balmford",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPB01332": {
+      "irn": "JPB01332",
+      "name": "JOSEPH PATRICK BUTTON",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KSP01036": {
+      "irn": "KSP01036",
+      "name": "Kevin Stephen Pritchard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TKW01008": {
+      "irn": "TKW01008",
+      "name": "Thomas Kenneth Wynn Welch",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ARJ01076": {
+      "irn": "ARJ01076",
+      "name": "Aled Rhys Jenkins",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXH01515": {
+      "irn": "MXH01515",
+      "name": "Martin Hlusek",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXR01240": {
+      "irn": "PXR01240",
+      "name": "Pari Rajkotia Lake",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDH01235": {
+      "irn": "JDH01235",
+      "name": "James David Hilton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FDD00002": {
+      "irn": "FDD00002",
+      "name": "Fraser David Danbury",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SLC01037": {
+      "irn": "SLC01037",
+      "name": "Stephan Laurent Collet",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MGP01050": {
+      "irn": "MGP01050",
+      "name": "Mark Garrett Prendiville",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ACW01087": {
+      "irn": "ACW01087",
+      "name": "Andrew Charles Waite",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MCM01158": {
+      "irn": "MCM01158",
+      "name": "Marc Christopher Messina",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KRS01071": {
+      "irn": "KRS01071",
+      "name": "Kroum Raytchev Sourov",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MBN01005": {
+      "irn": "MBN01005",
+      "name": "Matthew Barry Norways",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXR01882": {
+      "irn": "DXR01882",
+      "name": "Dana Riazi Nejad",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NNG01004": {
+      "irn": "NNG01004",
+      "name": "Nathan Naseem Gleeson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXL02236": {
+      "irn": "AXL02236",
+      "name": "AMANDA LOCKE",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TJY01007": {
+      "irn": "TJY01007",
+      "name": "Timothy John Yetman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FDH01011": {
+      "irn": "FDH01011",
+      "name": "FINTAN DAVID HODDY",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJM01289": {
+      "irn": "DJM01289",
+      "name": "Damian John McCarthy",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

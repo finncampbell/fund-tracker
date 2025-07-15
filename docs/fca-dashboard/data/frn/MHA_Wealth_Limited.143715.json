@@ -1,9 +1,39 @@
 {
   "frn": 143715,
   "name": "MHA Wealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/205918",
+        "Termination Date": "15/07/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "143715",
+        "Principal Firm Name": "MHA Wealth Limited",
+        "Effective Date": "01/01/1996",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "205918",
+        "Name": "Paul Ernest Barnes"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "143715",
+    "organisation_name": "MHA Wealth Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01916615",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

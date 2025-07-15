@@ -1,9 +1,104 @@
 {
   "frn": 195028,
   "name": "Schroders IS Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/463083",
+        "Termination Date": "04/04/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "26/01/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "463083",
+        "Name": "Craven Street Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/462764",
+        "Termination Date": "21/11/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "22/01/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "462764",
+        "Name": "PSigma Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/462764",
+        "Termination Date": "15/04/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "27/02/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "462764",
+        "Name": "PSigma Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/495989",
+        "Termination Date": "08/07/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "05/02/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "495989",
+        "Name": "Punter Southall Investment Consulting Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/949495",
+        "Termination Date": "31/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "21/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "949495",
+        "Name": "River and Mercantile Infrastructure LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/231671",
+        "Termination Date": "07/02/2005",
+        "RecordSubType": "Full",
+        "Principal FRN": "195028",
+        "Principal Firm Name": "Schroders IS Limited",
+        "Effective Date": "16/02/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "231671",
+        "Name": "Sanlam Multi Manager International Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "195028",
+    "organisation_name": "Schroders IS Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03359127",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

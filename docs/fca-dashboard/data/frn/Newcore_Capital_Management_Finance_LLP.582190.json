@@ -1,9 +1,165 @@
 {
   "frn": 582190,
   "name": "Newcore Capital Management Finance LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "HWL01005",
+      "Name": "Hugo William John Llewelyn",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HWL01005"
+    },
+    {
+      "IRN": "AEB01074",
+      "Name": "Andrew Ellis Baum",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AEB01074"
+    },
+    {
+      "IRN": "HXS01684",
+      "Name": "Harry Savory",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXS01684"
+    },
+    {
+      "IRN": "NXS02327",
+      "Name": "Neil Sarkhel",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXS02327"
+    },
+    {
+      "IRN": "AXS05438",
+      "Name": "Angkujan Sayandan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS05438"
+    },
+    {
+      "IRN": "TPR01030",
+      "Name": "Tristan Phillip Laurence Rodgers",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TPR01030"
+    },
+    {
+      "IRN": "HWL01005",
+      "Name": "Hugo William John Llewelyn",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HWL01005"
+    },
+    {
+      "IRN": "NXS02327",
+      "Name": "Neil Sarkhel",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXS02327"
+    },
+    {
+      "IRN": "AEB01074",
+      "Name": "Andrew Ellis Baum",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AEB01074"
+    },
+    {
+      "IRN": "HXS01684",
+      "Name": "Harry Savory",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXS01684"
+    },
+    {
+      "IRN": "MPN01030",
+      "Name": "Mathew Paul Nottingham",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPN01030"
+    },
+    {
+      "IRN": "XXT01119",
+      "Name": ". The Newcombe Estates Company Limited",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXT01119"
+    },
+    {
+      "IRN": "CJV01032",
+      "Name": "Christopher James Stewart Vane-Tempest",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CJV01032"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "HWL01005": [],
+    "AEB01074": [],
+    "HXS01684": [],
+    "NXS02327": [],
+    "AXS05438": [],
+    "TPR01030": [],
+    "MPN01030": [],
+    "XXT01119": [],
+    "CJV01032": []
+  },
+  "metadata": {
+    "frn": "582190",
+    "organisation_name": "Newcore Capital Management Finance LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC368758",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "01/08/2012"
+  },
+  "person_records": {
+    "HWL01005": {
+      "irn": "HWL01005",
+      "name": "Hugo William John Llewelyn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AEB01074": {
+      "irn": "AEB01074",
+      "name": "Andrew Ellis Baum",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXS01684": {
+      "irn": "HXS01684",
+      "name": "Harry Savory",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXS02327": {
+      "irn": "NXS02327",
+      "name": "Neil Sarkhel",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS05438": {
+      "irn": "AXS05438",
+      "name": "Angkujan Sayandan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TPR01030": {
+      "irn": "TPR01030",
+      "name": "Tristan Phillip Laurence Rodgers",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MPN01030": {
+      "irn": "MPN01030",
+      "name": "Mathew Paul Nottingham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXT01119": {
+      "irn": "XXT01119",
+      "name": ". The Newcombe Estates Company Limited",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CJV01032": {
+      "irn": "CJV01032",
+      "name": "Christopher James Stewart Vane-Tempest",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

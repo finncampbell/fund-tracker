@@ -1,9 +1,176 @@
 {
   "frn": 653812,
   "name": "Panima Capital Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975520",
+        "Termination Date": "08/11/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "11/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "975520",
+        "Name": "AbEx Capital Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/961762",
+        "Termination Date": "27/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "28/10/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "961762",
+        "Name": "Beauford Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/981876",
+        "Termination Date": "19/09/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "26/08/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "981876",
+        "Name": "Cleavemoor Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942017",
+        "Termination Date": "31/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "24/09/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942017",
+        "Name": "FAIR Private Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/997382",
+        "Termination Date": "11/09/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "05/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "997382",
+        "Name": "Golden Record Ventures Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/839882",
+        "Termination Date": "14/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "25/10/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "839882",
+        "Name": "Pantiles Wealth Creation LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1006059",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "01/04/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1006059",
+        "Name": "Blue Cloud Global U.K. Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/978371",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "04/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "978371",
+        "Name": "Bowmoor Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001418",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "22/04/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1001418",
+        "Name": "Growth Capital 1 LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/944650",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "19/05/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "944650",
+        "Name": "Hummingbird UK Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/926195",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "29/05/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "926195",
+        "Name": "Investbridge Capital (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/965953",
+        "RecordSubType": "Full",
+        "Principal FRN": "653812",
+        "Principal Firm Name": "Panima Capital Management Limited",
+        "Effective Date": "12/12/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "965953",
+        "Name": "Sterling Rose Capital Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "653812",
+    "organisation_name": "Panima Capital Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09256383",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "02/03/2015"
+  },
+  "person_records": {}
 }

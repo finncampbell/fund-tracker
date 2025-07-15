@@ -1,9 +1,21 @@
 {
   "frn": 960246,
   "name": "GWA Asset Management Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "960246",
+    "organisation_name": "GWA Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13214974",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "09/08/2022"
+  },
+  "person_records": {}
 }

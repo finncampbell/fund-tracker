@@ -1,9 +1,22 @@
 {
   "frn": 829693,
   "name": "White Oak Capital Management (UK) LTD",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "829693",
+    "organisation_name": "White Oak Capital Management (UK) LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11621438",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "02/09/2019"
+  },
+  "person_records": {}
 }

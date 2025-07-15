@@ -1,9 +1,38 @@
 {
   "frn": 599220,
   "name": "Option Solutions LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/800713",
+        "Termination Date": "01/03/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "599220",
+        "Principal Firm Name": "Option Solutions LLP",
+        "Effective Date": "05/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "800713",
+        "Name": "Blue Sky Options Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "599220",
+    "organisation_name": "Option Solutions LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC382086",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "18/11/2013"
+  },
+  "person_records": {}
 }

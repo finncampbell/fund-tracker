@@ -1,9 +1,21 @@
 {
   "frn": 961286,
   "name": "Webull Securities (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "961286",
+    "organisation_name": "Webull Securities (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "13437270",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "25/10/2022"
+  },
+  "person_records": {}
 }

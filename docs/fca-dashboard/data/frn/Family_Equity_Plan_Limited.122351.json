@@ -1,9 +1,190 @@
 {
   "frn": 122351,
   "name": "Family Equity Plan Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/978962",
+        "Termination Date": "15/03/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "12/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "978962",
+        "Name": "A Marketing Vocation Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/222169",
+        "Termination Date": "26/03/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "08/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "222169",
+        "Name": "Bounty (UK) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/222169",
+        "Termination Date": "02/01/2006",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "16/06/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "222169",
+        "Name": "Bounty (UK) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/206231",
+        "Termination Date": "22/03/2004",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "11/06/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "206231",
+        "Name": "Close Brothers Military Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/429518",
+        "Termination Date": "21/01/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "14/03/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "429518",
+        "Name": "Early Learning Centre Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/162090",
+        "Termination Date": "01/12/2001",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "31/12/1980",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "162090",
+        "Name": "Ecology Building Society"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/468897",
+        "Termination Date": "08/11/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "16/02/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "468897",
+        "Name": "Enable Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/110067",
+        "Termination Date": "01/12/2001",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "01/07/1994",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "110067",
+        "Name": "Family Assurance Friendly Society Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/978928",
+        "Termination Date": "26/05/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "19/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "978928",
+        "Name": "MBA Group Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/513553",
+        "Termination Date": "01/10/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "01/12/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "513553",
+        "Name": "National Childbirth Trust"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/980520",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "19/08/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "980520",
+        "Name": "Aura Digital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/980178",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "21/05/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "980178",
+        "Name": "Central England Co-operative Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/569452",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "122351",
+        "Principal Firm Name": "Family Equity Plan Limited",
+        "Effective Date": "08/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "569452",
+        "Name": "WH Smith High Street Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "122351",
+    "organisation_name": "Family Equity Plan Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02208249",
+    "system_timestamp": "23/06/2025 21:34",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

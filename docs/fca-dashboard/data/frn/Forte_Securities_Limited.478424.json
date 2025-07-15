@@ -1,9 +1,156 @@
 {
   "frn": 478424,
   "name": "Forte Securities Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/707802",
+        "Termination Date": "02/02/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "23/06/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "707802",
+        "Name": "Armira Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/556242",
+        "Termination Date": "21/02/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "15/07/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "556242",
+        "Name": "Bolt Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/625405",
+        "Termination Date": "15/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "08/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "625405",
+        "Name": "Coral Global Securities Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/695074",
+        "Termination Date": "05/11/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "13/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "695074",
+        "Name": "Diagram Capital Partners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/584083",
+        "Termination Date": "13/02/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "29/06/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "584083",
+        "Name": "DNA Securities LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/802421",
+        "Termination Date": "18/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "21/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "802421",
+        "Name": "EMVirya Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616590",
+        "Termination Date": "21/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "04/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616590",
+        "Name": "Frontera Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/718306",
+        "Termination Date": "29/08/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "25/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "718306",
+        "Name": "GFG Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/585988",
+        "Termination Date": "11/09/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "04/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "585988",
+        "Name": "Gulf Central Agency Asset Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716239",
+        "Termination Date": "01/12/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "478424",
+        "Principal Firm Name": "Forte Securities Limited",
+        "Effective Date": "09/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716239",
+        "Name": "Marpessa Securities Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "478424",
+    "organisation_name": "Forte Securities Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06498357",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "04/06/2008"
+  },
+  "person_records": {}
 }

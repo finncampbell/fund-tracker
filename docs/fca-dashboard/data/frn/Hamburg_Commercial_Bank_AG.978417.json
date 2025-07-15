@@ -1,9 +1,21 @@
 {
   "frn": 978417,
   "name": "Hamburg Commercial Bank AG",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "978417",
+    "organisation_name": "Hamburg Commercial Bank AG",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC037074",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "10/05/2023"
+  },
+  "person_records": {}
 }

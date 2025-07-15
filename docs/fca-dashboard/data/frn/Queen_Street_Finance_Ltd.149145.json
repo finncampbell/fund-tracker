@@ -1,9 +1,90 @@
 {
   "frn": 149145,
   "name": "Queen Street Finance Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/974191",
+        "Termination Date": "06/04/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "149145",
+        "Principal Firm Name": "Queen Street Finance Ltd",
+        "Effective Date": "14/04/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "974191",
+        "Name": "BARCLAY PEARCE CAPITAL UK LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/803169",
+        "Termination Date": "08/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "149145",
+        "Principal Firm Name": "Queen Street Finance Ltd",
+        "Effective Date": "01/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "803169",
+        "Name": "Greenhill Global Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916215",
+        "Termination Date": "09/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "149145",
+        "Principal Firm Name": "Queen Street Finance Ltd",
+        "Effective Date": "04/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916215",
+        "Name": "Netx Group Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/988193",
+        "RecordSubType": "Full",
+        "Principal FRN": "149145",
+        "Principal Firm Name": "Queen Street Finance Ltd",
+        "Effective Date": "02/12/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "988193",
+        "Name": "Austin Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/979724",
+        "RecordSubType": "Full",
+        "Principal FRN": "149145",
+        "Principal Firm Name": "Queen Street Finance Ltd",
+        "Effective Date": "25/07/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "979724",
+        "Name": "MUININ CAPITAL LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "149145",
+    "organisation_name": "Queen Street Finance Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02584541",
+    "system_timestamp": "23/06/2025 21:37",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

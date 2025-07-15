@@ -1,9 +1,204 @@
 {
   "frn": 730805,
   "name": "Razlin Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/776294",
+        "Termination Date": "30/11/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "10/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "776294",
+        "Name": "Albany Capital Consulting Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1003952",
+        "Termination Date": "20/12/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "17/11/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1003952",
+        "Name": "Aleph Finance Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/791170",
+        "Termination Date": "30/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "10/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "791170",
+        "Name": "Asset Street Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762183",
+        "Termination Date": "30/09/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "19/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762183",
+        "Name": "BELGRAVE SQUARE ADVISORS LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/843483",
+        "Termination Date": "25/04/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "05/06/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "843483",
+        "Name": "BGM Corporate Finance LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813437",
+        "Termination Date": "20/01/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "10/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "813437",
+        "Name": "BROAD CAPITAL ADVISORY LTD."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/781147",
+        "Termination Date": "25/04/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "07/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "781147",
+        "Name": "CAP CONNECT LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/998751",
+        "Termination Date": "22/12/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "28/06/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "998751",
+        "Name": "Deeptech and Longevity Industry Financial Advisors Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/771740",
+        "Termination Date": "09/10/2017",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "15/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "771740",
+        "Name": "FAIR VALUE CAPITAL (EUROPE) LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/803169",
+        "Termination Date": "12/03/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "04/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "803169",
+        "Name": "Greenhill Global Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/784401",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "17/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "784401",
+        "Name": "Acuvera Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/965151",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "18/10/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "965151",
+        "Name": "Arlington Capital Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/827307",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "25/06/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "827307",
+        "Name": "Codrington Associates Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942020",
+        "RecordSubType": "Full",
+        "Principal FRN": "730805",
+        "Principal Firm Name": "Razlin Limited",
+        "Effective Date": "09/01/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942020",
+        "Name": "Drake Star UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "730805",
+    "organisation_name": "Razlin Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09786124",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "27/07/2016"
+  },
+  "person_records": {}
 }

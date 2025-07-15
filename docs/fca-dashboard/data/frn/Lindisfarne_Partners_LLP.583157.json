@@ -1,9 +1,192 @@
 {
   "frn": 583157,
   "name": "Lindisfarne Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617966",
+        "Termination Date": "22/08/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "19/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617966",
+        "Name": "Benjamin Reynolds"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617965",
+        "Termination Date": "23/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "19/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617965",
+        "Name": "Bernard Richard Woodford"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617962",
+        "Termination Date": "12/01/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "19/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617962",
+        "Name": "Cap Financial Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/629343",
+        "Termination Date": "13/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "30/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "629343",
+        "Name": "David Terence Woodcock"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617963",
+        "Termination Date": "13/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "19/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617963",
+        "Name": "Heartbeat Consultancy Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/629344",
+        "Termination Date": "13/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "30/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "629344",
+        "Name": "Mark Philpott"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916406",
+        "Termination Date": "10/01/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "06/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916406",
+        "Name": "Paul Collier"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617964",
+        "Termination Date": "13/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "19/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617964",
+        "Name": "RTW Financial Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1016451",
+        "Termination Date": "03/03/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "14/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1016451",
+        "Name": "TBorg Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/943745",
+        "Termination Date": "16/07/2024",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "26/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "943745",
+        "Name": "TBorg Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/618009",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "20/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "618009",
+        "Name": "Peter Matthews"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/752858",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "17/08/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "752858",
+        "Name": "Sol Capital Markets LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916405",
+        "RecordSubType": "Full",
+        "Principal FRN": "583157",
+        "Principal Firm Name": "Lindisfarne Partners LLP",
+        "Effective Date": "06/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916405",
+        "Name": "Steve Pash"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "583157",
+    "organisation_name": "Lindisfarne Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC346898",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "22/02/2013"
+  },
+  "person_records": {}
 }

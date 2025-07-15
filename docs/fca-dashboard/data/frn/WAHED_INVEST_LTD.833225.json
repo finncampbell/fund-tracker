@@ -1,9 +1,37 @@
 {
   "frn": 833225,
   "name": "WAHED INVEST LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/963613",
+        "RecordSubType": "Full",
+        "Principal FRN": "833225",
+        "Principal Firm Name": "WAHED INVEST LTD",
+        "Effective Date": "08/11/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "963613",
+        "Name": "Maydan Capital Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "833225",
+    "organisation_name": "WAHED INVEST LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10829012",
+    "system_timestamp": "23/06/2025 22:15",
+    "status_effective_date": "30/01/2020"
+  },
+  "person_records": {}
 }

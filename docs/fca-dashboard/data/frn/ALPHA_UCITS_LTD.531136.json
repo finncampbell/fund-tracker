@@ -1,9 +1,102 @@
 {
   "frn": 531136,
   "name": "ALPHA UCITS LTD.",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739034",
+        "Termination Date": "29/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "02/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739034",
+        "Name": "Argentem Creek Partners (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/770991",
+        "Termination Date": "17/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "06/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "770991",
+        "Name": "De Pury Pictet Turrettini (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/762951",
+        "Termination Date": "18/07/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "27/10/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "762951",
+        "Name": "Dunraven Capital Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/823358",
+        "Termination Date": "13/01/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "16/10/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "823358",
+        "Name": "Sound Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798408",
+        "RecordSubType": "Full",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "11/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798408",
+        "Name": "Argentem Creek UK LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/707570",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "531136",
+        "Principal Firm Name": "ALPHA UCITS LTD.",
+        "Effective Date": "20/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "707570",
+        "Name": "FCS Capital Partners UK Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "531136",
+    "organisation_name": "ALPHA UCITS LTD.",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07046589",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "04/01/2011"
+  },
+  "person_records": {}
 }

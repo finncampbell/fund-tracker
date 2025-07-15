@@ -1,9 +1,52 @@
 {
   "frn": 137569,
   "name": "Dart Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/922113",
+        "Termination Date": "01/04/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "137569",
+        "Principal Firm Name": "Dart Capital Limited",
+        "Effective Date": "05/03/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "922113",
+        "Name": "Heronsgate Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/227058",
+        "Termination Date": "16/06/2008",
+        "RecordSubType": "Full",
+        "Principal FRN": "137569",
+        "Principal Firm Name": "Dart Capital Limited",
+        "Effective Date": "10/07/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "227058",
+        "Name": "St Andrews Financial Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "137569",
+    "organisation_name": "Dart Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02146006",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

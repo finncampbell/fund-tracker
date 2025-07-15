@@ -1,9 +1,39 @@
 {
   "frn": 520929,
   "name": "IBP Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/600913",
+        "Termination Date": "10/07/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "520929",
+        "Principal Firm Name": "IBP Markets Limited",
+        "Effective Date": "13/05/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "600913",
+        "Name": "Blackstone Capital Markets Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "520929",
+    "organisation_name": "IBP Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07126254",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "13/09/2010"
+  },
+  "person_records": {}
 }

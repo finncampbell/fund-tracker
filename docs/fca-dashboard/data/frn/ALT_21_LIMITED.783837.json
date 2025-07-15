@@ -1,9 +1,168 @@
 {
   "frn": 783837,
   "name": "ALT 21 LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/920059",
+        "Termination Date": "23/11/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "23/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "920059",
+        "Name": "Abacus FX Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/944514",
+        "Termination Date": "09/01/2025",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "08/02/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "944514",
+        "Name": "Currency Transfer Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/948777",
+        "Termination Date": "21/11/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "09/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "948777",
+        "Name": "FairFX PLC"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/955286",
+        "Termination Date": "12/03/2025",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "22/07/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "955286",
+        "Name": "Meadow Hill Consulting Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1017605",
+        "Termination Date": "01/01/2001",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "01/01/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1017605",
+        "Name": "MONIVISE LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1017605",
+        "Termination Date": "11/02/2025",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "16/09/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1017605",
+        "Name": "MONIVISE LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/920316",
+        "Termination Date": "10/01/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "28/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "920316",
+        "Name": "Orbis Exchange Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975767",
+        "Termination Date": "17/08/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "10/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "975767",
+        "Name": "Privalgo Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400149",
+        "Termination Date": "31/01/2023",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "14/04/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "400149",
+        "Name": "SABLE INTERNATIONALFX LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/939613",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "27/11/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "939613",
+        "Name": "Jackson Swiss Partners Trading Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1017277",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "783837",
+        "Principal Firm Name": "ALT 21 LIMITED",
+        "Effective Date": "10/09/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1017277",
+        "Name": "OKU MARKETS LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "783837",
+    "organisation_name": "ALT 21 LIMITED",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "10723112",
+    "system_timestamp": "23/06/2025 22:11",
+    "status_effective_date": "23/08/2017"
+  },
+  "person_records": {}
 }

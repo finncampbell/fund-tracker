@@ -1,9 +1,117 @@
 {
   "frn": 131706,
   "name": "Johnston Financial Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/218566",
+        "Termination Date": "03/03/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "05/09/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "218566",
+        "Name": "Clare R Giles Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/447061",
+        "Termination Date": "18/01/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "18/01/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "447061",
+        "Name": "Heritable Financial Planning LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/460387",
+        "Termination Date": "05/03/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "23/11/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "460387",
+        "Name": "J F Mortgages LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/230877",
+        "Termination Date": "17/09/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "07/01/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "230877",
+        "Name": "Johnston Financial Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/432353",
+        "Termination Date": "06/09/2010",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "06/05/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "432353",
+        "Name": "Quest Financial Planning Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/226208",
+        "Termination Date": "15/08/2006",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "09/07/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "226208",
+        "Name": "Special Risks Bureau Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/586085",
+        "Termination Date": "05/11/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "131706",
+        "Principal Firm Name": "Johnston Financial Limited",
+        "Effective Date": "09/08/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "586085",
+        "Name": "Wealth & Safety (UK) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "131706",
+    "organisation_name": "Johnston Financial Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC108188",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

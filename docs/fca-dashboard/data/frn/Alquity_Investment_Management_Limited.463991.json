@@ -1,9 +1,39 @@
 {
   "frn": 463991,
   "name": "Alquity Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/826017",
+        "Termination Date": "15/02/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "463991",
+        "Principal Firm Name": "Alquity Investment Management Limited",
+        "Effective Date": "14/11/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "826017",
+        "Name": "Future World Investments Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "463991",
+    "organisation_name": "Alquity Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06020476",
+    "system_timestamp": "23/06/2025 21:49",
+    "status_effective_date": "17/04/2007"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 924983,
   "name": "Eclipse Adviser (Pensions & Investments) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "924983",
+    "organisation_name": "Eclipse Adviser (Pensions & Investments) Ltd",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "12416158",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "04/01/2021"
+  },
+  "person_records": {}
 }

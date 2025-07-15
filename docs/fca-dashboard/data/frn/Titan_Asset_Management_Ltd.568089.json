@@ -1,9 +1,52 @@
 {
   "frn": 568089,
   "name": "Titan Asset Management Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610753",
+        "Termination Date": "30/01/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "568089",
+        "Principal Firm Name": "Titan Asset Management Ltd",
+        "Effective Date": "25/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610753",
+        "Name": "Paxjos Investments LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/971213",
+        "Termination Date": "11/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "568089",
+        "Principal Firm Name": "Titan Asset Management Ltd",
+        "Effective Date": "04/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "971213",
+        "Name": "Titan Wealth Equities"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "568089",
+    "organisation_name": "Titan Asset Management Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07805960",
+    "system_timestamp": "23/06/2025 21:57",
+    "status_effective_date": "15/03/2012"
+  },
+  "person_records": {}
 }

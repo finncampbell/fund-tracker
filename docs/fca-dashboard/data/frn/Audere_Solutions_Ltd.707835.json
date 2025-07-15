@@ -1,9 +1,52 @@
 {
   "frn": 707835,
   "name": "Audere Solutions Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/798802",
+        "Termination Date": "25/11/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "707835",
+        "Principal Firm Name": "Audere Solutions Ltd",
+        "Effective Date": "17/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "798802",
+        "Name": "Greg Smith"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/806736",
+        "Termination Date": "29/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "707835",
+        "Principal Firm Name": "Audere Solutions Ltd",
+        "Effective Date": "17/04/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "806736",
+        "Name": "Paul Stafford"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "707835",
+    "organisation_name": "Audere Solutions Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09181148",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "05/01/2016"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,49 @@
 {
   "frn": 770377,
   "name": "Alpha FX Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/803704",
+        "RecordSubType": "Full",
+        "Principal FRN": "770377",
+        "Principal Firm Name": "Alpha FX Limited",
+        "Effective Date": "08/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "803704",
+        "Name": "Alpha FX Institutional Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/976641",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "770377",
+        "Principal Firm Name": "Alpha FX Limited",
+        "Effective Date": "30/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "976641",
+        "Name": "Georgeson Foreign Exchange Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "770377",
+    "organisation_name": "Alpha FX Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05108142",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "01/08/2017"
+  },
+  "person_records": {}
 }

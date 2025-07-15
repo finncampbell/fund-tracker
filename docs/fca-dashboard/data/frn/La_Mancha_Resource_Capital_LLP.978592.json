@@ -1,9 +1,21 @@
 {
   "frn": 978592,
   "name": "La Mancha Resource Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "978592",
+    "organisation_name": "La Mancha Resource Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC368461",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "02/05/2023"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 190748,
   "name": "Stenham Asset Management (UK) Plc",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/553682",
+        "Termination Date": "09/09/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "190748",
+        "Principal Firm Name": "Stenham Asset Management (UK) Plc",
+        "Effective Date": "16/06/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "553682",
+        "Name": "BlueSigma Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "190748",
+    "organisation_name": "Stenham Asset Management (UK) Plc",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02822010",
+    "system_timestamp": "23/06/2025 21:40",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

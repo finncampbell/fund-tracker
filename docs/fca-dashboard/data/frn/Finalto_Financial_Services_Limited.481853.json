@@ -1,9 +1,52 @@
 {
   "frn": 481853,
   "name": "Finalto Financial Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/534807",
+        "Termination Date": "30/03/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "481853",
+        "Principal Firm Name": "Finalto Financial Services Limited",
+        "Effective Date": "01/11/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "534807",
+        "Name": "NetDania Markets UK"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/537105",
+        "Termination Date": "22/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "481853",
+        "Principal Firm Name": "Finalto Financial Services Limited",
+        "Effective Date": "06/12/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "537105",
+        "Name": "Tradex Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "481853",
+    "organisation_name": "Finalto Financial Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06557752",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "08/09/2008"
+  },
+  "person_records": {}
 }

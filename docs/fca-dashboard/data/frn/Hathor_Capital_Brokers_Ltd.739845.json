@@ -1,9 +1,22 @@
 {
   "frn": 739845,
   "name": "Hathor Capital Brokers Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "739845",
+    "organisation_name": "Hathor Capital Brokers Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09069342",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "01/09/2016"
+  },
+  "person_records": {}
 }

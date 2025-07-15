@@ -1,9 +1,103 @@
 {
   "frn": 452877,
   "name": "Apollo Management International LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/654995",
+        "Termination Date": "18/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "20/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "654995",
+        "Name": "Alteri Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/738012",
+        "Termination Date": "03/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "24/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "738012",
+        "Name": "Apollo Asset Management Europe LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/738011",
+        "Termination Date": "03/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "24/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "738011",
+        "Name": "Apollo Asset Management Europe PC LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/956013",
+        "Termination Date": "12/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "03/08/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "956013",
+        "Name": "Apollo Europe Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1000992",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "03/10/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1000992",
+        "Name": "Apollo Capital Solutions Europe B.V."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/794485",
+        "RecordSubType": "Full",
+        "Principal FRN": "452877",
+        "Principal Firm Name": "Apollo Management International LLP",
+        "Effective Date": "20/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "794485",
+        "Name": "Apollo Credit Management International Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "452877",
+    "organisation_name": "Apollo Management International LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC316197",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "13/12/2006"
+  },
+  "person_records": {}
 }

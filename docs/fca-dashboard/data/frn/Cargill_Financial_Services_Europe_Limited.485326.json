@@ -1,9 +1,21 @@
 {
   "frn": 485326,
   "name": "Cargill Financial Services Europe Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "485326",
+    "organisation_name": "Cargill Financial Services Europe Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06263287",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "05/05/2009"
+  },
+  "person_records": {}
 }

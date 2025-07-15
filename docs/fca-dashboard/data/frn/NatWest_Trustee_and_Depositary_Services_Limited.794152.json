@@ -1,9 +1,21 @@
 {
   "frn": 794152,
   "name": "NatWest Trustee and Depositary Services Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "794152",
+    "organisation_name": "NatWest Trustee and Depositary Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11194605",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "01/06/2018"
+  },
+  "person_records": {}
 }

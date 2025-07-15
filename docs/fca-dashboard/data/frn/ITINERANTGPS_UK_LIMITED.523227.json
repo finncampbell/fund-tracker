@@ -1,9 +1,91 @@
 {
   "frn": 523227,
   "name": "ITINERANT-GPS UK LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/795574",
+        "Termination Date": "31/05/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "523227",
+        "Principal Firm Name": "ITINERANT-GPS UK LIMITED",
+        "Effective Date": "01/12/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "795574",
+        "Name": "CF GLOBAL UK LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/815179",
+        "Termination Date": "07/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "523227",
+        "Principal Firm Name": "ITINERANT-GPS UK LIMITED",
+        "Effective Date": "31/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "815179",
+        "Name": "GTS Prime Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/801411",
+        "Termination Date": "20/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "523227",
+        "Principal Firm Name": "ITINERANT-GPS UK LIMITED",
+        "Effective Date": "12/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "801411",
+        "Name": "Kingsley Group Global Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/781947",
+        "Termination Date": "31/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "523227",
+        "Principal Firm Name": "ITINERANT-GPS UK LIMITED",
+        "Effective Date": "16/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "781947",
+        "Name": "Petrichor Capital LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/794061",
+        "Termination Date": "07/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "523227",
+        "Principal Firm Name": "ITINERANT-GPS UK LIMITED",
+        "Effective Date": "14/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "794061",
+        "Name": "UK GOLD PEAK TECHNOLOGY LIMITED"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "523227",
+    "organisation_name": "ITINERANT-GPS UK LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07206520",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "01/10/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 1009583,
   "name": "Doxa Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1009583",
+    "organisation_name": "Doxa Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC389190",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "25/09/2024"
+  },
+  "person_records": {}
 }

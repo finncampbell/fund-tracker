@@ -1,9 +1,76 @@
 {
   "frn": 583268,
   "name": "Astir Capital Advisors Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/630685",
+        "Termination Date": "05/06/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "583268",
+        "Principal Firm Name": "Astir Capital Advisors Limited",
+        "Effective Date": "22/08/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "630685",
+        "Name": "Aggregated Currency Solutions Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/913833",
+        "Termination Date": "29/05/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "583268",
+        "Principal Firm Name": "Astir Capital Advisors Limited",
+        "Effective Date": "20/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "913833",
+        "Name": "GCN Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/781428",
+        "RecordSubType": "Full",
+        "Principal FRN": "583268",
+        "Principal Firm Name": "Astir Capital Advisors Limited",
+        "Effective Date": "03/05/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "781428",
+        "Name": "CC Strategic Partners UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1022886",
+        "RecordSubType": "Full",
+        "Principal FRN": "583268",
+        "Principal Firm Name": "Astir Capital Advisors Limited",
+        "Effective Date": "22/01/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1022886",
+        "Name": "Falcon Bridge Advisors FZE"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "583268",
+    "organisation_name": "Astir Capital Advisors Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06917418",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "02/01/2013"
+  },
+  "person_records": {}
 }

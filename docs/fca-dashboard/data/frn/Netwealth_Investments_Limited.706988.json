@@ -1,9 +1,39 @@
 {
   "frn": 706988,
   "name": "Netwealth Investments Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/616540",
+        "Termination Date": "19/12/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "706988",
+        "Principal Firm Name": "Netwealth Investments Limited",
+        "Effective Date": "02/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "616540",
+        "Name": "News UK & Ireland Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "706988",
+    "organisation_name": "Netwealth Investments Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "09493628",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "19/04/2016"
+  },
+  "person_records": {}
 }

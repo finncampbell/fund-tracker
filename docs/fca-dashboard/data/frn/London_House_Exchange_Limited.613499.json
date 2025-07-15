@@ -1,9 +1,38 @@
 {
   "frn": 613499,
   "name": "London House Exchange Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812460",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "613499",
+        "Principal Firm Name": "London House Exchange Limited",
+        "Effective Date": "27/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "812460",
+        "Name": "Gama One Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "613499",
+    "organisation_name": "London House Exchange Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08820870",
+    "system_timestamp": "23/06/2025 22:02",
+    "status_effective_date": "02/09/2014"
+  },
+  "person_records": {}
 }

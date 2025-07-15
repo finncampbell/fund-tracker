@@ -1,9 +1,52 @@
 {
   "frn": 170053,
   "name": "Sciens Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773957",
+        "Termination Date": "31/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "170053",
+        "Principal Firm Name": "Sciens Capital Limited",
+        "Effective Date": "14/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "773957",
+        "Name": "Glenfinnan Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773345",
+        "Termination Date": "31/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "170053",
+        "Principal Firm Name": "Sciens Capital Limited",
+        "Effective Date": "07/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "773345",
+        "Name": "Timothy John Chadwick"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "170053",
+    "organisation_name": "Sciens Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02867956",
+    "system_timestamp": "23/06/2025 21:38",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

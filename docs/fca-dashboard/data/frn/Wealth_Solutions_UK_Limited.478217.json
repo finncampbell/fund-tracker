@@ -1,9 +1,90 @@
 {
   "frn": 478217,
   "name": "Wealth Solutions (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/847881",
+        "Termination Date": "19/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "478217",
+        "Principal Firm Name": "Wealth Solutions (UK) Limited",
+        "Effective Date": "09/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "847881",
+        "Name": "ASD Independent Financial Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/847849",
+        "Termination Date": "24/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "478217",
+        "Principal Firm Name": "Wealth Solutions (UK) Limited",
+        "Effective Date": "06/09/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "847849",
+        "Name": "Brannan Phillips Independent Financial Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/950822",
+        "Termination Date": "29/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "478217",
+        "Principal Firm Name": "Wealth Solutions (UK) Limited",
+        "Effective Date": "11/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "950822",
+        "Name": "ERD (Financial Solutions) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/799309",
+        "Termination Date": "29/07/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "478217",
+        "Principal Firm Name": "Wealth Solutions (UK) Limited",
+        "Effective Date": "23/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "799309",
+        "Name": "Kingsley Wealth Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/565369",
+        "Termination Date": "09/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "478217",
+        "Principal Firm Name": "Wealth Solutions (UK) Limited",
+        "Effective Date": "27/09/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "565369",
+        "Name": "SOUTHALL HARRIES FINANCIAL SERVICES LTD"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "478217",
+    "organisation_name": "Wealth Solutions (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06458184",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "11/04/2008"
+  },
+  "person_records": {}
 }

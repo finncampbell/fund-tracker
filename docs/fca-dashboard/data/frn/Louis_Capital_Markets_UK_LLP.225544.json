@@ -1,9 +1,117 @@
 {
   "frn": 225544,
   "name": "Louis Capital Markets UK LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/606345",
+        "Termination Date": "27/06/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "02/09/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "606345",
+        "Name": "Avalon Capital Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/473150",
+        "Termination Date": "05/06/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "26/09/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "473150",
+        "Name": "LCM Commodities UK LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/663641",
+        "Termination Date": "11/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "05/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "663641",
+        "Name": "LCM Metals UK LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/615690",
+        "Termination Date": "19/11/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "11/02/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "615690",
+        "Name": "LIGHT CAPITAL MARKETS LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/464533",
+        "Termination Date": "15/04/2011",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "28/02/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "464533",
+        "Name": "Louis Capital FX LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/789075",
+        "Termination Date": "29/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "18/09/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "789075",
+        "Name": "Midcap Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/931200",
+        "Termination Date": "01/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "225544",
+        "Principal Firm Name": "Louis Capital Markets UK LLP",
+        "Effective Date": "03/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "931200",
+        "Name": "VOLCAP TRADING PARTNERS"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "225544",
+    "organisation_name": "Louis Capital Markets UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC305139",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "03/11/2003"
+  },
+  "person_records": {}
 }

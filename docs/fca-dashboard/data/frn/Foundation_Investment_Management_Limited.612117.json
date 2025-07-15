@@ -1,9 +1,63 @@
 {
   "frn": 612117,
   "name": "Foundation Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/953374",
+        "Termination Date": "12/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "612117",
+        "Principal Firm Name": "Foundation Investment Management Limited",
+        "Effective Date": "22/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "953374",
+        "Name": "Beryllus Capital (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/940624",
+        "RecordSubType": "Full",
+        "Principal FRN": "612117",
+        "Principal Firm Name": "Foundation Investment Management Limited",
+        "Effective Date": "09/12/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "940624",
+        "Name": "Connectus Wealth Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/969061",
+        "RecordSubType": "Full",
+        "Principal FRN": "612117",
+        "Principal Firm Name": "Foundation Investment Management Limited",
+        "Effective Date": "24/03/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "969061",
+        "Name": "Trident Financial Planning Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "612117",
+    "organisation_name": "Foundation Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08107958",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "14/11/2014"
+  },
+  "person_records": {}
 }

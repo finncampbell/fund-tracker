@@ -1,9 +1,21 @@
 {
   "frn": 487230,
   "name": "Pioneer Point Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "487230",
+    "organisation_name": "Pioneer Point Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC339088",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "01/07/2009"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,64 @@
 {
   "frn": 472599,
   "name": "Carbon Communications International Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607324",
+        "Termination Date": "15/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "472599",
+        "Principal Firm Name": "Carbon Communications International Limited",
+        "Effective Date": "16/09/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "607324",
+        "Name": "Armstrong Energy Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/845127",
+        "Termination Date": "31/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "472599",
+        "Principal Firm Name": "Carbon Communications International Limited",
+        "Effective Date": "01/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "845127",
+        "Name": "Basse-Pointe Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/517326",
+        "Termination Date": "03/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "472599",
+        "Principal Firm Name": "Carbon Communications International Limited",
+        "Effective Date": "04/02/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "517326",
+        "Name": "Low Carbon Investors (UK) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "472599",
+    "organisation_name": "Carbon Communications International Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05243871",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "16/10/2007"
+  },
+  "person_records": {}
 }

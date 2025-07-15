@@ -1,9 +1,104 @@
 {
   "frn": 590782,
   "name": "Kapwealth Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/720249",
+        "Termination Date": "16/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "13/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "720249",
+        "Name": "4X Asset Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/719980",
+        "Termination Date": "16/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "09/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "719980",
+        "Name": "Capital Performance Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816732",
+        "Termination Date": "23/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "21/06/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "816732",
+        "Name": "Growmore Asset Management Plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/816732",
+        "Termination Date": "01/05/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "17/08/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "816732",
+        "Name": "Growmore Asset Management Plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/826970",
+        "Termination Date": "30/04/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "26/11/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "826970",
+        "Name": "Iquoto Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/727211",
+        "Termination Date": "03/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "590782",
+        "Principal Firm Name": "Kapwealth Limited",
+        "Effective Date": "27/11/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "727211",
+        "Name": "Peregrine & Black Investment Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "590782",
+    "organisation_name": "Kapwealth Limited",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "08091367",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "01/07/2013"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,517 @@
 {
   "frn": 1002451,
   "name": "Taula Capital Management (UK) LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "MXM04237",
+      "Name": "Mark Meletios Melehes",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXM04237"
+    },
+    {
+      "IRN": "JRS01294",
+      "Name": "James Stevens",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JRS01294"
+    },
+    {
+      "IRN": "SPE01029",
+      "Name": "Stefan Ericsson",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SPE01029"
+    },
+    {
+      "IRN": "AHB01080",
+      "Name": "Antony Beal",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AHB01080"
+    },
+    {
+      "IRN": "EXW00283",
+      "Name": "Esther Wong",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXW00283"
+    },
+    {
+      "IRN": "RXC00703",
+      "Name": "Russell Christie",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXC00703"
+    },
+    {
+      "IRN": "AXH01102",
+      "Name": "Alan Huynh",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXH01102"
+    },
+    {
+      "IRN": "CXD75493",
+      "Name": "Christopher Davies",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXD75493"
+    },
+    {
+      "IRN": "HXG45829",
+      "Name": "Henry Goodfellow",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXG45829"
+    },
+    {
+      "IRN": "JXC69538",
+      "Name": "James Conybear",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXC69538"
+    },
+    {
+      "IRN": "JXB39773",
+      "Name": "Joshua Blakey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXB39773"
+    },
+    {
+      "IRN": "NXE00104",
+      "Name": "Neil Everett",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXE00104"
+    },
+    {
+      "IRN": "TXA00268",
+      "Name": "Tristan Alasoeur",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXA00268"
+    },
+    {
+      "IRN": "DXM01407",
+      "Name": "Diego Megia",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM01407"
+    },
+    {
+      "IRN": "LEA01004",
+      "Name": "Louise Evelyn Mourgues",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LEA01004"
+    },
+    {
+      "IRN": "JXW22377",
+      "Name": "Jiefu Wang",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW22377"
+    },
+    {
+      "IRN": "NXW00278",
+      "Name": "Nicholas Wang",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXW00278"
+    },
+    {
+      "IRN": "EXS00266",
+      "Name": "Edward Stevenson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXS00266"
+    },
+    {
+      "IRN": "MMC01093",
+      "Name": "Michel Marcel Cassard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MMC01093"
+    },
+    {
+      "IRN": "PXK00390",
+      "Name": "Peihong Ke",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK00390"
+    },
+    {
+      "IRN": "JXD02180",
+      "Name": "Jack Di Lizia",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXD02180"
+    },
+    {
+      "IRN": "MXD00805",
+      "Name": "Mark Danovich",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXD00805"
+    },
+    {
+      "IRN": "RXI16849",
+      "Name": "Robert Walter Inglis",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXI16849"
+    },
+    {
+      "IRN": "SXG00847",
+      "Name": "Shunhua Guo",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXG00847"
+    },
+    {
+      "IRN": "AXS05132",
+      "Name": "Alfonso Sanchez Torres",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS05132"
+    },
+    {
+      "IRN": "CXA01224",
+      "Name": "Cagdas Aksu",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXA01224"
+    },
+    {
+      "IRN": "KPQ00002",
+      "Name": "Kevin Quinlan",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KPQ00002"
+    },
+    {
+      "IRN": "NSA01024",
+      "Name": "Norbert Aul",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NSA01024"
+    },
+    {
+      "IRN": "RXM02077",
+      "Name": "Rahul Mapara",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXM02077"
+    },
+    {
+      "IRN": "UXC38567",
+      "Name": "Urvashi Chahal",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/UXC38567"
+    },
+    {
+      "IRN": "AKP01032",
+      "Name": "Adam Keith Palmer",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AKP01032"
+    },
+    {
+      "IRN": "DXM01407",
+      "Name": "Diego Megia",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM01407"
+    },
+    {
+      "IRN": "GRB01117",
+      "Name": "Gavin Brennon",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GRB01117"
+    },
+    {
+      "IRN": "NPR01011",
+      "Name": "Nicholas Rustad",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NPR01011"
+    },
+    {
+      "IRN": "HXH00269",
+      "Name": "Henry Harding",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXH00269"
+    },
+    {
+      "IRN": "KGH01014",
+      "Name": "Kari Hallgrimsson",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KGH01014"
+    },
+    {
+      "IRN": "PXB00712",
+      "Name": "Polina Baranova",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXB00712"
+    },
+    {
+      "IRN": "NSA01024",
+      "Name": "Norbert Aul",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NSA01024"
+    },
+    {
+      "IRN": "LXT01207",
+      "Name": "Luca Toietta",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXT01207"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "MXM04237": [],
+    "JRS01294": [],
+    "SPE01029": [],
+    "AHB01080": [],
+    "EXW00283": [],
+    "RXC00703": [],
+    "AXH01102": [],
+    "CXD75493": [],
+    "HXG45829": [],
+    "JXC69538": [],
+    "JXB39773": [],
+    "NXE00104": [],
+    "TXA00268": [],
+    "DXM01407": [],
+    "LEA01004": [],
+    "JXW22377": [],
+    "NXW00278": [],
+    "EXS00266": [],
+    "MMC01093": [],
+    "PXK00390": [],
+    "JXD02180": [],
+    "MXD00805": [],
+    "RXI16849": [],
+    "SXG00847": [],
+    "AXS05132": [],
+    "CXA01224": [],
+    "KPQ00002": [],
+    "NSA01024": [],
+    "RXM02077": [],
+    "UXC38567": [],
+    "AKP01032": [],
+    "GRB01117": [],
+    "NPR01011": [],
+    "HXH00269": [],
+    "KGH01014": [],
+    "PXB00712": [],
+    "LXT01207": []
+  },
+  "metadata": {
+    "frn": "1002451",
+    "organisation_name": "Taula Capital Management (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC447685",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "23/04/2024"
+  },
+  "person_records": {
+    "MXM04237": {
+      "irn": "MXM04237",
+      "name": "Mark Meletios Melehes",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JRS01294": {
+      "irn": "JRS01294",
+      "name": "James Stevens",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SPE01029": {
+      "irn": "SPE01029",
+      "name": "Stefan Ericsson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AHB01080": {
+      "irn": "AHB01080",
+      "name": "Antony Beal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXW00283": {
+      "irn": "EXW00283",
+      "name": "Esther Wong",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXC00703": {
+      "irn": "RXC00703",
+      "name": "Russell Christie",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXH01102": {
+      "irn": "AXH01102",
+      "name": "Alan Huynh",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXD75493": {
+      "irn": "CXD75493",
+      "name": "Christopher Davies",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXG45829": {
+      "irn": "HXG45829",
+      "name": "Henry Goodfellow",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXC69538": {
+      "irn": "JXC69538",
+      "name": "James Conybear",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXB39773": {
+      "irn": "JXB39773",
+      "name": "Joshua Blakey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXE00104": {
+      "irn": "NXE00104",
+      "name": "Neil Everett",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXA00268": {
+      "irn": "TXA00268",
+      "name": "Tristan Alasoeur",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXM01407": {
+      "irn": "DXM01407",
+      "name": "Diego Megia",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LEA01004": {
+      "irn": "LEA01004",
+      "name": "Louise Evelyn Mourgues",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW22377": {
+      "irn": "JXW22377",
+      "name": "Jiefu Wang",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXW00278": {
+      "irn": "NXW00278",
+      "name": "Nicholas Wang",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXS00266": {
+      "irn": "EXS00266",
+      "name": "Edward Stevenson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MMC01093": {
+      "irn": "MMC01093",
+      "name": "Michel Marcel Cassard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK00390": {
+      "irn": "PXK00390",
+      "name": "Peihong Ke",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXD02180": {
+      "irn": "JXD02180",
+      "name": "Jack Di Lizia",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXD00805": {
+      "irn": "MXD00805",
+      "name": "Mark Danovich",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXI16849": {
+      "irn": "RXI16849",
+      "name": "Robert Walter Inglis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXG00847": {
+      "irn": "SXG00847",
+      "name": "Shunhua Guo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS05132": {
+      "irn": "AXS05132",
+      "name": "Alfonso Sanchez Torres",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXA01224": {
+      "irn": "CXA01224",
+      "name": "Cagdas Aksu",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KPQ00002": {
+      "irn": "KPQ00002",
+      "name": "Kevin Quinlan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NSA01024": {
+      "irn": "NSA01024",
+      "name": "Norbert Aul",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXM02077": {
+      "irn": "RXM02077",
+      "name": "Rahul Mapara",
+      "status": null,
+      "controlled_functions": null
+    },
+    "UXC38567": {
+      "irn": "UXC38567",
+      "name": "Urvashi Chahal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AKP01032": {
+      "irn": "AKP01032",
+      "name": "Adam Keith Palmer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GRB01117": {
+      "irn": "GRB01117",
+      "name": "Gavin Brennon",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NPR01011": {
+      "irn": "NPR01011",
+      "name": "Nicholas Rustad",
+      "status": null,
+      "controlled_functions": null
+    },
+    "HXH00269": {
+      "irn": "HXH00269",
+      "name": "Henry Harding",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KGH01014": {
+      "irn": "KGH01014",
+      "name": "Kari Hallgrimsson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXB00712": {
+      "irn": "PXB00712",
+      "name": "Polina Baranova",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXT01207": {
+      "irn": "LXT01207",
+      "name": "Luca Toietta",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

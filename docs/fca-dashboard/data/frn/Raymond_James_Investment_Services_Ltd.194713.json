@@ -1,9 +1,39 @@
 {
   "frn": 194713,
   "name": "Raymond James Investment Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/187064",
+        "Termination Date": "08/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "194713",
+        "Principal Firm Name": "Raymond James Investment Services Ltd",
+        "Effective Date": "30/01/2003",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "187064",
+        "Name": "Syndaxi Financial Planning Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "194713",
+    "organisation_name": "Raymond James Investment Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03779657",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

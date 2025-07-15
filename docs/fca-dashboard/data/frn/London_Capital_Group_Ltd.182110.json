@@ -1,9 +1,104 @@
 {
   "frn": 182110,
   "name": "London Capital Group Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/609099",
+        "Termination Date": "17/10/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "22/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "609099",
+        "Name": "Alexander Ceasar Ali Badr Talei"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/474746",
+        "Termination Date": "15/06/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "02/11/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "474746",
+        "Name": "Betfair Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/522362",
+        "Termination Date": "29/07/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "16/04/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "522362",
+        "Name": "JD Global Markets Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/469751",
+        "Termination Date": "09/04/2011",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "02/07/2007",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "469751",
+        "Name": "Paddy Power Financials Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/495737",
+        "Termination Date": "27/12/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "29/01/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "495737",
+        "Name": "SBFS Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/502871",
+        "Termination Date": "27/12/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "182110",
+        "Principal Firm Name": "London Capital Group Ltd",
+        "Effective Date": "25/06/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "502871",
+        "Name": "Tradefair Spreads Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "182110",
+    "organisation_name": "London Capital Group Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03218125",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,52 @@
 {
   "frn": 591755,
   "name": "ASIL PARTNERS LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/702486",
+        "Termination Date": "07/12/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "591755",
+        "Principal Firm Name": "ASIL PARTNERS LLP",
+        "Effective Date": "27/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "702486",
+        "Name": "Regent Park Capital Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716466",
+        "RecordSubType": "Full",
+        "Principal FRN": "591755",
+        "Principal Firm Name": "ASIL PARTNERS LLP",
+        "Effective Date": "11/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716466",
+        "Name": "Apeiron Securities LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "591755",
+    "organisation_name": "ASIL PARTNERS LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC376489",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "13/02/2013"
+  },
+  "person_records": {}
 }

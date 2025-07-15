@@ -1,9 +1,37 @@
 {
   "frn": 474602,
   "name": "Capital Generation Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/827788",
+        "RecordSubType": "Full",
+        "Principal FRN": "474602",
+        "Principal Firm Name": "Capital Generation Partners LLP",
+        "Effective Date": "05/12/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "827788",
+        "Name": "CGE Partners LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "474602",
+    "organisation_name": "Capital Generation Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC331835",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "18/02/2008"
+  },
+  "person_records": {}
 }

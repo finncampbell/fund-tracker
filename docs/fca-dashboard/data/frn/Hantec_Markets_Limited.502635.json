@@ -1,9 +1,91 @@
 {
   "frn": 502635,
   "name": "Hantec Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/722361",
+        "Termination Date": "21/10/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "502635",
+        "Principal Firm Name": "Hantec Markets Limited",
+        "Effective Date": "20/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "722361",
+        "Name": "ELXI LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/722361",
+        "Termination Date": "20/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "502635",
+        "Principal Firm Name": "Hantec Markets Limited",
+        "Effective Date": "16/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "722361",
+        "Name": "ELXI LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/795937",
+        "Termination Date": "03/09/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "502635",
+        "Principal Firm Name": "Hantec Markets Limited",
+        "Effective Date": "07/12/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "795937",
+        "Name": "Finance Managers International Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/590731",
+        "Termination Date": "30/05/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "502635",
+        "Principal Firm Name": "Hantec Markets Limited",
+        "Effective Date": "05/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "590731",
+        "Name": "Global Capital Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/590731",
+        "Termination Date": "07/09/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "502635",
+        "Principal Firm Name": "Hantec Markets Limited",
+        "Effective Date": "27/06/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "590731",
+        "Name": "Global Capital Advisors Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "502635",
+    "organisation_name": "Hantec Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06819047",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "16/06/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,39 @@
 {
   "frn": 489807,
   "name": "MCM Bespoke Investment Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/593729",
+        "Termination Date": "11/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "489807",
+        "Principal Firm Name": "MCM Bespoke Investment Services Limited",
+        "Effective Date": "03/01/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "593729",
+        "Name": "Penney, Ruddy & Winter Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489807",
+    "organisation_name": "MCM Bespoke Investment Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06460768",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "16/02/2009"
+  },
+  "person_records": {}
 }

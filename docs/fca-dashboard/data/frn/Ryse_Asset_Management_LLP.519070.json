@@ -1,9 +1,52 @@
 {
   "frn": 519070,
   "name": "Ryse Asset Management LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/709340",
+        "Termination Date": "06/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "519070",
+        "Principal Firm Name": "Ryse Asset Management LLP",
+        "Effective Date": "06/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "709340",
+        "Name": "Bespoke Family Office Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/713812",
+        "Termination Date": "19/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "519070",
+        "Principal Firm Name": "Ryse Asset Management LLP",
+        "Effective Date": "13/08/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "713812",
+        "Name": "OX Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "519070",
+    "organisation_name": "Ryse Asset Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC352409",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "26/07/2010"
+  },
+  "person_records": {}
 }

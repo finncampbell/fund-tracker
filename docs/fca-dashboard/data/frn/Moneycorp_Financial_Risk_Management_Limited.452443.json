@@ -1,9 +1,22 @@
 {
   "frn": 452443,
   "name": "Moneycorp Financial Risk Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "452443",
+    "organisation_name": "Moneycorp Financial Risk Management Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "05774742",
+    "system_timestamp": "23/06/2025 21:48",
+    "status_effective_date": "12/09/2006"
+  },
+  "person_records": {}
 }

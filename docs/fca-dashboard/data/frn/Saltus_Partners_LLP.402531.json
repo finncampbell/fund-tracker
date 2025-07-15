@@ -1,9 +1,52 @@
 {
   "frn": 402531,
   "name": "Saltus Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/683295",
+        "Termination Date": "09/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "402531",
+        "Principal Firm Name": "Saltus Partners LLP",
+        "Effective Date": "09/04/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "683295",
+        "Name": "Saltus Financial Planning Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/413684",
+        "Termination Date": "20/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "402531",
+        "Principal Firm Name": "Saltus Partners LLP",
+        "Effective Date": "18/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "413684",
+        "Name": "Saltus Financial Services Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "402531",
+    "organisation_name": "Saltus Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC308328",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "12/11/2004"
+  },
+  "person_records": {}
 }

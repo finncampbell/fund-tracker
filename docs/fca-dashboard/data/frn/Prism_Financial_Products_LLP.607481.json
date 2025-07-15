@@ -1,9 +1,37 @@
 {
   "frn": 607481,
   "name": "Prism Financial Products LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/782608",
+        "RecordSubType": "Full",
+        "Principal FRN": "607481",
+        "Principal Firm Name": "Prism Financial Products LLP",
+        "Effective Date": "26/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "782608",
+        "Name": "Prism Financial Products LP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "607481",
+    "organisation_name": "Prism Financial Products LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC385847",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "24/01/2014"
+  },
+  "person_records": {}
 }

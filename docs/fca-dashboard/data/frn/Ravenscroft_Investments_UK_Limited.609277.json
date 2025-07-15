@@ -1,9 +1,78 @@
 {
   "frn": 609277,
   "name": "Ravenscroft Investments (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/679424",
+        "Termination Date": "10/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "609277",
+        "Principal Firm Name": "Ravenscroft Investments (UK) Limited",
+        "Effective Date": "26/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "679424",
+        "Name": "Ravenscroft (CI) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/773445",
+        "Termination Date": "21/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "609277",
+        "Principal Firm Name": "Ravenscroft Investments (UK) Limited",
+        "Effective Date": "08/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "773445",
+        "Name": "Ravenscroft Investment Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/772842",
+        "Termination Date": "22/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "609277",
+        "Principal Firm Name": "Ravenscroft Investments (UK) Limited",
+        "Effective Date": "01/03/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "772842",
+        "Name": "Ravenscroft Jersey Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/919012",
+        "Termination Date": "18/02/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "609277",
+        "Principal Firm Name": "Ravenscroft Investments (UK) Limited",
+        "Effective Date": "06/01/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "919012",
+        "Name": "Tees Investment Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "609277",
+    "organisation_name": "Ravenscroft Investments (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07394226",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "31/07/2014"
+  },
+  "person_records": {}
 }

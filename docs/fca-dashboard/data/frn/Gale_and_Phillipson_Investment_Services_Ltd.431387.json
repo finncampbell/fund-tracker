@@ -1,9 +1,52 @@
 {
   "frn": 431387,
   "name": "Gale and Phillipson Investment Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/703337",
+        "Termination Date": "24/10/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "431387",
+        "Principal Firm Name": "Gale and Phillipson Investment Services Ltd",
+        "Effective Date": "29/05/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "703337",
+        "Name": "Finli (GPS) Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/200441",
+        "Termination Date": "01/08/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "431387",
+        "Principal Firm Name": "Gale and Phillipson Investment Services Ltd",
+        "Effective Date": "03/06/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "200441",
+        "Name": "Priestgate Financial Planning Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "431387",
+    "organisation_name": "Gale and Phillipson Investment Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05409822",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "18/05/2005"
+  },
+  "person_records": {}
 }

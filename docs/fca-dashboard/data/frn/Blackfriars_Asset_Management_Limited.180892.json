@@ -1,9 +1,39 @@
 {
   "frn": 180892,
   "name": "Blackfriars Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/768362",
+        "Termination Date": "04/02/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "180892",
+        "Principal Firm Name": "Blackfriars Asset Management Limited",
+        "Effective Date": "01/01/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "768362",
+        "Name": "Clarity Advice & Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "180892",
+    "organisation_name": "Blackfriars Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03173991",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

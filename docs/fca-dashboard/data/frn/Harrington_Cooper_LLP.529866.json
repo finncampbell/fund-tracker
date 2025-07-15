@@ -1,9 +1,51 @@
 {
   "frn": 529866,
   "name": "Harrington Cooper LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/781161",
+        "Termination Date": "13/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "529866",
+        "Principal Firm Name": "Harrington Cooper LLP",
+        "Effective Date": "07/06/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "781161",
+        "Name": "FHG Advisory Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/550892",
+        "Termination Date": "02/05/2012",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "529866",
+        "Principal Firm Name": "Harrington Cooper LLP",
+        "Effective Date": "13/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "550892",
+        "Name": "Steven Kenneth Brown"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "529866",
+    "organisation_name": "Harrington Cooper LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC319697",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "08/02/2011"
+  },
+  "person_records": {}
 }

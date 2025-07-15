@@ -1,9 +1,52 @@
 {
   "frn": 820474,
   "name": "MONOGRAM CAPITAL MANAGEMENT LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/821307",
+        "Termination Date": "26/05/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "820474",
+        "Principal Firm Name": "MONOGRAM CAPITAL MANAGEMENT LTD",
+        "Effective Date": "07/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "821307",
+        "Name": "Event Risk FX Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/797503",
+        "Termination Date": "27/01/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "820474",
+        "Principal Firm Name": "MONOGRAM CAPITAL MANAGEMENT LTD",
+        "Effective Date": "07/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "797503",
+        "Name": "Solus Capital Partners Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "820474",
+    "organisation_name": "MONOGRAM CAPITAL MANAGEMENT LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11187498",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "20/12/2018"
+  },
+  "person_records": {}
 }

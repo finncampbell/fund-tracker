@@ -1,9 +1,210 @@
 {
   "frn": 772626,
   "name": "FCS Capital Markets Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "CXK01336",
+      "Name": "Christine Kendall-Jones",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXK01336"
+    },
+    {
+      "IRN": "JJD01147",
+      "Name": "Juan Jose De La Vina",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JJD01147"
+    },
+    {
+      "IRN": "DJS01494",
+      "Name": "Daryl James Smith",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJS01494"
+    },
+    {
+      "IRN": "MAG01164",
+      "Name": "Miguel Angel Gonzalez",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAG01164"
+    },
+    {
+      "IRN": "BXZ10280",
+      "Name": "Benjamin Pierre Albert Zumstein",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXZ10280"
+    },
+    {
+      "IRN": "CXK01336",
+      "Name": "Christine Kendall-Jones",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXK01336"
+    },
+    {
+      "IRN": "DJS01494",
+      "Name": "Daryl James Smith",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DJS01494"
+    },
+    {
+      "IRN": "JJD01147",
+      "Name": "Juan Jose De La Vina",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JJD01147"
+    },
+    {
+      "IRN": "MAG01164",
+      "Name": "Miguel Angel Gonzalez",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAG01164"
+    },
+    {
+      "IRN": "MBB01046",
+      "Name": "Marcel Bongay Bredenkamp",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MBB01046"
+    },
+    {
+      "IRN": "SPH01121",
+      "Name": "Simon Paul Harris",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SPH01121"
+    },
+    {
+      "IRN": "VXM00163",
+      "Name": "Vicente Mancheno Sagrario",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXM00163"
+    },
+    {
+      "IRN": "BXZ10280",
+      "Name": "Benjamin Pierre Albert Zumstein",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXZ10280"
+    },
+    {
+      "IRN": "FXP10834",
+      "Name": "Françoise Renée Pozzi",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXP10834"
+    },
+    {
+      "IRN": "KXK10972",
+      "Name": "Kolja Diego Kirstein",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXK10972"
+    },
+    {
+      "IRN": "KXN01328",
+      "Name": "Koran Elizabeth North",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXN01328"
+    },
+    {
+      "IRN": "EXR01196",
+      "Name": "Esteban Rubini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXR01196"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "CXK01336": [],
+    "JJD01147": [],
+    "DJS01494": [],
+    "MAG01164": [],
+    "BXZ10280": [],
+    "MBB01046": [],
+    "SPH01121": [],
+    "VXM00163": [],
+    "FXP10834": [],
+    "KXK10972": [],
+    "KXN01328": [],
+    "EXR01196": []
+  },
+  "metadata": {
+    "frn": "772626",
+    "organisation_name": "FCS Capital Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "10418488",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "11/01/2018"
+  },
+  "person_records": {
+    "CXK01336": {
+      "irn": "CXK01336",
+      "name": "Christine Kendall-Jones",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JJD01147": {
+      "irn": "JJD01147",
+      "name": "Juan Jose De La Vina",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DJS01494": {
+      "irn": "DJS01494",
+      "name": "Daryl James Smith",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAG01164": {
+      "irn": "MAG01164",
+      "name": "Miguel Angel Gonzalez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXZ10280": {
+      "irn": "BXZ10280",
+      "name": "Benjamin Pierre Albert Zumstein",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MBB01046": {
+      "irn": "MBB01046",
+      "name": "Marcel Bongay Bredenkamp",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SPH01121": {
+      "irn": "SPH01121",
+      "name": "Simon Paul Harris",
+      "status": null,
+      "controlled_functions": null
+    },
+    "VXM00163": {
+      "irn": "VXM00163",
+      "name": "Vicente Mancheno Sagrario",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXP10834": {
+      "irn": "FXP10834",
+      "name": "Françoise Renée Pozzi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXK10972": {
+      "irn": "KXK10972",
+      "name": "Kolja Diego Kirstein",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXN01328": {
+      "irn": "KXN01328",
+      "name": "Koran Elizabeth North",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXR01196": {
+      "irn": "EXR01196",
+      "name": "Esteban Rubini",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

@@ -1,9 +1,21 @@
 {
   "frn": 587094,
   "name": "Annandale Financial Services LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "587094",
+    "organisation_name": "Annandale Financial Services LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SO304032",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "17/12/2012"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,52 @@
 {
   "frn": 226344,
   "name": "Walker Crips Investment Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/565186",
+        "Termination Date": "13/03/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "226344",
+        "Principal Firm Name": "Walker Crips Investment Management Limited",
+        "Effective Date": "23/09/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "565186",
+        "Name": "Britdaq Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/533333",
+        "Termination Date": "03/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "226344",
+        "Principal Firm Name": "Walker Crips Investment Management Limited",
+        "Effective Date": "12/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "533333",
+        "Name": "Symvan Securities Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "226344",
+    "organisation_name": "Walker Crips Investment Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04774117",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "05/04/2004"
+  },
+  "person_records": {}
 }

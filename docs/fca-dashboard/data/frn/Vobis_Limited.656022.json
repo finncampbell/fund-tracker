@@ -1,9 +1,77 @@
 {
   "frn": 656022,
   "name": "Vobis Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/721469",
+        "Termination Date": "23/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "656022",
+        "Principal Firm Name": "Vobis Limited",
+        "Effective Date": "16/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "721469",
+        "Name": "Bright I Brokers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/797513",
+        "Termination Date": "25/07/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "656022",
+        "Principal Firm Name": "Vobis Limited",
+        "Effective Date": "02/01/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "797513",
+        "Name": "Capital Pilot Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/720172",
+        "Termination Date": "08/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "656022",
+        "Principal Firm Name": "Vobis Limited",
+        "Effective Date": "12/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "720172",
+        "Name": "Outbox Solutions Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/911826",
+        "RecordSubType": "Full",
+        "Principal FRN": "656022",
+        "Principal Firm Name": "Vobis Limited",
+        "Effective Date": "31/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "911826",
+        "Name": "Silver Levene Financial Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "656022",
+    "organisation_name": "Vobis Limited",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "08811777",
+    "system_timestamp": "23/06/2025 22:04",
+    "status_effective_date": "15/04/2015"
+  },
+  "person_records": {}
 }

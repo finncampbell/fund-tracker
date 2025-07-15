@@ -1,9 +1,37 @@
 {
   "frn": 1003843,
   "name": "Virgil Alternative Investments UK Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/967399",
+        "RecordSubType": "Full",
+        "Principal FRN": "1003843",
+        "Principal Firm Name": "Virgil Alternative Investments UK Ltd",
+        "Effective Date": "06/02/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "967399",
+        "Name": "Jacobi Asset Management (Holdings) LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "1003843",
+    "organisation_name": "Virgil Alternative Investments UK Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12432050",
+    "system_timestamp": "23/06/2025 21:31",
+    "status_effective_date": "02/09/2024"
+  },
+  "person_records": {}
 }

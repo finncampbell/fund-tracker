@@ -1,9 +1,38 @@
 {
   "frn": 588466,
   "name": "Sorbus Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/811667",
+        "Termination Date": "25/11/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "588466",
+        "Principal Firm Name": "Sorbus Partners LLP",
+        "Effective Date": "14/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "811667",
+        "Name": "Blackwood Asset Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "588466",
+    "organisation_name": "Sorbus Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC378465",
+    "system_timestamp": "23/06/2025 21:59",
+    "status_effective_date": "29/11/2012"
+  },
+  "person_records": {}
 }

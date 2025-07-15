@@ -1,9 +1,38 @@
 {
   "frn": 507901,
   "name": "MET Asset Management UK LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539979",
+        "Termination Date": "13/02/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "507901",
+        "Principal Firm Name": "MET Asset Management UK LLP",
+        "Effective Date": "24/01/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "539979",
+        "Name": "Kingsley Asset Management LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "507901",
+    "organisation_name": "MET Asset Management UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC345431",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "05/07/2010"
+  },
+  "person_records": {}
 }

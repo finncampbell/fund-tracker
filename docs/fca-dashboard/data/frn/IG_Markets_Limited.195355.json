@@ -1,9 +1,65 @@
 {
   "frn": 195355,
   "name": "IG Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/501598",
+        "Termination Date": "29/07/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "195355",
+        "Principal Firm Name": "IG Markets Limited",
+        "Effective Date": "27/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "501598",
+        "Name": "Angel Pena Moreno"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/501601",
+        "Termination Date": "29/07/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "195355",
+        "Principal Firm Name": "IG Markets Limited",
+        "Effective Date": "27/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "501601",
+        "Name": "Decainversiones Mobiliarias S.L."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/501605",
+        "Termination Date": "29/07/2009",
+        "RecordSubType": "Full",
+        "Principal FRN": "195355",
+        "Principal Firm Name": "IG Markets Limited",
+        "Effective Date": "27/05/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "501605",
+        "Name": "Mundo Capital S.L."
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "195355",
+    "organisation_name": "IG Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04008957",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

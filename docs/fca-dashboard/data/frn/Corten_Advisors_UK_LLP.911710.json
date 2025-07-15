@@ -1,9 +1,21 @@
 {
   "frn": 911710,
   "name": "Corten Advisors UK LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "911710",
+    "organisation_name": "Corten Advisors UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC426538",
+    "system_timestamp": "23/06/2025 22:16",
+    "status_effective_date": "06/01/2020"
+  },
+  "person_records": {}
 }

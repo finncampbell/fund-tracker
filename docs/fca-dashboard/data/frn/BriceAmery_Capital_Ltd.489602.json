@@ -1,9 +1,129 @@
 {
   "frn": 489602,
   "name": "BriceAmery Capital Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/603831",
+        "Termination Date": "12/08/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "05/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "603831",
+        "Name": "Boilershield Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/586771",
+        "Termination Date": "22/03/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "22/08/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "586771",
+        "Name": "CrowdBnk Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/549994",
+        "Termination Date": "26/11/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "05/05/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "549994",
+        "Name": "GeoCapita Financial Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/585979",
+        "Termination Date": "31/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "07/08/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "585979",
+        "Name": "INTCAS (UK) LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/612712",
+        "Termination Date": "21/10/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "03/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "612712",
+        "Name": "London Business School"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/575145",
+        "Termination Date": "26/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "22/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "575145",
+        "Name": "Prodigy Finance Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/751089",
+        "Termination Date": "15/11/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "28/06/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "751089",
+        "Name": "Prodigy Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/603702",
+        "Termination Date": "12/08/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "489602",
+        "Principal Firm Name": "BriceAmery Capital Ltd",
+        "Effective Date": "04/07/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "603702",
+        "Name": "Warmserve Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489602",
+    "organisation_name": "BriceAmery Capital Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05523093",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "03/04/2009"
+  },
+  "person_records": {}
 }

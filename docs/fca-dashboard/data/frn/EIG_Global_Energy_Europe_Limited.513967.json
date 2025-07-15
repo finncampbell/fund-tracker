@@ -1,9 +1,22 @@
 {
   "frn": 513967,
   "name": "EIG Global Energy (Europe) Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "513967",
+    "organisation_name": "EIG Global Energy (Europe) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06957743",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "27/07/2010"
+  },
+  "person_records": {}
 }

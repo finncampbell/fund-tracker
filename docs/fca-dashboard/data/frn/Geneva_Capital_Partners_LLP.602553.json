@@ -1,9 +1,38 @@
 {
   "frn": 602553,
   "name": "Geneva Capital Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/940794",
+        "Termination Date": "25/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "602553",
+        "Principal Firm Name": "Geneva Capital Partners LLP",
+        "Effective Date": "11/12/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "940794",
+        "Name": "Cryptonomics LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "602553",
+    "organisation_name": "Geneva Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC383147",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "02/04/2014"
+  },
+  "person_records": {}
 }

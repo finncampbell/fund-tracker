@@ -1,9 +1,22 @@
 {
   "frn": 114059,
   "name": "IG Index Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "114059",
+    "organisation_name": "IG Index Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "01190902",
+    "system_timestamp": "23/06/2025 21:32",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

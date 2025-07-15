@@ -1,9 +1,21 @@
 {
   "frn": 433809,
   "name": "Argonaut Capital Partners LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "433809",
+    "organisation_name": "Argonaut Capital Partners LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SO300614",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "30/09/2005"
+  },
+  "person_records": {}
 }

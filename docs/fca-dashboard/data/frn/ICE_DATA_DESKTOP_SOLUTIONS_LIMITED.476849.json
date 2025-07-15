@@ -1,9 +1,22 @@
 {
   "frn": 476849,
   "name": "ICE DATA DESKTOP SOLUTIONS LIMITED",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "476849",
+    "organisation_name": "ICE DATA DESKTOP SOLUTIONS LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "05615484",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "17/12/2008"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,78 @@
 {
   "frn": 534484,
   "name": "London & Eastern LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1000664",
+        "Termination Date": "12/11/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "534484",
+        "Principal Firm Name": "London & Eastern LLP",
+        "Effective Date": "31/07/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1000664",
+        "Name": "Blackwell Global AIM LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/655342",
+        "Termination Date": "14/08/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "534484",
+        "Principal Firm Name": "London & Eastern LLP",
+        "Effective Date": "24/11/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "655342",
+        "Name": "Kin Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/795508",
+        "Termination Date": "23/04/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "534484",
+        "Principal Firm Name": "London & Eastern LLP",
+        "Effective Date": "30/07/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "795508",
+        "Name": "RJBCO Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/739090",
+        "RecordSubType": "Full",
+        "Principal FRN": "534484",
+        "Principal Firm Name": "London & Eastern LLP",
+        "Effective Date": "03/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "739090",
+        "Name": "Pelican Exchange Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "534484",
+    "organisation_name": "London & Eastern LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC345870",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "23/02/2011"
+  },
+  "person_records": {}
 }

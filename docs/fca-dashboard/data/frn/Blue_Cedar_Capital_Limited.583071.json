@@ -1,9 +1,43 @@
 {
   "frn": 583071,
   "name": "Blue Cedar Capital Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "NXG01079",
+      "Name": "Nader Goodarzi",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXG01079"
+    },
+    {
+      "IRN": "NXG01079",
+      "Name": "Nader Goodarzi",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXG01079"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "NXG01079": []
+  },
+  "metadata": {
+    "frn": "583071",
+    "organisation_name": "Blue Cedar Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08067275",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "28/08/2012"
+  },
+  "person_records": {
+    "NXG01079": {
+      "irn": "NXG01079",
+      "name": "Nader Goodarzi",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

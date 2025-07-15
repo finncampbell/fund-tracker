@@ -1,9 +1,21 @@
 {
   "frn": 978020,
   "name": "New England Asset Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "978020",
+    "organisation_name": "New England Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC031042",
+    "system_timestamp": "23/06/2025 22:21",
+    "status_effective_date": "03/01/2023"
+  },
+  "person_records": {}
 }

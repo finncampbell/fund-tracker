@@ -1,9 +1,38 @@
 {
   "frn": 830774,
   "name": "BTG PACTUAL (UK) LIMITED",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975552",
+        "Termination Date": "29/05/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "830774",
+        "Principal Firm Name": "BTG PACTUAL (UK) LIMITED",
+        "Effective Date": "12/05/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "975552",
+        "Name": "Scarlet Capital Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "830774",
+    "organisation_name": "BTG PACTUAL (UK) LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "11754082",
+    "system_timestamp": "23/06/2025 22:14",
+    "status_effective_date": "18/07/2019"
+  },
+  "person_records": {}
 }

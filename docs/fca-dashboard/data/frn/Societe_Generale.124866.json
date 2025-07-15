@@ -1,9 +1,39 @@
 {
   "frn": 124866,
   "name": "Societe Generale",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/206376",
+        "Termination Date": "01/11/2007",
+        "RecordSubType": "Full",
+        "Principal FRN": "124866",
+        "Principal Firm Name": "Societe Generale",
+        "Effective Date": "02/03/2001",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "206376",
+        "Name": "Gryphon Futures Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "124866",
+    "organisation_name": "Societe Generale",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC000268",
+    "system_timestamp": "23/06/2025 21:35",
+    "status_effective_date": "03/08/2022"
+  },
+  "person_records": {}
 }

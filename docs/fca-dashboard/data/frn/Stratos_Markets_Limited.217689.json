@@ -1,9 +1,104 @@
 {
   "frn": 217689,
   "name": "Stratos Markets Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/589450",
+        "Termination Date": "11/03/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "11/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "589450",
+        "Name": "CB London Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/615211",
+        "Termination Date": "05/03/2015",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "31/01/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "615211",
+        "Name": "MDS & AM LTD"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/566651",
+        "Termination Date": "23/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "20/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "566651",
+        "Name": "Opal Core Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/566651",
+        "Termination Date": "19/02/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "17/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "566651",
+        "Name": "Opal Core Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597328",
+        "Termination Date": "06/11/2014",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "18/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597328",
+        "Name": "Timothy McLachlan"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591335",
+        "Termination Date": "19/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "217689",
+        "Principal Firm Name": "Stratos Markets Limited",
+        "Effective Date": "15/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591335",
+        "Name": "TopTradr Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "217689",
+    "organisation_name": "Stratos Markets Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04072877",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "27/05/2003"
+  },
+  "person_records": {}
 }

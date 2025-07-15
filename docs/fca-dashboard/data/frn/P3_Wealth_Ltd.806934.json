@@ -1,9 +1,22 @@
 {
   "frn": 806934,
   "name": "P3 Wealth Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "806934",
+    "organisation_name": "P3 Wealth Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09657102",
+    "system_timestamp": "23/06/2025 22:13",
+    "status_effective_date": "11/09/2018"
+  },
+  "person_records": {}
 }

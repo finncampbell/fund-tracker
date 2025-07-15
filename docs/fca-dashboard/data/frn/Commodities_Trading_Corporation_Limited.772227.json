@@ -1,9 +1,75 @@
 {
   "frn": 772227,
   "name": "Commodities Trading Corporation Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "DMM01209",
+      "Name": "Donald Mark MacLean",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DMM01209"
+    },
+    {
+      "IRN": "TJR01084",
+      "Name": "Thibaut Alexis Joseph Remoundos",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TJR01084"
+    },
+    {
+      "IRN": "DMM01209",
+      "Name": "Donald Mark MacLean",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DMM01209"
+    },
+    {
+      "IRN": "TJR01084",
+      "Name": "Thibaut Alexis Joseph Remoundos",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TJR01084"
+    },
+    {
+      "IRN": "BMD01040",
+      "Name": "Bastien Declercq",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BMD01040"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "DMM01209": [],
+    "TJR01084": [],
+    "BMD01040": []
+  },
+  "metadata": {
+    "frn": "772227",
+    "organisation_name": "Commodities Trading Corporation Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09827671",
+    "system_timestamp": "23/06/2025 22:10",
+    "status_effective_date": "18/05/2017"
+  },
+  "person_records": {
+    "DMM01209": {
+      "irn": "DMM01209",
+      "name": "Donald Mark MacLean",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TJR01084": {
+      "irn": "TJR01084",
+      "name": "Thibaut Alexis Joseph Remoundos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BMD01040": {
+      "irn": "BMD01040",
+      "name": "Bastien Declercq",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

@@ -1,9 +1,22 @@
 {
   "frn": 223051,
   "name": "Guinness Atkinson Asset Management, Inc",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "223051",
+    "organisation_name": "Guinness Atkinson Asset Management, Inc",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "FC024762",
+    "system_timestamp": "23/06/2025 21:43",
+    "status_effective_date": "24/04/2003"
+  },
+  "person_records": {}
 }

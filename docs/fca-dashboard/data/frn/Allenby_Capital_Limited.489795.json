@@ -1,9 +1,39 @@
 {
   "frn": 489795,
   "name": "Allenby Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/591191",
+        "Termination Date": "02/07/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "489795",
+        "Principal Firm Name": "Allenby Capital Limited",
+        "Effective Date": "14/11/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "591191",
+        "Name": "Invercap Holdings Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "489795",
+    "organisation_name": "Allenby Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06706681",
+    "system_timestamp": "23/06/2025 21:52",
+    "status_effective_date": "17/03/2009"
+  },
+  "person_records": {}
 }

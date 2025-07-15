@@ -1,9 +1,39 @@
 {
   "frn": 529939,
   "name": "Theorema Advisors UK LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/621517",
+        "Termination Date": "20/07/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "529939",
+        "Principal Firm Name": "Theorema Advisors UK LLP",
+        "Effective Date": "16/04/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "621517",
+        "Name": "Think Global Investments LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "529939",
+    "organisation_name": "Theorema Advisors UK LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355838",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "05/05/2011"
+  },
+  "person_records": {}
 }

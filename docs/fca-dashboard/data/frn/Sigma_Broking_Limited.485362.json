@@ -1,9 +1,39 @@
 {
   "frn": 485362,
   "name": "Sigma Broking Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/765243",
+        "Termination Date": "28/02/2019",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "485362",
+        "Principal Firm Name": "Sigma Broking Limited",
+        "Effective Date": "25/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "765243",
+        "Name": "Interfin Partners Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "485362",
+    "organisation_name": "Sigma Broking Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06584426",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "05/08/2008"
+  },
+  "person_records": {}
 }

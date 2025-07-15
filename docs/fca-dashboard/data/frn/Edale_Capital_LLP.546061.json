@@ -1,9 +1,21 @@
 {
   "frn": 546061,
   "name": "Edale Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "546061",
+    "organisation_name": "Edale Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC361162",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "03/01/2012"
+  },
+  "person_records": {}
 }

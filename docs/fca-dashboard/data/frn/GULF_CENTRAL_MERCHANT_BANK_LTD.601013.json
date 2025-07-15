@@ -1,9 +1,22 @@
 {
   "frn": 601013,
   "name": "GULF CENTRAL MERCHANT BANK LTD",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "601013",
+    "organisation_name": "GULF CENTRAL MERCHANT BANK LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07815981",
+    "system_timestamp": "23/06/2025 22:00",
+    "status_effective_date": "12/07/2013"
+  },
+  "person_records": {}
 }

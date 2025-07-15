@@ -1,9 +1,90 @@
 {
   "frn": 551170,
   "name": "Mariana UFP LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/952707",
+        "Termination Date": "24/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "551170",
+        "Principal Firm Name": "Mariana UFP LLP",
+        "Effective Date": "11/06/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "952707",
+        "Name": "Avalon Capital Markets Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/598663",
+        "Termination Date": "16/06/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "551170",
+        "Principal Firm Name": "Mariana UFP LLP",
+        "Effective Date": "04/04/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "598663",
+        "Name": "Mariana Capital Management LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/792663",
+        "Termination Date": "11/11/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "551170",
+        "Principal Firm Name": "Mariana UFP LLP",
+        "Effective Date": "30/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "792663",
+        "Name": "Mariana Commodities Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/648911",
+        "RecordSubType": "Full",
+        "Principal FRN": "551170",
+        "Principal Firm Name": "Mariana UFP LLP",
+        "Effective Date": "03/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "648911",
+        "Name": "Mariana Distribution LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/649237",
+        "RecordSubType": "Full",
+        "Principal FRN": "551170",
+        "Principal Firm Name": "Mariana UFP LLP",
+        "Effective Date": "09/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "649237",
+        "Name": "Mariana UFP (Americas) Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "551170",
+    "organisation_name": "Mariana UFP LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC363748",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "13/02/2012"
+  },
+  "person_records": {}
 }

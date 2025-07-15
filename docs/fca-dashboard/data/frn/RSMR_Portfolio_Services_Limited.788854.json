@@ -1,9 +1,38 @@
 {
   "frn": 788854,
   "name": "RSMR Portfolio Services Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/843810",
+        "Termination Date": "03/11/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "788854",
+        "Principal Firm Name": "RSMR Portfolio Services Limited",
+        "Effective Date": "11/06/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "843810",
+        "Name": "Altium Investment Management Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "788854",
+    "organisation_name": "RSMR Portfolio Services Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07137872",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "02/01/2018"
+  },
+  "person_records": {}
 }

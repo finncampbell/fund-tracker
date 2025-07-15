@@ -1,9 +1,65 @@
 {
   "frn": 142888,
   "name": "Goldman Sachs International",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/209700",
+        "Termination Date": "15/03/2002",
+        "RecordSubType": "Full",
+        "Principal FRN": "142888",
+        "Principal Firm Name": "Goldman Sachs International",
+        "Effective Date": "06/02/2002",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "209700",
+        "Name": "Arch Asset Management"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/541053",
+        "Termination Date": "31/03/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "142888",
+        "Principal Firm Name": "Goldman Sachs International",
+        "Effective Date": "07/02/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "541053",
+        "Name": "Goldman Sachs (Russia)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/483773",
+        "Termination Date": "03/11/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "142888",
+        "Principal Firm Name": "Goldman Sachs International",
+        "Effective Date": "27/05/2008",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "483773",
+        "Name": "Rothesay Pensions Management Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "142888",
+    "organisation_name": "Goldman Sachs International",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02263951",
+    "system_timestamp": "23/06/2025 21:36",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

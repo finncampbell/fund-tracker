@@ -1,9 +1,21 @@
 {
   "frn": 514689,
   "name": "Columna Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "514689",
+    "organisation_name": "Columna Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC345976",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "02/07/2010"
+  },
+  "person_records": {}
 }

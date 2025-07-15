@@ -1,9 +1,38 @@
 {
   "frn": 580056,
   "name": "Abans Global Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/682489",
+        "Termination Date": "16/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "580056",
+        "Principal Firm Name": "Abans Global Limited",
+        "Effective Date": "02/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "682489",
+        "Name": "AuraFX (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "580056",
+    "organisation_name": "Abans Global Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07225900",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "02/04/2013"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,21 @@
 {
   "frn": 795386,
   "name": "Spire Management Limited",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "795386",
+    "organisation_name": "Spire Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08136849",
+    "system_timestamp": "23/06/2025 22:12",
+    "status_effective_date": "13/02/2018"
+  },
+  "person_records": {}
 }

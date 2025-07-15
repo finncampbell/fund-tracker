@@ -1,9 +1,156 @@
 {
   "frn": 552894,
   "name": "Dolfin Financial (UK) Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/783192",
+        "Termination Date": "16/12/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "03/07/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "783192",
+        "Name": "Berkeley Investment Management Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/790275",
+        "Termination Date": "21/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "03/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "790275",
+        "Name": "Cipher Principles Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/809195",
+        "Termination Date": "03/02/2021",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "16/05/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "809195",
+        "Name": "GOLDNKEYS Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/820729",
+        "Termination Date": "18/01/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "13/09/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "820729",
+        "Name": "Hedera Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/770868",
+        "Termination Date": "05/04/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "02/02/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "770868",
+        "Name": "Knightsbridge Private Wealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/742731",
+        "Termination Date": "15/09/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "01/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "742731",
+        "Name": "Knightsbridge Wealth Solutions Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/813104",
+        "Termination Date": "16/10/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "05/07/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "813104",
+        "Name": "New Horizon Global Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/742853",
+        "Termination Date": "30/01/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "01/04/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "742853",
+        "Name": "Regency Project Management Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/838129",
+        "Termination Date": "03/02/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "25/03/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "838129",
+        "Name": "Rosecut Technologies Ltd."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/742412",
+        "Termination Date": "08/03/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "552894",
+        "Principal Firm Name": "Dolfin Financial (UK) Ltd",
+        "Effective Date": "31/03/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "742412",
+        "Name": "Saba Partners LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "552894",
+    "organisation_name": "Dolfin Financial (UK) Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "07431519",
+    "system_timestamp": "23/06/2025 21:56",
+    "status_effective_date": "25/10/2011"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 515793,
   "name": "Tamsel (UK) Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/710158",
+        "Termination Date": "15/01/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "515793",
+        "Principal Firm Name": "Tamsel (UK) Limited",
+        "Effective Date": "14/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "710158",
+        "Name": "Salute Advisers (UK) Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "515793",
+    "organisation_name": "Tamsel (UK) Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06509551",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "11/06/2010"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,169 @@
 {
   "frn": 437558,
   "name": "Global Investment Strategy UK Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/578341",
+        "Termination Date": "11/09/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "26/03/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "578341",
+        "Name": "Ascend Capital plc"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/792383",
+        "Termination Date": "03/07/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "25/10/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "792383",
+        "Name": "Castle Grey Capital Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576974",
+        "Termination Date": "03/12/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "28/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "576974",
+        "Name": "Lancer Global Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576974",
+        "Termination Date": "24/06/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "10/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "576974",
+        "Name": "Lancer Global Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/576974",
+        "Termination Date": "17/05/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "06/10/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "576974",
+        "Name": "Lancer Global Investments Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/617145",
+        "Termination Date": "05/05/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "13/03/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "617145",
+        "Name": "MCI Global Investment Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/684400",
+        "Termination Date": "07/08/2015",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "14/04/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "684400",
+        "Name": "Rheinfels Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607524",
+        "Termination Date": "28/04/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "16/12/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "607524",
+        "Name": "Spider Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607524",
+        "Termination Date": "25/06/2018",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "29/04/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "607524",
+        "Name": "Spider Capital Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728217",
+        "Termination Date": "27/06/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "08/12/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "728217",
+        "Name": "Strathearn Global Ltd."
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/764000",
+        "RecordSubType": "Full",
+        "Principal FRN": "437558",
+        "Principal Firm Name": "Global Investment Strategy UK Ltd",
+        "Effective Date": "09/11/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "764000",
+        "Name": "Private Capital Advisors Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "437558",
+    "organisation_name": "Global Investment Strategy UK Ltd",
+    "status": "See full details",
+    "business_type": "Regulated",
+    "companies_house_number": "04576299",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "01/12/2005"
+  },
+  "person_records": {}
 }

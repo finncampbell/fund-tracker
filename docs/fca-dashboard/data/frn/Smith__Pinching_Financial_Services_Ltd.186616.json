@@ -1,9 +1,169 @@
 {
   "frn": 186616,
   "name": "Smith & Pinching Financial Services Ltd",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/650320",
+        "Termination Date": "28/11/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "17/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "650320",
+        "Name": "Acorn Accountancy Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/563373",
+        "Termination Date": "19/12/2014",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "30/08/2011",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "563373",
+        "Name": "Anthony Pearson"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/669370",
+        "Termination Date": "12/02/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "01/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "669370",
+        "Name": "Apograph Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/422697",
+        "Termination Date": "17/08/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "06/10/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "422697",
+        "Name": "Arnolds Keys LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/608943",
+        "Termination Date": "30/11/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "16/10/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "608943",
+        "Name": "Asset Enterprise Partnership LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/812350",
+        "Termination Date": "30/06/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "26/06/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "812350",
+        "Name": "Barnett & Turner Accountants Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/505238",
+        "Termination Date": "19/12/2014",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "01/06/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "505238",
+        "Name": "Bina Chauhan"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/671463",
+        "Termination Date": "12/02/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "13/02/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "671463",
+        "Name": "Bonza Zen Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610711",
+        "Termination Date": "30/06/2020",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "22/11/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "610711",
+        "Name": "C&L Associates UK Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/665614",
+        "Termination Date": "12/02/2016",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "16/01/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "665614",
+        "Name": "Carol Gardner"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/537653",
+        "RecordSubType": "Full",
+        "Principal FRN": "186616",
+        "Principal Firm Name": "Smith & Pinching Financial Services Ltd",
+        "Effective Date": "14/12/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "true",
+        "FRN": "537653",
+        "Name": "OVERBURYS FINANCIAL SERVICES LIMITED"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "186616",
+    "organisation_name": "Smith & Pinching Financial Services Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03487726",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

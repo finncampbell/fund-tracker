@@ -1,9 +1,21 @@
 {
   "frn": 966244,
   "name": "BOS Wealth Management Europe S.A.",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "966244",
+    "organisation_name": "BOS Wealth Management Europe S.A.",
+    "status": "Authorised",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "companies_house_number": "BR021049",
+    "system_timestamp": "23/06/2025 22:20",
+    "status_effective_date": "16/01/2023"
+  },
+  "person_records": {}
 }

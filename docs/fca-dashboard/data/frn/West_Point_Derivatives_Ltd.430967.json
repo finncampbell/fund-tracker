@@ -1,9 +1,21 @@
 {
   "frn": 430967,
   "name": "West Point Derivatives Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "430967",
+    "organisation_name": "West Point Derivatives Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04990389",
+    "system_timestamp": "23/06/2025 21:46",
+    "status_effective_date": "27/07/2005"
+  },
+  "person_records": {}
 }

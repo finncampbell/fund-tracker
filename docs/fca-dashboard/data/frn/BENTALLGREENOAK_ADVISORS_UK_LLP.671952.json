@@ -1,9 +1,39 @@
 {
   "frn": 671952,
   "name": "BENTALLGREENOAK ADVISORS (UK) LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/577090",
+        "Termination Date": "06/07/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "671952",
+        "Principal Firm Name": "BENTALLGREENOAK ADVISORS (UK) LLP",
+        "Effective Date": "28/07/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "577090",
+        "Name": "GreenOak Euro Re Asset Management LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "671952",
+    "organisation_name": "BENTALLGREENOAK ADVISORS (UK) LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC353223",
+    "system_timestamp": "23/06/2025 22:06",
+    "status_effective_date": "08/07/2015"
+  },
+  "person_records": {}
 }

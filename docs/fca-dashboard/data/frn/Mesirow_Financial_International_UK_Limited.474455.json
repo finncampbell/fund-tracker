@@ -1,9 +1,38 @@
 {
   "frn": 474455,
   "name": "Mesirow Financial International UK Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/832223",
+        "Termination Date": "23/11/2022",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "474455",
+        "Principal Firm Name": "Mesirow Financial International UK Limited",
+        "Effective Date": "29/01/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "832223",
+        "Name": "Mesirow Financial Investment Management, Inc."
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "474455",
+    "organisation_name": "Mesirow Financial International UK Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06276706",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "17/01/2008"
+  },
+  "person_records": {}
 }

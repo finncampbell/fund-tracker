@@ -1,9 +1,65 @@
 {
   "frn": 184761,
   "name": "Peterhouse Capital limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/949179",
+        "Termination Date": "13/08/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "184761",
+        "Principal Firm Name": "Peterhouse Capital limited",
+        "Effective Date": "16/04/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "949179",
+        "Name": "JP Jenkins"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/793659",
+        "Termination Date": "05/04/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "184761",
+        "Principal Firm Name": "Peterhouse Capital limited",
+        "Effective Date": "08/11/2017",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "793659",
+        "Name": "Peterhouse Securities Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/215145",
+        "Termination Date": "13/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "184761",
+        "Principal Firm Name": "Peterhouse Capital limited",
+        "Effective Date": "01/04/2009",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "215145",
+        "Name": "Sharecrazy.Com Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "184761",
+    "organisation_name": "Peterhouse Capital limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "02075091",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

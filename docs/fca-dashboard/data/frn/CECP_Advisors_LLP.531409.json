@@ -1,9 +1,38 @@
 {
   "frn": 531409,
   "name": "CECP Advisors LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/986581",
+        "RecordSubType": "Full",
+        "Principal FRN": "531409",
+        "Principal Firm Name": "CECP Advisors LLP",
+        "Effective Date": "03/11/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "986581",
+        "Name": "CIC Advisors LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "531409",
+    "organisation_name": "CECP Advisors LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC357077",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "18/11/2010"
+  },
+  "person_records": {}
 }

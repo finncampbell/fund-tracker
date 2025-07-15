@@ -1,9 +1,37 @@
 {
   "frn": 927462,
   "name": "Stride.VC LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/992871",
+        "RecordSubType": "Full",
+        "Principal FRN": "927462",
+        "Principal Firm Name": "Stride.VC LLP",
+        "Effective Date": "04/03/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "992871",
+        "Name": "Firedrop Management LTD"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "927462",
+    "organisation_name": "Stride.VC LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC417818",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "01/10/2020"
+  },
+  "person_records": {}
 }

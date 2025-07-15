@@ -1,9 +1,78 @@
 {
   "frn": 182082,
   "name": "HANNAH CONSULTANCY LTD.",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/597201",
+        "Termination Date": "25/06/2013",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "182082",
+        "Principal Firm Name": "HANNAH CONSULTANCY LTD.",
+        "Effective Date": "13/03/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "597201",
+        "Name": "Blue Sky Life Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/441714",
+        "Termination Date": "23/10/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "182082",
+        "Principal Firm Name": "HANNAH CONSULTANCY LTD.",
+        "Effective Date": "10/11/2005",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "441714",
+        "Name": "Hannah Consultancy"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/400000",
+        "Termination Date": "02/12/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "182082",
+        "Principal Firm Name": "HANNAH CONSULTANCY LTD.",
+        "Effective Date": "31/10/2004",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "400000",
+        "Name": "Hannah Mortgages Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/454542",
+        "Termination Date": "10/10/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "182082",
+        "Principal Firm Name": "HANNAH CONSULTANCY LTD.",
+        "Effective Date": "12/07/2006",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "454542",
+        "Name": "Steve Barratt Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "182082",
+    "organisation_name": "HANNAH CONSULTANCY LTD.",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03534091",
+    "system_timestamp": "23/06/2025 21:39",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

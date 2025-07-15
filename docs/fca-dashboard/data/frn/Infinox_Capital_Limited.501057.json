@@ -1,9 +1,52 @@
 {
   "frn": 501057,
   "name": "Infinox Capital Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/734388",
+        "Termination Date": "05/07/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "501057",
+        "Principal Firm Name": "Infinox Capital Limited",
+        "Effective Date": "28/01/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "734388",
+        "Name": "Ameco Capital Markets Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/579132",
+        "Termination Date": "15/06/2012",
+        "RecordSubType": "Full",
+        "Principal FRN": "501057",
+        "Principal Firm Name": "Infinox Capital Limited",
+        "Effective Date": "05/04/2012",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "579132",
+        "Name": "Go Markets (UK) Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "501057",
+    "organisation_name": "Infinox Capital Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "06854853",
+    "system_timestamp": "23/06/2025 21:53",
+    "status_effective_date": "15/09/2009"
+  },
+  "person_records": {}
 }

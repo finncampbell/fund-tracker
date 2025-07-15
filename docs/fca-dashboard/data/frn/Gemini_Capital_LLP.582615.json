@@ -1,9 +1,128 @@
 {
   "frn": 582615,
   "name": "Gemini Capital LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "EEV01003",
+      "Name": "Emma Elizabeth Lawson Vaslet de Fontaubert",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EEV01003"
+    },
+    {
+      "IRN": "TXD01104",
+      "Name": "Thibault De Fontaubert",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXD01104"
+    },
+    {
+      "IRN": "EEV01003",
+      "Name": "Emma Elizabeth Lawson Vaslet de Fontaubert",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EEV01003"
+    },
+    {
+      "IRN": "TXD01104",
+      "Name": "Thibault De Fontaubert",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXD01104"
+    },
+    {
+      "IRN": "EXP01290",
+      "Name": "Elliot Pasztor",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXP01290"
+    },
+    {
+      "IRN": "GXS01280",
+      "Name": "Gisele Russell",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXS01280"
+    },
+    {
+      "IRN": "XXL01100",
+      "Name": ". Lyttelton Limited",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXL01100"
+    },
+    {
+      "IRN": "XXA01234",
+      "Name": ". Angitu Limited",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXA01234"
+    },
+    {
+      "IRN": "XXT01121",
+      "Name": ". Tupuna Limited",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXT01121"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "EEV01003": [],
+    "TXD01104": [],
+    "EXP01290": [],
+    "GXS01280": [],
+    "XXL01100": [],
+    "XXA01234": [],
+    "XXT01121": []
+  },
+  "metadata": {
+    "frn": "582615",
+    "organisation_name": "Gemini Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC366832",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "01/10/2012"
+  },
+  "person_records": {
+    "EEV01003": {
+      "irn": "EEV01003",
+      "name": "Emma Elizabeth Lawson Vaslet de Fontaubert",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXD01104": {
+      "irn": "TXD01104",
+      "name": "Thibault De Fontaubert",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXP01290": {
+      "irn": "EXP01290",
+      "name": "Elliot Pasztor",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXS01280": {
+      "irn": "GXS01280",
+      "name": "Gisele Russell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXL01100": {
+      "irn": "XXL01100",
+      "name": ". Lyttelton Limited",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXA01234": {
+      "irn": "XXA01234",
+      "name": ". Angitu Limited",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXT01121": {
+      "irn": "XXT01121",
+      "name": ". Tupuna Limited",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

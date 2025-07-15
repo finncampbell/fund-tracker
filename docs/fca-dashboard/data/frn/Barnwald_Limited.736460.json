@@ -1,9 +1,38 @@
 {
   "frn": 736460,
   "name": "Barnwald Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/951905",
+        "Termination Date": "19/10/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "736460",
+        "Principal Firm Name": "Barnwald Limited",
+        "Effective Date": "28/05/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "true",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "951905",
+        "Name": "MGB Commodities Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "736460",
+    "organisation_name": "Barnwald Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03055705",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "12/08/2016"
+  },
+  "person_records": {}
 }

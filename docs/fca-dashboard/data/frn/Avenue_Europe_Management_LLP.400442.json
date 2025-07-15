@@ -1,9 +1,812 @@
 {
   "frn": 400442,
   "name": "Avenue Europe Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "XXA01025",
+      "Name": ". Avenue Europe Investments Management LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXA01025"
+    },
+    {
+      "IRN": "XXA01026",
+      "Name": ". Avenue Europe International Management,",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXA01026"
+    },
+    {
+      "IRN": "TXL01255",
+      "Name": "Thomas Larkin",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXL01255"
+    },
+    {
+      "IRN": "AXS22848",
+      "Name": "Andrew Keith Schinder",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXS22848"
+    },
+    {
+      "IRN": "SEG01039",
+      "Name": "Sonia Esther Gardner",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SEG01039"
+    },
+    {
+      "IRN": "JDF01054",
+      "Name": "Jonathan Ford",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDF01054"
+    },
+    {
+      "IRN": "MXL01473",
+      "Name": "Marc Lasry",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXL01473"
+    },
+    {
+      "IRN": "PJM01428",
+      "Name": "Padraig James Moore",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJM01428"
+    },
+    {
+      "IRN": "RXE00023",
+      "Name": "Rodrigo Echenique Nunez",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXE00023"
+    },
+    {
+      "IRN": "SXF00472",
+      "Name": "Samuel Christoph Fischer",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXF00472"
+    },
+    {
+      "IRN": "IKS00014",
+      "Name": "Indraveer Kumar Srivastava",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IKS00014"
+    },
+    {
+      "IRN": "JXW15544",
+      "Name": "Jonathan Waters",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW15544"
+    },
+    {
+      "IRN": "JXF00140",
+      "Name": "Jonathan Firmston",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXF00140"
+    },
+    {
+      "IRN": "NXR01104",
+      "Name": "Nicolas Razzouk",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXR01104"
+    },
+    {
+      "IRN": "OXC01067",
+      "Name": "OU CHEN",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXC01067"
+    },
+    {
+      "IRN": "RXL01742",
+      "Name": "Roger Lightwood",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXL01742"
+    },
+    {
+      "IRN": "SXK01806",
+      "Name": "Stefan-Alexis Kalyanpur",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXK01806"
+    },
+    {
+      "IRN": "TXL01255",
+      "Name": "Thomas Larkin",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXL01255"
+    },
+    {
+      "IRN": "AJB01431",
+      "Name": "Adrian James Brown",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AJB01431"
+    },
+    {
+      "IRN": "XXA01025",
+      "Name": ". Avenue Europe Investments Management LLC",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXA01025"
+    },
+    {
+      "IRN": "XXA01026",
+      "Name": ". Avenue Europe International Management,",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXA01026"
+    },
+    {
+      "IRN": "RXF01232",
+      "Name": "Richard Furst",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXF01232"
+    },
+    {
+      "IRN": "PXL01169",
+      "Name": "Peter John Moore Lockhead",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXL01169"
+    },
+    {
+      "IRN": "JDF01054",
+      "Name": "Jonathan Ford",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDF01054"
+    },
+    {
+      "IRN": "AXJ01231",
+      "Name": "Andreas Johannes Michael Jaufer",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXJ01231"
+    },
+    {
+      "IRN": "PJM01428",
+      "Name": "Padraig James Moore",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJM01428"
+    },
+    {
+      "IRN": "MXH01711",
+      "Name": "Mark Arnulf Hoffmann",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXH01711"
+    },
+    {
+      "IRN": "MXL01473",
+      "Name": "Marc Lasry",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXL01473"
+    },
+    {
+      "IRN": "SEG01039",
+      "Name": "Sonia Esther Gardner",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SEG01039"
+    },
+    {
+      "IRN": "SXM02218",
+      "Name": "Sarah Osborne Mitchell",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXM02218"
+    },
+    {
+      "IRN": "JXW01863",
+      "Name": "Jared Woloshin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW01863"
+    },
+    {
+      "IRN": "JXW15544",
+      "Name": "Jonathan Waters",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXW15544"
+    },
+    {
+      "IRN": "AXD02177",
+      "Name": "Alvaro Del Barco Delgardo",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXD02177"
+    },
+    {
+      "IRN": "MXM00453",
+      "Name": "Matthew James MURTAGH",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXM00453"
+    },
+    {
+      "IRN": "TWK01012",
+      "Name": "Timo Wolfgang Gustav Koch",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TWK01012"
+    },
+    {
+      "IRN": "OXC01067",
+      "Name": "OU CHEN",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXC01067"
+    },
+    {
+      "IRN": "RXL01742",
+      "Name": "Roger Lightwood",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXL01742"
+    },
+    {
+      "IRN": "MDM01152",
+      "Name": "Michael David Massarano",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MDM01152"
+    },
+    {
+      "IRN": "NXR01104",
+      "Name": "Nicolas Razzouk",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXR01104"
+    },
+    {
+      "IRN": "SKB01058",
+      "Name": "Susanne Katharina Therisia Berger",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SKB01058"
+    },
+    {
+      "IRN": "CXL01132",
+      "Name": "Casper Lund",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXL01132"
+    },
+    {
+      "IRN": "ASW01125",
+      "Name": "Arkadiusz Stanislaw Wylegalski",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ASW01125"
+    },
+    {
+      "IRN": "AGP01060",
+      "Name": "Alberto Giuseppe Joffren Maria Pierotti",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AGP01060"
+    },
+    {
+      "IRN": "SXK01806",
+      "Name": "Stefan-Alexis Kalyanpur",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXK01806"
+    },
+    {
+      "IRN": "MXC16045",
+      "Name": "Matteo Cesaretti",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC16045"
+    },
+    {
+      "IRN": "EXL01258",
+      "Name": "Edward Lewisohn",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXL01258"
+    },
+    {
+      "IRN": "RXE01178",
+      "Name": "Eric Ross",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXE01178"
+    },
+    {
+      "IRN": "JVB01029",
+      "Name": "Justina Vilija Baskauskas",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JVB01029"
+    },
+    {
+      "IRN": "ISB01027",
+      "Name": "Ira Steven Balsam",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/ISB01027"
+    },
+    {
+      "IRN": "UXH01022",
+      "Name": "Ulrich Heppe",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/UXH01022"
+    },
+    {
+      "IRN": "FJG01024",
+      "Name": "Francis Joseph Griffin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FJG01024"
+    },
+    {
+      "IRN": "LXM01196",
+      "Name": "Luis Mayans",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXM01196"
+    },
+    {
+      "IRN": "JXG01616",
+      "Name": "Jostein Gauslaa",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXG01616"
+    },
+    {
+      "IRN": "IXL01147",
+      "Name": "Isaac Lahuerta Fabregas",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXL01147"
+    },
+    {
+      "IRN": "EXM01404",
+      "Name": "Eric Mark",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXM01404"
+    },
+    {
+      "IRN": "WDF01016",
+      "Name": "Warren David Furst",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/WDF01016"
+    },
+    {
+      "IRN": "NJJ01032",
+      "Name": "Nikhil Jamie Jaganathan",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJJ01032"
+    },
+    {
+      "IRN": "KXR01272",
+      "Name": "Robert Kaufmann",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXR01272"
+    },
+    {
+      "IRN": "UXM07917",
+      "Name": "Usman Malik",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/UXM07917"
+    },
+    {
+      "IRN": "TXS02035",
+      "Name": "Tommaso Sechi",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXS02035"
+    },
+    {
+      "IRN": "FHH01011",
+      "Name": "Franklin Henri Gabriel Henrot",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FHH01011"
+    },
+    {
+      "IRN": "TWV01005",
+      "Name": "Tim Wolfram van Delden",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TWV01005"
+    },
+    {
+      "IRN": "AOP00003",
+      "Name": "Alexander Otto Paulick",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AOP00003"
+    },
+    {
+      "IRN": "MXL01686",
+      "Name": "Marcus Livijn",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXL01686"
+    },
+    {
+      "IRN": "SAP01081",
+      "Name": "Samuel Aaron Perlman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SAP01081"
+    },
+    {
+      "IRN": "RXR01187",
+      "Name": "Raul Ramirez",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXR01187"
+    },
+    {
+      "IRN": "XXD01006",
+      "Name": "Xavier Fabrice Demierre",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXD01006"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "XXA01025": [],
+    "XXA01026": [],
+    "TXL01255": [],
+    "AXS22848": [],
+    "SEG01039": [],
+    "JDF01054": [],
+    "MXL01473": [],
+    "PJM01428": [],
+    "RXE00023": [],
+    "SXF00472": [],
+    "IKS00014": [],
+    "JXW15544": [],
+    "JXF00140": [],
+    "NXR01104": [],
+    "OXC01067": [],
+    "RXL01742": [],
+    "SXK01806": [],
+    "AJB01431": [],
+    "RXF01232": [],
+    "PXL01169": [],
+    "AXJ01231": [],
+    "MXH01711": [],
+    "SXM02218": [],
+    "JXW01863": [],
+    "AXD02177": [],
+    "MXM00453": [],
+    "TWK01012": [],
+    "MDM01152": [],
+    "SKB01058": [],
+    "CXL01132": [],
+    "ASW01125": [],
+    "AGP01060": [],
+    "MXC16045": [],
+    "EXL01258": [],
+    "RXE01178": [],
+    "JVB01029": [],
+    "ISB01027": [],
+    "UXH01022": [],
+    "FJG01024": [],
+    "LXM01196": [],
+    "JXG01616": [],
+    "IXL01147": [],
+    "EXM01404": [],
+    "WDF01016": [],
+    "NJJ01032": [],
+    "KXR01272": [],
+    "UXM07917": [],
+    "TXS02035": [],
+    "FHH01011": [],
+    "TWV01005": [],
+    "AOP00003": [],
+    "MXL01686": [],
+    "SAP01081": [],
+    "RXR01187": [],
+    "XXD01006": []
+  },
+  "metadata": {
+    "frn": "400442",
+    "organisation_name": "Avenue Europe Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC307088",
+    "system_timestamp": "23/06/2025 21:45",
+    "status_effective_date": "30/09/2004"
+  },
+  "person_records": {
+    "XXA01025": {
+      "irn": "XXA01025",
+      "name": ". Avenue Europe Investments Management LLC",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXA01026": {
+      "irn": "XXA01026",
+      "name": ". Avenue Europe International Management,",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXL01255": {
+      "irn": "TXL01255",
+      "name": "Thomas Larkin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXS22848": {
+      "irn": "AXS22848",
+      "name": "Andrew Keith Schinder",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SEG01039": {
+      "irn": "SEG01039",
+      "name": "Sonia Esther Gardner",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDF01054": {
+      "irn": "JDF01054",
+      "name": "Jonathan Ford",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXL01473": {
+      "irn": "MXL01473",
+      "name": "Marc Lasry",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJM01428": {
+      "irn": "PJM01428",
+      "name": "Padraig James Moore",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXE00023": {
+      "irn": "RXE00023",
+      "name": "Rodrigo Echenique Nunez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXF00472": {
+      "irn": "SXF00472",
+      "name": "Samuel Christoph Fischer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IKS00014": {
+      "irn": "IKS00014",
+      "name": "Indraveer Kumar Srivastava",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW15544": {
+      "irn": "JXW15544",
+      "name": "Jonathan Waters",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXF00140": {
+      "irn": "JXF00140",
+      "name": "Jonathan Firmston",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NXR01104": {
+      "irn": "NXR01104",
+      "name": "Nicolas Razzouk",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXC01067": {
+      "irn": "OXC01067",
+      "name": "OU CHEN",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXL01742": {
+      "irn": "RXL01742",
+      "name": "Roger Lightwood",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXK01806": {
+      "irn": "SXK01806",
+      "name": "Stefan-Alexis Kalyanpur",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AJB01431": {
+      "irn": "AJB01431",
+      "name": "Adrian James Brown",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXF01232": {
+      "irn": "RXF01232",
+      "name": "Richard Furst",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXL01169": {
+      "irn": "PXL01169",
+      "name": "Peter John Moore Lockhead",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXJ01231": {
+      "irn": "AXJ01231",
+      "name": "Andreas Johannes Michael Jaufer",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXH01711": {
+      "irn": "MXH01711",
+      "name": "Mark Arnulf Hoffmann",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXM02218": {
+      "irn": "SXM02218",
+      "name": "Sarah Osborne Mitchell",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXW01863": {
+      "irn": "JXW01863",
+      "name": "Jared Woloshin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXD02177": {
+      "irn": "AXD02177",
+      "name": "Alvaro Del Barco Delgardo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXM00453": {
+      "irn": "MXM00453",
+      "name": "Matthew James MURTAGH",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TWK01012": {
+      "irn": "TWK01012",
+      "name": "Timo Wolfgang Gustav Koch",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MDM01152": {
+      "irn": "MDM01152",
+      "name": "Michael David Massarano",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SKB01058": {
+      "irn": "SKB01058",
+      "name": "Susanne Katharina Therisia Berger",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXL01132": {
+      "irn": "CXL01132",
+      "name": "Casper Lund",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ASW01125": {
+      "irn": "ASW01125",
+      "name": "Arkadiusz Stanislaw Wylegalski",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AGP01060": {
+      "irn": "AGP01060",
+      "name": "Alberto Giuseppe Joffren Maria Pierotti",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC16045": {
+      "irn": "MXC16045",
+      "name": "Matteo Cesaretti",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXL01258": {
+      "irn": "EXL01258",
+      "name": "Edward Lewisohn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXE01178": {
+      "irn": "RXE01178",
+      "name": "Eric Ross",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JVB01029": {
+      "irn": "JVB01029",
+      "name": "Justina Vilija Baskauskas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "ISB01027": {
+      "irn": "ISB01027",
+      "name": "Ira Steven Balsam",
+      "status": null,
+      "controlled_functions": null
+    },
+    "UXH01022": {
+      "irn": "UXH01022",
+      "name": "Ulrich Heppe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FJG01024": {
+      "irn": "FJG01024",
+      "name": "Francis Joseph Griffin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXM01196": {
+      "irn": "LXM01196",
+      "name": "Luis Mayans",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXG01616": {
+      "irn": "JXG01616",
+      "name": "Jostein Gauslaa",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXL01147": {
+      "irn": "IXL01147",
+      "name": "Isaac Lahuerta Fabregas",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXM01404": {
+      "irn": "EXM01404",
+      "name": "Eric Mark",
+      "status": null,
+      "controlled_functions": null
+    },
+    "WDF01016": {
+      "irn": "WDF01016",
+      "name": "Warren David Furst",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NJJ01032": {
+      "irn": "NJJ01032",
+      "name": "Nikhil Jamie Jaganathan",
+      "status": null,
+      "controlled_functions": null
+    },
+    "KXR01272": {
+      "irn": "KXR01272",
+      "name": "Robert Kaufmann",
+      "status": null,
+      "controlled_functions": null
+    },
+    "UXM07917": {
+      "irn": "UXM07917",
+      "name": "Usman Malik",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXS02035": {
+      "irn": "TXS02035",
+      "name": "Tommaso Sechi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FHH01011": {
+      "irn": "FHH01011",
+      "name": "Franklin Henri Gabriel Henrot",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TWV01005": {
+      "irn": "TWV01005",
+      "name": "Tim Wolfram van Delden",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AOP00003": {
+      "irn": "AOP00003",
+      "name": "Alexander Otto Paulick",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXL01686": {
+      "irn": "MXL01686",
+      "name": "Marcus Livijn",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SAP01081": {
+      "irn": "SAP01081",
+      "name": "Samuel Aaron Perlman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXR01187": {
+      "irn": "RXR01187",
+      "name": "Raul Ramirez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXD01006": {
+      "irn": "XXD01006",
+      "name": "Xavier Fabrice Demierre",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

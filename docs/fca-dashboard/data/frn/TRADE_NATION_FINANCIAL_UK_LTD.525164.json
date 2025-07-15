@@ -1,9 +1,91 @@
 {
   "frn": 525164,
   "name": "TRADE NATION FINANCIAL UK LTD",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/716621",
+        "Termination Date": "13/11/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "525164",
+        "Principal Firm Name": "TRADE NATION FINANCIAL UK LTD",
+        "Effective Date": "14/09/2015",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "716621",
+        "Name": "Clear Investor Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/628724",
+        "Termination Date": "01/06/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "525164",
+        "Principal Firm Name": "TRADE NATION FINANCIAL UK LTD",
+        "Effective Date": "21/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "628724",
+        "Name": "Core Spreads Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/610586",
+        "Termination Date": "31/10/2016",
+        "RecordSubType": "Full",
+        "Principal FRN": "525164",
+        "Principal Firm Name": "TRADE NATION FINANCIAL UK LTD",
+        "Effective Date": "03/07/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "610586",
+        "Name": "Pip Index Capital Markets Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/516583",
+        "Termination Date": "08/05/2018",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "525164",
+        "Principal Firm Name": "TRADE NATION FINANCIAL UK LTD",
+        "Effective Date": "24/02/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "516583",
+        "Name": "Tom Hougaard"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/607527",
+        "Termination Date": "12/01/2017",
+        "RecordSubType": "Full",
+        "Principal FRN": "525164",
+        "Principal Firm Name": "TRADE NATION FINANCIAL UK LTD",
+        "Effective Date": "15/09/2014",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "607527",
+        "Name": "Tradecrowd Technology Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "525164",
+    "organisation_name": "TRADE NATION FINANCIAL UK LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "07073413",
+    "system_timestamp": "23/06/2025 21:55",
+    "status_effective_date": "09/05/2011"
+  },
+  "person_records": {}
 }

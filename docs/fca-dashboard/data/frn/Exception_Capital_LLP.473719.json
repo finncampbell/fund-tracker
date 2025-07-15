@@ -1,9 +1,240 @@
 {
   "frn": 473719,
   "name": "Exception Capital LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/579431",
+        "Termination Date": "23/12/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "06/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "579431",
+        "Name": "Allenbridge Investment Solutions LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/539747",
+        "Termination Date": "23/12/2013",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "06/02/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "539747",
+        "Name": "Apex Investment Advisers Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/971226",
+        "Termination Date": "21/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "04/03/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "971226",
+        "Name": "Codefish Ventures Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1017310",
+        "Termination Date": "22/07/2024",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "22/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1017310",
+        "Name": "Enea Consulting UK Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/913284",
+        "Termination Date": "12/05/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "24/11/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "913284",
+        "Name": "Sackville Capital Ltd."
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/611042",
+        "Termination Date": "06/10/2014",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "01/12/2013",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "611042",
+        "Name": "Sapeno Partners LLP"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/804102",
+        "Termination Date": "31/03/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "15/03/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "804102",
+        "Name": "Saphira Group (Advisory) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/747415",
+        "Termination Date": "06/06/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "18/05/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "747415",
+        "Name": "Smith HamiltonPartners Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/801101",
+        "Termination Date": "12/10/2019",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "08/02/2018",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "801101",
+        "Name": "The Boars Club Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/518733",
+        "Termination Date": "13/09/2010",
+        "RecordSubType": "Introducer",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "26/02/2010",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "518733",
+        "Name": "Traycer LLP"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1001051",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "07/08/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1001051",
+        "Name": "Blueverse Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1014955",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "16/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1014955",
+        "Name": "Chabou Investments Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1016507",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "20/08/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1016507",
+        "Name": "Copper West Partners Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/599052",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "02/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "599052",
+        "Name": "RisCura Solutions (UK) Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/988162",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "18/07/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "988162",
+        "Name": "Rushworth Advisory Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1008952",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "01/05/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1008952",
+        "Name": "Twenty First Group Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/805629",
+        "RecordSubType": "Full",
+        "Principal FRN": "473719",
+        "Principal Firm Name": "Exception Capital LLP",
+        "Effective Date": "06/01/2023",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "805629",
+        "Name": "Windermere IM LLP"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "473719",
+    "organisation_name": "Exception Capital LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC327590",
+    "system_timestamp": "23/06/2025 21:50",
+    "status_effective_date": "29/11/2007"
+  },
+  "person_records": {}
 }

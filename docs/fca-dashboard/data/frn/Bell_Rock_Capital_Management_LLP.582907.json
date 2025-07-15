@@ -1,9 +1,1085 @@
 {
   "frn": 582907,
   "name": "Bell Rock Capital Management LLP",
-  "trading_names": [],
+  "trading_names": [
+    null
+  ],
   "appointed_reps": [],
-  "individuals": [],
+  "individuals": [
+    {
+      "IRN": "XXE01102",
+      "Name": ". Enclume Limited",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXE01102"
+    },
+    {
+      "IRN": "MXK01164",
+      "Name": "Mats Kummelstedt",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK01164"
+    },
+    {
+      "IRN": "RWH01067",
+      "Name": "Roger William Edward Harlow",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RWH01067"
+    },
+    {
+      "IRN": "MPO01025",
+      "Name": "Michael Patrick O'Mara",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPO01025"
+    },
+    {
+      "IRN": "NJC01228",
+      "Name": "Niall Justin Corkery",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJC01228"
+    },
+    {
+      "IRN": "AXM01253",
+      "Name": "Alex Manning",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXM01253"
+    },
+    {
+      "IRN": "DXI00054",
+      "Name": "Diana Iacob",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXI00054"
+    },
+    {
+      "IRN": "AXB01626",
+      "Name": "Andrew Ballard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB01626"
+    },
+    {
+      "IRN": "RXD01314",
+      "Name": "Rainer Dullnig",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXD01314"
+    },
+    {
+      "IRN": "BXA00069",
+      "Name": "Benjamin Louis Brice Augereau",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXA00069"
+    },
+    {
+      "IRN": "CEB01099",
+      "Name": "Charles Edward Avenon Bull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CEB01099"
+    },
+    {
+      "IRN": "FXC75503",
+      "Name": "Frederick Henry Charlton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXC75503"
+    },
+    {
+      "IRN": "YXS15253",
+      "Name": "Young Sam Son",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXS15253"
+    },
+    {
+      "IRN": "MAA01311",
+      "Name": "Mark Andrew Ashton",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAA01311"
+    },
+    {
+      "IRN": "JPP01087",
+      "Name": "Juan Pablo Platt",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JPP01087"
+    },
+    {
+      "IRN": "OXS71958",
+      "Name": "Oliver Simmons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OXS71958"
+    },
+    {
+      "IRN": "RFL01031",
+      "Name": "Robert Fredrick Lloyd",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RFL01031"
+    },
+    {
+      "IRN": "EXC00204",
+      "Name": "Emanuele Cavaliere",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXC00204"
+    },
+    {
+      "IRN": "AXA00968",
+      "Name": "Aitor Agorreta Alvarez",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA00968"
+    },
+    {
+      "IRN": "AXB04267",
+      "Name": "Ana Baez",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB04267"
+    },
+    {
+      "IRN": "JRL01104",
+      "Name": "Jeffrey Richard Largey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JRL01104"
+    },
+    {
+      "IRN": "AAL01062",
+      "Name": "Andre Alexander Leue",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAL01062"
+    },
+    {
+      "IRN": "DXA11893",
+      "Name": "Daniel Allcock",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXA11893"
+    },
+    {
+      "IRN": "JXR00703",
+      "Name": "Julian Robinson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXR00703"
+    },
+    {
+      "IRN": "AXA00854",
+      "Name": "Ardit Aubeelack",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXA00854"
+    },
+    {
+      "IRN": "JFK01036",
+      "Name": "John Frederick Kroeger",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JFK01036"
+    },
+    {
+      "IRN": "PXP00253",
+      "Name": "Pantelis Protogeros",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXP00253"
+    },
+    {
+      "IRN": "MXC03079",
+      "Name": "Matteo Cataldi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXC03079"
+    },
+    {
+      "IRN": "AXK01838",
+      "Name": "Alexey Kormschikov",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK01838"
+    },
+    {
+      "IRN": "RXP81580",
+      "Name": "RIKIN PATEL",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXP81580"
+    },
+    {
+      "IRN": "AAG01047",
+      "Name": "Andrew Greetham",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AAG01047"
+    },
+    {
+      "IRN": "EJM01053",
+      "Name": "Evan Jon George Morris",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EJM01053"
+    },
+    {
+      "IRN": "CXC00455",
+      "Name": "Corentin Rodolphe Chabaud",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXC00455"
+    },
+    {
+      "IRN": "GXX00005",
+      "Name": "Guo Xi",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXX00005"
+    },
+    {
+      "IRN": "XXE01102",
+      "Name": ". Enclume Limited",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXE01102"
+    },
+    {
+      "IRN": "RWH01067",
+      "Name": "Roger William Edward Harlow",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RWH01067"
+    },
+    {
+      "IRN": "AMB01120",
+      "Name": "Anders Martin Brege",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AMB01120"
+    },
+    {
+      "IRN": "SXT01245",
+      "Name": "Tullio Salvatore",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXT01245"
+    },
+    {
+      "IRN": "MXK01164",
+      "Name": "Mats Kummelstedt",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXK01164"
+    },
+    {
+      "IRN": "NJC01228",
+      "Name": "Niall Justin Corkery",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NJC01228"
+    },
+    {
+      "IRN": "MPO01025",
+      "Name": "Michael Patrick O'Mara",
+      "Status": "Approved by regulator;Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MPO01025"
+    },
+    {
+      "IRN": "RMR01029",
+      "Name": "Roger Mark Reynolds",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RMR01029"
+    },
+    {
+      "IRN": "SXD02486",
+      "Name": "Sachin Duggal",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXD02486"
+    },
+    {
+      "IRN": "CXG00089",
+      "Name": "Carl Philip Victor Gustafsson",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXG00089"
+    },
+    {
+      "IRN": "BXL01181",
+      "Name": "Benedikt Loy",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXL01181"
+    },
+    {
+      "IRN": "DPF01026",
+      "Name": "Daryn Paul Hewburn Fletcher",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DPF01026"
+    },
+    {
+      "IRN": "EXV01017",
+      "Name": "Eloise Catherine Brigitte Veillet",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXV01017"
+    },
+    {
+      "IRN": "PCE01018",
+      "Name": "Per Christian Joakim Engstrom",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PCE01018"
+    },
+    {
+      "IRN": "OCN00002",
+      "Name": "Oliver Charles Neal",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OCN00002"
+    },
+    {
+      "IRN": "GXP00129",
+      "Name": "Gareth William Potter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXP00129"
+    },
+    {
+      "IRN": "LXA00078",
+      "Name": "Lorenzo Angelini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/LXA00078"
+    },
+    {
+      "IRN": "TXE00030",
+      "Name": "Thomas Michael Ellis",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXE00030"
+    },
+    {
+      "IRN": "MAS01576",
+      "Name": "Mateusz Aleksander Stawarz",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MAS01576"
+    },
+    {
+      "IRN": "NIP01008",
+      "Name": "Nicholas Ian Hamish Prys-Owen",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NIP01008"
+    },
+    {
+      "IRN": "PXK01758",
+      "Name": "Pierre Kling",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01758"
+    },
+    {
+      "IRN": "GXC02096",
+      "Name": "Giancarlo Cassoni",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/GXC02096"
+    },
+    {
+      "IRN": "CAR01115",
+      "Name": "Anders Christian Roos",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CAR01115"
+    },
+    {
+      "IRN": "AXK01838",
+      "Name": "Alexey Kormschikov",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXK01838"
+    },
+    {
+      "IRN": "BXL72026",
+      "Name": "Benjamin Lyons",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXL72026"
+    },
+    {
+      "IRN": "FXD00096",
+      "Name": "Frederick George Dakin",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXD00096"
+    },
+    {
+      "IRN": "PXK01585",
+      "Name": "Pradipta Kumar",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01585"
+    },
+    {
+      "IRN": "XXG01076",
+      "Name": "Xiaoyong Guo",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXG01076"
+    },
+    {
+      "IRN": "DXM00993",
+      "Name": "Dominic McQuade",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXM00993"
+    },
+    {
+      "IRN": "IXK01347",
+      "Name": "Inigo Kelsey",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXK01347"
+    },
+    {
+      "IRN": "CFH01045",
+      "Name": "Carl Fredrik Joel Hagerman",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CFH01045"
+    },
+    {
+      "IRN": "CPG01057",
+      "Name": "Clemens Philipp Gamstätter",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CPG01057"
+    },
+    {
+      "IRN": "YXS15253",
+      "Name": "Young Sam Son",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/YXS15253"
+    },
+    {
+      "IRN": "MOB01008",
+      "Name": "Mattias Olof Johannes Boden",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MOB01008"
+    },
+    {
+      "IRN": "MXS01991",
+      "Name": "Marco Signorini",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXS01991"
+    },
+    {
+      "IRN": "AXL16386",
+      "Name": "Amanda Corenne Lyons",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXL16386"
+    },
+    {
+      "IRN": "CEB01099",
+      "Name": "Charles Edward Avenon Bull",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CEB01099"
+    },
+    {
+      "IRN": "PSH01061",
+      "Name": "Philipp Sebastian Hoegg",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PSH01061"
+    },
+    {
+      "IRN": "AXB01626",
+      "Name": "Andrew Ballard",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXB01626"
+    },
+    {
+      "IRN": "RXD01314",
+      "Name": "Rainer Dullnig",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXD01314"
+    },
+    {
+      "IRN": "PJT01143",
+      "Name": "Pasi Juhani Tolmunen",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJT01143"
+    },
+    {
+      "IRN": "JMV01006",
+      "Name": "John Michael Van Steenberghe",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JMV01006"
+    },
+    {
+      "IRN": "APB01200",
+      "Name": "Adam Bowler",
+      "Status": "Certified / assessed by firm",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/APB01200"
+    },
+    {
+      "IRN": "WEH01027",
+      "Name": "William Edward Hanbury",
+      "Status": "Approved by regulator",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/WEH01027"
+    },
+    {
+      "IRN": "JXH01983",
+      "Name": "Jorg-Oliver Hampe",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXH01983"
+    },
+    {
+      "IRN": "XXS01199",
+      "Name": ". Stone Sky Ltd",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXS01199"
+    },
+    {
+      "IRN": "OJR01011",
+      "Name": "Oliver James Reece",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/OJR01011"
+    },
+    {
+      "IRN": "DXS01366",
+      "Name": "Daniele Serruya",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXS01366"
+    },
+    {
+      "IRN": "XXD01080",
+      "Name": ". De Putron Fund Management Ltd",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/XXD01080"
+    },
+    {
+      "IRN": "TXA01047",
+      "Name": "Torbjorn Andreassen",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TXA01047"
+    },
+    {
+      "IRN": "PJW01164",
+      "Name": "Peter John Walters",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PJW01164"
+    },
+    {
+      "IRN": "JDS01128",
+      "Name": "John Dwight Shook",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JDS01128"
+    },
+    {
+      "IRN": "PXK01092",
+      "Name": "Paul Keohane",
+      "Status": "Regulatory approval no longer required",
+      "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXK01092"
+    }
+  ],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {
+    "XXE01102": [],
+    "MXK01164": [],
+    "RWH01067": [],
+    "MPO01025": [],
+    "NJC01228": [],
+    "AXM01253": [],
+    "DXI00054": [],
+    "AXB01626": [],
+    "RXD01314": [],
+    "BXA00069": [],
+    "CEB01099": [],
+    "FXC75503": [],
+    "YXS15253": [],
+    "MAA01311": [],
+    "JPP01087": [],
+    "OXS71958": [],
+    "RFL01031": [],
+    "EXC00204": [],
+    "AXA00968": [],
+    "AXB04267": [],
+    "JRL01104": [],
+    "AAL01062": [],
+    "DXA11893": [],
+    "JXR00703": [],
+    "AXA00854": [],
+    "JFK01036": [],
+    "PXP00253": [],
+    "MXC03079": [],
+    "AXK01838": [],
+    "RXP81580": [],
+    "AAG01047": [],
+    "EJM01053": [],
+    "CXC00455": [],
+    "GXX00005": [],
+    "AMB01120": [],
+    "SXT01245": [],
+    "RMR01029": [],
+    "SXD02486": [],
+    "CXG00089": [],
+    "BXL01181": [],
+    "DPF01026": [],
+    "EXV01017": [],
+    "PCE01018": [],
+    "OCN00002": [],
+    "GXP00129": [],
+    "LXA00078": [],
+    "TXE00030": [],
+    "MAS01576": [],
+    "NIP01008": [],
+    "PXK01758": [],
+    "GXC02096": [],
+    "CAR01115": [],
+    "BXL72026": [],
+    "FXD00096": [],
+    "PXK01585": [],
+    "XXG01076": [],
+    "DXM00993": [],
+    "IXK01347": [],
+    "CFH01045": [],
+    "CPG01057": [],
+    "MOB01008": [],
+    "MXS01991": [],
+    "AXL16386": [],
+    "PSH01061": [],
+    "PJT01143": [],
+    "JMV01006": [],
+    "APB01200": [],
+    "WEH01027": [],
+    "JXH01983": [],
+    "XXS01199": [],
+    "OJR01011": [],
+    "DXS01366": [],
+    "XXD01080": [],
+    "TXA01047": [],
+    "PJW01164": [],
+    "JDS01128": [],
+    "PXK01092": []
+  },
+  "metadata": {
+    "frn": "582907",
+    "organisation_name": "Bell Rock Capital Management LLP",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "OC355426",
+    "system_timestamp": "23/06/2025 21:58",
+    "status_effective_date": "01/10/2012"
+  },
+  "person_records": {
+    "XXE01102": {
+      "irn": "XXE01102",
+      "name": ". Enclume Limited",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXK01164": {
+      "irn": "MXK01164",
+      "name": "Mats Kummelstedt",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RWH01067": {
+      "irn": "RWH01067",
+      "name": "Roger William Edward Harlow",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MPO01025": {
+      "irn": "MPO01025",
+      "name": "Michael Patrick O'Mara",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NJC01228": {
+      "irn": "NJC01228",
+      "name": "Niall Justin Corkery",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXM01253": {
+      "irn": "AXM01253",
+      "name": "Alex Manning",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXI00054": {
+      "irn": "DXI00054",
+      "name": "Diana Iacob",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB01626": {
+      "irn": "AXB01626",
+      "name": "Andrew Ballard",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXD01314": {
+      "irn": "RXD01314",
+      "name": "Rainer Dullnig",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXA00069": {
+      "irn": "BXA00069",
+      "name": "Benjamin Louis Brice Augereau",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CEB01099": {
+      "irn": "CEB01099",
+      "name": "Charles Edward Avenon Bull",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXC75503": {
+      "irn": "FXC75503",
+      "name": "Frederick Henry Charlton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "YXS15253": {
+      "irn": "YXS15253",
+      "name": "Young Sam Son",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAA01311": {
+      "irn": "MAA01311",
+      "name": "Mark Andrew Ashton",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JPP01087": {
+      "irn": "JPP01087",
+      "name": "Juan Pablo Platt",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OXS71958": {
+      "irn": "OXS71958",
+      "name": "Oliver Simmons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RFL01031": {
+      "irn": "RFL01031",
+      "name": "Robert Fredrick Lloyd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXC00204": {
+      "irn": "EXC00204",
+      "name": "Emanuele Cavaliere",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA00968": {
+      "irn": "AXA00968",
+      "name": "Aitor Agorreta Alvarez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXB04267": {
+      "irn": "AXB04267",
+      "name": "Ana Baez",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JRL01104": {
+      "irn": "JRL01104",
+      "name": "Jeffrey Richard Largey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAL01062": {
+      "irn": "AAL01062",
+      "name": "Andre Alexander Leue",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXA11893": {
+      "irn": "DXA11893",
+      "name": "Daniel Allcock",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXR00703": {
+      "irn": "JXR00703",
+      "name": "Julian Robinson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXA00854": {
+      "irn": "AXA00854",
+      "name": "Ardit Aubeelack",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JFK01036": {
+      "irn": "JFK01036",
+      "name": "John Frederick Kroeger",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXP00253": {
+      "irn": "PXP00253",
+      "name": "Pantelis Protogeros",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXC03079": {
+      "irn": "MXC03079",
+      "name": "Matteo Cataldi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXK01838": {
+      "irn": "AXK01838",
+      "name": "Alexey Kormschikov",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RXP81580": {
+      "irn": "RXP81580",
+      "name": "RIKIN PATEL",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AAG01047": {
+      "irn": "AAG01047",
+      "name": "Andrew Greetham",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EJM01053": {
+      "irn": "EJM01053",
+      "name": "Evan Jon George Morris",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXC00455": {
+      "irn": "CXC00455",
+      "name": "Corentin Rodolphe Chabaud",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXX00005": {
+      "irn": "GXX00005",
+      "name": "Guo Xi",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AMB01120": {
+      "irn": "AMB01120",
+      "name": "Anders Martin Brege",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXT01245": {
+      "irn": "SXT01245",
+      "name": "Tullio Salvatore",
+      "status": null,
+      "controlled_functions": null
+    },
+    "RMR01029": {
+      "irn": "RMR01029",
+      "name": "Roger Mark Reynolds",
+      "status": null,
+      "controlled_functions": null
+    },
+    "SXD02486": {
+      "irn": "SXD02486",
+      "name": "Sachin Duggal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CXG00089": {
+      "irn": "CXG00089",
+      "name": "Carl Philip Victor Gustafsson",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXL01181": {
+      "irn": "BXL01181",
+      "name": "Benedikt Loy",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DPF01026": {
+      "irn": "DPF01026",
+      "name": "Daryn Paul Hewburn Fletcher",
+      "status": null,
+      "controlled_functions": null
+    },
+    "EXV01017": {
+      "irn": "EXV01017",
+      "name": "Eloise Catherine Brigitte Veillet",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PCE01018": {
+      "irn": "PCE01018",
+      "name": "Per Christian Joakim Engstrom",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OCN00002": {
+      "irn": "OCN00002",
+      "name": "Oliver Charles Neal",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXP00129": {
+      "irn": "GXP00129",
+      "name": "Gareth William Potter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "LXA00078": {
+      "irn": "LXA00078",
+      "name": "Lorenzo Angelini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXE00030": {
+      "irn": "TXE00030",
+      "name": "Thomas Michael Ellis",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MAS01576": {
+      "irn": "MAS01576",
+      "name": "Mateusz Aleksander Stawarz",
+      "status": null,
+      "controlled_functions": null
+    },
+    "NIP01008": {
+      "irn": "NIP01008",
+      "name": "Nicholas Ian Hamish Prys-Owen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01758": {
+      "irn": "PXK01758",
+      "name": "Pierre Kling",
+      "status": null,
+      "controlled_functions": null
+    },
+    "GXC02096": {
+      "irn": "GXC02096",
+      "name": "Giancarlo Cassoni",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CAR01115": {
+      "irn": "CAR01115",
+      "name": "Anders Christian Roos",
+      "status": null,
+      "controlled_functions": null
+    },
+    "BXL72026": {
+      "irn": "BXL72026",
+      "name": "Benjamin Lyons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "FXD00096": {
+      "irn": "FXD00096",
+      "name": "Frederick George Dakin",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01585": {
+      "irn": "PXK01585",
+      "name": "Pradipta Kumar",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXG01076": {
+      "irn": "XXG01076",
+      "name": "Xiaoyong Guo",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXM00993": {
+      "irn": "DXM00993",
+      "name": "Dominic McQuade",
+      "status": null,
+      "controlled_functions": null
+    },
+    "IXK01347": {
+      "irn": "IXK01347",
+      "name": "Inigo Kelsey",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CFH01045": {
+      "irn": "CFH01045",
+      "name": "Carl Fredrik Joel Hagerman",
+      "status": null,
+      "controlled_functions": null
+    },
+    "CPG01057": {
+      "irn": "CPG01057",
+      "name": "Clemens Philipp Gamstätter",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MOB01008": {
+      "irn": "MOB01008",
+      "name": "Mattias Olof Johannes Boden",
+      "status": null,
+      "controlled_functions": null
+    },
+    "MXS01991": {
+      "irn": "MXS01991",
+      "name": "Marco Signorini",
+      "status": null,
+      "controlled_functions": null
+    },
+    "AXL16386": {
+      "irn": "AXL16386",
+      "name": "Amanda Corenne Lyons",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PSH01061": {
+      "irn": "PSH01061",
+      "name": "Philipp Sebastian Hoegg",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJT01143": {
+      "irn": "PJT01143",
+      "name": "Pasi Juhani Tolmunen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JMV01006": {
+      "irn": "JMV01006",
+      "name": "John Michael Van Steenberghe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "APB01200": {
+      "irn": "APB01200",
+      "name": "Adam Bowler",
+      "status": null,
+      "controlled_functions": null
+    },
+    "WEH01027": {
+      "irn": "WEH01027",
+      "name": "William Edward Hanbury",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JXH01983": {
+      "irn": "JXH01983",
+      "name": "Jorg-Oliver Hampe",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXS01199": {
+      "irn": "XXS01199",
+      "name": ". Stone Sky Ltd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "OJR01011": {
+      "irn": "OJR01011",
+      "name": "Oliver James Reece",
+      "status": null,
+      "controlled_functions": null
+    },
+    "DXS01366": {
+      "irn": "DXS01366",
+      "name": "Daniele Serruya",
+      "status": null,
+      "controlled_functions": null
+    },
+    "XXD01080": {
+      "irn": "XXD01080",
+      "name": ". De Putron Fund Management Ltd",
+      "status": null,
+      "controlled_functions": null
+    },
+    "TXA01047": {
+      "irn": "TXA01047",
+      "name": "Torbjorn Andreassen",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PJW01164": {
+      "irn": "PJW01164",
+      "name": "Peter John Walters",
+      "status": null,
+      "controlled_functions": null
+    },
+    "JDS01128": {
+      "irn": "JDS01128",
+      "name": "John Dwight Shook",
+      "status": null,
+      "controlled_functions": null
+    },
+    "PXK01092": {
+      "irn": "PXK01092",
+      "name": "Paul Keohane",
+      "status": null,
+      "controlled_functions": null
+    }
+  }
 }

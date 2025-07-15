@@ -1,9 +1,22 @@
 {
   "frn": 927232,
   "name": "IM GLOBAL PARTNER UK LTD",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "927232",
+    "organisation_name": "IM GLOBAL PARTNER UK LTD",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "12596543",
+    "system_timestamp": "23/06/2025 22:17",
+    "status_effective_date": "04/05/2021"
+  },
+  "person_records": {}
 }

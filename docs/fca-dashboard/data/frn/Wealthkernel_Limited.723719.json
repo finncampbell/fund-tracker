@@ -1,9 +1,205 @@
 {
   "frn": 723719,
   "name": "Wealthkernel Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/966921",
+        "Termination Date": "04/04/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "06/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "966921",
+        "Name": "ABUNDANCE PORTFOLIO SERVICES LIMITED"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/968404",
+        "Termination Date": "07/11/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "24/01/2022",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "968404",
+        "Name": "Axis Investing Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/945930",
+        "Termination Date": "05/09/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "01/03/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "945930",
+        "Name": "Claro Wealth Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/927293",
+        "Termination Date": "01/06/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "04/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "927293",
+        "Name": "Clim8 Invest Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/928416",
+        "Termination Date": "26/11/2021",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "24/06/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "928416",
+        "Name": "Evarvest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/956666",
+        "Termination Date": "05/12/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "12/08/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "956666",
+        "Name": "Fortu Trading Ltd"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/916657",
+        "Termination Date": "11/01/2023",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "12/11/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "916657",
+        "Name": "Ikigai Invest Services Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/912500",
+        "Termination Date": "12/05/2020",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "21/08/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "912500",
+        "Name": "Marco Polo Invest Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/941035",
+        "Termination Date": "18/08/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "15/12/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "941035",
+        "Name": "Nosso Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/942958",
+        "Termination Date": "24/04/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "14/01/2021",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "942958",
+        "Name": "Pynk Invest Ltd"
+      }
+    ],
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1028933",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "17/04/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1028933",
+        "Name": "First Portfolio Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/995009",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "20/06/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "995009",
+        "Name": "Round Financial Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/987839",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "10/06/2025",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "987839",
+        "Name": "SeedLegals MPL Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1019161",
+        "RecordSubType": "Full",
+        "Principal FRN": "723719",
+        "Principal Firm Name": "Wealthkernel Limited",
+        "Effective Date": "16/10/2024",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "1019161",
+        "Name": "Yeeld Investments Ltd"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "723719",
+    "organisation_name": "Wealthkernel Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09686970",
+    "system_timestamp": "23/06/2025 22:07",
+    "status_effective_date": "21/10/2016"
+  },
+  "person_records": {}
 }

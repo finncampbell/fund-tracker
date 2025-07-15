@@ -1,9 +1,22 @@
 {
   "frn": 231176,
   "name": "Imara Asset Management (UK) Ltd",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "231176",
+    "organisation_name": "Imara Asset Management (UK) Ltd",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "04777975",
+    "system_timestamp": "23/06/2025 21:44",
+    "status_effective_date": "20/01/2005"
+  },
+  "person_records": {}
 }

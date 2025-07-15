@@ -1,9 +1,22 @@
 {
   "frn": 485668,
   "name": "PAR FUND MANAGEMENT LIMITED",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "485668",
+    "organisation_name": "PAR FUND MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "SC338649",
+    "system_timestamp": "23/06/2025 21:51",
+    "status_effective_date": "20/02/2009"
+  },
+  "person_records": {}
 }

@@ -1,9 +1,38 @@
 {
   "frn": 733895,
   "name": "Naisbitt King Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null,
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/741052",
+        "RecordSubType": "Full",
+        "Principal FRN": "733895",
+        "Principal Firm Name": "Naisbitt King Asset Management Limited",
+        "Effective Date": "18/08/2016",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "741052",
+        "Name": "Naisbitt King Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "733895",
+    "organisation_name": "Naisbitt King Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "09922315",
+    "system_timestamp": "23/06/2025 22:08",
+    "status_effective_date": "12/07/2016"
+  },
+  "person_records": {}
 }

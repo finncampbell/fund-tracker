@@ -1,9 +1,22 @@
 {
   "frn": 194734,
   "name": "Cofunds Limited",
-  "trading_names": [],
+  "trading_names": [
+    null,
+    null
+  ],
   "appointed_reps": [],
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "194734",
+    "organisation_name": "Cofunds Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "03965289",
+    "system_timestamp": "23/06/2025 21:41",
+    "status_effective_date": "01/12/2001"
+  },
+  "person_records": {}
 }

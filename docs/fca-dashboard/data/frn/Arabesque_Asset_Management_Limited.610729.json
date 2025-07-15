@@ -1,9 +1,37 @@
 {
   "frn": 610729,
   "name": "Arabesque Asset Management Limited",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": null,
+    "CurrentAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/918785",
+        "RecordSubType": "Full",
+        "Principal FRN": "610729",
+        "Principal Firm Name": "Arabesque Asset Management Limited",
+        "Effective Date": "27/12/2019",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "918785",
+        "Name": "Arabesque AI Limited"
+      }
+    ]
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "610729",
+    "organisation_name": "Arabesque Asset Management Limited",
+    "status": "Authorised",
+    "business_type": "Regulated",
+    "companies_house_number": "08636689",
+    "system_timestamp": "23/06/2025 22:01",
+    "status_effective_date": "04/06/2014"
+  },
+  "person_records": {}
 }

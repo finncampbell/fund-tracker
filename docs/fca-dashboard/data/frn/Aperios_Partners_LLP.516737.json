@@ -1,9 +1,51 @@
 {
   "frn": 516737,
   "name": "Aperios Partners LLP",
-  "trading_names": [],
-  "appointed_reps": [],
+  "trading_names": [
+    null
+  ],
+  "appointed_reps": {
+    "PreviousAppointedRepresentatives": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/932805",
+        "Termination Date": "15/03/2025",
+        "RecordSubType": "Full",
+        "Principal FRN": "516737",
+        "Principal Firm Name": "Aperios Partners LLP",
+        "Effective Date": "25/08/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "932805",
+        "Name": "Chorus Network Advisors Limited"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/937289",
+        "Termination Date": "12/01/2022",
+        "RecordSubType": "Full",
+        "Principal FRN": "516737",
+        "Principal Firm Name": "Aperios Partners LLP",
+        "Effective Date": "28/10/2020",
+        "EEA Tied Agent": "false",
+        "Tied Agent": "false",
+        "[NotinUse] Insurance Distribution": "false",
+        "FRN": "937289",
+        "Name": "Opto Impact Ventures Limited"
+      }
+    ],
+    "CurrentAppointedRepresentatives": null
+  },
   "individuals": [],
   "person_metadata": {},
-  "controlled_functions": {}
+  "controlled_functions": {},
+  "metadata": {
+    "frn": "516737",
+    "organisation_name": "Aperios Partners LLP",
+    "status": "Authorised - applied to cancel",
+    "business_type": "Regulated",
+    "companies_house_number": "OC348513",
+    "system_timestamp": "23/06/2025 21:54",
+    "status_effective_date": "10/05/2010"
+  },
+  "person_records": {}
 }
