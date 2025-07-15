@@ -1,0 +1,46 @@
+name: Merge FCA CF From Artifacts
+
+permissions:
+  contents: write
+
+# Trigger after your CF-shard workflow finishes successfully
+on:
+  workflow_run:
+    workflows: ["Fetch FCA Individual Controlled Functions (Sharded)"]
+    types: [ completed ]
+
+jobs:
+  merge_from_artifacts:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository (shallow)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Download CF shard artifacts
+        uses: actions/download-artifact@v3
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
+          path: docs/fca-dashboard/data
+
+      - name: Merge shards into single CF JSON
+        run: |
+          python3 fca-dashboard/scripts/merge_cf_shards.py \
+            docs/fca-dashboard/data \
+            docs/fca-dashboard/data/fca_cf.json
+
+      - name: Build per-FRN profiles
+        run: |
+          python3 fca-dashboard/scripts/build_frn_profiles.py
+
+      - name: Commit & push all updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add docs/fca-dashboard/data/fca_cf.json docs/fca-dashboard/data/frn
+          git diff --cached --quiet || git commit -m "chore(fca): merge CF + build FRN profiles"
+          git pull --rebase origin main
+          git push origin HEAD:main
