@@ -4,33 +4,39 @@ scripts/build_frn_profiles.py
 
 Reads the merged FCA JSON slices in docs/fca-dashboard/data/,
 and emits one profile file per FRN named <CleanName>.<FRN>.json
-in docs/fca-dashboard/data/frn/.
+into docs/fca-dashboard/data/frn/.
 """
 import os
 import json
 import re
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
-BASE = 'docs/fca-dashboard/data'
-OUT  = os.path.join(BASE, 'frn')
-os.makedirs(OUT, exist_ok=True)
+BASE_DIR = os.path.join('docs', 'fca-dashboard', 'data')
+OUT_DIR  = os.path.join(BASE_DIR, 'frn')
+os.makedirs(OUT_DIR, exist_ok=True)
 
 # ─── Load source data ─────────────────────────────────────────────────────────
-firms   = json.load(open(os.path.join(BASE, 'fca_firms.json'),            'r', encoding='utf-8'))
-names   = json.load(open(os.path.join(BASE, 'fca_names.json'),            'r', encoding='utf-8'))
-ars     = json.load(open(os.path.join(BASE, 'fca_ars.json'),              'r', encoding='utf-8'))
-cf      = json.load(open(os.path.join(BASE, 'fca_cf.json'),               'r', encoding='utf-8'))
-ind_by  = json.load(open(os.path.join(BASE, 'fca_individuals_by_firm.json'),'r', encoding='utf-8'))
-persons = json.load(open(os.path.join(BASE, 'fca_persons.json'),          'r', encoding='utf-8'))
+with open(os.path.join(BASE_DIR, 'fca_firms.json'),           'r', encoding='utf-8') as f:
+    firms = json.load(f)
+with open(os.path.join(BASE_DIR, 'fca_names.json'),           'r', encoding='utf-8') as f:
+    names = json.load(f)
+with open(os.path.join(BASE_DIR, 'fca_ars.json'),             'r', encoding='utf-8') as f:
+    ars = json.load(f)
+with open(os.path.join(BASE_DIR, 'fca_individuals_by_firm.json'), 'r', encoding='utf-8') as f:
+    ind_by = json.load(f)
+with open(os.path.join(BASE_DIR, 'fca_persons.json'),        'r', encoding='utf-8') as f:
+    persons = json.load(f)
+with open(os.path.join(BASE_DIR, 'fca_cf.json'),             'r', encoding='utf-8') as f:
+    cf = json.load(f)
 
 # ─── Helper to sanitize names for filenames ──────────────────────────────────
 def clean_name(s: str) -> str:
-    # collapse whitespace → underscore, strip non-alphanum/underscore
+    # Collapse whitespace → underscore, then strip non-alphanumeric/underscore
     s = re.sub(r'\s+', '_', s.strip())
     s = re.sub(r'[^A-Za-z0-9_]', '', s)
     return s or 'Unnamed'
 
-# ─── Build profiles ───────────────────────────────────────────────────────────
+# ─── Build and write profiles ─────────────────────────────────────────────────
 for frn_str, basic in firms.items():
     frn = str(frn_str)
     profile = {
@@ -72,7 +78,7 @@ for frn_str, basic in firms.items():
     profile["person_metadata"] = {
         irn: persons[irn]
         for rec in ind_list
-        if (irn := rec.get("IRN")) in persons
+        if (irn := rec.get("IRN")) and irn in persons
     }
 
     # controlled_functions per IRN
@@ -84,12 +90,12 @@ for frn_str, basic in firms.items():
 
     # filename: CleanName.FRN.json
     name_part = clean_name(basic.get("name", ""))
-    fname = f"{name_part}.{frn}.json"
-    out_path = os.path.join(OUT, fname)
+    filename = f"{name_part}.{frn}.json"
+    out_path = os.path.join(OUT_DIR, filename)
 
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(profile, f, indent=2, ensure_ascii=False)
 
-    print(f"📝 Wrote profile for FRN {frn} → {fname}")
+    print(f"📝 Wrote profile for FRN {frn} → {filename}")
 
-print("\n✅ All profiles written to docs/fca-dashboard/data/frn/")
+print(f"\n✅ All profiles written under {OUT_DIR}")    
