@@ -9,24 +9,34 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out code
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: Download CF chunk artifacts
+      - name: Download CF archive artifact
         uses: actions/download-artifact@v4
         with:
-          path: chunks
+          name: combined-cf   # or whatever your artifact is named
+          path: docs/fca-dashboard/data
+
+      - name: List raw data files
+        run: |
+          echo "Firm slices:"
+          ls -1 fca-dashboard/data
+          echo "CF archive:"
+          ls -lh docs/fca-dashboard/data/fca_cf.zip
+          echo "Profile stubs:"
+          ls -1 docs/fca-dashboard/data/frn | head -10
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Merge FCA data into FRN profiles
+      - name: Merge FCA data into profiles
+        working-directory: .
         run: python3 fca-dashboard/scripts/build_frn_profiles.py
 
       - name: Commit & push updated profiles
@@ -34,5 +44,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           git add docs/fca-dashboard/data/frn/*.json
-          git diff --cached --quiet || git commit -m "chore(fca): merge profile data"
+          git diff --cached --quiet || git commit -m "chore(fca): rebuild FRN profiles"
           git push origin HEAD:main
