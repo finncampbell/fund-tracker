@@ -43,14 +43,14 @@ for e in entries:
     filename = f"{clean_name(name)}.{frn}.json"
     outpath  = os.path.join(OUT_DIR, filename)
 
+    # Stub keys must match merge script exactly:
     profile = {
         "frn": int(frn),
-        "name": name,
-        # placeholders—will fill these later
+        "metadata": {},
         "trading_names": [],
         "appointed_reps": [],
         "individuals": [],
-        "person_metadata": {},
+        "person_records": {},
         "controlled_functions": {}
     }
 
