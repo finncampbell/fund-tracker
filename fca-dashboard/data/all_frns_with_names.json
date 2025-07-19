@@ -328,6 +328,10 @@
     "name": "Impera Capital LLP"
   },
   {
+    "frn": "1022310",
+    "name": "IG4 Capital Advisors LLP"
+  },
+  {
     "frn": "1022406",
     "name": "Como Capital Limited"
   },
@@ -1645,7 +1649,7 @@
   },
   {
     "frn": "182008",
-    "name": "Gallagher Securities Limited"
+    "name": "GALLAGHER SECURITIES UK LIMITED"
   },
   {
     "frn": "182011",
@@ -2149,7 +2153,7 @@
   },
   {
     "frn": "194713",
-    "name": "Raymond James Investment Services Ltd"
+    "name": "RAYMOND JAMES INVESTMENT SERVICES LIMITED"
   },
   {
     "frn": "194722",
@@ -2872,10 +2876,6 @@
     "name": "Pharo Management (UK) LLP"
   },
   {
-    "frn": "401675",
-    "name": "KBW Associates Ltd"
-  },
-  {
     "frn": "401809",
     "name": "HENDERSON ROWE LIMITED"
   },
@@ -3029,7 +3029,7 @@
   },
   {
     "frn": "418826",
-    "name": "OCM Wealth Management Ltd"
+    "name": "OCM WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "419312",
@@ -3474,10 +3474,6 @@
   {
     "frn": "454330",
     "name": "CBA EUROPE LIMITED"
-  },
-  {
-    "frn": "454571",
-    "name": "Fletcher King Investment Management Plc"
   },
   {
     "frn": "454655",
@@ -5262,10 +5258,6 @@
   {
     "frn": "554051",
     "name": "Sturgeon Capital Ltd"
-  },
-  {
-    "frn": "554229",
-    "name": "Waystone Capital Solutions (UK) Limited"
   },
   {
     "frn": "554493",
@@ -11101,7 +11093,7 @@
   },
   {
     "frn": "992402",
-    "name": "Mitchell and Mitchell Asset Management Ltd"
+    "name": "MITCHELL & MITCHELL ASSET MANAGEMENT LTD"
   },
   {
     "frn": "992520",
