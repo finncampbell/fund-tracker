@@ -1,23 +1,29 @@
-name: Fetch FCA Main Slice (Chained Shards)
+name: Fetch FCA Main Slice
 
 on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+    inputs:
+      fetch_mode:
+        description: 'fetch_mode: full | missing | errors'
+        required: true
+        default: 'missing'
+        type: choice
+        options:
+          - full
+          - missing
+          - errors
 
 permissions:
   contents: write
 
 jobs:
-
   fetch-shard-1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -25,11 +31,15 @@ jobs:
 
       - name: Fetch shard #1
         run: |
+          MODE=${{ github.event.inputs.fetch_mode }}
+          FLAGS=""
+          if [[ "$MODE" == "missing" ]]; then FLAGS="--only-missing"; fi
+          if [[ "$MODE" == "errors"  ]]; then FLAGS="--only-errors";  fi
           python3 fca-dashboard/scripts/fetch_main.py \
             --shards 5 \
             --shard-index 1 \
             --threads 5 \
-            --only-missing
+            $FLAGS
 
       - uses: actions/upload-artifact@v4
         with:
@@ -41,10 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -52,11 +59,15 @@ jobs:
 
       - name: Fetch shard #2
         run: |
+          MODE=${{ github.event.inputs.fetch_mode }}
+          FLAGS=""
+          if [[ "$MODE" == "missing" ]]; then FLAGS="--only-missing"; fi
+          if [[ "$MODE" == "errors"  ]]; then FLAGS="--only-errors";  fi
           python3 fca-dashboard/scripts/fetch_main.py \
             --shards 5 \
             --shard-index 2 \
             --threads 5 \
-            --only-missing
+            $FLAGS
 
       - uses: actions/upload-artifact@v4
         with:
@@ -68,10 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -79,11 +87,15 @@ jobs:
 
       - name: Fetch shard #3
         run: |
+          MODE=${{ github.event.inputs.fetch_mode }}
+          FLAGS=""
+          if [[ "$MODE" == "missing" ]]; then FLAGS="--only-missing"; fi
+          if [[ "$MODE" == "errors"  ]]; then FLAGS="--only-errors";  fi
           python3 fca-dashboard/scripts/fetch_main.py \
             --shards 5 \
             --shard-index 3 \
             --threads 5 \
-            --only-missing
+            $FLAGS
 
       - uses: actions/upload-artifact@v4
         with:
@@ -95,10 +107,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -106,11 +115,15 @@ jobs:
 
       - name: Fetch shard #4
         run: |
+          MODE=${{ github.event.inputs.fetch_mode }}
+          FLAGS=""
+          if [[ "$MODE" == "missing" ]]; then FLAGS="--only-missing"; fi
+          if [[ "$MODE" == "errors"  ]]; then FLAGS="--only-errors";  fi
           python3 fca-dashboard/scripts/fetch_main.py \
             --shards 5 \
             --shard-index 4 \
             --threads 5 \
-            --only-missing
+            $FLAGS
 
       - uses: actions/upload-artifact@v4
         with:
@@ -122,10 +135,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
-      - name: Set up Python & deps
+      - name: Set up Python & install deps
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
@@ -133,11 +143,15 @@ jobs:
 
       - name: Fetch shard #5
         run: |
+          MODE=${{ github.event.inputs.fetch_mode }}
+          FLAGS=""
+          if [[ "$MODE" == "missing" ]]; then FLAGS="--only-missing"; fi
+          if [[ "$MODE" == "errors"  ]]; then FLAGS="--only-errors";  fi
           python3 fca-dashboard/scripts/fetch_main.py \
             --shards 5 \
             --shard-index 5 \
             --threads 5 \
-            --only-missing
+            $FLAGS
 
       - uses: actions/upload-artifact@v4
         with:
@@ -154,9 +168,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
-
       - name: Download all shards
         uses: actions/download-artifact@v4
         with:
