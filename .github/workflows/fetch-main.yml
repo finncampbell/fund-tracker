@@ -1,12 +1,10 @@
 name: Fetch FCA Main Slice
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
       fetch_mode:
-        description: 'fetch_mode: full | missing | errors'
+        description: 'Which FRNs to fetch: full, missing, or errors'
         required: true
         default: 'missing'
         type: choice
@@ -167,7 +165,16 @@ jobs:
       - fetch-shard-5
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out code (full history)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Sync with remote
+        run: |
+          git pull origin main
+
       - name: Download all shards
         uses: actions/download-artifact@v4
         with:
