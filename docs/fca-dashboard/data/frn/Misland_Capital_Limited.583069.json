@@ -1,6 +1,28 @@
 {
   "frn": 583069,
-  "metadata": {},
+  "metadata": {
+    "frn": "583069",
+    "organisation_name": "Misland Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "13/09/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07433118",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/583069/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/583069/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/583069/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/583069/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/583069/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/583069/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/583069/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/583069/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/583069/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

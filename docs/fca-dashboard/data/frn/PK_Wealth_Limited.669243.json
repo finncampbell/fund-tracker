@@ -1,6 +1,28 @@
 {
   "frn": 669243,
-  "metadata": {},
+  "metadata": {
+    "frn": "669243",
+    "organisation_name": "PK Wealth Limited",
+    "status": "Authorised",
+    "status_effective_date": "23/12/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08991126",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/669243/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/669243/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/669243/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/669243/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/669243/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/669243/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/669243/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/669243/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/669243/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

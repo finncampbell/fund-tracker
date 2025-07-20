@@ -1,6 +1,28 @@
 {
   "frn": 753435,
-  "metadata": {},
+  "metadata": {
+    "frn": "753435",
+    "organisation_name": "BellRock Securities Limited",
+    "status": "Authorised",
+    "status_effective_date": "23/01/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "09798089",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/753435/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/753435/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/753435/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/753435/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/753435/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/753435/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/753435/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/753435/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/753435/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

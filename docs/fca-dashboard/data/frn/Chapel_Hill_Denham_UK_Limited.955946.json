@@ -1,6 +1,28 @@
 {
   "frn": 955946,
-  "metadata": {},
+  "metadata": {
+    "frn": "955946",
+    "organisation_name": "Chapel Hill Denham UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "29/07/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "13239513",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/955946/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/955946/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/955946/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/955946/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/955946/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/955946/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/955946/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/955946/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/955946/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

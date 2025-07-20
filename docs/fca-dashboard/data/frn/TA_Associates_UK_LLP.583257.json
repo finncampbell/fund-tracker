@@ -1,6 +1,28 @@
 {
   "frn": 583257,
-  "metadata": {},
+  "metadata": {
+    "frn": "583257",
+    "organisation_name": "TA Associates (UK), LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC375642",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/583257/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/583257/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/583257/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/583257/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/583257/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/583257/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/583257/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/583257/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/583257/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

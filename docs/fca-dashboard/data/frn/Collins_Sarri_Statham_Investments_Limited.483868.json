@@ -1,6 +1,28 @@
 {
   "frn": 483868,
-  "metadata": {},
+  "metadata": {
+    "frn": "483868",
+    "organisation_name": "Collins Sarri Statham Investments Limited",
+    "status": "See full details",
+    "status_effective_date": "27/11/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "06539190",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/483868/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/483868/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/483868/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/483868/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/483868/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/483868/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/483868/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/483868/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/483868/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

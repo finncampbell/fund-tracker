@@ -1,6 +1,28 @@
 {
   "frn": 629950,
-  "metadata": {},
+  "metadata": {
+    "frn": "629950",
+    "organisation_name": "Monarch Alternative Capital (Europe) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08138649",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/629950/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/629950/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/629950/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/629950/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/629950/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/629950/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/629950/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/629950/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/629950/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

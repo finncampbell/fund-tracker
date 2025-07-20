@@ -1,6 +1,28 @@
 {
   "frn": 146786,
-  "metadata": {},
+  "metadata": {
+    "frn": "146786",
+    "organisation_name": "Legal & General (Portfolio Management Services) Ltd",
+    "status": "See full details",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "02457525",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/146786/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/146786/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/146786/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/146786/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/146786/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/146786/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/146786/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/146786/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/146786/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

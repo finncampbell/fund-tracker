@@ -1,6 +1,28 @@
 {
   "frn": 971768,
-  "metadata": {},
+  "metadata": {
+    "frn": "971768",
+    "organisation_name": "Auctus Advisors LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/09/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "OC429983",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/971768/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/971768/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/971768/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/971768/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/971768/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/971768/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/971768/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/971768/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/971768/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

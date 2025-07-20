@@ -1,6 +1,28 @@
 {
   "frn": 792154,
-  "metadata": {},
+  "metadata": {
+    "frn": "792154",
+    "organisation_name": "Prosperise Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/02/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "OC419495",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/792154/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/792154/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/792154/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/792154/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/792154/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/792154/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/792154/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/792154/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/792154/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

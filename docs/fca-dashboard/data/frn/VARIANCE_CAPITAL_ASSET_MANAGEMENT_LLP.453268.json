@@ -1,6 +1,28 @@
 {
   "frn": 453268,
-  "metadata": {},
+  "metadata": {
+    "frn": "453268",
+    "organisation_name": "VARIANCE CAPITAL ASSET MANAGEMENT LLP",
+    "status": "Authorised",
+    "status_effective_date": "24/11/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "OC316498",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/453268/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/453268/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/453268/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/453268/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/453268/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/453268/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/453268/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/453268/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/453268/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

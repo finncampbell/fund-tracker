@@ -1,6 +1,28 @@
 {
   "frn": 435487,
-  "metadata": {},
+  "metadata": {
+    "frn": "435487",
+    "organisation_name": "AEW Global Advisors (Europe) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/10/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "05406927",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/435487/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/435487/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/435487/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/435487/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/435487/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/435487/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/435487/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/435487/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/435487/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

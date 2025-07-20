@@ -1,6 +1,28 @@
 {
   "frn": 562209,
-  "metadata": {},
+  "metadata": {
+    "frn": "562209",
+    "organisation_name": "RM Capital Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "SC380707",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/562209/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/562209/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/562209/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/562209/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/562209/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/562209/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/562209/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/562209/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/562209/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

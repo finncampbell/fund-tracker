@@ -1,6 +1,28 @@
 {
   "frn": 624196,
-  "metadata": {},
+  "metadata": {
+    "frn": "624196",
+    "organisation_name": "Activus Wealth Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08999169",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/624196/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/624196/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/624196/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/624196/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/624196/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/624196/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/624196/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/624196/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/624196/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

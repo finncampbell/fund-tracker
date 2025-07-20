@@ -1,6 +1,28 @@
 {
   "frn": 484450,
-  "metadata": {},
+  "metadata": {
+    "frn": "484450",
+    "organisation_name": "Cobens Group Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05850981",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/484450/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/484450/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/484450/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/484450/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/484450/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/484450/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/484450/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/484450/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/484450/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

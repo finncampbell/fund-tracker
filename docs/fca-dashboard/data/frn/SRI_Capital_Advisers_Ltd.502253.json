@@ -1,6 +1,28 @@
 {
   "frn": 502253,
-  "metadata": {},
+  "metadata": {
+    "frn": "502253",
+    "organisation_name": "SRI Capital Advisers Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/01/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06799802",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/502253/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/502253/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/502253/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/502253/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/502253/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/502253/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/502253/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/502253/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/502253/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

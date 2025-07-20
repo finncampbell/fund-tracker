@@ -1,6 +1,28 @@
 {
   "frn": 124490,
-  "metadata": {},
+  "metadata": {
+    "frn": "124490",
+    "organisation_name": "Daiwa Capital Markets Europe Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "01487359",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124490/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124490/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124490/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124490/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124490/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124490/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124490/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124490/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124490/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

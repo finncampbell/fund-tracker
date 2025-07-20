@@ -1,6 +1,28 @@
 {
   "frn": 468321,
-  "metadata": {},
+  "metadata": {
+    "frn": "468321",
+    "organisation_name": "Connor Broadley Ltd",
+    "status": "Authorised",
+    "status_effective_date": "02/07/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06254078",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/468321/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/468321/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/468321/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/468321/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/468321/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/468321/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/468321/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/468321/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/468321/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 969076,
-  "metadata": {},
+  "metadata": {
+    "frn": "969076",
+    "organisation_name": "Nordstar Partners Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "06/04/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC435429",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/969076/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/969076/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/969076/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/969076/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/969076/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/969076/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/969076/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/969076/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/969076/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,33 @@
 {
   "frn": 568089,
-  "metadata": {},
+  "metadata": {
+    "frn": "568089",
+    "organisation_name": "Titan Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "15/03/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07805960",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/568089/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/568089/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/568089/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/568089/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/568089/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/568089/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/568089/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/568089/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/568089/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

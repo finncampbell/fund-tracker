@@ -1,6 +1,28 @@
 {
   "frn": 435492,
-  "metadata": {},
+  "metadata": {
+    "frn": "435492",
+    "organisation_name": "Struan Financial Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/10/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05542744",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/435492/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/435492/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/435492/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/435492/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/435492/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/435492/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/435492/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/435492/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/435492/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

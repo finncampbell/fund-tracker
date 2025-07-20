@@ -1,6 +1,28 @@
 {
   "frn": 668118,
-  "metadata": {},
+  "metadata": {
+    "frn": "668118",
+    "organisation_name": "Venture Commodities Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC382786",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/668118/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/668118/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/668118/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/668118/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/668118/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/668118/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/668118/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/668118/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/668118/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 432503,
-  "metadata": {},
+  "metadata": {
+    "frn": "432503",
+    "organisation_name": "Johnston Campbell Ltd",
+    "status": "Authorised",
+    "status_effective_date": "21/09/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "NI046529",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/432503/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/432503/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/432503/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/432503/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/432503/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/432503/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/432503/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/432503/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/432503/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

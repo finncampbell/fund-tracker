@@ -1,6 +1,28 @@
 {
   "frn": 607414,
-  "metadata": {},
+  "metadata": {
+    "frn": "607414",
+    "organisation_name": "Sparrows Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/06/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "08623416",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/607414/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/607414/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/607414/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/607414/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/607414/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/607414/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/607414/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/607414/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/607414/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

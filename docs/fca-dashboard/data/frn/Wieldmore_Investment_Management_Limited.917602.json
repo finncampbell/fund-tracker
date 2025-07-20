@@ -1,6 +1,28 @@
 {
   "frn": 917602,
-  "metadata": {},
+  "metadata": {
+    "frn": "917602",
+    "organisation_name": "Wieldmore Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "12315071",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/917602/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/917602/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/917602/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/917602/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/917602/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/917602/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/917602/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/917602/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/917602/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

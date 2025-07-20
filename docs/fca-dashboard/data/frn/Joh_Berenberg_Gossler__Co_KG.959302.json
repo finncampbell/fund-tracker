@@ -1,6 +1,28 @@
 {
   "frn": 959302,
-  "metadata": {},
+  "metadata": {
+    "frn": "959302",
+    "organisation_name": "Joh. Berenberg, Gossler & Co. KG",
+    "status": "Authorised",
+    "status_effective_date": "21/07/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "OE022549",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/959302/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/959302/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/959302/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/959302/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/959302/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/959302/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/959302/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/959302/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/959302/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

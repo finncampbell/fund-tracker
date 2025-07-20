@@ -1,6 +1,28 @@
 {
   "frn": 646610,
-  "metadata": {},
+  "metadata": {
+    "frn": "646610",
+    "organisation_name": "Zanbato UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "17/04/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08885567",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/646610/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/646610/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/646610/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/646610/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/646610/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/646610/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/646610/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/646610/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/646610/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

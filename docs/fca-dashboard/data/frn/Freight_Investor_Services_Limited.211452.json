@@ -1,6 +1,28 @@
 {
   "frn": 211452,
-  "metadata": {},
+  "metadata": {
+    "frn": "211452",
+    "organisation_name": "Freight Investor Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/09/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04243444",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/211452/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/211452/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/211452/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/211452/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/211452/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/211452/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/211452/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/211452/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/211452/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

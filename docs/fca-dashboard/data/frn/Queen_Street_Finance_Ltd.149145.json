@@ -1,6 +1,28 @@
 {
   "frn": 149145,
-  "metadata": {},
+  "metadata": {
+    "frn": "149145",
+    "organisation_name": "Queen Street Finance Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "02584541",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/149145/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/149145/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/149145/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/149145/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/149145/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/149145/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/149145/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/149145/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/149145/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

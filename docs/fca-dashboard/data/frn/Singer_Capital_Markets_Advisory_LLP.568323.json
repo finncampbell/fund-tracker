@@ -1,6 +1,28 @@
 {
   "frn": 568323,
-  "metadata": {},
+  "metadata": {
+    "frn": "568323",
+    "organisation_name": "Singer Capital Markets Advisory LLP",
+    "status": "Authorised",
+    "status_effective_date": "09/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC364131",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/568323/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/568323/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/568323/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/568323/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/568323/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/568323/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/568323/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/568323/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/568323/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

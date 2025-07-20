@@ -1,6 +1,28 @@
 {
   "frn": 720819,
-  "metadata": {},
+  "metadata": {
+    "frn": "720819",
+    "organisation_name": "Columbia Lake Partners Manager, LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/10/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC391429",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/720819/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/720819/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/720819/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/720819/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/720819/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/720819/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/720819/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/720819/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/720819/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

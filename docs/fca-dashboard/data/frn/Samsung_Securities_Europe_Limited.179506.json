@@ -1,6 +1,28 @@
 {
   "frn": 179506,
-  "metadata": {},
+  "metadata": {
+    "frn": "179506",
+    "organisation_name": "Samsung Securities (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03135612",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/179506/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/179506/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/179506/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/179506/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/179506/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/179506/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/179506/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/179506/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/179506/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

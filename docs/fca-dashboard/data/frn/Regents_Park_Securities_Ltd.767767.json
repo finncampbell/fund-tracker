@@ -1,6 +1,28 @@
 {
   "frn": 767767,
-  "metadata": {},
+  "metadata": {
+    "frn": "767767",
+    "organisation_name": "Regents Park Securities Ltd",
+    "status": "Authorised",
+    "status_effective_date": "08/08/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "10094274",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/767767/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/767767/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/767767/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/767767/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/767767/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/767767/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/767767/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/767767/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/767767/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

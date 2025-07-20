@@ -1,6 +1,28 @@
 {
   "frn": 986956,
-  "metadata": {},
+  "metadata": {
+    "frn": "986956",
+    "organisation_name": "Sankofa Investment Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/08/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13213626",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/986956/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/986956/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/986956/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/986956/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/986956/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/986956/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/986956/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/986956/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/986956/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

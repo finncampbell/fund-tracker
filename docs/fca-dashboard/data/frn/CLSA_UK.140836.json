@@ -1,6 +1,28 @@
 {
   "frn": 140836,
-  "metadata": {},
+  "metadata": {
+    "frn": "140836",
+    "organisation_name": "CLSA (UK)",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "01008262",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/140836/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/140836/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/140836/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/140836/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/140836/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/140836/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/140836/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/140836/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/140836/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

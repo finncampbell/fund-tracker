@@ -1,6 +1,28 @@
 {
   "frn": 188924,
-  "metadata": {},
+  "metadata": {
+    "frn": "188924",
+    "organisation_name": "EuroMTS Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03615752",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/188924/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/188924/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/188924/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/188924/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/188924/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/188924/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/188924/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/188924/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/188924/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

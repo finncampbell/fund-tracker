@@ -1,6 +1,33 @@
 {
   "frn": 419337,
-  "metadata": {},
+  "metadata": {
+    "frn": "419337",
+    "organisation_name": "Ardent Financing Group Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/05/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04974713",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/419337/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/419337/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/419337/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/419337/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/419337/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/419337/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/419337/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/419337/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/419337/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

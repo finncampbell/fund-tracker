@@ -1,6 +1,28 @@
 {
   "frn": 431387,
-  "metadata": {},
+  "metadata": {
+    "frn": "431387",
+    "organisation_name": "Gale and Phillipson Investment Services Ltd",
+    "status": "Authorised",
+    "status_effective_date": "18/05/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05409822",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/431387/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/431387/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/431387/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/431387/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/431387/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/431387/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/431387/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/431387/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/431387/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

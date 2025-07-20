@@ -1,6 +1,28 @@
 {
   "frn": 478549,
-  "metadata": {},
+  "metadata": {
+    "frn": "478549",
+    "organisation_name": "Steen Associates Limited",
+    "status": "Authorised",
+    "status_effective_date": "25/06/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05604360",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/478549/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/478549/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/478549/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/478549/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/478549/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/478549/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/478549/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/478549/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/478549/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

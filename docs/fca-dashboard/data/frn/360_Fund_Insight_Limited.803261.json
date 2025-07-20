@@ -1,6 +1,28 @@
 {
   "frn": 803261,
-  "metadata": {},
+  "metadata": {
+    "frn": "803261",
+    "organisation_name": "360 Fund Insight Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/06/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11124186",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/803261/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/803261/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/803261/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/803261/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/803261/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/803261/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/803261/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/803261/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/803261/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

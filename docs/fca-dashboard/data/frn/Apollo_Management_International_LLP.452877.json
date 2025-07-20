@@ -1,6 +1,28 @@
 {
   "frn": 452877,
-  "metadata": {},
+  "metadata": {
+    "frn": "452877",
+    "organisation_name": "Apollo Management International LLP",
+    "status": "Authorised",
+    "status_effective_date": "13/12/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC316197",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/452877/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/452877/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/452877/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/452877/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/452877/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/452877/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/452877/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/452877/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/452877/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

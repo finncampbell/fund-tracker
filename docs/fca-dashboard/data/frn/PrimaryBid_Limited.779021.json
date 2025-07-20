@@ -1,6 +1,28 @@
 {
   "frn": 779021,
-  "metadata": {},
+  "metadata": {
+    "frn": "779021",
+    "organisation_name": "PrimaryBid Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "26/01/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "08092575",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/779021/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/779021/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/779021/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/779021/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/779021/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/779021/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/779021/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/779021/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/779021/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

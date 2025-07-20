@@ -1,6 +1,28 @@
 {
   "frn": 523227,
-  "metadata": {},
+  "metadata": {
+    "frn": "523227",
+    "organisation_name": "ITINERANT-GPS UK LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "07206520",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/523227/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/523227/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/523227/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/523227/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/523227/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/523227/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/523227/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/523227/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/523227/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

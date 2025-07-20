@@ -1,6 +1,28 @@
 {
   "frn": 470392,
-  "metadata": {},
+  "metadata": {
+    "frn": "470392",
+    "organisation_name": "YCM-Invest Ltd",
+    "status": "Authorised",
+    "status_effective_date": "08/11/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "06039502",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/470392/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/470392/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/470392/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/470392/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/470392/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/470392/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/470392/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/470392/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/470392/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

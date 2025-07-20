@@ -1,6 +1,28 @@
 {
   "frn": 622916,
-  "metadata": {},
+  "metadata": {
+    "frn": "622916",
+    "organisation_name": "St James's Place Investment Administration Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08764231",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/622916/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/622916/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/622916/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/622916/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/622916/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/622916/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/622916/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/622916/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/622916/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

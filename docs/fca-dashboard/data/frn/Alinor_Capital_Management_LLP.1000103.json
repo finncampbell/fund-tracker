@@ -1,6 +1,28 @@
 {
   "frn": 1000103,
-  "metadata": {},
+  "metadata": {
+    "frn": "1000103",
+    "organisation_name": "Alinor Capital Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/11/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:07",
+    "companies_house_number": "OC448165",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1000103/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1000103/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1000103/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

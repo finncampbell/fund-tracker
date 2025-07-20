@@ -1,6 +1,28 @@
 {
   "frn": 798186,
-  "metadata": {},
+  "metadata": {
+    "frn": "798186",
+    "organisation_name": "Camdor Global Advisors Ltd",
+    "status": "Authorised",
+    "status_effective_date": "15/02/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "09507497",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/798186/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/798186/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/798186/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/798186/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/798186/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/798186/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/798186/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/798186/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/798186/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

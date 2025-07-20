@@ -1,6 +1,28 @@
 {
   "frn": 951595,
-  "metadata": {},
+  "metadata": {
+    "frn": "951595",
+    "organisation_name": "Cloud Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "14/03/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "OC433047",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/951595/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/951595/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/951595/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/951595/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/951595/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/951595/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/951595/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/951595/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/951595/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

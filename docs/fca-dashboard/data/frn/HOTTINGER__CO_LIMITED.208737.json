@@ -1,6 +1,28 @@
 {
   "frn": 208737,
-  "metadata": {},
+  "metadata": {
+    "frn": "208737",
+    "organisation_name": "HOTTINGER & CO. LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "23/01/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "01573969",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/208737/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/208737/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/208737/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/208737/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/208737/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/208737/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/208737/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/208737/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/208737/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

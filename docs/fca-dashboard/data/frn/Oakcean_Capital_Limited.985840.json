@@ -1,6 +1,28 @@
 {
   "frn": 985840,
-  "metadata": {},
+  "metadata": {
+    "frn": "985840",
+    "organisation_name": "Oakcean Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/05/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "14074366",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/985840/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/985840/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/985840/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/985840/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/985840/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/985840/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/985840/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/985840/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/985840/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

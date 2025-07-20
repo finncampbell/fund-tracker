@@ -1,6 +1,28 @@
 {
   "frn": 605070,
-  "metadata": {},
+  "metadata": {
+    "frn": "605070",
+    "organisation_name": "Amana Financial Services UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08582141",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/605070/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/605070/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/605070/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/605070/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/605070/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/605070/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/605070/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/605070/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/605070/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

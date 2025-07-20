@@ -1,6 +1,37 @@
 {
   "frn": 560872,
-  "metadata": {},
+  "metadata": {
+    "frn": "560872",
+    "organisation_name": "AFX Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "15/05/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07612002",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      },
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/560872/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/560872/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/560872/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/560872/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/560872/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/560872/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/560872/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/560872/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/560872/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

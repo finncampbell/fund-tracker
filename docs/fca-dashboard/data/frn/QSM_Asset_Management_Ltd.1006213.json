@@ -1,6 +1,28 @@
 {
   "frn": 1006213,
-  "metadata": {},
+  "metadata": {
+    "frn": "1006213",
+    "organisation_name": "QSM Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "23/01/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:07",
+    "companies_house_number": "14955733",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1006213/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1006213/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1006213/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

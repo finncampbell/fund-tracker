@@ -1,6 +1,28 @@
 {
   "frn": 575152,
-  "metadata": {},
+  "metadata": {
+    "frn": "575152",
+    "organisation_name": "Enterprise Commodity Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/06/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "06145152",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/575152/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/575152/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/575152/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/575152/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/575152/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/575152/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/575152/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/575152/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/575152/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

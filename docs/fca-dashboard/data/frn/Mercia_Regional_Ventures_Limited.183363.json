@@ -1,6 +1,28 @@
 {
   "frn": 183363,
-  "metadata": {},
+  "metadata": {
+    "frn": "183363",
+    "organisation_name": "Mercia Regional Ventures Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "03249066",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/183363/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/183363/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/183363/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/183363/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/183363/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/183363/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/183363/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/183363/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/183363/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

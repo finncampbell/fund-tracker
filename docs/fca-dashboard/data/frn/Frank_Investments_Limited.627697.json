@@ -1,6 +1,28 @@
 {
   "frn": 627697,
-  "metadata": {},
+  "metadata": {
+    "frn": "627697",
+    "organisation_name": "Frank Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "15/10/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "05629005",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/627697/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/627697/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/627697/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/627697/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/627697/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/627697/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/627697/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/627697/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/627697/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

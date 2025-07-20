@@ -1,6 +1,28 @@
 {
   "frn": 453419,
-  "metadata": {},
+  "metadata": {
+    "frn": "453419",
+    "organisation_name": "Castlelake (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "21/09/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC317635",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/453419/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/453419/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/453419/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/453419/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/453419/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/453419/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/453419/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/453419/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/453419/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

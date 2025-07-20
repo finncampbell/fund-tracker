@@ -1,6 +1,28 @@
 {
   "frn": 623682,
-  "metadata": {},
+  "metadata": {
+    "frn": "623682",
+    "organisation_name": "ABERDEEN PORTFOLIO SOLUTIONS LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "14/07/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08948895",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/623682/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/623682/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/623682/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/623682/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/623682/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/623682/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/623682/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/623682/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/623682/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

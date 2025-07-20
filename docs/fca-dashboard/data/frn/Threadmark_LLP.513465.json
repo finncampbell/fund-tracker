@@ -1,6 +1,28 @@
 {
   "frn": 513465,
-  "metadata": {},
+  "metadata": {
+    "frn": "513465",
+    "organisation_name": "Threadmark LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/03/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC349844",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/513465/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/513465/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/513465/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/513465/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/513465/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/513465/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/513465/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/513465/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/513465/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

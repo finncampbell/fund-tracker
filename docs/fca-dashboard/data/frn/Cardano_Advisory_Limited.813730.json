@@ -1,6 +1,28 @@
 {
   "frn": 813730,
-  "metadata": {},
+  "metadata": {
+    "frn": "813730",
+    "organisation_name": "Cardano Advisory Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/01/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "06402742",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/813730/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/813730/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/813730/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/813730/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/813730/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/813730/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/813730/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/813730/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/813730/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

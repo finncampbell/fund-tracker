@@ -1,6 +1,28 @@
 {
   "frn": 511152,
-  "metadata": {},
+  "metadata": {
+    "frn": "511152",
+    "organisation_name": "Northleaf Capital Partners (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06997960",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/511152/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/511152/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/511152/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/511152/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/511152/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/511152/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/511152/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/511152/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/511152/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 604439,
-  "metadata": {},
+  "metadata": {
+    "frn": "604439",
+    "organisation_name": "Enterprise Investment Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/07/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC357090",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/604439/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/604439/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/604439/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/604439/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/604439/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/604439/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/604439/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/604439/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/604439/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

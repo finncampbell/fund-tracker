@@ -1,6 +1,28 @@
 {
   "frn": 987714,
-  "metadata": {},
+  "metadata": {
+    "frn": "987714",
+    "organisation_name": "Virtu Europe Trading Limited",
+    "status": "Authorised",
+    "status_effective_date": "07/12/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "FC032733",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/987714/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/987714/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/987714/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/987714/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/987714/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/987714/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/987714/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/987714/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/987714/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

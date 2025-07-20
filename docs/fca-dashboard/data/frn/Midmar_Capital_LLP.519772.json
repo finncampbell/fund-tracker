@@ -1,6 +1,28 @@
 {
   "frn": 519772,
-  "metadata": {},
+  "metadata": {
+    "frn": "519772",
+    "organisation_name": "Midmar Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "28/07/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "SO302073",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/519772/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/519772/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/519772/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/519772/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/519772/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/519772/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/519772/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/519772/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/519772/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

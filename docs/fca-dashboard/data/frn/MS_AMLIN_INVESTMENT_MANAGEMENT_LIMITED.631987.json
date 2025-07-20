@@ -1,6 +1,28 @@
 {
   "frn": 631987,
-  "metadata": {},
+  "metadata": {
+    "frn": "631987",
+    "organisation_name": "MS AMLIN INVESTMENT MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "12/03/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "09110461",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/631987/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/631987/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/631987/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/631987/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/631987/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/631987/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/631987/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/631987/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/631987/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

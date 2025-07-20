@@ -1,6 +1,28 @@
 {
   "frn": 565716,
-  "metadata": {},
+  "metadata": {
+    "frn": "565716",
+    "organisation_name": "Sapphire Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "21/05/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "NC000562",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/565716/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/565716/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/565716/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/565716/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/565716/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/565716/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/565716/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/565716/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/565716/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

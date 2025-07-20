@@ -1,6 +1,33 @@
 {
   "frn": 558076,
-  "metadata": {},
+  "metadata": {
+    "frn": "558076",
+    "organisation_name": "Tiber Capital LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "28/11/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC366295",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "WARNING",
+        "Exceptional Info Body": "The FCA has become aware that this firm had a status of ‘Dissolved’ at Companies House and we are currently carrying out further investigations. If you have any concerns about this firm, please contact the FCA."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/558076/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/558076/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/558076/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/558076/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/558076/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/558076/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/558076/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/558076/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/558076/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 466915,
-  "metadata": {},
+  "metadata": {
+    "frn": "466915",
+    "organisation_name": "ICF Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "08/05/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "05575763",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/466915/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/466915/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/466915/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/466915/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/466915/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/466915/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/466915/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/466915/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/466915/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 489807,
-  "metadata": {},
+  "metadata": {
+    "frn": "489807",
+    "organisation_name": "MCM Bespoke Investment Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/02/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06460768",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/489807/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/489807/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/489807/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/489807/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/489807/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/489807/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/489807/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/489807/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/489807/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

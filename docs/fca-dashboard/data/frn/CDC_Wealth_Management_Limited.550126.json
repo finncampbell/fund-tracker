@@ -1,6 +1,28 @@
 {
   "frn": 550126,
-  "metadata": {},
+  "metadata": {
+    "frn": "550126",
+    "organisation_name": "CDC Wealth Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "05883908",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/550126/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/550126/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/550126/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/550126/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/550126/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/550126/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/550126/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/550126/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/550126/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

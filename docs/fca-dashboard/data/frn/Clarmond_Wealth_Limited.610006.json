@@ -1,6 +1,28 @@
 {
   "frn": 610006,
-  "metadata": {},
+  "metadata": {
+    "frn": "610006",
+    "organisation_name": "Clarmond Wealth Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08704352",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/610006/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/610006/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/610006/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/610006/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/610006/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/610006/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/610006/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/610006/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/610006/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

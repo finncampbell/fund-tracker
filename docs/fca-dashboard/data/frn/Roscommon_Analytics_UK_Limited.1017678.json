@@ -1,6 +1,28 @@
 {
   "frn": 1017678,
-  "metadata": {},
+  "metadata": {
+    "frn": "1017678",
+    "organisation_name": "Roscommon Analytics UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/05/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "13224309",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1017678/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1017678/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1017678/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

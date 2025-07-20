@@ -1,6 +1,28 @@
 {
   "frn": 806934,
-  "metadata": {},
+  "metadata": {
+    "frn": "806934",
+    "organisation_name": "P3 Wealth Ltd",
+    "status": "Authorised",
+    "status_effective_date": "11/09/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09657102",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/806934/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/806934/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/806934/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/806934/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/806934/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/806934/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/806934/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/806934/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/806934/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

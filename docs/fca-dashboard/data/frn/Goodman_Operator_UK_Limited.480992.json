@@ -1,6 +1,28 @@
 {
   "frn": 480992,
-  "metadata": {},
+  "metadata": {
+    "frn": "480992",
+    "organisation_name": "Goodman Operator (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/06/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "06303124",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/480992/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/480992/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/480992/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/480992/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/480992/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/480992/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/480992/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/480992/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/480992/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

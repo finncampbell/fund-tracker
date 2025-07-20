@@ -1,6 +1,28 @@
 {
   "frn": 122628,
-  "metadata": {},
+  "metadata": {
+    "frn": "122628",
+    "organisation_name": "Baring International Investment Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "01426546",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122628/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122628/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122628/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122628/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122628/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122628/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122628/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122628/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122628/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

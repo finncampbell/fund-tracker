@@ -1,6 +1,28 @@
 {
   "frn": 195029,
-  "metadata": {},
+  "metadata": {
+    "frn": "195029",
+    "organisation_name": "Oakley Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04091922",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/195029/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/195029/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/195029/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/195029/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/195029/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/195029/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/195029/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/195029/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/195029/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

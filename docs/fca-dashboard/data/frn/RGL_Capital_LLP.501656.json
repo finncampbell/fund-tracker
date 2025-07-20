@@ -1,6 +1,28 @@
 {
   "frn": 501656,
-  "metadata": {},
+  "metadata": {
+    "frn": "501656",
+    "organisation_name": "RGL Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/09/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC345818",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/501656/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/501656/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/501656/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/501656/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/501656/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/501656/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/501656/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/501656/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/501656/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

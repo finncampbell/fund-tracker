@@ -1,6 +1,28 @@
 {
   "frn": 624223,
-  "metadata": {},
+  "metadata": {
+    "frn": "624223",
+    "organisation_name": "LendInvest Funds Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "05/01/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07667749",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/624223/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/624223/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/624223/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/624223/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/624223/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/624223/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/624223/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/624223/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/624223/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 929167,
-  "metadata": {},
+  "metadata": {
+    "frn": "929167",
+    "organisation_name": "Kuperstein Kapital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "29/04/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "12516167",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/929167/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/929167/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/929167/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/929167/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/929167/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/929167/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/929167/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/929167/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/929167/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

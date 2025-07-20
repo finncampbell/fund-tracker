@@ -1,6 +1,28 @@
 {
   "frn": 481888,
-  "metadata": {},
+  "metadata": {
+    "frn": "481888",
+    "organisation_name": "Twentyfour Asset Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "28/07/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC335015",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/481888/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/481888/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/481888/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/481888/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/481888/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/481888/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/481888/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/481888/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/481888/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 442833,
-  "metadata": {},
+  "metadata": {
+    "frn": "442833",
+    "organisation_name": "LGB & CO. LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "21/02/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "05602072",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/442833/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/442833/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/442833/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/442833/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/442833/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/442833/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/442833/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/442833/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/442833/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 221553,
-  "metadata": {},
+  "metadata": {
+    "frn": "221553",
+    "organisation_name": "Ashik Shah & Co Limited",
+    "status": "Authorised",
+    "status_effective_date": "25/02/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "04551353",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/221553/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/221553/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/221553/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/221553/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/221553/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/221553/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/221553/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/221553/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/221553/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

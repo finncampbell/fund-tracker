@@ -1,6 +1,28 @@
 {
   "frn": 755398,
-  "metadata": {},
+  "metadata": {
+    "frn": "755398",
+    "organisation_name": "EMK Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "17/01/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "OC403928",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/755398/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/755398/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/755398/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/755398/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/755398/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/755398/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/755398/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/755398/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/755398/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

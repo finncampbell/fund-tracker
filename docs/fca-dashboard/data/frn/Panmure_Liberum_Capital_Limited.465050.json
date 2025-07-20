@@ -1,6 +1,28 @@
 {
   "frn": 465050,
-  "metadata": {},
+  "metadata": {
+    "frn": "465050",
+    "organisation_name": "Panmure Liberum Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "05/06/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "05912554",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/465050/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/465050/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/465050/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/465050/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/465050/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/465050/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/465050/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/465050/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/465050/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

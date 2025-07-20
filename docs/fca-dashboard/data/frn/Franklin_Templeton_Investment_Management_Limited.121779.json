@@ -1,6 +1,28 @@
 {
   "frn": 121779,
-  "metadata": {},
+  "metadata": {
+    "frn": "121779",
+    "organisation_name": "Franklin Templeton Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "01902009",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/121779/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/121779/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/121779/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/121779/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/121779/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/121779/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/121779/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/121779/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/121779/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

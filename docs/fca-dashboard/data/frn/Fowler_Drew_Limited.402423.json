@@ -1,6 +1,28 @@
 {
   "frn": 402423,
-  "metadata": {},
+  "metadata": {
+    "frn": "402423",
+    "organisation_name": "Fowler Drew Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/11/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "04384956",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/402423/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/402423/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/402423/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/402423/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/402423/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/402423/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/402423/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/402423/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/402423/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

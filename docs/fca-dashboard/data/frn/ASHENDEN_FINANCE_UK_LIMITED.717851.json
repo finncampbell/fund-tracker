@@ -1,6 +1,28 @@
 {
   "frn": 717851,
-  "metadata": {},
+  "metadata": {
+    "frn": "717851",
+    "organisation_name": "ASHENDEN FINANCE (UK) LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "08756957",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/717851/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/717851/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/717851/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/717851/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/717851/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/717851/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/717851/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/717851/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/717851/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

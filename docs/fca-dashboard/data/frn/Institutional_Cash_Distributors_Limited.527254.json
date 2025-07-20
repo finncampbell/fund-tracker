@@ -1,6 +1,28 @@
 {
   "frn": 527254,
-  "metadata": {},
+  "metadata": {
+    "frn": "527254",
+    "organisation_name": "Institutional Cash Distributors Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07205226",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/527254/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/527254/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/527254/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/527254/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/527254/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/527254/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/527254/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/527254/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/527254/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

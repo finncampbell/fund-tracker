@@ -1,6 +1,28 @@
 {
   "frn": 996919,
-  "metadata": {},
+  "metadata": {
+    "frn": "996919",
+    "organisation_name": "RTW Global Investments Ltd.",
+    "status": "Authorised",
+    "status_effective_date": "02/10/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13438354",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/996919/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/996919/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/996919/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/996919/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/996919/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/996919/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/996919/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/996919/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/996919/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

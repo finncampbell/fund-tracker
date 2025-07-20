@@ -1,6 +1,33 @@
 {
   "frn": 1007296,
-  "metadata": {},
+  "metadata": {
+    "frn": "1007296",
+    "organisation_name": "Aspen Advisers Limited",
+    "status": "Authorised",
+    "status_effective_date": "13/05/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "14115281",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1007296/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1007296/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1007296/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

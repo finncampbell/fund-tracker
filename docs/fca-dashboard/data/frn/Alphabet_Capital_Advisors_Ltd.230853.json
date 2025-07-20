@@ -1,6 +1,28 @@
 {
   "frn": 230853,
-  "metadata": {},
+  "metadata": {
+    "frn": "230853",
+    "organisation_name": "Alphabet Capital Advisors Ltd",
+    "status": "Authorised",
+    "status_effective_date": "05/05/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "04771859",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/230853/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/230853/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/230853/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/230853/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/230853/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/230853/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/230853/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/230853/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/230853/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

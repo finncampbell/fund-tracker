@@ -1,6 +1,28 @@
 {
   "frn": 475344,
-  "metadata": {},
+  "metadata": {
+    "frn": "475344",
+    "organisation_name": "Institutional Investment Advisors Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06374718",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/475344/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/475344/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/475344/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/475344/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/475344/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/475344/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/475344/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/475344/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/475344/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

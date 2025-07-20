@@ -1,6 +1,28 @@
 {
   "frn": 454814,
-  "metadata": {},
+  "metadata": {
+    "frn": "454814",
+    "organisation_name": "BGC Brokers L.P",
+    "status": "Authorised",
+    "status_effective_date": "16/11/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "LP011453",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/454814/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/454814/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/454814/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/454814/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/454814/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/454814/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/454814/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/454814/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/454814/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 607481,
-  "metadata": {},
+  "metadata": {
+    "frn": "607481",
+    "organisation_name": "Prism Financial Products LLP",
+    "status": "Authorised",
+    "status_effective_date": "24/01/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC385847",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/607481/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/607481/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/607481/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/607481/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/607481/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/607481/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/607481/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/607481/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/607481/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

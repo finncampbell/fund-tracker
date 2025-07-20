@@ -1,6 +1,28 @@
 {
   "frn": 466201,
-  "metadata": {},
+  "metadata": {
+    "frn": "466201",
+    "organisation_name": "Axi Financial Services (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/08/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06050593",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/466201/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/466201/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/466201/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/466201/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/466201/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/466201/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/466201/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/466201/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/466201/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

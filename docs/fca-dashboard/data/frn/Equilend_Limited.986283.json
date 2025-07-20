@@ -1,6 +1,28 @@
 {
   "frn": 986283,
-  "metadata": {},
+  "metadata": {
+    "frn": "986283",
+    "organisation_name": "Equilend Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "00062473",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/986283/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/986283/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/986283/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/986283/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/986283/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/986283/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/986283/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/986283/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/986283/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

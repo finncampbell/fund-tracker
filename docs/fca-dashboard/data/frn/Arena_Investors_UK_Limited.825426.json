@@ -1,6 +1,28 @@
 {
   "frn": 825426,
-  "metadata": {},
+  "metadata": {
+    "frn": "825426",
+    "organisation_name": "Arena Investors UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "29/03/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11156894",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/825426/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/825426/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/825426/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/825426/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/825426/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/825426/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/825426/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/825426/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/825426/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

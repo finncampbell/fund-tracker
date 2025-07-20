@@ -1,6 +1,28 @@
 {
   "frn": 428789,
-  "metadata": {},
+  "metadata": {
+    "frn": "428789",
+    "organisation_name": "Barratt & Cooke Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "05378036",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/428789/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/428789/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/428789/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/428789/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/428789/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/428789/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/428789/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/428789/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/428789/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

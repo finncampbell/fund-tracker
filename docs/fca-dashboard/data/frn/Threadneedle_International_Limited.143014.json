@@ -1,6 +1,28 @@
 {
   "frn": 143014,
-  "metadata": {},
+  "metadata": {
+    "frn": "143014",
+    "organisation_name": "Threadneedle International Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "02283244",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/143014/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/143014/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/143014/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/143014/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/143014/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/143014/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/143014/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/143014/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/143014/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 149240,
-  "metadata": {},
+  "metadata": {
+    "frn": "149240",
+    "organisation_name": "Mirae Asset Securities (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "02607959",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/149240/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/149240/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/149240/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/149240/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/149240/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/149240/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/149240/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/149240/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/149240/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

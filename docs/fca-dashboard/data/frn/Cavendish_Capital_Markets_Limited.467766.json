@@ -1,6 +1,28 @@
 {
   "frn": 467766,
-  "metadata": {},
+  "metadata": {
+    "frn": "467766",
+    "organisation_name": "Cavendish Capital Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "31/07/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06198898",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/467766/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/467766/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/467766/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/467766/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/467766/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/467766/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/467766/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/467766/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/467766/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

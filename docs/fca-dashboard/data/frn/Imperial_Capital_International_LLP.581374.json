@@ -1,6 +1,28 @@
 {
   "frn": 581374,
-  "metadata": {},
+  "metadata": {
+    "frn": "581374",
+    "organisation_name": "Imperial Capital (International) LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC367972",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/581374/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/581374/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/581374/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/581374/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/581374/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/581374/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/581374/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/581374/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/581374/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

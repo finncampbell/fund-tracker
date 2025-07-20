@@ -1,6 +1,28 @@
 {
   "frn": 401062,
-  "metadata": {},
+  "metadata": {
+    "frn": "401062",
+    "organisation_name": "Strategic Value Partners (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/12/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC306906",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/401062/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/401062/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/401062/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/401062/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/401062/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/401062/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/401062/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/401062/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/401062/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 514518,
-  "metadata": {},
+  "metadata": {
+    "frn": "514518",
+    "organisation_name": "SCIO Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "08/06/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC349474",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/514518/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/514518/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/514518/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/514518/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/514518/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/514518/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/514518/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/514518/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/514518/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

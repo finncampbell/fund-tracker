@@ -1,6 +1,28 @@
 {
   "frn": 966180,
-  "metadata": {},
+  "metadata": {
+    "frn": "966180",
+    "organisation_name": "Beryllus Capital (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/10/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "13248053",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/966180/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/966180/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/966180/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/966180/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/966180/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/966180/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/966180/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/966180/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/966180/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

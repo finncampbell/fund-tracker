@@ -1,6 +1,28 @@
 {
   "frn": 124279,
-  "metadata": {},
+  "metadata": {
+    "frn": "124279",
+    "organisation_name": "Fiske Plc",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "02248663",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124279/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124279/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124279/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124279/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124279/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124279/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124279/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124279/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124279/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

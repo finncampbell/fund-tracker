@@ -1,6 +1,28 @@
 {
   "frn": 584025,
-  "metadata": {},
+  "metadata": {
+    "frn": "584025",
+    "organisation_name": "B-FLEXION Advisors (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/04/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC359666",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/584025/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/584025/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/584025/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/584025/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/584025/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/584025/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/584025/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/584025/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/584025/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

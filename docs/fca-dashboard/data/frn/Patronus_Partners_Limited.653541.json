@@ -1,6 +1,28 @@
 {
   "frn": 653541,
-  "metadata": {},
+  "metadata": {
+    "frn": "653541",
+    "organisation_name": "Patronus Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "09223709",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/653541/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/653541/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/653541/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/653541/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/653541/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/653541/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/653541/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/653541/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/653541/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

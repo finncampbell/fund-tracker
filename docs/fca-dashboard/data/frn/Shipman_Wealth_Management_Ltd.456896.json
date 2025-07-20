@@ -1,6 +1,28 @@
 {
   "frn": 456896,
-  "metadata": {},
+  "metadata": {
+    "frn": "456896",
+    "organisation_name": "Shipman Wealth Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "02837635",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/456896/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/456896/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/456896/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/456896/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/456896/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/456896/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/456896/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/456896/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/456896/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

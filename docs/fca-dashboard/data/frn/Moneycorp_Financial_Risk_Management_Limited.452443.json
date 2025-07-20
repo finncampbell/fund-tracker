@@ -1,6 +1,28 @@
 {
   "frn": 452443,
-  "metadata": {},
+  "metadata": {
+    "frn": "452443",
+    "organisation_name": "Moneycorp Financial Risk Management Limited",
+    "status": "See full details",
+    "status_effective_date": "12/09/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05774742",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/452443/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/452443/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/452443/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/452443/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/452443/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/452443/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/452443/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/452443/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/452443/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

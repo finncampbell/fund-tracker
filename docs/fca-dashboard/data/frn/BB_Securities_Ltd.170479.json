@@ -1,6 +1,28 @@
 {
   "frn": 170479,
-  "metadata": {},
+  "metadata": {
+    "frn": "170479",
+    "organisation_name": "BB Securities Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "02856891",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/170479/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/170479/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/170479/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/170479/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/170479/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/170479/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/170479/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/170479/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/170479/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

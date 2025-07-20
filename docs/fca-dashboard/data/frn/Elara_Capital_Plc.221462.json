@@ -1,6 +1,28 @@
 {
   "frn": 221462,
-  "metadata": {},
+  "metadata": {
+    "frn": "221462",
+    "organisation_name": "Elara Capital Plc",
+    "status": "Authorised",
+    "status_effective_date": "17/04/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04585206",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/221462/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/221462/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/221462/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/221462/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/221462/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/221462/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/221462/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/221462/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/221462/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

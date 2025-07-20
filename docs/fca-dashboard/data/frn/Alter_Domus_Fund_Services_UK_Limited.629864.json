@@ -1,6 +1,28 @@
 {
   "frn": 629864,
-  "metadata": {},
+  "metadata": {
+    "frn": "629864",
+    "organisation_name": "Alter Domus Fund Services (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/03/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08962253",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/629864/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/629864/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/629864/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/629864/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/629864/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/629864/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/629864/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/629864/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/629864/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

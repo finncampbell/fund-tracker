@@ -1,6 +1,28 @@
 {
   "frn": 498991,
-  "metadata": {},
+  "metadata": {
+    "frn": "498991",
+    "organisation_name": "Independent Franchise Partners, LLP",
+    "status": "Authorised",
+    "status_effective_date": "15/06/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC344319",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/498991/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/498991/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/498991/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/498991/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/498991/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/498991/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/498991/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/498991/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/498991/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

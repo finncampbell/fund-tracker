@@ -1,6 +1,28 @@
 {
   "frn": 522736,
-  "metadata": {},
+  "metadata": {
+    "frn": "522736",
+    "organisation_name": "Agilitas Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/02/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC354049",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/522736/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/522736/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/522736/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/522736/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/522736/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/522736/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/522736/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/522736/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/522736/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

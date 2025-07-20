@@ -1,6 +1,28 @@
 {
   "frn": 607356,
-  "metadata": {},
+  "metadata": {
+    "frn": "607356",
+    "organisation_name": "Milkwood Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08626819",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/607356/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/607356/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/607356/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/607356/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/607356/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/607356/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/607356/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/607356/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/607356/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

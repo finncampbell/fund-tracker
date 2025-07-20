@@ -1,6 +1,28 @@
 {
   "frn": 136914,
-  "metadata": {},
+  "metadata": {
+    "frn": "136914",
+    "organisation_name": "Orwell Securities (Ipswich) Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "01403899",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/136914/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/136914/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/136914/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/136914/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/136914/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/136914/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/136914/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/136914/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/136914/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

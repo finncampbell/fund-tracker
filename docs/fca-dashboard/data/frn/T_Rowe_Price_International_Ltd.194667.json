@@ -1,6 +1,28 @@
 {
   "frn": 194667,
-  "metadata": {},
+  "metadata": {
+    "frn": "194667",
+    "organisation_name": "T. Rowe Price International Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "03957748",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/194667/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/194667/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/194667/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/194667/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/194667/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/194667/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/194667/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/194667/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/194667/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

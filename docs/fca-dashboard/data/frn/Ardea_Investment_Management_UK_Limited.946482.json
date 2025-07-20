@@ -1,6 +1,28 @@
 {
   "frn": 946482,
-  "metadata": {},
+  "metadata": {
+    "frn": "946482",
+    "organisation_name": "Ardea Investment Management (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/11/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13043903",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/946482/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/946482/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/946482/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/946482/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/946482/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/946482/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/946482/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/946482/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/946482/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

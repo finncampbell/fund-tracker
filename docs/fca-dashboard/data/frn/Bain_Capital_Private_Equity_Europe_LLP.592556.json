@@ -1,6 +1,28 @@
 {
   "frn": 592556,
-  "metadata": {},
+  "metadata": {
+    "frn": "592556",
+    "organisation_name": "Bain Capital Private Equity (Europe), LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/04/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC380135",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/592556/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/592556/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/592556/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/592556/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/592556/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/592556/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/592556/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/592556/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/592556/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

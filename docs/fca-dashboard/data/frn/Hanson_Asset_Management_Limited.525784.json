@@ -1,6 +1,28 @@
 {
   "frn": 525784,
-  "metadata": {},
+  "metadata": {
+    "frn": "525784",
+    "organisation_name": "Hanson Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/08/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07199183",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/525784/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/525784/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/525784/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/525784/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/525784/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/525784/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/525784/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/525784/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/525784/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

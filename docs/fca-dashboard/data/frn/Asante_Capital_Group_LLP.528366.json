@@ -1,6 +1,28 @@
 {
   "frn": 528366,
-  "metadata": {},
+  "metadata": {
+    "frn": "528366",
+    "organisation_name": "Asante Capital Group LLP",
+    "status": "Authorised",
+    "status_effective_date": "15/11/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC356402",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/528366/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/528366/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/528366/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/528366/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/528366/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/528366/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/528366/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/528366/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/528366/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

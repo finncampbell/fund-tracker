@@ -1,6 +1,28 @@
 {
   "frn": 514886,
-  "metadata": {},
+  "metadata": {
+    "frn": "514886",
+    "organisation_name": "Adams Street Partners UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "06/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC350269",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/514886/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/514886/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/514886/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/514886/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/514886/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/514886/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/514886/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/514886/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/514886/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

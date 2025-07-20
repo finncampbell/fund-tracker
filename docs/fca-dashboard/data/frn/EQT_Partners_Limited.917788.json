@@ -1,6 +1,28 @@
 {
   "frn": 917788,
-  "metadata": {},
+  "metadata": {
+    "frn": "917788",
+    "organisation_name": "EQT Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "28/04/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "06590781",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/917788/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/917788/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/917788/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/917788/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/917788/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/917788/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/917788/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/917788/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/917788/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

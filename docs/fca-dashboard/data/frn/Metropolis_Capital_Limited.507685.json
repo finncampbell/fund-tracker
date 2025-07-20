@@ -1,6 +1,28 @@
 {
   "frn": 507685,
-  "metadata": {},
+  "metadata": {
+    "frn": "507685",
+    "organisation_name": "Metropolis Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/06/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07244251",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/507685/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/507685/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/507685/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/507685/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/507685/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/507685/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/507685/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/507685/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/507685/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

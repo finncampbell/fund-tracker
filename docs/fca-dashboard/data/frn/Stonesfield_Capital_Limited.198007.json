@@ -1,6 +1,28 @@
 {
   "frn": 198007,
-  "metadata": {},
+  "metadata": {
+    "frn": "198007",
+    "organisation_name": "Stonesfield Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04258209",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/198007/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/198007/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/198007/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/198007/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/198007/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/198007/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/198007/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/198007/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/198007/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 211134,
-  "metadata": {},
+  "metadata": {
+    "frn": "211134",
+    "organisation_name": "CF Global Trading (UK) Limited",
+    "status": "See full details",
+    "status_effective_date": "11/09/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "04274188",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/211134/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/211134/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/211134/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/211134/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/211134/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/211134/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/211134/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/211134/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/211134/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

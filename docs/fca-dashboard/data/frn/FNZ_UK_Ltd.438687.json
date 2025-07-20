@@ -1,6 +1,33 @@
 {
   "frn": 438687,
-  "metadata": {},
+  "metadata": {
+    "frn": "438687",
+    "organisation_name": "FNZ (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "06/01/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "05435760",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/438687/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/438687/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/438687/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/438687/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/438687/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/438687/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/438687/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/438687/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/438687/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

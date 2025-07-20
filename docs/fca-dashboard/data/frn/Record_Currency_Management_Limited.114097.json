@@ -1,6 +1,28 @@
 {
   "frn": 114097,
-  "metadata": {},
+  "metadata": {
+    "frn": "114097",
+    "organisation_name": "Record Currency Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01710736",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/114097/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/114097/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/114097/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/114097/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/114097/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/114097/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/114097/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/114097/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/114097/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

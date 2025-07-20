@@ -1,6 +1,28 @@
 {
   "frn": 526965,
-  "metadata": {},
+  "metadata": {
+    "frn": "526965",
+    "organisation_name": "The Seaport Group Europe LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/11/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC353564",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/526965/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/526965/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/526965/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/526965/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/526965/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/526965/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/526965/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/526965/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/526965/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

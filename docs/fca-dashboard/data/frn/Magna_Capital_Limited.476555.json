@@ -1,6 +1,28 @@
 {
   "frn": 476555,
-  "metadata": {},
+  "metadata": {
+    "frn": "476555",
+    "organisation_name": "Magna Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/05/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "06485053",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/476555/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/476555/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/476555/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/476555/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/476555/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/476555/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/476555/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/476555/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/476555/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

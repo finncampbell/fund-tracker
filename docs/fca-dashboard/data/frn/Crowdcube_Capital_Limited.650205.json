@@ -1,6 +1,28 @@
 {
   "frn": 650205,
-  "metadata": {},
+  "metadata": {
+    "frn": "650205",
+    "organisation_name": "Crowdcube Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "28/05/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "09095835",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/650205/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/650205/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/650205/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/650205/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/650205/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/650205/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/650205/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/650205/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/650205/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

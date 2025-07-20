@@ -1,6 +1,28 @@
 {
   "frn": 474277,
-  "metadata": {},
+  "metadata": {
+    "frn": "474277",
+    "organisation_name": "Sun Global Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "21/12/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "06305576",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/474277/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/474277/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/474277/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/474277/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/474277/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/474277/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/474277/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/474277/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/474277/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

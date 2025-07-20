@@ -1,6 +1,28 @@
 {
   "frn": 823316,
-  "metadata": {},
+  "metadata": {
+    "frn": "823316",
+    "organisation_name": "Carne International Financial Services (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/05/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "11555138",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/823316/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/823316/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/823316/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/823316/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/823316/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/823316/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/823316/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/823316/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/823316/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

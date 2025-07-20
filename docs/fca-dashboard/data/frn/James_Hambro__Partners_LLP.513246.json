@@ -1,6 +1,28 @@
 {
   "frn": 513246,
-  "metadata": {},
+  "metadata": {
+    "frn": "513246",
+    "organisation_name": "James Hambro & Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/02/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC350134",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/513246/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/513246/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/513246/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/513246/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/513246/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/513246/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/513246/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/513246/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/513246/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

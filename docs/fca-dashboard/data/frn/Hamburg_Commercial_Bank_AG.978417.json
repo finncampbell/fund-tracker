@@ -1,6 +1,28 @@
 {
   "frn": 978417,
-  "metadata": {},
+  "metadata": {
+    "frn": "978417",
+    "organisation_name": "Hamburg Commercial Bank AG",
+    "status": "Authorised",
+    "status_effective_date": "10/05/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "FC037074",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/978417/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/978417/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/978417/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/978417/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/978417/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/978417/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/978417/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/978417/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/978417/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

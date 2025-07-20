@@ -1,6 +1,28 @@
 {
   "frn": 172999,
-  "metadata": {},
+  "metadata": {
+    "frn": "172999",
+    "organisation_name": "Fiera Capital (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "03017258",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/172999/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/172999/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/172999/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/172999/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/172999/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/172999/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/172999/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/172999/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/172999/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

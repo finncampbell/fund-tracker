@@ -1,6 +1,28 @@
 {
   "frn": 786601,
-  "metadata": {},
+  "metadata": {
+    "frn": "786601",
+    "organisation_name": "Fundhouse Bespoke Limited",
+    "status": "Authorised",
+    "status_effective_date": "20/12/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "10893119",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/786601/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/786601/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/786601/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/786601/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/786601/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/786601/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/786601/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/786601/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/786601/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

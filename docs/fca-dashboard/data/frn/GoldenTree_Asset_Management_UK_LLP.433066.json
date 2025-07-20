@@ -1,6 +1,28 @@
 {
   "frn": 433066,
-  "metadata": {},
+  "metadata": {
+    "frn": "433066",
+    "organisation_name": "GoldenTree Asset Management UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "27/09/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC313161",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/433066/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/433066/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/433066/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/433066/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/433066/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/433066/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/433066/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/433066/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/433066/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

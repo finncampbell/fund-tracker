@@ -1,6 +1,28 @@
 {
   "frn": 455718,
-  "metadata": {},
+  "metadata": {
+    "frn": "455718",
+    "organisation_name": "Casteel Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "30/10/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC320694",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/455718/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/455718/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/455718/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/455718/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/455718/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/455718/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/455718/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/455718/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/455718/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

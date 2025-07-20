@@ -1,6 +1,28 @@
 {
   "frn": 554229,
-  "metadata": {},
+  "metadata": {
+    "frn": "554229",
+    "organisation_name": "Waystone Capital Solutions (UK) Limited",
+    "status": "No longer authorised",
+    "status_effective_date": "17/07/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07382589",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/554229/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/554229/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/554229/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/554229/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/554229/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/554229/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/554229/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/554229/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/554229/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

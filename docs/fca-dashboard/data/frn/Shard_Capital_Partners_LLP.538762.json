@@ -1,6 +1,28 @@
 {
   "frn": 538762,
-  "metadata": {},
+  "metadata": {
+    "frn": "538762",
+    "organisation_name": "Shard Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/10/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC360394",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/538762/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/538762/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/538762/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/538762/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/538762/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/538762/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/538762/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/538762/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/538762/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

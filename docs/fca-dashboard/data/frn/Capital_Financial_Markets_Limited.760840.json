@@ -1,6 +1,28 @@
 {
   "frn": 760840,
-  "metadata": {},
+  "metadata": {
+    "frn": "760840",
+    "organisation_name": "Capital Financial Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/04/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "08224800",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/760840/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/760840/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/760840/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/760840/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/760840/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/760840/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/760840/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/760840/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/760840/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

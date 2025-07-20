@@ -1,6 +1,28 @@
 {
   "frn": 122194,
-  "metadata": {},
+  "metadata": {
+    "frn": "122194",
+    "organisation_name": "Threadneedle Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "00573204",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122194/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122194/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122194/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122194/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122194/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122194/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122194/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122194/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122194/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

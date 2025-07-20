@@ -1,6 +1,28 @@
 {
   "frn": 537165,
-  "metadata": {},
+  "metadata": {
+    "frn": "537165",
+    "organisation_name": "Laidlaw & Company International Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/11/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06059026",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/537165/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/537165/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/537165/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/537165/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/537165/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/537165/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/537165/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/537165/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/537165/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

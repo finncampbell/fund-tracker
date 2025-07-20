@@ -1,6 +1,28 @@
 {
   "frn": 771719,
-  "metadata": {},
+  "metadata": {
+    "frn": "771719",
+    "organisation_name": "Cazadores Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "08/05/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "10181648",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/771719/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/771719/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/771719/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/771719/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/771719/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/771719/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/771719/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/771719/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/771719/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

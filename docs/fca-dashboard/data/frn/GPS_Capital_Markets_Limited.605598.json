@@ -1,6 +1,28 @@
 {
   "frn": 605598,
-  "metadata": {},
+  "metadata": {
+    "frn": "605598",
+    "organisation_name": "GPS Capital Markets Limited",
+    "status": "See full details",
+    "status_effective_date": "01/10/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07953428",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/605598/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/605598/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/605598/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/605598/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/605598/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/605598/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/605598/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/605598/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/605598/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

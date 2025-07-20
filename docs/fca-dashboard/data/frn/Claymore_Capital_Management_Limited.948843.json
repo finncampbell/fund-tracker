@@ -1,6 +1,28 @@
 {
   "frn": 948843,
-  "metadata": {},
+  "metadata": {
+    "frn": "948843",
+    "organisation_name": "Claymore Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/12/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "13168186",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/948843/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/948843/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/948843/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/948843/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/948843/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/948843/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/948843/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/948843/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/948843/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

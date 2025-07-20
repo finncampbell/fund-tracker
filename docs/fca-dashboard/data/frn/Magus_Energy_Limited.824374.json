@@ -1,6 +1,28 @@
 {
   "frn": 824374,
-  "metadata": {},
+  "metadata": {
+    "frn": "824374",
+    "organisation_name": "Magus Energy Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11371494",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/824374/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/824374/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/824374/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/824374/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/824374/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/824374/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/824374/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/824374/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/824374/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

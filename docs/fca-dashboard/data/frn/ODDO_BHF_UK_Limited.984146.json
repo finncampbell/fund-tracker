@@ -1,6 +1,28 @@
 {
   "frn": 984146,
-  "metadata": {},
+  "metadata": {
+    "frn": "984146",
+    "organisation_name": "ODDO BHF UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/05/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "13837440",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/984146/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/984146/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/984146/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/984146/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/984146/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/984146/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/984146/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/984146/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/984146/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 607305,
-  "metadata": {},
+  "metadata": {
+    "frn": "607305",
+    "organisation_name": "Finalto Trading Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/09/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08663212",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/607305/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/607305/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/607305/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/607305/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/607305/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/607305/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/607305/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/607305/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/607305/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

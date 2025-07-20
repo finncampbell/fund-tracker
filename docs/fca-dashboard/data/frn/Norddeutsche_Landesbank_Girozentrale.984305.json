@@ -1,6 +1,28 @@
 {
   "frn": 984305,
-  "metadata": {},
+  "metadata": {
+    "frn": "984305",
+    "organisation_name": "Norddeutsche Landesbank Girozentrale",
+    "status": "Authorised",
+    "status_effective_date": "24/07/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "FC012190",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/984305/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/984305/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/984305/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/984305/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/984305/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/984305/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/984305/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/984305/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/984305/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

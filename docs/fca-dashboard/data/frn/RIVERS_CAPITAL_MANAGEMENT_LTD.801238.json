@@ -1,6 +1,28 @@
 {
   "frn": 801238,
-  "metadata": {},
+  "metadata": {
+    "frn": "801238",
+    "organisation_name": "RIVERS CAPITAL MANAGEMENT LTD",
+    "status": "Authorised",
+    "status_effective_date": "08/05/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10169304",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/801238/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/801238/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/801238/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/801238/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/801238/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/801238/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/801238/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/801238/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/801238/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

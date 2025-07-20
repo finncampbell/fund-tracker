@@ -1,6 +1,28 @@
 {
   "frn": 534484,
-  "metadata": {},
+  "metadata": {
+    "frn": "534484",
+    "organisation_name": "London & Eastern LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/02/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC345870",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/534484/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/534484/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/534484/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/534484/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/534484/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/534484/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/534484/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/534484/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/534484/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

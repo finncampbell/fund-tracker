@@ -1,6 +1,9 @@
 {
   "frn": 705865,
-  "metadata": {},
+  "metadata": {
+    "frn": "705865",
+    "error": "Gave up after 3 retries"
+  },
   "trading_names": [
     null
   ],

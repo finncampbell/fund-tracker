@@ -1,6 +1,28 @@
 {
   "frn": 493591,
-  "metadata": {},
+  "metadata": {
+    "frn": "493591",
+    "organisation_name": "Oakfield Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC340206",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/493591/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/493591/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/493591/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/493591/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/493591/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/493591/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/493591/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/493591/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/493591/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 537301,
-  "metadata": {},
+  "metadata": {
+    "frn": "537301",
+    "organisation_name": "Skybound Capital UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/12/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06708492",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/537301/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/537301/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/537301/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/537301/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/537301/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/537301/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/537301/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/537301/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/537301/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

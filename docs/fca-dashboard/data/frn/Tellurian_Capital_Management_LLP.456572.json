@@ -1,6 +1,28 @@
 {
   "frn": 456572,
-  "metadata": {},
+  "metadata": {
+    "frn": "456572",
+    "organisation_name": "Tellurian Capital Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "14/02/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC321445",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/456572/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/456572/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/456572/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/456572/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/456572/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/456572/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/456572/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/456572/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/456572/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

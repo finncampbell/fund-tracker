@@ -1,6 +1,28 @@
 {
   "frn": 114627,
-  "metadata": {},
+  "metadata": {
+    "frn": "114627",
+    "organisation_name": "Credit Suisse Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "01688075",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/114627/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/114627/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/114627/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/114627/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/114627/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/114627/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/114627/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/114627/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/114627/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

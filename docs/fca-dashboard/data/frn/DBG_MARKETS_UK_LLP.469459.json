@@ -1,6 +1,33 @@
 {
   "frn": 469459,
-  "metadata": {},
+  "metadata": {
+    "frn": "469459",
+    "organisation_name": "DBG MARKETS (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC300984",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/469459/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/469459/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/469459/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/469459/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/469459/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/469459/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/469459/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/469459/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/469459/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

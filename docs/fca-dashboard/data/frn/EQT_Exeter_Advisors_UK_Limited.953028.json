@@ -1,6 +1,28 @@
 {
   "frn": 953028,
-  "metadata": {},
+  "metadata": {
+    "frn": "953028",
+    "organisation_name": "EQT Exeter Advisors UK Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/06/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13306870",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/953028/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/953028/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/953028/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/953028/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/953028/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/953028/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/953028/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/953028/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/953028/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

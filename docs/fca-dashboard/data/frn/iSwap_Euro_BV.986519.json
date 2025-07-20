@@ -1,6 +1,28 @@
 {
   "frn": 986519,
-  "metadata": {},
+  "metadata": {
+    "frn": "986519",
+    "organisation_name": "iSwap Euro BV",
+    "status": "Authorised",
+    "status_effective_date": "20/12/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "72364610",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/986519/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/986519/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/986519/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/986519/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/986519/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/986519/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/986519/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/986519/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/986519/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

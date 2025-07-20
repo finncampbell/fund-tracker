@@ -1,6 +1,28 @@
 {
   "frn": 221138,
-  "metadata": {},
+  "metadata": {
+    "frn": "221138",
+    "organisation_name": "Mansford Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/05/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03033587",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/221138/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/221138/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/221138/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/221138/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/221138/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/221138/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/221138/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/221138/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/221138/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

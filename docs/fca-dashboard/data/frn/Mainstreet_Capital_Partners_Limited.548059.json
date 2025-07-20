@@ -1,6 +1,28 @@
 {
   "frn": 548059,
-  "metadata": {},
+  "metadata": {
+    "frn": "548059",
+    "organisation_name": "Mainstreet Capital Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07509746",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/548059/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/548059/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/548059/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/548059/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/548059/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/548059/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/548059/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/548059/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/548059/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

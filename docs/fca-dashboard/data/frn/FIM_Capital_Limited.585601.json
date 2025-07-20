@@ -1,6 +1,28 @@
 {
   "frn": 585601,
-  "metadata": {},
+  "metadata": {
+    "frn": "585601",
+    "organisation_name": "FIM Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/01/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "0012651V",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/585601/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/585601/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/585601/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/585601/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/585601/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/585601/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/585601/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/585601/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/585601/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

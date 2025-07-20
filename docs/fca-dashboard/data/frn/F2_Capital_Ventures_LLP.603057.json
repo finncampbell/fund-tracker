@@ -1,6 +1,28 @@
 {
   "frn": 603057,
-  "metadata": {},
+  "metadata": {
+    "frn": "603057",
+    "organisation_name": "F2 Capital Ventures LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "02/01/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC385031",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/603057/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/603057/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/603057/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/603057/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/603057/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/603057/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/603057/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/603057/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/603057/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

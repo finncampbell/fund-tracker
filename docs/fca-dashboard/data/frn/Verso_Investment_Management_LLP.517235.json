@@ -1,6 +1,28 @@
 {
   "frn": 517235,
-  "metadata": {},
+  "metadata": {
+    "frn": "517235",
+    "organisation_name": "Verso Investment Management LLP",
+    "status": "See full details",
+    "status_effective_date": "01/10/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC351100",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/517235/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/517235/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/517235/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/517235/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/517235/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/517235/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/517235/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/517235/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/517235/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

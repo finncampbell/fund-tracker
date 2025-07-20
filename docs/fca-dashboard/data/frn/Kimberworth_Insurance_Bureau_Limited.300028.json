@@ -1,6 +1,28 @@
 {
   "frn": 300028,
-  "metadata": {},
+  "metadata": {
+    "frn": "300028",
+    "organisation_name": "Kimberworth Insurance Bureau Limited",
+    "status": "Authorised",
+    "status_effective_date": "31/10/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "04986925",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/300028/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/300028/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/300028/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/300028/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/300028/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/300028/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/300028/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/300028/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/300028/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

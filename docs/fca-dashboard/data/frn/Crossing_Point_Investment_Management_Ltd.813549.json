@@ -1,6 +1,28 @@
 {
   "frn": 813549,
-  "metadata": {},
+  "metadata": {
+    "frn": "813549",
+    "organisation_name": "Crossing Point Investment Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "09/01/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "08776208",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/813549/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/813549/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/813549/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/813549/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/813549/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/813549/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/813549/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/813549/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/813549/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

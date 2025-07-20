@@ -1,6 +1,28 @@
 {
   "frn": 580185,
-  "metadata": {},
+  "metadata": {
+    "frn": "580185",
+    "organisation_name": "Lumin Wealth Management Limited",
+    "status": "See full details",
+    "status_effective_date": "02/07/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07366158",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/580185/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/580185/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/580185/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/580185/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/580185/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/580185/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/580185/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/580185/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/580185/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

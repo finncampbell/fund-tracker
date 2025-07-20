@@ -1,6 +1,33 @@
 {
   "frn": 430967,
-  "metadata": {},
+  "metadata": {
+    "frn": "430967",
+    "organisation_name": "West Point Derivatives Ltd",
+    "status": "Authorised",
+    "status_effective_date": "27/07/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04990389",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/430967/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/430967/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/430967/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/430967/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/430967/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/430967/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/430967/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/430967/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/430967/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

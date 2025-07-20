@@ -1,6 +1,28 @@
 {
   "frn": 131706,
-  "metadata": {},
+  "metadata": {
+    "frn": "131706",
+    "organisation_name": "Johnston Financial Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "SC108188",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/131706/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/131706/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/131706/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/131706/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/131706/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/131706/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/131706/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/131706/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/131706/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

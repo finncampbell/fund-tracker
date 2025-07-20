@@ -1,6 +1,28 @@
 {
   "frn": 510107,
-  "metadata": {},
+  "metadata": {
+    "frn": "510107",
+    "organisation_name": "Willis Welby LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC349305",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/510107/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/510107/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/510107/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/510107/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/510107/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/510107/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/510107/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/510107/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/510107/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 471210,
-  "metadata": {},
+  "metadata": {
+    "frn": "471210",
+    "organisation_name": "ARUP CORPORATE FINANCE LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "16/11/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "02338083",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/471210/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/471210/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/471210/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/471210/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/471210/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/471210/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/471210/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/471210/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/471210/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

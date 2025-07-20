@@ -1,6 +1,28 @@
 {
   "frn": 582544,
-  "metadata": {},
+  "metadata": {
+    "frn": "582544",
+    "organisation_name": "Natrium Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/10/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07948053",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/582544/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/582544/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/582544/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/582544/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/582544/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/582544/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/582544/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/582544/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/582544/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

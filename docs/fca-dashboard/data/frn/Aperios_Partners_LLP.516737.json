@@ -1,6 +1,28 @@
 {
   "frn": 516737,
-  "metadata": {},
+  "metadata": {
+    "frn": "516737",
+    "organisation_name": "Aperios Partners LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "10/05/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC348513",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/516737/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/516737/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/516737/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/516737/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/516737/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/516737/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/516737/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/516737/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/516737/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

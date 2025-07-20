@@ -1,6 +1,28 @@
 {
   "frn": 715973,
-  "metadata": {},
+  "metadata": {
+    "frn": "715973",
+    "organisation_name": "Sigmafield Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/04/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09535231",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/715973/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/715973/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/715973/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/715973/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/715973/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/715973/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/715973/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/715973/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/715973/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

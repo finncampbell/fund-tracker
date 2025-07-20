@@ -1,6 +1,28 @@
 {
   "frn": 951354,
-  "metadata": {},
+  "metadata": {
+    "frn": "951354",
+    "organisation_name": "Harrison Street Real Estate Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "30/12/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09665510",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/951354/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/951354/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/951354/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/951354/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/951354/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/951354/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/951354/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/951354/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/951354/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

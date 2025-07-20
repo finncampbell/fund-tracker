@@ -1,6 +1,33 @@
 {
   "frn": 197251,
-  "metadata": {},
+  "metadata": {
+    "frn": "197251",
+    "organisation_name": "Chatham Financial Europe Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04223247",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/197251/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/197251/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/197251/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/197251/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/197251/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/197251/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/197251/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/197251/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/197251/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

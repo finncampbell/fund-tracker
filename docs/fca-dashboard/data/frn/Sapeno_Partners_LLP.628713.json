@@ -1,6 +1,28 @@
 {
   "frn": 628713,
-  "metadata": {},
+  "metadata": {
+    "frn": "628713",
+    "organisation_name": "Sapeno Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/10/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC388955",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/628713/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/628713/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/628713/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/628713/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/628713/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/628713/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/628713/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/628713/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/628713/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

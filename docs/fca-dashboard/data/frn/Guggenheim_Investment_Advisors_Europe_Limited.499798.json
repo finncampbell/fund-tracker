@@ -1,6 +1,28 @@
 {
   "frn": 499798,
-  "metadata": {},
+  "metadata": {
+    "frn": "499798",
+    "organisation_name": "Guggenheim Investment Advisors (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "27/01/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06764622",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/499798/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/499798/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/499798/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/499798/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/499798/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/499798/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/499798/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/499798/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/499798/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

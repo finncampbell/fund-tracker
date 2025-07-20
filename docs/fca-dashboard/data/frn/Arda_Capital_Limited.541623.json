@@ -1,6 +1,28 @@
 {
   "frn": 541623,
-  "metadata": {},
+  "metadata": {
+    "frn": "541623",
+    "organisation_name": "Arda Capital Limited",
+    "status": "See full details",
+    "status_effective_date": "20/10/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "06805506",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/541623/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/541623/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/541623/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/541623/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/541623/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/541623/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/541623/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/541623/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/541623/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

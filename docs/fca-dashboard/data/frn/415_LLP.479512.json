@@ -1,6 +1,28 @@
 {
   "frn": 479512,
-  "metadata": {},
+  "metadata": {
+    "frn": "479512",
+    "organisation_name": "415 LLP",
+    "status": "Authorised",
+    "status_effective_date": "31/03/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC332662",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/479512/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/479512/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/479512/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/479512/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/479512/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/479512/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/479512/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/479512/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/479512/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

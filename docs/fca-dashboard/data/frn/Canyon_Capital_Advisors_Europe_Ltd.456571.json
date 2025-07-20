@@ -1,6 +1,28 @@
 {
   "frn": 456571,
-  "metadata": {},
+  "metadata": {
+    "frn": "456571",
+    "organisation_name": "Canyon Capital Advisors (Europe) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "07/11/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05886261",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/456571/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/456571/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/456571/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/456571/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/456571/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/456571/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/456571/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/456571/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/456571/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

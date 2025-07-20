@@ -1,6 +1,28 @@
 {
   "frn": 478217,
-  "metadata": {},
+  "metadata": {
+    "frn": "478217",
+    "organisation_name": "Wealth Solutions (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/04/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06458184",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/478217/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/478217/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/478217/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/478217/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/478217/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/478217/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/478217/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/478217/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/478217/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

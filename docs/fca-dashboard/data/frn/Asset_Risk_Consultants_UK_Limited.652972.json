@@ -1,6 +1,28 @@
 {
   "frn": 652972,
-  "metadata": {},
+  "metadata": {
+    "frn": "652972",
+    "organisation_name": "Asset Risk Consultants (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/09/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08858600",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/652972/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/652972/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/652972/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/652972/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/652972/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/652972/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/652972/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/652972/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/652972/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

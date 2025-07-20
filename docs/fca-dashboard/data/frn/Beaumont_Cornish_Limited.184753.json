@@ -1,6 +1,28 @@
 {
   "frn": 184753,
-  "metadata": {},
+  "metadata": {
+    "frn": "184753",
+    "organisation_name": "Beaumont Cornish Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "03311393",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/184753/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/184753/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/184753/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/184753/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/184753/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/184753/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/184753/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/184753/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/184753/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

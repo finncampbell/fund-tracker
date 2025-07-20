@@ -1,6 +1,28 @@
 {
   "frn": 122512,
-  "metadata": {},
+  "metadata": {
+    "frn": "122512",
+    "organisation_name": "First Sentier Investors International IM Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "SC079063",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122512/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122512/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122512/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122512/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122512/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122512/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122512/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122512/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122512/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

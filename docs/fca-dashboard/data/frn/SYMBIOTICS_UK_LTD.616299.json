@@ -1,6 +1,28 @@
 {
   "frn": 616299,
-  "metadata": {},
+  "metadata": {
+    "frn": "616299",
+    "organisation_name": "SYMBIOTICS (UK) LTD",
+    "status": "Authorised",
+    "status_effective_date": "19/06/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08618323",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/616299/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/616299/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/616299/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/616299/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/616299/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/616299/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/616299/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/616299/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/616299/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

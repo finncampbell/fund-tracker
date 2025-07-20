@@ -1,6 +1,28 @@
 {
   "frn": 148496,
-  "metadata": {},
+  "metadata": {
+    "frn": "148496",
+    "organisation_name": "MM Wealth Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01454074",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/148496/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/148496/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/148496/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/148496/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/148496/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/148496/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/148496/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/148496/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/148496/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 761167,
-  "metadata": {},
+  "metadata": {
+    "frn": "761167",
+    "organisation_name": "RoundShield Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "OC388586",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/761167/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/761167/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/761167/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/761167/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/761167/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/761167/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/761167/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/761167/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/761167/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 630426,
-  "metadata": {},
+  "metadata": {
+    "frn": "630426",
+    "organisation_name": "Amedeo Services (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "14/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08878804",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/630426/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/630426/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/630426/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/630426/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/630426/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/630426/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/630426/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/630426/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/630426/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

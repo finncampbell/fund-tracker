@@ -1,6 +1,37 @@
 {
   "frn": 131372,
-  "metadata": {},
+  "metadata": {
+    "frn": "131372",
+    "organisation_name": "FACET INVESTMENT MANAGEMENT LTD",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "01931757",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      },
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/131372/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/131372/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/131372/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/131372/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/131372/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/131372/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/131372/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/131372/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/131372/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

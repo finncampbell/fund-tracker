@@ -1,6 +1,28 @@
 {
   "frn": 454571,
-  "metadata": {},
+  "metadata": {
+    "frn": "454571",
+    "organisation_name": "Fletcher King Investment Management Plc",
+    "status": "No longer authorised",
+    "status_effective_date": "16/07/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "05862811",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/454571/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/454571/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/454571/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/454571/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/454571/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/454571/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/454571/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/454571/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/454571/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

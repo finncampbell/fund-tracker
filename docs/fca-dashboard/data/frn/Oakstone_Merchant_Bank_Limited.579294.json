@@ -1,6 +1,28 @@
 {
   "frn": 579294,
-  "metadata": {},
+  "metadata": {
+    "frn": "579294",
+    "organisation_name": "Oakstone Merchant Bank Limited",
+    "status": "Authorised",
+    "status_effective_date": "17/07/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07970252",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/579294/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/579294/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/579294/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/579294/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/579294/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/579294/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/579294/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/579294/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/579294/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

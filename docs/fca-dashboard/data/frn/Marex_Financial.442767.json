@@ -1,6 +1,33 @@
 {
   "frn": 442767,
-  "metadata": {},
+  "metadata": {
+    "frn": "442767",
+    "organisation_name": "Marex Financial",
+    "status": "Authorised",
+    "status_effective_date": "13/01/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05613061",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/442767/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/442767/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/442767/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/442767/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/442767/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/442767/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/442767/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/442767/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/442767/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 463991,
-  "metadata": {},
+  "metadata": {
+    "frn": "463991",
+    "organisation_name": "Alquity Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "17/04/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06020476",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/463991/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/463991/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/463991/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/463991/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/463991/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/463991/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/463991/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/463991/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/463991/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

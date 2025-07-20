@@ -1,6 +1,33 @@
 {
   "frn": 225539,
-  "metadata": {},
+  "metadata": {
+    "frn": "225539",
+    "organisation_name": "Sova Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/03/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04621383",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/225539/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/225539/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/225539/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/225539/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/225539/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/225539/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/225539/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/225539/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/225539/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

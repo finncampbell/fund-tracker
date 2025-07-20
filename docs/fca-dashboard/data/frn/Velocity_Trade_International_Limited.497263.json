@@ -1,6 +1,28 @@
 {
   "frn": 497263,
-  "metadata": {},
+  "metadata": {
+    "frn": "497263",
+    "organisation_name": "Velocity Trade International Limited",
+    "status": "See full details",
+    "status_effective_date": "04/01/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06813279",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/497263/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/497263/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/497263/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/497263/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/497263/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/497263/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/497263/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/497263/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/497263/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

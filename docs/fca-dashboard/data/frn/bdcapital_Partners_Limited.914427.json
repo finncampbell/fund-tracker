@@ -1,6 +1,28 @@
 {
   "frn": 914427,
-  "metadata": {},
+  "metadata": {
+    "frn": "914427",
+    "organisation_name": "bd-capital Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/03/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11972771",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/914427/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/914427/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/914427/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/914427/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/914427/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/914427/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/914427/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/914427/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/914427/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

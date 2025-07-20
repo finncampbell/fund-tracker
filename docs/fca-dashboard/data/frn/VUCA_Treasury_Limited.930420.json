@@ -1,6 +1,28 @@
 {
   "frn": 930420,
-  "metadata": {},
+  "metadata": {
+    "frn": "930420",
+    "organisation_name": "VUCA Treasury Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/07/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "12346067",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/930420/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/930420/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/930420/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/930420/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/930420/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/930420/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/930420/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/930420/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/930420/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

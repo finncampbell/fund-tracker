@@ -1,6 +1,28 @@
 {
   "frn": 124659,
-  "metadata": {},
+  "metadata": {
+    "frn": "124659",
+    "organisation_name": "Goldman Sachs International Bank",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "01122503",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124659/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124659/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124659/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124659/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124659/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124659/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124659/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124659/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124659/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

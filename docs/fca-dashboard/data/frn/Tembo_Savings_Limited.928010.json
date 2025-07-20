@@ -1,6 +1,28 @@
 {
   "frn": 928010,
-  "metadata": {},
+  "metadata": {
+    "frn": "928010",
+    "organisation_name": "Tembo Savings Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/03/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "12008146",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/928010/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/928010/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/928010/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/928010/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/928010/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/928010/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/928010/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/928010/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/928010/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

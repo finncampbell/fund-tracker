@@ -1,6 +1,33 @@
 {
   "frn": 116337,
-  "metadata": {},
+  "metadata": {
+    "frn": "116337",
+    "organisation_name": "SDB Strategic Planners Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01849083",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/116337/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/116337/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/116337/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/116337/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/116337/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/116337/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/116337/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/116337/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/116337/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

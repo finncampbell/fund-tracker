@@ -1,6 +1,28 @@
 {
   "frn": 401809,
-  "metadata": {},
+  "metadata": {
+    "frn": "401809",
+    "organisation_name": "HENDERSON ROWE LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "03/09/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04379340",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/401809/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/401809/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/401809/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/401809/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/401809/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/401809/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/401809/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/401809/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/401809/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

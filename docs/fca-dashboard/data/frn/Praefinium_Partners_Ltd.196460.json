@@ -1,6 +1,28 @@
 {
   "frn": 196460,
-  "metadata": {},
+  "metadata": {
+    "frn": "196460",
+    "organisation_name": "Praefinium Partners Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04040407",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/196460/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/196460/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/196460/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/196460/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/196460/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/196460/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/196460/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/196460/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/196460/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

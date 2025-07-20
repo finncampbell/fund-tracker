@@ -1,6 +1,28 @@
 {
   "frn": 1004009,
-  "metadata": {},
+  "metadata": {
+    "frn": "1004009",
+    "organisation_name": "Kimmeridge Energy Management LTD",
+    "status": "Authorised",
+    "status_effective_date": "31/07/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "08110831",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1004009/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1004009/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1004009/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

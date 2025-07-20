@@ -1,6 +1,28 @@
 {
   "frn": 170423,
-  "metadata": {},
+  "metadata": {
+    "frn": "170423",
+    "organisation_name": "HSBC Alternative Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "02845800",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/170423/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/170423/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/170423/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/170423/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/170423/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/170423/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/170423/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/170423/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/170423/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

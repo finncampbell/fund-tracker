@@ -1,6 +1,28 @@
 {
   "frn": 480590,
-  "metadata": {},
+  "metadata": {
+    "frn": "480590",
+    "organisation_name": "Kepler Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "27/06/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC334771",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/480590/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/480590/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/480590/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/480590/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/480590/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/480590/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/480590/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/480590/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/480590/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 593761,
-  "metadata": {},
+  "metadata": {
+    "frn": "593761",
+    "organisation_name": "Tomorrow Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/06/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC374321",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/593761/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/593761/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/593761/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/593761/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/593761/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/593761/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/593761/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/593761/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/593761/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

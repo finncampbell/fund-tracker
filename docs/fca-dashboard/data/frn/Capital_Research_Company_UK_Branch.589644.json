@@ -1,6 +1,28 @@
 {
   "frn": 589644,
-  "metadata": {},
+  "metadata": {
+    "frn": "589644",
+    "organisation_name": "Capital Research Company UK Branch",
+    "status": "Authorised",
+    "status_effective_date": "30/09/2013",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "BR002162",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/589644/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/589644/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/589644/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/589644/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/589644/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/589644/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/589644/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/589644/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/589644/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

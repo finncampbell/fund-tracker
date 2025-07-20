@@ -1,6 +1,28 @@
 {
   "frn": 498309,
-  "metadata": {},
+  "metadata": {
+    "frn": "498309",
+    "organisation_name": "Retail Investor Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "03/07/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06899059",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/498309/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/498309/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/498309/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/498309/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/498309/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/498309/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/498309/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/498309/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/498309/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

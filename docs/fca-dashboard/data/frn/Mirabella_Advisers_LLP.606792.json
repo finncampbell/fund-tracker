@@ -1,6 +1,28 @@
 {
   "frn": 606792,
-  "metadata": {},
+  "metadata": {
+    "frn": "606792",
+    "organisation_name": "Mirabella Advisers LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/07/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC384100",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/606792/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/606792/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/606792/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/606792/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/606792/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/606792/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/606792/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/606792/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/606792/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

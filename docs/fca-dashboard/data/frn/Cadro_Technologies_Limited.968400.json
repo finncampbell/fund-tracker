@@ -1,6 +1,28 @@
 {
   "frn": 968400,
-  "metadata": {},
+  "metadata": {
+    "frn": "968400",
+    "organisation_name": "Cadro Technologies Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/11/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11797448",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/968400/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/968400/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/968400/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/968400/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/968400/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/968400/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/968400/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/968400/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/968400/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 931954,
-  "metadata": {},
+  "metadata": {
+    "frn": "931954",
+    "organisation_name": "One Four Nine Portfolio Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11871594",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/931954/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/931954/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/931954/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/931954/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/931954/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/931954/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/931954/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/931954/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/931954/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

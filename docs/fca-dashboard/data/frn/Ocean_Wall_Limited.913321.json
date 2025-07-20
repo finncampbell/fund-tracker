@@ -1,6 +1,28 @@
 {
   "frn": 913321,
-  "metadata": {},
+  "metadata": {
+    "frn": "913321",
+    "organisation_name": "Ocean Wall Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/09/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11907819",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/913321/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/913321/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/913321/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/913321/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/913321/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/913321/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/913321/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/913321/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/913321/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

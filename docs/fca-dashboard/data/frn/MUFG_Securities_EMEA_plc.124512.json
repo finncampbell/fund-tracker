@@ -1,6 +1,28 @@
 {
   "frn": 124512,
-  "metadata": {},
+  "metadata": {
+    "frn": "124512",
+    "organisation_name": "MUFG Securities EMEA plc",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01698498",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124512/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124512/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124512/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124512/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124512/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124512/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124512/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124512/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124512/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

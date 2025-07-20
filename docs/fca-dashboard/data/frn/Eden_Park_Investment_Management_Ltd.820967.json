@@ -1,6 +1,28 @@
 {
   "frn": 820967,
-  "metadata": {},
+  "metadata": {
+    "frn": "820967",
+    "organisation_name": "Eden Park Investment Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "13/06/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "10953727",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/820967/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/820967/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/820967/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/820967/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/820967/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/820967/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/820967/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/820967/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/820967/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

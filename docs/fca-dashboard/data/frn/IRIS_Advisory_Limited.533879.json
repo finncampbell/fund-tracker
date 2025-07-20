@@ -1,6 +1,28 @@
 {
   "frn": 533879,
-  "metadata": {},
+  "metadata": {
+    "frn": "533879",
+    "organisation_name": "IRIS Advisory Limited",
+    "status": "Authorised",
+    "status_effective_date": "28/04/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07238413",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/533879/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/533879/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/533879/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/533879/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/533879/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/533879/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/533879/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/533879/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/533879/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

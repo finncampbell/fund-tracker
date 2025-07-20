@@ -1,6 +1,28 @@
 {
   "frn": 462261,
-  "metadata": {},
+  "metadata": {
+    "frn": "462261",
+    "organisation_name": "Edison Investment Research Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "05/04/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04794244",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/462261/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/462261/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/462261/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/462261/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/462261/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/462261/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/462261/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/462261/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/462261/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

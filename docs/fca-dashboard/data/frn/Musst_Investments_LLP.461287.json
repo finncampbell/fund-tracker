@@ -1,6 +1,28 @@
 {
   "frn": 461287,
-  "metadata": {},
+  "metadata": {
+    "frn": "461287",
+    "organisation_name": "Musst Investments LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC317593",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/461287/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/461287/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/461287/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/461287/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/461287/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/461287/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/461287/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/461287/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/461287/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

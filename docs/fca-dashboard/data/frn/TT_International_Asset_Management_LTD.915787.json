@@ -1,6 +1,28 @@
 {
   "frn": 915787,
-  "metadata": {},
+  "metadata": {
+    "frn": "915787",
+    "organisation_name": "TT International Asset Management LTD",
+    "status": "Authorised",
+    "status_effective_date": "28/02/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "12093921",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/915787/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/915787/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/915787/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/915787/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/915787/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/915787/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/915787/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/915787/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/915787/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

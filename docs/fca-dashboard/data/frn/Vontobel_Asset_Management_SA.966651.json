@@ -1,6 +1,28 @@
 {
   "frn": 966651,
-  "metadata": {},
+  "metadata": {
+    "frn": "966651",
+    "organisation_name": "Vontobel Asset Management S.A.",
+    "status": "Authorised",
+    "status_effective_date": "10/05/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "00B78142",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/966651/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/966651/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/966651/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/966651/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/966651/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/966651/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/966651/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/966651/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/966651/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

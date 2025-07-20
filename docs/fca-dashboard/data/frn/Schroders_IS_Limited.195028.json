@@ -1,6 +1,28 @@
 {
   "frn": 195028,
-  "metadata": {},
+  "metadata": {
+    "frn": "195028",
+    "organisation_name": "Schroders IS Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "03359127",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/195028/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/195028/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/195028/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/195028/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/195028/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/195028/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/195028/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/195028/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/195028/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

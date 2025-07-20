@@ -1,6 +1,28 @@
 {
   "frn": 537080,
-  "metadata": {},
+  "metadata": {
+    "frn": "537080",
+    "organisation_name": "AURA HEXAA LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/07/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC358200",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/537080/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/537080/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/537080/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/537080/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/537080/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/537080/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/537080/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/537080/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/537080/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

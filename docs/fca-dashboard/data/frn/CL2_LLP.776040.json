@@ -1,6 +1,28 @@
 {
   "frn": 776040,
-  "metadata": {},
+  "metadata": {
+    "frn": "776040",
+    "organisation_name": "CL2 LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "SO304505",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/776040/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/776040/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/776040/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/776040/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/776040/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/776040/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/776040/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/776040/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/776040/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

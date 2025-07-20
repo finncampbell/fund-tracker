@@ -1,6 +1,28 @@
 {
   "frn": 650303,
-  "metadata": {},
+  "metadata": {
+    "frn": "650303",
+    "organisation_name": "Neural Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08436120",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/650303/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/650303/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/650303/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/650303/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/650303/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/650303/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/650303/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/650303/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/650303/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

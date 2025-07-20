@@ -1,6 +1,28 @@
 {
   "frn": 114563,
-  "metadata": {},
+  "metadata": {
+    "frn": "114563",
+    "organisation_name": "IWP Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01812617",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/114563/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/114563/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/114563/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/114563/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/114563/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/114563/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/114563/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/114563/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/114563/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

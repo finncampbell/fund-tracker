@@ -1,6 +1,28 @@
 {
   "frn": 832940,
-  "metadata": {},
+  "metadata": {
+    "frn": "832940",
+    "organisation_name": "Fidera Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/07/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11771958",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/832940/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/832940/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/832940/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/832940/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/832940/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/832940/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/832940/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/832940/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/832940/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

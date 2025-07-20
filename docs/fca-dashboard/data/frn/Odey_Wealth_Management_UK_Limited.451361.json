@@ -1,6 +1,33 @@
 {
   "frn": 451361,
-  "metadata": {},
+  "metadata": {
+    "frn": "451361",
+    "organisation_name": "Odey Wealth Management (UK) Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "18/07/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "05771936",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/451361/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/451361/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/451361/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/451361/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/451361/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/451361/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/451361/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/451361/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/451361/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

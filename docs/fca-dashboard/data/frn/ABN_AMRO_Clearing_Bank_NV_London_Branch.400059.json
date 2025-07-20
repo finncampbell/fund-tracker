@@ -1,6 +1,28 @@
 {
   "frn": 400059,
-  "metadata": {},
+  "metadata": {
+    "frn": "400059",
+    "organisation_name": "ABN AMRO Clearing Bank N.V., London Branch",
+    "status": "Authorised",
+    "status_effective_date": "12/10/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "FC025168",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/400059/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/400059/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/400059/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/400059/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/400059/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/400059/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/400059/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/400059/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/400059/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

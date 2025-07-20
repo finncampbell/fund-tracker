@@ -1,6 +1,28 @@
 {
   "frn": 490834,
-  "metadata": {},
+  "metadata": {
+    "frn": "490834",
+    "organisation_name": "CONSORTIUM CAPITAL LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "29/01/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "06476367",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/490834/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/490834/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/490834/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/490834/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/490834/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/490834/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/490834/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/490834/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/490834/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

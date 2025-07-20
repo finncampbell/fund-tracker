@@ -1,6 +1,33 @@
 {
   "frn": 453682,
-  "metadata": {},
+  "metadata": {
+    "frn": "453682",
+    "organisation_name": "Hay Hill Wealth Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/08/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05416229",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/453682/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/453682/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/453682/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/453682/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/453682/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/453682/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/453682/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/453682/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/453682/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 400056,
-  "metadata": {},
+  "metadata": {
+    "frn": "400056",
+    "organisation_name": "Baader Helvea Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/09/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "04935018",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/400056/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/400056/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/400056/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/400056/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/400056/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/400056/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/400056/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/400056/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/400056/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

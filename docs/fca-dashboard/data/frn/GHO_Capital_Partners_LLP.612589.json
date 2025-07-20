@@ -1,6 +1,28 @@
 {
   "frn": 612589,
-  "metadata": {},
+  "metadata": {
+    "frn": "612589",
+    "organisation_name": "GHO Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC389512",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/612589/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/612589/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/612589/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/612589/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/612589/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/612589/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/612589/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/612589/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/612589/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 931392,
-  "metadata": {},
+  "metadata": {
+    "frn": "931392",
+    "organisation_name": "Altium Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/11/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11687055",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/931392/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/931392/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/931392/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/931392/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/931392/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/931392/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/931392/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/931392/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/931392/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

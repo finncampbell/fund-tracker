@@ -1,6 +1,28 @@
 {
   "frn": 763979,
-  "metadata": {},
+  "metadata": {
+    "frn": "763979",
+    "organisation_name": "EMFI Securities Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/01/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "10447140",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/763979/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/763979/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/763979/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/763979/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/763979/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/763979/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/763979/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/763979/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/763979/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

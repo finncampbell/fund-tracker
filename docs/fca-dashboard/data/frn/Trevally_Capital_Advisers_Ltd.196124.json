@@ -1,6 +1,33 @@
 {
   "frn": 196124,
-  "metadata": {},
+  "metadata": {
+    "frn": "196124",
+    "organisation_name": "Trevally Capital Advisers Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04001724",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/196124/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/196124/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/196124/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/196124/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/196124/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/196124/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/196124/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/196124/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/196124/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 586570,
-  "metadata": {},
+  "metadata": {
+    "frn": "586570",
+    "organisation_name": "Triton Investments Advisers LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/10/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC374555",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/586570/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/586570/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/586570/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/586570/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/586570/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/586570/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/586570/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/586570/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/586570/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

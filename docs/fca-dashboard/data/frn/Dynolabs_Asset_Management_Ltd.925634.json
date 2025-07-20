@@ -1,6 +1,28 @@
 {
   "frn": 925634,
-  "metadata": {},
+  "metadata": {
+    "frn": "925634",
+    "organisation_name": "Dynolabs Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "12033110",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/925634/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/925634/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/925634/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/925634/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/925634/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/925634/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/925634/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/925634/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/925634/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

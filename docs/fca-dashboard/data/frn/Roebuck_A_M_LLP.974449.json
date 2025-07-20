@@ -1,6 +1,28 @@
 {
   "frn": 974449,
-  "metadata": {},
+  "metadata": {
+    "frn": "974449",
+    "organisation_name": "Roebuck A M LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "18/04/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "OC403844",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/974449/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/974449/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/974449/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/974449/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/974449/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/974449/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/974449/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/974449/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/974449/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 951658,
-  "metadata": {},
+  "metadata": {
+    "frn": "951658",
+    "organisation_name": "Corran Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/09/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "SO306989",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/951658/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/951658/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/951658/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/951658/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/951658/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/951658/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/951658/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/951658/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/951658/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 977430,
-  "metadata": {},
+  "metadata": {
+    "frn": "977430",
+    "organisation_name": "TriOptima AB",
+    "status": "Authorised",
+    "status_effective_date": "06/12/2022",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "5565849758",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/977430/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/977430/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/977430/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/977430/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/977430/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/977430/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/977430/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/977430/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/977430/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

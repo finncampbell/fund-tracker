@@ -1,6 +1,28 @@
 {
   "frn": 462960,
-  "metadata": {},
+  "metadata": {
+    "frn": "462960",
+    "organisation_name": "CITCO Financial Products (London) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/07/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "05623433",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/462960/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/462960/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/462960/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/462960/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/462960/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/462960/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/462960/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/462960/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/462960/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

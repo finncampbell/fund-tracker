@@ -1,6 +1,28 @@
 {
   "frn": 971536,
-  "metadata": {},
+  "metadata": {
+    "frn": "971536",
+    "organisation_name": "DNB Carnegie Investment Bank AB",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2022",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "FC018658",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/971536/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/971536/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/971536/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/971536/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/971536/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/971536/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/971536/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/971536/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/971536/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

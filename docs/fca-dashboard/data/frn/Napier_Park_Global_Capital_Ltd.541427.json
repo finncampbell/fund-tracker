@@ -1,6 +1,28 @@
 {
   "frn": 541427,
-  "metadata": {},
+  "metadata": {
+    "frn": "541427",
+    "organisation_name": "Napier Park Global Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/05/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "07480435",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/541427/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/541427/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/541427/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/541427/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/541427/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/541427/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/541427/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/541427/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/541427/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

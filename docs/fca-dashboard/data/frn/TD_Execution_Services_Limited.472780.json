@@ -1,6 +1,28 @@
 {
   "frn": 472780,
-  "metadata": {},
+  "metadata": {
+    "frn": "472780",
+    "organisation_name": "TD Execution Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/01/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06262150",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/472780/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/472780/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/472780/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/472780/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/472780/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/472780/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/472780/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/472780/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/472780/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

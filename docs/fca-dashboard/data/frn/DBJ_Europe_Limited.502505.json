@@ -1,6 +1,28 @@
 {
   "frn": 502505,
-  "metadata": {},
+  "metadata": {
+    "frn": "502505",
+    "organisation_name": "DBJ Europe Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/11/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "06925256",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/502505/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/502505/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/502505/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/502505/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/502505/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/502505/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/502505/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/502505/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/502505/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

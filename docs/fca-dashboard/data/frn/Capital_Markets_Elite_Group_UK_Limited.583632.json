@@ -1,6 +1,28 @@
 {
   "frn": 583632,
-  "metadata": {},
+  "metadata": {
+    "frn": "583632",
+    "organisation_name": "Capital Markets Elite Group (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07832612",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/583632/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/583632/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/583632/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/583632/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/583632/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/583632/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/583632/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/583632/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/583632/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

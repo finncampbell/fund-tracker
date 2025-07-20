@@ -1,6 +1,28 @@
 {
   "frn": 409343,
-  "metadata": {},
+  "metadata": {
+    "frn": "409343",
+    "organisation_name": "BlackRock Institutional Trust Company, N.A.",
+    "status": "Authorised",
+    "status_effective_date": "10/02/2005",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "FC025891",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/409343/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/409343/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/409343/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/409343/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/409343/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/409343/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/409343/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/409343/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/409343/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

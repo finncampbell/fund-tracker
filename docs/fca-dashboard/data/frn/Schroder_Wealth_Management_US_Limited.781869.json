@@ -1,6 +1,28 @@
 {
   "frn": 781869,
-  "metadata": {},
+  "metadata": {
+    "frn": "781869",
+    "organisation_name": "Schroder Wealth Management (US) Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/09/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "10761882",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/781869/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/781869/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/781869/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/781869/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/781869/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/781869/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/781869/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/781869/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/781869/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

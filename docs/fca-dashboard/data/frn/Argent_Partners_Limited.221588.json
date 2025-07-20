@@ -1,6 +1,28 @@
 {
   "frn": 221588,
-  "metadata": {},
+  "metadata": {
+    "frn": "221588",
+    "organisation_name": "Argent Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "21/03/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04430262",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/221588/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/221588/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/221588/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/221588/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/221588/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/221588/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/221588/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/221588/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/221588/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

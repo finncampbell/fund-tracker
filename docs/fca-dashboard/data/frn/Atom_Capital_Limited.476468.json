@@ -1,6 +1,28 @@
 {
   "frn": 476468,
-  "metadata": {},
+  "metadata": {
+    "frn": "476468",
+    "organisation_name": "Atom Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/04/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05989376",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/476468/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/476468/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/476468/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/476468/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/476468/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/476468/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/476468/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/476468/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/476468/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

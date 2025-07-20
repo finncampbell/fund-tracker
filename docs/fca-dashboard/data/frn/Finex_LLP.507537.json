@@ -1,6 +1,28 @@
 {
   "frn": 507537,
-  "metadata": {},
+  "metadata": {
+    "frn": "507537",
+    "organisation_name": "Finex LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/02/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC347481",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/507537/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/507537/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/507537/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/507537/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/507537/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/507537/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/507537/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/507537/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/507537/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

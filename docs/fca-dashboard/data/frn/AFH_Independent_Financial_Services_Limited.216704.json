@@ -1,6 +1,28 @@
 {
   "frn": 216704,
-  "metadata": {},
+  "metadata": {
+    "frn": "216704",
+    "organisation_name": "AFH Independent Financial Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/12/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04049180",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/216704/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/216704/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/216704/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/216704/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/216704/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/216704/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/216704/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/216704/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/216704/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

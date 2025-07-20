@@ -1,6 +1,28 @@
 {
   "frn": 933757,
-  "metadata": {},
+  "metadata": {
+    "frn": "933757",
+    "organisation_name": "Heronsgate Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "OC430243",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/933757/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/933757/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/933757/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/933757/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/933757/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/933757/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/933757/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/933757/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/933757/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

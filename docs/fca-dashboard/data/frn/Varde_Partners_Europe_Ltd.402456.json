@@ -1,6 +1,28 @@
 {
   "frn": 402456,
-  "metadata": {},
+  "metadata": {
+    "frn": "402456",
+    "organisation_name": "Varde Partners Europe Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/10/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05174658",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/402456/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/402456/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/402456/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/402456/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/402456/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/402456/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/402456/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/402456/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/402456/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

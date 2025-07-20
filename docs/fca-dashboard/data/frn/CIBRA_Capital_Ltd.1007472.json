@@ -1,6 +1,28 @@
 {
   "frn": 1007472,
-  "metadata": {},
+  "metadata": {
+    "frn": "1007472",
+    "organisation_name": "CIBRA Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "15/07/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:07",
+    "companies_house_number": "15189615",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1007472/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1007472/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1007472/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

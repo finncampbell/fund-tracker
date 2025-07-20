@@ -1,6 +1,28 @@
 {
   "frn": 631363,
-  "metadata": {},
+  "metadata": {
+    "frn": "631363",
+    "organisation_name": "Strass Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "05/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08006417",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/631363/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/631363/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/631363/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/631363/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/631363/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/631363/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/631363/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/631363/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/631363/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 400674,
-  "metadata": {},
+  "metadata": {
+    "frn": "400674",
+    "organisation_name": "Talisman Global Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/07/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03680990",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/400674/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/400674/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/400674/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/400674/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/400674/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/400674/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/400674/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/400674/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/400674/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

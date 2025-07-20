@@ -1,6 +1,28 @@
 {
   "frn": 531505,
-  "metadata": {},
+  "metadata": {
+    "frn": "531505",
+    "organisation_name": "Goldenberg Hehmeyer LLP",
+    "status": "Authorised",
+    "status_effective_date": "09/05/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC316522",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/531505/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/531505/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/531505/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/531505/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/531505/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/531505/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/531505/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/531505/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/531505/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 930300,
-  "metadata": {},
+  "metadata": {
+    "frn": "930300",
+    "organisation_name": "Baron & Grant Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/01/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "12161169",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/930300/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/930300/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/930300/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/930300/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/930300/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/930300/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/930300/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/930300/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/930300/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

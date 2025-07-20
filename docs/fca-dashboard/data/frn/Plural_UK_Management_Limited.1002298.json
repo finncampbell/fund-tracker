@@ -1,6 +1,28 @@
 {
   "frn": 1002298,
-  "metadata": {},
+  "metadata": {
+    "frn": "1002298",
+    "organisation_name": "Plural UK Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/04/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13703272",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1002298/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1002298/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1002298/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 529866,
-  "metadata": {},
+  "metadata": {
+    "frn": "529866",
+    "organisation_name": "Harrington Cooper LLP",
+    "status": "Authorised",
+    "status_effective_date": "08/02/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC319697",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/529866/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/529866/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/529866/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/529866/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/529866/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/529866/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/529866/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/529866/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/529866/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

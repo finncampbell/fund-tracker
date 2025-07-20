@@ -1,6 +1,28 @@
 {
   "frn": 628932,
-  "metadata": {},
+  "metadata": {
+    "frn": "628932",
+    "organisation_name": "Mercuria Europe Trading Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/09/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08177676",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/628932/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/628932/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/628932/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/628932/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/628932/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/628932/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/628932/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/628932/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/628932/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

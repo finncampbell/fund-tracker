@@ -1,6 +1,28 @@
 {
   "frn": 931840,
-  "metadata": {},
+  "metadata": {
+    "frn": "931840",
+    "organisation_name": "Expedition Growth Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "02/11/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "12564080",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/931840/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/931840/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/931840/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/931840/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/931840/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/931840/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/931840/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/931840/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/931840/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

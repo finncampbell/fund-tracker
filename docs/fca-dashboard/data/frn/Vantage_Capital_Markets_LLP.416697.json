@@ -1,6 +1,28 @@
 {
   "frn": 416697,
-  "metadata": {},
+  "metadata": {
+    "frn": "416697",
+    "organisation_name": "Vantage Capital Markets LLP",
+    "status": "Authorised",
+    "status_effective_date": "29/07/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC308882",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/416697/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/416697/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/416697/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/416697/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/416697/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/416697/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/416697/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/416697/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/416697/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

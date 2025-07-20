@@ -1,6 +1,28 @@
 {
   "frn": 530724,
-  "metadata": {},
+  "metadata": {
+    "frn": "530724",
+    "organisation_name": "Prologis Private Capital UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/01/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06997755",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/530724/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/530724/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/530724/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/530724/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/530724/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/530724/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/530724/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/530724/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/530724/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

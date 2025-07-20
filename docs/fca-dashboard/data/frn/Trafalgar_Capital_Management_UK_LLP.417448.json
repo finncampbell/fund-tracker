@@ -1,6 +1,28 @@
 {
   "frn": 417448,
-  "metadata": {},
+  "metadata": {
+    "frn": "417448",
+    "organisation_name": "Trafalgar Capital Management (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "09/03/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC308825",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/417448/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/417448/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/417448/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/417448/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/417448/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/417448/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/417448/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/417448/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/417448/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

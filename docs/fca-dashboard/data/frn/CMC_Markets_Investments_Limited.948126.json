@@ -1,6 +1,28 @@
 {
   "frn": 948126,
-  "metadata": {},
+  "metadata": {
+    "frn": "948126",
+    "organisation_name": "CMC Markets Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "21/03/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "12816952",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/948126/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/948126/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/948126/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/948126/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/948126/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/948126/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/948126/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/948126/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/948126/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

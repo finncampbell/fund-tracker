@@ -1,6 +1,28 @@
 {
   "frn": 1003475,
-  "metadata": {},
+  "metadata": {
+    "frn": "1003475",
+    "organisation_name": "Tabula Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12865422",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1003475/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1003475/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1003475/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

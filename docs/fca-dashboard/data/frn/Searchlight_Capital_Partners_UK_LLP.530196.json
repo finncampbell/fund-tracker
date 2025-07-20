@@ -1,6 +1,28 @@
 {
   "frn": 530196,
-  "metadata": {},
+  "metadata": {
+    "frn": "530196",
+    "organisation_name": "Searchlight Capital Partners UK LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "22/12/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC355364",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/530196/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/530196/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/530196/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/530196/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/530196/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/530196/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/530196/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/530196/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/530196/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

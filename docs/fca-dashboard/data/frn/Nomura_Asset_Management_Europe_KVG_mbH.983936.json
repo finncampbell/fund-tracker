@@ -1,6 +1,28 @@
 {
   "frn": 983936,
-  "metadata": {},
+  "metadata": {
+    "frn": "983936",
+    "organisation_name": "Nomura Asset Management Europe KVG mbH",
+    "status": "Authorised",
+    "status_effective_date": "11/07/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "BR021004",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/983936/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/983936/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/983936/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/983936/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/983936/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/983936/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/983936/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/983936/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/983936/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

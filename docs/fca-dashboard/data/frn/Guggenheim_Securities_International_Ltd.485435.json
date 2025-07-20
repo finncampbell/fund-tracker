@@ -1,6 +1,28 @@
 {
   "frn": 485435,
-  "metadata": {},
+  "metadata": {
+    "frn": "485435",
+    "organisation_name": "Guggenheim Securities International Ltd",
+    "status": "Authorised",
+    "status_effective_date": "07/10/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06624746",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/485435/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/485435/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/485435/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/485435/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/485435/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/485435/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/485435/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/485435/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/485435/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

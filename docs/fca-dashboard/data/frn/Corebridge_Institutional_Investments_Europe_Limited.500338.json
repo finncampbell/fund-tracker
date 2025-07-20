@@ -1,6 +1,28 @@
 {
   "frn": 500338,
-  "metadata": {},
+  "metadata": {
+    "frn": "500338",
+    "organisation_name": "Corebridge Institutional Investments (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/01/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "04665011",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/500338/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/500338/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/500338/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/500338/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/500338/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/500338/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/500338/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/500338/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/500338/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

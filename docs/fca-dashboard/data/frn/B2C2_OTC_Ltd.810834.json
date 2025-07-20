@@ -1,6 +1,28 @@
 {
   "frn": 810834,
-  "metadata": {},
+  "metadata": {
+    "frn": "810834",
+    "organisation_name": "B2C2 OTC Ltd",
+    "status": "Authorised",
+    "status_effective_date": "30/01/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10102984",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/810834/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/810834/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/810834/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/810834/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/810834/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/810834/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/810834/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/810834/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/810834/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

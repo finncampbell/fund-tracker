@@ -1,6 +1,28 @@
 {
   "frn": 977582,
-  "metadata": {},
+  "metadata": {
+    "frn": "977582",
+    "organisation_name": "Robeco Institutional Asset Management B.V",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "27/03/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "0FC32205",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/977582/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/977582/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/977582/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/977582/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/977582/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/977582/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/977582/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/977582/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/977582/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

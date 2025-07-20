@@ -1,6 +1,28 @@
 {
   "frn": 912182,
-  "metadata": {},
+  "metadata": {
+    "frn": "912182",
+    "organisation_name": "Nextgen Research Limited",
+    "status": "Authorised",
+    "status_effective_date": "14/11/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "11919919",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/912182/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/912182/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/912182/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/912182/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/912182/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/912182/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/912182/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/912182/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/912182/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

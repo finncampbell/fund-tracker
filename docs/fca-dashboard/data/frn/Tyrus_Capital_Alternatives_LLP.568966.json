@@ -1,6 +1,28 @@
 {
   "frn": 568966,
-  "metadata": {},
+  "metadata": {
+    "frn": "568966",
+    "organisation_name": "Tyrus Capital Alternatives LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "31/05/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC368757",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/568966/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/568966/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/568966/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/568966/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/568966/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/568966/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/568966/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/568966/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/568966/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

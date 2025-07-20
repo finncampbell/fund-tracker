@@ -1,6 +1,28 @@
 {
   "frn": 229228,
-  "metadata": {},
+  "metadata": {
+    "frn": "229228",
+    "organisation_name": "Swiss Life Asset Managers UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "20/02/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04846209",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/229228/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/229228/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/229228/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/229228/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/229228/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/229228/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/229228/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/229228/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/229228/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 766642,
-  "metadata": {},
+  "metadata": {
+    "frn": "766642",
+    "organisation_name": "Mayfair Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/04/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "10079956",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/766642/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/766642/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/766642/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/766642/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/766642/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/766642/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/766642/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/766642/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/766642/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

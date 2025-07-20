@@ -1,6 +1,28 @@
 {
   "frn": 970356,
-  "metadata": {},
+  "metadata": {
+    "frn": "970356",
+    "organisation_name": "Systema Nova Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "13/09/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "12364900",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/970356/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/970356/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/970356/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/970356/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/970356/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/970356/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/970356/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/970356/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/970356/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

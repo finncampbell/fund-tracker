@@ -1,6 +1,28 @@
 {
   "frn": 516496,
-  "metadata": {},
+  "metadata": {
+    "frn": "516496",
+    "organisation_name": "Ashberg Limited",
+    "status": "Authorised",
+    "status_effective_date": "05/08/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06987478",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/516496/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/516496/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/516496/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/516496/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/516496/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/516496/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/516496/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/516496/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/516496/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

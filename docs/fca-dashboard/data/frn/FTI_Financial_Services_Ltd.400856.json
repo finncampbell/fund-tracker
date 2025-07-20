@@ -1,6 +1,28 @@
 {
   "frn": 400856,
-  "metadata": {},
+  "metadata": {
+    "frn": "400856",
+    "organisation_name": "FTI Financial Services Ltd",
+    "status": "Authorised",
+    "status_effective_date": "18/11/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04851184",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/400856/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/400856/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/400856/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/400856/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/400856/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/400856/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/400856/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/400856/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/400856/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 929955,
-  "metadata": {},
+  "metadata": {
+    "frn": "929955",
+    "organisation_name": "My Continuum Wealth Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/06/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11654355",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/929955/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/929955/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/929955/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/929955/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/929955/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/929955/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/929955/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/929955/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/929955/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

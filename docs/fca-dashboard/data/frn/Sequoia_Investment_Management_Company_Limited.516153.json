@@ -1,6 +1,28 @@
 {
   "frn": 516153,
-  "metadata": {},
+  "metadata": {
+    "frn": "516153",
+    "organisation_name": "Sequoia Investment Management Company Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/12/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05902847",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/516153/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/516153/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/516153/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/516153/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/516153/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/516153/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/516153/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/516153/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/516153/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

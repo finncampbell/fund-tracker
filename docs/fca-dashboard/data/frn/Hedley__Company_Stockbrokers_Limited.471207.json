@@ -1,6 +1,28 @@
 {
   "frn": 471207,
-  "metadata": {},
+  "metadata": {
+    "frn": "471207",
+    "organisation_name": "Hedley & Company Stockbrokers Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/10/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "06355300",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/471207/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/471207/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/471207/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/471207/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/471207/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/471207/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/471207/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/471207/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/471207/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

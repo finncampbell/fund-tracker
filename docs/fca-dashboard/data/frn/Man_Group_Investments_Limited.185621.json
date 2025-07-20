@@ -1,6 +1,28 @@
 {
   "frn": 185621,
-  "metadata": {},
+  "metadata": {
+    "frn": "185621",
+    "organisation_name": "Man Group Investments Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "03385406",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/185621/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/185621/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/185621/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/185621/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/185621/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/185621/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/185621/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/185621/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/185621/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

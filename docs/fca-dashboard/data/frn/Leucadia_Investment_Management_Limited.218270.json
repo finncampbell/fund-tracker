@@ -1,6 +1,28 @@
 {
   "frn": 218270,
-  "metadata": {},
+  "metadata": {
+    "frn": "218270",
+    "organisation_name": "Leucadia Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "24/06/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04476927",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/218270/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/218270/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/218270/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/218270/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/218270/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/218270/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/218270/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/218270/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/218270/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

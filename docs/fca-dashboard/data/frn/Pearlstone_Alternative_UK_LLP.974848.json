@@ -1,6 +1,28 @@
 {
   "frn": 974848,
-  "metadata": {},
+  "metadata": {
+    "frn": "974848",
+    "organisation_name": "Pearlstone Alternative (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "24/01/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "OC440723",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/974848/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/974848/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/974848/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/974848/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/974848/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/974848/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/974848/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/974848/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/974848/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

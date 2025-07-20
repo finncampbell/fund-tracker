@@ -1,6 +1,28 @@
 {
   "frn": 847174,
-  "metadata": {},
+  "metadata": {
+    "frn": "847174",
+    "organisation_name": "Lundy Investors Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/05/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "10295668",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/847174/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/847174/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/847174/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/847174/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/847174/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/847174/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/847174/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/847174/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/847174/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

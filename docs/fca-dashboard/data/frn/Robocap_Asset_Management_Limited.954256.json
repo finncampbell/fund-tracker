@@ -1,6 +1,28 @@
 {
   "frn": 954256,
-  "metadata": {},
+  "metadata": {
+    "frn": "954256",
+    "organisation_name": "Robocap Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "23/08/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "09624725",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/954256/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/954256/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/954256/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/954256/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/954256/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/954256/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/954256/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/954256/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/954256/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

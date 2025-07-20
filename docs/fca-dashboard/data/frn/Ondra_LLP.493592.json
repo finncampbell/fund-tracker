@@ -1,6 +1,28 @@
 {
   "frn": 493592,
-  "metadata": {},
+  "metadata": {
+    "frn": "493592",
+    "organisation_name": "Ondra LLP",
+    "status": "Authorised",
+    "status_effective_date": "04/02/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC340822",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/493592/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/493592/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/493592/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/493592/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/493592/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/493592/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/493592/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/493592/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/493592/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

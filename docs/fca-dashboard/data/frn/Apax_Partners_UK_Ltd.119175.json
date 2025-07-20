@@ -1,6 +1,28 @@
 {
   "frn": 119175,
-  "metadata": {},
+  "metadata": {
+    "frn": "119175",
+    "organisation_name": "Apax Partners UK Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "01342446",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/119175/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/119175/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/119175/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/119175/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/119175/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/119175/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/119175/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/119175/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/119175/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

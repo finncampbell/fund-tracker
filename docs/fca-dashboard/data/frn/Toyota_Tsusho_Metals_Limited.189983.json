@@ -1,6 +1,28 @@
 {
   "frn": 189983,
-  "metadata": {},
+  "metadata": {
+    "frn": "189983",
+    "organisation_name": "Toyota Tsusho Metals Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03674104",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/189983/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/189983/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/189983/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/189983/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/189983/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/189983/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/189983/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/189983/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/189983/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

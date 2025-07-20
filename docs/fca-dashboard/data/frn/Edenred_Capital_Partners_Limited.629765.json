@@ -1,6 +1,28 @@
 {
   "frn": 629765,
-  "metadata": {},
+  "metadata": {
+    "frn": "629765",
+    "organisation_name": "Edenred Capital Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/03/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09095927",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/629765/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/629765/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/629765/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/629765/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/629765/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/629765/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/629765/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/629765/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/629765/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

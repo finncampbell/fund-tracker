@@ -1,6 +1,28 @@
 {
   "frn": 742530,
-  "metadata": {},
+  "metadata": {
+    "frn": "742530",
+    "organisation_name": "Tembo Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/09/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "10038341",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/742530/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/742530/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/742530/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/742530/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/742530/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/742530/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/742530/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/742530/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/742530/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

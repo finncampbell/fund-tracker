@@ -1,6 +1,28 @@
 {
   "frn": 502635,
-  "metadata": {},
+  "metadata": {
+    "frn": "502635",
+    "organisation_name": "Hantec Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/06/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06819047",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/502635/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/502635/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/502635/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/502635/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/502635/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/502635/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/502635/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/502635/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/502635/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 977643,
-  "metadata": {},
+  "metadata": {
+    "frn": "977643",
+    "organisation_name": "Goodbody Stockbrokers Unlimited Company",
+    "status": "Authorised",
+    "status_effective_date": "14/07/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "FC032758",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/977643/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/977643/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/977643/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/977643/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/977643/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/977643/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/977643/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/977643/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/977643/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

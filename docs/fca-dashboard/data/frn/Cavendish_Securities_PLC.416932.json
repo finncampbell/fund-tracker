@@ -1,6 +1,33 @@
 {
   "frn": 416932,
-  "metadata": {},
+  "metadata": {
+    "frn": "416932",
+    "organisation_name": "Cavendish Securities PLC",
+    "status": "Authorised",
+    "status_effective_date": "10/03/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "05210733",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/416932/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/416932/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/416932/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/416932/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/416932/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/416932/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/416932/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/416932/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/416932/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

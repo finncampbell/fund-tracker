@@ -1,6 +1,28 @@
 {
   "frn": 782205,
-  "metadata": {},
+  "metadata": {
+    "frn": "782205",
+    "organisation_name": "CWM Investment Management Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "02/10/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "10478948",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/782205/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/782205/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/782205/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/782205/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/782205/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/782205/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/782205/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/782205/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/782205/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

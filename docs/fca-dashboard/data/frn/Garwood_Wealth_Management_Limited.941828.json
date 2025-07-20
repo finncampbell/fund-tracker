@@ -1,6 +1,28 @@
 {
   "frn": 941828,
-  "metadata": {},
+  "metadata": {
+    "frn": "941828",
+    "organisation_name": "Garwood Wealth Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "05/08/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "08695461",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/941828/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/941828/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/941828/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/941828/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/941828/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/941828/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/941828/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/941828/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/941828/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

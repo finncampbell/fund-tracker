@@ -1,6 +1,28 @@
 {
   "frn": 763601,
-  "metadata": {},
+  "metadata": {
+    "frn": "763601",
+    "organisation_name": "Saranac Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/05/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "09587905",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/763601/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/763601/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/763601/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/763601/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/763601/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/763601/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/763601/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/763601/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/763601/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

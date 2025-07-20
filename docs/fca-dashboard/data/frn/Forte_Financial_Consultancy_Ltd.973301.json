@@ -1,6 +1,28 @@
 {
   "frn": 973301,
-  "metadata": {},
+  "metadata": {
+    "frn": "973301",
+    "organisation_name": "Forte Financial Consultancy Ltd",
+    "status": "Authorised",
+    "status_effective_date": "28/03/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "13576545",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/973301/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/973301/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/973301/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/973301/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/973301/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/973301/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/973301/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/973301/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/973301/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

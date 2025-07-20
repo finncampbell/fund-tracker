@@ -1,6 +1,28 @@
 {
   "frn": 170627,
-  "metadata": {},
+  "metadata": {
+    "frn": "170627",
+    "organisation_name": "CMC Spreadbet Plc",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "02589529",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/170627/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/170627/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/170627/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/170627/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/170627/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/170627/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/170627/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/170627/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/170627/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 611272,
-  "metadata": {},
+  "metadata": {
+    "frn": "611272",
+    "organisation_name": "Chancery Financial Planning LLP",
+    "status": "See full details",
+    "status_effective_date": "08/04/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC388382",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/611272/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/611272/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/611272/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/611272/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/611272/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/611272/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/611272/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/611272/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/611272/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

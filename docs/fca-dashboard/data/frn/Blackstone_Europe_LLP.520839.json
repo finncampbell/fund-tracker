@@ -1,6 +1,28 @@
 {
   "frn": 520839,
-  "metadata": {},
+  "metadata": {
+    "frn": "520839",
+    "organisation_name": "Blackstone Europe LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC352581",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/520839/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/520839/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/520839/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/520839/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/520839/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/520839/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/520839/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/520839/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/520839/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 931264,
-  "metadata": {},
+  "metadata": {
+    "frn": "931264",
+    "organisation_name": "Atlantic House Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/03/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11962808",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/931264/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/931264/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/931264/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/931264/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/931264/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/931264/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/931264/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/931264/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/931264/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

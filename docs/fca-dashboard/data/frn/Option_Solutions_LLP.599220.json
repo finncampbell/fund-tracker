@@ -1,6 +1,28 @@
 {
   "frn": 599220,
-  "metadata": {},
+  "metadata": {
+    "frn": "599220",
+    "organisation_name": "Option Solutions LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/11/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC382086",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/599220/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/599220/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/599220/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/599220/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/599220/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/599220/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/599220/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/599220/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/599220/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

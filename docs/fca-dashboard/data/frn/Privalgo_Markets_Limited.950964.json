@@ -1,6 +1,28 @@
 {
   "frn": 950964,
-  "metadata": {},
+  "metadata": {
+    "frn": "950964",
+    "organisation_name": "Privalgo Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/05/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11219560",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/950964/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/950964/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/950964/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/950964/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/950964/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/950964/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/950964/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/950964/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/950964/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

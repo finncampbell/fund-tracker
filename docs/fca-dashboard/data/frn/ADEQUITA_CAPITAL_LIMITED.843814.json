@@ -1,6 +1,28 @@
 {
   "frn": 843814,
-  "metadata": {},
+  "metadata": {
+    "frn": "843814",
+    "organisation_name": "ADEQUITA CAPITAL LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "17/12/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "10431800",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/843814/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/843814/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/843814/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/843814/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/843814/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/843814/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/843814/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/843814/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/843814/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

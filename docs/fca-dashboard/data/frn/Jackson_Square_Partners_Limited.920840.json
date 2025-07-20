@@ -1,6 +1,28 @@
 {
   "frn": 920840,
-  "metadata": {},
+  "metadata": {
+    "frn": "920840",
+    "organisation_name": "Jackson Square Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/04/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "12254809",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/920840/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/920840/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/920840/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/920840/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/920840/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/920840/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/920840/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/920840/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/920840/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

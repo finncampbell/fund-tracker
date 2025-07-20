@@ -1,6 +1,28 @@
 {
   "frn": 122335,
-  "metadata": {},
+  "metadata": {
+    "frn": "122335",
+    "organisation_name": "HSBC Global Asset Management (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01917956",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122335/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122335/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122335/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122335/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122335/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122335/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122335/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122335/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122335/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

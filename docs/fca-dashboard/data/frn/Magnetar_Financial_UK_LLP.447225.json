@@ -1,6 +1,28 @@
 {
   "frn": 447225,
-  "metadata": {},
+  "metadata": {
+    "frn": "447225",
+    "organisation_name": "Magnetar Financial (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "24/05/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC316696",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/447225/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/447225/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/447225/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/447225/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/447225/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/447225/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/447225/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/447225/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/447225/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

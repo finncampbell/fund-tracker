@@ -1,6 +1,28 @@
 {
   "frn": 407891,
-  "metadata": {},
+  "metadata": {
+    "frn": "407891",
+    "organisation_name": "TPG Europe, LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC308896",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/407891/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/407891/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/407891/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/407891/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/407891/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/407891/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/407891/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/407891/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/407891/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

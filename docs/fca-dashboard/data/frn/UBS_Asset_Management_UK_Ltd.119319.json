@@ -1,6 +1,28 @@
 {
   "frn": 119319,
-  "metadata": {},
+  "metadata": {
+    "frn": "119319",
+    "organisation_name": "UBS Asset Management (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "01546400",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/119319/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/119319/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/119319/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/119319/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/119319/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/119319/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/119319/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/119319/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/119319/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

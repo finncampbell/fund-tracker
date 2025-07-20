@@ -1,6 +1,28 @@
 {
   "frn": 795673,
-  "metadata": {},
+  "metadata": {
+    "frn": "795673",
+    "organisation_name": "Obdios Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/09/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10000221",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/795673/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/795673/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/795673/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/795673/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/795673/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/795673/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/795673/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/795673/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/795673/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

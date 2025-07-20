@@ -1,6 +1,28 @@
 {
   "frn": 458659,
-  "metadata": {},
+  "metadata": {
+    "frn": "458659",
+    "organisation_name": "Tempo Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "29/11/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC317743",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/458659/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/458659/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/458659/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/458659/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/458659/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/458659/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/458659/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/458659/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/458659/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

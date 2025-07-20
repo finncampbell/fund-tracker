@@ -1,6 +1,28 @@
 {
   "frn": 551422,
-  "metadata": {},
+  "metadata": {
+    "frn": "551422",
+    "organisation_name": "Saxo Capital Markets UK Ltd",
+    "status": "Authorised",
+    "status_effective_date": "05/10/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07413871",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/551422/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/551422/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/551422/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/551422/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/551422/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/551422/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/551422/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/551422/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/551422/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

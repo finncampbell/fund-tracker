@@ -1,6 +1,28 @@
 {
   "frn": 441360,
-  "metadata": {},
+  "metadata": {
+    "frn": "441360",
+    "organisation_name": "Creditex Brokerage LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/12/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC315800",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/441360/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/441360/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/441360/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/441360/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/441360/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/441360/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/441360/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/441360/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/441360/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

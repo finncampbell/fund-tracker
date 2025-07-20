@@ -1,6 +1,28 @@
 {
   "frn": 592250,
-  "metadata": {},
+  "metadata": {
+    "frn": "592250",
+    "organisation_name": "Astatine Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "06/06/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC376508",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/592250/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/592250/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/592250/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/592250/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/592250/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/592250/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/592250/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/592250/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/592250/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 538634,
-  "metadata": {},
+  "metadata": {
+    "frn": "538634",
+    "organisation_name": "WisdomTree UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "20/05/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "07443535",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/538634/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/538634/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/538634/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/538634/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/538634/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/538634/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/538634/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/538634/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/538634/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

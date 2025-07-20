@@ -1,6 +1,33 @@
 {
   "frn": 197385,
-  "metadata": {},
+  "metadata": {
+    "frn": "197385",
+    "organisation_name": "Keith Bayley Rogers & Co Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03676540",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/197385/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/197385/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/197385/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/197385/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/197385/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/197385/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/197385/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/197385/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/197385/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 756931,
-  "metadata": {},
+  "metadata": {
+    "frn": "756931",
+    "organisation_name": "Amicorp Global Markets (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "07/04/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "10013784",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/756931/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/756931/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/756931/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/756931/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/756931/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/756931/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/756931/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/756931/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/756931/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

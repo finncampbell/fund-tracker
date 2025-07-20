@@ -1,6 +1,28 @@
 {
   "frn": 926415,
-  "metadata": {},
+  "metadata": {
+    "frn": "926415",
+    "organisation_name": "Evidence Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "12/11/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "09902758",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/926415/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/926415/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/926415/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/926415/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/926415/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/926415/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/926415/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/926415/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/926415/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 600831,
-  "metadata": {},
+  "metadata": {
+    "frn": "600831",
+    "organisation_name": "Domius Capital Advisors LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/08/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC383253",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/600831/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/600831/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/600831/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/600831/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/600831/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/600831/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/600831/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/600831/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/600831/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 460420,
-  "metadata": {},
+  "metadata": {
+    "frn": "460420",
+    "organisation_name": "Integral Development Corporation (Europe) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "21/05/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03206664",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/460420/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/460420/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/460420/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/460420/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/460420/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/460420/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/460420/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/460420/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/460420/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

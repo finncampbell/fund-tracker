@@ -1,6 +1,28 @@
 {
   "frn": 507959,
-  "metadata": {},
+  "metadata": {
+    "frn": "507959",
+    "organisation_name": "CD&R LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/03/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC343911",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/507959/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/507959/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/507959/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/507959/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/507959/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/507959/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/507959/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/507959/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/507959/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

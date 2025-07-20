@@ -1,6 +1,28 @@
 {
   "frn": 593551,
-  "metadata": {},
+  "metadata": {
+    "frn": "593551",
+    "organisation_name": "FLOREAT MERCHANT BANKING LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "19/06/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06681961",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/593551/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/593551/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/593551/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/593551/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/593551/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/593551/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/593551/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/593551/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/593551/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

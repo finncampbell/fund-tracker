@@ -1,6 +1,28 @@
 {
   "frn": 473797,
-  "metadata": {},
+  "metadata": {
+    "frn": "473797",
+    "organisation_name": "Octopus Renewables Limited",
+    "status": "Authorised",
+    "status_effective_date": "29/11/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "05857926",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/473797/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/473797/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/473797/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/473797/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/473797/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/473797/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/473797/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/473797/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/473797/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

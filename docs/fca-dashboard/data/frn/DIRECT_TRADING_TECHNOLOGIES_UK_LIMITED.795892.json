@@ -1,6 +1,33 @@
 {
   "frn": 795892,
-  "metadata": {},
+  "metadata": {
+    "frn": "795892",
+    "organisation_name": "DIRECT TRADING TECHNOLOGIES UK LIMITED",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "18/09/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "10849931",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/795892/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/795892/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/795892/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/795892/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/795892/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/795892/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/795892/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/795892/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/795892/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

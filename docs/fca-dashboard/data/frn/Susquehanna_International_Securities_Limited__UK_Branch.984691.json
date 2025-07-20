@@ -1,6 +1,28 @@
 {
   "frn": 984691,
-  "metadata": {},
+  "metadata": {
+    "frn": "984691",
+    "organisation_name": "Susquehanna International Securities Limited - UK Branch",
+    "status": "Authorised",
+    "status_effective_date": "15/06/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "FC033877",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/984691/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/984691/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/984691/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/984691/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/984691/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/984691/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/984691/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/984691/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/984691/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

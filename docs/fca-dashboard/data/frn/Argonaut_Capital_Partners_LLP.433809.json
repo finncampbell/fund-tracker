@@ -1,6 +1,28 @@
 {
   "frn": 433809,
-  "metadata": {},
+  "metadata": {
+    "frn": "433809",
+    "organisation_name": "Argonaut Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "30/09/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "SO300614",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/433809/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/433809/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/433809/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/433809/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/433809/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/433809/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/433809/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/433809/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/433809/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

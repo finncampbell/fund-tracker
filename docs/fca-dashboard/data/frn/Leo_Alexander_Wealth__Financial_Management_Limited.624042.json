@@ -1,6 +1,28 @@
 {
   "frn": 624042,
-  "metadata": {},
+  "metadata": {
+    "frn": "624042",
+    "organisation_name": "Leo Alexander Wealth & Financial Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "13/02/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07232515",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/624042/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/624042/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/624042/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/624042/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/624042/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/624042/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/624042/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/624042/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/624042/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

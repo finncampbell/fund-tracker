@@ -1,6 +1,28 @@
 {
   "frn": 838612,
-  "metadata": {},
+  "metadata": {
+    "frn": "838612",
+    "organisation_name": "LP10 LTD",
+    "status": "Authorised",
+    "status_effective_date": "15/10/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11787262",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/838612/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/838612/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/838612/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/838612/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/838612/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/838612/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/838612/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/838612/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/838612/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

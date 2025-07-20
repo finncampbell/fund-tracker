@@ -1,6 +1,28 @@
 {
   "frn": 144827,
-  "metadata": {},
+  "metadata": {
+    "frn": "144827",
+    "organisation_name": "Seilern Investment Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "02962937",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/144827/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/144827/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/144827/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/144827/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/144827/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/144827/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/144827/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/144827/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/144827/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

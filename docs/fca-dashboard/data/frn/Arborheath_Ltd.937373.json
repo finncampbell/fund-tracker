@@ -1,6 +1,28 @@
 {
   "frn": 937373,
-  "metadata": {},
+  "metadata": {
+    "frn": "937373",
+    "organisation_name": "Arborheath Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12842362",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/937373/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/937373/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/937373/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/937373/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/937373/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/937373/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/937373/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/937373/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/937373/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

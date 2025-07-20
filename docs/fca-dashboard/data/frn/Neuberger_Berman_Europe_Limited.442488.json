@@ -1,6 +1,28 @@
 {
   "frn": 442488,
-  "metadata": {},
+  "metadata": {
+    "frn": "442488",
+    "organisation_name": "Neuberger Berman Europe Limited",
+    "status": "Authorised",
+    "status_effective_date": "13/04/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05463227",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/442488/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/442488/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/442488/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/442488/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/442488/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/442488/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/442488/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/442488/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/442488/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

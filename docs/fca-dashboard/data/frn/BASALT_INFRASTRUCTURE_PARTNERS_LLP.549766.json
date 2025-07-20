@@ -1,6 +1,28 @@
 {
   "frn": 549766,
-  "metadata": {},
+  "metadata": {
+    "frn": "549766",
+    "organisation_name": "BASALT INFRASTRUCTURE PARTNERS LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/02/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC363892",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/549766/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/549766/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/549766/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/549766/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/549766/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/549766/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/549766/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/549766/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/549766/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

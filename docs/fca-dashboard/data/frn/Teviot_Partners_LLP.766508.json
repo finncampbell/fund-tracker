@@ -1,6 +1,28 @@
 {
   "frn": 766508,
-  "metadata": {},
+  "metadata": {
+    "frn": "766508",
+    "organisation_name": "Teviot Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "OC414551",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/766508/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/766508/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/766508/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/766508/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/766508/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/766508/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/766508/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/766508/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/766508/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

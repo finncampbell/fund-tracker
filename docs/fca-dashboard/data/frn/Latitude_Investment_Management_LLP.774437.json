@@ -1,6 +1,28 @@
 {
   "frn": 774437,
-  "metadata": {},
+  "metadata": {
+    "frn": "774437",
+    "organisation_name": "Latitude Investment Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/07/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "OC411255",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/774437/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/774437/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/774437/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/774437/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/774437/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/774437/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/774437/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/774437/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/774437/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

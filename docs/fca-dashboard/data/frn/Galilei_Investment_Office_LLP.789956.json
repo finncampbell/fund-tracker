@@ -1,6 +1,28 @@
 {
   "frn": 789956,
-  "metadata": {},
+  "metadata": {
+    "frn": "789956",
+    "organisation_name": "Galilei Investment Office LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/07/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "OC419108",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/789956/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/789956/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/789956/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/789956/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/789956/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/789956/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/789956/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/789956/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/789956/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

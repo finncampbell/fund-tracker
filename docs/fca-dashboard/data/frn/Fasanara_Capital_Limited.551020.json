@@ -1,6 +1,28 @@
 {
   "frn": 551020,
-  "metadata": {},
+  "metadata": {
+    "frn": "551020",
+    "organisation_name": "Fasanara Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/08/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07561210",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/551020/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/551020/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/551020/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/551020/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/551020/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/551020/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/551020/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/551020/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/551020/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

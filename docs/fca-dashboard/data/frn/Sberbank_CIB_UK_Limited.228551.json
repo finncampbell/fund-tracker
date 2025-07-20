@@ -1,6 +1,33 @@
 {
   "frn": 228551,
-  "metadata": {},
+  "metadata": {
+    "frn": "228551",
+    "organisation_name": "Sberbank CIB (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "10/05/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04783112",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/228551/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/228551/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/228551/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/228551/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/228551/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/228551/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/228551/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/228551/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/228551/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

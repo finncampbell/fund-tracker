@@ -1,6 +1,28 @@
 {
   "frn": 1013532,
-  "metadata": {},
+  "metadata": {
+    "frn": "1013532",
+    "organisation_name": "Greenwood Capital Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/04/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "15552512",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1013532/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1013532/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1013532/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

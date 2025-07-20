@@ -1,6 +1,28 @@
 {
   "frn": 604090,
-  "metadata": {},
+  "metadata": {
+    "frn": "604090",
+    "organisation_name": "Fair Oaks Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "11/04/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "08260598",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/604090/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/604090/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/604090/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/604090/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/604090/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/604090/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/604090/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/604090/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/604090/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

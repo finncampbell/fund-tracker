@@ -1,6 +1,28 @@
 {
   "frn": 496880,
-  "metadata": {},
+  "metadata": {
+    "frn": "496880",
+    "organisation_name": "Meteor Investment Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06802633",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/496880/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/496880/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/496880/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/496880/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/496880/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/496880/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/496880/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/496880/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/496880/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

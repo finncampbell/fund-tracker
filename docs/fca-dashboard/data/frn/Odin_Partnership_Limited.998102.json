@@ -1,6 +1,28 @@
 {
   "frn": 998102,
-  "metadata": {},
+  "metadata": {
+    "frn": "998102",
+    "organisation_name": "Odin Partnership Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "14817387",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/998102/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/998102/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/998102/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/998102/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/998102/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/998102/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/998102/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/998102/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/998102/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

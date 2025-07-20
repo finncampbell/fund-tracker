@@ -1,6 +1,28 @@
 {
   "frn": 501695,
-  "metadata": {},
+  "metadata": {
+    "frn": "501695",
+    "organisation_name": "S&T Asset Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "12/11/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC344828",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/501695/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/501695/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/501695/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/501695/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/501695/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/501695/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/501695/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/501695/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/501695/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

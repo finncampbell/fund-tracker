@@ -1,6 +1,28 @@
 {
   "frn": 751812,
-  "metadata": {},
+  "metadata": {
+    "frn": "751812",
+    "organisation_name": "Quantile Technologies Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/09/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "09622720",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/751812/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/751812/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/751812/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/751812/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/751812/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/751812/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/751812/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/751812/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/751812/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 518830,
-  "metadata": {},
+  "metadata": {
+    "frn": "518830",
+    "organisation_name": "Bridgepoint Advisers UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "07128381",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/518830/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/518830/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/518830/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/518830/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/518830/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/518830/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/518830/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/518830/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/518830/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,33 @@
 {
   "frn": 613003,
-  "metadata": {},
+  "metadata": {
+    "frn": "613003",
+    "organisation_name": "Venture Founders Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/08/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "08636143",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/613003/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/613003/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/613003/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/613003/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/613003/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/613003/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/613003/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/613003/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/613003/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

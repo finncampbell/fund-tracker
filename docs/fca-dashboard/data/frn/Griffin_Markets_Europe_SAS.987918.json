@@ -1,6 +1,28 @@
 {
   "frn": 987918,
-  "metadata": {},
+  "metadata": {
+    "frn": "987918",
+    "organisation_name": "Griffin Markets Europe SAS",
+    "status": "Authorised",
+    "status_effective_date": "18/12/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "BR026483",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/987918/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/987918/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/987918/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/987918/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/987918/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/987918/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/987918/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/987918/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/987918/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

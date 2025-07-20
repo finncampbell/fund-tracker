@@ -1,6 +1,28 @@
 {
   "frn": 992143,
-  "metadata": {},
+  "metadata": {
+    "frn": "992143",
+    "organisation_name": "TP ICAP (Europe) SA, London Branch",
+    "status": "Authorised",
+    "status_effective_date": "12/12/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "BR020714",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/992143/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/992143/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/992143/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/992143/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/992143/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/992143/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/992143/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/992143/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/992143/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 474710,
-  "metadata": {},
+  "metadata": {
+    "frn": "474710",
+    "organisation_name": "Stellar Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "20/02/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06381679",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/474710/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/474710/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/474710/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/474710/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/474710/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/474710/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/474710/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/474710/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/474710/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

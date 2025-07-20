@@ -1,6 +1,28 @@
 {
   "frn": 999395,
-  "metadata": {},
+  "metadata": {
+    "frn": "999395",
+    "organisation_name": "Grantabridge Research Limited",
+    "status": "Authorised",
+    "status_effective_date": "28/02/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "14479785",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/999395/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/999395/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/999395/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/999395/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/999395/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/999395/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/999395/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/999395/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/999395/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 806721,
-  "metadata": {},
+  "metadata": {
+    "frn": "806721",
+    "organisation_name": "Sening Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "18/06/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11237561",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/806721/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/806721/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/806721/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/806721/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/806721/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/806721/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/806721/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/806721/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/806721/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

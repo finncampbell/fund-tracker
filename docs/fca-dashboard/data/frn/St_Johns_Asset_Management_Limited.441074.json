@@ -1,6 +1,28 @@
 {
   "frn": 441074,
-  "metadata": {},
+  "metadata": {
+    "frn": "441074",
+    "organisation_name": "St Johns Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "23/01/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "04949726",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/441074/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/441074/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/441074/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/441074/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/441074/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/441074/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/441074/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/441074/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/441074/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

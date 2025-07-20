@@ -1,6 +1,28 @@
 {
   "frn": 916120,
-  "metadata": {},
+  "metadata": {
+    "frn": "916120",
+    "organisation_name": "Forecast Financial Planning Limited",
+    "status": "Authorised",
+    "status_effective_date": "07/07/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12132753",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/916120/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/916120/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/916120/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/916120/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/916120/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/916120/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/916120/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/916120/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/916120/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

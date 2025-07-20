@@ -1,6 +1,28 @@
 {
   "frn": 716329,
-  "metadata": {},
+  "metadata": {
+    "frn": "716329",
+    "organisation_name": "Quest Fund Placement Limited",
+    "status": "Authorised",
+    "status_effective_date": "29/06/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09738386",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/716329/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/716329/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/716329/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/716329/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/716329/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/716329/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/716329/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/716329/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/716329/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

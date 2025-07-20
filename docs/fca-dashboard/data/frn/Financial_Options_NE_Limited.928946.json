@@ -1,6 +1,28 @@
 {
   "frn": 928946,
-  "metadata": {},
+  "metadata": {
+    "frn": "928946",
+    "organisation_name": "Financial Options (N.E.) Limited",
+    "status": "Authorised",
+    "status_effective_date": "04/01/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "SC229845",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/928946/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/928946/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/928946/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/928946/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/928946/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/928946/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/928946/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/928946/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/928946/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

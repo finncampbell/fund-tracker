@@ -1,6 +1,28 @@
 {
   "frn": 793200,
-  "metadata": {},
+  "metadata": {
+    "frn": "793200",
+    "organisation_name": "Seccl Custody Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/07/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10430958",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/793200/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/793200/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/793200/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/793200/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/793200/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/793200/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/793200/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/793200/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/793200/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

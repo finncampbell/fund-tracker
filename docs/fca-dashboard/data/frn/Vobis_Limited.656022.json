@@ -1,6 +1,28 @@
 {
   "frn": 656022,
-  "metadata": {},
+  "metadata": {
+    "frn": "656022",
+    "organisation_name": "Vobis Limited",
+    "status": "See full details",
+    "status_effective_date": "15/04/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08811777",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/656022/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/656022/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/656022/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/656022/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/656022/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/656022/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/656022/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/656022/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/656022/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

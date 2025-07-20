@@ -1,6 +1,37 @@
 {
   "frn": 498199,
-  "metadata": {},
+  "metadata": {
+    "frn": "498199",
+    "organisation_name": "The TJM Partnership Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/01/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06803933",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      },
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/498199/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/498199/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/498199/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/498199/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/498199/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/498199/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/498199/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/498199/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/498199/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

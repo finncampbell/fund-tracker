@@ -1,6 +1,28 @@
 {
   "frn": 312105,
-  "metadata": {},
+  "metadata": {
+    "frn": "312105",
+    "organisation_name": "Delancey Real Estate Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/01/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04517621",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/312105/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/312105/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/312105/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/312105/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/312105/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/312105/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/312105/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/312105/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/312105/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

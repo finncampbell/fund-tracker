@@ -1,6 +1,28 @@
 {
   "frn": 950811,
-  "metadata": {},
+  "metadata": {
+    "frn": "950811",
+    "organisation_name": "Rothschild & Co Equity Markets Solutions Limited",
+    "status": "Authorised",
+    "status_effective_date": "31/03/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "13317911",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/950811/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/950811/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/950811/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/950811/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/950811/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/950811/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/950811/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/950811/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/950811/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

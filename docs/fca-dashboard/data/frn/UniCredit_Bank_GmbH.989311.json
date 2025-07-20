@@ -1,6 +1,33 @@
 {
   "frn": 989311,
-  "metadata": {},
+  "metadata": {
+    "frn": "989311",
+    "organisation_name": "UniCredit Bank GmbH",
+    "status": "Authorised",
+    "status_effective_date": "07/11/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "BR001757",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/989311/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/989311/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/989311/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/989311/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/989311/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/989311/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/989311/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/989311/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/989311/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

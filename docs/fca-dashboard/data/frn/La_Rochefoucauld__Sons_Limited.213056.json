@@ -1,6 +1,28 @@
 {
   "frn": 213056,
-  "metadata": {},
+  "metadata": {
+    "frn": "213056",
+    "organisation_name": "La Rochefoucauld & Sons Limited",
+    "status": "Authorised",
+    "status_effective_date": "17/10/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "03901664",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/213056/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/213056/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/213056/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/213056/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/213056/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/213056/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/213056/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/213056/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/213056/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

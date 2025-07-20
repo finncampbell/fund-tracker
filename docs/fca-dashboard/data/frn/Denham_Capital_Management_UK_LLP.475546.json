@@ -1,6 +1,28 @@
 {
   "frn": 475546,
-  "metadata": {},
+  "metadata": {
+    "frn": "475546",
+    "organisation_name": "Denham Capital Management (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC331226",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/475546/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/475546/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/475546/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/475546/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/475546/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/475546/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/475546/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/475546/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/475546/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

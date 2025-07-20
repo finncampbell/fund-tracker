@@ -1,6 +1,28 @@
 {
   "frn": 821611,
-  "metadata": {},
+  "metadata": {
+    "frn": "821611",
+    "organisation_name": "PROMETHEUS INVESTMENT MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "09/04/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11392164",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/821611/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/821611/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/821611/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/821611/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/821611/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/821611/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/821611/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/821611/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/821611/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

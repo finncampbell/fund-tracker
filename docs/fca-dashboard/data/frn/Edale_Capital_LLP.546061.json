@@ -1,6 +1,28 @@
 {
   "frn": 546061,
-  "metadata": {},
+  "metadata": {
+    "frn": "546061",
+    "organisation_name": "Edale Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC361162",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/546061/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/546061/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/546061/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/546061/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/546061/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/546061/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/546061/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/546061/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/546061/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

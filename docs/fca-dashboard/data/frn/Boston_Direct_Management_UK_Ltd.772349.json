@@ -1,6 +1,28 @@
 {
   "frn": 772349,
-  "metadata": {},
+  "metadata": {
+    "frn": "772349",
+    "organisation_name": "Boston Direct Management (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "12/07/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "05464047",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/772349/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/772349/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/772349/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/772349/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/772349/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/772349/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/772349/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/772349/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/772349/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

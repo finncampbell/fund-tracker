@@ -1,6 +1,28 @@
 {
   "frn": 610220,
-  "metadata": {},
+  "metadata": {
+    "frn": "610220",
+    "organisation_name": "Invicta Securities Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08561884",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/610220/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/610220/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/610220/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/610220/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/610220/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/610220/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/610220/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/610220/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/610220/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

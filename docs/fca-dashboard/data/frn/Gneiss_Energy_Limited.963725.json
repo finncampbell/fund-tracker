@@ -1,6 +1,28 @@
 {
   "frn": 963725,
-  "metadata": {},
+  "metadata": {
+    "frn": "963725",
+    "organisation_name": "Gneiss Energy Limited",
+    "status": "Authorised",
+    "status_effective_date": "07/11/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "10186928",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/963725/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/963725/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/963725/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/963725/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/963725/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/963725/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/963725/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/963725/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/963725/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

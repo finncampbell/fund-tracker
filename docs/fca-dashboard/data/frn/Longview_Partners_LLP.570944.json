@@ -1,6 +1,28 @@
 {
   "frn": 570944,
-  "metadata": {},
+  "metadata": {
+    "frn": "570944",
+    "organisation_name": "Longview Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/07/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC368898",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/570944/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/570944/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/570944/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/570944/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/570944/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/570944/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/570944/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/570944/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/570944/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 188619,
-  "metadata": {},
+  "metadata": {
+    "frn": "188619",
+    "organisation_name": "Balmoral Asset Management Limited",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "SC182721",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/188619/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/188619/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/188619/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/188619/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/188619/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/188619/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/188619/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/188619/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/188619/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

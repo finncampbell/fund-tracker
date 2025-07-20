@@ -1,6 +1,28 @@
 {
   "frn": 821259,
-  "metadata": {},
+  "metadata": {
+    "frn": "821259",
+    "organisation_name": "Analect Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/11/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "11019345",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/821259/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/821259/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/821259/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/821259/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/821259/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/821259/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/821259/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/821259/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/821259/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

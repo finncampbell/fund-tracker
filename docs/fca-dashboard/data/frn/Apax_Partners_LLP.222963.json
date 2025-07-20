@@ -1,6 +1,28 @@
 {
   "frn": 222963,
-  "metadata": {},
+  "metadata": {
+    "frn": "222963",
+    "organisation_name": "Apax Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/07/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC303117",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/222963/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/222963/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/222963/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/222963/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/222963/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/222963/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/222963/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/222963/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/222963/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

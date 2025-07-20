@@ -1,6 +1,28 @@
 {
   "frn": 124866,
-  "metadata": {},
+  "metadata": {
+    "frn": "124866",
+    "organisation_name": "Societe Generale",
+    "status": "Authorised",
+    "status_effective_date": "03/08/2022",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "FC000268",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124866/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124866/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124866/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124866/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124866/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124866/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124866/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124866/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124866/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

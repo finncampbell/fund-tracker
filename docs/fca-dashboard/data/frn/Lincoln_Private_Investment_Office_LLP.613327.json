@@ -1,6 +1,28 @@
 {
   "frn": 613327,
-  "metadata": {},
+  "metadata": {
+    "frn": "613327",
+    "organisation_name": "Lincoln Private Investment Office LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC389623",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/613327/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/613327/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/613327/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/613327/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/613327/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/613327/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/613327/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/613327/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/613327/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

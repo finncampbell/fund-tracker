@@ -1,6 +1,28 @@
 {
   "frn": 922184,
-  "metadata": {},
+  "metadata": {
+    "frn": "922184",
+    "organisation_name": "Castellum Capital Partners Ltd",
+    "status": "Authorised",
+    "status_effective_date": "03/08/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12194991",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/922184/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/922184/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/922184/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/922184/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/922184/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/922184/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/922184/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/922184/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/922184/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

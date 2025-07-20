@@ -1,6 +1,28 @@
 {
   "frn": 471048,
-  "metadata": {},
+  "metadata": {
+    "frn": "471048",
+    "organisation_name": "LGT Wealth Management UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "19/09/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC329392",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/471048/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/471048/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/471048/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/471048/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/471048/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/471048/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/471048/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/471048/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/471048/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

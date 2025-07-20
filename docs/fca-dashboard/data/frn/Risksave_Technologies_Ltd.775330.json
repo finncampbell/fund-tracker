@@ -1,6 +1,28 @@
 {
   "frn": 775330,
-  "metadata": {},
+  "metadata": {
+    "frn": "775330",
+    "organisation_name": "RISKSAVE TECHNOLOGIES LTD",
+    "status": "Authorised",
+    "status_effective_date": "20/11/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "09930262",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/775330/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/775330/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/775330/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/775330/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/775330/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/775330/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/775330/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/775330/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/775330/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

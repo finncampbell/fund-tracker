@@ -1,6 +1,33 @@
 {
   "frn": 180891,
-  "metadata": {},
+  "metadata": {
+    "frn": "180891",
+    "organisation_name": "River Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03099944",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/180891/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/180891/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/180891/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/180891/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/180891/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/180891/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/180891/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/180891/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/180891/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 489718,
-  "metadata": {},
+  "metadata": {
+    "frn": "489718",
+    "organisation_name": "MASECO LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC337650",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/489718/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/489718/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/489718/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/489718/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/489718/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/489718/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/489718/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/489718/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/489718/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

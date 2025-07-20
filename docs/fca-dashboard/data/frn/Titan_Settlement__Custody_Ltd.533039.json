@@ -1,6 +1,33 @@
 {
   "frn": 533039,
-  "metadata": {},
+  "metadata": {
+    "frn": "533039",
+    "organisation_name": "Titan Settlement & Custody Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "06962351",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/533039/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/533039/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/533039/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/533039/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/533039/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/533039/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/533039/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/533039/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/533039/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

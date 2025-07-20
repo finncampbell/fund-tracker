@@ -1,6 +1,28 @@
 {
   "frn": 953151,
-  "metadata": {},
+  "metadata": {
+    "frn": "953151",
+    "organisation_name": "N4 Group Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/08/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "SC661808",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/953151/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/953151/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/953151/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/953151/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/953151/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/953151/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/953151/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/953151/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/953151/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

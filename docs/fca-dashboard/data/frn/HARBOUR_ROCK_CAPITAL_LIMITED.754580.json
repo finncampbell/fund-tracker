@@ -1,6 +1,28 @@
 {
   "frn": 754580,
-  "metadata": {},
+  "metadata": {
+    "frn": "754580",
+    "organisation_name": "HARBOUR ROCK CAPITAL LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "24/02/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10290349",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/754580/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/754580/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/754580/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/754580/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/754580/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/754580/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/754580/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/754580/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/754580/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

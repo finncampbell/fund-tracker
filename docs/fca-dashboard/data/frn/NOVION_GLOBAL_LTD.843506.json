@@ -1,6 +1,28 @@
 {
   "frn": 843506,
-  "metadata": {},
+  "metadata": {
+    "frn": "843506",
+    "organisation_name": "NOVION GLOBAL LTD",
+    "status": "Authorised",
+    "status_effective_date": "02/12/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "09742342",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/843506/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/843506/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/843506/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/843506/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/843506/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/843506/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/843506/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/843506/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/843506/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

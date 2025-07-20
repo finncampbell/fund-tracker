@@ -1,6 +1,28 @@
 {
   "frn": 820966,
-  "metadata": {},
+  "metadata": {
+    "frn": "820966",
+    "organisation_name": "Halo Global Asset Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "10193739",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/820966/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/820966/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/820966/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/820966/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/820966/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/820966/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/820966/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/820966/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/820966/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

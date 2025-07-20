@@ -1,6 +1,28 @@
 {
   "frn": 459504,
-  "metadata": {},
+  "metadata": {
+    "frn": "459504",
+    "organisation_name": "Moore Europe Capital Management, LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC322533",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/459504/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/459504/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/459504/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/459504/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/459504/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/459504/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/459504/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/459504/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/459504/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

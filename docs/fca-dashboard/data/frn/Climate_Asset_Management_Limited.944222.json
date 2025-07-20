@@ -1,6 +1,28 @@
 {
   "frn": 944222,
-  "metadata": {},
+  "metadata": {
+    "frn": "944222",
+    "organisation_name": "Climate Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "08/12/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12840064",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/944222/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/944222/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/944222/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/944222/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/944222/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/944222/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/944222/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/944222/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/944222/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

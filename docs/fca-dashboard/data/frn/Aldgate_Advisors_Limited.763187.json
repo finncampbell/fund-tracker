@@ -1,6 +1,33 @@
 {
   "frn": 763187,
-  "metadata": {},
+  "metadata": {
+    "frn": "763187",
+    "organisation_name": "Aldgate Advisors Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/05/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "10350364",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/763187/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/763187/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/763187/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/763187/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/763187/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/763187/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/763187/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/763187/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/763187/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

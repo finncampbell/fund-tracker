@@ -1,6 +1,28 @@
 {
   "frn": 471342,
-  "metadata": {},
+  "metadata": {
+    "frn": "471342",
+    "organisation_name": "QSix LLP",
+    "status": "Authorised",
+    "status_effective_date": "29/10/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC328954",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/471342/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/471342/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/471342/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/471342/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/471342/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/471342/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/471342/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/471342/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/471342/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

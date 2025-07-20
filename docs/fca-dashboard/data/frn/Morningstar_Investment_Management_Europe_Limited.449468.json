@@ -1,6 +1,28 @@
 {
   "frn": 449468,
-  "metadata": {},
+  "metadata": {
+    "frn": "449468",
+    "organisation_name": "Morningstar Investment Management Europe Limited",
+    "status": "Authorised",
+    "status_effective_date": "14/09/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "05732689",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/449468/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/449468/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/449468/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/449468/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/449468/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/449468/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/449468/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/449468/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/449468/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

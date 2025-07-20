@@ -1,6 +1,28 @@
 {
   "frn": 844316,
-  "metadata": {},
+  "metadata": {
+    "frn": "844316",
+    "organisation_name": "Financial Connections Wealth Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/05/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "05654062",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/844316/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/844316/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/844316/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/844316/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/844316/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/844316/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/844316/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/844316/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/844316/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

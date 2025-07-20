@@ -1,6 +1,28 @@
 {
   "frn": 196482,
-  "metadata": {},
+  "metadata": {
+    "frn": "196482",
+    "organisation_name": "Haitong International (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "04058971",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/196482/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/196482/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/196482/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/196482/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/196482/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/196482/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/196482/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/196482/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/196482/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

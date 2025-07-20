@@ -1,6 +1,28 @@
 {
   "frn": 208680,
-  "metadata": {},
+  "metadata": {
+    "frn": "208680",
+    "organisation_name": "Terra Firma Capital Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "15/03/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "04219556",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/208680/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/208680/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/208680/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/208680/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/208680/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/208680/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/208680/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/208680/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/208680/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

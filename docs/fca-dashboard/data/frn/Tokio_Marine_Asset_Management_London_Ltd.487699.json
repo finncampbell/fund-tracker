@@ -1,6 +1,28 @@
 {
   "frn": 487699,
-  "metadata": {},
+  "metadata": {
+    "frn": "487699",
+    "organisation_name": "Tokio Marine Asset Management (London) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "02534139",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/487699/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/487699/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/487699/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/487699/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/487699/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/487699/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/487699/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/487699/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/487699/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 610237,
-  "metadata": {},
+  "metadata": {
+    "frn": "610237",
+    "organisation_name": "Tanager Wealth Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC377053",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/610237/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/610237/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/610237/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/610237/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/610237/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/610237/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/610237/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/610237/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/610237/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

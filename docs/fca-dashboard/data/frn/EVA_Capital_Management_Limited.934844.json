@@ -1,6 +1,28 @@
 {
   "frn": 934844,
-  "metadata": {},
+  "metadata": {
+    "frn": "934844",
+    "organisation_name": "EVA Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "11/12/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12452527",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/934844/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/934844/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/934844/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/934844/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/934844/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/934844/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/934844/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/934844/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/934844/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

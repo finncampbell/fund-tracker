@@ -1,6 +1,28 @@
 {
   "frn": 114762,
-  "metadata": {},
+  "metadata": {
+    "frn": "114762",
+    "organisation_name": "Cambridge Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "01370458",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/114762/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/114762/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/114762/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/114762/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/114762/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/114762/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/114762/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/114762/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/114762/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

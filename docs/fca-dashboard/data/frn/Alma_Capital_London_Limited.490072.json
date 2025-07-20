@@ -1,6 +1,28 @@
 {
   "frn": 490072,
-  "metadata": {},
+  "metadata": {
+    "frn": "490072",
+    "organisation_name": "Alma Capital London Limited",
+    "status": "Authorised",
+    "status_effective_date": "25/11/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "05415175",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/490072/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/490072/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/490072/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/490072/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/490072/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/490072/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/490072/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/490072/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/490072/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

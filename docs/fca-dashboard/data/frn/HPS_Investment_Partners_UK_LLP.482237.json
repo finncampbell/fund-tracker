@@ -1,6 +1,28 @@
 {
   "frn": 482237,
-  "metadata": {},
+  "metadata": {
+    "frn": "482237",
+    "organisation_name": "HPS Investment Partners (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "21/08/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC333558",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/482237/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/482237/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/482237/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/482237/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/482237/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/482237/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/482237/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/482237/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/482237/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

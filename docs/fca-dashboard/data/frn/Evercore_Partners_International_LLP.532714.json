@@ -1,6 +1,28 @@
 {
   "frn": 532714,
-  "metadata": {},
+  "metadata": {
+    "frn": "532714",
+    "organisation_name": "Evercore Partners International LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/07/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC357957",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/532714/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/532714/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/532714/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/532714/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/532714/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/532714/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/532714/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/532714/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/532714/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

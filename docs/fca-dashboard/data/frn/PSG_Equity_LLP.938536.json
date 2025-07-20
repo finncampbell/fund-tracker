@@ -1,6 +1,28 @@
 {
   "frn": 938536,
-  "metadata": {},
+  "metadata": {
+    "frn": "938536",
+    "organisation_name": "PSG Equity LLP",
+    "status": "Authorised",
+    "status_effective_date": "31/03/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC430369",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/938536/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/938536/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/938536/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/938536/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/938536/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/938536/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/938536/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/938536/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/938536/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

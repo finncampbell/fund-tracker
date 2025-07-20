@@ -1,6 +1,28 @@
 {
   "frn": 966244,
-  "metadata": {},
+  "metadata": {
+    "frn": "966244",
+    "organisation_name": "BOS Wealth Management Europe S.A.",
+    "status": "Authorised",
+    "status_effective_date": "16/01/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "BR021049",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/966244/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/966244/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/966244/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/966244/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/966244/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/966244/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/966244/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/966244/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/966244/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

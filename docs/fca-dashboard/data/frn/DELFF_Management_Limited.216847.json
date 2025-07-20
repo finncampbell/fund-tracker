@@ -1,6 +1,28 @@
 {
   "frn": 216847,
-  "metadata": {},
+  "metadata": {
+    "frn": "216847",
+    "organisation_name": "DELFF Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/03/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "04432678",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/216847/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/216847/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/216847/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/216847/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/216847/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/216847/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/216847/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/216847/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/216847/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

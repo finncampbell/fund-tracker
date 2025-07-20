@@ -1,6 +1,28 @@
 {
   "frn": 728066,
-  "metadata": {},
+  "metadata": {
+    "frn": "728066",
+    "organisation_name": "Alteri Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/05/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC396447",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/728066/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/728066/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/728066/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/728066/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/728066/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/728066/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/728066/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/728066/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/728066/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

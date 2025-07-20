@@ -1,6 +1,28 @@
 {
   "frn": 115020,
-  "metadata": {},
+  "metadata": {
+    "frn": "115020",
+    "organisation_name": "Lacomp Plc",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "01851201",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/115020/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/115020/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/115020/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/115020/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/115020/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/115020/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/115020/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/115020/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/115020/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

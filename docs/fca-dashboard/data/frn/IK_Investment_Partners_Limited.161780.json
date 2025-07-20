@@ -1,6 +1,28 @@
 {
   "frn": 161780,
-  "metadata": {},
+  "metadata": {
+    "frn": "161780",
+    "organisation_name": "IK Investment Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "02763049",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/161780/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/161780/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/161780/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/161780/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/161780/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/161780/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/161780/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/161780/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/161780/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

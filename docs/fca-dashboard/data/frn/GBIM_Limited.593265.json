@@ -1,6 +1,28 @@
 {
   "frn": 593265,
-  "metadata": {},
+  "metadata": {
+    "frn": "593265",
+    "organisation_name": "GBIM Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/07/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07746731",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/593265/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/593265/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/593265/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/593265/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/593265/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/593265/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/593265/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/593265/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/593265/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

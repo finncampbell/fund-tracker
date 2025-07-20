@@ -1,6 +1,28 @@
 {
   "frn": 507603,
-  "metadata": {},
+  "metadata": {
+    "frn": "507603",
+    "organisation_name": "Hemera Capital Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC341176",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/507603/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/507603/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/507603/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/507603/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/507603/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/507603/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/507603/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/507603/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/507603/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

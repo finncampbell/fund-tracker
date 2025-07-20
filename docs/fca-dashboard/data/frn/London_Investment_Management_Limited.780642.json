@@ -1,6 +1,28 @@
 {
   "frn": 780642,
-  "metadata": {},
+  "metadata": {
+    "frn": "780642",
+    "organisation_name": "London Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "15/09/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "10769279",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/780642/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/780642/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/780642/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/780642/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/780642/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/780642/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/780642/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/780642/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/780642/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

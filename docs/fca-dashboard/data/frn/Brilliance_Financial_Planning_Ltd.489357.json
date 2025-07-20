@@ -1,6 +1,28 @@
 {
   "frn": 489357,
-  "metadata": {},
+  "metadata": {
+    "frn": "489357",
+    "organisation_name": "Brilliance Financial Planning Ltd",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "06552147",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/489357/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/489357/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/489357/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/489357/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/489357/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/489357/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/489357/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/489357/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/489357/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

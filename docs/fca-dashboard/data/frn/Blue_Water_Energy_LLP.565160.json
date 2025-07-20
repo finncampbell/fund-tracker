@@ -1,6 +1,28 @@
 {
   "frn": 565160,
-  "metadata": {},
+  "metadata": {
+    "frn": "565160",
+    "organisation_name": "Blue Water Energy LLP",
+    "status": "Authorised",
+    "status_effective_date": "12/04/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC364534",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/565160/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/565160/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/565160/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/565160/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/565160/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/565160/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/565160/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/565160/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/565160/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

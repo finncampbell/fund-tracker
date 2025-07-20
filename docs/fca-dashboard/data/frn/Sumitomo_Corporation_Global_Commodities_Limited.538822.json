@@ -1,6 +1,28 @@
 {
   "frn": 538822,
-  "metadata": {},
+  "metadata": {
+    "frn": "538822",
+    "organisation_name": "Sumitomo Corporation Global Commodities Limited",
+    "status": "Authorised",
+    "status_effective_date": "20/12/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "05712149",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/538822/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/538822/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/538822/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/538822/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/538822/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/538822/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/538822/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/538822/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/538822/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

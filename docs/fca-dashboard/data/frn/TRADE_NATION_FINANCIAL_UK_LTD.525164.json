@@ -1,6 +1,28 @@
 {
   "frn": 525164,
-  "metadata": {},
+  "metadata": {
+    "frn": "525164",
+    "organisation_name": "TRADE NATION FINANCIAL UK LTD",
+    "status": "Authorised",
+    "status_effective_date": "09/05/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07073413",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/525164/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/525164/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/525164/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/525164/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/525164/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/525164/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/525164/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/525164/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/525164/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

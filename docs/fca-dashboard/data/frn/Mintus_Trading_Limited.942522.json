@@ -1,6 +1,28 @@
 {
   "frn": 942522,
-  "metadata": {},
+  "metadata": {
+    "frn": "942522",
+    "organisation_name": "Mintus Trading Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/12/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "12643726",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/942522/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/942522/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/942522/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/942522/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/942522/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/942522/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/942522/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/942522/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/942522/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

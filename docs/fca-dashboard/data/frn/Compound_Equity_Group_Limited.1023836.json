@@ -1,6 +1,28 @@
 {
   "frn": 1023836,
-  "metadata": {},
+  "metadata": {
+    "frn": "1023836",
+    "organisation_name": "Compound Equity Group Limited",
+    "status": "Authorised",
+    "status_effective_date": "27/05/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13369091",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1023836/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1023836/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1023836/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

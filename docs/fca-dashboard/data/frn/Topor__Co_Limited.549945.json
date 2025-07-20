@@ -1,6 +1,28 @@
 {
   "frn": 549945,
-  "metadata": {},
+  "metadata": {
+    "frn": "549945",
+    "organisation_name": "Topor & Co. Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/08/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07151311",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/549945/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/549945/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/549945/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/549945/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/549945/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/549945/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/549945/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/549945/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/549945/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

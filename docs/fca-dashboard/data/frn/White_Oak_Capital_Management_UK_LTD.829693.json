@@ -1,6 +1,28 @@
 {
   "frn": 829693,
-  "metadata": {},
+  "metadata": {
+    "frn": "829693",
+    "organisation_name": "White Oak Capital Management (UK) LTD",
+    "status": "Authorised",
+    "status_effective_date": "02/09/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "11621438",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/829693/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/829693/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/829693/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/829693/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/829693/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/829693/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/829693/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/829693/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/829693/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

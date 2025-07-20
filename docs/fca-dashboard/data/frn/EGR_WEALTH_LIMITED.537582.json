@@ -1,6 +1,33 @@
 {
   "frn": 537582,
-  "metadata": {},
+  "metadata": {
+    "frn": "537582",
+    "organisation_name": "EGR WEALTH LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07443787",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/537582/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/537582/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/537582/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/537582/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/537582/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/537582/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/537582/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/537582/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/537582/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

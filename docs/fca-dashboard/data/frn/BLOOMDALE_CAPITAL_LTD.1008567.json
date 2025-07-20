@@ -1,6 +1,33 @@
 {
   "frn": 1008567,
-  "metadata": {},
+  "metadata": {
+    "frn": "1008567",
+    "organisation_name": "BLOOMDALE CAPITAL LTD",
+    "status": "Authorised",
+    "status_effective_date": "23/07/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:07",
+    "companies_house_number": "14958267",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1008567/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1008567/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1008567/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

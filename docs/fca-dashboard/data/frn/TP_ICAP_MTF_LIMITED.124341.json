@@ -1,6 +1,28 @@
 {
   "frn": 124341,
-  "metadata": {},
+  "metadata": {
+    "frn": "124341",
+    "organisation_name": "TP ICAP MTF LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01852009",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124341/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124341/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124341/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124341/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124341/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124341/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124341/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124341/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124341/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

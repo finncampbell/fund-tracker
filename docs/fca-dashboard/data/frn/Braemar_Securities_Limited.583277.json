@@ -1,6 +1,28 @@
 {
   "frn": 583277,
-  "metadata": {},
+  "metadata": {
+    "frn": "583277",
+    "organisation_name": "Braemar Securities Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/01/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07899358",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/583277/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/583277/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/583277/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/583277/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/583277/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/583277/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/583277/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/583277/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/583277/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

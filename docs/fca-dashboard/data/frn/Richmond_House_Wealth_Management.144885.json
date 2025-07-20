@@ -1,6 +1,28 @@
 {
   "frn": 144885,
-  "metadata": {},
+  "metadata": {
+    "frn": "144885",
+    "organisation_name": "Richmond House Wealth Management",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "01842995",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/144885/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/144885/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/144885/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/144885/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/144885/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/144885/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/144885/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/144885/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/144885/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

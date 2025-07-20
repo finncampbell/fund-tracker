@@ -1,6 +1,28 @@
 {
   "frn": 1002451,
-  "metadata": {},
+  "metadata": {
+    "frn": "1002451",
+    "organisation_name": "Taula Capital Management (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/04/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "OC447685",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1002451/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1002451/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1002451/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 1017400,
-  "metadata": {},
+  "metadata": {
+    "frn": "1017400",
+    "organisation_name": "RS Investments (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "27/01/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "08246430",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1017400/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1017400/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1017400/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

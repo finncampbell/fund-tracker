@@ -1,6 +1,28 @@
 {
   "frn": 783837,
-  "metadata": {},
+  "metadata": {
+    "frn": "783837",
+    "organisation_name": "ALT 21 LIMITED",
+    "status": "See full details",
+    "status_effective_date": "23/08/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "10723112",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/783837/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/783837/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/783837/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/783837/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/783837/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/783837/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/783837/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/783837/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/783837/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

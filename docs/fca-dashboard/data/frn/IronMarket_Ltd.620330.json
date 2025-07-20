@@ -1,6 +1,28 @@
 {
   "frn": 620330,
-  "metadata": {},
+  "metadata": {
+    "frn": "620330",
+    "organisation_name": "IronMarket Ltd",
+    "status": "See full details",
+    "status_effective_date": "19/06/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "08411874",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/620330/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/620330/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/620330/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/620330/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/620330/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/620330/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/620330/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/620330/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/620330/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 597194,
-  "metadata": {},
+  "metadata": {
+    "frn": "597194",
+    "organisation_name": "Andurance Ventures LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/12/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC375977",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/597194/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/597194/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/597194/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/597194/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/597194/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/597194/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/597194/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/597194/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/597194/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

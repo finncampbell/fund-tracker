@@ -1,6 +1,28 @@
 {
   "frn": 217689,
-  "metadata": {},
+  "metadata": {
+    "frn": "217689",
+    "organisation_name": "Stratos Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "27/05/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04072877",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/217689/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/217689/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/217689/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/217689/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/217689/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/217689/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/217689/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/217689/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/217689/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 684385,
-  "metadata": {},
+  "metadata": {
+    "frn": "684385",
+    "organisation_name": "Tramontana Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "15/06/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "09317056",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/684385/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/684385/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/684385/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/684385/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/684385/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/684385/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/684385/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/684385/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/684385/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

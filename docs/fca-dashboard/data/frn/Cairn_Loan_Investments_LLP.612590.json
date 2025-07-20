@@ -1,6 +1,28 @@
 {
   "frn": 612590,
-  "metadata": {},
+  "metadata": {
+    "frn": "612590",
+    "organisation_name": "Cairn Loan Investments LLP",
+    "status": "Authorised",
+    "status_effective_date": "31/10/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC389959",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/612590/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/612590/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/612590/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/612590/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/612590/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/612590/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/612590/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/612590/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/612590/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

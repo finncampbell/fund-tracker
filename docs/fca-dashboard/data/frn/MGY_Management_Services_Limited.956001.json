@@ -1,6 +1,28 @@
 {
   "frn": 956001,
-  "metadata": {},
+  "metadata": {
+    "frn": "956001",
+    "organisation_name": "MGY Management Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/06/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "12448535",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/956001/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/956001/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/956001/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/956001/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/956001/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/956001/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/956001/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/956001/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/956001/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

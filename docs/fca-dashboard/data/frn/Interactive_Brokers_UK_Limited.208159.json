@@ -1,6 +1,28 @@
 {
   "frn": 208159,
-  "metadata": {},
+  "metadata": {
+    "frn": "208159",
+    "organisation_name": "Interactive Brokers (U.K.) Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/02/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03958476",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/208159/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/208159/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/208159/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/208159/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/208159/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/208159/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/208159/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/208159/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/208159/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

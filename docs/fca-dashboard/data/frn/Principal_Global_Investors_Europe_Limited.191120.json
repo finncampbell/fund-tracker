@@ -1,6 +1,28 @@
 {
   "frn": 191120,
-  "metadata": {},
+  "metadata": {
+    "frn": "191120",
+    "organisation_name": "Principal Global Investors (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03819986",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/191120/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/191120/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/191120/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/191120/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/191120/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/191120/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/191120/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/191120/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/191120/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

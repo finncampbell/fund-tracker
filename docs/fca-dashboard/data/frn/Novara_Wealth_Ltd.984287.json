@@ -1,6 +1,28 @@
 {
   "frn": 984287,
-  "metadata": {},
+  "metadata": {
+    "frn": "984287",
+    "organisation_name": "Novara Wealth Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/03/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "13481770",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/984287/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/984287/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/984287/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/984287/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/984287/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/984287/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/984287/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/984287/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/984287/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 191600,
-  "metadata": {},
+  "metadata": {
+    "frn": "191600",
+    "organisation_name": "Lambert Energy Advisory Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "03838151",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/191600/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/191600/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/191600/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/191600/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/191600/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/191600/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/191600/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/191600/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/191600/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

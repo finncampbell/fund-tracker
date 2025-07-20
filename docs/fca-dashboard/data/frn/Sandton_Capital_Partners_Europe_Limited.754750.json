@@ -1,6 +1,28 @@
 {
   "frn": 754750,
-  "metadata": {},
+  "metadata": {
+    "frn": "754750",
+    "organisation_name": "Sandton Capital Partners (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "26/10/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "08062959",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/754750/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/754750/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/754750/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/754750/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/754750/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/754750/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/754750/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/754750/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/754750/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

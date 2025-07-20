@@ -1,6 +1,28 @@
 {
   "frn": 966731,
-  "metadata": {},
+  "metadata": {
+    "frn": "966731",
+    "organisation_name": "MKC Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/12/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "13475203",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/966731/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/966731/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/966731/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/966731/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/966731/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/966731/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/966731/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/966731/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/966731/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

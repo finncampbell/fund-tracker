@@ -1,6 +1,28 @@
 {
   "frn": 966627,
-  "metadata": {},
+  "metadata": {
+    "frn": "966627",
+    "organisation_name": "Quoniam Asset Management GmbH",
+    "status": "Authorised",
+    "status_effective_date": "09/01/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "FC031987",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/966627/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/966627/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/966627/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/966627/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/966627/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/966627/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/966627/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/966627/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/966627/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

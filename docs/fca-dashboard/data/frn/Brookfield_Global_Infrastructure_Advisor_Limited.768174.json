@@ -1,6 +1,28 @@
 {
   "frn": 768174,
-  "metadata": {},
+  "metadata": {
+    "frn": "768174",
+    "organisation_name": "Brookfield Global Infrastructure Advisor Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/05/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "04527558",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/768174/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/768174/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/768174/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/768174/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/768174/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/768174/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/768174/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/768174/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/768174/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

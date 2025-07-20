@@ -1,6 +1,28 @@
 {
   "frn": 978289,
-  "metadata": {},
+  "metadata": {
+    "frn": "978289",
+    "organisation_name": "Mount Street Portfolio Advisers GmbH",
+    "status": "Authorised",
+    "status_effective_date": "16/05/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "BR017105",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/978289/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/978289/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/978289/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/978289/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/978289/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/978289/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/978289/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/978289/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/978289/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 445531,
-  "metadata": {},
+  "metadata": {
+    "frn": "445531",
+    "organisation_name": "TradeStation International Ltd",
+    "status": "Authorised",
+    "status_effective_date": "21/02/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05166374",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/445531/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/445531/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/445531/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/445531/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/445531/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/445531/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/445531/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/445531/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/445531/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

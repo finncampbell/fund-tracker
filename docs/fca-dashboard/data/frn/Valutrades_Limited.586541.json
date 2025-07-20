@@ -1,6 +1,28 @@
 {
   "frn": 586541,
-  "metadata": {},
+  "metadata": {
+    "frn": "586541",
+    "organisation_name": "Valutrades Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/04/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07939901",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/586541/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/586541/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/586541/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/586541/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/586541/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/586541/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/586541/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/586541/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/586541/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

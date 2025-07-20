@@ -1,6 +1,28 @@
 {
   "frn": 192261,
-  "metadata": {},
+  "metadata": {
+    "frn": "192261",
+    "organisation_name": "Muzinich & Co. Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03852444",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/192261/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/192261/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/192261/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/192261/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/192261/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/192261/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/192261/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/192261/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/192261/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

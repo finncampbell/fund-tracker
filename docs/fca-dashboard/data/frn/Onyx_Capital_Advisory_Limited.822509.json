@@ -1,6 +1,28 @@
 {
   "frn": 822509,
-  "metadata": {},
+  "metadata": {
+    "frn": "822509",
+    "organisation_name": "Onyx Capital Advisory Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11472304",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/822509/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/822509/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/822509/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/822509/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/822509/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/822509/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/822509/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/822509/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/822509/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

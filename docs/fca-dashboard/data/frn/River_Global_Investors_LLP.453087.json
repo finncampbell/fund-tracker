@@ -1,6 +1,28 @@
 {
   "frn": 453087,
-  "metadata": {},
+  "metadata": {
+    "frn": "453087",
+    "organisation_name": "River Global Investors LLP",
+    "status": "Authorised",
+    "status_effective_date": "02/10/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC317647",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/453087/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/453087/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/453087/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/453087/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/453087/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/453087/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/453087/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/453087/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/453087/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

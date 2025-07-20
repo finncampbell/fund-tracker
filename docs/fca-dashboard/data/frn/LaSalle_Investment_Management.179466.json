@@ -1,6 +1,28 @@
 {
   "frn": 179466,
-  "metadata": {},
+  "metadata": {
+    "frn": "179466",
+    "organisation_name": "LaSalle Investment Management",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "02597050",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/179466/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/179466/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/179466/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/179466/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/179466/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/179466/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/179466/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/179466/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/179466/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

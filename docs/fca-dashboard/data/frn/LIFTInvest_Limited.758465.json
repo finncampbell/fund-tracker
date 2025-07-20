@@ -1,6 +1,28 @@
 {
   "frn": 758465,
-  "metadata": {},
+  "metadata": {
+    "frn": "758465",
+    "organisation_name": "LIFT-Invest Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "10144705",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/758465/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/758465/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/758465/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/758465/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/758465/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/758465/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/758465/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/758465/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/758465/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

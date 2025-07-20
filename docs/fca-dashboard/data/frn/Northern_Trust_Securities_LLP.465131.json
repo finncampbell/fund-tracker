@@ -1,6 +1,28 @@
 {
   "frn": 465131,
-  "metadata": {},
+  "metadata": {
+    "frn": "465131",
+    "organisation_name": "Northern Trust Securities LLP",
+    "status": "Authorised",
+    "status_effective_date": "25/06/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC324323",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/465131/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/465131/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/465131/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/465131/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/465131/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/465131/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/465131/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/465131/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/465131/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

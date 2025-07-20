@@ -1,6 +1,28 @@
 {
   "frn": 493086,
-  "metadata": {},
+  "metadata": {
+    "frn": "493086",
+    "organisation_name": "POMONA EUROPE ADVISERS LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "06135497",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/493086/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/493086/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/493086/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/493086/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/493086/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/493086/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/493086/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/493086/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/493086/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 563350,
-  "metadata": {},
+  "metadata": {
+    "frn": "563350",
+    "organisation_name": "Tishman Speyer Properties UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/07/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "03556917",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/563350/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/563350/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/563350/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/563350/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/563350/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/563350/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/563350/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/563350/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/563350/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

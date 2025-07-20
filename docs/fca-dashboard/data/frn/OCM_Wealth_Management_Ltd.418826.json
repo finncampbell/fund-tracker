@@ -1,6 +1,28 @@
 {
   "frn": 418826,
-  "metadata": {},
+  "metadata": {
+    "frn": "418826",
+    "organisation_name": "OCM WEALTH MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "05039809",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/418826/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/418826/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/418826/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/418826/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/418826/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/418826/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/418826/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/418826/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/418826/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

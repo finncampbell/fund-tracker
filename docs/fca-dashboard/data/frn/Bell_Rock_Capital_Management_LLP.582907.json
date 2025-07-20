@@ -1,6 +1,28 @@
 {
   "frn": 582907,
-  "metadata": {},
+  "metadata": {
+    "frn": "582907",
+    "organisation_name": "Bell Rock Capital Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/10/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC355426",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/582907/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/582907/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/582907/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/582907/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/582907/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/582907/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/582907/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/582907/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/582907/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

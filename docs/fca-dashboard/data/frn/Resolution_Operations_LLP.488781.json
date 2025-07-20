@@ -1,6 +1,28 @@
 {
   "frn": 488781,
-  "metadata": {},
+  "metadata": {
+    "frn": "488781",
+    "organisation_name": "Resolution Operations LLP",
+    "status": "Authorised",
+    "status_effective_date": "10/11/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC339989",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/488781/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/488781/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/488781/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/488781/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/488781/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/488781/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/488781/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/488781/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/488781/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

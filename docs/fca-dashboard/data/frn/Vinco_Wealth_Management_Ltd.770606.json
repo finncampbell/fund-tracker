@@ -1,6 +1,28 @@
 {
   "frn": 770606,
-  "metadata": {},
+  "metadata": {
+    "frn": "770606",
+    "organisation_name": "Vinco Wealth Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "03/07/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "08692727",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/770606/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/770606/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/770606/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/770606/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/770606/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/770606/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/770606/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/770606/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/770606/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

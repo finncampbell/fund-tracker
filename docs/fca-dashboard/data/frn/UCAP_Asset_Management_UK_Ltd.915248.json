@@ -1,6 +1,28 @@
 {
   "frn": 915248,
-  "metadata": {},
+  "metadata": {
+    "frn": "915248",
+    "organisation_name": "UCAP Asset Management (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "03/08/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11614778",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/915248/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/915248/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/915248/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/915248/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/915248/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/915248/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/915248/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/915248/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/915248/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

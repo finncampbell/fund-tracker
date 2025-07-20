@@ -1,6 +1,28 @@
 {
   "frn": 223051,
-  "metadata": {},
+  "metadata": {
+    "frn": "223051",
+    "organisation_name": "Guinness Atkinson Asset Management, Inc",
+    "status": "Authorised",
+    "status_effective_date": "24/04/2003",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "FC024762",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/223051/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/223051/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/223051/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/223051/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/223051/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/223051/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/223051/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/223051/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/223051/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

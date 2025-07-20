@@ -1,6 +1,28 @@
 {
   "frn": 184256,
-  "metadata": {},
+  "metadata": {
+    "frn": "184256",
+    "organisation_name": "Britannic Energy Trading Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01378710",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/184256/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/184256/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/184256/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/184256/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/184256/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/184256/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/184256/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/184256/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/184256/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

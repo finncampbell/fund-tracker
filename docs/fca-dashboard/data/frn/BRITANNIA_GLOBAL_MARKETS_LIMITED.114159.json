@@ -1,6 +1,28 @@
 {
   "frn": 114159,
-  "metadata": {},
+  "metadata": {
+    "frn": "114159",
+    "organisation_name": "BRITANNIA GLOBAL MARKETS LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "01969442",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/114159/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/114159/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/114159/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/114159/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/114159/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/114159/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/114159/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/114159/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/114159/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

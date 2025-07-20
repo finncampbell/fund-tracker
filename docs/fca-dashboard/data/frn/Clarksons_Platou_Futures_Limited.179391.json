@@ -1,6 +1,28 @@
 {
   "frn": 179391,
-  "metadata": {},
+  "metadata": {
+    "frn": "179391",
+    "organisation_name": "Clarksons Futures Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "03052018",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/179391/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/179391/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/179391/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/179391/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/179391/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/179391/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/179391/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/179391/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/179391/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

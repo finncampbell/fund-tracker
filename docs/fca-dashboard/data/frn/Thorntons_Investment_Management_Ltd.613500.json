@@ -1,6 +1,28 @@
 {
   "frn": 613500,
-  "metadata": {},
+  "metadata": {
+    "frn": "613500",
+    "organisation_name": "Thorntons Investment Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "22/10/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "SC438886",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/613500/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/613500/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/613500/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/613500/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/613500/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/613500/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/613500/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/613500/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/613500/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

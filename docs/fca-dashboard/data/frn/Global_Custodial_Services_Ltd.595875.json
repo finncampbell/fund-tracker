@@ -1,6 +1,28 @@
 {
   "frn": 595875,
-  "metadata": {},
+  "metadata": {
+    "frn": "595875",
+    "organisation_name": "Global Custodial Services Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/06/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08321940",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/595875/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/595875/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/595875/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/595875/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/595875/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/595875/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/595875/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/595875/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/595875/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

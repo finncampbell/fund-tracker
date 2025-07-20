@@ -1,6 +1,28 @@
 {
   "frn": 510080,
-  "metadata": {},
+  "metadata": {
+    "frn": "510080",
+    "organisation_name": "Perspective Capital Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "07037691",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/510080/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/510080/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/510080/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/510080/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/510080/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/510080/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/510080/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/510080/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/510080/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

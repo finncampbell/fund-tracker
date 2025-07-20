@@ -1,6 +1,28 @@
 {
   "frn": 977889,
-  "metadata": {},
+  "metadata": {
+    "frn": "977889",
+    "organisation_name": "Deutsche Pfandbriefbank AG",
+    "status": "Authorised",
+    "status_effective_date": "13/06/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "FC028655",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/977889/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/977889/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/977889/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/977889/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/977889/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/977889/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/977889/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/977889/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/977889/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

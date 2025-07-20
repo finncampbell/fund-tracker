@@ -1,6 +1,28 @@
 {
   "frn": 587619,
-  "metadata": {},
+  "metadata": {
+    "frn": "587619",
+    "organisation_name": "Clarion Partners EMEA Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/01/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "08120530",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/587619/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/587619/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/587619/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/587619/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/587619/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/587619/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/587619/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/587619/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/587619/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

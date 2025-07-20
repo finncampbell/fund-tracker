@@ -1,6 +1,37 @@
 {
   "frn": 552894,
-  "metadata": {},
+  "metadata": {
+    "frn": "552894",
+    "organisation_name": "Dolfin Financial (UK) Ltd",
+    "status": "See full details",
+    "status_effective_date": "25/10/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "07431519",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      },
+      {
+        "Exceptional Info Title": "ATTENTION - Firm in an insolvency process",
+        "Exceptional Info Body": "This firm is in an insolvency process. It is under the control of the appointed insolvency office holder(s) and may have stopped taking on new business. It remains authorised and has to continue to meet our regulatory standards, including when dealing with its customers. If you are/were a customer check how this affects you with the firm or the appointed insolvency office holder(s)."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/552894/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/552894/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/552894/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/552894/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/552894/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/552894/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/552894/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/552894/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/552894/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 911947,
-  "metadata": {},
+  "metadata": {
+    "frn": "911947",
+    "organisation_name": "Hundle & Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/04/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11368910",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/911947/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/911947/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/911947/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/911947/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/911947/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/911947/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/911947/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/911947/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/911947/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

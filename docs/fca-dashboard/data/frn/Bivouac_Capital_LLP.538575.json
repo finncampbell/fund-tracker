@@ -1,6 +1,28 @@
 {
   "frn": 538575,
-  "metadata": {},
+  "metadata": {
+    "frn": "538575",
+    "organisation_name": "Bivouac Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC360068",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/538575/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/538575/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/538575/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/538575/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/538575/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/538575/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/538575/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/538575/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/538575/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 630306,
-  "metadata": {},
+  "metadata": {
+    "frn": "630306",
+    "organisation_name": "Zaoui & Co Ltd",
+    "status": "Authorised",
+    "status_effective_date": "11/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "09111051",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/630306/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/630306/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/630306/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/630306/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/630306/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/630306/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/630306/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/630306/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/630306/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

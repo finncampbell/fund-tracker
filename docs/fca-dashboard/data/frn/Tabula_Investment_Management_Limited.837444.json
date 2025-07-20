@@ -1,6 +1,28 @@
 {
   "frn": 837444,
-  "metadata": {},
+  "metadata": {
+    "frn": "837444",
+    "organisation_name": "Tabula Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "11286661",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/837444/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/837444/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/837444/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/837444/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/837444/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/837444/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/837444/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/837444/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/837444/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

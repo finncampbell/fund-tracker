@@ -1,6 +1,28 @@
 {
   "frn": 513138,
-  "metadata": {},
+  "metadata": {
+    "frn": "513138",
+    "organisation_name": "ARBION LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07044573",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/513138/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/513138/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/513138/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/513138/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/513138/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/513138/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/513138/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/513138/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/513138/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

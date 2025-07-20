@@ -1,6 +1,28 @@
 {
   "frn": 419312,
-  "metadata": {},
+  "metadata": {
+    "frn": "419312",
+    "organisation_name": "Christofferson Robb & Company (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/04/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC303662",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/419312/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/419312/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/419312/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/419312/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/419312/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/419312/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/419312/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/419312/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/419312/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

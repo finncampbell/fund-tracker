@@ -1,6 +1,28 @@
 {
   "frn": 479707,
-  "metadata": {},
+  "metadata": {
+    "frn": "479707",
+    "organisation_name": "Bradesco Securities UK Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/05/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06422684",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/479707/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/479707/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/479707/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/479707/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/479707/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/479707/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/479707/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/479707/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/479707/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

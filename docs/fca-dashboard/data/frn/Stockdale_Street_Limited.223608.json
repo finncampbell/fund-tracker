@@ -1,6 +1,28 @@
 {
   "frn": 223608,
-  "metadata": {},
+  "metadata": {
+    "frn": "223608",
+    "organisation_name": "Stockdale Street Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/09/2003",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "04481271",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/223608/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/223608/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/223608/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/223608/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/223608/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/223608/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/223608/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/223608/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/223608/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

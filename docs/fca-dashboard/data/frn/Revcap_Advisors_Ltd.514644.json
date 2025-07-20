@@ -1,6 +1,28 @@
 {
   "frn": 514644,
-  "metadata": {},
+  "metadata": {
+    "frn": "514644",
+    "organisation_name": "Revcap Advisors Ltd",
+    "status": "Authorised",
+    "status_effective_date": "14/06/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07211394",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/514644/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/514644/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/514644/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/514644/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/514644/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/514644/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/514644/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/514644/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/514644/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

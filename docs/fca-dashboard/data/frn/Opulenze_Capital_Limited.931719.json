@@ -1,6 +1,28 @@
 {
   "frn": 931719,
-  "metadata": {},
+  "metadata": {
+    "frn": "931719",
+    "organisation_name": "Opulenze Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/10/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "12715104",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/931719/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/931719/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/931719/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/931719/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/931719/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/931719/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/931719/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/931719/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/931719/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

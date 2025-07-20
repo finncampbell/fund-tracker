@@ -1,6 +1,28 @@
 {
   "frn": 548041,
-  "metadata": {},
+  "metadata": {
+    "frn": "548041",
+    "organisation_name": "Kroll Issuer Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "03/01/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "05098454",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/548041/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/548041/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/548041/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/548041/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/548041/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/548041/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/548041/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/548041/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/548041/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

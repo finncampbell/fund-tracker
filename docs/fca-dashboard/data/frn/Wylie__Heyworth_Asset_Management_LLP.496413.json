@@ -1,6 +1,28 @@
 {
   "frn": 496413,
-  "metadata": {},
+  "metadata": {
+    "frn": "496413",
+    "organisation_name": "Wylie & Heyworth Asset Management LLP",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "11/05/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC341489",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/496413/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/496413/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/496413/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/496413/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/496413/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/496413/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/496413/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/496413/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/496413/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 149507,
-  "metadata": {},
+  "metadata": {
+    "frn": "149507",
+    "organisation_name": "Mondrian Investment Partners Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "02533342",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/149507/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/149507/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/149507/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/149507/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/149507/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/149507/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/149507/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/149507/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/149507/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

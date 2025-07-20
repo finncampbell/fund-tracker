@@ -1,6 +1,28 @@
 {
   "frn": 193905,
-  "metadata": {},
+  "metadata": {
+    "frn": "193905",
+    "organisation_name": "Macquarie Capital (Europe) Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "03704031",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/193905/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/193905/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/193905/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/193905/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/193905/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/193905/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/193905/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/193905/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/193905/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

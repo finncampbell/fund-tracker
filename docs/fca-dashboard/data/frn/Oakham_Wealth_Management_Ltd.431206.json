@@ -1,6 +1,28 @@
 {
   "frn": 431206,
-  "metadata": {},
+  "metadata": {
+    "frn": "431206",
+    "organisation_name": "Oakham Wealth Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "04/11/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "05281855",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/431206/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/431206/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/431206/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/431206/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/431206/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/431206/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/431206/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/431206/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/431206/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

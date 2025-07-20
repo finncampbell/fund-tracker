@@ -1,6 +1,28 @@
 {
   "frn": 593439,
-  "metadata": {},
+  "metadata": {
+    "frn": "593439",
+    "organisation_name": "Protean Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC375671",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/593439/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/593439/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/593439/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/593439/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/593439/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/593439/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/593439/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/593439/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/593439/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

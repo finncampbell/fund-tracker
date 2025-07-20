@@ -1,6 +1,28 @@
 {
   "frn": 230592,
-  "metadata": {},
+  "metadata": {
+    "frn": "230592",
+    "organisation_name": "Mathieson Capital Fund Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/03/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC305436",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/230592/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/230592/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/230592/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/230592/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/230592/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/230592/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/230592/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/230592/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/230592/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 448652,
-  "metadata": {},
+  "metadata": {
+    "frn": "448652",
+    "organisation_name": "OCORIAN (UK) LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "05/05/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "05534412",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/448652/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/448652/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/448652/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/448652/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/448652/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/448652/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/448652/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/448652/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/448652/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

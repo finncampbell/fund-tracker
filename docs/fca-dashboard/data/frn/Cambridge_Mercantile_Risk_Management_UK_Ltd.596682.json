@@ -1,6 +1,28 @@
 {
   "frn": 596682,
-  "metadata": {},
+  "metadata": {
+    "frn": "596682",
+    "organisation_name": "Cambridge Mercantile Risk Management (UK) Ltd",
+    "status": "Authorised",
+    "status_effective_date": "10/02/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "08363276",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/596682/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/596682/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/596682/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/596682/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/596682/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/596682/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/596682/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/596682/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/596682/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

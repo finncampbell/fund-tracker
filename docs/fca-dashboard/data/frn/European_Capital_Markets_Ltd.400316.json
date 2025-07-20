@@ -1,6 +1,28 @@
 {
   "frn": 400316,
-  "metadata": {},
+  "metadata": {
+    "frn": "400316",
+    "organisation_name": "European Capital Markets Ltd",
+    "status": "Authorised",
+    "status_effective_date": "03/02/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "05004266",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/400316/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/400316/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/400316/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/400316/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/400316/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/400316/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/400316/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/400316/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/400316/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

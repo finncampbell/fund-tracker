@@ -1,6 +1,28 @@
 {
   "frn": 610230,
-  "metadata": {},
+  "metadata": {
+    "frn": "610230",
+    "organisation_name": "KMG Investment Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/09/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08599400",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/610230/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/610230/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/610230/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/610230/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/610230/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/610230/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/610230/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/610230/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/610230/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

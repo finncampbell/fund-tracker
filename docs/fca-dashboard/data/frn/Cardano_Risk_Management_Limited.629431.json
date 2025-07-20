@@ -1,6 +1,28 @@
 {
   "frn": 629431,
-  "metadata": {},
+  "metadata": {
+    "frn": "629431",
+    "organisation_name": "Cardano Risk Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/04/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "09050863",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/629431/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/629431/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/629431/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/629431/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/629431/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/629431/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/629431/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/629431/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/629431/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

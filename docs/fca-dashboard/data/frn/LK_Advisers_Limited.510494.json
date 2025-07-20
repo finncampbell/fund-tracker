@@ -1,6 +1,28 @@
 {
   "frn": 510494,
-  "metadata": {},
+  "metadata": {
+    "frn": "510494",
+    "organisation_name": "LK Advisers Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/04/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "04310198",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/510494/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/510494/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/510494/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/510494/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/510494/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/510494/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/510494/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/510494/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/510494/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

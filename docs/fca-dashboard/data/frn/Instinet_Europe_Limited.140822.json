@@ -1,6 +1,28 @@
 {
   "frn": 140822,
-  "metadata": {},
+  "metadata": {
+    "frn": "140822",
+    "organisation_name": "Instinet Europe Limited",
+    "status": "See full details",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "01915961",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/140822/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/140822/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/140822/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/140822/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/140822/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/140822/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/140822/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/140822/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/140822/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

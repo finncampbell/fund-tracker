@@ -1,6 +1,28 @@
 {
   "frn": 122084,
-  "metadata": {},
+  "metadata": {
+    "frn": "122084",
+    "organisation_name": "Nikko Asset Management Europe Ltd",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "01803699",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122084/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122084/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122084/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122084/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122084/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122084/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122084/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122084/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122084/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

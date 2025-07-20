@@ -1,6 +1,28 @@
 {
   "frn": 996726,
-  "metadata": {},
+  "metadata": {
+    "frn": "996726",
+    "organisation_name": "ACCX Group (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "17/05/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:23",
+    "companies_house_number": "13547568",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/996726/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/996726/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/996726/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/996726/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/996726/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/996726/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/996726/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/996726/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/996726/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

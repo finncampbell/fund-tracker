@@ -1,6 +1,28 @@
 {
   "frn": 837440,
-  "metadata": {},
+  "metadata": {
+    "frn": "837440",
+    "organisation_name": "DigitalBridge UK Advisors 1 LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/09/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC424858",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/837440/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/837440/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/837440/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/837440/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/837440/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/837440/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/837440/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/837440/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/837440/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

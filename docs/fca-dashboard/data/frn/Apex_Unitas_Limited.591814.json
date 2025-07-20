@@ -1,6 +1,28 @@
 {
   "frn": 591814,
-  "metadata": {},
+  "metadata": {
+    "frn": "591814",
+    "organisation_name": "Apex Unitas Limited",
+    "status": "Authorised",
+    "status_effective_date": "27/02/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "08255713",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/591814/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/591814/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/591814/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/591814/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/591814/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/591814/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/591814/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/591814/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/591814/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

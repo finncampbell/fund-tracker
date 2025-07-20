@@ -1,6 +1,28 @@
 {
   "frn": 452198,
-  "metadata": {},
+  "metadata": {
+    "frn": "452198",
+    "organisation_name": "Langham Hall UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "23/06/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC319723",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/452198/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/452198/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/452198/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/452198/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/452198/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/452198/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/452198/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/452198/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/452198/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

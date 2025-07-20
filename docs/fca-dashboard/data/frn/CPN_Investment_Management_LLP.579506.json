@@ -1,6 +1,28 @@
 {
   "frn": 579506,
-  "metadata": {},
+  "metadata": {
+    "frn": "579506",
+    "organisation_name": "CPN Investment Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "20/11/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC372035",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/579506/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/579506/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/579506/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/579506/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/579506/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/579506/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/579506/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/579506/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/579506/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

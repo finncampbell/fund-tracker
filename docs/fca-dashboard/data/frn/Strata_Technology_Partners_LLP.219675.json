@@ -1,6 +1,33 @@
 {
   "frn": 219675,
-  "metadata": {},
+  "metadata": {
+    "frn": "219675",
+    "organisation_name": "Strata Technology Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "17/12/2002",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC303040",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/219675/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/219675/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/219675/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/219675/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/219675/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/219675/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/219675/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/219675/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/219675/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

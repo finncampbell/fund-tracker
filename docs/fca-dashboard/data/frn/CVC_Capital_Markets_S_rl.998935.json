@@ -1,6 +1,28 @@
 {
   "frn": 998935,
-  "metadata": {},
+  "metadata": {
+    "frn": "998935",
+    "organisation_name": "CVC Capital Markets S.à.r.l.",
+    "status": "Authorised",
+    "status_effective_date": "29/09/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "FC039806",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/998935/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/998935/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/998935/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/998935/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/998935/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/998935/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/998935/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/998935/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/998935/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

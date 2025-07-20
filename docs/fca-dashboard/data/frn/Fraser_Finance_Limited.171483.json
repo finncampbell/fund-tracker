@@ -1,6 +1,28 @@
 {
   "frn": 171483,
-  "metadata": {},
+  "metadata": {
+    "frn": "171483",
+    "organisation_name": "Fraser Finance Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "02907796",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/171483/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/171483/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/171483/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/171483/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/171483/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/171483/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/171483/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/171483/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/171483/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

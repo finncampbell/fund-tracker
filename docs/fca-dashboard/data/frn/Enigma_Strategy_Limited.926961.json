@@ -1,6 +1,28 @@
 {
   "frn": 926961,
-  "metadata": {},
+  "metadata": {
+    "frn": "926961",
+    "organisation_name": "Enigma Strategy Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/09/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "12315940",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/926961/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/926961/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/926961/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/926961/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/926961/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/926961/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/926961/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/926961/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/926961/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

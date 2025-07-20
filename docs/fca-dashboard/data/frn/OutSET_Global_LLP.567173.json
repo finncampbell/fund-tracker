@@ -1,6 +1,28 @@
 {
   "frn": 567173,
-  "metadata": {},
+  "metadata": {
+    "frn": "567173",
+    "organisation_name": "OutSET Global LLP",
+    "status": "Authorised",
+    "status_effective_date": "16/02/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC368752",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/567173/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/567173/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/567173/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/567173/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/567173/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/567173/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/567173/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/567173/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/567173/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

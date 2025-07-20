@@ -1,6 +1,28 @@
 {
   "frn": 477782,
-  "metadata": {},
+  "metadata": {
+    "frn": "477782",
+    "organisation_name": "Development Partners International LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/03/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC330293",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/477782/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/477782/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/477782/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/477782/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/477782/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/477782/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/477782/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/477782/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/477782/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 401041,
-  "metadata": {},
+  "metadata": {
+    "frn": "401041",
+    "organisation_name": "VWM Consulting Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/08/2004",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "SC216348",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/401041/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/401041/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/401041/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/401041/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/401041/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/401041/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/401041/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/401041/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/401041/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 1026803,
-  "metadata": {},
+  "metadata": {
+    "frn": "1026803",
+    "organisation_name": "Fig Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2025",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "15327304",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1026803/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1026803/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1026803/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

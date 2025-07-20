@@ -1,6 +1,28 @@
 {
   "frn": 989014,
-  "metadata": {},
+  "metadata": {
+    "frn": "989014",
+    "organisation_name": "Bank of America Europe DAC",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "BR008339",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/989014/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/989014/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/989014/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/989014/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/989014/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/989014/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/989014/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/989014/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/989014/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 514394,
-  "metadata": {},
+  "metadata": {
+    "frn": "514394",
+    "organisation_name": "IUR CAPITAL LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "07/05/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "06346900",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/514394/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/514394/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/514394/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/514394/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/514394/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/514394/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/514394/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/514394/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/514394/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

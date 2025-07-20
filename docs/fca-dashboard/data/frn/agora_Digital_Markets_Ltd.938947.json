@@ -1,6 +1,33 @@
 {
   "frn": 938947,
-  "metadata": {},
+  "metadata": {
+    "frn": "938947",
+    "organisation_name": "agora Digital Markets Ltd",
+    "status": "Authorised",
+    "status_effective_date": "16/11/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11607002",
+    "exceptions": [
+      {
+        "Exceptional Info Title": "Attention",
+        "Exceptional Info Body": "Please review the Requirements section when considering/assessing this firm."
+      }
+    ],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/938947/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/938947/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/938947/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/938947/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/938947/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/938947/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/938947/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/938947/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/938947/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

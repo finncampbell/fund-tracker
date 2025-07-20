@@ -1,6 +1,28 @@
 {
   "frn": 911890,
-  "metadata": {},
+  "metadata": {
+    "frn": "911890",
+    "organisation_name": "Ascot House Advisers Limited",
+    "status": "Authorised",
+    "status_effective_date": "02/03/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "11764331",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/911890/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/911890/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/911890/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/911890/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/911890/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/911890/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/911890/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/911890/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/911890/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

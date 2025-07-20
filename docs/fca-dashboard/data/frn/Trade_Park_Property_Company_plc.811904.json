@@ -1,6 +1,9 @@
 {
   "frn": 811904,
-  "metadata": {},
+  "metadata": {
+    "frn": "811904",
+    "error": "No data in response"
+  },
   "trading_names": [],
   "appointed_reps": {
     "PreviousAppointedRepresentatives": null,

@@ -1,6 +1,28 @@
 {
   "frn": 138169,
-  "metadata": {},
+  "metadata": {
+    "frn": "138169",
+    "organisation_name": "Pharon Independent Financial Advisers Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "01105564",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/138169/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/138169/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/138169/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/138169/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/138169/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/138169/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/138169/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/138169/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/138169/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

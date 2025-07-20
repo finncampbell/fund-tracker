@@ -1,6 +1,28 @@
 {
   "frn": 940868,
-  "metadata": {},
+  "metadata": {
+    "frn": "940868",
+    "organisation_name": "Nassau Global Credit (UK) LLP",
+    "status": "Authorised",
+    "status_effective_date": "26/08/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "OC432969",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/940868/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/940868/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/940868/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/940868/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/940868/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/940868/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/940868/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/940868/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/940868/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

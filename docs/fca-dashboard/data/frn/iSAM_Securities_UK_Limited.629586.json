@@ -1,6 +1,28 @@
 {
   "frn": 629586,
-  "metadata": {},
+  "metadata": {
+    "frn": "629586",
+    "organisation_name": "iSAM Securities (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "13/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "09112124",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/629586/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/629586/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/629586/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/629586/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/629586/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/629586/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/629586/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/629586/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/629586/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

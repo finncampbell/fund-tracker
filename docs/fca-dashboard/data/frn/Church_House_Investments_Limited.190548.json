@@ -1,6 +1,28 @@
 {
   "frn": 190548,
-  "metadata": {},
+  "metadata": {
+    "frn": "190548",
+    "organisation_name": "Church House Investments Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03475556",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/190548/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/190548/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/190548/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/190548/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/190548/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/190548/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/190548/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/190548/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/190548/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

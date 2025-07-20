@@ -1,6 +1,28 @@
 {
   "frn": 575189,
-  "metadata": {},
+  "metadata": {
+    "frn": "575189",
+    "organisation_name": "Starwood Capital Europe Advisers LLP",
+    "status": "Authorised",
+    "status_effective_date": "20/08/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC371541",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/575189/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/575189/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/575189/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/575189/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/575189/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/575189/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/575189/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/575189/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/575189/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

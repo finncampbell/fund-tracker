@@ -1,6 +1,28 @@
 {
   "frn": 784697,
-  "metadata": {},
+  "metadata": {
+    "frn": "784697",
+    "organisation_name": "Grovepoint Investment Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/11/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "OC403723",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/784697/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/784697/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/784697/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/784697/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/784697/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/784697/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/784697/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/784697/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/784697/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

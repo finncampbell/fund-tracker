@@ -1,6 +1,28 @@
 {
   "frn": 761053,
-  "metadata": {},
+  "metadata": {
+    "frn": "761053",
+    "organisation_name": "Firmament Capital Advisors UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "07/07/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "OC413430",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/761053/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/761053/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/761053/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/761053/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/761053/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/761053/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/761053/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/761053/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/761053/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 962780,
-  "metadata": {},
+  "metadata": {
+    "frn": "962780",
+    "organisation_name": "Radiant Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "19/04/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "13497014",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/962780/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/962780/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/962780/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/962780/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/962780/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/962780/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/962780/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/962780/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/962780/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 547822,
-  "metadata": {},
+  "metadata": {
+    "frn": "547822",
+    "organisation_name": "Glider Trading LLP",
+    "status": "Authorised",
+    "status_effective_date": "08/12/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "OC363584",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/547822/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/547822/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/547822/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/547822/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/547822/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/547822/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/547822/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/547822/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/547822/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

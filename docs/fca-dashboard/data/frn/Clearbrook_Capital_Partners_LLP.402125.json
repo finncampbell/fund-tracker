@@ -1,6 +1,28 @@
 {
   "frn": 402125,
-  "metadata": {},
+  "metadata": {
+    "frn": "402125",
+    "organisation_name": "Clearbrook Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/03/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "OC306653",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/402125/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/402125/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/402125/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/402125/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/402125/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/402125/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/402125/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/402125/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/402125/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

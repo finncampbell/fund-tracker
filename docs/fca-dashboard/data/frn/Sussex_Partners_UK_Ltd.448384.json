@@ -1,6 +1,28 @@
 {
   "frn": 448384,
-  "metadata": {},
+  "metadata": {
+    "frn": "448384",
+    "organisation_name": "Sussex Partners UK Ltd",
+    "status": "Authorised",
+    "status_effective_date": "15/05/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "05636804",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/448384/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/448384/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/448384/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/448384/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/448384/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/448384/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/448384/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/448384/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/448384/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

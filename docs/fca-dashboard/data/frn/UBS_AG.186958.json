@@ -1,6 +1,28 @@
 {
   "frn": 186958,
-  "metadata": {},
+  "metadata": {
+    "frn": "186958",
+    "organisation_name": "UBS AG",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "FC021146",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/186958/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/186958/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/186958/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/186958/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/186958/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/186958/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/186958/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/186958/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/186958/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

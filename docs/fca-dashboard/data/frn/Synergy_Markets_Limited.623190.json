@@ -1,6 +1,28 @@
 {
   "frn": 623190,
-  "metadata": {},
+  "metadata": {
+    "frn": "623190",
+    "organisation_name": "Synergy Markets Limited",
+    "status": "Authorised",
+    "status_effective_date": "12/11/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "08843450",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/623190/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/623190/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/623190/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/623190/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/623190/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/623190/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/623190/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/623190/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/623190/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

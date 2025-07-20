@@ -1,6 +1,28 @@
 {
   "frn": 750717,
-  "metadata": {},
+  "metadata": {
+    "frn": "750717",
+    "organisation_name": "Compass Partners International II LLP",
+    "status": "Authorised",
+    "status_effective_date": "03/10/2016",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "OC402586",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/750717/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/750717/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/750717/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/750717/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/750717/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/750717/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/750717/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/750717/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/750717/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

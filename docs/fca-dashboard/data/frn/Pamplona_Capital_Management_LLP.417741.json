@@ -1,6 +1,28 @@
 {
   "frn": 417741,
-  "metadata": {},
+  "metadata": {
+    "frn": "417741",
+    "organisation_name": "Pamplona Capital Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "22/03/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "OC309813",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/417741/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/417741/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/417741/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/417741/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/417741/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/417741/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/417741/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/417741/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/417741/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

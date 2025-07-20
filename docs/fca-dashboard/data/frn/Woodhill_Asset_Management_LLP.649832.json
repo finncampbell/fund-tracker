@@ -1,6 +1,28 @@
 {
   "frn": 649832,
-  "metadata": {},
+  "metadata": {
+    "frn": "649832",
+    "organisation_name": "Woodhill Asset Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/06/2015",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "OC389733",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/649832/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/649832/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/649832/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/649832/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/649832/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/649832/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/649832/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/649832/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/649832/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

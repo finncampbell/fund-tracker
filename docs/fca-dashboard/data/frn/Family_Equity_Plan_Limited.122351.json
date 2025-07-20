@@ -1,6 +1,28 @@
 {
   "frn": 122351,
-  "metadata": {},
+  "metadata": {
+    "frn": "122351",
+    "organisation_name": "Family Equity Plan Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "02208249",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/122351/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/122351/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/122351/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/122351/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/122351/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/122351/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/122351/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122351/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/122351/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

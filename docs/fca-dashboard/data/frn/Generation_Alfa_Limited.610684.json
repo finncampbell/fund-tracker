@@ -1,6 +1,28 @@
 {
   "frn": 610684,
-  "metadata": {},
+  "metadata": {
+    "frn": "610684",
+    "organisation_name": "Generation Alfa Limited",
+    "status": "Authorised",
+    "status_effective_date": "22/09/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "08719905",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/610684/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/610684/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/610684/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/610684/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/610684/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/610684/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/610684/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/610684/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/610684/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 604089,
-  "metadata": {},
+  "metadata": {
+    "frn": "604089",
+    "organisation_name": "EAK Management UK, LLP",
+    "status": "Authorised",
+    "status_effective_date": "27/11/2013",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "OC384795",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/604089/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/604089/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/604089/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/604089/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/604089/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/604089/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/604089/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/604089/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/604089/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

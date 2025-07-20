@@ -1,6 +1,28 @@
 {
   "frn": 958983,
-  "metadata": {},
+  "metadata": {
+    "frn": "958983",
+    "organisation_name": "Kepler Cheuvreux",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2022",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "BR010315",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/958983/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/958983/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/958983/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/958983/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/958983/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/958983/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/958983/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/958983/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/958983/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

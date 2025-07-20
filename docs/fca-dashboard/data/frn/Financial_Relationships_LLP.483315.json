@@ -1,6 +1,28 @@
 {
   "frn": 483315,
-  "metadata": {},
+  "metadata": {
+    "frn": "483315",
+    "organisation_name": "Financial Relationships LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/07/2008",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "OC337153",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/483315/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/483315/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/483315/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/483315/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/483315/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/483315/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/483315/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/483315/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/483315/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

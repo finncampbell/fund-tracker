@@ -1,6 +1,28 @@
 {
   "frn": 984135,
-  "metadata": {},
+  "metadata": {
+    "frn": "984135",
+    "organisation_name": "KfW IPEX-Bank GmbH",
+    "status": "Authorised",
+    "status_effective_date": "18/05/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "FC028705",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/984135/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/984135/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/984135/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/984135/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/984135/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/984135/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/984135/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/984135/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/984135/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

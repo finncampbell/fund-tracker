@@ -1,6 +1,28 @@
 {
   "frn": 791894,
-  "metadata": {},
+  "metadata": {
+    "frn": "791894",
+    "organisation_name": "WOOZLE RESEARCH LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "15/01/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "10006042",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/791894/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/791894/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/791894/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/791894/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/791894/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/791894/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/791894/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/791894/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/791894/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

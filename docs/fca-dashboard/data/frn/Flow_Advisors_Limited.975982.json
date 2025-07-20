@@ -1,6 +1,28 @@
 {
   "frn": 975982,
-  "metadata": {},
+  "metadata": {
+    "frn": "975982",
+    "organisation_name": "Flow Advisors Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/02/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "11167837",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/975982/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/975982/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/975982/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/975982/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/975982/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/975982/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/975982/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/975982/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/975982/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

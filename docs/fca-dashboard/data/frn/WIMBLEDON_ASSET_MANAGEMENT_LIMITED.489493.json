@@ -1,6 +1,28 @@
 {
   "frn": 489493,
-  "metadata": {},
+  "metadata": {
+    "frn": "489493",
+    "organisation_name": "WIMBLEDON ASSET MANAGEMENT LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "20/01/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "04373361",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/489493/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/489493/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/489493/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/489493/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/489493/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/489493/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/489493/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/489493/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/489493/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

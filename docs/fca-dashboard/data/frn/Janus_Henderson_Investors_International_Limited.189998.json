@@ -1,6 +1,28 @@
 {
   "frn": 189998,
-  "metadata": {},
+  "metadata": {
+    "frn": "189998",
+    "organisation_name": "Janus Henderson Investors International Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "03594615",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/189998/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/189998/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/189998/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/189998/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/189998/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/189998/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/189998/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/189998/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/189998/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

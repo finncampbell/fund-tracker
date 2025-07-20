@@ -1,6 +1,28 @@
 {
   "frn": 124345,
-  "metadata": {},
+  "metadata": {
+    "frn": "124345",
+    "organisation_name": "SANLAM SECURITIES UK LIMITED",
+    "status": "Authorised - applied to cancel",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:14",
+    "companies_house_number": "01825671",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/124345/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/124345/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/124345/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/124345/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/124345/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/124345/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/124345/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/124345/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/124345/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

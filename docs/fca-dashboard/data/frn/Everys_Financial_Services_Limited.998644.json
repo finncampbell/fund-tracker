@@ -1,6 +1,28 @@
 {
   "frn": 998644,
-  "metadata": {},
+  "metadata": {
+    "frn": "998644",
+    "organisation_name": "Everys Financial Services Limited",
+    "status": "Authorised",
+    "status_effective_date": "21/11/2023",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "14819837",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/998644/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/998644/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/998644/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/998644/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/998644/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/998644/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/998644/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/998644/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/998644/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

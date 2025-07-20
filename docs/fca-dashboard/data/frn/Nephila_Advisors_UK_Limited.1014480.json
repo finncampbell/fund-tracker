@@ -1,6 +1,28 @@
 {
   "frn": 1014480,
-  "metadata": {},
+  "metadata": {
+    "frn": "1014480",
+    "organisation_name": "Nephila Advisors (UK) Limited",
+    "status": "Authorised",
+    "status_effective_date": "16/12/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "08812429",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1014480/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1014480/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1014480/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

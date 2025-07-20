@@ -1,6 +1,28 @@
 {
   "frn": 468821,
-  "metadata": {},
+  "metadata": {
+    "frn": "468821",
+    "organisation_name": "DBL Asset Management LLP",
+    "status": "See full details",
+    "status_effective_date": "06/08/2007",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:15",
+    "companies_house_number": "OC328644",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/468821/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/468821/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/468821/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/468821/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/468821/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/468821/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/468821/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/468821/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/468821/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

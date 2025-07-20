@@ -1,6 +1,28 @@
 {
   "frn": 923675,
-  "metadata": {},
+  "metadata": {
+    "frn": "923675",
+    "organisation_name": "CLARION PARTNERS EUROPE (U.K.) LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "07654712",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/923675/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/923675/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/923675/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/923675/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/923675/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/923675/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/923675/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/923675/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/923675/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

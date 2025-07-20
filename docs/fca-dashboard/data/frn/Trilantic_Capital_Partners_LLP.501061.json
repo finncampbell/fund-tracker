@@ -1,6 +1,28 @@
 {
   "frn": 501061,
-  "metadata": {},
+  "metadata": {
+    "frn": "501061",
+    "organisation_name": "Trilantic Capital Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "14/08/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC344267",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/501061/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/501061/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/501061/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/501061/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/501061/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/501061/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/501061/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/501061/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/501061/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 565503,
-  "metadata": {},
+  "metadata": {
+    "frn": "565503",
+    "organisation_name": "VOYA INVESTMENT MANAGEMENT (UK) LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "21/02/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "07713257",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/565503/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/565503/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/565503/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/565503/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/565503/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/565503/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/565503/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/565503/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/565503/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

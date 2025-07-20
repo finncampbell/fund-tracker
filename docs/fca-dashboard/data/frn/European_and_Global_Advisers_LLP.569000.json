@@ -1,6 +1,28 @@
 {
   "frn": 569000,
-  "metadata": {},
+  "metadata": {
+    "frn": "569000",
+    "organisation_name": "European and Global Advisers LLP",
+    "status": "Authorised",
+    "status_effective_date": "14/05/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC364593",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/569000/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/569000/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/569000/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/569000/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/569000/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/569000/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/569000/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/569000/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/569000/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 161197,
-  "metadata": {},
+  "metadata": {
+    "frn": "161197",
+    "organisation_name": "BROKERTEC EUROPE LIMITED",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "02645715",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/161197/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/161197/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/161197/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/161197/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/161197/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/161197/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/161197/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/161197/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/161197/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

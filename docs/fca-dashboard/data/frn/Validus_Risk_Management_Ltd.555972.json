@@ -1,6 +1,28 @@
 {
   "frn": 555972,
-  "metadata": {},
+  "metadata": {
+    "frn": "555972",
+    "organisation_name": "Validus Risk Management Ltd",
+    "status": "Authorised",
+    "status_effective_date": "06/09/2011",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:21",
+    "companies_house_number": "07140753",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/555972/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/555972/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/555972/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/555972/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/555972/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/555972/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/555972/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/555972/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/555972/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 492769,
-  "metadata": {},
+  "metadata": {
+    "frn": "492769",
+    "organisation_name": "Liquidity Finance LLP",
+    "status": "Authorised",
+    "status_effective_date": "04/02/2009",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC341856",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/492769/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/492769/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/492769/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/492769/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/492769/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/492769/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/492769/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/492769/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/492769/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

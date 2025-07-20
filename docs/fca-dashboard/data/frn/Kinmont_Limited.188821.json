@@ -1,6 +1,28 @@
 {
   "frn": 188821,
-  "metadata": {},
+  "metadata": {
+    "frn": "188821",
+    "organisation_name": "Kinmont Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:20",
+    "companies_house_number": "03456766",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/188821/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/188821/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/188821/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/188821/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/188821/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/188821/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/188821/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/188821/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/188821/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 954331,
-  "metadata": {},
+  "metadata": {
+    "frn": "954331",
+    "organisation_name": "Global Evolution Asset Management A/S",
+    "status": "Authorised",
+    "status_effective_date": "07/07/2022",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:17",
+    "companies_house_number": "BR022050",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/954331/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/954331/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/954331/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/954331/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/954331/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/954331/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/954331/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/954331/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/954331/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

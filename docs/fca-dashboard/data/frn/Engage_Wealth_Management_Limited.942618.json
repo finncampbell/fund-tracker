@@ -1,6 +1,28 @@
 {
   "frn": 942618,
-  "metadata": {},
+  "metadata": {
+    "frn": "942618",
+    "organisation_name": "Engage Wealth Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "24/05/2021",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "13010558",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/942618/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/942618/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/942618/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/942618/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/942618/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/942618/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/942618/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/942618/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/942618/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

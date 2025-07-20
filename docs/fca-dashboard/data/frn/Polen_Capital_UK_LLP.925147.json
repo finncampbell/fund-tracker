@@ -1,6 +1,28 @@
 {
   "frn": 925147,
-  "metadata": {},
+  "metadata": {
+    "frn": "925147",
+    "organisation_name": "Polen Capital UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "08/06/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "OC428634",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/925147/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/925147/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/925147/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/925147/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/925147/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/925147/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/925147/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/925147/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/925147/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

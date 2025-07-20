@@ -1,6 +1,28 @@
 {
   "frn": 821173,
-  "metadata": {},
+  "metadata": {
+    "frn": "821173",
+    "organisation_name": "Farringdon Capital Ltd",
+    "status": "Authorised",
+    "status_effective_date": "06/12/2018",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:13",
+    "companies_house_number": "11270472",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/821173/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/821173/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/821173/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/821173/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/821173/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/821173/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/821173/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/821173/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/821173/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

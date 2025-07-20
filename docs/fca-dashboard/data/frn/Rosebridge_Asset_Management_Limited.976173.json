@@ -1,6 +1,28 @@
 {
   "frn": 976173,
-  "metadata": {},
+  "metadata": {
+    "frn": "976173",
+    "organisation_name": "Rosebridge Asset Management Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2022",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "13997114",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/976173/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/976173/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/976173/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/976173/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/976173/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/976173/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/976173/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/976173/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/976173/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

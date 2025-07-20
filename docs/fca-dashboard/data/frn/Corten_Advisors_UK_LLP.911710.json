@@ -1,6 +1,28 @@
 {
   "frn": 911710,
-  "metadata": {},
+  "metadata": {
+    "frn": "911710",
+    "organisation_name": "Corten Advisors UK LLP",
+    "status": "Authorised",
+    "status_effective_date": "06/01/2020",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:22",
+    "companies_house_number": "OC426538",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/911710/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/911710/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/911710/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/911710/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/911710/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/911710/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/911710/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/911710/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/911710/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 844233,
-  "metadata": {},
+  "metadata": {
+    "frn": "844233",
+    "organisation_name": "Alantra Corporate Portfolio Advisors International Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/09/2019",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:19",
+    "companies_house_number": "11433438",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/844233/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/844233/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/844233/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/844233/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/844233/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/844233/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/844233/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/844233/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/844233/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

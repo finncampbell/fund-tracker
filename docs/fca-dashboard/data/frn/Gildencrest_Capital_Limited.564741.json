@@ -1,6 +1,28 @@
 {
   "frn": 564741,
-  "metadata": {},
+  "metadata": {
+    "frn": "564741",
+    "organisation_name": "Gildencrest Capital Limited",
+    "status": "Authorised",
+    "status_effective_date": "30/05/2012",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:09",
+    "companies_house_number": "07604372",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/564741/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/564741/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/564741/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/564741/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/564741/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/564741/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/564741/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/564741/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/564741/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

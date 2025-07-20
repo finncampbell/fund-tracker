@@ -1,6 +1,28 @@
 {
   "frn": 446173,
-  "metadata": {},
+  "metadata": {
+    "frn": "446173",
+    "organisation_name": "ROSEMOOR CAPITAL MANAGEMENT LLP",
+    "status": "Authorised",
+    "status_effective_date": "11/04/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "OC313492",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/446173/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/446173/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/446173/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/446173/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/446173/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/446173/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/446173/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/446173/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/446173/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

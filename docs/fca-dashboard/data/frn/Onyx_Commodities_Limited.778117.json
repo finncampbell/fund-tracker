@@ -1,6 +1,28 @@
 {
   "frn": 778117,
-  "metadata": {},
+  "metadata": {
+    "frn": "778117",
+    "organisation_name": "Onyx Commodities Limited",
+    "status": "Authorised",
+    "status_effective_date": "06/12/2017",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:16",
+    "companies_house_number": "03948550",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/778117/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/778117/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/778117/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/778117/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/778117/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/778117/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/778117/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/778117/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/778117/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

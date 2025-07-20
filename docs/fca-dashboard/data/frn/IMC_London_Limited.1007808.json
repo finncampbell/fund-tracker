@@ -1,6 +1,28 @@
 {
   "frn": 1007808,
-  "metadata": {},
+  "metadata": {
+    "frn": "1007808",
+    "organisation_name": "IMC London Limited",
+    "status": "Authorised",
+    "status_effective_date": "09/08/2024",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:11",
+    "companies_house_number": "14546014",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/1007808/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1007808/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/1007808/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

@@ -1,6 +1,28 @@
 {
   "frn": 609982,
-  "metadata": {},
+  "metadata": {
+    "frn": "609982",
+    "organisation_name": "Highlight Investment Management LLP",
+    "status": "Authorised",
+    "status_effective_date": "01/05/2014",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "SO304581",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/609982/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/609982/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/609982/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/609982/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/609982/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/609982/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/609982/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/609982/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/609982/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

@@ -1,6 +1,28 @@
 {
   "frn": 969588,
-  "metadata": {},
+  "metadata": {
+    "frn": "969588",
+    "organisation_name": "AVPCAP UK",
+    "status": "Authorised",
+    "status_effective_date": "09/05/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "FC032980",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/969588/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/969588/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/969588/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/969588/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/969588/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/969588/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/969588/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/969588/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/969588/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

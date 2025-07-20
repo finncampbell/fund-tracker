@@ -1,6 +1,28 @@
 {
   "frn": 426349,
-  "metadata": {},
+  "metadata": {
+    "frn": "426349",
+    "organisation_name": "Thames River Capital LLP",
+    "status": "Authorised",
+    "status_effective_date": "18/03/2005",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC310934",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/426349/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/426349/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/426349/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/426349/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/426349/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/426349/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/426349/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/426349/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/426349/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

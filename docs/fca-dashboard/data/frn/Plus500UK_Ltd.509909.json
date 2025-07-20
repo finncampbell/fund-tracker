@@ -1,6 +1,28 @@
 {
   "frn": 509909,
-  "metadata": {},
+  "metadata": {
+    "frn": "509909",
+    "organisation_name": "Plus500UK Ltd",
+    "status": "Authorised",
+    "status_effective_date": "29/06/2010",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:12",
+    "companies_house_number": "07024970",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/509909/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/509909/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/509909/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/509909/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/509909/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/509909/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/509909/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/509909/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/509909/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

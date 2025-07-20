@@ -1,6 +1,28 @@
 {
   "frn": 973319,
-  "metadata": {},
+  "metadata": {
+    "frn": "973319",
+    "organisation_name": "Leonteq Securities (Europe) GmbH",
+    "status": "Authorised",
+    "status_effective_date": "21/11/2023",
+    "business_type": "Branch (UK) of a Overseas Firm",
+    "system_timestamp": "20/07/2025 18:10",
+    "companies_house_number": "FC030367",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/973319/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/973319/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/973319/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/973319/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/973319/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/973319/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/973319/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/973319/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/973319/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],

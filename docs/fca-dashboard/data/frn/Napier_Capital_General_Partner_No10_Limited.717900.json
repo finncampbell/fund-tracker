@@ -1,6 +1,9 @@
 {
   "frn": 717900,
-  "metadata": {},
+  "metadata": {
+    "frn": "717900",
+    "error": "Gave up after 3 retries"
+  },
   "trading_names": [],
   "appointed_reps": {
     "PreviousAppointedRepresentatives": null,

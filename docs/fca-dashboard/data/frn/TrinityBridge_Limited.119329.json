@@ -1,6 +1,28 @@
 {
   "frn": 119329,
-  "metadata": {},
+  "metadata": {
+    "frn": "119329",
+    "organisation_name": "TrinityBridge Limited",
+    "status": "Authorised",
+    "status_effective_date": "01/12/2001",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:08",
+    "companies_house_number": "01644127",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/119329/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/119329/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/119329/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/119329/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/119329/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/119329/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/119329/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/119329/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/119329/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null,
     null

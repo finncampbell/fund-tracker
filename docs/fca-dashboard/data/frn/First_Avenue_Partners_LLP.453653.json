@@ -1,6 +1,28 @@
 {
   "frn": 453653,
-  "metadata": {},
+  "metadata": {
+    "frn": "453653",
+    "organisation_name": "First Avenue Partners LLP",
+    "status": "Authorised",
+    "status_effective_date": "07/11/2006",
+    "business_type": "Regulated",
+    "system_timestamp": "20/07/2025 18:18",
+    "companies_house_number": "OC319893",
+    "exceptions": [],
+    "_links": {
+      "names": null,
+      "individuals": "https://register.fca.org.uk/services/V0.1/Firm/453653/Individuals",
+      "requirements": "https://register.fca.org.uk/services/V0.1/Firm/453653/Requirements",
+      "permissions": null,
+      "passport": "https://register.fca.org.uk/services/V0.1/Firm/453653/Passports",
+      "regulators": "https://register.fca.org.uk/services/V0.1/Firm/453653/Regulators",
+      "appointed_reps": "https://register.fca.org.uk/services/V0.1/Firm/453653/AR",
+      "address": "https://register.fca.org.uk/services/V0.1/Firm/453653/Address",
+      "waivers": "https://register.fca.org.uk/services/V0.1/Firm/453653/Waivers",
+      "exclusions": "https://register.fca.org.uk/services/V0.1/Firm/453653/Exclusions",
+      "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Firm/453653/DisciplinaryHistory"
+    }
+  },
   "trading_names": [
     null
   ],
