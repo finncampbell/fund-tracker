@@ -1,4 +1,4 @@
-name: Fetch FCA Main Slice
+name: Fetch FCA Main Slice (Chained Shards)
 
 on:
   schedule:
@@ -9,34 +9,9 @@ permissions:
   contents: write
 
 jobs:
-  split:
-    runs-on: ubuntu-latest
-    outputs:
-      shards: ${{ steps.set.outputs.shards }}
-      indices: ${{ steps.set.outputs.indices }}
-    steps:
-      - uses: actions/checkout@v3
-      - id: set
-        run: |
-          python3 - <<'EOF'
-          import json, math
-          frns = json.load(open('docs/fca-dashboard/data/all_frns_with_names.json'))
-          total, shards = len(frns), 5
-          size = math.ceil(total/shards)
-          offsets = [i*size for i in range(shards)]
-          print(f"::set-output name=shards::{shards}")
-          print("::set-output name=indices::" + ",".join(map(str, offsets)))
-          EOF
 
-  fetch:
-    needs: split
-    strategy:
-      matrix:
-        shard-index: [1, 2, 3, 4, 5]
+  fetch-shard-1:
     runs-on: ubuntu-latest
-    env:
-      FCA_API_KEY:   ${{ secrets.FCA_API_KEY }}
-      FCA_API_EMAIL: ${{ secrets.FCA_API_EMAIL }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -48,22 +23,134 @@ jobs:
           python-version: '3.x'
       - run: pip install requests
 
-      - name: Fetch shard #${{ matrix.shard-index }}
+      - name: Fetch shard #1
         run: |
           python3 fca-dashboard/scripts/fetch_main.py \
-            --shards ${{ needs.split.outputs.shards }} \
-            --shard-index ${{ matrix.shard-index }} \
+            --shards 5 \
+            --shard-index 1 \
             --threads 5 \
             --only-missing
 
-      - name: Upload main shard
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: main-shard-${{ matrix.shard-index }}
-          path: fca-dashboard/data/fca_main_shard_${{ matrix.shard-index }}.json
+          name: main-shard-1
+          path: fca-dashboard/data/fca_main_shard_1.json
+
+  fetch-shard-2:
+    needs: fetch-shard-1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python & deps
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+
+      - name: Fetch shard #2
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 2 \
+            --threads 5 \
+            --only-missing
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-2
+          path: fca-dashboard/data/fca_main_shard_2.json
+
+  fetch-shard-3:
+    needs: fetch-shard-2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python & deps
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+
+      - name: Fetch shard #3
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 3 \
+            --threads 5 \
+            --only-missing
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-3
+          path: fca-dashboard/data/fca_main_shard_3.json
+
+  fetch-shard-4:
+    needs: fetch-shard-3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python & deps
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+
+      - name: Fetch shard #4
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 4 \
+            --threads 5 \
+            --only-missing
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-4
+          path: fca-dashboard/data/fca_main_shard_4.json
+
+  fetch-shard-5:
+    needs: fetch-shard-4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python & deps
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install requests
+
+      - name: Fetch shard #5
+        run: |
+          python3 fca-dashboard/scripts/fetch_main.py \
+            --shards 5 \
+            --shard-index 5 \
+            --threads 5 \
+            --only-missing
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-shard-5
+          path: fca-dashboard/data/fca_main_shard_5.json
 
   merge:
-    needs: fetch
+    needs:
+      - fetch-shard-1
+      - fetch-shard-2
+      - fetch-shard-3
+      - fetch-shard-4
+      - fetch-shard-5
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -75,7 +162,7 @@ jobs:
         with:
           path: fca-dashboard/data
 
-      - name: Merge main shards
+      - name: Merge shards into fca_main.json
         run: |
           python3 - <<'EOF'
           import json, glob
