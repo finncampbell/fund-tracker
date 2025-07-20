@@ -8,16 +8,15 @@ import glob
 import zipfile
 
 # Paths
-RAW       = os.path.abspath('fca-dashboard/data')
-PROF      = os.path.abspath('docs/fca-dashboard/data/frn')
-CF_ZIP    = os.path.abspath('docs/fca-dashboard/data/fca_cf.zip')
+RAW    = os.path.abspath('fca-dashboard/data')
+PROF   = os.path.abspath('docs/fca-dashboard/data/frn')
+CF_ZIP = os.path.abspath('docs/fca-dashboard/data/fca_cf.zip')
 
 # 1. Load firm slices
-main_slice    = json.load(open(os.path.join(RAW, 'fca_main.json')))
-names_slice   = json.load(open(os.path.join(RAW, 'fca_names.json')))
-ars_slice     = json.load(open(os.path.join(RAW, 'fca_ars.json')))
-indivs_slice  = json.load(open(os.path.join(RAW, 'fca_individuals_by_firm.json')))
-persons_slice = json.load(open(os.path.join(RAW, 'fca_persons.json')))
+main_slice   = json.load(open(os.path.join(RAW, 'fca_main.json')))
+names_slice  = json.load(open(os.path.join(RAW, 'fca_names.json')))
+ars_slice    = json.load(open(os.path.join(RAW, 'fca_ars.json')))
+indivs_slice = json.load(open(os.path.join(RAW, 'fca_individuals_by_firm.json')))
 
 # 2. Load the compressed CF map
 print(f"📦 Loading CF from {CF_ZIP}")
@@ -32,25 +31,17 @@ for path in glob.glob(os.path.join(PROF, '*.json')):
     frn = str(profile.get('frn'))
 
     # Merge in slices
-    profile['metadata']           = main_slice.get(frn, {})
-    profile['trading_names']      = names_slice.get(frn, [])
-    profile['appointed_reps']     = ars_slice.get(frn, [])
+    profile['metadata']       = main_slice.get(frn, {})
+    profile['trading_names']  = names_slice.get(frn, [])
+    profile['appointed_reps'] = ars_slice.get(frn, [])
 
     indivs = indivs_slice.get(frn, [])
-    profile['individuals']        = indivs
+    profile['individuals'] = indivs
 
-    # Build person_records
-    person_recs = {
-        irn: persons_slice[irn]
-        for rec in indivs
-        if (irn := str(rec.get('IRN'))) in persons_slice
-    }
-    profile['person_records']      = person_recs
-
-    # Controlled functions
+    # Controlled functions directly off individual stubs
     profile['controlled_functions'] = {
-        irn: cf_by_irn.get(irn, [])
-        for irn in person_recs
+        str(rec['IRN']): cf_by_irn.get(str(rec['IRN']), [])
+        for rec in indivs
     }
 
     # Write back
