@@ -1,14 +1,6 @@
 {
   "frn": 400059,
-  "metadata": {
-    "frn": "400059",
-    "organisation_name": "ABN AMRO Clearing Bank N.V., London Branch",
-    "status": "Authorised",
-    "business_type": "Branch (UK) of a Overseas Firm",
-    "companies_house_number": "FC025168",
-    "system_timestamp": "23/06/2025 21:45",
-    "status_effective_date": "12/10/2023"
-  },
+  "metadata": {},
   "trading_names": [
     null,
     null
