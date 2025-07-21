@@ -197,13 +197,22 @@ jobs:
       - name: Merge shards into fca_main.json
         run: |
           python3 - <<'EOF'
-          import json, glob
-          combined = {}
+          import json, glob, os
+
+          MAIN = 'fca-dashboard/data/fca_main.json'
+          if os.path.exists(MAIN):
+              combined = json.load(open(MAIN, encoding='utf-8'))
+          else:
+              combined = {}
+
           for shard in glob.glob('fca-dashboard/data/fca_main_shard_*.json'):
-              combined.update(json.load(open(shard, encoding="utf-8")))
-          with open('fca-dashboard/data/fca_main.json','w', encoding="utf-8") as f:
+              data = json.load(open(shard, encoding='utf-8'))
+              combined.update(data)
+
+          with open(MAIN, 'w', encoding='utf-8') as f:
               json.dump(combined, f, indent=2, ensure_ascii=False)
-          print(f"Merged {len(combined)} FRNs")
+
+          print(f"Merged {len(combined)} FRNs into {MAIN}")
           EOF
 
       - name: Commit & push merged main
