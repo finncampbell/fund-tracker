@@ -312,6 +312,10 @@
     "name": "BBB Investment Services Limited"
   },
   {
+    "frn": "1019809",
+    "name": "Tower Peak Partners UK LLP"
+  },
+  {
     "frn": "1020188",
     "name": "ALLTRUST SERVICES LIMITED"
   },
@@ -357,7 +361,7 @@
   },
   {
     "frn": "1023905",
-    "name": "Marchant MC Limited"
+    "name": "MARCHANT MC LTD"
   },
   {
     "frn": "1024563",
@@ -1285,7 +1289,7 @@
   },
   {
     "frn": "152998",
-    "name": "GHC Capital Markets Ltd"
+    "name": "GHC CAPITAL MARKETS LTD."
   },
   {
     "frn": "153871",
@@ -1917,7 +1921,7 @@
   },
   {
     "frn": "189955",
-    "name": "Intermediate Capital Managers Limited"
+    "name": "ICG MANAGER LIMITED"
   },
   {
     "frn": "189983",
@@ -2809,7 +2813,7 @@
   },
   {
     "frn": "400040",
-    "name": "Longley Asset Management Ltd"
+    "name": "LONGLEY ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "400056",
@@ -3201,7 +3205,7 @@
   },
   {
     "frn": "438377",
-    "name": "Oak Hill Advisors (Europe) LLP"
+    "name": "OAK HILL ADVISORS (EUROPE), LLP"
   },
   {
     "frn": "438536",
@@ -3805,7 +3809,7 @@
   },
   {
     "frn": "470325",
-    "name": "Tiger Brokers (UK) Ltd"
+    "name": "ULTIMA MARKETS UK LIMITED"
   },
   {
     "frn": "470388",
@@ -4384,10 +4388,6 @@
     "name": "Tideway Investment Partners LLP"
   },
   {
-    "frn": "496413",
-    "name": "Wylie & Heyworth Asset Management LLP"
-  },
-  {
     "frn": "496880",
     "name": "Meteor Investment Management Ltd"
   },
@@ -4657,7 +4657,7 @@
   },
   {
     "frn": "510080",
-    "name": "Perspective Capital Management Limited"
+    "name": "MH MARKETS GLOBAL LIMITED"
   },
   {
     "frn": "510107",
@@ -6129,7 +6129,7 @@
   },
   {
     "frn": "605903",
-    "name": "Stable Asset Management Ltd"
+    "name": "STABLE ASSET MANAGEMENT LTD."
   },
   {
     "frn": "606095",
@@ -6461,7 +6461,7 @@
   },
   {
     "frn": "624196",
-    "name": "Activus Wealth Limited"
+    "name": "ACTIVUS WEALTH LTD"
   },
   {
     "frn": "624223",
@@ -6546,10 +6546,6 @@
   {
     "frn": "627897",
     "name": "Resonance Asset Management Limited"
-  },
-  {
-    "frn": "627994",
-    "name": "Squarepoint Capital LLP"
   },
   {
     "frn": "628282",
@@ -7390,10 +7386,6 @@
   {
     "frn": "692447",
     "name": "KHEPRI ADVISERS LIMITED"
-  },
-  {
-    "frn": "696151",
-    "name": "Limerston Capital LLP"
   },
   {
     "frn": "697466",
@@ -8572,10 +8564,6 @@
     "name": "EP&F Capital Plc"
   },
   {
-    "frn": "782205",
-    "name": "CWM Investment Management Limited"
-  },
-  {
     "frn": "783048",
     "name": "Niche Asset Management Limited"
   },
@@ -8881,7 +8869,7 @@
   },
   {
     "frn": "802012",
-    "name": "VDX Limited"
+    "name": "VDX LTD"
   },
   {
     "frn": "802538",
@@ -9469,7 +9457,7 @@
   },
   {
     "frn": "842662",
-    "name": "Asset Intelligence Portfolio Management Limited"
+    "name": "ASSET INTELLIGENCE PORTFOLIO MANAGEMENT LTD"
   },
   {
     "frn": "842664",
@@ -10436,10 +10424,6 @@
     "name": "Bluebox Asset Management UK Limited"
   },
   {
-    "frn": "953028",
-    "name": "EQT Exeter Advisors UK Limited"
-  },
-  {
     "frn": "953151",
     "name": "N4 Group Limited"
   },
@@ -10798,10 +10782,6 @@
   {
     "frn": "977430",
     "name": "TriOptima AB"
-  },
-  {
-    "frn": "977582",
-    "name": "Robeco Institutional Asset Management B.V"
   },
   {
     "frn": "977643",
