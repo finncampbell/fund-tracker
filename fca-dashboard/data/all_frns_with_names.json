@@ -300,6 +300,10 @@
     "name": "Moelis & Company London Limited"
   },
   {
+    "frn": "1019144",
+    "name": "Wematch.live FS Ltd"
+  },
+  {
     "frn": "1019383",
     "name": "Daxton Capital Limited"
   },
@@ -896,10 +900,6 @@
     "name": "SHORE CAPITAL STOCKBROKERS LIMITED"
   },
   {
-    "frn": "124866",
-    "name": "Societe Generale"
-  },
-  {
     "frn": "124885",
     "name": "Oberon Investments Limited"
   },
@@ -1106,10 +1106,6 @@
   {
     "frn": "144849",
     "name": "Elevate Portfolio Services Limited"
-  },
-  {
-    "frn": "144885",
-    "name": "Richmond House Wealth Management"
   },
   {
     "frn": "145024",
@@ -1762,10 +1758,6 @@
   {
     "frn": "185637",
     "name": "Man Solutions Limited"
-  },
-  {
-    "frn": "185688",
-    "name": "Private Investor Capital Limited"
   },
   {
     "frn": "185917",
@@ -2769,7 +2761,7 @@
   },
   {
     "frn": "231176",
-    "name": "Imara Asset Management (UK) Ltd"
+    "name": "IMARA ASSET MANAGEMENT (UK) LIMITED"
   },
   {
     "frn": "231328",
@@ -4009,7 +4001,7 @@
   },
   {
     "frn": "478321",
-    "name": "Odin Capital Management Ltd"
+    "name": "ODIN CAPITAL MANAGEMENT LIMITED"
   },
   {
     "frn": "478403",
@@ -4249,7 +4241,7 @@
   },
   {
     "frn": "489408",
-    "name": "Vintage Asset Management Ltd"
+    "name": "VINTAGE ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "489432",
@@ -4414,10 +4406,6 @@
   {
     "frn": "498261",
     "name": "REDINGTON LIMITED"
-  },
-  {
-    "frn": "498309",
-    "name": "Retail Investor Limited"
   },
   {
     "frn": "498338",
@@ -4960,10 +4948,6 @@
     "name": "Peel Hunt LLP"
   },
   {
-    "frn": "530196",
-    "name": "Searchlight Capital Partners UK LLP"
-  },
-  {
     "frn": "530724",
     "name": "Prologis Private Capital UK Limited"
   },
@@ -5290,10 +5274,6 @@
   {
     "frn": "557959",
     "name": "4 Shires Asset Management Ltd"
-  },
-  {
-    "frn": "558076",
-    "name": "Tiber Capital LLP"
   },
   {
     "frn": "559180",
@@ -7653,7 +7633,7 @@
   },
   {
     "frn": "720609",
-    "name": "MeritKapital UK Limited"
+    "name": "EMKAP UK LTD"
   },
   {
     "frn": "720819",
@@ -10178,10 +10158,6 @@
   {
     "frn": "936901",
     "name": "Swix Family Office UK Limited"
-  },
-  {
-    "frn": "936902",
-    "name": "Bowie Capital Ltd"
   },
   {
     "frn": "937100",
