@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2025-08-01 00:00:00
+ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2025-08-08 00:00:00
 923840,4BIO Partners LLP,Registered,"4BIO,4BIO Partners",EuVECA,12/02/2021,
 826426,A.S.K. Genva HoldCo Limited,Registered,,Property AIFM,04/01/2019,
 764100,Accelerated Digital Ventures Limited,Cancelled,,Internally Managed AIFM,10/11/2016,26/10/2022
@@ -120,8 +120,8 @@
 731411,Hazel Targa VCT plc,Cancelled,,Internally Managed AIFM,11/01/2016,03/08/2016
 949058,Heaton 2014 Limited,Registered,,Property AIFM,15/07/2021,
 810373,High Growth Capital plc,Cancelled,GoTech Group plc,Internally Managed AIFM,17/08/2018,31/01/2019
-659064,Hughes Armstrong Industries Limited,Cancelled,,Internally Managed AIFM,01/08/2014,01/03/2015
 674859,Hughes Armstrong Industries Limited,Registered,,EuVECA,02/03/2015,
+659064,Hughes Armstrong Industries Limited,Cancelled,,Internally Managed AIFM,01/08/2014,01/03/2015
 659175,Hygea vct plc,Cancelled,,Internally Managed AIFM,03/04/2014,10/09/2018
 659597,Ibis Media VCT 1 PLC,Registered,,Internally Managed AIFM,07/08/2014,
 777400,Impact Investment Trust Plc,Cancelled,,Internally Managed AIFM,18/05/2017,29/11/2018
@@ -229,7 +229,7 @@
 849170,Ryse Asset Management LLP,Registered,,EuVECA,03/01/2020,
 745200,S E Capital Ltd,Registered,Elstar,Internally Managed AIFM,11/10/2016,
 823386,SALICA INVESTMENTS LIMITED,Registered,Hambro Perks Ltd,Internally Managed AIFM,20/12/2018,
-956383,Sandstone Residential REIT PLC,Registered,,Internally Managed AIFM,25/11/2021,
+956383,Sandstone Residential REIT PLC,Cancelled,,Internally Managed AIFM,25/11/2021,06/08/2025
 946171,SAV Capital IM Limited,Registered,,Property AIFM,12/05/2021,
 990675,SDR CAPITAL ADVISERS LLP,Registered,"FIRST LOOK CAPITAL,First Look Capital Advisers LLP,SDR Capital",EuVECA,05/12/2023,
 794792,SDV 2025 ZDP PLC,Registered,,Internally Managed AIFM,12/01/2017,
