@@ -312,6 +312,10 @@
     "name": "Wematch.live FS Ltd"
   },
   {
+    "frn": "1019145",
+    "name": "Nursery Road Capital Management Limited"
+  },
+  {
     "frn": "1019383",
     "name": "Daxton Capital Limited"
   },
@@ -332,8 +336,16 @@
     "name": "Tower Peak Partners UK LLP"
   },
   {
+    "frn": "1019907",
+    "name": "Terra Firma Principal Capital Group Limited"
+  },
+  {
     "frn": "1020188",
     "name": "ALLTRUST SERVICES LIMITED"
+  },
+  {
+    "frn": "1020405",
+    "name": "Klear AI Limited"
   },
   {
     "frn": "1020539",
@@ -404,8 +416,16 @@
     "name": "ECOFIN U.S. RENEWABLES INFRASTRUCTURE TRUST PLC"
   },
   {
+    "frn": "1031894",
+    "name": "Greenpoint Capital Limited"
+  },
+  {
     "frn": "1032566",
     "name": "iCapital UK Services Limited"
+  },
+  {
+    "frn": "1032786",
+    "name": "Lion's Head Global Partners LLP"
   },
   {
     "frn": "110134",
@@ -657,7 +677,7 @@
   },
   {
     "frn": "121816",
-    "name": "MITSUBISHI UFJ ASSET MANAGEMENT (UK) LTD."
+    "name": "Mitsubishi UFJ Asset Management (UK) Ltd."
   },
   {
     "frn": "121818",
@@ -701,7 +721,7 @@
   },
   {
     "frn": "122084",
-    "name": "Nikko Asset Management Europe Ltd"
+    "name": "AMOVA ASSET MANAGEMENT UK LIMITED"
   },
   {
     "frn": "122113",
@@ -1153,7 +1173,7 @@
   },
   {
     "frn": "146361",
-    "name": "Oil Brokerage Ltd"
+    "name": "OIL BROKERAGE LIMITED"
   },
   {
     "frn": "146522",
@@ -1781,7 +1801,7 @@
   },
   {
     "frn": "186616",
-    "name": "Smith & Pinching Financial Services Ltd"
+    "name": "SMITH & PINCHING FINANCIAL SERVICES LIMITED"
   },
   {
     "frn": "186745",
@@ -2197,7 +2217,7 @@
   },
   {
     "frn": "195463",
-    "name": "Macrocapital Limited"
+    "name": "CTA & MACRO STRATEGIES FOR CORPORATIONS ONLY LTD"
   },
   {
     "frn": "195579",
@@ -2277,7 +2297,7 @@
   },
   {
     "frn": "197336",
-    "name": "Integra Capital Limited"
+    "name": "INTEGRA CAPITAL LIMITED"
   },
   {
     "frn": "197340",
@@ -3161,7 +3181,7 @@
   },
   {
     "frn": "435487",
-    "name": "AEW Global Advisors (Europe) Ltd"
+    "name": "AEW GLOBAL ADVISORS (EUROPE) LIMITED"
   },
   {
     "frn": "435490",
@@ -3549,7 +3569,7 @@
   },
   {
     "frn": "458730",
-    "name": "Taconic Capital Advisors UK LLP"
+    "name": "TACONIC CAPITAL ADVISORS UK LIMITED LIABILITY PARTNERSHIP"
   },
   {
     "frn": "459237",
@@ -3630,10 +3650,6 @@
   {
     "frn": "462554",
     "name": "Opus Corporate Finance LLP"
-  },
-  {
-    "frn": "462657",
-    "name": "Andrews Gwynne LLP"
   },
   {
     "frn": "462728",
@@ -3780,10 +3796,6 @@
     "name": "Alpha Capital Partners LLP"
   },
   {
-    "frn": "470088",
-    "name": "Eaton Partners (UK) LLP"
-  },
-  {
     "frn": "470238",
     "name": "DeaconCapital Asset Management LLP"
   },
@@ -3822,10 +3834,6 @@
   {
     "frn": "471375",
     "name": "IPS Capital LLP"
-  },
-  {
-    "frn": "471845",
-    "name": "Cambridge Risk Limited"
   },
   {
     "frn": "472219",
@@ -4205,7 +4213,7 @@
   },
   {
     "frn": "487904",
-    "name": "Blue River Wealth Management Ltd"
+    "name": "BLUE RIVER WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "488706",
@@ -4901,7 +4909,7 @@
   },
   {
     "frn": "527839",
-    "name": "Vanguard Asset Management, Ltd"
+    "name": "VANGUARD ASSET MANAGEMENT, LTD."
   },
   {
     "frn": "528328",
@@ -4953,7 +4961,7 @@
   },
   {
     "frn": "531505",
-    "name": "Goldenberg Hehmeyer LLP"
+    "name": "GTX UK LLP"
   },
   {
     "frn": "531771",
@@ -5037,7 +5045,7 @@
   },
   {
     "frn": "538634",
-    "name": "WisdomTree UK Limited"
+    "name": "WISDOMTREE UK LIMITED"
   },
   {
     "frn": "538639",
@@ -5201,7 +5209,7 @@
   },
   {
     "frn": "551744",
-    "name": "Ascot Wealth Management Limited"
+    "name": "ASCOT WEALTH MANAGEMENT LTD"
   },
   {
     "frn": "552016",
@@ -5430,10 +5438,6 @@
   {
     "frn": "572096",
     "name": "Bentley Reid & Co (UK) Limited"
-  },
-  {
-    "frn": "572148",
-    "name": "SCR Investments Ltd"
   },
   {
     "frn": "572243",
@@ -6036,10 +6040,6 @@
     "name": "M&M Capital Limited"
   },
   {
-    "frn": "603057",
-    "name": "F2 Capital Ventures LLP"
-  },
-  {
     "frn": "603332",
     "name": "Share In Ltd"
   },
@@ -6102,10 +6102,6 @@
   {
     "frn": "606298",
     "name": "Kingdom Futures Limited"
-  },
-  {
-    "frn": "606792",
-    "name": "Mirabella Advisers LLP"
   },
   {
     "frn": "607305",
@@ -7376,6 +7372,10 @@
     "name": "AB Investment Solutions Limited"
   },
   {
+    "frn": "705132",
+    "name": "DOUGLAS STEERS & COMPANY LIMITED"
+  },
+  {
     "frn": "705428",
     "name": "TRADING.COM MARKETS UK LIMITED"
   },
@@ -7457,7 +7457,7 @@
   },
   {
     "frn": "710356",
-    "name": "Roxbury Asset Management Ltd"
+    "name": "ROXBURY ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "710855",
@@ -8309,7 +8309,7 @@
   },
   {
     "frn": "770606",
-    "name": "Vinco Wealth Management Ltd"
+    "name": "VINCO WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "770616",
@@ -8369,7 +8369,7 @@
   },
   {
     "frn": "775059",
-    "name": "Lapwing Advisers Ltd"
+    "name": "ELIDI ADVISERS LTD"
   },
   {
     "frn": "775151",
@@ -8825,7 +8825,7 @@
   },
   {
     "frn": "803483",
-    "name": "Morphose Limited"
+    "name": "MORPHOSE LTD"
   },
   {
     "frn": "803673",
@@ -10092,10 +10092,6 @@
     "name": "Langley Advisors Limited"
   },
   {
-    "frn": "935876",
-    "name": "Nutshell Asset Management Limited"
-  },
-  {
     "frn": "936586",
     "name": "8point8 Capital Ltd"
   },
@@ -10785,7 +10781,7 @@
   },
   {
     "frn": "982098",
-    "name": "Auxilium Financial Risk Management LTD"
+    "name": "AUXILIUM FINANCIAL RISK MANAGEMENT LTD."
   },
   {
     "frn": "982458",
