@@ -408,6 +408,10 @@
     "name": "Fig Markets Limited"
   },
   {
+    "frn": "1027848",
+    "name": "Cork Gully Asset Managers Limited"
+  },
+  {
     "frn": "1029668",
     "name": "MOMENTUM INVESTMENT MANAGEMENT LIMITED"
   },
@@ -426,6 +430,10 @@
   {
     "frn": "1032786",
     "name": "Lion's Head Global Partners LLP"
+  },
+  {
+    "frn": "1035963",
+    "name": "Lockton Re Capital Markets Limited"
   },
   {
     "frn": "110134",
@@ -785,7 +793,7 @@
   },
   {
     "frn": "122428",
-    "name": "Alder Investment Management Ltd"
+    "name": "ALDER INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "122429",
@@ -1337,7 +1345,7 @@
   },
   {
     "frn": "154371",
-    "name": "A.J. Buckley Asset Management Ltd"
+    "name": "A J BUCKLEY ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "155240",
@@ -4465,7 +4473,7 @@
   },
   {
     "frn": "500908",
-    "name": "Townsend Group Europe Limited"
+    "name": "TOWNSEND GROUP EUROPE LTD."
   },
   {
     "frn": "501057",
@@ -7565,7 +7573,7 @@
   },
   {
     "frn": "716765",
-    "name": "Shojin Financial Services Ltd"
+    "name": "SHOJIN FINANCIAL SERVICES LIMITED"
   },
   {
     "frn": "717270",
@@ -9321,7 +9329,7 @@
   },
   {
     "frn": "835233",
-    "name": "Chetwood Investment Management Ltd"
+    "name": "CHETWOOD INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "835577",
@@ -10346,10 +10354,6 @@
   {
     "frn": "952970",
     "name": "Bluebox Asset Management UK Limited"
-  },
-  {
-    "frn": "953151",
-    "name": "N4 Group Limited"
   },
   {
     "frn": "953313",
