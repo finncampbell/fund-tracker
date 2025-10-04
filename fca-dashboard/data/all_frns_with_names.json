@@ -404,12 +404,24 @@
     "name": "EAST X VENTURES LTD"
   },
   {
+    "frn": "1026211",
+    "name": "BestEx Research Ltd"
+  },
+  {
     "frn": "1026803",
     "name": "Fig Markets Limited"
   },
   {
+    "frn": "1027624",
+    "name": "Irish Life Investment Managers Limited"
+  },
+  {
     "frn": "1027848",
     "name": "Cork Gully Asset Managers Limited"
+  },
+  {
+    "frn": "1028936",
+    "name": "Ondra UK Limited"
   },
   {
     "frn": "1029668",
@@ -430,6 +442,14 @@
   {
     "frn": "1032786",
     "name": "Lion's Head Global Partners LLP"
+  },
+  {
+    "frn": "1032848",
+    "name": "ThreadPoint Capital Partners Ltd"
+  },
+  {
+    "frn": "1033604",
+    "name": "Gallium Investment Partners Ltd"
   },
   {
     "frn": "1035963",
@@ -541,7 +561,7 @@
   },
   {
     "frn": "115020",
-    "name": "Lacomp Plc"
+    "name": "Lacomp Ltd"
   },
   {
     "frn": "115057",
@@ -2784,10 +2804,6 @@
     "name": "Charterhouse Capital Partners LLP"
   },
   {
-    "frn": "230853",
-    "name": "Alphabet Capital Advisors Ltd"
-  },
-  {
     "frn": "231176",
     "name": "IMARA ASSET MANAGEMENT (UK) LIMITED"
   },
@@ -3533,7 +3549,7 @@
   },
   {
     "frn": "456804",
-    "name": "Novum Securities Limited"
+    "name": "ALBR CAPITAL LIMITED"
   },
   {
     "frn": "456896",
@@ -4385,7 +4401,7 @@
   },
   {
     "frn": "496880",
-    "name": "Meteor Investment Management Ltd"
+    "name": "Meteor Investment Management Limited"
   },
   {
     "frn": "497164",
@@ -4413,7 +4429,7 @@
   },
   {
     "frn": "498338",
-    "name": "Coventry Capital Ltd"
+    "name": "COVENTRY CAPITAL LIMITED"
   },
   {
     "frn": "498617",
@@ -6269,7 +6285,7 @@
   },
   {
     "frn": "613381",
-    "name": "VIBHS FINANCIAL LTD"
+    "name": "MONETA MARKETS CAPITAL LTD"
   },
   {
     "frn": "613498",
@@ -6609,7 +6625,7 @@
   },
   {
     "frn": "646610",
-    "name": "Zanbato UK Limited"
+    "name": "ZANBATO UK LTD"
   },
   {
     "frn": "646917",
@@ -8644,10 +8660,6 @@
     "name": "Brunel Pension Partnership Limited"
   },
   {
-    "frn": "791236",
-    "name": "Axen Management LLP"
-  },
-  {
     "frn": "791698",
     "name": "Isomer Capital LLP"
   },
@@ -9125,7 +9137,7 @@
   },
   {
     "frn": "823381",
-    "name": "FPC Income & Growth PLC"
+    "name": "FPC Income & Growth Limited"
   },
   {
     "frn": "823386",
