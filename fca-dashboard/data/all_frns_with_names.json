@@ -268,6 +268,10 @@
     "name": "Roscommon Analytics UK Limited"
   },
   {
+    "frn": "1017828",
+    "name": "Count Finance LTD"
+  },
+  {
     "frn": "1017982",
     "name": "Staude Capital Limited"
   },
@@ -653,7 +657,7 @@
   },
   {
     "frn": "119289",
-    "name": "MARTIN CURRIE INVESTMENT MANAGEMENT LIMITED"
+    "name": "CLEARBRIDGE INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "119293",
@@ -3577,7 +3581,7 @@
   },
   {
     "frn": "457782",
-    "name": "Capital Finance Strategies Ltd"
+    "name": "CAPITAL FINANCE STRATEGIES LIMITED"
   },
   {
     "frn": "458250",
@@ -3877,7 +3881,7 @@
   },
   {
     "frn": "472929",
-    "name": "Hawksmoor Investment Management Ltd"
+    "name": "HAWKSMOOR INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "472944",
@@ -4929,7 +4933,7 @@
   },
   {
     "frn": "527557",
-    "name": "ARIA Private Clients"
+    "name": "ARIA PRIVATE CLIENTS LIMITED"
   },
   {
     "frn": "527839",
@@ -5358,6 +5362,10 @@
   {
     "frn": "564162",
     "name": "Portfoliometrix Asset Management Ltd"
+  },
+  {
+    "frn": "564525",
+    "name": "Oxford Investment Opportunity Network Limited"
   },
   {
     "frn": "564570",
@@ -8945,7 +8953,7 @@
   },
   {
     "frn": "809084",
-    "name": "Fox-Davies Capital Limited"
+    "name": "ISTAR CAPITAL LTD"
   },
   {
     "frn": "809867",
@@ -9758,10 +9766,6 @@
   {
     "frn": "920283",
     "name": "SuperSeed Ventures LLP"
-  },
-  {
-    "frn": "920840",
-    "name": "Jackson Square Partners Limited"
   },
   {
     "frn": "920933",
