@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-10-10
+ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-10-17
 835233,CHETWOOD INVESTMENT MANAGEMENT LIMITED,,Authorised,2019-08-14 00:00:00
 835577,TPIO Limited,,Authorised,2019-09-02 00:00:00
 804843,Alp Financial Limited,2549006INHOBUTJA1X91,Authorised,2018-10-08 00:00:00
@@ -584,7 +584,6 @@
 221462,Elara Capital Plc,5493007U36SC8G97JW49,Authorised,2003-04-17 00:00:00
 114394,Ellis Bates Financial Solutions Limited,,Authorised,2001-12-01 00:00:00
 592056,Outfront Capital Advisors Limited,,Authorised,2013-04-12 00:00:00
-532447,Eme Capital LLP,,Authorised,2011-01-06 00:00:00
 179392,Emergent Asset Management Limited,,Authorised,2001-12-01 00:00:00
 477914,Enko Capital Management LLP,,Authorised,2008-09-15 00:00:00
 431709,Endeavour Ventures Limited,,Authorised,2005-08-26 00:00:00
@@ -721,7 +720,7 @@
 217180,Wilton Corporate Finance Ltd,,Authorised,2003-04-09 00:00:00
 131596,WM Thomson & Sons,213800RFEQH5H2XK8L40,Authorised,2001-12-01 00:00:00
 230553,Wise Investments Ltd,,Authorised,2004-09-29 00:00:00
-141455,Winterflood Securities Ltd,8BRUP6V1DX3PIG2R0745,Authorised,2001-12-01 00:00:00
+141455,WINTERFLOOD SECURITIES LIMITED,8BRUP6V1DX3PIG2R0745,Authorised,2001-12-01 00:00:00
 649832,Woodhill Asset Management LLP,,Authorised,2015-06-01 00:00:00
 563834,Strata Global Limited,213800AG3HQ35SCTZQ84,Authorised,2012-04-26 00:00:00
 403317,Xconnect Trading Limited,2138008NIL42YTU4S857,Authorised,2005-04-14 00:00:00
@@ -785,7 +784,7 @@
 460061,Tokai Tokyo Securities Europe Limited,213800KM3J1Z36WO4R15,Authorised,2007-03-19 00:00:00
 499087,Terium LLP,213800GTGBAMDDN1YF43,Authorised,2009-07-01 00:00:00
 190632,Tradition London Clearing Ltd,549300035Z3DHK2T4A54,Authorised,2001-12-01 00:00:00
-474455,Mesirow Financial International UK Limited,,Authorised,2008-01-17 00:00:00
+474455,Mesirow Financial International UK Limited,549300VH4H90GARPPQ43,Authorised,2008-01-17 00:00:00
 456117,NUCLEUS FINANCIAL SERVICES LIMITED,213800YJ6ICL35SXO583,Authorised,2006-12-19 00:00:00
 475111,Sarasin & Partners LLP,YVKDD31NE51M8HDJRZ58,Authorised,2008-01-02 00:00:00
 502635,Hantec Markets Limited,213800BKZJJXCMAN9Z43,Authorised,2010-06-16 00:00:00
@@ -813,7 +812,7 @@
 434611,Fortress Investment Group (UK) Ltd,,Authorised,2005-11-22 00:00:00
 616985,Foreign Currency Innovations Limited,,Authorised,2014-07-10 00:00:00
 624225,4T Markets Limited,213800FAGKUBNKB8IT43,Authorised,2015-01-30 00:00:00
-433208,Fogwill & Jones Asset Management Ltd,,Authorised,2005-06-10 00:00:00
+433208,FOGWILL & JONES ASSET MANAGEMENT LIMITED,,Authorised,2005-06-10 00:00:00
 438687,FNZ (UK) Ltd,2138008H1YNPC4OQXJ61,Authorised,2006-01-06 00:00:00
 402423,Fowler Drew Limited,,Authorised,2004-11-26 00:00:00
 495794,Founding Asset Management Limited,213800JZAPGBFC4VIJ95,Authorised,2009-06-08 00:00:00
@@ -2012,7 +2011,6 @@
 940407,Ptarmigan Capital Limited,,Authorised,2021-08-23 00:00:00
 940452,Nother Portfolio Services Ltd,,Authorised,2021-08-02 00:00:00
 940694,First Avenue Financial Ltd,,Authorised,2021-05-04 00:00:00
-941150,Opulence Investment Management Limited,,Authorised,2021-08-02 00:00:00
 941828,Garwood Wealth Management Limited,,Authorised,2021-08-05 00:00:00
 942254,Brompton Asset Management Limited,213800PGEOIE98AJ2R17,Authorised,2021-12-01 00:00:00
 792373,Strowz Ltd,894500YB0R0RCG8NTB06,Authorised,2018-09-28 00:00:00
@@ -2224,7 +2222,6 @@
 1017104,Transatlantique Private Wealth (UK) Limited,,Authorised,2025-08-18 00:00:00
 1017400,RS Investments (UK) Limited,254900W6J40W1YP96X88,Authorised,2025-01-27 00:00:00
 1017678,Roscommon Analytics UK Limited,9845008599005596A456,Authorised,2025-05-30 00:00:00
-1017828,Count Finance LTD,,Authorised,2025-10-10 00:00:00
 1017982,Staude Capital Limited,2138003MIFEADOR67549,Authorised,2025-01-24 00:00:00
 1018155,Eques Investments Ltd,,Authorised,2024-11-08 00:00:00
 1018170,Corinthia UK Management Limited,,Authorised,2025-01-31 00:00:00
@@ -2252,6 +2249,7 @@
 933846,Revolut Trading Ltd,213800F913L5VYSWEJ15,Authorised,2024-11-18 00:00:00
 831569,Environmental Finance Limited,,Authorised,2019-08-01 00:00:00
 823590,Robinhood U.K. Ltd,2138007VUOQEN34ZTF73,Authorised,2019-08-07 00:00:00
+1022069,OneChronos Markets UK Limited,254900KU3VCIL605S921,Authorised,2025-10-14 00:00:00
 849840,Camco Management Limited,,Authorised,2020-10-15 00:00:00
 760022,PASSION CAPITAL INVESTMENTS II LLP,,Authorised,2017-04-13 00:00:00
 1023168,SCYLD Capital LLP,,Authorised,2025-03-05 00:00:00
@@ -2360,7 +2358,6 @@
 474710,Stellar Asset Management Limited,,Authorised,2008-02-20 00:00:00
 198007,Stonesfield Capital Limited,,Authorised,2001-12-01 00:00:00
 451073,Stoneware Capital LLP,,Authorised,2006-07-14 00:00:00
-927462,Stride.VC LLP,,Authorised,2020-10-01 00:00:00
 554051,Sturgeon Capital Ltd,549300I5D55V0PSQLW81,Authorised,2011-09-15 00:00:00
 452811,Sturgeon Ventures LLP,5493008KHCPPVJUY3A33,Authorised,2006-07-21 00:00:00
 474277,Sun Global Investments Limited,213800KLOW6MD7632580,Authorised,2007-12-21 00:00:00
@@ -2403,6 +2400,8 @@
 996131,Smith Market Insight Ltd,254900KLKYRHYPCOJX79,Authorised,2023-10-20 00:00:00
 705132,DOUGLAS STEERS & COMPANY LIMITED,213800RLA1NMZUD5C780,Authorised,2015-09-28 00:00:00
 564525,Oxford Investment Opportunity Network Limited,,Authorised,2012-08-17 00:00:00
+768961,Redding Ridge Asset Management (UK) LLP,213800W6CYOJ7H9F3C26,Authorised,2017-12-08 00:00:00
+791617,Redrice Ventures Limited,,Authorised,2018-05-14 00:00:00
 515304,BlueCrest Capital Management (UK) LLP,549300HFZ79K1KSXJU45,Authorised,2010-03-31 00:00:00
 780642,London Investment Management Limited,213800HUCENJTSNVX984,Authorised,2017-09-15 00:00:00
 778117,Onyx Commodities Limited,213800MQS22LJB7AVB83,Authorised,2017-12-06 00:00:00

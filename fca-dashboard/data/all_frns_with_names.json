@@ -268,10 +268,6 @@
     "name": "Roscommon Analytics UK Limited"
   },
   {
-    "frn": "1017828",
-    "name": "Count Finance LTD"
-  },
-  {
     "frn": "1017982",
     "name": "Staude Capital Limited"
   },
@@ -362,6 +358,10 @@
   {
     "frn": "1020846",
     "name": "Impera Capital LLP"
+  },
+  {
+    "frn": "1022069",
+    "name": "OneChronos Markets UK Limited"
   },
   {
     "frn": "1022310",
@@ -1073,7 +1073,7 @@
   },
   {
     "frn": "141455",
-    "name": "Winterflood Securities Ltd"
+    "name": "WINTERFLOOD SECURITIES LIMITED"
   },
   {
     "frn": "141665",
@@ -3185,7 +3185,7 @@
   },
   {
     "frn": "433208",
-    "name": "Fogwill & Jones Asset Management Ltd"
+    "name": "FOGWILL & JONES ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "433809",
@@ -4998,10 +4998,6 @@
   {
     "frn": "532121",
     "name": "Segovia Loan Advisors (UK) LLP"
-  },
-  {
-    "frn": "532447",
-    "name": "Eme Capital LLP"
   },
   {
     "frn": "532714",
@@ -8328,6 +8324,10 @@
     "name": "Brookfield Global Renewable Energy Advisor Limited"
   },
   {
+    "frn": "768961",
+    "name": "Redding Ridge Asset Management (UK) LLP"
+  },
+  {
     "frn": "769481",
     "name": "One Global Market Limited"
   },
@@ -8666,6 +8666,10 @@
   {
     "frn": "790168",
     "name": "Brunel Pension Partnership Limited"
+  },
+  {
+    "frn": "791617",
+    "name": "Redrice Ventures Limited"
   },
   {
     "frn": "791698",
@@ -9932,10 +9936,6 @@
     "name": "Stag Securities Ltd"
   },
   {
-    "frn": "927462",
-    "name": "Stride.VC LLP"
-  },
-  {
     "frn": "927552",
     "name": "EBC Financial Group (UK) Ltd"
   },
@@ -10198,10 +10198,6 @@
   {
     "frn": "940868",
     "name": "Nassau Global Credit (UK) LLP"
-  },
-  {
-    "frn": "941150",
-    "name": "Opulence Investment Management Limited"
   },
   {
     "frn": "941689",
