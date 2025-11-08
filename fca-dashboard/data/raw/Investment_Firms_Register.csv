@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-10-31
+ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-11-07
 835233,CHETWOOD INVESTMENT MANAGEMENT LIMITED,,Authorised,2019-08-14 00:00:00
 835577,TPIO Limited,,Authorised,2019-09-02 00:00:00
 804843,Alp Financial Limited,2549006INHOBUTJA1X91,Authorised,2018-10-08 00:00:00
@@ -24,7 +24,7 @@
 142888,Goldman Sachs International,W22LROWP2IHZNBB6K528,Authorised,2001-12-01 00:00:00
 146880,TP ICAP E&C Limited,549300MU2MYJLOY6IJ51,Authorised,2001-12-01 00:00:00
 147150,Merrill Lynch International,GGDZP1UYGU9STUHRDP48,Authorised,2001-12-01 00:00:00
-147543,Tradition Financial Services Limited,549300PGXWH0WZUNMG82,Authorised,2001-12-01 00:00:00
+147543,TRADITION FINANCIAL SERVICES LTD.,549300PGXWH0WZUNMG82,Authorised,2001-12-01 00:00:00
 148474,ADM Investor Services International Limited,213800GNABQM2M887812,Authorised,2001-12-01 00:00:00
 149145,Queen Street Finance Ltd,213800EBWL6KOI24EO05,Authorised,2001-12-01 00:00:00
 149380,Cantor Fitzgerald Europe,549300KM6VUHPKQLQX53,Authorised,2001-12-01 00:00:00
@@ -237,7 +237,7 @@
 228827,Eiger Securities LLP,213800OKK4SBX2U4WH11,Authorised,2004-03-02 00:00:00
 727583,Casterbridge Wealth Limited,,Authorised,2016-04-11 00:00:00
 124543,RBC Europe Limited,TXDSU46SXBWIGJ8G8E98,Authorised,2001-12-01 00:00:00
-428590,A & J Wealth Management Ltd,,Authorised,2005-10-04 00:00:00
+428590,A & J WEALTH MANAGEMENT LIMITED,,Authorised,2005-10-04 00:00:00
 772349,Boston Direct Management (UK) Ltd,,Authorised,2017-07-12 00:00:00
 601013,GULF CENTRAL MERCHANT BANK LTD,,Authorised,2013-07-12 00:00:00
 786372,Axia Markets Pro Limited,549300ZW4KOFK8KMIG35,Authorised,2018-01-03 00:00:00
@@ -251,7 +251,7 @@
 439327,Millennium Capital Partners LLP,549300X1IL2SQS14P736,Authorised,2006-02-20 00:00:00
 432783,King Street (Europe) LLP,549300ZDWWCK3VFHV669,Authorised,2005-09-19 00:00:00
 595785,AQUIS EXCHANGE LIMITED,213800IXJSF5E1SIW150,Authorised,2013-11-04 00:00:00
-472944,NEX SEF Limited,2138008LPQ92DIHKHY20,Authorised,2008-01-02 00:00:00
+472944,OSTTRA SEF LIMITED,2138008LPQ92DIHKHY20,Authorised,2008-01-02 00:00:00
 191757,ICAP Global Derivatives Limited,213800C2MCT5QBE5VW36,Authorised,2001-12-01 00:00:00
 417741,Pamplona Capital Management LLP,,Authorised,2005-03-22 00:00:00
 446361,Pallinghurst Advisors LLP,,Authorised,2006-02-27 00:00:00
@@ -418,7 +418,7 @@
 482326,SCOBIE FINANCE LLP,2138001M7KJYA8ONEG33,Authorised,2008-08-26 00:00:00
 208253,ScottishPower Energy Management (Agency) Limited,549300N6ENJB45F3IO05,Authorised,2002-03-19 00:00:00
 497525,SCM Private LLP,,Authorised,2009-04-24 00:00:00
-144827,Seilern Investment Management Ltd,21380062OLOC8IXGOQ78,Authorised,2001-12-01 00:00:00
+144827,SEILERN INVESTMENT MANAGEMENT LTD.,21380062OLOC8IXGOQ78,Authorised,2001-12-01 00:00:00
 116337,SDB Strategic Planners Limited,,Authorised,2001-12-01 00:00:00
 191713,SEI Investments (Europe) Ltd,549300C2C8510ACFWP58,Authorised,2001-12-01 00:00:00
 577483,Seabury Securities (UK) Limited,,Authorised,2013-03-01 00:00:00
@@ -779,7 +779,7 @@
 661884,Zion Capital Limited,,Authorised,2015-03-20 00:00:00
 460061,Tokai Tokyo Securities Europe Limited,213800KM3J1Z36WO4R15,Authorised,2007-03-19 00:00:00
 499087,Terium LLP,213800GTGBAMDDN1YF43,Authorised,2009-07-01 00:00:00
-190632,Tradition London Clearing Ltd,549300035Z3DHK2T4A54,Authorised,2001-12-01 00:00:00
+190632,TRADITION LONDON CLEARING LIMITED,549300035Z3DHK2T4A54,Authorised,2001-12-01 00:00:00
 474455,Mesirow Financial International UK Limited,549300VH4H90GARPPQ43,Authorised,2008-01-17 00:00:00
 456117,NUCLEUS FINANCIAL SERVICES LIMITED,213800YJ6ICL35SXO583,Authorised,2006-12-19 00:00:00
 475111,Sarasin & Partners LLP,YVKDD31NE51M8HDJRZ58,Authorised,2008-01-02 00:00:00
@@ -969,7 +969,6 @@
 181192,Optiva Securities Limited,213800YXL6OGJYA74L69,Authorised,2001-12-01 00:00:00
 189495,CAPITAL PLUS PARTNERS LIMITED,,Authorised,2001-12-01 00:00:00
 485836,Orbis Portfolio Management (Europe) LLP,5493008WUOH72O0LWV60,Authorised,2008-12-17 00:00:00
-136914,Orwell Securities (Ipswich) Limited,,Authorised,2001-12-01 00:00:00
 461061,Orchard Street Investment Advisers Limited,,Authorised,2007-05-10 00:00:00
 567173,OutSET Global LLP,549300CODTFC3OHCJJ49,Authorised,2012-02-16 00:00:00
 225539,Sova Capital Limited,213800T9OJMZA69QDM04,Authorised,2004-03-26 00:00:00
@@ -1236,7 +1235,7 @@
 190608,Allspring Global Investments (UK) Limited,213800F1BB4S4H554W68,Authorised,2001-12-01 00:00:00
 115057,Gallagher (Administration & Investment) Limited,,Authorised,2001-12-01 00:00:00
 621628,Buckthorn Partners LLP,,Authorised,2014-09-15 00:00:00
-448118,Bury Street Capital Ltd,,Authorised,2006-08-23 00:00:00
+448118,BURY STREET CAPITAL LIMITED,,Authorised,2006-08-23 00:00:00
 466201,Axi Financial Services (UK) Limited,2138007775I9GY8YOL39,Authorised,2007-08-16 00:00:00
 628307,Cairngorm Capital Partners LLP,,Authorised,2015-03-13 00:00:00
 612590,Cairn Loan Investments LLP,213800T6YJQ8WG8OCC42,Authorised,2014-10-31 00:00:00
@@ -1406,7 +1405,6 @@
 510054,Succession Advisory Services Limited,,Authorised,2010-10-13 00:00:00
 597200,Quadra Capital Partners LLP,,Authorised,2014-02-17 00:00:00
 499510,Redmayne-Bentley LLP,213800S3IRIPK1R3JQ58,Authorised,2009-10-01 00:00:00
-568966,Tyrus Capital Alternatives LLP,,Authorised,2012-05-31 00:00:00
 652972,Asset Risk Consultants (UK) Limited,,Authorised,2015-09-02 00:00:00
 717851,ASHENDEN FINANCE (UK) LIMITED,529900T9YUCVRYTX5C73,Authorised,2016-03-01 00:00:00
 708666,Illiquidx Limited,213800C6Q14JHU8S2L30,Authorised,2016-04-01 00:00:00
@@ -1567,7 +1565,6 @@
 678983,PJT Partners (UK) Limited,,Authorised,2015-10-01 00:00:00
 746972,Orion Resource Partners (UK) LLP,,Authorised,2016-08-09 00:00:00
 752005,P1 Investment Services Limited,213800WRU56W5PXXMN14,Authorised,2016-09-08 00:00:00
-462554,Opus Corporate Finance LLP,,Authorised,2007-02-27 00:00:00
 714242,Above Wealth Management LLP,213800H2N58CI66RR768,Authorised,2016-06-01 00:00:00
 709552,Sculptor Europe Loan Management Limited,,Authorised,2016-04-01 00:00:00
 402258,Howden Capital Markets Limited,,Authorised,2005-01-04 00:00:00
@@ -1689,7 +1686,7 @@
 121839,Lazard Asset Management Limited,549300DE84CHJ3OWRO27,Authorised,2001-12-01 00:00:00
 547974,Metric Capital Partners LLP,,Authorised,2012-01-03 00:00:00
 121779,Franklin Templeton Investment Management Limited,MLH7B1BVFWXZVST01715,Authorised,2001-12-01 00:00:00
-552016,Nutmeg Saving and Investment Limited,213800GI1LKW2KY84R66,Authorised,2011-10-06 00:00:00
+552016,J.P. MORGAN PERSONAL INVESTING LIMITED,213800GI1LKW2KY84R66,Authorised,2011-10-06 00:00:00
 582519,NFU Mutual Select Investments Limited,21380019SIIR265AOO81,Authorised,2012-12-04 00:00:00
 615732,NGEN Capital Ltd,99999999999999999999,Authorised,2014-09-08 00:00:00
 583334,Colliers Capital Holdings Limited,,Authorised,2013-01-08 00:00:00
@@ -1848,7 +1845,7 @@
 931840,Expedition Growth Capital Ltd,,Authorised,2020-11-02 00:00:00
 931954,One Four Nine Portfolio Management Limited,,Authorised,2020-10-01 00:00:00
 589327,Axis Capital Markets Limited,2138001UYFF4L8FOMN55,Authorised,2013-04-09 00:00:00
-932799,Terramont Capital Limited,2138006WYMAW5643AK46,Authorised,2020-11-05 00:00:00
+932799,TERRAMONT CAPITAL LTD,2138006WYMAW5643AK46,Authorised,2020-11-05 00:00:00
 933016,Coolabah Capital (UK) Ltd,2549001I4DC6GRIHOM24,Authorised,2020-12-10 00:00:00
 922829,David Williams Financial Solutions Limited,,Authorised,2020-09-15 00:00:00
 919164,Millward Wealth Management Limited,,Authorised,2020-08-14 00:00:00
@@ -2378,6 +2375,7 @@
 1026803,Fig Markets Limited,6488C2F77ABT2N2A0153,Authorised,2025-05-01 00:00:00
 749440,Causeway Securities Limited,21380031FDWN3OJV4R73,Authorised,2016-12-09 00:00:00
 1032566,iCapital UK Services Limited,,Authorised,2025-07-09 00:00:00
+1032770,Centiva Capital UK Ltd,648875128OXH5RQT9R66,Authorised,2025-11-06 00:00:00
 1032786,Lion's Head Global Partners LLP,254900NNX2L6PLKSZF35,Authorised,2025-09-01 00:00:00
 1032848,ThreadPoint Capital Partners Ltd,,Authorised,2025-10-03 00:00:00
 1022310,IG4 Capital Advisors LLP,,Authorised,2025-07-14 00:00:00
@@ -2386,6 +2384,7 @@
 610729,Arabesque Asset Management Limited,2138008MNTSBNXO33Y86,Authorised,2014-06-04 00:00:00
 1035963,Lockton Re Capital Markets Limited,,Authorised,2025-09-26 00:00:00
 740528,PROGENY ASSET MANAGEMENT LIMITED,,Authorised,2016-09-01 00:00:00
+1037034,No Label Ventures Adviser Limited,,Authorised,2025-11-03 00:00:00
 1022406,Como Capital Limited,,Authorised,2025-07-04 00:00:00
 996131,Smith Market Insight Ltd,254900KLKYRHYPCOJX79,Authorised,2023-10-20 00:00:00
 705132,DOUGLAS STEERS & COMPANY LIMITED,213800RLA1NMZUD5C780,Authorised,2015-09-28 00:00:00

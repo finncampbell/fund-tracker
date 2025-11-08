@@ -444,6 +444,10 @@
     "name": "iCapital UK Services Limited"
   },
   {
+    "frn": "1032770",
+    "name": "Centiva Capital UK Ltd"
+  },
+  {
     "frn": "1032786",
     "name": "Lion's Head Global Partners LLP"
   },
@@ -458,6 +462,10 @@
   {
     "frn": "1035963",
     "name": "Lockton Re Capital Markets Limited"
+  },
+  {
+    "frn": "1037034",
+    "name": "No Label Ventures Adviser Limited"
   },
   {
     "frn": "110134",
@@ -996,10 +1004,6 @@
     "name": "Keith Montgomery Associates Limited"
   },
   {
-    "frn": "136914",
-    "name": "Orwell Securities (Ipswich) Limited"
-  },
-  {
     "frn": "137569",
     "name": "Dart Capital Limited"
   },
@@ -1153,7 +1157,7 @@
   },
   {
     "frn": "144827",
-    "name": "Seilern Investment Management Ltd"
+    "name": "SEILERN INVESTMENT MANAGEMENT LTD."
   },
   {
     "frn": "144846",
@@ -1249,7 +1253,7 @@
   },
   {
     "frn": "147543",
-    "name": "Tradition Financial Services Limited"
+    "name": "TRADITION FINANCIAL SERVICES LTD."
   },
   {
     "frn": "147956",
@@ -2009,7 +2013,7 @@
   },
   {
     "frn": "190632",
-    "name": "Tradition London Clearing Ltd"
+    "name": "TRADITION LONDON CLEARING LIMITED"
   },
   {
     "frn": "190654",
@@ -3089,7 +3093,7 @@
   },
   {
     "frn": "428590",
-    "name": "A & J Wealth Management Ltd"
+    "name": "A & J WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "428789",
@@ -3369,7 +3373,7 @@
   },
   {
     "frn": "448118",
-    "name": "Bury Street Capital Ltd"
+    "name": "BURY STREET CAPITAL LIMITED"
   },
   {
     "frn": "448288",
@@ -3660,10 +3664,6 @@
     "name": "Edison Investment Research Limited"
   },
   {
-    "frn": "462554",
-    "name": "Opus Corporate Finance LLP"
-  },
-  {
     "frn": "462728",
     "name": "Foster Denovo Limited"
   },
@@ -3869,7 +3869,7 @@
   },
   {
     "frn": "472944",
-    "name": "NEX SEF Limited"
+    "name": "OSTTRA SEF LIMITED"
   },
   {
     "frn": "473282",
@@ -5209,7 +5209,7 @@
   },
   {
     "frn": "552016",
-    "name": "Nutmeg Saving and Investment Limited"
+    "name": "J.P. MORGAN PERSONAL INVESTING LIMITED"
   },
   {
     "frn": "552790",
@@ -5390,10 +5390,6 @@
   {
     "frn": "568940",
     "name": "Better Society Capital Limited"
-  },
-  {
-    "frn": "568966",
-    "name": "Tyrus Capital Alternatives LLP"
   },
   {
     "frn": "569000",
@@ -10033,7 +10029,7 @@
   },
   {
     "frn": "932799",
-    "name": "Terramont Capital Limited"
+    "name": "TERRAMONT CAPITAL LTD"
   },
   {
     "frn": "933016",
