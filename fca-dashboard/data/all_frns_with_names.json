@@ -456,6 +456,10 @@
     "name": "ThreadPoint Capital Partners Ltd"
   },
   {
+    "frn": "1033078",
+    "name": "Leerink Partners UK Limited"
+  },
+  {
     "frn": "1033604",
     "name": "Gallium Investment Partners Ltd"
   },
@@ -466,6 +470,10 @@
   {
     "frn": "1037034",
     "name": "No Label Ventures Adviser Limited"
+  },
+  {
+    "frn": "1042431",
+    "name": "Skymont Investment Solutions Limited"
   },
   {
     "frn": "110134",
@@ -2589,7 +2597,7 @@
   },
   {
     "frn": "222033",
-    "name": "SW Financial Planning"
+    "name": "SW FINANCIAL PLANNING LIMITED"
   },
   {
     "frn": "222907",
@@ -4084,10 +4092,6 @@
     "name": "LBV Asset Management LLP"
   },
   {
-    "frn": "481247",
-    "name": "Prosdocimi Limited"
-  },
-  {
     "frn": "481272",
     "name": "ZENKYOREN EUROPE LIMITED"
   },
@@ -4557,7 +4561,7 @@
   },
   {
     "frn": "505249",
-    "name": "ARKLEY CAPITAL LIMITED"
+    "name": "LONDON GROWTH CAPITAL LTD"
   },
   {
     "frn": "505261",
@@ -6194,10 +6198,6 @@
   {
     "frn": "610305",
     "name": "Safran (South West) Limited"
-  },
-  {
-    "frn": "610534",
-    "name": "China Merchants Securities (UK) Limited"
   },
   {
     "frn": "610684",
@@ -8325,7 +8325,7 @@
   },
   {
     "frn": "771719",
-    "name": "Cazadores Investments Limited"
+    "name": "CAZADORES INVESTMENTS LTD"
   },
   {
     "frn": "772227",

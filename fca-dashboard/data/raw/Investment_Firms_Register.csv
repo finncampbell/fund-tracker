@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-11-07
+ï»¿FRN,Organisation Name,Legal Entity Identifier (LEI),Status,First Authorisation Date,Data listed here is as at the close of business on: 2025-11-14
 835233,CHETWOOD INVESTMENT MANAGEMENT LIMITED,,Authorised,2019-08-14 00:00:00
 835577,TPIO Limited,,Authorised,2019-09-02 00:00:00
 804843,Alp Financial Limited,2549006INHOBUTJA1X91,Authorised,2018-10-08 00:00:00
@@ -490,7 +490,7 @@
 432503,Johnston Campbell Ltd,213800HSMJIK7HYQQC33,Authorised,2005-09-21 00:00:00
 607414,Sparrows Capital Limited,,Authorised,2014-06-04 00:00:00
 447986,Spencer House Partners LLP,,Authorised,2006-03-27 00:00:00
-222033,SW Financial Planning,,Authorised,2003-05-21 00:00:00
+222033,SW FINANCIAL PLANNING LIMITED,,Authorised,2003-05-21 00:00:00
 521446,Spectra FX Solutions LLP,213800P2W763DPLQR551,Authorised,2010-12-13 00:00:00
 190782,Spinnaker Capital Limited,,Authorised,2001-12-01 00:00:00
 616299,SYMBIOTICS (UK) LTD,,Authorised,2014-06-19 00:00:00
@@ -1044,7 +1044,7 @@
 670081,Ark Investment Management Ltd,,Authorised,2015-07-01 00:00:00
 184116,Covestium Ltd,,Authorised,2001-12-01 00:00:00
 454270,Arma Partners LLP,,Authorised,2006-08-01 00:00:00
-505249,ARKLEY CAPITAL LIMITED,,Authorised,2010-02-03 00:00:00
+505249,LONDON GROWTH CAPITAL LTD,,Authorised,2010-02-03 00:00:00
 612134,Armstrong Energy Limited,,Authorised,2014-11-03 00:00:00
 518554,Artisan Partners UK LLP,549300QT76T3XH4G4T46,Authorised,2010-07-15 00:00:00
 523180,Artemis Investment Management LLP,549300O5ON1W961H4K22,Authorised,2010-10-01 00:00:00
@@ -1063,7 +1063,6 @@
 185917,Chelverton Asset Management Limited,,Authorised,2001-12-01 00:00:00
 189147,Atlantic-Pacific Capital Limited,,Authorised,2001-12-01 00:00:00
 229036,Chilton Investment Company Limited,EVK05KS7XY1DEII3R011,Authorised,2004-05-06 00:00:00
-610534,China Merchants Securities (UK) Limited,2138009R9CQF75DKV160,Authorised,2014-06-17 00:00:00
 449481,Cboe Chi-X Europe Limited,254900KWHZZ18HYLGB12,Authorised,2006-06-30 00:00:00
 507542,China International Capital Corporation (UK) Limited,213800STG3UV87MDGA96,Authorised,2010-02-18 00:00:00
 514725,Chrystal Capital Partners LLP,,Authorised,2010-05-12 00:00:00
@@ -1266,7 +1265,6 @@
 476091,Providence Asset Management Ltd,,Authorised,2008-04-09 00:00:00
 607482,Proprium Capital Management (UK) LLP,,Authorised,2014-05-01 00:00:00
 230512,Prosperity Capital Management (UK) Ltd,,Authorised,2004-05-26 00:00:00
-481247,Prosdocimi Limited,,Authorised,2008-06-23 00:00:00
 195028,Schroders IS Limited,549300WD664MDCU7L584,Authorised,2001-12-01 00:00:00
 426749,Providentia Capital LLP,,Authorised,2005-07-12 00:00:00
 431813,Prusik Investment Management LLP,549300CFHC1ZST19O784,Authorised,2005-07-19 00:00:00
@@ -2378,6 +2376,7 @@
 1032770,Centiva Capital UK Ltd,648875128OXH5RQT9R66,Authorised,2025-11-06 00:00:00
 1032786,Lion's Head Global Partners LLP,254900NNX2L6PLKSZF35,Authorised,2025-09-01 00:00:00
 1032848,ThreadPoint Capital Partners Ltd,,Authorised,2025-10-03 00:00:00
+1033078,Leerink Partners UK Limited,,Authorised,2025-11-11 00:00:00
 1022310,IG4 Capital Advisors LLP,,Authorised,2025-07-14 00:00:00
 599294,XHE Capital LLP,,Authorised,2013-10-01 00:00:00
 1033604,Gallium Investment Partners Ltd,984500D6BFF5D2F59393,Authorised,2025-10-01 00:00:00
@@ -2387,6 +2386,7 @@
 1037034,No Label Ventures Adviser Limited,,Authorised,2025-11-03 00:00:00
 1022406,Como Capital Limited,,Authorised,2025-07-04 00:00:00
 996131,Smith Market Insight Ltd,254900KLKYRHYPCOJX79,Authorised,2023-10-20 00:00:00
+1042431,Skymont Investment Solutions Limited,,Authorised,2025-11-13 00:00:00
 705132,DOUGLAS STEERS & COMPANY LIMITED,213800RLA1NMZUD5C780,Authorised,2015-09-28 00:00:00
 564525,Oxford Investment Opportunity Network Limited,,Authorised,2012-08-17 00:00:00
 768961,Redding Ridge Asset Management (UK) LLP,213800W6CYOJ7H9F3C26,Authorised,2017-12-08 00:00:00
@@ -2463,7 +2463,7 @@
 768273,Brookfield Global Renewable Energy Advisor Limited,,Authorised,2017-05-24 00:00:00
 770377,Alpha FX Limited,213800S76619BW9T7Y55,Authorised,2017-08-01 00:00:00
 770606,VINCO WEALTH MANAGEMENT LIMITED,,Authorised,2017-07-03 00:00:00
-771719,Cazadores Investments Limited,,Authorised,2017-05-08 00:00:00
+771719,CAZADORES INVESTMENTS LTD,,Authorised,2017-05-08 00:00:00
 772227,Commodities Trading Corporation Limited,Firm has applied LEI,Authorised,2017-05-18 00:00:00
 772919,Trinetra Investment Management LLP,2549003IMYFJOF8TQ597,Authorised,2017-06-15 00:00:00
 774437,Latitude Investment Management LLP,213800OQ486JFY9DPV48,Authorised,2017-07-03 00:00:00
