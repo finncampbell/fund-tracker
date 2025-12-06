@@ -460,6 +460,10 @@
     "name": "Gallium Investment Partners Ltd"
   },
   {
+    "frn": "1034170",
+    "name": "CLG Advisors Ltd"
+  },
+  {
     "frn": "1035963",
     "name": "Lockton Re Capital Markets Limited"
   },
@@ -468,8 +472,16 @@
     "name": "No Label Ventures Adviser Limited"
   },
   {
+    "frn": "1040946",
+    "name": "Berry Street Capital Management LLP"
+  },
+  {
     "frn": "1042431",
     "name": "Skymont Investment Solutions Limited"
+  },
+  {
+    "frn": "1042599",
+    "name": "Royal Exchange Investment Management Ltd"
   },
   {
     "frn": "110134",
@@ -565,7 +577,7 @@
   },
   {
     "frn": "114627",
-    "name": "Credit Suisse Asset Management Limited"
+    "name": "UBS ASSET MANAGEMENT CREDIT INVESTMENTS GROUP (UK) LTD"
   },
   {
     "frn": "114762",
@@ -886,10 +898,6 @@
   {
     "frn": "124341",
     "name": "TP ICAP MTF LIMITED"
-  },
-  {
-    "frn": "124345",
-    "name": "SANLAM SECURITIES UK LIMITED"
   },
   {
     "frn": "124384",
@@ -1893,7 +1901,7 @@
   },
   {
     "frn": "188796",
-    "name": "Standard Life Savings Limited"
+    "name": "ABERDEEN PLATFORM LIMITED"
   },
   {
     "frn": "188821",
@@ -3532,10 +3540,6 @@
     "name": "Canyon Capital Advisors (Europe) Ltd"
   },
   {
-    "frn": "456572",
-    "name": "Tellurian Capital Management LLP"
-  },
-  {
     "frn": "456804",
     "name": "ALBR CAPITAL LIMITED"
   },
@@ -4597,7 +4601,7 @@
   },
   {
     "frn": "507685",
-    "name": "Metropolis Capital Limited"
+    "name": "METROPOLIS CAPITAL LTD"
   },
   {
     "frn": "507900",
@@ -7916,10 +7920,6 @@
     "name": "TigerRisk Capital Markets & Advisory (UK) Limited"
   },
   {
-    "frn": "747254",
-    "name": "Phanar Asset Management (UK) Limited"
-  },
-  {
     "frn": "747676",
     "name": "Treble Peak Limited"
   },
@@ -8510,10 +8510,6 @@
   {
     "frn": "784063",
     "name": "Ebury Partners Markets Limited"
-  },
-  {
-    "frn": "784448",
-    "name": "Seismic Venture Partners Ltd"
   },
   {
     "frn": "784697",
