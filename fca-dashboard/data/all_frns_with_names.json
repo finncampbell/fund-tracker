@@ -480,6 +480,10 @@
     "name": "Blume Equity LLP"
   },
   {
+    "frn": "1039711",
+    "name": "Haverstock Capital LLP"
+  },
+  {
     "frn": "1040820",
     "name": "Motive UK Advisors LLP"
   },
@@ -637,7 +641,7 @@
   },
   {
     "frn": "116355",
-    "name": "E J Glanville & Co (Investment Brokers) Limited"
+    "name": "E.J. GLANVILLE & CO. (INVESTMENT BROKERS) LIMITED"
   },
   {
     "frn": "116404",
@@ -1440,10 +1444,6 @@
     "name": "London and Oxford Capital Markets Limited"
   },
   {
-    "frn": "163504",
-    "name": "Beckett Asset Management Limited"
-  },
-  {
     "frn": "163584",
     "name": "Sarasin Asset Management Ltd"
   },
@@ -1733,7 +1733,7 @@
   },
   {
     "frn": "182110",
-    "name": "London Capital Group Ltd"
+    "name": "LONDON CAPITAL GROUP LIMITED"
   },
   {
     "frn": "182644",
@@ -2578,6 +2578,10 @@
   {
     "frn": "221138",
     "name": "Mansford Capital Limited"
+  },
+  {
+    "frn": "221250",
+    "name": "Absolute Return Partners LLP"
   },
   {
     "frn": "221462",
@@ -3550,6 +3554,10 @@
   {
     "frn": "456571",
     "name": "Canyon Capital Advisors (Europe) Ltd"
+  },
+  {
+    "frn": "456572",
+    "name": "Tellurian Capital Management LLP"
   },
   {
     "frn": "456804",
@@ -5780,10 +5788,6 @@
     "name": "Marl Partners LLP"
   },
   {
-    "frn": "590782",
-    "name": "Kapwealth Limited"
-  },
-  {
     "frn": "590919",
     "name": "Puma Investment Management Limited"
   },
@@ -6590,10 +6594,6 @@
   {
     "frn": "646610",
     "name": "ZANBATO UK LTD"
-  },
-  {
-    "frn": "646917",
-    "name": "Marshall Sterling Investment Management Limited"
   },
   {
     "frn": "647066",
@@ -7620,10 +7620,6 @@
     "name": "PillarFour Securities LLP"
   },
   {
-    "frn": "723119",
-    "name": "The Freehold Corporation Ltd"
-  },
-  {
     "frn": "723121",
     "name": "The Regeneration Group Limited"
   },
@@ -8144,10 +8140,6 @@
     "name": "RoundShield Partners LLP"
   },
   {
-    "frn": "763187",
-    "name": "Aldgate Advisors Limited"
-  },
-  {
     "frn": "763601",
     "name": "Saranac Partners Limited"
   },
@@ -8425,7 +8417,7 @@
   },
   {
     "frn": "777461",
-    "name": "Dark Star Asset Management Limited"
+    "name": "FAIRMONT INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "777739",
@@ -8621,7 +8613,7 @@
   },
   {
     "frn": "791617",
-    "name": "Redrice Ventures Limited"
+    "name": "REDRICE VENTURES LTD"
   },
   {
     "frn": "791698",
@@ -9805,7 +9797,7 @@
   },
   {
     "frn": "924563",
-    "name": "Sanford DeLand Asset Management Limited"
+    "name": "SANFORD DELAND ASSET MANAGEMENT LTD"
   },
   {
     "frn": "925147",
