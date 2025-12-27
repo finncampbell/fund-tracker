@@ -460,8 +460,16 @@
     "name": "Gallium Investment Partners Ltd"
   },
   {
+    "frn": "1033792",
+    "name": "ABEX UK Derivatives Limited"
+  },
+  {
     "frn": "1034170",
     "name": "CLG Advisors Ltd"
+  },
+  {
+    "frn": "1035655",
+    "name": "RBIM INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "1035963",
@@ -936,10 +944,6 @@
     "name": "Barclays Capital Securities Limited"
   },
   {
-    "frn": "124444",
-    "name": "Brewin Dolphin Limited"
-  },
-  {
     "frn": "124490",
     "name": "Daiwa Capital Markets Europe Limited"
   },
@@ -1306,10 +1310,6 @@
   {
     "frn": "148680",
     "name": "Hoegh Capital Partners Limited"
-  },
-  {
-    "frn": "148682",
-    "name": "CBAM Investments Limited"
   },
   {
     "frn": "148967",
@@ -2502,10 +2502,6 @@
   {
     "frn": "211883",
     "name": "Augusta & Co Limited"
-  },
-  {
-    "frn": "213056",
-    "name": "La Rochefoucauld & Sons Limited"
   },
   {
     "frn": "214206",
@@ -4466,10 +4462,6 @@
   {
     "frn": "499798",
     "name": "Guggenheim Investment Advisors (Europe) Limited"
-  },
-  {
-    "frn": "500315",
-    "name": "Green Ash Partners LLP"
   },
   {
     "frn": "500338",
