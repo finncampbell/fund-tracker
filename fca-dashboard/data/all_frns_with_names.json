@@ -17,7 +17,7 @@
   },
   {
     "frn": "1001832",
-    "name": "GUOTAI JUNAN SECURITIES (UK) LIMITED"
+    "name": "GUOTAI HAITONG SECURITIES (UK) LIMITED"
   },
   {
     "frn": "1002091",
@@ -146,10 +146,6 @@
   {
     "frn": "1009069",
     "name": "Brickwood Asset Management LLP"
-  },
-  {
-    "frn": "1009146",
-    "name": "Pardinus Capital LLP"
   },
   {
     "frn": "1009371",
@@ -478,6 +474,10 @@
   {
     "frn": "1036033",
     "name": "Black Volta Ventures (UK) Limited"
+  },
+  {
+    "frn": "1036625",
+    "name": "ELMWOOD ASSET MANAGEMENT UK LIMITED"
   },
   {
     "frn": "1037034",
@@ -1317,7 +1317,7 @@
   },
   {
     "frn": "148967",
-    "name": "Shinkin International Ltd"
+    "name": "Shinkin International Ltd."
   },
   {
     "frn": "149145",
@@ -1649,7 +1649,7 @@
   },
   {
     "frn": "178638",
-    "name": "BlackRock International, Limited"
+    "name": "BlackRock International Limited"
   },
   {
     "frn": "178723",
@@ -2501,7 +2501,7 @@
   },
   {
     "frn": "211690",
-    "name": "Hanover Square Capital (UK) Limited"
+    "name": "HANOVER SQUARE CAPITAL (UK) LTD"
   },
   {
     "frn": "211883",
@@ -2701,7 +2701,7 @@
   },
   {
     "frn": "225747",
-    "name": "CTC London Ltd"
+    "name": "CTC LONDON LIMITED"
   },
   {
     "frn": "225825",
@@ -2721,7 +2721,7 @@
   },
   {
     "frn": "226244",
-    "name": "Albemarle Asset Management Ltd"
+    "name": "ALBEMARLE ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "226249",
@@ -2885,7 +2885,7 @@
   },
   {
     "frn": "400442",
-    "name": "Avenue Europe Management LLP"
+    "name": "AVENUE EUROPE MANAGEMENT, LLP"
   },
   {
     "frn": "400522",
@@ -3265,7 +3265,7 @@
   },
   {
     "frn": "440823",
-    "name": "Avington Financial Ltd"
+    "name": "AVINGTON FINANCIAL LIMITED"
   },
   {
     "frn": "441074",
@@ -3277,7 +3277,7 @@
   },
   {
     "frn": "441261",
-    "name": "Harbert European Fund Advisors Ltd"
+    "name": "Harbert European Fund Advisors Limited"
   },
   {
     "frn": "441316",
@@ -3529,7 +3529,7 @@
   },
   {
     "frn": "455367",
-    "name": "Alpcot Capital Management Ltd"
+    "name": "ALPCOT CAPITAL MANAGEMENT LIMITED"
   },
   {
     "frn": "455547",
@@ -3601,7 +3601,7 @@
   },
   {
     "frn": "458730",
-    "name": "TACONIC CAPITAL ADVISORS UK LIMITED LIABILITY PARTNERSHIP"
+    "name": "DOLOMITE CAPITAL ADVISORS LLP"
   },
   {
     "frn": "459237",
@@ -3621,7 +3621,7 @@
   },
   {
     "frn": "460177",
-    "name": "VCUK Financial Services Limited"
+    "name": "VCUK FINANCIAL SERVICES LTD"
   },
   {
     "frn": "460224",
@@ -4225,7 +4225,7 @@
   },
   {
     "frn": "487699",
-    "name": "Tokio Marine Asset Management (London) Ltd"
+    "name": "TOKIO MARINE ASSET MANAGEMENT (LONDON) LIMITED"
   },
   {
     "frn": "487707",
@@ -5420,10 +5420,6 @@
     "name": "Crescent Credit Europe LLP"
   },
   {
-    "frn": "571764",
-    "name": "Hauck Aufhauser IB Limited"
-  },
-  {
     "frn": "571881",
     "name": "EC MARKETS GROUP LTD"
   },
@@ -6121,7 +6117,7 @@
   },
   {
     "frn": "608955",
-    "name": "Alger Management Ltd"
+    "name": "ALGER MANAGEMENT, LTD."
   },
   {
     "frn": "608972",
@@ -6202,10 +6198,6 @@
   {
     "frn": "612117",
     "name": "Foundation Investment Management Limited"
-  },
-  {
-    "frn": "612134",
-    "name": "Armstrong Energy Limited"
   },
   {
     "frn": "612233",
@@ -6361,7 +6353,7 @@
   },
   {
     "frn": "622916",
-    "name": "St James's Place Investment Administration Limited"
+    "name": "ST. JAMES'S PLACE INVESTMENT ADMINISTRATION LIMITED"
   },
   {
     "frn": "623021",
@@ -6385,7 +6377,7 @@
   },
   {
     "frn": "623761",
-    "name": "MetLife Investment Management Limited (MIML)"
+    "name": "MetLife Investment Management Limited"
   },
   {
     "frn": "624042",
@@ -7454,6 +7446,10 @@
   {
     "frn": "712156",
     "name": "Ambrosia Capital Ltd"
+  },
+  {
+    "frn": "712935",
+    "name": "Digital Moneybox Limited"
   },
   {
     "frn": "713226",
@@ -8668,10 +8664,6 @@
     "name": "Obdios Capital Limited"
   },
   {
-    "frn": "795892",
-    "name": "DIRECT TRADING TECHNOLOGIES UK LIMITED"
-  },
-  {
     "frn": "796070",
     "name": "A&M CAPITAL ADVISORS EUROPE, LLP"
   },
@@ -9253,7 +9245,7 @@
   },
   {
     "frn": "833492",
-    "name": "PlanHappy Investment Management Limited"
+    "name": "PLANHAPPY INVESTMENT MANAGEMENT LTD"
   },
   {
     "frn": "833956",
@@ -10349,7 +10341,7 @@
   },
   {
     "frn": "957974",
-    "name": "GrowthPoint Technology Partners UK Ltd"
+    "name": "GROWTHPOINT TECHNOLOGY PARTNERS UK LIMITED"
   },
   {
     "frn": "958407",
