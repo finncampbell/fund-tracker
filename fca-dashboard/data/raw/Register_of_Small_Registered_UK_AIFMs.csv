@@ -1,11 +1,10 @@
-ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-01-16 00:00:00
+ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-01-23 00:00:00
 923840,4BIO Partners LLP,Registered,"4BIO,4BIO Partners",EuVECA,12/02/2021,
 826426,A.S.K. Genva HoldCo Limited,Registered,,Property AIFM,04/01/2019,
 764100,Accelerated Digital Ventures Limited,Cancelled,,Internally Managed AIFM,10/11/2016,26/10/2022
 706132,Affordable Housing & Healthcare Group Secured Lending Limited,Registered,"Quantum Secured Lending plc,Affordable Housing & Healthcare Secured Lending Limited",Internally Managed AIFM,10/06/2015,
 834596,AGPAYTECH LTD.,Registered,"ATLPay,Atlantique Money Transfer,ATLMoneyTransfer,AGPAYTECH LTD,ATL Bank,ATL Money",Internally Managed AIFM,12/04/2019,
 850100,Albion Investment Partners Limited,Registered,,Internally Managed AIFM,25/02/2020,
-1022763,ALLOCATOR ONE LTD,Registered,,EuVECA,07/04/2025,
 1020188,ALLTRUST SERVICES LIMITED,Registered,,Property AIFM,11/10/2024,
 669712,Alternative Bridging (UK1) Limited,Cancelled,,Internally Managed AIFM,03/02/2015,15/01/2019
 746423,Alternative Bridging (UK2) Limited,Cancelled,,Internally Managed AIFM,09/05/2016,15/01/2019
@@ -128,6 +127,7 @@
 777400,Impact Investment Trust Plc,Cancelled,,Internally Managed AIFM,18/05/2017,29/11/2018
 659598,Industrial Real Estate (General Partner) Limited,Cancelled,,Property AIFM,21/07/2014,07/11/2019
 779087,Infinity Fund Management Limited,Registered,Infinity Asset Management 2017 Limited,Property AIFM,16/06/2017,
+1022763,INFRA ONE UK MANAGEMENT LIMITED,Registered,ALLOCATOR ONE LTD,EuVECA,07/04/2025,
 929013,INTUITIVE INVESTMENTS GROUP PLC,Registered,,Internally Managed AIFM,15/07/2020,
 850258,J3A PARTNERS AM,Registered,,EuVECA,04/05/2020,
 775620,Jacob Hopkins McKenzie Limited,Cancelled,,Property AIFM,03/04/2017,26/05/2020
@@ -198,8 +198,8 @@
 659289,Octopus VCT Plc,Cancelled,,Internally Managed AIFM,14/04/2014,19/02/2015
 798379,Odyssean Investment Trust plc,Registered,,Internally Managed AIFM,09/02/2018,
 697466,Osprey Income and Growth 7 GP Limited,Cancelled,,Property AIFM,18/05/2015,20/05/2020
-809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 809867,OurCrowd Management (UK) Limited,Cancelled,,EuVECA,16/08/2018,21/11/2024
+809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 840248,Outrun Venture Partners LLP,Cancelled,"Outrun,Outrun Venture Partners,Outrun Ventures",EuVECA,19/08/2019,24/05/2024
 798110,Outward VC Fund LLP,Registered,FP Investments III LLP,EuVECA,12/03/2018,
 727146,Overizone & Associates plc,Registered,,Internally Managed AIFM,23/11/2015,
@@ -232,7 +232,7 @@
 823386,SALICA INVESTMENTS LIMITED,Registered,Hambro Perks Ltd,Internally Managed AIFM,20/12/2018,
 956383,Sandstone Residential REIT PLC,Cancelled,,Internally Managed AIFM,25/11/2021,06/08/2025
 946171,SAV Capital IM Limited,Registered,,Property AIFM,12/05/2021,
-990675,SDR CAPITAL ADVISERS LLP,Registered,"FIRST LOOK CAPITAL,First Look Capital Advisers LLP,SDR Capital",EuVECA,05/12/2023,
+990675,SDR CAPITAL ADVISERS LLP,Cancelled,"FIRST LOOK CAPITAL,First Look Capital Advisers LLP,SDR Capital",EuVECA,05/12/2023,21/01/2026
 794792,SDV 2025 ZDP PLC,Registered,,Internally Managed AIFM,12/01/2017,
 792058,Second Estates UK Limited,Cancelled,,Internally Managed AIFM,13/11/2017,03/03/2021
 806103,Secure Your Future Fund Ltd,Registered,Secure Future (London) Ltd,Internally Managed AIFM,08/06/2018,
