@@ -312,6 +312,10 @@
     "name": "Nursery Road Capital Management Limited"
   },
   {
+    "frn": "1019373",
+    "name": "HRANDP Ltd"
+  },
+  {
     "frn": "1019383",
     "name": "Daxton Capital Limited"
   },
@@ -424,6 +428,10 @@
     "name": "MOMENTUM INVESTMENT MANAGEMENT LIMITED"
   },
   {
+    "frn": "1030531",
+    "name": "Capitolis UK Limited"
+  },
+  {
     "frn": "1031259",
     "name": "ECOFIN U.S. RENEWABLES INFRASTRUCTURE TRUST PLC"
   },
@@ -468,6 +476,10 @@
     "name": "RBIM INVESTMENT MANAGEMENT LIMITED"
   },
   {
+    "frn": "1035673",
+    "name": "Air Capital Partners Limited"
+  },
+  {
     "frn": "1035963",
     "name": "Lockton Re Capital Markets Limited"
   },
@@ -510,6 +522,10 @@
   {
     "frn": "1042599",
     "name": "Royal Exchange Investment Management Ltd"
+  },
+  {
+    "frn": "1046925",
+    "name": "Double Black Partners Limited"
   },
   {
     "frn": "110134",
@@ -561,7 +577,7 @@
   },
   {
     "frn": "114341",
-    "name": "F H. Manning Financial Services Limited"
+    "name": "F.H. MANNING FINANCIAL SERVICES LIMITED"
   },
   {
     "frn": "114354",
@@ -825,7 +841,7 @@
   },
   {
     "frn": "122206",
-    "name": "Citicorp Trustee Company Ltd"
+    "name": "CITICORP TRUSTEE COMPANY LIMITED"
   },
   {
     "frn": "122229",
@@ -1057,7 +1073,7 @@
   },
   {
     "frn": "139253",
-    "name": "Jefferies International Ltd"
+    "name": "JEFFERIES INTERNATIONAL LIMITED"
   },
   {
     "frn": "140459",
@@ -1105,7 +1121,7 @@
   },
   {
     "frn": "141665",
-    "name": "Royal London Asset Management Ltd"
+    "name": "Royal London Asset Management Limited"
   },
   {
     "frn": "141668",
@@ -1357,7 +1373,7 @@
   },
   {
     "frn": "150453",
-    "name": "Heritage Capital Management Ltd"
+    "name": "HERITAGE CAPITAL MANAGEMENT LIMITED"
   },
   {
     "frn": "152998",
@@ -1601,7 +1617,7 @@
   },
   {
     "frn": "172999",
-    "name": "Fiera Capital (UK) Limited"
+    "name": "FIERA CAPITAL (UK) LIMITED"
   },
   {
     "frn": "173325",
@@ -1786,10 +1802,6 @@
   {
     "frn": "184753",
     "name": "Beaumont Cornish Limited"
-  },
-  {
-    "frn": "184761",
-    "name": "Peterhouse Capital limited"
   },
   {
     "frn": "184801",
@@ -2305,7 +2317,7 @@
   },
   {
     "frn": "196845",
-    "name": "Alcentra Limited"
+    "name": "BENEFIT STREET PARTNERS LIMITED"
   },
   {
     "frn": "197008",
@@ -2381,7 +2393,7 @@
   },
   {
     "frn": "206018",
-    "name": "TFS-ICAP Limited"
+    "name": "TFS VOLBROKER LIMITED"
   },
   {
     "frn": "207801",
@@ -2649,7 +2661,7 @@
   },
   {
     "frn": "224540",
-    "name": "GMO UK Limited"
+    "name": "GMO U.K. LIMITED"
   },
   {
     "frn": "224621",
@@ -2769,7 +2781,7 @@
   },
   {
     "frn": "229284",
-    "name": "BGB Weston Ltd"
+    "name": "BGB WESTON LIMITED"
   },
   {
     "frn": "229350",
@@ -2789,7 +2801,7 @@
   },
   {
     "frn": "230512",
-    "name": "Prosperity Capital Management (UK) Ltd"
+    "name": "PROSPERITY CAPITAL MANAGEMENT (UK) LIMITED"
   },
   {
     "frn": "230553",
@@ -2805,7 +2817,7 @@
   },
   {
     "frn": "230690",
-    "name": "Whitley Asset Management Ltd"
+    "name": "Schroders Investment Portfolio Services Limited"
   },
   {
     "frn": "230721",
@@ -3018,10 +3030,6 @@
   {
     "frn": "410624",
     "name": "Bramdean Asset Management LLP"
-  },
-  {
-    "frn": "413309",
-    "name": "Cyrus Capital Partners Europe LLP"
   },
   {
     "frn": "414207",
@@ -3317,7 +3325,7 @@
   },
   {
     "frn": "445917",
-    "name": "Williams Trading Europe LLP"
+    "name": "WILLIAMS TRADING EUROPE, LLP"
   },
   {
     "frn": "446173",
@@ -3541,7 +3549,7 @@
   },
   {
     "frn": "456571",
-    "name": "Canyon Capital Advisors (Europe) Ltd"
+    "name": "CANYON CAPITAL ADVISORS (EUROPE) LIMITED"
   },
   {
     "frn": "456572",
@@ -4352,10 +4360,6 @@
     "name": "Oakfield Capital Partners LLP"
   },
   {
-    "frn": "493592",
-    "name": "Ondra LLP"
-  },
-  {
     "frn": "493877",
     "name": "Harbour Litigation Funding Ltd"
   },
@@ -4472,10 +4476,6 @@
     "name": "Infinox Capital Limited"
   },
   {
-    "frn": "501320",
-    "name": "Trive Financial Services UK Limited"
-  },
-  {
     "frn": "501453",
     "name": "1OAK Capital Limited"
   },
@@ -4517,7 +4517,7 @@
   },
   {
     "frn": "503723",
-    "name": "Aksia Europe Ltd"
+    "name": "AKSIA EUROPE LIMITED"
   },
   {
     "frn": "503730",
@@ -5597,7 +5597,7 @@
   },
   {
     "frn": "583263",
-    "name": "eToro (UK) Ltd"
+    "name": "ETORO (UK) LIMITED"
   },
   {
     "frn": "583268",
@@ -5885,7 +5885,7 @@
   },
   {
     "frn": "598169",
-    "name": "Reyl & Co (UK) LLP"
+    "name": "REYL & CO. (UK) LLP"
   },
   {
     "frn": "599210",
@@ -6048,10 +6048,6 @@
     "name": "Equities First (London) Limited"
   },
   {
-    "frn": "605598",
-    "name": "GPS Capital Markets Limited"
-  },
-  {
     "frn": "605641",
     "name": "RAM Foreign Exchange Limited"
   },
@@ -6141,7 +6137,7 @@
   },
   {
     "frn": "610191",
-    "name": "KSL Capital Partners International LLP"
+    "name": "KSL CAPITAL PARTNERS INTERNATIONAL, LLP"
   },
   {
     "frn": "610203",
@@ -6294,10 +6290,6 @@
   {
     "frn": "616969",
     "name": "Solingen Private Equity Limited"
-  },
-  {
-    "frn": "616985",
-    "name": "Foreign Currency Innovations Limited"
   },
   {
     "frn": "617163",
@@ -7393,7 +7385,7 @@
   },
   {
     "frn": "709693",
-    "name": "Capital Index (UK) Limited"
+    "name": "VANTOS MARKETS (UK) LIMITED"
   },
   {
     "frn": "709848",
@@ -7593,7 +7585,7 @@
   },
   {
     "frn": "723344",
-    "name": "Abbott Capital (Europe) Limited"
+    "name": "ABBOTT CAPITAL (EUROPE), LTD"
   },
   {
     "frn": "723719",
@@ -7633,7 +7625,7 @@
   },
   {
     "frn": "727510",
-    "name": "FS Wealth Management Limited"
+    "name": "FS WEALTH MANAGEMENT LTD"
   },
   {
     "frn": "727582",
@@ -7738,10 +7730,6 @@
   {
     "frn": "737180",
     "name": "SPX International Asset Management Ltd"
-  },
-  {
-    "frn": "737196",
-    "name": "PMB Capital Limited"
   },
   {
     "frn": "737512",
@@ -8308,6 +8296,10 @@
     "name": "Brookstreet Equity Partners LLP"
   },
   {
+    "frn": "774214",
+    "name": "GRS CAPITAL PARTNERS LIMITED"
+  },
+  {
     "frn": "774437",
     "name": "Latitude Investment Management LLP"
   },
@@ -8425,7 +8417,7 @@
   },
   {
     "frn": "780642",
-    "name": "London Investment Management Limited"
+    "name": "INVESTEC INTERNATIONAL PRIVATE OFFICE LIMITED"
   },
   {
     "frn": "781077",
@@ -8469,7 +8461,7 @@
   },
   {
     "frn": "784063",
-    "name": "Ebury Partners Markets Limited"
+    "name": "EBURY PARTNERS MARKETS LTD"
   },
   {
     "frn": "784697",
@@ -8677,7 +8669,7 @@
   },
   {
     "frn": "798186",
-    "name": "Camdor Global Advisors Ltd"
+    "name": "CAMDOR GLOBAL ADVISORS LIMITED"
   },
   {
     "frn": "798379",
@@ -9016,10 +9008,6 @@
     "name": "PROMETHEUS INVESTMENT MANAGEMENT LIMITED"
   },
   {
-    "frn": "821704",
-    "name": "Startrader Broker Ltd"
-  },
-  {
     "frn": "821844",
     "name": "Cairn Loan Investments II LLP"
   },
@@ -9065,7 +9053,7 @@
   },
   {
     "frn": "823662",
-    "name": "BlueCove Limited"
+    "name": "ARES SYSTEMATIC CREDIT LIMITED"
   },
   {
     "frn": "823699",
@@ -9606,10 +9594,6 @@
   {
     "frn": "916120",
     "name": "Forecast Financial Planning Limited"
-  },
-  {
-    "frn": "916337",
-    "name": "Regency Capital Group Ltd"
   },
   {
     "frn": "916792",
@@ -10409,7 +10393,7 @@
   },
   {
     "frn": "964339",
-    "name": "Acrisure Re Corporate Advisory and Solutions Limited"
+    "name": "ACRISURE RE CORPORATE ADVISORY & SOLUTIONS LIMITED"
   },
   {
     "frn": "964738",
@@ -10422,10 +10406,6 @@
   {
     "frn": "966180",
     "name": "Beryllus Capital (UK) Limited"
-  },
-  {
-    "frn": "966244",
-    "name": "BOS Wealth Management Europe S.A."
   },
   {
     "frn": "966305",
