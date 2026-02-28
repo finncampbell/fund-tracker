@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-02-13 00:00:00
+ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-02-27 00:00:00
 923840,4BIO Partners LLP,Registered,"4BIO,4BIO Partners",EuVECA,12/02/2021,
 826426,A.S.K. Genva HoldCo Limited,Registered,,Property AIFM,04/01/2019,
 764100,Accelerated Digital Ventures Limited,Cancelled,,Internally Managed AIFM,10/11/2016,26/10/2022
@@ -164,7 +164,6 @@
 668001,Meaujo (771) Limited,Cancelled,Time:Reboot VCT PLC,Internally Managed AIFM,29/11/2013,07/12/2015
 792753,Mensch Management Ltd,Cancelled,,Internally Managed AIFM,15/11/2017,09/10/2024
 673231,Meridian Films London One Limited,Cancelled,,Internally Managed AIFM,24/02/2015,30/08/2016
-768060,Meum Capital Ltd,Registered,Smith Hamilton Property Limited,Property AIFM,23/12/2016,
 1005566,Midlands Mindforge Limited,Registered,,Internally Managed AIFM,05/02/2024,
 659610,Mill Residential Reit Plc,Cancelled,,Internally Managed AIFM,11/12/2014,30/04/2018
 934692,MINTUS PROMETA I LIMITED,Cancelled,,Internally Managed AIFM,19/11/2020,16/12/2022
@@ -198,8 +197,8 @@
 659289,Octopus VCT Plc,Cancelled,,Internally Managed AIFM,14/04/2014,19/02/2015
 798379,Odyssean Investment Trust plc,Registered,,Internally Managed AIFM,09/02/2018,
 697466,Osprey Income and Growth 7 GP Limited,Cancelled,,Property AIFM,18/05/2015,20/05/2020
-809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 809867,OurCrowd Management (UK) Limited,Cancelled,,EuVECA,16/08/2018,21/11/2024
+809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 840248,Outrun Venture Partners LLP,Cancelled,"Outrun,Outrun Venture Partners,Outrun Ventures",EuVECA,19/08/2019,24/05/2024
 798110,Outward VC Fund LLP,Registered,FP Investments III LLP,EuVECA,12/03/2018,
 727146,Overizone & Associates plc,Registered,,Internally Managed AIFM,23/11/2015,
@@ -244,6 +243,7 @@
 969137,Silicon Roundabout Ventures Advisers Ltd,Registered,,EuVECA,15/08/2022,
 740116,SLM Partners Limited,Cancelled,,Property AIFM,14/03/2016,18/10/2022
 660934,Small Companies ZDP PLC,Cancelled,,Internally Managed AIFM,13/08/2014,09/11/2016
+768060,SMITH HAMILTON CAPITAL LTD,Registered,"Smith Hamilton Property Limited,Meum Capital Ltd",Property AIFM,23/12/2016,
 931877,Southernwood Capital LLP,Registered,,Property AIFM,22/10/2020,
 838155,Southernwood Group Limited,Cancelled,,Property AIFM,30/04/2019,24/03/2021
 848938,Square APE Ltd,Registered,,Internally Managed AIFM,06/12/2019,
