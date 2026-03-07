@@ -444,6 +444,10 @@
     "name": "Greenpoint Capital Limited"
   },
   {
+    "frn": "1032106",
+    "name": "ACG Advisors Group (UK) Limited"
+  },
+  {
     "frn": "1032566",
     "name": "iCapital UK Services Limited"
   },
@@ -462,6 +466,10 @@
   {
     "frn": "1033078",
     "name": "Leerink Partners UK Limited"
+  },
+  {
+    "frn": "1033582",
+    "name": "InstantiaPay Limited"
   },
   {
     "frn": "1033604",
@@ -526,6 +534,10 @@
   {
     "frn": "1042599",
     "name": "Royal Exchange Investment Management Ltd"
+  },
+  {
+    "frn": "1044366",
+    "name": "CABRERA CAPITAL UK LTD"
   },
   {
     "frn": "1046925",
@@ -1253,7 +1265,7 @@
   },
   {
     "frn": "146576",
-    "name": "Pershing Securities Ltd"
+    "name": "PERSHING SECURITIES LIMITED"
   },
   {
     "frn": "146629",
@@ -1461,7 +1473,7 @@
   },
   {
     "frn": "163584",
-    "name": "Sarasin Asset Management Ltd"
+    "name": "SARASIN ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "164689",
@@ -2337,7 +2349,7 @@
   },
   {
     "frn": "197251",
-    "name": "Chatham Financial Europe Ltd"
+    "name": "CHATHAM FINANCIAL EUROPE, LTD"
   },
   {
     "frn": "197291",
@@ -2553,7 +2565,7 @@
   },
   {
     "frn": "218270",
-    "name": "Leucadia Investment Management Limited"
+    "name": "JEFFERIES ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "218613",
@@ -4041,7 +4053,7 @@
   },
   {
     "frn": "478923",
-    "name": "Wingate Wealth Management Ltd"
+    "name": "WINGATE WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "479120",
@@ -4404,10 +4416,6 @@
     "name": "SCM Private LLP"
   },
   {
-    "frn": "498261",
-    "name": "REDINGTON LIMITED"
-  },
-  {
     "frn": "498338",
     "name": "COVENTRY CAPITAL LIMITED"
   },
@@ -4493,7 +4501,7 @@
   },
   {
     "frn": "502253",
-    "name": "SRI Capital Advisers Ltd"
+    "name": "SRI CAPITAL ADVISERS LIMITED"
   },
   {
     "frn": "502505",
@@ -5621,7 +5629,7 @@
   },
   {
     "frn": "583632",
-    "name": "Capital Markets Elite Group (UK) Limited"
+    "name": "MONDEUM CAPITAL (UK) LIMITED"
   },
   {
     "frn": "584025",
@@ -7156,10 +7164,6 @@
     "name": "TIML Ltd"
   },
   {
-    "frn": "670685",
-    "name": "Long-Term Capital Partners Limited"
-  },
-  {
     "frn": "670881",
     "name": "Knox Capital Company Ltd"
   },
@@ -7209,7 +7213,7 @@
   },
   {
     "frn": "676878",
-    "name": "Scorpeo UK Ltd"
+    "name": "SCORPEO UK LIMITED"
   },
   {
     "frn": "677055",
@@ -8370,10 +8374,6 @@
   {
     "frn": "778117",
     "name": "Onyx Commodities Limited"
-  },
-  {
-    "frn": "778584",
-    "name": "Segantii Capital Management (UK) Limited"
   },
   {
     "frn": "778593",
@@ -10332,10 +10332,6 @@
     "name": "PIMCO Europe GmbH UK Branch"
   },
   {
-    "frn": "959583",
-    "name": "Fideuram Asset Management UK Limited"
-  },
-  {
     "frn": "960246",
     "name": "GWA Asset Management Ltd"
   },
@@ -10717,7 +10713,7 @@
   },
   {
     "frn": "985296",
-    "name": "LONGOAK RESIDENTIAL INCOME PLC"
+    "name": "LONGOAK RESIDENTIAL INCOME LIMITED"
   },
   {
     "frn": "985396",
