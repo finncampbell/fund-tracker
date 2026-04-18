@@ -516,6 +516,10 @@
     "name": "LAMBOURN CAPITAL LTD"
   },
   {
+    "frn": "1037289",
+    "name": "Investa Markets Ltd"
+  },
+  {
     "frn": "1038693",
     "name": "Bluebridge Asset Management Ltd"
   },
@@ -546,6 +550,14 @@
   {
     "frn": "1044366",
     "name": "CABRERA CAPITAL UK LTD"
+  },
+  {
+    "frn": "1045023",
+    "name": "Ctrl Alt Ltd"
+  },
+  {
+    "frn": "1045489",
+    "name": "Lulworth Investment Management Limited"
   },
   {
     "frn": "1046925",
@@ -1517,7 +1529,7 @@
   },
   {
     "frn": "166062",
-    "name": "Miller & Co Investment Management Ltd"
+    "name": "MILLER & CO. INVESTMENT MANAGEMENT LIMITED"
   },
   {
     "frn": "166063",
@@ -1956,10 +1968,6 @@
     "name": "EuroMTS Limited"
   },
   {
-    "frn": "188997",
-    "name": "Nippon Life Schroders Asset Management Europe Limited"
-  },
-  {
     "frn": "189068",
     "name": "William Blair International, Ltd"
   },
@@ -2158,10 +2166,6 @@
   {
     "frn": "191916",
     "name": "Northern Trust Global Investments Limited"
-  },
-  {
-    "frn": "192163",
-    "name": "BDCM UK LIMITED"
   },
   {
     "frn": "192204",
@@ -2708,10 +2712,6 @@
     "name": "Sova Capital Limited"
   },
   {
-    "frn": "225540",
-    "name": "AMG Capital Partners Limited"
-  },
-  {
     "frn": "225544",
     "name": "Louis Capital Markets UK LLP"
   },
@@ -2734,10 +2734,6 @@
   {
     "frn": "226033",
     "name": "Accrue Investment Management Ltd"
-  },
-  {
-    "frn": "226243",
-    "name": "Linkstone Capital Limited"
   },
   {
     "frn": "226244",
@@ -2953,7 +2949,7 @@
   },
   {
     "frn": "401905",
-    "name": "Titon Associates Ltd"
+    "name": "TITON ASSOCIATES LIMITED"
   },
   {
     "frn": "402125",
@@ -3093,7 +3089,7 @@
   },
   {
     "frn": "419312",
-    "name": "Christofferson Robb & Company (UK) LLP"
+    "name": "CHRISTOFFERSON, ROBB & COMPANY (UK) LLP"
   },
   {
     "frn": "419337",
@@ -3808,10 +3804,6 @@
     "name": "FIS Global Execution Services Limited"
   },
   {
-    "frn": "469971",
-    "name": "Lennox Investment Management LLP"
-  },
-  {
     "frn": "470085",
     "name": "Alpha Capital Partners LLP"
   },
@@ -4284,10 +4276,6 @@
     "name": "Allenby Capital Limited"
   },
   {
-    "frn": "489806",
-    "name": "Clermont Energy Partners LLP"
-  },
-  {
     "frn": "489807",
     "name": "MCM Bespoke Investment Services Limited"
   },
@@ -4477,7 +4465,7 @@
   },
   {
     "frn": "501695",
-    "name": "S&T Asset Management LLP"
+    "name": "S & T ASSET MANAGEMENT LLP"
   },
   {
     "frn": "502209",
@@ -4525,7 +4513,7 @@
   },
   {
     "frn": "505190",
-    "name": "Frogmore Real Estate Partners Fund Managers Ltd"
+    "name": "FROGMORE REAL ESTATE PARTNERS FUND MANAGERS LIMITED"
   },
   {
     "frn": "505208",
@@ -4661,15 +4649,11 @@
   },
   {
     "frn": "513632",
-    "name": "QuantBot Technologies Limited"
+    "name": "QUANTBOT TECHNOLOGIES LTD"
   },
   {
     "frn": "513967",
     "name": "EIG Global Energy (Europe) Limited"
-  },
-  {
-    "frn": "513993",
-    "name": "Donre Advisory Limited"
   },
   {
     "frn": "514394",
@@ -4685,7 +4669,7 @@
   },
   {
     "frn": "514644",
-    "name": "Revcap Advisors Ltd"
+    "name": "REVCAP ADVISORS LIMITED"
   },
   {
     "frn": "514689",
@@ -4737,7 +4721,7 @@
   },
   {
     "frn": "516932",
-    "name": "S. P. Angel Corporate Finance LLP"
+    "name": "S.P. ANGEL CORPORATE FINANCE LLP"
   },
   {
     "frn": "517235",
@@ -5984,10 +5968,6 @@
     "name": "Alphadyne Asset Management (UK) LLP"
   },
   {
-    "frn": "603935",
-    "name": "Greensledge Capital Markets Europe LLP"
-  },
-  {
     "frn": "604089",
     "name": "EAK Management UK, LLP"
   },
@@ -6337,7 +6317,7 @@
   },
   {
     "frn": "624223",
-    "name": "LendInvest Funds Management Limited"
+    "name": "LENDINVEST FUNDS MANAGEMENT LTD"
   },
   {
     "frn": "624225",
@@ -6465,7 +6445,7 @@
   },
   {
     "frn": "629630",
-    "name": "Alken Asset Management Ltd"
+    "name": "ALKEN ASSET MANAGEMENT LTD."
   },
   {
     "frn": "629765",
@@ -7154,10 +7134,6 @@
   {
     "frn": "673231",
     "name": "Meridian Films London One Limited"
-  },
-  {
-    "frn": "673574",
-    "name": "Genpact WM UK Limited"
   },
   {
     "frn": "674247",
@@ -8948,10 +8924,6 @@
     "name": "Systematica Investments UK LLP"
   },
   {
-    "frn": "822279",
-    "name": "HTFX Limited"
-  },
-  {
     "frn": "822509",
     "name": "Onyx Capital Advisory Limited"
   },
@@ -9777,7 +9749,7 @@
   },
   {
     "frn": "928946",
-    "name": "Financial Options (N.E.) Limited"
+    "name": "FINANCIAL OPTIONS N. E. LIMITED"
   },
   {
     "frn": "929013",
@@ -10370,10 +10342,6 @@
   {
     "frn": "969137",
     "name": "Silicon Roundabout Ventures Advisers Ltd"
-  },
-  {
-    "frn": "969588",
-    "name": "AVPCAP UK"
   },
   {
     "frn": "970428",

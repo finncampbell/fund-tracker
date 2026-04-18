@@ -1,4 +1,4 @@
-ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-04-03 00:00:00
+ï»¿FRN,Organisation Name,Status,Trading Names +previous Registered Names,Registration Category,Effective From Date,Effective To Date,Data listed here is as at the close of business on: 2026-04-17 00:00:00
 923840,4BIO Partners LLP,Registered,"4BIO,4BIO Partners",EuVECA,12/02/2021,
 826426,A.S.K. Genva HoldCo Limited,Registered,,Property AIFM,04/01/2019,
 764100,Accelerated Digital Ventures Limited,Cancelled,,Internally Managed AIFM,10/11/2016,26/10/2022
@@ -121,8 +121,8 @@
 731411,Hazel Targa VCT plc,Cancelled,,Internally Managed AIFM,11/01/2016,03/08/2016
 949058,Heaton 2014 Limited,Registered,,Property AIFM,15/07/2021,
 810373,High Growth Capital plc,Cancelled,GoTech Group plc,Internally Managed AIFM,17/08/2018,31/01/2019
-674859,Hughes Armstrong Industries Limited,Registered,,EuVECA,02/03/2015,
 659064,Hughes Armstrong Industries Limited,Cancelled,,Internally Managed AIFM,01/08/2014,01/03/2015
+674859,Hughes Armstrong Industries Limited,Registered,,EuVECA,02/03/2015,
 659175,Hygea vct plc,Cancelled,,Internally Managed AIFM,03/04/2014,10/09/2018
 659597,Ibis Media VCT 1 PLC,Registered,,Internally Managed AIFM,07/08/2014,
 777400,Impact Investment Trust Plc,Cancelled,,Internally Managed AIFM,18/05/2017,29/11/2018
@@ -198,8 +198,8 @@
 659289,Octopus VCT Plc,Cancelled,,Internally Managed AIFM,14/04/2014,19/02/2015
 798379,Odyssean Investment Trust plc,Registered,,Internally Managed AIFM,09/02/2018,
 697466,Osprey Income and Growth 7 GP Limited,Cancelled,,Property AIFM,18/05/2015,20/05/2020
-809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 809867,OurCrowd Management (UK) Limited,Cancelled,,EuVECA,16/08/2018,21/11/2024
+809867,OurCrowd Management (UK) Limited,Cancelled,,EuSEF,21/11/2024,21/11/2024
 840248,Outrun Venture Partners LLP,Cancelled,"Outrun,Outrun Venture Partners,Outrun Ventures",EuVECA,19/08/2019,24/05/2024
 798110,Outward VC Fund LLP,Registered,FP Investments III LLP,EuVECA,12/03/2018,
 727146,Overizone & Associates plc,Registered,,Internally Managed AIFM,23/11/2015,
@@ -254,7 +254,7 @@
 674247,STRATA LENDING PLC,Registered,Strata Residential Finance PLC,Internally Managed AIFM,27/02/2015,
 660118,Student Cribs Limited,Registered,,Property AIFM,16/07/2014,
 779699,Suburban & Metropolitan Holdings Ltd,Cancelled,"Waterhill Property Group.,M7 Property Group",Internally Managed AIFM,13/06/2017,08/07/2025
-659222,SVM UK Emerging Fund Plc,Registered,,Internally Managed AIFM,01/07/2014,
+659222,SVM UK Emerging Fund Plc,Cancelled,,Internally Managed AIFM,01/07/2014,01/04/2026
 842883,TERN PLC,Registered,,Internally Managed AIFM,24/06/2019,
 659234,THAMES VENTURES VCT 2 PLC,Cancelled,"Downing FOUR VCT Plc,Downing Structured Opportunities VCT 1 plc",Internally Managed AIFM,09/07/2014,18/03/2025
 659609,The Acquisitions Team Limited,Cancelled,,Property AIFM,22/10/2014,17/04/2025
