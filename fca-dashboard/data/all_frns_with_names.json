@@ -432,10 +432,6 @@
     "name": "Capitolis UK Limited"
   },
   {
-    "frn": "1030811",
-    "name": "One Planet Capital Limited"
-  },
-  {
     "frn": "1031259",
     "name": "ECOFIN U.S. RENEWABLES INFRASTRUCTURE TRUST PLC"
   },
@@ -544,12 +540,24 @@
     "name": "Science Creates Ventures LLP"
   },
   {
+    "frn": "1042412",
+    "name": "Renkoedge Ltd"
+  },
+  {
     "frn": "1042431",
     "name": "Skymont Investment Solutions Limited"
   },
   {
     "frn": "1042599",
     "name": "Royal Exchange Investment Management Ltd"
+  },
+  {
+    "frn": "1043088",
+    "name": "Leeside Capital Partners LLP"
+  },
+  {
+    "frn": "1044274",
+    "name": "Arkaim Advisors Ltd"
   },
   {
     "frn": "1044366",
@@ -568,16 +576,16 @@
     "name": "Lulworth Investment Management Limited"
   },
   {
+    "frn": "1046890",
+    "name": "Zenith Investment Management Ltd"
+  },
+  {
     "frn": "1046925",
     "name": "Double Black Partners Limited"
   },
   {
     "frn": "1049017",
     "name": "PARVUS ENERGY EFFICIENCY TRUST PLC"
-  },
-  {
-    "frn": "1050671",
-    "name": "StonePeak Partners (UK) LLP"
   },
   {
     "frn": "110134",
@@ -1710,10 +1718,6 @@
   {
     "frn": "178723",
     "name": "Union Investment Management Limited"
-  },
-  {
-    "frn": "178733",
-    "name": "STIFEL EUROPE LIMITED"
   },
   {
     "frn": "179213",
@@ -2913,7 +2917,7 @@
   },
   {
     "frn": "400674",
-    "name": "Talisman Global Asset Management Ltd"
+    "name": "TALISMAN GLOBAL ASSET MANAGEMENT LIMITED"
   },
   {
     "frn": "400856",
@@ -3149,7 +3153,7 @@
   },
   {
     "frn": "430986",
-    "name": "New College Capital Ltd"
+    "name": "NEW COLLEGE CAPITAL LIMITED"
   },
   {
     "frn": "431206",
@@ -3366,10 +3370,6 @@
   {
     "frn": "447203",
     "name": "Fund Analytics Investment Management LLP"
-  },
-  {
-    "frn": "447220",
-    "name": "Berchwood Partners LLP"
   },
   {
     "frn": "447225",
@@ -6170,10 +6170,6 @@
   {
     "frn": "613500",
     "name": "DRUMNOR INVESTMENTS LIMITED"
-  },
-  {
-    "frn": "613572",
-    "name": "BRIGHT HARBOUR ADVISORY LLP"
   },
   {
     "frn": "613665",
@@ -9053,7 +9049,7 @@
   },
   {
     "frn": "830170",
-    "name": "Scottish Widows Schroder Personal Wealth Limited"
+    "name": "LLOYDS WEALTH MANAGEMENT LIMITED"
   },
   {
     "frn": "830574",
@@ -9358,10 +9354,6 @@
   {
     "frn": "911710",
     "name": "Corten Advisors UK LLP"
-  },
-  {
-    "frn": "911890",
-    "name": "Ascot House Advisers Limited"
   },
   {
     "frn": "911947",
