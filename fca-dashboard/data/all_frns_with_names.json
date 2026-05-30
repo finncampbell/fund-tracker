@@ -516,6 +516,10 @@
     "name": "INVESTA MARKETS LTD."
   },
   {
+    "frn": "1038453",
+    "name": "Universum Wealth Ltd"
+  },
+  {
     "frn": "1038693",
     "name": "Bluebridge Asset Management Ltd"
   },
@@ -1046,10 +1050,6 @@
   {
     "frn": "124546",
     "name": "Sumitomo Mitsui Trust International Limited"
-  },
-  {
-    "frn": "124624",
-    "name": "Novate Global Markets Limited"
   },
   {
     "frn": "124659",
@@ -2546,10 +2546,6 @@
   {
     "frn": "211690",
     "name": "HANOVER SQUARE CAPITAL (UK) LTD"
-  },
-  {
-    "frn": "211883",
-    "name": "Augusta & Co Limited"
   },
   {
     "frn": "214206",
@@ -7878,10 +7874,6 @@
   {
     "frn": "755896",
     "name": "Bloomsmith Limited"
-  },
-  {
-    "frn": "756192",
-    "name": "Alph Capital Limited"
   },
   {
     "frn": "756306",
